@@ -2,7 +2,10 @@
 Send the HTML newsletter email via the Resend API.
 """
 
+import json
 import os
+import urllib.request
+import urllib.error
 from datetime import date
 from pathlib import Path
 
@@ -17,24 +20,40 @@ ACCENT_COLORS = {
 }
 
 
-def send_email(season: dict, content: dict) -> None:
-    """Render the email template and dispatch to all subscribers.
+def _get_subscribers(api_key: str) -> list[str]:
+    """Merge Resend audience contacts with SUBSCRIBER_EMAILS env var."""
+    subscribers: set[str] = set()
 
-    Args:
-        season: Season metadata dict from seasons.json.
-        content: Generated content dict from content_generator.
-    """
-    resend.api_key = os.environ["RESEND_API_KEY"]
+    audience_id = os.environ.get("RESEND_AUDIENCE_ID", "").strip()
+    if audience_id:
+        req = urllib.request.Request(
+            f"https://api.resend.com/audiences/{audience_id}/contacts",
+            headers={"Authorization": f"Bearer {api_key}"},
+        )
+        try:
+            with urllib.request.urlopen(req) as resp:
+                data = json.loads(resp.read())
+                for contact in data.get("data", []):
+                    if not contact.get("unsubscribed", False):
+                        subscribers.add(contact["email"].strip())
+        except urllib.error.URLError as e:
+            print(f"Warning: could not fetch Resend audience contacts: {e}")
 
     subscriber_str = os.environ.get("SUBSCRIBER_EMAILS", "").strip()
-    if not subscriber_str:
-        raise ValueError(
-            "SUBSCRIBER_EMAILS environment variable is not set or empty. "
-            "Provide a comma-separated list of recipient addresses."
-        )
-    recipients = [addr.strip() for addr in subscriber_str.split(",") if addr.strip()]
+    for addr in subscriber_str.split(","):
+        addr = addr.strip()
+        if addr:
+            subscribers.add(addr)
+
+    return sorted(subscribers)
+
+
+def send_email(season: dict, content: dict, worker_url: str = "https://subscribe.ko-72.com") -> None:
+    resend.api_key = os.environ["RESEND_API_KEY"]
+
+    recipients = _get_subscribers(resend.api_key)
     if not recipients:
-        raise ValueError("No valid email addresses found in SUBSCRIBER_EMAILS.")
+        raise ValueError("No subscribers found. Set SUBSCRIBER_EMAILS or RESEND_AUDIENCE_ID.")
 
     template_dir = Path(__file__).parent / "templates"
     env = Environment(loader=FileSystemLoader(str(template_dir)), autoescape=True)
@@ -42,19 +61,21 @@ def send_email(season: dict, content: dict) -> None:
 
     today = date.today()
     accent_color = ACCENT_COLORS.get(season["major_season"].capitalize(), "#888780")
-    archive_url = "https://github.com/zkutty/ko-72/tree/main/archive"
-    html = template.render(season=season, content=content, today=today,
-                           accent_color=accent_color, archive_url=archive_url)
+    archive_url = f"https://ko-72.com/archive/{season['id']:02d}-{season['slug']}.html"
+    signup_url = f"{worker_url}/subscribe"
+    unsubscribe_url = f"https://ko-72.com/unsubscribe.html"
 
-    month_names = [
-        "", "January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December",
-    ]
-    date_str = f"{month_names[season['start_month']]} {season['start_day']}"
-
-    subject = (
-        f"Kō · {season['name_en']} ({season['name_romaji']})"
+    html = template.render(
+        season=season,
+        content=content,
+        today=today,
+        accent_color=accent_color,
+        archive_url=archive_url,
+        signup_url=signup_url,
+        unsubscribe_url=unsubscribe_url,
     )
+
+    subject = f"Kō · {season['name_en']} ({season['name_romaji']})"
 
     params: resend.Emails.SendParams = {
         "from": "Kō <seasons@ko-72.com>",
@@ -64,4 +85,4 @@ def send_email(season: dict, content: dict) -> None:
     }
 
     response = resend.Emails.send(params)
-    print(f"Email sent. Resend ID: {response['id']}")
+    print(f"Email sent to {len(recipients)} subscriber(s). Resend ID: {response['id']}")

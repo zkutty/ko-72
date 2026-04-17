@@ -12,6 +12,7 @@ Usage:
 import argparse
 import json
 import logging
+import os
 import sys
 from datetime import date
 from pathlib import Path
@@ -27,6 +28,8 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 
+CACHE_PATH = Path(__file__).parent / "data" / "content_cache.json"
+
 
 # ── data helpers ───────────────────────────────────────────────────────────────
 
@@ -37,7 +40,6 @@ def load_seasons() -> list:
 
 
 def find_todays_season(seasons: list, today: date) -> dict | None:
-    """Return the season that starts exactly today, or None."""
     for s in seasons:
         if s["start_month"] == today.month and s["start_day"] == today.day:
             return s
@@ -45,11 +47,6 @@ def find_todays_season(seasons: list, today: date) -> dict | None:
 
 
 def find_active_season(seasons: list, today: date) -> dict:
-    """Return the most recently started season (used by --force).
-
-    Handles year wrap correctly: for Jan 1–4, the active season is #72
-    (which starts Jan 1); for Jan 5 onwards, season #1 takes over.
-    """
     best: dict | None = None
     best_date: date | None = None
 
@@ -64,7 +61,6 @@ def find_active_season(seasons: list, today: date) -> dict:
                 best_date = candidate
 
     if best is None:
-        # Shouldn't happen with 72 seasons, but fall back to prior year's latest
         for s in seasons:
             try:
                 candidate = date(today.year - 1, s["start_month"], s["start_day"])
@@ -78,6 +74,20 @@ def find_active_season(seasons: list, today: date) -> dict:
         raise RuntimeError("Could not determine active season — seasons.json may be empty.")
 
     return best
+
+
+# ── content cache ──────────────────────────────────────────────────────────────
+
+def load_cache() -> dict:
+    if CACHE_PATH.exists():
+        with open(CACHE_PATH, encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
+def save_cache(cache: dict) -> None:
+    with open(CACHE_PATH, "w", encoding="utf-8") as f:
+        json.dump(cache, f, ensure_ascii=False, indent=2)
 
 
 # ── main ───────────────────────────────────────────────────────────────────────
@@ -117,17 +127,31 @@ def main() -> None:
     # ── pipeline ──────────────────────────────────────────────────────────────
     from content_generator import generate_content
     from email_sender import send_email
-    from archive_builder import build_archive
+    from archive_builder import build_archive, build_website
 
-    log.info("Step 1/3 · Generating content with Claude …")
-    content = generate_content(season)
-    log.info("Content generated.")
+    worker_url = os.environ.get("WORKER_URL", "https://subscribe.ko-72.com")
 
-    log.info("Step 2/3 · Sending email …")
-    send_email(season, content)
+    # Step 1: content (from cache if available)
+    cache = load_cache()
+    cache_key = str(season["id"])
+    if cache_key in cache:
+        log.info("Step 1/4 · Using cached content for season #%d.", season["id"])
+        content = cache[cache_key]
+    else:
+        log.info("Step 1/4 · Generating content with Claude …")
+        content = generate_content(season)
+        cache[cache_key] = content
+        save_cache(cache)
+        log.info("Content generated and cached.")
 
-    log.info("Step 3/3 · Building archive page …")
+    log.info("Step 2/4 · Sending email …")
+    send_email(season, content, worker_url=worker_url)
+
+    log.info("Step 3/4 · Building archive page …")
     build_archive(season, content, seasons)
+
+    log.info("Step 4/4 · Rebuilding website homepage …")
+    build_website(season, content, worker_url=worker_url)
 
     log.info("Done ✓")
 

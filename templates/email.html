@@ -58,6 +58,32 @@
           </td>
         </tr>
 
+        <!-- ── TLDR SUMMARY CARD ── -->
+        <tr>
+          <td style="background-color:#edeae3;border-top:2px solid {{ accent_color }};padding:16px 36px;">
+            {% set days_in_month = [0,31,28,31,30,31,30,31,31,30,31,30,31] %}
+            {% set ns = namespace(end_day=season.start_day + 4, end_month=season.start_month) %}
+            {% if ns.end_day > days_in_month[season.start_month] %}
+              {% set ns.end_day = ns.end_day - days_in_month[season.start_month] %}
+              {% set ns.end_month = ns.end_month + 1 %}
+            {% endif %}
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="64" valign="top" style="font-family:system-ui,-apple-system,sans-serif;font-size:10px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#888780;padding:3px 0;white-space:nowrap;">Sekki</td>
+                <td valign="top" style="font-family:system-ui,-apple-system,sans-serif;font-size:13px;color:#2c2c2a;padding:3px 0 3px 16px;line-height:1.5;">{{ season.sekki }}</td>
+              </tr>
+              <tr>
+                <td width="64" valign="top" style="font-family:system-ui,-apple-system,sans-serif;font-size:10px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#888780;padding:3px 0;white-space:nowrap;">Dates</td>
+                <td valign="top" style="font-family:system-ui,-apple-system,sans-serif;font-size:13px;color:#2c2c2a;padding:3px 0 3px 16px;line-height:1.5;">{{ months_short[season.start_month] }} {{ season.start_day }} → {{ months_short[ns.end_month] }} {{ ns.end_day }}</td>
+              </tr>
+              <tr>
+                <td width="64" valign="top" style="font-family:system-ui,-apple-system,sans-serif;font-size:10px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#888780;padding:3px 0;white-space:nowrap;">Right now</td>
+                <td valign="top" style="font-family:system-ui,-apple-system,sans-serif;font-size:13px;color:#2c2c2a;padding:3px 0 3px 16px;line-height:1.5;">{{ content.summary }}</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
         <!-- ── OPENING (serif, 17px, Washi bg) ── -->
         <tr>
           <td style="background-color:#f5f3ee;padding:36px 36px 0 36px;">
@@ -67,18 +93,9 @@
           </td>
         </tr>
 
-        <!-- ── DIVIDER ── -->
-        <tr>
-          <td style="background-color:#f5f3ee;padding:28px 36px;">
-            <table width="100%" cellpadding="0" cellspacing="0" border="0">
-              <tr><td style="border-top:1px solid #d8d5ce;font-size:0;line-height:0;">&nbsp;</td></tr>
-            </table>
-          </td>
-        </tr>
-
         <!-- ── NATURE NOTES ── -->
         <tr>
-          <td style="background-color:#f5f3ee;padding:0 36px;">
+          <td style="background-color:#f5f3ee;padding:20px 36px 0 36px;">
             <p style="margin:0 0 10px 0;font-family:system-ui,-apple-system,sans-serif;font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#888780;">
               Nature Notes
             </p>
@@ -214,15 +231,24 @@
           </td>
         </tr>
 
+        <!-- ── FORWARD NUDGE ── -->
+        <tr>
+          <td style="background-color:#f5f3ee;padding:0 36px 32px 36px;text-align:center;">
+            <p style="margin:0;font-family:system-ui,-apple-system,sans-serif;font-size:12px;color:#888780;line-height:1.7;">
+              Forwarded this? <a href="https://ko-72.com" style="color:#888780;text-decoration:underline;">Subscribe at ko-72.com</a>
+            </p>
+          </td>
+        </tr>
+
         <!-- ── FOOTER (11px Stone, centered) ── -->
         <tr>
           <td style="background-color:#e8e5de;padding:22px 36px;border-top:1px solid #d8d5ce;">
             <p style="margin:0;font-family:system-ui,-apple-system,sans-serif;font-size:11px;color:#888780;text-align:center;letter-spacing:0.04em;">
               <a href="{{ archive_url | default('#') }}" style="color:#888780;text-decoration:none;">View in browser</a>
               &nbsp;·&nbsp;
-              <a href="{{ archive_url | default('#') }}" style="color:#888780;text-decoration:none;">Archive</a>
+              <a href="https://ko-72.com/archive/" style="color:#888780;text-decoration:none;">Archive</a>
               &nbsp;·&nbsp;
-              <span>Unsubscribe</span>
+              <a href="{{ unsubscribe_url | default('https://ko-72.com/unsubscribe.html') }}" style="color:#888780;text-decoration:none;">Unsubscribe</a>
             </p>
           </td>
         </tr>

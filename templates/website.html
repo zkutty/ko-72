@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kō — Japan's 72 micro-seasons</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  :root {
+    --ink:    #1a1a18;
+    --washi:  #f5f3ee;
+    --stone:  #888780;
+    --deep:   #2c2c2a;
+    --rule:   #d8d5ce;
+    --shell:  #e8e5de;
+    --accent: {{ accent_color }};
+  }
+  html, body { margin: 0; padding: 0; background: var(--shell); }
+  body { font-family: system-ui, -apple-system, sans-serif; color: var(--deep); line-height: 1.8; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .card { max-width: 600px; margin: 0 auto; background: var(--washi); }
+
+  .hdr { background: var(--ink); padding: 40px 40px 36px; }
+  .hdr-logo { font-family: Georgia, serif; font-size: 28px; color: var(--washi); margin: 0 0 4px 0; letter-spacing: 0.02em; }
+  .hdr-logo .kanji { font-family: system-ui, sans-serif; font-size: 16px; color: var(--stone); margin-left: 10px; }
+  .hdr-tagline { font-size: 13px; color: var(--stone); margin: 0; letter-spacing: 0.06em; text-transform: uppercase; }
+  .hdr-rule { border: none; border-top: 1px solid #333330; margin: 24px 0; }
+
+  .hdr-label { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin: 0 0 12px 0; }
+  .hdr-name { font-family: Georgia, serif; font-size: 30px; color: var(--washi); margin: 0 0 10px 0; line-height: 1.25; letter-spacing: -0.01em; }
+  .hdr-romaji { font-size: 14px; color: var(--stone); margin: 0; letter-spacing: 0.02em; }
+  .hdr-romaji .jp { font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif; }
+
+  .body { padding: 0 40px; }
+  .section { padding: 32px 0; border-bottom: 1px solid var(--rule); }
+  .section:last-child { border-bottom: none; }
+  .opening { font-family: Georgia, serif; font-size: 18px; line-height: 1.9; color: var(--deep); margin: 0; }
+
+  .haiku { text-align: center; padding: 36px 24px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); margin: 32px 0; }
+  .haiku p { margin: 0 0 4px 0; font-family: Georgia, serif; font-style: italic; font-size: 15px; line-height: 2.2; color: var(--stone); }
+  .haiku .jp { font-family: Georgia, 'Hiragino Mincho ProN', 'Yu Mincho', serif; font-size: 20px; letter-spacing: 0.2em; font-style: normal; }
+
+  /* ── SIGNUP FORM ── */
+  .signup { background: var(--ink); padding: 40px; text-align: center; }
+  .signup-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--stone); margin: 0 0 12px 0; }
+  .signup-heading { font-family: Georgia, serif; font-size: 20px; color: var(--washi); margin: 0 0 8px 0; }
+  .signup-sub { font-size: 13px; color: var(--stone); margin: 0 0 28px 0; line-height: 1.6; }
+  .signup-form { display: flex; gap: 0; max-width: 380px; margin: 0 auto; }
+  .signup-input {
+    flex: 1;
+    padding: 12px 16px;
+    font-size: 14px;
+    border: 1px solid #333330;
+    border-right: none;
+    background: #111110;
+    color: var(--washi);
+    outline: none;
+    font-family: system-ui, sans-serif;
+  }
+  .signup-input::placeholder { color: #555552; }
+  .signup-input:focus { border-color: var(--accent); }
+  .signup-btn {
+    padding: 12px 20px;
+    background: var(--accent);
+    color: var(--washi);
+    border: none;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: system-ui, sans-serif;
+    white-space: nowrap;
+  }
+  .signup-btn:hover { opacity: 0.88; }
+  .signup-note { font-size: 11px; color: #555552; margin: 14px 0 0 0; }
+  .signup-success { display: none; font-size: 14px; color: var(--accent); margin: 0; }
+
+  .footer { background: var(--shell); padding: 22px 40px; border-top: 1px solid var(--rule); text-align: center; font-size: 11px; color: var(--stone); letter-spacing: 0.04em; }
+  .footer a { color: var(--stone); }
+
+  @media (max-width: 640px) {
+    .hdr { padding: 28px 24px 24px; }
+    .body { padding: 0 24px; }
+    .signup { padding: 32px 24px; }
+    .signup-form { flex-direction: column; }
+    .signup-input { border-right: 1px solid #333330; border-bottom: none; }
+    .footer { padding: 18px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+
+  <header class="hdr">
+    <p class="hdr-logo">Kō<span class="kanji">候</span></p>
+    <p class="hdr-tagline">Japan's 72 micro-seasons</p>
+    <hr class="hdr-rule">
+    {% set months_short = ['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'] %}
+    <p class="hdr-label">{{ season.major_season | capitalize }} &nbsp;·&nbsp; Now: micro-season {{ '%02d' | format(season.id) }} of 72 &nbsp;·&nbsp; {{ months_short[season.start_month] }} {{ season.start_day }}</p>
+    <p class="hdr-name">{{ season.name_en }}</p>
+    <p class="hdr-romaji">{{ season.name_romaji }} &nbsp;·&nbsp; <span class="jp">{{ season.name_jp }}</span></p>
+  </header>
+
+  <div class="body">
+    <section class="section">
+      <p class="opening">{{ content.opening }}</p>
+    </section>
+
+    <div class="haiku">
+      <p class="jp">{{ content.haiku.japanese }}</p>
+      <p>{{ content.haiku.romaji }}</p>
+      <p>{{ content.haiku.english }}</p>
+    </div>
+
+    <section class="section" style="text-align:center;padding:24px 0;">
+      <a href="{{ archive_page_url }}" style="font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);">Read this issue →</a>
+      &nbsp;&nbsp;
+      <a href="/archive/" style="font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--stone);">All seasons</a>
+    </section>
+  </div>
+
+  <!-- Signup -->
+  <div class="signup">
+    <p class="signup-eyebrow">Newsletter</p>
+    <p class="signup-heading">One letter, every five days.</p>
+    <p class="signup-sub">Each micro-season, a note on nature, food, and the quietly turning year.</p>
+    <form class="signup-form" id="signupForm">
+      <input class="signup-input" type="email" name="email" placeholder="your@email.com" required>
+      <button class="signup-btn" type="submit">Subscribe</button>
+    </form>
+    <p class="signup-note">No spam. Unsubscribe any time.</p>
+    <p class="signup-success" id="signupSuccess">You're on the list.</p>
+  </div>
+
+  <footer class="footer">
+    <p style="margin:0;">
+      <a href="/archive/">Archive</a>
+      &nbsp;·&nbsp;
+      Kō &nbsp;·&nbsp; Japan's 72 micro-seasons
+      &nbsp;·&nbsp;
+      <a href="/unsubscribe.html">Unsubscribe</a>
+    </p>
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById('signupForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const email = this.email.value;
+    const btn = this.querySelector('button');
+    btn.disabled = true;
+    btn.textContent = '…';
+    try {
+      const res = await fetch('{{ worker_url }}/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+      if (res.ok) {
+        this.style.display = 'none';
+        document.getElementById('signupNote') && (document.getElementById('signupNote').style.display = 'none');
+        document.getElementById('signupSuccess').style.display = 'block';
+      } else {
+        btn.disabled = false;
+        btn.textContent = 'Subscribe';
+        alert('Something went wrong — please try again.');
+      }
+    } catch {
+      btn.disabled = false;
+      btn.textContent = 'Subscribe';
+      alert('Something went wrong — please try again.');
+    }
+  });
+</script>
+
+</body>
+</html>

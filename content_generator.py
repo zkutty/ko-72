@@ -45,6 +45,7 @@ Date: {season['start_month']}/{season['start_day']}
 Return a JSON object with exactly these fields:
 
 {{
+  "summary": "One sentence, plain language, what defines this micro-season — what you'd notice if you stepped outside",
   "opening": "A poetic 2-3 sentence description evoking the atmosphere of this specific 5-day \
 micro-season. Ground it in the senses — what one sees, hears, smells, or feels outside in Japan right now.",
   "nature_notes": "2-3 sentences describing what is happening in nature during this exact period: \

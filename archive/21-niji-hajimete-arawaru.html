@@ -3,249 +3,375 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>七十二候 #21: 虹始見 — First rainbows appear</title>
+<title>Kō — First rainbows appear</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; }
+
   :root {
-    --ink:    #2a2520;
-    --mid:    #3d3530;
-    --soft:   #5a504a;
-    --muted:  #8a7e74;
-    --rule:   #d6cfc4;
-    --bg:     #faf8f5;
-    --paper:  #f5f2ed;
-    --tint:   #f0ece6;
-    --accent: #7a6e5a;
+    --ink:    #1a1a18;
+    --washi:  #f5f3ee;
+    --stone:  #888780;
+    --deep:   #2c2c2a;
+    --rule:   #d8d5ce;
+    --shell:  #e8e5de;
+    --dish-bg:#eeece7;
+    --accent: #6b8f71;
   }
-  html { background: var(--paper); }
+
+  html, body { margin: 0; padding: 0; background: var(--shell); }
   body {
-    margin: 0;
-    padding: 64px 24px;
-    background: var(--paper);
-    font-family: Georgia, 'Hiragino Mincho ProN', 'Yu Mincho', 'MS Mincho', serif;
-    color: var(--mid);
+    font-family: system-ui, -apple-system, sans-serif;
+    color: var(--deep);
     line-height: 1.8;
+    font-size: 15px;
   }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
 
-  /* Layout */
-  .page { max-width: 660px; margin: 0 auto; }
-
-  /* Nav */
+  /* ── NAV (dark bar above header) ── */
   .nav {
+    background: #111110;
+    padding: 12px 24px;
+  }
+  .nav-inner {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .nav a {
     font-size: 12px;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 52px;
-    border-bottom: 1px solid var(--rule);
-    padding-bottom: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    color: var(--stone);
+    text-decoration: none;
   }
-  .nav-brand { font-size: 14px; letter-spacing: 0.22em; color: var(--ink); }
+  .nav a:hover { color: var(--washi); }
 
-  /* Header */
-  .header { text-align: center; padding: 48px 0; border-bottom: 1px solid var(--rule); }
-  .header .counter {
-    font-size: 11px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 24px;
+  /* ── CARD ── */
+  .card {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--washi);
   }
-  .header .ornament { color: var(--rule); font-size: 10px; letter-spacing: 0.3em; margin-bottom: 24px; }
-  .header .jp {
-    font-family: 'Hiragino Mincho ProN', 'Yu Mincho', 'MS Mincho', serif;
-    font-size: 44px;
+
+  /* ── HEADER BAND (Ink) ── */
+  .hdr {
+    background: var(--ink);
+    padding: 32px 36px 28px;
+  }
+  .hdr-logo {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 22px;
     font-weight: 400;
-    letter-spacing: 0.18em;
-    color: var(--ink);
-    margin-bottom: 8px;
+    color: var(--washi);
+    letter-spacing: 0.02em;
+    margin: 0;
+    line-height: 1;
   }
-  .header .romaji { font-size: 14px; letter-spacing: 0.12em; color: var(--muted); font-style: italic; margin-bottom: 10px; }
-  .header .english { font-size: 19px; color: var(--ink); font-weight: 400; margin-bottom: 16px; }
-  .header .meta { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
+  .hdr-logo .kanji {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 14px;
+    color: var(--stone);
+    margin-left: 10px;
+  }
+  .hdr-rule {
+    border: none;
+    border-top: 1px solid #333330;
+    margin: 20px 0;
+  }
+  .hdr-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 14px 0;
+  }
+  .hdr-name {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    color: var(--washi);
+    margin: 0 0 10px 0;
+    line-height: 1.3;
+  }
+  .hdr-romaji {
+    font-size: 14px;
+    color: var(--stone);
+    margin: 0;
+    letter-spacing: 0.02em;
+  }
+  .hdr-romaji .jp {
+    font-family: 'Hiragino Mincho ProN', 'Yu Mincho', 'MS Mincho', serif;
+  }
 
-  /* Sections */
-  .section { padding: 40px 0; border-bottom: 1px solid var(--rule); }
+  /* ── BODY SECTIONS ── */
+  .body { padding: 0 36px; }
+
+  .section {
+    padding: 28px 0;
+    border-bottom: 1px solid var(--rule);
+  }
   .section:last-child { border-bottom: none; }
-  .section-label {
-    font-size: 10px;
-    letter-spacing: 0.24em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 14px;
-  }
-  .section p { margin: 0; font-size: 16px; line-height: 1.85; color: var(--mid); }
 
-  /* Produce table */
-  .produce-grid { display: flex; gap: 0; }
-  .produce-col { flex: 1; text-align: center; }
-  .produce-col:not(:last-child) { border-right: 1px solid var(--rule); padding-right: 20px; margin-right: 20px; }
-  .produce-col-label {
-    font-size: 10px;
-    letter-spacing: 0.18em;
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 12px;
+    color: var(--stone);
+    margin: 0 0 12px 0;
+  }
+
+  /* Opening (serif) */
+  .opening {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 17px;
+    line-height: 1.9;
+    color: var(--deep);
+    margin: 0;
+  }
+
+  /* Body copy (sans) */
+  .body-copy {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--deep);
+    margin: 0;
+  }
+
+  /* ── PRODUCE GRID ── */
+  .produce-grid {
+    display: flex;
+    gap: 0;
+  }
+  .produce-col {
+    flex: 1;
+    text-align: center;
+    padding: 0 14px;
+    border-right: 1px solid var(--rule);
+  }
+  .produce-col:first-child { padding-left: 0; }
+  .produce-col:last-child  { padding-right: 0; border-right: none; }
+
+  .produce-col-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 10px 0;
     padding-bottom: 8px;
     border-bottom: 1px solid var(--rule);
   }
-  .produce-col p { font-size: 14px; margin: 0 0 6px 0; color: var(--mid); }
+  .produce-col p {
+    font-size: 13px;
+    margin: 0 0 6px 0;
+    color: var(--deep);
+    line-height: 1.5;
+  }
 
-  /* Dishes */
-  .dish { background: var(--tint); border-left: 2px solid var(--rule); padding: 14px 18px; margin-bottom: 12px; }
-  .dish-name { font-size: 15px; font-weight: bold; color: var(--ink); margin-bottom: 4px; }
-  .dish-desc { font-size: 13px; line-height: 1.65; color: var(--soft); margin: 0; }
+  /* ── DISHES ── */
+  .dish {
+    border-left: 3px solid var(--accent);
+    background: var(--dish-bg);
+    padding: 14px 16px;
+    margin-bottom: 12px;
+  }
+  .dish-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--deep);
+    margin: 0 0 5px 0;
+  }
+  .dish-desc {
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--stone);
+    margin: 0;
+  }
 
-  /* Haiku */
+  /* ── CULTURAL NOTE ── */
+  .cultural-note {
+    border-left: 3px solid var(--accent);
+    padding: 10px 16px;
+  }
+
+  /* ── HAIKU ── */
   .haiku {
     text-align: center;
-    padding: 48px 40px;
+    padding: 40px 24px;
     border-top: 1px solid var(--rule);
     border-bottom: 1px solid var(--rule);
-    margin: 40px 0;
+    margin: 28px 0;
   }
-  .haiku .jp-text {
-    font-family: 'Hiragino Mincho ProN', 'Yu Mincho', 'MS Mincho', serif;
-    font-size: 24px;
-    letter-spacing: 0.24em;
-    color: var(--ink);
+  .haiku-jp {
+    font-family: Georgia, 'Hiragino Mincho ProN', 'Yu Mincho', 'MS Mincho', serif;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    color: var(--stone);
     line-height: 2.2;
-    margin-bottom: 16px;
+    margin: 0 0 4px 0;
   }
-  .haiku .romaji-text { font-size: 14px; letter-spacing: 0.1em; color: var(--muted); font-style: italic; margin-bottom: 10px; }
-  .haiku .en-text { font-size: 15px; color: var(--soft); letter-spacing: 0.04em; }
+  .haiku-romaji {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 2.2;
+    color: var(--stone);
+    letter-spacing: 0.04em;
+    margin: 0 0 4px 0;
+  }
+  .haiku-en {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 2.2;
+    color: var(--stone);
+    margin: 0;
+  }
 
-  /* Closing */
-  .closing { text-align: center; font-size: 16px; font-style: italic; color: var(--mid); padding: 40px 0; }
+  /* ── CLOSING ── */
+  .closing {
+    text-align: center;
+    font-size: 13px;
+    color: var(--stone);
+    padding: 28px 0 0;
+  }
 
-  /* Footer */
-  footer {
-    margin-top: 64px;
-    padding-top: 24px;
+  /* ── FOOTER ── */
+  .footer {
+    background: var(--shell);
+    padding: 20px 36px;
     border-top: 1px solid var(--rule);
     text-align: center;
-    font-size: 12px;
-    letter-spacing: 0.1em;
-    color: var(--muted);
+    font-size: 11px;
+    color: var(--stone);
+    letter-spacing: 0.04em;
+  }
+  .footer a { color: var(--stone); }
+  .footer a:hover { color: var(--deep); text-decoration: none; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 640px) {
+    .hdr       { padding: 24px 20px 22px; }
+    .body      { padding: 0 20px; }
+    .footer    { padding: 18px 20px; }
+    .hdr-name  { font-size: 22px; }
+
+    .produce-grid { flex-direction: column; gap: 0; }
+    .produce-col {
+      border-right: none;
+      border-bottom: 1px solid var(--rule);
+      padding: 0 0 16px 0;
+      margin-bottom: 16px;
+    }
+    .produce-col:last-child { border-bottom: none; margin-bottom: 0; }
   }
 </style>
 </head>
 <body>
-<div class="page">
 
-  <!-- Nav -->
-  <nav class="nav">
-    <span class="nav-brand">七十二候</span>
-    <a href="index.html">← Archive</a>
-  </nav>
+<!-- Nav (full-width dark bar) -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html">← All seasons</a>
+  </div>
+</nav>
 
-  <!-- Header -->
-  <header class="header">
-    <p class="counter">Season 21 / 72</p>
-    <p class="ornament">◆ &nbsp;&nbsp; ◆ &nbsp;&nbsp; ◆</p>
-    <p class="jp">虹始見</p>
-    <p class="romaji">Niji hajimete arawaru</p>
-    <p class="english">First rainbows appear</p>
+<div class="card">
+
+  <!-- ── HEADER BAND ── -->
+  <header class="hdr">
+    <p class="hdr-logo">Kō<span class="kanji">候</span></p>
+    <hr class="hdr-rule">
     
-    <p class="meta">Seimei (清明) &nbsp;·&nbsp; April 15</p>
+    <p class="hdr-label">Spring &nbsp;·&nbsp; Micro-season 21 of 72 &nbsp;·&nbsp; Apr 15</p>
+    <p class="hdr-name">First rainbows appear</p>
+    <p class="hdr-romaji">Niji hajimete arawaru &nbsp;·&nbsp; <span class="jp">虹始見</span></p>
   </header>
 
-  <!-- Opening -->
-  <section class="section">
-    <p>After the rain passes, the air holds a peculiar brightness — half-wet, half-lit, as if the sky cannot decide between weeping and smiling. You step outside and there it hangs: the season&#39;s first rainbow, its colors bleeding softly into the still-dripping eaves. The scent of soaked earth and cherry petals mingles with something electric, something clean.</p>
-  </section>
+  <!-- ── BODY ── -->
+  <div class="body">
 
-  <!-- Nature Notes -->
-  <section class="section">
-    <p class="section-label">Nature Notes</p>
-    <p>Swallows have arrived in earnest now, their forked tails scissoring through the humid air as they hunt insects stirred up by spring showers. The last mountain cherries shed their petals into swollen streams, while wisteria begins to unfurl its heavy purple racemes along temple walls. The sky alternates between dramatic cloud-towers and sudden clearings where light falls in cathedral shafts.</p>
-  </section>
+    <!-- Opening (serif) -->
+    <section class="section">
+      <p class="opening">After a brief spring shower, the air holds a crystalline stillness, and there — arching over the cedar-dark mountains — the first rainbow of the year materializes like a half-remembered dream. The light has shifted into something new: no longer the pale wash of early spring but a luminous clarity that makes every wet leaf gleam. One can smell the earth breathing, petrichor mingling with the green scent of bamboo shoots pushing through damp soil.</p>
+    </section>
 
-  <!-- In Season -->
-  <section class="section">
-    <p class="section-label" style="text-align:center;">In Season</p>
-    <div class="produce-grid">
-      <div class="produce-col">
-        <p class="produce-col-label">Fruits</p>
-        
-        <p>Amanatsu (sweet summer orange)</p>
-        
-        <p>Strawberries (late season)</p>
-        
-        <p>Kiwi (domestic)</p>
-        
-        <p>Biwa (early loquat)</p>
-        
+    <!-- Nature Notes -->
+    <section class="section">
+      <p class="section-label">Nature Notes</p>
+      <p class="body-copy">The swallows have fully claimed the eaves now, their chittering a constant underscore to the lengthening days. Cherry blossoms have mostly fallen, but in their wake the yamabuki (kerria) blazes golden along stream banks and temple walls. Frogs have begun their evening chorus in the rice paddies, and the afternoon skies build tall cumulus clouds that release brief, warm rains — the very rains that conjure these first rainbows.</p>
+    </section>
+
+    <!-- In Season -->
+    <section class="section">
+      <p class="section-label" style="text-align:center;">In Season</p>
+      <div class="produce-grid">
+        <div class="produce-col">
+          <p class="produce-col-label">Fruits</p>
+          <p>Amanatsu (sweet summer orange)</p><p>Biwa (loquat) early harvest</p><p>Ichigo (strawberry)</p><p>Natsu mikan</p>
+        </div>
+        <div class="produce-col">
+          <p class="produce-col-label">Vegetables</p>
+          <p>Takenoko (bamboo shoots)</p><p>Nanohana (rapeseed blossoms)</p><p>Shungiku (garland chrysanthemum)</p><p>Sanshō no me (young sansho leaves)</p>
+        </div>
+        <div class="produce-col">
+          <p class="produce-col-label">Fish</p>
+          <p>Sawara (Spanish mackerel)</p><p>Shirauo (whitebait)</p><p>Hotaru ika (firefly squid)</p>
+        </div>
       </div>
-      <div class="produce-col">
-        <p class="produce-col-label">Vegetables</p>
-        
-        <p>Takenoko (bamboo shoots)</p>
-        
-        <p>Sansai (mountain vegetables)</p>
-        
-        <p>Spring cabbage</p>
-        
-        <p>Shin-tamanegi (new onions)</p>
-        
+    </section>
+
+    <!-- At the Table -->
+    <section class="section">
+      <p class="section-label">At the Table</p>
+      
+      <div class="dish">
+        <p class="dish-name">Takenoko gohan</p>
+        <p class="dish-desc">Rice cooked with fresh bamboo shoots, their sweetness most fleeting and prized in these very days before the shoots toughen.</p>
       </div>
-      <div class="produce-col">
-        <p class="produce-col-label">From the Sea</p>
-        
-        <p>Sayori (halfbeak)</p>
-        
-        <p>Tai (sea bream)</p>
-        
-        <p>Shirasu (whitebait)</p>
-        
+      
+      <div class="dish">
+        <p class="dish-name">Sawara no saikyo-yaki</p>
+        <p class="dish-desc">Spanish mackerel marinated in sweet white miso and grilled until caramelized — sawara meaning &#39;spring-fish&#39; in its characters, the kanji itself an instruction to eat it now.</p>
       </div>
+      
+    </section>
+
+    <!-- Cultural Note -->
+    <section class="section">
+      <p class="section-label">Cultural Note</p>
+      <div class="cultural-note">
+        <p class="body-copy">This period falls within the Seimei festival season, when families visit ancestral graves to clean the stones and offer fresh flowers — a practice called haka-mairi. The name Seimei itself means &#39;pure brightness,&#39; describing both the clarified atmosphere and the spiritual clarity sought through honoring one&#39;s lineage. In some regions, people believe rainbows during this time are bridges the spirits use to return briefly to the living world.</p>
+      </div>
+    </section>
+
+    <!-- Haiku (serif italic, Stone) -->
+    <div class="haiku">
+      <p class="haiku-jp">虹立ちて村の時計の鳴り渡る</p>
+      <p class="haiku-romaji">niji tachite mura no tokei no nari wataru</p>
+      <p class="haiku-en">A rainbow rises — across the village, the clock tower chimes through the clearing air</p>
     </div>
-  </section>
 
-  <!-- Seasonal Dishes -->
-  <section class="section">
-    <p class="section-label">At the Table</p>
-    
-    <div class="dish">
-      <p class="dish-name">Takenoko gohan</p>
-      <p class="dish-desc">Rice cooked with young bamboo shoots and a whisper of soy — the dish captures the forest floor&#39;s brief, tender offering before the stalks harden.</p>
+    <!-- Closing (13px, Stone, centered) -->
+    <div class="closing">
+      <p style="margin:0;">The rainbow fades as quietly as it came, leaving only the dripping eaves and a silence that feels, somehow, more spacious than before.</p>
     </div>
-    
-    <div class="dish">
-      <p class="dish-name">Tai no shioyaki</p>
-      <p class="dish-desc">Salt-grilled sea bream, its flesh at peak sweetness during spawning season, served whole as it has been for spring celebrations since ancient times.</p>
-    </div>
-    
-  </section>
 
-  <!-- Cultural Note -->
-  <section class="section">
-    <p class="section-label">Cultural Note</p>
-    <p>This period falls during the height of hanami&#39;s quieter second act, when people visit yama-zakura in the hills rather than fighting crowds beneath city somei-yoshino. It is also a traditional time for kaitori, the reading of the sky — farmers and fishermen watch the shape and position of rainbows to predict the coming days&#39; weather, a practice now mostly forgotten but once essential to the planting calendar.</p>
-  </section>
-
-  <!-- Haiku -->
-  <div class="haiku">
-    <p class="jp-text">虹立ちて 子らの声する 水たまり</p>
-    <p class="romaji-text">niji tachite / kora no koe suru / mizutamari</p>
-    <p class="en-text">A rainbow rises — / children&#39;s voices carry from / the puddles below</p>
-  </div>
-
-  <!-- Closing -->
-  <div class="closing">
-    <p>By evening the colors will have dissolved into ordinary dusk, but the children will speak of the rainbow for days, as if they had witnessed something that chose to appear only for them.</p>
-  </div>
+  </div><!-- /body -->
 
   <!-- Footer -->
-  <footer>
-    <p>七十二候 &nbsp;·&nbsp; <a href="index.html">Return to archive</a></p>
+  <footer class="footer">
+    <p style="margin:0;">
+      <a href="index.html">← All seasons</a>
+      &nbsp;·&nbsp;
+      Kō &nbsp;·&nbsp; Japan's 72 micro-seasons, one at a time
+    </p>
   </footer>
 
-</div>
+</div><!-- /card -->
+
 </body>
 </html>

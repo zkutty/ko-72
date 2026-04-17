@@ -1,5 +1,5 @@
 """
-Build static HTML archive pages for published micro-seasons.
+Build static HTML archive pages and website homepage for published micro-seasons.
 """
 
 from datetime import date
@@ -10,6 +10,7 @@ from jinja2 import Environment, FileSystemLoader
 
 ARCHIVE_DIR = Path(__file__).parent / "archive"
 TEMPLATE_DIR = Path(__file__).parent / "templates"
+ROOT_DIR = Path(__file__).parent
 
 ACCENT_COLORS = {
     "Spring": "#6b8f71",
@@ -24,18 +25,10 @@ def _season_filename(season: dict) -> str:
 
 
 def build_archive(season: dict, content: dict, all_seasons: list) -> None:
-    """Render and write an individual season page, then regenerate the index.
-
-    Args:
-        season: Season metadata dict from seasons.json.
-        content: Generated content dict from content_generator.
-        all_seasons: Full list of season dicts (for the index).
-    """
     ARCHIVE_DIR.mkdir(exist_ok=True)
 
     env = Environment(loader=FileSystemLoader(str(TEMPLATE_DIR)), autoescape=True)
 
-    # ── individual season page ──────────────────────────────────────────────
     page_template = env.get_template("archive_page.html")
     today = date.today()
     accent_color = ACCENT_COLORS.get(season["major_season"].capitalize(), "#888780")
@@ -45,12 +38,10 @@ def build_archive(season: dict, content: dict, all_seasons: list) -> None:
     (ARCHIVE_DIR / filename).write_text(html, encoding="utf-8")
     print(f"Archive page written: archive/{filename}")
 
-    # ── regenerate index ────────────────────────────────────────────────────
     _build_index(env, all_seasons)
 
 
 def _build_index(env: Environment, all_seasons: list) -> None:
-    """Regenerate archive/index.html listing all published seasons."""
     published = []
     for s in all_seasons:
         filename = _season_filename(s)
@@ -61,3 +52,21 @@ def _build_index(env: Environment, all_seasons: list) -> None:
     html = index_template.render(published=published)
     (ARCHIVE_DIR / "index.html").write_text(html, encoding="utf-8")
     print(f"Archive index updated — {len(published)} season(s) published.")
+
+
+def build_website(season: dict, content: dict, worker_url: str = "https://subscribe.ko-72.com") -> None:
+    env = Environment(loader=FileSystemLoader(str(TEMPLATE_DIR)), autoescape=True)
+    template = env.get_template("website.html")
+
+    accent_color = ACCENT_COLORS.get(season["major_season"].capitalize(), "#888780")
+    archive_page_url = f"/archive/{_season_filename(season)}"
+
+    html = template.render(
+        season=season,
+        content=content,
+        accent_color=accent_color,
+        archive_page_url=archive_page_url,
+        worker_url=worker_url,
+    )
+    (ROOT_DIR / "index.html").write_text(html, encoding="utf-8")
+    print("Website homepage rebuilt: index.html")

@@ -15,6 +15,7 @@
     --rule:   #d8d5ce;
     --shell:  #e8e5de;
     --dish-bg:#eeece7;
+    --tint:   #edeae3;
     --accent: {{ accent_color }};
   }
 
@@ -252,6 +253,32 @@
   .footer a { color: var(--stone); }
   .footer a:hover { color: var(--deep); text-decoration: none; }
 
+  /* ── TLDR CARD ── */
+  .tldr {
+    background: var(--tint);
+    border-top: 2px solid var(--accent);
+    padding: 16px 36px;
+  }
+  .tldr-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 6px 16px;
+    align-items: baseline;
+  }
+  .tldr-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--stone);
+    white-space: nowrap;
+  }
+  .tldr-value {
+    font-size: 13px;
+    color: var(--deep);
+    line-height: 1.5;
+  }
+
   /* ── RESPONSIVE ── */
   @media (max-width: 640px) {
     .hdr       { padding: 24px 20px 22px; }
@@ -291,17 +318,31 @@
     <p class="hdr-romaji">{{ season.name_romaji }} &nbsp;·&nbsp; <span class="jp">{{ season.name_jp }}</span></p>
   </header>
 
+  <!-- ── TLDR SUMMARY CARD ── -->
+  {% set days_in_month = [0,31,28,31,30,31,30,31,31,30,31,30,31] %}
+  {% set ns = namespace(end_day=season.start_day + 4, end_month=season.start_month) %}
+  {% if ns.end_day > days_in_month[season.start_month] %}
+    {% set ns.end_day = ns.end_day - days_in_month[season.start_month] %}
+    {% set ns.end_month = ns.end_month + 1 %}
+  {% endif %}
+  <div class="tldr">
+    <div class="tldr-grid">
+      <span class="tldr-label">Sekki</span>
+      <span class="tldr-value">{{ season.sekki }}</span>
+      <span class="tldr-label">Dates</span>
+      <span class="tldr-value">{{ months_short[season.start_month] }} {{ season.start_day }} → {{ months_short[ns.end_month] }} {{ ns.end_day }}</span>
+      <span class="tldr-label">Right now</span>
+      <span class="tldr-value">{{ content.summary }}</span>
+    </div>
+  </div>
+
   <!-- ── BODY ── -->
   <div class="body">
 
-    <!-- Opening (serif) -->
+    <!-- Opening + Nature Notes -->
     <section class="section">
       <p class="opening">{{ content.opening }}</p>
-    </section>
-
-    <!-- Nature Notes -->
-    <section class="section">
-      <p class="section-label">Nature Notes</p>
+      <p class="section-label" style="margin-top:24px;">Nature Notes</p>
       <p class="body-copy">{{ content.nature_notes }}</p>
     </section>
 
