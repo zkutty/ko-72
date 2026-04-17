@@ -15,6 +15,7 @@
     --rule:   #d8d5ce;
     --shell:  #e8e5de;
     --dish-bg:#eeece7;
+    --tint:   #edeae3;
     --accent: #6b8f71;
   }
 
@@ -252,6 +253,32 @@
   .footer a { color: var(--stone); }
   .footer a:hover { color: var(--deep); text-decoration: none; }
 
+  /* ── TLDR CARD ── */
+  .tldr {
+    background: var(--tint);
+    border-top: 2px solid var(--accent);
+    padding: 16px 36px;
+  }
+  .tldr-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 6px 16px;
+    align-items: baseline;
+  }
+  .tldr-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--stone);
+    white-space: nowrap;
+  }
+  .tldr-value {
+    font-size: 13px;
+    color: var(--deep);
+    line-height: 1.5;
+  }
+
   /* ── RESPONSIVE ── */
   @media (max-width: 640px) {
     .hdr       { padding: 24px 20px 22px; }
@@ -291,18 +318,29 @@
     <p class="hdr-romaji">Niji hajimete arawaru &nbsp;·&nbsp; <span class="jp">虹始見</span></p>
   </header>
 
+  <!-- ── TLDR SUMMARY CARD ── -->
+  
+  
+  
+  <div class="tldr">
+    <div class="tldr-grid">
+      <span class="tldr-label">Sekki</span>
+      <span class="tldr-value">Seimei</span>
+      <span class="tldr-label">Dates</span>
+      <span class="tldr-value">Apr 15 → Apr 19</span>
+      <span class="tldr-label">Right now</span>
+      <span class="tldr-value">After spring showers, the year&#39;s first rainbows arc across clearing skies, their colors soft and fleeting against the pale blue.</span>
+    </div>
+  </div>
+
   <!-- ── BODY ── -->
   <div class="body">
 
-    <!-- Opening (serif) -->
+    <!-- Opening + Nature Notes -->
     <section class="section">
-      <p class="opening">After a brief spring shower, the air holds a crystalline stillness, and there — arching over the cedar-dark mountains — the first rainbow of the year materializes like a half-remembered dream. The light has shifted into something new: no longer the pale wash of early spring but a luminous clarity that makes every wet leaf gleam. One can smell the earth breathing, petrichor mingling with the green scent of bamboo shoots pushing through damp soil.</p>
-    </section>
-
-    <!-- Nature Notes -->
-    <section class="section">
-      <p class="section-label">Nature Notes</p>
-      <p class="body-copy">The swallows have fully claimed the eaves now, their chittering a constant underscore to the lengthening days. Cherry blossoms have mostly fallen, but in their wake the yamabuki (kerria) blazes golden along stream banks and temple walls. Frogs have begun their evening chorus in the rice paddies, and the afternoon skies build tall cumulus clouds that release brief, warm rains — the very rains that conjure these first rainbows.</p>
+      <p class="opening">The rain stops mid-afternoon, and suddenly there it is — a faint arc of color suspended between two hills, so delicate it seems painted on mist. The air carries that particular sweetness of wet earth and fresh leaves, while droplets still cling to every surface, each one holding its own small spectrum. This is the season when sky and water conspire to remind us that light itself can be broken open.</p>
+      <p class="section-label" style="margin-top:24px;">Nature Notes</p>
+      <p class="body-copy">Swallows have fully returned now, their forked tails cutting swift arcs beneath clouds heavy with the next shower. Cherry blossoms have given way to the unfurling of fresh leaves — a green so bright it seems to glow from within. Frogs have begun their evening chorus in the paddies, and the first firefly larvae stir in streamside grasses, though their flight is still weeks away.</p>
     </section>
 
     <!-- In Season -->
@@ -311,15 +349,15 @@
       <div class="produce-grid">
         <div class="produce-col">
           <p class="produce-col-label">Fruits</p>
-          <p>Amanatsu (sweet summer orange)</p><p>Biwa (loquat) early harvest</p><p>Ichigo (strawberry)</p><p>Natsu mikan</p>
+          <p>Strawberries (ichigo)</p><p>Loquats (biwa)</p><p>Mikan (late variety)</p><p>Amanatsu citrus</p>
         </div>
         <div class="produce-col">
           <p class="produce-col-label">Vegetables</p>
-          <p>Takenoko (bamboo shoots)</p><p>Nanohana (rapeseed blossoms)</p><p>Shungiku (garland chrysanthemum)</p><p>Sanshō no me (young sansho leaves)</p>
+          <p>Bamboo shoots (takenoko)</p><p>Spring cabbage (haru kyabetsu)</p><p>Fava beans (soramame)</p><p>Udo (mountain asparagus)</p>
         </div>
         <div class="produce-col">
           <p class="produce-col-label">Fish</p>
-          <p>Sawara (Spanish mackerel)</p><p>Shirauo (whitebait)</p><p>Hotaru ika (firefly squid)</p>
+          <p>Sayori (halfbeak)</p><p>Shirauo (icefish)</p><p>Tai (sea bream)</p>
         </div>
       </div>
     </section>
@@ -330,12 +368,12 @@
       
       <div class="dish">
         <p class="dish-name">Takenoko gohan</p>
-        <p class="dish-desc">Rice cooked with fresh bamboo shoots, their sweetness most fleeting and prized in these very days before the shoots toughen.</p>
+        <p class="dish-desc">Rice cooked with fresh bamboo shoots and dashi, celebrating the tender first harvest that appears only now in mid-spring.</p>
       </div>
       
       <div class="dish">
-        <p class="dish-name">Sawara no saikyo-yaki</p>
-        <p class="dish-desc">Spanish mackerel marinated in sweet white miso and grilled until caramelized — sawara meaning &#39;spring-fish&#39; in its characters, the kanji itself an instruction to eat it now.</p>
+        <p class="dish-name">Soramame no shioyude</p>
+        <p class="dish-desc">Fava beans simply boiled in salted water, their jade-green color and sweet, nutty flavor at their peak before the pods begin to toughen.</p>
       </div>
       
     </section>
@@ -344,20 +382,20 @@
     <section class="section">
       <p class="section-label">Cultural Note</p>
       <div class="cultural-note">
-        <p class="body-copy">This period falls within the Seimei festival season, when families visit ancestral graves to clean the stones and offer fresh flowers — a practice called haka-mairi. The name Seimei itself means &#39;pure brightness,&#39; describing both the clarified atmosphere and the spiritual clarity sought through honoring one&#39;s lineage. In some regions, people believe rainbows during this time are bridges the spirits use to return briefly to the living world.</p>
+        <p class="body-copy">This period falls within the observance of the eighty-eight nights (hachijū-hachiya) counting from Risshun, marking the approach of the first tea harvest. Farmers watch the skies carefully, as late frosts can still damage tender leaves. The rainbow itself, though celebrated for its beauty, was traditionally considered somewhat inauspicious — a bridge between worlds, beautiful precisely because it cannot last.</p>
       </div>
     </section>
 
     <!-- Haiku (serif italic, Stone) -->
     <div class="haiku">
-      <p class="haiku-jp">虹立ちて村の時計の鳴り渡る</p>
-      <p class="haiku-romaji">niji tachite mura no tokei no nari wataru</p>
-      <p class="haiku-en">A rainbow rises — across the village, the clock tower chimes through the clearing air</p>
+      <p class="haiku-jp">雨上がり虹の根元に牛の声</p>
+      <p class="haiku-romaji">ameagari niji no nemoto ni ushi no koe</p>
+      <p class="haiku-en">After the rain — at the rainbow&#39;s foot, a cow&#39;s low call</p>
     </div>
 
     <!-- Closing (13px, Stone, centered) -->
     <div class="closing">
-      <p style="margin:0;">The rainbow fades as quietly as it came, leaving only the dripping eaves and a silence that feels, somehow, more spacious than before.</p>
+      <p style="margin:0;">The arc fades as you watch, its colors thinning to a suggestion, then to memory — and already the next clouds gather on the western ridge.</p>
     </div>
 
   </div><!-- /body -->

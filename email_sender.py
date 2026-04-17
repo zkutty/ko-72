@@ -34,7 +34,9 @@ def _get_subscribers() -> list[str]:
             with urllib.request.urlopen(req) as resp:
                 data = json.loads(resp.read())
                 for sub in data.get("results", []):
-                    subscribers.add(sub["email"].strip())
+                    email = sub.get("email_address", "").strip()
+                    if email:
+                        subscribers.add(email)
         except urllib.error.URLError as e:
             print(f"Warning: could not fetch Buttondown subscribers: {e}")
 

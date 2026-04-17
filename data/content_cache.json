@@ -1,0 +1,43 @@
+{
+  "21": {
+    "summary": "After spring showers, the year's first rainbows arc across clearing skies, their colors soft and fleeting against the pale blue.",
+    "opening": "The rain stops mid-afternoon, and suddenly there it is — a faint arc of color suspended between two hills, so delicate it seems painted on mist. The air carries that particular sweetness of wet earth and fresh leaves, while droplets still cling to every surface, each one holding its own small spectrum. This is the season when sky and water conspire to remind us that light itself can be broken open.",
+    "nature_notes": "Swallows have fully returned now, their forked tails cutting swift arcs beneath clouds heavy with the next shower. Cherry blossoms have given way to the unfurling of fresh leaves — a green so bright it seems to glow from within. Frogs have begun their evening chorus in the paddies, and the first firefly larvae stir in streamside grasses, though their flight is still weeks away.",
+    "seasonal_produce": {
+      "fruits": [
+        "Strawberries (ichigo)",
+        "Loquats (biwa)",
+        "Mikan (late variety)",
+        "Amanatsu citrus"
+      ],
+      "vegetables": [
+        "Bamboo shoots (takenoko)",
+        "Spring cabbage (haru kyabetsu)",
+        "Fava beans (soramame)",
+        "Udo (mountain asparagus)"
+      ],
+      "fish": [
+        "Sayori (halfbeak)",
+        "Shirauo (icefish)",
+        "Tai (sea bream)"
+      ]
+    },
+    "seasonal_dishes": [
+      {
+        "name": "Takenoko gohan",
+        "description": "Rice cooked with fresh bamboo shoots and dashi, celebrating the tender first harvest that appears only now in mid-spring."
+      },
+      {
+        "name": "Soramame no shioyude",
+        "description": "Fava beans simply boiled in salted water, their jade-green color and sweet, nutty flavor at their peak before the pods begin to toughen."
+      }
+    ],
+    "cultural_note": "This period falls within the observance of the eighty-eight nights (hachijū-hachiya) counting from Risshun, marking the approach of the first tea harvest. Farmers watch the skies carefully, as late frosts can still damage tender leaves. The rainbow itself, though celebrated for its beauty, was traditionally considered somewhat inauspicious — a bridge between worlds, beautiful precisely because it cannot last.",
+    "haiku": {
+      "japanese": "雨上がり虹の根元に牛の声",
+      "romaji": "ameagari niji no nemoto ni ushi no koe",
+      "english": "After the rain — at the rainbow's foot, a cow's low call"
+    },
+    "closing": "The arc fades as you watch, its colors thinning to a suggestion, then to memory — and already the next clouds gather on the western ridge."
+  }
+}
