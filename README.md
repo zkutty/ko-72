@@ -1,4 +1,6 @@
-# 七十二候 — 72 Seasons
+# Kō 候
+
+*Japan's 72 micro-seasons, one at a time.*
 
 A newsletter automation that sends a beautiful HTML email at the start of each of Japan's 72 micro-seasons (七十二候, *shichijūni-kō*) — the traditional Japanese solar calendar that divides the year into five-day increments, each named for a subtle natural phenomenon.
 

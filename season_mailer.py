@@ -1,5 +1,5 @@
 """
-72 Seasons — orchestrator.
+Kō — orchestrator.
 
 Checks whether today is the first day of a new Japanese micro-season and,
 if so, generates content, sends the newsletter, and builds the archive page.
@@ -84,7 +84,7 @@ def find_active_season(seasons: list, today: date) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="72 Seasons newsletter mailer",
+        description="Kō newsletter mailer",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__,
     )

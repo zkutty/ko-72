@@ -43,12 +43,11 @@ def send_email(season: dict, content: dict) -> None:
     date_str = f"{month_names[season['start_month']]} {season['start_day']}"
 
     subject = (
-        f"七十二候 #{season['id']:02d}: {season['name_jp']} — "
-        f"{season['name_en']} · {date_str}"
+        f"Kō · {season['name_en']} ({season['name_romaji']})"
     )
 
     params: resend.Emails.SendParams = {
-        "from": "72 Seasons <onboarding@resend.dev>",
+        "from": "Kō <onboarding@resend.dev>",
         "to": recipients,
         "subject": subject,
         "html": html,
