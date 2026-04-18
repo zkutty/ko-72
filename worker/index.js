@@ -14,8 +14,6 @@ const ACCENT_COLORS = {
 };
 
 const MONTHS_SHORT = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-const DAYS_IN_MONTH = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-
 function json(body, status = 200) {
   return new Response(JSON.stringify(body), {
     status,
@@ -61,17 +59,27 @@ function findActiveSeason(today) {
   return best;
 }
 
+function getSeasonDateRange(season) {
+  const seasons = seasonsData.seasons;
+  const idx = seasons.findIndex((s) => s.id === season.id);
+  const next = idx < seasons.length - 1 ? seasons[idx + 1] : seasons[0];
+  const year = new Date().getUTCFullYear();
+  const nextYear = idx < seasons.length - 1 ? year : year + 1;
+  const nextStart = new Date(Date.UTC(nextYear, next.start_month - 1, next.start_day));
+  const end = new Date(nextStart - 86400000); // day before next season
+  const endMonth = end.getUTCMonth() + 1;
+  const endDay = end.getUTCDate();
+  const duration = Math.round((end - new Date(Date.UTC(year, season.start_month - 1, season.start_day))) / 86400000) + 1;
+  return {
+    dateRange: `${MONTHS_SHORT[season.start_month]} ${season.start_day} – ${MONTHS_SHORT[endMonth]} ${endDay}`,
+    duration,
+  };
+}
+
 function renderWelcomeEmail(season) {
   const accent = ACCENT_COLORS[season.major_season] || "#888780";
   const archiveUrl = `https://ko-72.com/archive/${String(season.id).padStart(2, "0")}-${season.slug}.html`;
-
-  let endDay = season.start_day + 4;
-  let endMonth = season.start_month;
-  if (endDay > DAYS_IN_MONTH[season.start_month]) {
-    endDay -= DAYS_IN_MONTH[season.start_month];
-    endMonth += 1;
-  }
-  const dateRange = `${MONTHS_SHORT[season.start_month]} ${season.start_day} → ${MONTHS_SHORT[endMonth]} ${endDay}`;
+  const { dateRange, duration } = getSeasonDateRange(season);
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -117,7 +125,7 @@ function renderWelcomeEmail(season) {
             <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#edeae3;border-top:2px solid ${accent};">
               <tr>
                 <td style="padding:20px 24px;">
-                  <p style="margin:0 0 6px 0;font-family:system-ui,-apple-system,sans-serif;font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:${accent};">${capitalize(season.major_season)} · Micro-season ${String(season.id).padStart(2, "0")} of 72 · ${dateRange}</p>
+                  <p style="margin:0 0 6px 0;font-family:system-ui,-apple-system,sans-serif;font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:${accent};">${capitalize(season.major_season)} · Micro-season ${String(season.id).padStart(2, "0")} of 72 · ${dateRange} · ${duration} days</p>
                   <p style="margin:0 0 4px 0;font-family:Georgia,'Times New Roman',serif;font-size:22px;color:#2c2c2a;line-height:1.3;">${escapeHtml(season.name_en)}</p>
                   <p style="margin:0;font-family:system-ui,-apple-system,sans-serif;font-size:13px;color:#888780;letter-spacing:0.02em;">${escapeHtml(season.name_romaji)} &nbsp;·&nbsp; <span style="font-family:'Hiragino Mincho ProN','Yu Mincho','MS Mincho',serif;">${escapeHtml(season.name_jp)}</span></p>
                 </td>
