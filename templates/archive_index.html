@@ -239,7 +239,7 @@
         <p class="season-sekki">{{ season_sekki_range[sname] }}</p>
 
         {% for e in season_entries %}
-          {% set is_pub = e.id <= published_count %}
+          {% set is_pub = e.id in published_ids %}
           {% if is_pub %}
             <a class="entry" href="{{ e.url }}">
           {% else %}
@@ -269,7 +269,9 @@
   <div class="year-meta">
     {% for sname in season_order %}
       {% set entries = all_seasons | selectattr('major_season', 'equalto', sname) | list %}
-      {% set pub = entries | selectattr('id', 'le', published_count) | list | length %}
+      {% set pub_ns = namespace(count=0) %}
+      {% for e in entries %}{% if e.id in published_ids %}{% set pub_ns.count = pub_ns.count + 1 %}{% endif %}{% endfor %}
+      {% set pub = pub_ns.count %}
       <div class="year-meta-cell">
         <span>{{ sname }}</span>
         <span>{{ pub }} / {{ entries | length }}</span>

@@ -75,12 +75,12 @@ def build_archive(season: dict, content: dict, all_seasons: list) -> None:
 # ── Archive index ──────────────────────────────────────────────────────────────
 
 def _build_index(env: Environment, all_seasons: list) -> None:
-    published_count = sum(
-        1 for s in all_seasons if (ARCHIVE_DIR / _season_filename(s)).exists()
-    )
+    pub_ids = _published_ids(all_seasons)
+    published_count = len(pub_ids)
     html = env.get_template("archive_index.html").render(
         all_seasons=all_seasons,
         published_count=published_count,
+        published_ids=pub_ids,
     )
     (ARCHIVE_DIR / "index.html").write_text(html, encoding="utf-8")
     print(f"Archive index updated — {published_count} season(s) published.")
