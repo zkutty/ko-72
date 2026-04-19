@@ -6,6 +6,7 @@
 <title>Kō — {{ season.name_en }}</title>
 {% set _desc = content.summary if content.summary else content.opening[:160] ~ '…' %}
 <meta name="description" content="{{ _desc | striptags }}">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="canonical" href="https://ko-72.com/archive/{{ '%02d' | format(season.id) }}-{{ season.slug }}.html">
 <meta name="robots" content="index, follow">
 <!-- Open Graph -->
