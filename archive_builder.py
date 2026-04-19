@@ -1,47 +1,68 @@
 """
-Build static HTML archive pages and website homepage for published micro-seasons.
+Build static HTML archive pages, index, and website homepage.
 """
 
 from datetime import date
 from pathlib import Path
 
-
-def _fmt(month: int, day: int) -> str:
-    return date(2000, month, day).strftime("%-d %b")
-
 from jinja2 import Environment, FileSystemLoader
 
+from wheel import cardinal_labels
 
 ARCHIVE_DIR = Path(__file__).parent / "archive"
 TEMPLATE_DIR = Path(__file__).parent / "templates"
-ROOT_DIR = Path(__file__).parent
+ROOT_DIR     = Path(__file__).parent
 
 ACCENT_COLORS = {
-    "Spring": "#6b8f71",
-    "Summer": "#c9734a",
-    "Autumn": "#d4a853",
-    "Winter": "#4a7fa5",
+    "spring": "#6b8f71",
+    "summer": "#c9734a",
+    "autumn": "#d4a853",
+    "winter": "#4a7fa5",
 }
+
+
+def _fmt(month: int, day: int) -> str:
+    return date(2000, month, day).strftime("%b %-d")  # "Apr 20"
+
+
+def _date_range(season: dict) -> str:
+    return f"{_fmt(season['start_month'], season['start_day'])} – {_fmt(season['end_month'], season['end_day'])}"
 
 
 def _season_filename(season: dict) -> str:
     return f"{season['id']:02d}-{season['slug']}.html"
 
 
+def _accent(season: dict) -> str:
+    return ACCENT_COLORS.get(season["major_season"].lower(), "#888780")
+
+
+def _published_ids(all_seasons: list) -> set:
+    return {s["id"] for s in all_seasons if (ARCHIVE_DIR / _season_filename(s)).exists()}
+
+
+# ── Individual archive page ────────────────────────────────────────────────────
+
 def build_archive(season: dict, content: dict, all_seasons: list) -> None:
     ARCHIVE_DIR.mkdir(exist_ok=True)
-
     env = Environment(loader=FileSystemLoader(str(TEMPLATE_DIR)), autoescape=True)
 
-    page_template = env.get_template("archive_page.html")
-    today = date.today()
-    accent_color = ACCENT_COLORS.get(season["major_season"].capitalize(), "#888780")
-    date_range = f"{_fmt(season['start_month'], season['start_day'])} – {_fmt(season['end_month'], season['end_day'])}"
-    html = page_template.render(
-        season=season, content=content, today=today,
-        accent_color=accent_color,
-        date_range=date_range,
+    pub_ids = _published_ids(all_seasons)
+    # prev = nearest lower published id; next = nearest higher published id
+    lower  = [s for s in all_seasons if s["id"] < season["id"] and s["id"] in pub_ids]
+    higher = [s for s in all_seasons if s["id"] > season["id"] and s["id"] in pub_ids]
+    prev   = lower[-1]  if lower  else None
+    next_s = higher[0]  if higher else None
+
+    html = env.get_template("archive_page.html").render(
+        season=season,
+        content=content,
+        accent_color=_accent(season),
+        date_range=_date_range(season),
         duration_days=season["duration_days"],
+        prev=prev,
+        next=next_s,
+        all_seasons=all_seasons,
     )
 
     filename = _season_filename(season)
@@ -51,35 +72,47 @@ def build_archive(season: dict, content: dict, all_seasons: list) -> None:
     _build_index(env, all_seasons)
 
 
+# ── Archive index ──────────────────────────────────────────────────────────────
+
 def _build_index(env: Environment, all_seasons: list) -> None:
-    published = []
-    for s in all_seasons:
-        filename = _season_filename(s)
-        if (ARCHIVE_DIR / filename).exists():
-            published.append({"season": s, "filename": filename})
-
-    index_template = env.get_template("archive_index.html")
-    html = index_template.render(published=published)
+    published_count = sum(
+        1 for s in all_seasons if (ARCHIVE_DIR / _season_filename(s)).exists()
+    )
+    html = env.get_template("archive_index.html").render(
+        all_seasons=all_seasons,
+        published_count=published_count,
+    )
     (ARCHIVE_DIR / "index.html").write_text(html, encoding="utf-8")
-    print(f"Archive index updated — {len(published)} season(s) published.")
+    print(f"Archive index updated — {published_count} season(s) published.")
 
 
-def build_website(season: dict, content: dict, worker_url: str = "https://subscribe.ko-72.com") -> None:
+# ── Website homepage ───────────────────────────────────────────────────────────
+
+def build_website(
+    season: dict,
+    content: dict,
+    all_seasons: list,
+    worker_url: str = "https://subscribe.ko-72.com",
+) -> None:
     env = Environment(loader=FileSystemLoader(str(TEMPLATE_DIR)), autoescape=True)
-    template = env.get_template("website.html")
 
-    accent_color = ACCENT_COLORS.get(season["major_season"].capitalize(), "#888780")
-    archive_page_url = f"/archive/{_season_filename(season)}"
+    # Recent: last 5 published seasons (for the "Recently" block)
+    recent = [
+        {"season": s, "url": s["url"]}
+        for s in all_seasons
+        if (ARCHIVE_DIR / _season_filename(s)).exists()
+    ][-5:]
 
-    date_range = f"{_fmt(season['start_month'], season['start_day'])} – {_fmt(season['end_month'], season['end_day'])}"
-    html = template.render(
+    html = env.get_template("website.html").render(
         season=season,
         content=content,
-        accent_color=accent_color,
-        archive_page_url=archive_page_url,
-        worker_url=worker_url,
-        date_range=date_range,
+        accent_color=_accent(season),
+        date_range=_date_range(season),
         duration_days=season["duration_days"],
+        all_seasons=all_seasons,
+        recent=recent,
+        worker_url=worker_url,
+        cardinals=cardinal_labels(),
     )
     (ROOT_DIR / "index.html").write_text(html, encoding="utf-8")
     print("Website homepage rebuilt: index.html")

@@ -10,7 +10,7 @@ from datetime import date
 
 
 def _fmt(month: int, day: int) -> str:
-    return date(2000, month, day).strftime("%-d %b")
+    return date(2000, month, day).strftime("%b %-d")
 from pathlib import Path
 
 import resend

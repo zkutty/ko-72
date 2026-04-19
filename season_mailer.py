@@ -123,6 +123,8 @@ def main() -> None:
 
     seasons = load_seasons()
     seasons = enrich_seasons_with_end_dates(seasons)
+    from wheel import augment_seasons
+    seasons = augment_seasons(seasons)
     today = date.today()
 
     if args.force:
@@ -168,7 +170,7 @@ def main() -> None:
     build_archive(season, content, seasons)
 
     log.info("Step 4/4 · Rebuilding website homepage …")
-    build_website(season, content, worker_url=worker_url)
+    build_website(season, content, all_seasons=seasons, worker_url=worker_url)
 
     log.info("Done ✓")
 

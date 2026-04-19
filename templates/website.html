@@ -3,178 +3,423 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kō — Japan's 72 micro-seasons</title>
+<title>Kō — {{ season.name_en }}</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; }
+
   :root {
     --ink:    #1a1a18;
     --washi:  #f5f3ee;
     --stone:  #888780;
     --deep:   #2c2c2a;
+    --earth:  #4a3728;
     --rule:   #d8d5ce;
     --shell:  #e8e5de;
+    --tint:   #edeae3;
     --accent: {{ accent_color }};
+    --serif:  Georgia, 'Times New Roman', serif;
+    --sans:   system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --mincho: 'Hiragino Mincho ProN', 'Yu Mincho', 'MS Mincho', Georgia, serif;
+    --mono:   ui-monospace, 'SF Mono', Menlo, monospace;
   }
-  html, body { margin: 0; padding: 0; background: var(--shell); }
-  body { font-family: system-ui, -apple-system, sans-serif; color: var(--deep); line-height: 1.8; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
 
-  .card { max-width: 600px; margin: 0 auto; background: var(--washi); }
+  html, body { margin: 0; padding: 0; background: var(--washi); }
+  body { font-family: var(--sans); color: var(--deep); line-height: 1.8; font-size: 15px; }
+  a { color: inherit; text-decoration: none; }
 
-  .hdr { background: var(--ink); padding: 40px 40px 36px; }
-  .hdr-logo { font-family: Georgia, serif; font-size: 28px; color: var(--washi); margin: 0 0 4px 0; letter-spacing: 0.02em; }
-  .hdr-logo .kanji { font-family: system-ui, sans-serif; font-size: 16px; color: var(--stone); margin-left: 10px; }
-  .hdr-tagline { font-size: 13px; color: var(--stone); margin: 0; letter-spacing: 0.06em; text-transform: uppercase; }
-  .hdr-rule { border: none; border-top: 1px solid #333330; margin: 24px 0; }
+  /* ── Page shell (wider than email card — 1100 max) ── */
+  .page { max-width: 1100px; margin: 0 auto; background: var(--washi); }
 
-  .hdr-label { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin: 0 0 12px 0; }
-  .hdr-name { font-family: Georgia, serif; font-size: 30px; color: var(--washi); margin: 0 0 10px 0; line-height: 1.25; letter-spacing: -0.01em; }
-  .hdr-romaji { font-size: 14px; color: var(--stone); margin: 0; letter-spacing: 0.02em; }
-  .hdr-romaji .jp { font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif; }
-
-  .body { padding: 0 40px; }
-  .section { padding: 32px 0; border-bottom: 1px solid var(--rule); }
-  .section:last-child { border-bottom: none; }
-  .opening { font-family: Georgia, serif; font-size: 18px; line-height: 1.9; color: var(--deep); margin: 0; }
-
-  .haiku { text-align: center; padding: 36px 24px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); margin: 32px 0; }
-  .haiku p { margin: 0 0 4px 0; font-family: Georgia, serif; font-style: italic; font-size: 15px; line-height: 2.2; color: var(--stone); }
-  .haiku .jp { font-family: Georgia, 'Hiragino Mincho ProN', 'Yu Mincho', serif; font-size: 20px; letter-spacing: 0.2em; font-style: normal; }
-
-  /* ── SIGNUP FORM ── */
-  .signup { background: var(--ink); padding: 40px; text-align: center; }
-  .signup-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--stone); margin: 0 0 12px 0; }
-  .signup-heading { font-family: Georgia, serif; font-size: 20px; color: var(--washi); margin: 0 0 8px 0; }
-  .signup-sub { font-size: 13px; color: var(--stone); margin: 0 0 28px 0; line-height: 1.6; }
-  .signup-form { display: flex; gap: 0; max-width: 380px; margin: 0 auto; }
-  .signup-input {
-    flex: 1;
-    padding: 12px 16px;
-    font-size: 14px;
-    border: 1px solid #333330;
-    border-right: none;
-    background: #111110;
-    color: var(--washi);
-    outline: none;
-    font-family: system-ui, sans-serif;
+  /* ── Top bar ── */
+  .topbar {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 16px 56px; border-bottom: 1px solid var(--rule);
   }
-  .signup-input::placeholder { color: #555552; }
-  .signup-input:focus { border-color: var(--accent); }
-  .signup-btn {
-    padding: 12px 20px;
-    background: var(--accent);
-    color: var(--washi);
-    border: none;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-family: system-ui, sans-serif;
-    white-space: nowrap;
+  .topbar-left { display: flex; align-items: baseline; gap: 8px; }
+  .topbar-brand { font-family: var(--serif); font-size: 18px; }
+  .topbar-kanji { font-family: var(--mincho); font-size: 13px; color: var(--stone); }
+  .topbar-tag   { font-size: 12px; color: var(--stone); margin-left: 10px; font-style: italic; }
+  .topbar-right { display: flex; gap: 28px; font-size: 11px; color: var(--stone);
+                  text-transform: uppercase; letter-spacing: 0.12em; }
+  .topbar-right .cta {
+    color: var(--deep); text-decoration: underline;
+    text-decoration-color: var(--accent); text-underline-offset: 4px;
   }
-  .signup-btn:hover { opacity: 0.88; }
-  .signup-note { font-size: 11px; color: #555552; margin: 14px 0 0 0; }
-  .signup-success { display: none; font-size: 14px; color: var(--accent); margin: 0; }
 
-  .footer { background: var(--shell); padding: 22px 40px; border-top: 1px solid var(--rule); text-align: center; font-size: 11px; color: var(--stone); letter-spacing: 0.04em; }
-  .footer a { color: var(--stone); }
+  /* ── HERO ── */
+  .hero {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 48px;
+    padding: 72px 56px 64px; align-items: center;
+    border-bottom: 1px solid var(--rule);
+  }
 
-  @media (max-width: 640px) {
-    .hdr { padding: 28px 24px 24px; }
-    .body { padding: 0 24px; }
-    .signup { padding: 32px 24px; }
-    .signup-form { flex-direction: column; }
-    .signup-input { border-right: 1px solid #333330; border-bottom: none; }
-    .footer { padding: 18px 24px; }
+  .hero-meta { display: flex; flex-direction: column; gap: 8px; margin-bottom: 18px; }
+  .meta-row  { display: flex; gap: 12px; font-family: var(--mono); font-size: 11px; }
+  .meta-key  { color: var(--stone); width: 60px; letter-spacing: 0.08em; }
+  .meta-val  { color: var(--deep); }
+  .meta-val--accent { color: var(--accent); }
+
+  .accent-rule { width: 40px; height: 2px; background: var(--accent); margin-bottom: 28px; }
+  .kicker { font-size: 11px; font-weight: 500; letter-spacing: 0.16em;
+            margin: 0 0 20px; color: var(--accent); }
+
+  .display-en     { font-family: var(--serif); font-size: 72px; line-height: 0.98;
+                    letter-spacing: -0.03em; margin: 0 0 20px; font-weight: 400; }
+  .display-jp     { font-family: var(--mincho); font-size: 28px; letter-spacing: 0.1em;
+                    color: var(--earth); margin: 0 0 8px; }
+  .display-romaji { font-size: 15px; color: var(--stone); margin: 0; letter-spacing: 0.04em;
+                    font-style: italic; }
+
+  /* ── Wheel ── */
+  .wheel-col { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  .wheel-kicker { font-size: 11px; font-weight: 500; letter-spacing: 0.2em;
+                  color: var(--accent); margin: 0 0 8px; }
+  .legend { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin-top: 8px; }
+  .legend-row { display: flex; align-items: center; gap: 8px; font-size: 12px; }
+  .legend-swatch { width: 10px; height: 10px; border-radius: 50%; }
+  .legend-name { font-family: var(--serif); font-size: 13px; color: var(--deep); }
+
+  /* ── Dropcap opening ── */
+  .opening-band { background: var(--shell); padding: 72px 56px;
+                  border-bottom: 1px solid var(--rule); }
+  .opening-inner { max-width: 820px; display: grid; grid-template-columns: 120px 1fr;
+                   gap: 24px; align-items: baseline; }
+  .dropcap { font-family: var(--serif); font-size: 140px; line-height: 0.8;
+             color: var(--accent); }
+  .opening-text { font-family: var(--serif); font-size: 22px; line-height: 1.7; margin: 0; }
+
+  /* ── Three-column spread ── */
+  .spread { display: grid; grid-template-columns: 1fr 1px 1fr 1px 1fr;
+            padding: 56px; border-bottom: 1px solid var(--rule); }
+  .spread-col { padding: 0 32px; }
+  .spread-col h3 { font-family: var(--serif); font-size: 20px; font-weight: 400;
+                   margin: 0 0 14px; color: var(--accent); letter-spacing: -0.01em; }
+  .spread-col p  { font-size: 14px; line-height: 1.75; margin: 0; }
+  .spread-col p + p { margin-top: 12px; }
+  .spread-divider { background: var(--rule); width: 1px; }
+
+  /* ── Ticker (Ink band) ── */
+  .ticker { background: var(--ink); padding: 20px 56px; }
+  .ticker-row { display: flex; align-items: center; gap: 32px; }
+  .ticker-label { font-size: 11px; font-weight: 500; letter-spacing: 0.18em;
+                  color: var(--accent); flex-shrink: 0; }
+  .ticker-text { font-family: var(--mono); font-size: 13px; color: var(--washi);
+                 letter-spacing: 0.05em; white-space: nowrap; overflow: hidden;
+                 text-overflow: ellipsis; }
+
+  /* ── Haiku ── */
+  .haiku-band { padding: 88px 56px; text-align: center;
+                border-bottom: 1px solid var(--rule); }
+  .haiku-mark { font-family: var(--mincho); font-size: 11px; letter-spacing: 0.3em;
+                color: var(--accent); margin: 0 0 32px; }
+  .haiku-jp { font-family: var(--mincho); font-size: 34px; letter-spacing: 0.15em;
+              margin: 0 0 10px; line-height: 1.4; }
+  .haiku-rule { width: 40px; height: 1px; background: var(--accent); margin: 32px auto; }
+  .haiku-en { font-family: var(--serif); font-size: 22px; font-style: italic;
+              color: var(--earth); margin: 0 0 6px; line-height: 1.5; }
+  .haiku-byline { font-family: var(--mono); font-size: 11px; color: var(--stone);
+                  margin: 32px 0 0; letter-spacing: 0.1em; }
+
+  /* ── Subscribe (Ink) ── */
+  .subscribe { display: grid; grid-template-columns: 1fr 1fr; background: var(--ink);
+               padding: 72px 56px; gap: 56px; align-items: center; color: var(--washi); }
+  .sub-heading { font-family: var(--serif); font-size: 48px; color: var(--washi);
+                 margin: 0 0 20px; letter-spacing: -0.02em; line-height: 1.05; font-weight: 400; }
+  .sub-body { font-size: 14px; line-height: 1.8; color: #a6a59e; margin: 0; max-width: 380px; }
+  .sub-form { display: flex; flex-direction: column; gap: 10px; }
+  .sub-form-label { font-family: var(--mono); font-size: 10px; color: var(--stone);
+                    letter-spacing: 0.2em; margin-bottom: 4px; }
+  .sub-input { padding: 14px 0; background: transparent; color: var(--washi);
+               border: none; border-bottom: 1px solid #333330; font-size: 18px;
+               font-family: var(--serif); outline: none; }
+  .sub-input:focus { border-bottom-color: var(--accent); }
+  .sub-btn { padding: 14px 22px; border: none; background: var(--accent); color: var(--washi);
+             font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase;
+             font-family: var(--sans); font-weight: 500; cursor: pointer;
+             margin-top: 14px; align-self: flex-start; }
+  .sub-fine { font-size: 11px; color: #555552; margin: 12px 0 0; letter-spacing: 0.04em; }
+
+  /* ── Recent index ── */
+  .recent { padding: 56px 56px 64px; }
+  .recent-label { font-family: var(--serif); font-size: 20px; color: var(--accent);
+                  margin: 0 0 18px; }
+  .recent-row { display: grid; grid-template-columns: 48px 80px 1fr 1fr 60px;
+                gap: 20px; align-items: baseline; padding: 14px 0;
+                border-top: 1px solid var(--rule); }
+  .recent-num    { font-family: var(--mono); font-size: 11px; color: var(--stone);
+                   letter-spacing: 0.1em; }
+  .recent-jp     { font-family: var(--mincho); font-size: 17px; letter-spacing: 0.08em; }
+  .recent-en     { font-family: var(--serif); font-size: 16px; }
+  .recent-romaji { font-size: 13px; color: var(--stone); font-style: italic; }
+  .recent-date   { font-family: var(--mono); font-size: 11px; color: var(--stone);
+                   text-align: right; }
+
+  /* ── Footer (Ink) ── */
+  footer { background: var(--ink); padding: 56px 56px 32px; color: var(--stone); }
+  .footer-inner { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+                  margin-bottom: 40px; padding-bottom: 32px;
+                  border-bottom: 1px solid #2a2a28; }
+  .footer-brand { font-family: var(--serif); font-size: 24px; color: var(--washi); }
+  .footer-brand .kanji { margin-left: 8px; color: var(--stone); font-family: var(--mincho); }
+  .footer-tag { font-size: 13px; margin: 10px 0 0; font-style: italic;
+                max-width: 260px; line-height: 1.6; }
+  .footer-col { display: flex; flex-direction: column; gap: 8px; }
+  .footer-col-label { font-family: var(--mono); font-size: 10px; color: #555552;
+                      letter-spacing: 0.2em; margin: 0 0 6px; }
+  .footer-link { font-size: 13px; margin: 0; }
+  .footer-meta { font-size: 12px; margin: 0 0 8px; line-height: 1.6; }
+  .footer-copy { font-family: var(--mono); font-size: 10px; color: #555552;
+                 margin: 0; letter-spacing: 0.08em; }
+
+  /* ── Responsive ── */
+  @media (max-width: 860px) {
+    .topbar { padding: 14px 24px; flex-wrap: wrap; gap: 12px; }
+    .topbar-right { gap: 18px; }
+    .hero { grid-template-columns: 1fr; padding: 48px 24px; gap: 40px; }
+    .display-en { font-size: 52px; }
+    .opening-band { padding: 48px 24px; }
+    .opening-inner { grid-template-columns: 1fr; gap: 0; }
+    .dropcap { font-size: 96px; }
+    .opening-text { font-size: 19px; }
+    .spread { grid-template-columns: 1fr; padding: 32px 24px; gap: 32px; }
+    .spread-col { padding: 0; }
+    .spread-divider { height: 1px; width: 100%; }
+    .ticker { padding: 16px 24px; }
+    .ticker-row { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .ticker-text { white-space: normal; }
+    .haiku-band { padding: 56px 24px; }
+    .haiku-jp { font-size: 26px; }
+    .haiku-en { font-size: 18px; }
+    .subscribe { grid-template-columns: 1fr; padding: 48px 24px; gap: 32px; }
+    .sub-heading { font-size: 34px; }
+    .recent { padding: 40px 24px; }
+    .recent-row { grid-template-columns: 32px 1fr auto; gap: 12px; }
+    .recent-jp, .recent-romaji { display: none; }
+    footer { padding: 40px 24px 24px; }
+    .footer-inner { grid-template-columns: 1fr; gap: 24px; }
   }
 </style>
 </head>
 <body>
 
-<div class="card">
+<div class="page">
 
-  <header class="hdr">
-    <p class="hdr-logo">Kō<span class="kanji">候</span></p>
-    <p class="hdr-tagline">Japan's 72 micro-seasons</p>
-    <hr class="hdr-rule">
-    {% set months_short = ['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'] %}
-    <p class="hdr-label">{{ season.major_season | capitalize }} &nbsp;·&nbsp; Now: micro-season {{ '%02d' | format(season.id) }} of 72 &nbsp;·&nbsp; {{ months_short[season.start_month] }} {{ season.start_day }}</p>
-    <p class="hdr-name">{{ season.name_en }}</p>
-    <p class="hdr-romaji">{{ season.name_romaji }} &nbsp;·&nbsp; <span class="jp">{{ season.name_jp }}</span></p>
-  </header>
+  {% set months_short = ['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'] %}
 
-  <div class="body">
-    <section class="section">
-      <p class="opening">{{ content.opening }}</p>
-    </section>
+  <!-- ── Top bar ── -->
+  <nav class="topbar">
+    <div class="topbar-left">
+      <span class="topbar-brand">Kō</span>
+      <span class="topbar-kanji">候</span>
+      <span class="topbar-tag">— Japan's 72 micro-seasons</span>
+    </div>
+    <div class="topbar-right">
+      <a href="#letter">Letter</a>
+      <a href="/archive/">Index</a>
+      <a href="#about">Colophon</a>
+      <a href="#subscribe" class="cta">Subscribe</a>
+    </div>
+  </nav>
 
-    <div class="haiku">
-      <p class="jp">{{ content.haiku.japanese }}</p>
-      <p>{{ content.haiku.romaji }}</p>
-      <p>{{ content.haiku.english }}</p>
+  <!-- ── HERO: display type left, wheel right ── -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-meta">
+        <div class="meta-row"><span class="meta-key">NO.</span><span class="meta-val">{{ '%02d' | format(season.id) }} / 72</span></div>
+        <div class="meta-row"><span class="meta-key">SEKKI</span><span class="meta-val">{{ season.sekki }}</span></div>
+        <div class="meta-row"><span class="meta-key">DATES</span><span class="meta-val">{{ date_range }}</span></div>
+        <div class="meta-row"><span class="meta-key">SEASON</span><span class="meta-val meta-val--accent">{{ season.major_season | upper }}</span></div>
+      </div>
+
+      <div class="accent-rule"></div>
+
+      <p class="kicker">MICRO-SEASON {{ season.id }} · BEGINS {{ months_short[season.start_month] | upper }} {{ season.start_day }}</p>
+      <h1 class="display-en">{{ season.name_en }}</h1>
+      <p class="display-jp">{{ season.name_jp }}</p>
+      <p class="display-romaji"><em>{{ season.name_romaji }}</em></p>
     </div>
 
-    <section class="section" style="text-align:center;padding:24px 0;">
-      <a href="{{ archive_page_url }}" style="font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);">Read this issue →</a>
-      &nbsp;&nbsp;
-      <a href="/archive/" style="font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--stone);">All seasons</a>
-    </section>
-  </div>
+    <div class="wheel-col">
+      <p class="wheel-kicker">THE YEAR · 七十二候</p>
 
-  <!-- Signup -->
-  <div class="signup">
-    <p class="signup-eyebrow">Newsletter</p>
-    <p class="signup-heading">One letter, every five days.</p>
-    <p class="signup-sub">Each micro-season, a note on nature, food, and the quietly turning year.</p>
-    <form class="signup-form" id="signupForm">
-      <input class="signup-input" type="email" name="email" placeholder="your@email.com" required>
-      <button class="signup-btn" type="submit">Subscribe</button>
+      {# 72-arc calendar wheel. Arcs/labels rendered server-side. #}
+      {% set WHEEL_SIZE = 440 %}
+      {% set R_OUT = 200 %}
+      {% set R_IN  = 148 %}
+      {% set CTR   = WHEEL_SIZE / 2 %}
+      {% set SEASON_COLORS = {'spring':'#6b8f71','summer':'#c9734a','autumn':'#d4a853','winter':'#4a7fa5'} %}
+
+      <svg width="{{ WHEEL_SIZE }}" height="{{ WHEEL_SIZE }}" viewBox="0 0 {{ WHEEL_SIZE }} {{ WHEEL_SIZE }}">
+        <circle cx="{{ CTR }}" cy="{{ CTR }}" r="{{ R_OUT + 10 }}" fill="none" stroke="var(--rule)" stroke-width="1"/>
+        <circle cx="{{ CTR }}" cy="{{ CTR }}" r="{{ R_IN - 10 }}" fill="none" stroke="var(--rule)" stroke-width="1"/>
+
+        {% for s in all_seasons %}
+          {% set i = loop.index0 %}
+          {% set sc = SEASON_COLORS[s.major_season] %}
+          {% set is_current = (s.id == season.id) %}
+          {# Pre-compute arc path in Python and pass as s.arc_d; fall back placeholder below. #}
+          <path d="{{ s.arc_d }}"
+                fill="{{ sc if is_current else sc + '28' }}"
+                {% if is_current %}stroke="{{ sc }}" stroke-width="1.5"{% endif %} />
+        {% endfor %}
+
+        {# Cardinal season labels — x/y pre-computed by wheel.cardinal_labels() #}
+        {% for c in cardinals %}
+          <text x="{{ c.x }}" y="{{ c.y }}" text-anchor="middle"
+                font-family="system-ui, sans-serif" font-size="10"
+                fill="var(--stone)" letter-spacing="2" font-weight="500">{{ c.label }}</text>
+          <text x="{{ c.x }}" y="{{ c.y + 12 }}" text-anchor="middle"
+                font-family="ui-monospace, Menlo, monospace" font-size="9"
+                fill="var(--stone)">{{ c.sub }}</text>
+        {% endfor %}
+
+        <text x="{{ CTR }}" y="{{ CTR - 20 }}" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="var(--stone)" letter-spacing="2.2" font-weight="500">NOW</text>
+        <text x="{{ CTR }}" y="{{ CTR + 8 }}"  text-anchor="middle" font-family="'Hiragino Mincho ProN', 'Yu Mincho', serif" font-size="32" fill="var(--deep)" letter-spacing="5">{{ season.name_jp }}</text>
+        <text x="{{ CTR }}" y="{{ CTR + 28 }}" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="10" fill="var(--stone)" letter-spacing="1">{{ '%02d' | format(season.id) }} / 72 · {{ months_short[season.start_month] | upper }} {{ season.start_day }}</text>
+      </svg>
+
+      <div class="legend">
+        {% for name, color in SEASON_COLORS.items() %}
+          <span class="legend-row">
+            <span class="legend-swatch" style="background: {{ color }};"></span>
+            <span class="legend-name">{{ name }}</span>
+          </span>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Dropcap opening ── -->
+  <section class="opening-band" id="letter">
+    <div class="opening-inner">
+      {% set first_letter = content.opening[0] %}
+      {% set rest = content.opening[1:] %}
+      <span class="dropcap">{{ first_letter }}</span>
+      <p class="opening-text">{{ rest }}</p>
+    </div>
+  </section>
+
+  <!-- ── Three-column spread ── -->
+  <section class="spread">
+    <div class="spread-col">
+      <h3>Nature</h3>
+      <p>{{ content.nature_notes }}</p>
+    </div>
+    <div class="spread-divider"></div>
+    <div class="spread-col">
+      <h3>Table</h3>
+      {% for dish in content.seasonal_dishes %}
+        <p><strong style="color: var(--deep);">{{ dish.name }}.</strong> {{ dish.description }}</p>
+      {% endfor %}
+    </div>
+    <div class="spread-divider"></div>
+    <div class="spread-col">
+      <h3>Rite</h3>
+      <p>{{ content.cultural_note }}</p>
+    </div>
+  </section>
+
+  <!-- ── At-market ticker (Ink band) ── -->
+  <section class="ticker">
+    <div class="ticker-row">
+      <span class="ticker-label">AT MARKET</span>
+      <span class="ticker-text">
+        {%- set items = content.seasonal_produce.fruits + content.seasonal_produce.vegetables + content.seasonal_produce.fish -%}
+        {%- for item in items -%}
+          {{ item | lower }}{% if not loop.last %} &nbsp; · &nbsp; {% endif %}
+        {%- endfor -%}
+      </span>
+    </div>
+  </section>
+
+  <!-- ── Monumental haiku ── -->
+  <section class="haiku-band">
+    <p class="haiku-mark">俳句</p>
+    {% for line in content.haiku.japanese.split('　') %}
+      <p class="haiku-jp">{{ line }}</p>
+    {% endfor %}
+    <div class="haiku-rule"></div>
+    {% for line in content.haiku.english.split('\n') %}
+      <p class="haiku-en">{{ line }}</p>
+    {% endfor %}
+    <p class="haiku-byline">{{ content.haiku.romaji }}</p>
+  </section>
+
+  <!-- ── Subscribe (Ink) ── -->
+  <section class="subscribe" id="subscribe">
+    <div>
+      <p class="kicker">THE LETTER</p>
+      <h2 class="sub-heading">Seventy-two<br>letters a year.</h2>
+      <p class="sub-body">
+        Nature, then food, then culture, then a haiku. Always the same order.
+        Always five days. Arrives at 7am local time the day a new season begins —
+        you may unsubscribe with one click.
+      </p>
+    </div>
+    <form class="sub-form" id="signupForm">
+      <label class="sub-form-label" for="email">EMAIL</label>
+      <input class="sub-input" id="email" name="email" type="email" placeholder="your@email.com" required>
+      <button class="sub-btn" type="submit">→ Subscribe</button>
+      <p class="sub-fine">No tracking, no affiliates, no auto-renewals.</p>
     </form>
-    <p class="signup-note">No spam. Unsubscribe any time.</p>
-    <p class="signup-success" id="signupSuccess">You're on the list.</p>
-  </div>
+  </section>
 
-  <footer class="footer">
-    <p style="margin:0;">
-      <a href="/archive/">Archive</a>
-      &nbsp;·&nbsp;
-      Kō &nbsp;·&nbsp; Japan's 72 micro-seasons
-      &nbsp;·&nbsp;
-      <a href="/unsubscribe.html">Unsubscribe</a>
-    </p>
+  <!-- ── Recent letters ── -->
+  {% if recent %}
+  <section class="recent">
+    <p class="recent-label">Recently</p>
+    {% for r in recent %}
+      <a href="{{ r.url }}" class="recent-row">
+        <span class="recent-num">{{ '%03d' | format(r.season.id) }}</span>
+        <span class="recent-jp">{{ r.season.name_jp }}</span>
+        <span class="recent-en">{{ r.season.name_en }}</span>
+        <span class="recent-romaji"><em>{{ r.season.name_romaji }}</em></span>
+        <span class="recent-date">{{ months_short[r.season.start_month] }} {{ r.season.start_day }}</span>
+      </a>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  <!-- ── Footer ── -->
+  <footer id="about">
+    <div class="footer-inner">
+      <div>
+        <span class="footer-brand">Kō<span class="kanji">候</span></span>
+        <p class="footer-tag">Japan's seventy-two micro-seasons, one at a time.</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-label">NAVIGATE</p>
+        <a class="footer-link" href="#letter">This letter</a>
+        <a class="footer-link" href="/archive/">All seventy-two</a>
+        <a class="footer-link" href="#about">About</a>
+        <a class="footer-link" href="/rss.xml">RSS</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-label">COLOPHON</p>
+        <p class="footer-meta">Kept in Kyoto<br>since MMXXIV</p>
+        <p class="footer-meta">Plain HTML,<br>inline CSS</p>
+      </div>
+    </div>
+    <p class="footer-copy">© Kō · set in Georgia &amp; system-ui · no cookies, no tracking</p>
   </footer>
 
 </div>
 
 <script>
-  document.getElementById('signupForm').addEventListener('submit', async function(e) {
+  document.getElementById('signupForm')?.addEventListener('submit', async function(e) {
     e.preventDefault();
     const email = this.email.value;
     const btn = this.querySelector('button');
-    btn.disabled = true;
-    btn.textContent = '…';
+    btn.disabled = true; btn.textContent = '…';
     try {
       const res = await fetch('{{ worker_url }}/subscribe', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({email}),
       });
-      if (res.ok) {
-        this.style.display = 'none';
-        document.getElementById('signupNote') && (document.getElementById('signupNote').style.display = 'none');
-        document.getElementById('signupSuccess').style.display = 'block';
-      } else {
-        btn.disabled = false;
-        btn.textContent = 'Subscribe';
-        alert('Something went wrong — please try again.');
-      }
-    } catch {
-      btn.disabled = false;
-      btn.textContent = 'Subscribe';
-      alert('Something went wrong — please try again.');
-    }
+      if (res.ok) { this.innerHTML = '<p style="color:var(--accent);font-family:var(--serif);font-size:18px;">You\'re on the list.</p>'; }
+      else { btn.disabled = false; btn.textContent = '→ Subscribe'; alert('Something went wrong.'); }
+    } catch { btn.disabled = false; btn.textContent = '→ Subscribe'; alert('Something went wrong.'); }
   });
 </script>
 

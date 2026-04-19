@@ -3,178 +3,1024 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kō — Japan's 72 micro-seasons</title>
+<title>Kō — First rainbows appear</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; }
+
   :root {
     --ink:    #1a1a18;
     --washi:  #f5f3ee;
     --stone:  #888780;
     --deep:   #2c2c2a;
+    --earth:  #4a3728;
     --rule:   #d8d5ce;
     --shell:  #e8e5de;
+    --tint:   #edeae3;
     --accent: #6b8f71;
+    --serif:  Georgia, 'Times New Roman', serif;
+    --sans:   system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --mincho: 'Hiragino Mincho ProN', 'Yu Mincho', 'MS Mincho', Georgia, serif;
+    --mono:   ui-monospace, 'SF Mono', Menlo, monospace;
   }
-  html, body { margin: 0; padding: 0; background: var(--shell); }
-  body { font-family: system-ui, -apple-system, sans-serif; color: var(--deep); line-height: 1.8; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
 
-  .card { max-width: 600px; margin: 0 auto; background: var(--washi); }
+  html, body { margin: 0; padding: 0; background: var(--washi); }
+  body { font-family: var(--sans); color: var(--deep); line-height: 1.8; font-size: 15px; }
+  a { color: inherit; text-decoration: none; }
 
-  .hdr { background: var(--ink); padding: 40px 40px 36px; }
-  .hdr-logo { font-family: Georgia, serif; font-size: 28px; color: var(--washi); margin: 0 0 4px 0; letter-spacing: 0.02em; }
-  .hdr-logo .kanji { font-family: system-ui, sans-serif; font-size: 16px; color: var(--stone); margin-left: 10px; }
-  .hdr-tagline { font-size: 13px; color: var(--stone); margin: 0; letter-spacing: 0.06em; text-transform: uppercase; }
-  .hdr-rule { border: none; border-top: 1px solid #333330; margin: 24px 0; }
+  /* ── Page shell (wider than email card — 1100 max) ── */
+  .page { max-width: 1100px; margin: 0 auto; background: var(--washi); }
 
-  .hdr-label { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin: 0 0 12px 0; }
-  .hdr-name { font-family: Georgia, serif; font-size: 30px; color: var(--washi); margin: 0 0 10px 0; line-height: 1.25; letter-spacing: -0.01em; }
-  .hdr-romaji { font-size: 14px; color: var(--stone); margin: 0; letter-spacing: 0.02em; }
-  .hdr-romaji .jp { font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif; }
-
-  .body { padding: 0 40px; }
-  .section { padding: 32px 0; border-bottom: 1px solid var(--rule); }
-  .section:last-child { border-bottom: none; }
-  .opening { font-family: Georgia, serif; font-size: 18px; line-height: 1.9; color: var(--deep); margin: 0; }
-
-  .haiku { text-align: center; padding: 36px 24px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); margin: 32px 0; }
-  .haiku p { margin: 0 0 4px 0; font-family: Georgia, serif; font-style: italic; font-size: 15px; line-height: 2.2; color: var(--stone); }
-  .haiku .jp { font-family: Georgia, 'Hiragino Mincho ProN', 'Yu Mincho', serif; font-size: 20px; letter-spacing: 0.2em; font-style: normal; }
-
-  /* ── SIGNUP FORM ── */
-  .signup { background: var(--ink); padding: 40px; text-align: center; }
-  .signup-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--stone); margin: 0 0 12px 0; }
-  .signup-heading { font-family: Georgia, serif; font-size: 20px; color: var(--washi); margin: 0 0 8px 0; }
-  .signup-sub { font-size: 13px; color: var(--stone); margin: 0 0 28px 0; line-height: 1.6; }
-  .signup-form { display: flex; gap: 0; max-width: 380px; margin: 0 auto; }
-  .signup-input {
-    flex: 1;
-    padding: 12px 16px;
-    font-size: 14px;
-    border: 1px solid #333330;
-    border-right: none;
-    background: #111110;
-    color: var(--washi);
-    outline: none;
-    font-family: system-ui, sans-serif;
+  /* ── Top bar ── */
+  .topbar {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 16px 56px; border-bottom: 1px solid var(--rule);
   }
-  .signup-input::placeholder { color: #555552; }
-  .signup-input:focus { border-color: var(--accent); }
-  .signup-btn {
-    padding: 12px 20px;
-    background: var(--accent);
-    color: var(--washi);
-    border: none;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-family: system-ui, sans-serif;
-    white-space: nowrap;
+  .topbar-left { display: flex; align-items: baseline; gap: 8px; }
+  .topbar-brand { font-family: var(--serif); font-size: 18px; }
+  .topbar-kanji { font-family: var(--mincho); font-size: 13px; color: var(--stone); }
+  .topbar-tag   { font-size: 12px; color: var(--stone); margin-left: 10px; font-style: italic; }
+  .topbar-right { display: flex; gap: 28px; font-size: 11px; color: var(--stone);
+                  text-transform: uppercase; letter-spacing: 0.12em; }
+  .topbar-right .cta {
+    color: var(--deep); text-decoration: underline;
+    text-decoration-color: var(--accent); text-underline-offset: 4px;
   }
-  .signup-btn:hover { opacity: 0.88; }
-  .signup-note { font-size: 11px; color: #555552; margin: 14px 0 0 0; }
-  .signup-success { display: none; font-size: 14px; color: var(--accent); margin: 0; }
 
-  .footer { background: var(--shell); padding: 22px 40px; border-top: 1px solid var(--rule); text-align: center; font-size: 11px; color: var(--stone); letter-spacing: 0.04em; }
-  .footer a { color: var(--stone); }
+  /* ── HERO ── */
+  .hero {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 48px;
+    padding: 72px 56px 64px; align-items: center;
+    border-bottom: 1px solid var(--rule);
+  }
 
-  @media (max-width: 640px) {
-    .hdr { padding: 28px 24px 24px; }
-    .body { padding: 0 24px; }
-    .signup { padding: 32px 24px; }
-    .signup-form { flex-direction: column; }
-    .signup-input { border-right: 1px solid #333330; border-bottom: none; }
-    .footer { padding: 18px 24px; }
+  .hero-meta { display: flex; flex-direction: column; gap: 8px; margin-bottom: 18px; }
+  .meta-row  { display: flex; gap: 12px; font-family: var(--mono); font-size: 11px; }
+  .meta-key  { color: var(--stone); width: 60px; letter-spacing: 0.08em; }
+  .meta-val  { color: var(--deep); }
+  .meta-val--accent { color: var(--accent); }
+
+  .accent-rule { width: 40px; height: 2px; background: var(--accent); margin-bottom: 28px; }
+  .kicker { font-size: 11px; font-weight: 500; letter-spacing: 0.16em;
+            margin: 0 0 20px; color: var(--accent); }
+
+  .display-en     { font-family: var(--serif); font-size: 72px; line-height: 0.98;
+                    letter-spacing: -0.03em; margin: 0 0 20px; font-weight: 400; }
+  .display-jp     { font-family: var(--mincho); font-size: 28px; letter-spacing: 0.1em;
+                    color: var(--earth); margin: 0 0 8px; }
+  .display-romaji { font-size: 15px; color: var(--stone); margin: 0; letter-spacing: 0.04em;
+                    font-style: italic; }
+
+  /* ── Wheel ── */
+  .wheel-col { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  .wheel-kicker { font-size: 11px; font-weight: 500; letter-spacing: 0.2em;
+                  color: var(--accent); margin: 0 0 8px; }
+  .legend { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin-top: 8px; }
+  .legend-row { display: flex; align-items: center; gap: 8px; font-size: 12px; }
+  .legend-swatch { width: 10px; height: 10px; border-radius: 50%; }
+  .legend-name { font-family: var(--serif); font-size: 13px; color: var(--deep); }
+
+  /* ── Dropcap opening ── */
+  .opening-band { background: var(--shell); padding: 72px 56px;
+                  border-bottom: 1px solid var(--rule); }
+  .opening-inner { max-width: 820px; display: grid; grid-template-columns: 120px 1fr;
+                   gap: 24px; align-items: baseline; }
+  .dropcap { font-family: var(--serif); font-size: 140px; line-height: 0.8;
+             color: var(--accent); }
+  .opening-text { font-family: var(--serif); font-size: 22px; line-height: 1.7; margin: 0; }
+
+  /* ── Three-column spread ── */
+  .spread { display: grid; grid-template-columns: 1fr 1px 1fr 1px 1fr;
+            padding: 56px; border-bottom: 1px solid var(--rule); }
+  .spread-col { padding: 0 32px; }
+  .spread-col h3 { font-family: var(--serif); font-size: 20px; font-weight: 400;
+                   margin: 0 0 14px; color: var(--accent); letter-spacing: -0.01em; }
+  .spread-col p  { font-size: 14px; line-height: 1.75; margin: 0; }
+  .spread-col p + p { margin-top: 12px; }
+  .spread-divider { background: var(--rule); width: 1px; }
+
+  /* ── Ticker (Ink band) ── */
+  .ticker { background: var(--ink); padding: 20px 56px; }
+  .ticker-row { display: flex; align-items: center; gap: 32px; }
+  .ticker-label { font-size: 11px; font-weight: 500; letter-spacing: 0.18em;
+                  color: var(--accent); flex-shrink: 0; }
+  .ticker-text { font-family: var(--mono); font-size: 13px; color: var(--washi);
+                 letter-spacing: 0.05em; white-space: nowrap; overflow: hidden;
+                 text-overflow: ellipsis; }
+
+  /* ── Haiku ── */
+  .haiku-band { padding: 88px 56px; text-align: center;
+                border-bottom: 1px solid var(--rule); }
+  .haiku-mark { font-family: var(--mincho); font-size: 11px; letter-spacing: 0.3em;
+                color: var(--accent); margin: 0 0 32px; }
+  .haiku-jp { font-family: var(--mincho); font-size: 34px; letter-spacing: 0.15em;
+              margin: 0 0 10px; line-height: 1.4; }
+  .haiku-rule { width: 40px; height: 1px; background: var(--accent); margin: 32px auto; }
+  .haiku-en { font-family: var(--serif); font-size: 22px; font-style: italic;
+              color: var(--earth); margin: 0 0 6px; line-height: 1.5; }
+  .haiku-byline { font-family: var(--mono); font-size: 11px; color: var(--stone);
+                  margin: 32px 0 0; letter-spacing: 0.1em; }
+
+  /* ── Subscribe (Ink) ── */
+  .subscribe { display: grid; grid-template-columns: 1fr 1fr; background: var(--ink);
+               padding: 72px 56px; gap: 56px; align-items: center; color: var(--washi); }
+  .sub-heading { font-family: var(--serif); font-size: 48px; color: var(--washi);
+                 margin: 0 0 20px; letter-spacing: -0.02em; line-height: 1.05; font-weight: 400; }
+  .sub-body { font-size: 14px; line-height: 1.8; color: #a6a59e; margin: 0; max-width: 380px; }
+  .sub-form { display: flex; flex-direction: column; gap: 10px; }
+  .sub-form-label { font-family: var(--mono); font-size: 10px; color: var(--stone);
+                    letter-spacing: 0.2em; margin-bottom: 4px; }
+  .sub-input { padding: 14px 0; background: transparent; color: var(--washi);
+               border: none; border-bottom: 1px solid #333330; font-size: 18px;
+               font-family: var(--serif); outline: none; }
+  .sub-input:focus { border-bottom-color: var(--accent); }
+  .sub-btn { padding: 14px 22px; border: none; background: var(--accent); color: var(--washi);
+             font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase;
+             font-family: var(--sans); font-weight: 500; cursor: pointer;
+             margin-top: 14px; align-self: flex-start; }
+  .sub-fine { font-size: 11px; color: #555552; margin: 12px 0 0; letter-spacing: 0.04em; }
+
+  /* ── Recent index ── */
+  .recent { padding: 56px 56px 64px; }
+  .recent-label { font-family: var(--serif); font-size: 20px; color: var(--accent);
+                  margin: 0 0 18px; }
+  .recent-row { display: grid; grid-template-columns: 48px 80px 1fr 1fr 60px;
+                gap: 20px; align-items: baseline; padding: 14px 0;
+                border-top: 1px solid var(--rule); }
+  .recent-num    { font-family: var(--mono); font-size: 11px; color: var(--stone);
+                   letter-spacing: 0.1em; }
+  .recent-jp     { font-family: var(--mincho); font-size: 17px; letter-spacing: 0.08em; }
+  .recent-en     { font-family: var(--serif); font-size: 16px; }
+  .recent-romaji { font-size: 13px; color: var(--stone); font-style: italic; }
+  .recent-date   { font-family: var(--mono); font-size: 11px; color: var(--stone);
+                   text-align: right; }
+
+  /* ── Footer (Ink) ── */
+  footer { background: var(--ink); padding: 56px 56px 32px; color: var(--stone); }
+  .footer-inner { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+                  margin-bottom: 40px; padding-bottom: 32px;
+                  border-bottom: 1px solid #2a2a28; }
+  .footer-brand { font-family: var(--serif); font-size: 24px; color: var(--washi); }
+  .footer-brand .kanji { margin-left: 8px; color: var(--stone); font-family: var(--mincho); }
+  .footer-tag { font-size: 13px; margin: 10px 0 0; font-style: italic;
+                max-width: 260px; line-height: 1.6; }
+  .footer-col { display: flex; flex-direction: column; gap: 8px; }
+  .footer-col-label { font-family: var(--mono); font-size: 10px; color: #555552;
+                      letter-spacing: 0.2em; margin: 0 0 6px; }
+  .footer-link { font-size: 13px; margin: 0; }
+  .footer-meta { font-size: 12px; margin: 0 0 8px; line-height: 1.6; }
+  .footer-copy { font-family: var(--mono); font-size: 10px; color: #555552;
+                 margin: 0; letter-spacing: 0.08em; }
+
+  /* ── Responsive ── */
+  @media (max-width: 860px) {
+    .topbar { padding: 14px 24px; flex-wrap: wrap; gap: 12px; }
+    .topbar-right { gap: 18px; }
+    .hero { grid-template-columns: 1fr; padding: 48px 24px; gap: 40px; }
+    .display-en { font-size: 52px; }
+    .opening-band { padding: 48px 24px; }
+    .opening-inner { grid-template-columns: 1fr; gap: 0; }
+    .dropcap { font-size: 96px; }
+    .opening-text { font-size: 19px; }
+    .spread { grid-template-columns: 1fr; padding: 32px 24px; gap: 32px; }
+    .spread-col { padding: 0; }
+    .spread-divider { height: 1px; width: 100%; }
+    .ticker { padding: 16px 24px; }
+    .ticker-row { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .ticker-text { white-space: normal; }
+    .haiku-band { padding: 56px 24px; }
+    .haiku-jp { font-size: 26px; }
+    .haiku-en { font-size: 18px; }
+    .subscribe { grid-template-columns: 1fr; padding: 48px 24px; gap: 32px; }
+    .sub-heading { font-size: 34px; }
+    .recent { padding: 40px 24px; }
+    .recent-row { grid-template-columns: 32px 1fr auto; gap: 12px; }
+    .recent-jp, .recent-romaji { display: none; }
+    footer { padding: 40px 24px 24px; }
+    .footer-inner { grid-template-columns: 1fr; gap: 24px; }
   }
 </style>
 </head>
 <body>
 
-<div class="card">
+<div class="page">
 
-  <header class="hdr">
-    <p class="hdr-logo">Kō<span class="kanji">候</span></p>
-    <p class="hdr-tagline">Japan's 72 micro-seasons</p>
-    <hr class="hdr-rule">
-    
-    <p class="hdr-label">Spring &nbsp;·&nbsp; Now: micro-season 21 of 72 &nbsp;·&nbsp; Apr 15</p>
-    <p class="hdr-name">First rainbows appear</p>
-    <p class="hdr-romaji">Niji hajimete arawaru &nbsp;·&nbsp; <span class="jp">虹始見</span></p>
-  </header>
+  
 
-  <div class="body">
-    <section class="section">
-      <p class="opening">The rain stops mid-afternoon, and suddenly there it is — a faint arc of color suspended between two hills, so delicate it seems painted on mist. The air carries that particular sweetness of wet earth and fresh leaves, while droplets still cling to every surface, each one holding its own small spectrum. This is the season when sky and water conspire to remind us that light itself can be broken open.</p>
-    </section>
+  <!-- ── Top bar ── -->
+  <nav class="topbar">
+    <div class="topbar-left">
+      <span class="topbar-brand">Kō</span>
+      <span class="topbar-kanji">候</span>
+      <span class="topbar-tag">— Japan's 72 micro-seasons</span>
+    </div>
+    <div class="topbar-right">
+      <a href="#letter">Letter</a>
+      <a href="/archive/">Index</a>
+      <a href="#about">Colophon</a>
+      <a href="#subscribe" class="cta">Subscribe</a>
+    </div>
+  </nav>
 
-    <div class="haiku">
-      <p class="jp">雨上がり虹の根元に牛の声</p>
-      <p>ameagari niji no nemoto ni ushi no koe</p>
-      <p>After the rain — at the rainbow&#39;s foot, a cow&#39;s low call</p>
+  <!-- ── HERO: display type left, wheel right ── -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-meta">
+        <div class="meta-row"><span class="meta-key">NO.</span><span class="meta-val">21 / 72</span></div>
+        <div class="meta-row"><span class="meta-key">SEKKI</span><span class="meta-val">Seimei</span></div>
+        <div class="meta-row"><span class="meta-key">DATES</span><span class="meta-val">Apr 15 – Apr 19</span></div>
+        <div class="meta-row"><span class="meta-key">SEASON</span><span class="meta-val meta-val--accent">SPRING</span></div>
+      </div>
+
+      <div class="accent-rule"></div>
+
+      <p class="kicker">MICRO-SEASON 21 · BEGINS APR 15</p>
+      <h1 class="display-en">First rainbows appear</h1>
+      <p class="display-jp">虹始見</p>
+      <p class="display-romaji"><em>Niji hajimete arawaru</em></p>
     </div>
 
-    <section class="section" style="text-align:center;padding:24px 0;">
-      <a href="/archive/21-niji-hajimete-arawaru.html" style="font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);">Read this issue →</a>
-      &nbsp;&nbsp;
-      <a href="/archive/" style="font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--stone);">All seasons</a>
-    </section>
-  </div>
+    <div class="wheel-col">
+      <p class="wheel-kicker">THE YEAR · 七十二候</p>
 
-  <!-- Signup -->
-  <div class="signup">
-    <p class="signup-eyebrow">Newsletter</p>
-    <p class="signup-heading">One letter, every five days.</p>
-    <p class="signup-sub">Each micro-season, a note on nature, food, and the quietly turning year.</p>
-    <form class="signup-form" id="signupForm">
-      <input class="signup-input" type="email" name="email" placeholder="your@email.com" required>
-      <button class="signup-btn" type="submit">Subscribe</button>
+      
+      
+      
+      
+      
+      
+
+      <svg width="440" height="440" viewBox="0 0 440 440">
+        <circle cx="220.0" cy="220.0" r="210" fill="none" stroke="var(--rule)" stroke-width="1"/>
+        <circle cx="220.0" cy="220.0" r="138" fill="none" stroke="var(--rule)" stroke-width="1"/>
+
+        
+          
+          
+          
+          
+          <path d="M 221.20 20.00 A 200 200 0 0 1 236.24 20.66 L 232.01 72.49 A 148 148 0 0 0 220.89 72.00 Z"
+                fill="#4a7fa528"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 238.63 20.87 A 200 200 0 0 1 253.55 22.83 L 244.82 74.10 A 148 148 0 0 0 233.78 72.64 Z"
+                fill="#4a7fa528"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 255.91 23.25 A 200 200 0 0 1 270.60 26.51 L 257.45 76.82 A 148 148 0 0 0 246.57 74.41 Z"
+                fill="#4a7fa528"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 272.92 27.13 A 200 200 0 0 1 287.28 31.65 L 269.78 80.62 A 148 148 0 0 0 259.16 77.28 Z"
+                fill="#4a7fa528"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 289.53 32.48 A 200 200 0 0 1 303.43 38.23 L 281.74 85.49 A 148 148 0 0 0 271.45 81.23 Z"
+                fill="#4a7fa528"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 305.61 39.25 A 200 200 0 0 1 318.96 46.20 L 293.23 91.39 A 148 148 0 0 0 283.35 86.24 Z"
+                fill="#4a7fa528"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 321.04 47.40 A 200 200 0 0 1 333.73 55.48 L 304.16 98.26 A 148 148 0 0 0 294.77 92.27 Z"
+                fill="#6b8f7128"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 335.70 56.86 A 200 200 0 0 1 347.64 66.02 L 314.45 106.06 A 148 148 0 0 0 305.62 99.28 Z"
+                fill="#6b8f7128"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 349.47 67.57 A 200 200 0 0 1 360.57 77.73 L 324.02 114.72 A 148 148 0 0 0 315.81 107.20 Z"
+                fill="#6b8f7128"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 362.27 79.43 A 200 200 0 0 1 372.43 90.53 L 332.80 124.19 A 148 148 0 0 0 325.28 115.98 Z"
+                fill="#6b8f7128"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 373.98 92.36 A 200 200 0 0 1 383.14 104.30 L 340.72 134.38 A 148 148 0 0 0 333.94 125.55 Z"
+                fill="#6b8f7128"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 384.52 106.27 A 200 200 0 0 1 392.60 118.96 L 347.73 145.23 A 148 148 0 0 0 341.74 135.84 Z"
+                fill="#6b8f7128"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 393.80 121.04 A 200 200 0 0 1 400.75 134.39 L 353.76 156.65 A 148 148 0 0 0 348.61 146.77 Z"
+                fill="#6b8f7128"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 401.77 136.57 A 200 200 0 0 1 407.52 150.47 L 358.77 168.55 A 148 148 0 0 0 354.51 158.26 Z"
+                fill="#6b8f7128"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 408.35 152.72 A 200 200 0 0 1 412.87 167.08 L 362.72 180.84 A 148 148 0 0 0 359.38 170.22 Z"
+                fill="#6b8f7128"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 413.49 169.40 A 200 200 0 0 1 416.75 184.09 L 365.59 193.43 A 148 148 0 0 0 363.18 182.55 Z"
+                fill="#6b8f7128"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 417.17 186.45 A 200 200 0 0 1 419.13 201.37 L 367.36 206.22 A 148 148 0 0 0 365.90 195.18 Z"
+                fill="#6b8f7128"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 419.34 203.76 A 200 200 0 0 1 420.00 218.80 L 368.00 219.11 A 148 148 0 0 0 367.51 207.99 Z"
+                fill="#6b8f7128"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 420.00 221.20 A 200 200 0 0 1 419.34 236.24 L 367.51 232.01 A 148 148 0 0 0 368.00 220.89 Z"
+                fill="#6b8f7128"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 419.13 238.63 A 200 200 0 0 1 417.17 253.55 L 365.90 244.82 A 148 148 0 0 0 367.36 233.78 Z"
+                fill="#6b8f7128"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 416.75 255.91 A 200 200 0 0 1 413.49 270.60 L 363.18 257.45 A 148 148 0 0 0 365.59 246.57 Z"
+                fill="#6b8f71"
+                stroke="#6b8f71" stroke-width="1.5" />
+        
+          
+          
+          
+          
+          <path d="M 412.87 272.92 A 200 200 0 0 1 408.35 287.28 L 359.38 269.78 A 148 148 0 0 0 362.72 259.16 Z"
+                fill="#6b8f7128"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 407.52 289.53 A 200 200 0 0 1 401.77 303.43 L 354.51 281.74 A 148 148 0 0 0 358.77 271.45 Z"
+                fill="#6b8f7128"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 400.75 305.61 A 200 200 0 0 1 393.80 318.96 L 348.61 293.23 A 148 148 0 0 0 353.76 283.35 Z"
+                fill="#6b8f7128"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 392.60 321.04 A 200 200 0 0 1 384.52 333.73 L 341.74 304.16 A 148 148 0 0 0 347.73 294.77 Z"
+                fill="#c9734a28"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 383.14 335.70 A 200 200 0 0 1 373.98 347.64 L 333.94 314.45 A 148 148 0 0 0 340.72 305.62 Z"
+                fill="#c9734a28"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 372.43 349.47 A 200 200 0 0 1 362.27 360.57 L 325.28 324.02 A 148 148 0 0 0 332.80 315.81 Z"
+                fill="#c9734a28"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 360.57 362.27 A 200 200 0 0 1 349.47 372.43 L 315.81 332.80 A 148 148 0 0 0 324.02 325.28 Z"
+                fill="#c9734a28"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 347.64 373.98 A 200 200 0 0 1 335.70 383.14 L 305.62 340.72 A 148 148 0 0 0 314.45 333.94 Z"
+                fill="#c9734a28"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 333.73 384.52 A 200 200 0 0 1 321.04 392.60 L 294.77 347.73 A 148 148 0 0 0 304.16 341.74 Z"
+                fill="#c9734a28"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 318.96 393.80 A 200 200 0 0 1 305.61 400.75 L 283.35 353.76 A 148 148 0 0 0 293.23 348.61 Z"
+                fill="#c9734a28"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 303.43 401.77 A 200 200 0 0 1 289.53 407.52 L 271.45 358.77 A 148 148 0 0 0 281.74 354.51 Z"
+                fill="#c9734a28"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 287.28 408.35 A 200 200 0 0 1 272.92 412.87 L 259.16 362.72 A 148 148 0 0 0 269.78 359.38 Z"
+                fill="#c9734a28"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 270.60 413.49 A 200 200 0 0 1 255.91 416.75 L 246.57 365.59 A 148 148 0 0 0 257.45 363.18 Z"
+                fill="#c9734a28"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 253.55 417.17 A 200 200 0 0 1 238.63 419.13 L 233.78 367.36 A 148 148 0 0 0 244.82 365.90 Z"
+                fill="#c9734a28"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 236.24 419.34 A 200 200 0 0 1 221.20 420.00 L 220.89 368.00 A 148 148 0 0 0 232.01 367.51 Z"
+                fill="#c9734a28"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 218.80 420.00 A 200 200 0 0 1 203.76 419.34 L 207.99 367.51 A 148 148 0 0 0 219.11 368.00 Z"
+                fill="#c9734a28"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 201.37 419.13 A 200 200 0 0 1 186.45 417.17 L 195.18 365.90 A 148 148 0 0 0 206.22 367.36 Z"
+                fill="#c9734a28"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 184.09 416.75 A 200 200 0 0 1 169.40 413.49 L 182.55 363.18 A 148 148 0 0 0 193.43 365.59 Z"
+                fill="#c9734a28"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 167.08 412.87 A 200 200 0 0 1 152.72 408.35 L 170.22 359.38 A 148 148 0 0 0 180.84 362.72 Z"
+                fill="#c9734a28"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 150.47 407.52 A 200 200 0 0 1 136.57 401.77 L 158.26 354.51 A 148 148 0 0 0 168.55 358.77 Z"
+                fill="#c9734a28"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 134.39 400.75 A 200 200 0 0 1 121.04 393.80 L 146.77 348.61 A 148 148 0 0 0 156.65 353.76 Z"
+                fill="#c9734a28"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 118.96 392.60 A 200 200 0 0 1 106.27 384.52 L 135.84 341.74 A 148 148 0 0 0 145.23 347.73 Z"
+                fill="#d4a85328"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 104.30 383.14 A 200 200 0 0 1 92.36 373.98 L 125.55 333.94 A 148 148 0 0 0 134.38 340.72 Z"
+                fill="#d4a85328"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 90.53 372.43 A 200 200 0 0 1 79.43 362.27 L 115.98 325.28 A 148 148 0 0 0 124.19 332.80 Z"
+                fill="#d4a85328"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 77.73 360.57 A 200 200 0 0 1 67.57 349.47 L 107.20 315.81 A 148 148 0 0 0 114.72 324.02 Z"
+                fill="#d4a85328"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 66.02 347.64 A 200 200 0 0 1 56.86 335.70 L 99.28 305.62 A 148 148 0 0 0 106.06 314.45 Z"
+                fill="#d4a85328"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 55.48 333.73 A 200 200 0 0 1 47.40 321.04 L 92.27 294.77 A 148 148 0 0 0 98.26 304.16 Z"
+                fill="#d4a85328"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 46.20 318.96 A 200 200 0 0 1 39.25 305.61 L 86.24 283.35 A 148 148 0 0 0 91.39 293.23 Z"
+                fill="#d4a85328"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 38.23 303.43 A 200 200 0 0 1 32.48 289.53 L 81.23 271.45 A 148 148 0 0 0 85.49 281.74 Z"
+                fill="#d4a85328"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 31.65 287.28 A 200 200 0 0 1 27.13 272.92 L 77.28 259.16 A 148 148 0 0 0 80.62 269.78 Z"
+                fill="#d4a85328"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 26.51 270.60 A 200 200 0 0 1 23.25 255.91 L 74.41 246.57 A 148 148 0 0 0 76.82 257.45 Z"
+                fill="#d4a85328"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 22.83 253.55 A 200 200 0 0 1 20.87 238.63 L 72.64 233.78 A 148 148 0 0 0 74.10 244.82 Z"
+                fill="#d4a85328"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 20.66 236.24 A 200 200 0 0 1 20.00 221.20 L 72.00 220.89 A 148 148 0 0 0 72.49 232.01 Z"
+                fill="#d4a85328"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 20.00 218.80 A 200 200 0 0 1 20.66 203.76 L 72.49 207.99 A 148 148 0 0 0 72.00 219.11 Z"
+                fill="#d4a85328"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 20.87 201.37 A 200 200 0 0 1 22.83 186.45 L 74.10 195.18 A 148 148 0 0 0 72.64 206.22 Z"
+                fill="#d4a85328"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 23.25 184.09 A 200 200 0 0 1 26.51 169.40 L 76.82 182.55 A 148 148 0 0 0 74.41 193.43 Z"
+                fill="#d4a85328"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 27.13 167.08 A 200 200 0 0 1 31.65 152.72 L 80.62 170.22 A 148 148 0 0 0 77.28 180.84 Z"
+                fill="#d4a85328"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 32.48 150.47 A 200 200 0 0 1 38.23 136.57 L 85.49 158.26 A 148 148 0 0 0 81.23 168.55 Z"
+                fill="#d4a85328"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 39.25 134.39 A 200 200 0 0 1 46.20 121.04 L 91.39 146.77 A 148 148 0 0 0 86.24 156.65 Z"
+                fill="#d4a85328"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 47.40 118.96 A 200 200 0 0 1 55.48 106.27 L 98.26 135.84 A 148 148 0 0 0 92.27 145.23 Z"
+                fill="#4a7fa528"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 56.86 104.30 A 200 200 0 0 1 66.02 92.36 L 106.06 125.55 A 148 148 0 0 0 99.28 134.38 Z"
+                fill="#4a7fa528"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 67.57 90.53 A 200 200 0 0 1 77.73 79.43 L 114.72 115.98 A 148 148 0 0 0 107.20 124.19 Z"
+                fill="#4a7fa528"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 79.43 77.73 A 200 200 0 0 1 90.53 67.57 L 124.19 107.20 A 148 148 0 0 0 115.98 114.72 Z"
+                fill="#4a7fa528"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 92.36 66.02 A 200 200 0 0 1 104.30 56.86 L 134.38 99.28 A 148 148 0 0 0 125.55 106.06 Z"
+                fill="#4a7fa528"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 106.27 55.48 A 200 200 0 0 1 118.96 47.40 L 145.23 92.27 A 148 148 0 0 0 135.84 98.26 Z"
+                fill="#4a7fa528"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 121.04 46.20 A 200 200 0 0 1 134.39 39.25 L 156.65 86.24 A 148 148 0 0 0 146.77 91.39 Z"
+                fill="#4a7fa528"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 136.57 38.23 A 200 200 0 0 1 150.47 32.48 L 168.55 81.23 A 148 148 0 0 0 158.26 85.49 Z"
+                fill="#4a7fa528"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 152.72 31.65 A 200 200 0 0 1 167.08 27.13 L 180.84 77.28 A 148 148 0 0 0 170.22 80.62 Z"
+                fill="#4a7fa528"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 169.40 26.51 A 200 200 0 0 1 184.09 23.25 L 193.43 74.41 A 148 148 0 0 0 182.55 76.82 Z"
+                fill="#4a7fa528"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 186.45 22.83 A 200 200 0 0 1 201.37 20.87 L 206.22 72.64 A 148 148 0 0 0 195.18 74.10 Z"
+                fill="#4a7fa528"
+                 />
+        
+          
+          
+          
+          
+          <path d="M 203.76 20.66 A 200 200 0 0 1 218.80 20.00 L 219.11 72.00 A 148 148 0 0 0 207.99 72.49 Z"
+                fill="#4a7fa528"
+                 />
+        
+
+        
+        
+          <text x="382.6" y="57.4" text-anchor="middle"
+                font-family="system-ui, sans-serif" font-size="10"
+                fill="var(--stone)" letter-spacing="2" font-weight="500">SPR</text>
+          <text x="382.6" y="69.4" text-anchor="middle"
+                font-family="ui-monospace, Menlo, monospace" font-size="9"
+                fill="var(--stone)">Feb</text>
+        
+          <text x="382.6" y="382.6" text-anchor="middle"
+                font-family="system-ui, sans-serif" font-size="10"
+                fill="var(--stone)" letter-spacing="2" font-weight="500">SUM</text>
+          <text x="382.6" y="394.6" text-anchor="middle"
+                font-family="ui-monospace, Menlo, monospace" font-size="9"
+                fill="var(--stone)">May</text>
+        
+          <text x="57.4" y="382.6" text-anchor="middle"
+                font-family="system-ui, sans-serif" font-size="10"
+                fill="var(--stone)" letter-spacing="2" font-weight="500">AUT</text>
+          <text x="57.4" y="394.6" text-anchor="middle"
+                font-family="ui-monospace, Menlo, monospace" font-size="9"
+                fill="var(--stone)">Aug</text>
+        
+          <text x="57.4" y="57.4" text-anchor="middle"
+                font-family="system-ui, sans-serif" font-size="10"
+                fill="var(--stone)" letter-spacing="2" font-weight="500">WIN</text>
+          <text x="57.4" y="69.4" text-anchor="middle"
+                font-family="ui-monospace, Menlo, monospace" font-size="9"
+                fill="var(--stone)">Nov</text>
+        
+
+        <text x="220.0" y="200.0" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="var(--stone)" letter-spacing="2.2" font-weight="500">NOW</text>
+        <text x="220.0" y="228.0"  text-anchor="middle" font-family="'Hiragino Mincho ProN', 'Yu Mincho', serif" font-size="32" fill="var(--deep)" letter-spacing="5">虹始見</text>
+        <text x="220.0" y="248.0" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="10" fill="var(--stone)" letter-spacing="1">21 / 72 · APR 15</text>
+      </svg>
+
+      <div class="legend">
+        
+          <span class="legend-row">
+            <span class="legend-swatch" style="background: #6b8f71;"></span>
+            <span class="legend-name">spring</span>
+          </span>
+        
+          <span class="legend-row">
+            <span class="legend-swatch" style="background: #c9734a;"></span>
+            <span class="legend-name">summer</span>
+          </span>
+        
+          <span class="legend-row">
+            <span class="legend-swatch" style="background: #d4a853;"></span>
+            <span class="legend-name">autumn</span>
+          </span>
+        
+          <span class="legend-row">
+            <span class="legend-swatch" style="background: #4a7fa5;"></span>
+            <span class="legend-name">winter</span>
+          </span>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Dropcap opening ── -->
+  <section class="opening-band" id="letter">
+    <div class="opening-inner">
+      
+      
+      <span class="dropcap">T</span>
+      <p class="opening-text">he rain stops mid-afternoon, and suddenly there it is — a faint arc of color suspended between two hills, so delicate it seems painted on mist. The air carries that particular sweetness of wet earth and fresh leaves, while droplets still cling to every surface, each one holding its own small spectrum. This is the season when sky and water conspire to remind us that light itself can be broken open.</p>
+    </div>
+  </section>
+
+  <!-- ── Three-column spread ── -->
+  <section class="spread">
+    <div class="spread-col">
+      <h3>Nature</h3>
+      <p>Swallows have fully returned now, their forked tails cutting swift arcs beneath clouds heavy with the next shower. Cherry blossoms have given way to the unfurling of fresh leaves — a green so bright it seems to glow from within. Frogs have begun their evening chorus in the paddies, and the first firefly larvae stir in streamside grasses, though their flight is still weeks away.</p>
+    </div>
+    <div class="spread-divider"></div>
+    <div class="spread-col">
+      <h3>Table</h3>
+      
+        <p><strong style="color: var(--deep);">Takenoko gohan.</strong> Rice cooked with fresh bamboo shoots and dashi, celebrating the tender first harvest that appears only now in mid-spring.</p>
+      
+        <p><strong style="color: var(--deep);">Soramame no shioyude.</strong> Fava beans simply boiled in salted water, their jade-green color and sweet, nutty flavor at their peak before the pods begin to toughen.</p>
+      
+    </div>
+    <div class="spread-divider"></div>
+    <div class="spread-col">
+      <h3>Rite</h3>
+      <p>This period falls within the observance of the eighty-eight nights (hachijū-hachiya) counting from Risshun, marking the approach of the first tea harvest. Farmers watch the skies carefully, as late frosts can still damage tender leaves. The rainbow itself, though celebrated for its beauty, was traditionally considered somewhat inauspicious — a bridge between worlds, beautiful precisely because it cannot last.</p>
+    </div>
+  </section>
+
+  <!-- ── At-market ticker (Ink band) ── -->
+  <section class="ticker">
+    <div class="ticker-row">
+      <span class="ticker-label">AT MARKET</span>
+      <span class="ticker-text">strawberries (ichigo) &nbsp; · &nbsp; loquats (biwa) &nbsp; · &nbsp; mikan (late variety) &nbsp; · &nbsp; amanatsu citrus &nbsp; · &nbsp; bamboo shoots (takenoko) &nbsp; · &nbsp; spring cabbage (haru kyabetsu) &nbsp; · &nbsp; fava beans (soramame) &nbsp; · &nbsp; udo (mountain asparagus) &nbsp; · &nbsp; sayori (halfbeak) &nbsp; · &nbsp; shirauo (icefish) &nbsp; · &nbsp; tai (sea bream)</span>
+    </div>
+  </section>
+
+  <!-- ── Monumental haiku ── -->
+  <section class="haiku-band">
+    <p class="haiku-mark">俳句</p>
+    
+      <p class="haiku-jp">雨上がり虹の根元に牛の声</p>
+    
+    <div class="haiku-rule"></div>
+    
+      <p class="haiku-en">After the rain — at the rainbow&#39;s foot, a cow&#39;s low call</p>
+    
+    <p class="haiku-byline">ameagari niji no nemoto ni ushi no koe</p>
+  </section>
+
+  <!-- ── Subscribe (Ink) ── -->
+  <section class="subscribe" id="subscribe">
+    <div>
+      <p class="kicker">THE LETTER</p>
+      <h2 class="sub-heading">Seventy-two<br>letters a year.</h2>
+      <p class="sub-body">
+        Nature, then food, then culture, then a haiku. Always the same order.
+        Always five days. Arrives at 7am local time the day a new season begins —
+        you may unsubscribe with one click.
+      </p>
+    </div>
+    <form class="sub-form" id="signupForm">
+      <label class="sub-form-label" for="email">EMAIL</label>
+      <input class="sub-input" id="email" name="email" type="email" placeholder="your@email.com" required>
+      <button class="sub-btn" type="submit">→ Subscribe</button>
+      <p class="sub-fine">No tracking, no affiliates, no auto-renewals.</p>
     </form>
-    <p class="signup-note">No spam. Unsubscribe any time.</p>
-    <p class="signup-success" id="signupSuccess">You're on the list.</p>
-  </div>
+  </section>
 
-  <footer class="footer">
-    <p style="margin:0;">
-      <a href="/archive/">Archive</a>
-      &nbsp;·&nbsp;
-      Kō &nbsp;·&nbsp; Japan's 72 micro-seasons
-      &nbsp;·&nbsp;
-      <a href="/unsubscribe.html">Unsubscribe</a>
-    </p>
+  <!-- ── Recent letters ── -->
+  
+  <section class="recent">
+    <p class="recent-label">Recently</p>
+    
+      <a href="/archive/21-niji-hajimete-arawaru.html" class="recent-row">
+        <span class="recent-num">021</span>
+        <span class="recent-jp">虹始見</span>
+        <span class="recent-en">First rainbows appear</span>
+        <span class="recent-romaji"><em>Niji hajimete arawaru</em></span>
+        <span class="recent-date">Apr 15</span>
+      </a>
+    
+  </section>
+  
+
+  <!-- ── Footer ── -->
+  <footer id="about">
+    <div class="footer-inner">
+      <div>
+        <span class="footer-brand">Kō<span class="kanji">候</span></span>
+        <p class="footer-tag">Japan's seventy-two micro-seasons, one at a time.</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-label">NAVIGATE</p>
+        <a class="footer-link" href="#letter">This letter</a>
+        <a class="footer-link" href="/archive/">All seventy-two</a>
+        <a class="footer-link" href="#about">About</a>
+        <a class="footer-link" href="/rss.xml">RSS</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-label">COLOPHON</p>
+        <p class="footer-meta">Kept in Kyoto<br>since MMXXIV</p>
+        <p class="footer-meta">Plain HTML,<br>inline CSS</p>
+      </div>
+    </div>
+    <p class="footer-copy">© Kō · set in Georgia &amp; system-ui · no cookies, no tracking</p>
   </footer>
 
 </div>
 
 <script>
-  document.getElementById('signupForm').addEventListener('submit', async function(e) {
+  document.getElementById('signupForm')?.addEventListener('submit', async function(e) {
     e.preventDefault();
     const email = this.email.value;
     const btn = this.querySelector('button');
-    btn.disabled = true;
-    btn.textContent = '…';
+    btn.disabled = true; btn.textContent = '…';
     try {
       const res = await fetch('https://subscribe.ko-72.com/subscribe', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({email}),
       });
-      if (res.ok) {
-        this.style.display = 'none';
-        document.getElementById('signupNote') && (document.getElementById('signupNote').style.display = 'none');
-        document.getElementById('signupSuccess').style.display = 'block';
-      } else {
-        btn.disabled = false;
-        btn.textContent = 'Subscribe';
-        alert('Something went wrong — please try again.');
-      }
-    } catch {
-      btn.disabled = false;
-      btn.textContent = 'Subscribe';
-      alert('Something went wrong — please try again.');
-    }
+      if (res.ok) { this.innerHTML = '<p style="color:var(--accent);font-family:var(--serif);font-size:18px;">You\'re on the list.</p>'; }
+      else { btn.disabled = false; btn.textContent = '→ Subscribe'; alert('Something went wrong.'); }
+    } catch { btn.disabled = false; btn.textContent = '→ Subscribe'; alert('Something went wrong.'); }
   });
 </script>
 

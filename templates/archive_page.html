@@ -12,396 +12,415 @@
     --washi:  #f5f3ee;
     --stone:  #888780;
     --deep:   #2c2c2a;
+    --earth:  #4a3728;
     --rule:   #d8d5ce;
     --shell:  #e8e5de;
-    --dish-bg:#eeece7;
     --tint:   #edeae3;
     --accent: {{ accent_color }};
+
+    --serif:  Georgia, 'Times New Roman', serif;
+    --sans:   system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --mincho: 'Hiragino Mincho ProN', 'Yu Mincho', 'MS Mincho', Georgia, serif;
+    --mono:   ui-monospace, 'SF Mono', Menlo, monospace;
   }
 
-  html, body { margin: 0; padding: 0; background: var(--shell); }
-  body {
-    font-family: system-ui, -apple-system, sans-serif;
-    color: var(--deep);
-    line-height: 1.8;
-    font-size: 15px;
-  }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
+  html, body { margin: 0; padding: 0; background: var(--washi); }
+  body { font-family: var(--sans); color: var(--deep); line-height: 1.6; font-size: 15px; }
+  a { color: inherit; text-decoration: none; }
 
-  /* ── NAV (dark bar above header) ── */
-  .nav {
-    background: #111110;
-    padding: 12px 24px;
-  }
-  .nav-inner {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  .nav a {
-    font-size: 12px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+  /* ── Top nav (Ink) ── */
+  .topbar {
+    background: var(--ink); padding: 14px 40px;
     color: var(--stone);
-    text-decoration: none;
+    display: flex; justify-content: space-between; align-items: center;
   }
-  .nav a:hover { color: var(--washi); }
-
-  /* ── CARD ── */
-  .card {
-    max-width: 600px;
-    margin: 0 auto;
-    background: var(--washi);
-  }
-
-  /* ── HEADER BAND (Ink) ── */
-  .hdr {
-    background: var(--ink);
-    padding: 32px 36px 28px;
-  }
-  .hdr-logo {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 22px;
-    font-weight: 400;
-    color: var(--washi);
-    letter-spacing: 0.02em;
-    margin: 0;
-    line-height: 1;
-  }
-  .hdr-logo .kanji {
-    font-family: system-ui, -apple-system, sans-serif;
-    font-size: 14px;
+  .topbar a.back, .topbar .count {
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
     color: var(--stone);
-    margin-left: 10px;
   }
-  .hdr-rule {
-    border: none;
-    border-top: 1px solid #333330;
-    margin: 20px 0;
+  .topbar .brand {
+    font-family: var(--serif); font-size: 18px;
+    color: var(--washi); letter-spacing: 0.02em;
   }
-  .hdr-label {
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin: 0 0 14px 0;
-  }
-  .hdr-name {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 26px;
-    font-weight: 400;
-    letter-spacing: -0.01em;
-    color: var(--washi);
-    margin: 0 0 10px 0;
-    line-height: 1.3;
-  }
-  .hdr-romaji {
-    font-size: 14px;
-    color: var(--stone);
-    margin: 0;
-    letter-spacing: 0.02em;
-  }
-  .hdr-romaji .jp {
-    font-family: 'Hiragino Mincho ProN', 'Yu Mincho', 'MS Mincho', serif;
+  .topbar .brand .kanji {
+    font-family: var(--mincho); font-size: 12px;
+    color: var(--stone); margin-left: 8px;
   }
 
-  /* ── BODY SECTIONS ── */
-  .body { padding: 0 36px; }
+  /* ── Main grid: 260px rail + article ── */
+  .wrap {
+    max-width: 980px; margin: 0 auto;
+    padding: 56px 40px 80px;
+    display: grid; grid-template-columns: 260px 1fr; gap: 64px;
+    align-items: start;
+  }
 
-  .section {
-    padding: 28px 0;
+  /* ── LEFT RAIL ── */
+  .rail-season {
+    font-size: 10px; font-weight: 500; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--accent);
+    margin: 0 0 14px;
+  }
+  .rail-kanji {
+    font-family: var(--mincho); font-size: 108px; line-height: 1;
+    color: var(--deep); letter-spacing: 0.04em; margin-bottom: 24px;
+  }
+  .ring { position: relative; width: 140px; height: 140px; margin-bottom: 28px; }
+  .ring svg { display: block; }
+  .ring-center {
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column; pointer-events: none;
+  }
+  .ring-num {
+    font-family: var(--serif); font-size: 24px;
+    color: var(--deep); line-height: 1;
+  }
+  .ring-of {
+    font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--stone); margin-top: 4px;
+  }
+
+  .tldr { border-top: 1px solid var(--rule); }
+  .tldr-row {
+    display: grid; grid-template-columns: 72px 1fr; gap: 14px;
+    padding: 10px 0;
     border-bottom: 1px solid var(--rule);
   }
-  .section:last-child { border-bottom: none; }
+  .tldr-key {
+    font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--stone); font-weight: 500;
+  }
+  .tldr-val {
+    font-size: 13px; color: var(--deep); line-height: 1.5;
+  }
+  .tldr-val.italic { font-family: var(--serif); font-style: italic; }
 
-  .section-label {
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--stone);
-    margin: 0 0 12px 0;
+  .nav-adjacent { margin-top: 32px; }
+  .nav-link {
+    display: block; padding: 14px 0;
+    border-top: 1px solid var(--rule);
+  }
+  .nav-kicker {
+    font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+    margin: 0 0 4px; font-weight: 500;
+  }
+  .nav-title {
+    font-family: var(--serif); font-size: 15px;
+    margin: 0; color: var(--deep); line-height: 1.35;
   }
 
-  /* Opening (serif) */
-  .opening {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 17px;
-    line-height: 1.9;
-    color: var(--deep);
-    margin: 0;
+  /* ── ARTICLE ── */
+  .article-eyebrow {
+    font-size: 11px; font-weight: 500; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--accent); margin: 0 0 18px;
+  }
+  .article-title {
+    font-family: var(--serif); font-weight: 400;
+    font-size: 56px; line-height: 1.05; letter-spacing: -0.02em;
+    margin: 0 0 8px; color: var(--deep);
+  }
+  .article-romaji {
+    font-family: var(--serif); font-style: italic; font-size: 16px;
+    color: var(--stone); margin: 0 0 36px;
+  }
+  .accent-rule { height: 2px; background: var(--accent); width: 48px; margin-bottom: 36px; }
+
+  .summary {
+    font-family: var(--serif); font-style: italic; font-size: 17px;
+    color: var(--stone); line-height: 1.7;
+    margin: 0 0 36px; max-width: 560px;
   }
 
-  /* Body copy (sans) */
-  .body-copy {
-    font-size: 15px;
-    line-height: 1.8;
-    color: var(--deep);
-    margin: 0;
+  .opening { max-width: 580px; margin-bottom: 48px; }
+  .opening p {
+    font-family: var(--serif); font-size: 18px; line-height: 1.75;
+    color: var(--deep); margin: 0;
+  }
+  .dropcap {
+    float: left; font-family: var(--serif); font-size: 72px;
+    line-height: 0.85; color: var(--accent);
+    margin-right: 12px; margin-top: 4px; padding-right: 4px;
   }
 
-  /* ── PRODUCE GRID ── */
+  .section-head {
+    font-size: 11px; font-weight: 500; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--accent);
+    margin: 0 0 14px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .section-head::before {
+    content: ''; width: 14px; height: 1px; background: var(--accent);
+  }
+
+  .sec { margin: 0 0 48px; max-width: 580px; }
+  .sec p { font-size: 15.5px; line-height: 1.8; margin: 0; }
+
+  .produce {
+    margin: 0 0 48px;
+  }
   .produce-grid {
-    display: flex;
-    gap: 0;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    border-top: 1px solid var(--rule); padding-top: 18px;
   }
-  .produce-col {
-    flex: 1;
-    text-align: center;
-    padding: 0 14px;
-    border-right: 1px solid var(--rule);
+  .produce-col p.h {
+    font-size: 10px; font-weight: 500; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--stone);
+    margin: 0 0 10px;
   }
-  .produce-col:first-child { padding-left: 0; }
-  .produce-col:last-child  { padding-right: 0; border-right: none; }
+  .produce-col p.item {
+    font-family: var(--serif); font-size: 14px; margin: 0 0 6px;
+    color: var(--deep); line-height: 1.5;
+  }
 
-  .produce-col-label {
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin: 0 0 10px 0;
-    padding-bottom: 8px;
+  .dishes { max-width: 580px; margin: 0 0 48px; }
+  .dish {
+    display: grid; grid-template-columns: 24px 1fr; gap: 18px;
+    padding: 18px 0;
     border-bottom: 1px solid var(--rule);
   }
-  .produce-col p {
-    font-size: 13px;
-    margin: 0 0 6px 0;
-    color: var(--deep);
-    line-height: 1.5;
-  }
-
-  /* ── DISHES ── */
-  .dish {
-    border-left: 3px solid var(--accent);
-    background: var(--dish-bg);
-    padding: 14px 16px;
-    margin-bottom: 12px;
+  .dish:first-child { border-top: 1px solid var(--rule); }
+  .dish-num {
+    font-size: 11px; color: var(--accent); font-weight: 500;
+    font-variant-numeric: tabular-nums; letter-spacing: 0.1em; padding-top: 3px;
   }
   .dish-name {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--deep);
-    margin: 0 0 5px 0;
+    font-family: var(--serif); font-size: 18px; color: var(--deep);
+    margin: 0 0 6px; letter-spacing: -0.005em;
   }
   .dish-desc {
-    font-size: 13px;
-    line-height: 1.7;
-    color: var(--stone);
-    margin: 0;
+    font-size: 13.5px; line-height: 1.7; color: var(--stone); margin: 0;
   }
 
-  /* ── CULTURAL NOTE ── */
-  .cultural-note {
-    border-left: 3px solid var(--accent);
-    padding: 10px 16px;
+  blockquote.cultural {
+    border-left: 2px solid var(--accent);
+    padding-left: 24px; margin: 0;
+    font-family: var(--serif); font-size: 19px;
+    line-height: 1.65; color: var(--deep);
   }
+  .cultural-wrap { max-width: 580px; margin: 0 0 64px; }
 
-  /* ── HAIKU ── */
   .haiku {
     text-align: center;
-    padding: 40px 24px;
+    padding: 56px 0 52px;
     border-top: 1px solid var(--rule);
     border-bottom: 1px solid var(--rule);
-    margin: 28px 0;
+    margin: 0 0 40px;
   }
   .haiku-jp {
-    font-family: Georgia, 'Hiragino Mincho ProN', 'Yu Mincho', 'MS Mincho', serif;
-    font-size: 20px;
-    letter-spacing: 0.2em;
-    color: var(--stone);
-    line-height: 2.2;
-    margin: 0 0 4px 0;
+    font-family: var(--mincho); font-size: 32px; letter-spacing: 0.2em;
+    color: var(--deep); line-height: 1.9; margin: 0 0 18px;
   }
   .haiku-romaji {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 15px;
-    font-style: italic;
-    line-height: 2.2;
-    color: var(--stone);
-    letter-spacing: 0.04em;
-    margin: 0 0 4px 0;
+    font-family: var(--serif); font-size: 15px; font-style: italic;
+    color: var(--stone); line-height: 2; margin: 0 0 6px; letter-spacing: 0.06em;
   }
   .haiku-en {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 15px;
-    font-style: italic;
-    line-height: 2.2;
-    color: var(--stone);
-    margin: 0;
+    font-family: var(--serif); font-size: 16px; font-style: italic;
+    color: var(--deep); line-height: 2; margin: 0;
   }
 
-  /* ── CLOSING ── */
   .closing {
-    text-align: center;
-    font-size: 13px;
-    color: var(--stone);
-    padding: 28px 0 0;
+    font-family: var(--serif); font-style: italic; font-size: 15px;
+    text-align: center; color: var(--stone); margin: 0;
   }
 
-  /* ── FOOTER ── */
-  .footer {
-    background: var(--shell);
-    padding: 20px 36px;
+  /* ── Footer ── */
+  footer.page-foot {
     border-top: 1px solid var(--rule);
-    text-align: center;
-    font-size: 11px;
+    padding: 28px 40px; text-align: center;
+    font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
     color: var(--stone);
-    letter-spacing: 0.04em;
-  }
-  .footer a { color: var(--stone); }
-  .footer a:hover { color: var(--deep); text-decoration: none; }
-
-  /* ── TLDR CARD ── */
-  .tldr {
-    background: var(--tint);
-    border-top: 2px solid var(--accent);
-    padding: 16px 36px;
-  }
-  .tldr-grid {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 6px 16px;
-    align-items: baseline;
-  }
-  .tldr-label {
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--stone);
-    white-space: nowrap;
-  }
-  .tldr-value {
-    font-size: 13px;
-    color: var(--deep);
-    line-height: 1.5;
   }
 
-  /* ── RESPONSIVE ── */
-  @media (max-width: 640px) {
-    .hdr       { padding: 24px 20px 22px; }
-    .body      { padding: 0 20px; }
-    .footer    { padding: 18px 20px; }
-    .hdr-name  { font-size: 22px; }
-
-    .produce-grid { flex-direction: column; gap: 0; }
-    .produce-col {
-      border-right: none;
-      border-bottom: 1px solid var(--rule);
-      padding: 0 0 16px 0;
-      margin-bottom: 16px;
-    }
-    .produce-col:last-child { border-bottom: none; margin-bottom: 0; }
+  /* ── Responsive ── */
+  @media (max-width: 860px) {
+    .topbar { padding: 12px 20px; }
+    .wrap { grid-template-columns: 1fr; gap: 40px; padding: 32px 20px 60px; }
+    .rail-kanji { font-size: 72px; margin-bottom: 16px; }
+    .ring { width: 110px; height: 110px; margin-bottom: 20px; }
+    .article-title { font-size: 40px; }
+    .summary { font-size: 16px; }
+    .opening p { font-size: 16px; }
+    .dropcap { font-size: 56px; }
+    .produce-grid { grid-template-columns: 1fr; gap: 20px; }
+    blockquote.cultural { font-size: 17px; }
+    .haiku-jp { font-size: 24px; letter-spacing: 0.15em; }
+    footer.page-foot { padding: 24px 20px; }
   }
 </style>
 </head>
 <body>
 
-<!-- Nav (full-width dark bar) -->
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="index.html">← All seasons</a>
-  </div>
+{% set months_short = ['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'] %}
+{% set season_accents = {
+  'spring':'#6b8f71', 'summer':'#c9734a', 'autumn':'#d4a853', 'winter':'#4a7fa5'
+} %}
+
+<!-- ── Top bar ── -->
+<nav class="topbar">
+  <a class="back" href="/archive/">← All seasons</a>
+  <a class="brand" href="/">Kō<span class="kanji">候</span></a>
+  <span class="count">{{ '%02d' | format(season.id) }} / 72</span>
 </nav>
 
-<div class="card">
+<div class="wrap">
+  <!-- ── LEFT RAIL ── -->
+  <aside>
+    <p class="rail-season">{{ season.major_season }}</p>
+    <div class="rail-kanji">{{ season.name_jp }}</div>
 
-  <!-- ── HEADER BAND ── -->
-  <header class="hdr">
-    <p class="hdr-logo">Kō<span class="kanji">候</span></p>
-    <hr class="hdr-rule">
-    {% set months_short = ['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'] %}
-    <p class="hdr-label">{{ season.major_season | capitalize }} &nbsp;·&nbsp; Micro-season {{ '%02d' | format(season.id) }} of 72 &nbsp;·&nbsp; {{ months_short[season.start_month] }} {{ season.start_day }}</p>
-    <p class="hdr-name">{{ season.name_en }}</p>
-    <p class="hdr-romaji">{{ season.name_romaji }} &nbsp;·&nbsp; <span class="jp">{{ season.name_jp }}</span></p>
-  </header>
-
-  <!-- ── TLDR SUMMARY CARD ── -->
-  <div class="tldr">
-    <div class="tldr-grid">
-      <span class="tldr-label">Sekki</span>
-      <span class="tldr-value">{{ season.sekki }}</span>
-      <span class="tldr-label">Dates</span>
-      <span class="tldr-value">{{ date_range }} · {{ duration_days }} days</span>
-      <span class="tldr-label">Right now</span>
-      <span class="tldr-value">{{ content.summary }}</span>
+    <!-- Year ring (72 arcs). Arc paths are pre-computed Python-side as season.ring_d; see wheel.py. -->
+    <div class="ring">
+      {% set RING = 140 %}
+      {% set RC = RING / 2 %}
+      <svg width="{{ RING }}" height="{{ RING }}" viewBox="0 0 {{ RING }} {{ RING }}">
+        {% for s in all_seasons %}
+          {% set sc = season_accents[s.major_season] %}
+          {% set is_current = s.id == season.id %}
+          {% set is_same_season = s.major_season == season.major_season and not is_current %}
+          <path d="{{ s.ring_d }}"
+                fill="{% if is_current %}{{ sc }}{% else %}#d8d5ce{% endif %}"
+                opacity="{% if is_current %}1{% elif is_same_season %}0.55{% else %}0.28{% endif %}"/>
+        {% endfor %}
+      </svg>
+      <div class="ring-center">
+        <span class="ring-num">{{ '%02d' | format(season.id) }}</span>
+        <span class="ring-of">of 72</span>
+      </div>
     </div>
-  </div>
 
-  <!-- ── BODY ── -->
-  <div class="body">
+    <!-- TLDR -->
+    <div class="tldr">
+      <div class="tldr-row">
+        <span class="tldr-key">Sekki</span>
+        <span class="tldr-val">{{ season.sekki }}</span>
+      </div>
+      <div class="tldr-row">
+        <span class="tldr-key">Dates</span>
+        <span class="tldr-val">{{ date_range }}</span>
+      </div>
+      <div class="tldr-row">
+        <span class="tldr-key">Duration</span>
+        <span class="tldr-val">{{ duration_days }} days</span>
+      </div>
+      <div class="tldr-row">
+        <span class="tldr-key">Romaji</span>
+        <span class="tldr-val italic">{{ season.name_romaji }}</span>
+      </div>
+    </div>
 
-    <!-- Opening + Nature Notes -->
-    <section class="section">
-      <p class="opening">{{ content.opening }}</p>
-      <p class="section-label" style="margin-top:24px;">Nature Notes</p>
-      <p class="body-copy">{{ content.nature_notes }}</p>
+    <!-- Prev / Next -->
+    <div class="nav-adjacent">
+      {% if prev %}
+        <a class="nav-link" href="{{ prev.url }}">
+          <p class="nav-kicker" style="color: {{ season_accents[prev.major_season] }};">
+            Previous · № {{ '%02d' | format(prev.id) }}
+          </p>
+          <p class="nav-title">{{ prev.name_en }}</p>
+        </a>
+      {% endif %}
+      {% if next %}
+        <a class="nav-link" href="{{ next.url }}">
+          <p class="nav-kicker" style="color: {{ season_accents[next.major_season] }};">
+            Next · № {{ '%02d' | format(next.id) }}
+          </p>
+          <p class="nav-title">{{ next.name_en }}</p>
+        </a>
+      {% endif %}
+    </div>
+  </aside>
+
+  <!-- ── ARTICLE ── -->
+  <article>
+    <p class="article-eyebrow">Micro-season {{ '%02d' | format(season.id) }} of 72 · {{ date_range }}</p>
+    <h1 class="article-title">{{ season.name_en }}.</h1>
+    <p class="article-romaji">{{ season.name_romaji }}</p>
+
+    <div class="accent-rule"></div>
+
+    {% if content.summary %}
+      <p class="summary">{{ content.summary }}</p>
+    {% endif %}
+
+    <!-- Opening with dropcap -->
+    <div class="opening">
+      <p>
+        <span class="dropcap">{{ content.opening[0] }}</span>{{ content.opening[1:] }}
+      </p>
+    </div>
+
+    <!-- Nature notes -->
+    <section class="sec">
+      <p class="section-head">Nature notes</p>
+      <p>{{ content.nature_notes }}</p>
     </section>
 
-    <!-- In Season -->
-    <section class="section">
-      <p class="section-label" style="text-align:center;">In Season</p>
+    <!-- In season: fruits / vegetables / fish -->
+    <section class="produce">
+      <p class="section-head">In season</p>
       <div class="produce-grid">
         <div class="produce-col">
-          <p class="produce-col-label">Fruits</p>
-          {% for item in content.seasonal_produce.fruits %}<p>{{ item }}</p>{% endfor %}
+          <p class="h">Fruits</p>
+          {% for it in content.seasonal_produce.fruits %}
+            <p class="item">{{ it }}</p>
+          {% endfor %}
         </div>
         <div class="produce-col">
-          <p class="produce-col-label">Vegetables</p>
-          {% for item in content.seasonal_produce.vegetables %}<p>{{ item }}</p>{% endfor %}
+          <p class="h">Vegetables</p>
+          {% for it in content.seasonal_produce.vegetables %}
+            <p class="item">{{ it }}</p>
+          {% endfor %}
         </div>
         <div class="produce-col">
-          <p class="produce-col-label">Fish</p>
-          {% for item in content.seasonal_produce.fish %}<p>{{ item }}</p>{% endfor %}
+          <p class="h">Fish</p>
+          {% for it in content.seasonal_produce.fish %}
+            <p class="item">{{ it }}</p>
+          {% endfor %}
         </div>
       </div>
     </section>
 
-    <!-- At the Table -->
-    <section class="section">
-      <p class="section-label">At the Table</p>
-      {% for dish in content.seasonal_dishes %}
-      <div class="dish">
-        <p class="dish-name">{{ dish.name }}</p>
-        <p class="dish-desc">{{ dish.description }}</p>
-      </div>
+    <!-- At the table -->
+    <section class="dishes">
+      <p class="section-head">At the table</p>
+      {% for d in content.seasonal_dishes %}
+        <div class="dish">
+          <span class="dish-num">{{ '%02d' | format(loop.index) }}</span>
+          <div>
+            <p class="dish-name">{{ d.name }}</p>
+            <p class="dish-desc">{{ d.description }}</p>
+          </div>
+        </div>
       {% endfor %}
     </section>
 
-    <!-- Cultural Note -->
-    <section class="section">
-      <p class="section-label">Cultural Note</p>
-      <div class="cultural-note">
-        <p class="body-copy">{{ content.cultural_note }}</p>
-      </div>
+    <!-- Cultural note -->
+    <section class="cultural-wrap">
+      <p class="section-head">Cultural note</p>
+      <blockquote class="cultural">{{ content.cultural_note }}</blockquote>
     </section>
 
-    <!-- Haiku (serif italic, Stone) -->
-    <div class="haiku">
-      <p class="haiku-jp">{{ content.haiku.japanese }}</p>
+    <!-- Haiku -->
+    <section class="haiku">
+      {% for line in content.haiku.japanese.split('　') %}
+        <p class="haiku-jp">{{ line }}</p>
+      {% endfor %}
       <p class="haiku-romaji">{{ content.haiku.romaji }}</p>
-      <p class="haiku-en">{{ content.haiku.english }}</p>
-    </div>
+      {% for line in content.haiku.english.split('\n') %}
+        <p class="haiku-en">{{ line }}</p>
+      {% endfor %}
+    </section>
 
-    <!-- Closing (13px, Stone, centered) -->
-    <div class="closing">
-      <p style="margin:0;">{{ content.closing }}</p>
-    </div>
+    {% if content.closing %}
+      <p class="closing">{{ content.closing }}</p>
+    {% endif %}
+  </article>
+</div>
 
-  </div><!-- /body -->
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p style="margin:0;">
-      <a href="index.html">← All seasons</a>
-      &nbsp;·&nbsp;
-      Kō &nbsp;·&nbsp; Japan's 72 micro-seasons, one at a time
-    </p>
-  </footer>
-
-</div><!-- /card -->
+<footer class="page-foot">
+  Kō · Japan's 72 micro-seasons, one at a time
+</footer>
 
 </body>
 </html>

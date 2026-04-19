@@ -3,141 +3,1326 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kō · All Seasons</title>
+<title>Kō — The Archive · 72 micro-seasons</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; }
+
   :root {
-    --ink:   #2a2520;
-    --mid:   #3d3530;
-    --soft:  #5a504a;
-    --muted: #8a7e74;
-    --rule:  #d6cfc4;
-    --bg:    #faf8f5;
-    --paper: #f5f2ed;
-    --tint:  #f0ece6;
-    --accent:#7a6e5a;
-  }
-  html { background: var(--paper); }
-  body {
-    margin: 0;
-    padding: 64px 24px;
-    background: var(--paper);
-    font-family: Georgia, 'Hiragino Mincho ProN', 'Yu Mincho', 'MS Mincho', serif;
-    color: var(--mid);
-    line-height: 1.8;
-  }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .page { max-width: 700px; margin: 0 auto; }
+    --ink:    #1a1a18;
+    --washi:  #f5f3ee;
+    --stone:  #888780;
+    --deep:   #2c2c2a;
+    --earth:  #4a3728;
+    --rule:   #d8d5ce;
+    --shell:  #e8e5de;
+    --tint:   #edeae3;
 
-  /* Header */
-  .site-header { text-align: center; margin-bottom: 64px; }
-  .site-header .brand {
-    font-family: Georgia, serif;
-    font-size: 36px;
-    letter-spacing: 0.08em;
-    color: var(--ink);
-    font-weight: 400;
-    margin-bottom: 4px;
-  }
-  .site-header .brand-kanji {
-    font-family: 'Hiragino Mincho ProN','Yu Mincho','MS Mincho',serif;
-    font-size: 20px;
-    color: var(--muted);
-    letter-spacing: 0.05em;
-    margin-left: 6px;
-    vertical-align: middle;
-  }
-  .site-header .tagline {
-    font-size: 13px;
-    letter-spacing: 0.14em;
-    color: var(--muted);
-    font-style: italic;
-  }
-  .site-header .rule {
-    width: 60px;
-    height: 1px;
-    background: var(--rule);
-    margin: 24px auto 0;
+    --spring: #6b8f71;
+    --summer: #c9734a;
+    --autumn: #d4a853;
+    --winter: #4a7fa5;
+
+    --serif:  Georgia, 'Times New Roman', serif;
+    --sans:   system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --mincho: 'Hiragino Mincho ProN', 'Yu Mincho', 'MS Mincho', Georgia, serif;
+    --mono:   ui-monospace, 'SF Mono', Menlo, monospace;
   }
 
-  /* Season grid */
-  .grid { display: flex; flex-direction: column; gap: 0; }
-  .season-row {
-    display: flex;
-    align-items: baseline;
-    padding: 14px 0;
+  html, body { margin: 0; padding: 0; background: var(--washi); }
+  body { font-family: var(--sans); color: var(--deep); line-height: 1.6; font-size: 15px; }
+  a { color: inherit; text-decoration: none; }
+
+  /* ── Thin top bar (Ink) ── */
+  .topbar {
+    background: var(--ink); color: var(--stone);
+    padding: 10px 48px;
+    font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .topbar-brand { font-family: var(--serif); font-size: 16px;
+                  letter-spacing: 0.02em; text-transform: none; color: var(--stone); }
+  .topbar-brand .kanji { font-family: var(--mincho); font-size: 10px;
+                         margin-left: 8px; color: var(--stone); }
+
+  /* ── Masthead ── */
+  .masthead {
+    padding: 56px 48px 36px;
+    border-bottom: 2px solid var(--deep);
+    display: flex; align-items: flex-end; justify-content: space-between; gap: 40px;
+    flex-wrap: wrap;
+  }
+  .masthead-kicker {
+    font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--stone); margin: 0;
+  }
+  .masthead-title {
+    font-family: var(--serif); font-weight: 400;
+    font-size: 96px; line-height: 0.95; letter-spacing: -0.04em;
+    margin: 4px 0 0; color: var(--deep);
+  }
+  .masthead-count { text-align: right; padding-bottom: 8px; }
+  .masthead-count-label {
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--stone); margin: 0;
+  }
+  .masthead-count-num {
+    font-family: var(--serif); font-size: 52px; margin: 2px 0 0;
+    color: var(--deep); line-height: 1; font-variant-numeric: tabular-nums;
+  }
+  .masthead-count-num .of { color: var(--stone); font-size: 28px; }
+  .masthead-sub {
+    font-family: var(--serif); font-style: italic; font-size: 15px;
+    color: var(--stone); margin: 28px 0 0; max-width: 520px; line-height: 1.7;
+    flex-basis: 100%;
+  }
+
+  /* ── Four-column year ── */
+  .year {
+    padding: 32px 48px 48px;
+  }
+  .year-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
     border-bottom: 1px solid var(--rule);
-    gap: 20px;
   }
-  .season-row:first-child { border-top: 1px solid var(--rule); }
-  .season-num {
-    font-size: 11px;
-    letter-spacing: 0.1em;
-    color: var(--muted);
-    width: 32px;
-    flex-shrink: 0;
-    text-align: right;
+  .season-col {
+    padding: 28px 20px;
+    border-right: 1px solid var(--rule);
+    border-top: 3px solid var(--accent);
   }
-  .season-jp {
-    font-family: 'Hiragino Mincho ProN','Yu Mincho','MS Mincho',serif;
-    font-size: 18px;
-    letter-spacing: 0.1em;
-    color: var(--ink);
-    width: 80px;
-    flex-shrink: 0;
+  .season-col:last-child { border-right: none; }
+  .season-col h2 {
+    font-family: var(--serif); font-weight: 400; font-size: 24px;
+    margin: 0 0 2px; color: var(--deep); letter-spacing: -0.005em;
   }
-  .season-en { font-size: 14px; color: var(--mid); flex: 1; }
-  .season-date { font-size: 12px; color: var(--muted); flex-shrink: 0; }
-
-  /* Empty state */
-  .empty {
-    text-align: center;
-    padding: 64px 0;
-    color: var(--muted);
-    font-size: 15px;
-    font-style: italic;
+  .season-sekki {
+    font-family: var(--serif); font-style: italic;
+    font-size: 11px; color: var(--stone); margin: 0 0 22px; letter-spacing: 0.04em;
   }
 
-  /* Footer */
-  footer {
-    margin-top: 64px;
-    text-align: center;
-    font-size: 12px;
-    letter-spacing: 0.1em;
-    color: var(--muted);
+  .entry {
+    padding: 10px 0;
+    border-top: 1px solid var(--rule);
+    cursor: pointer;
+    display: block;
+    color: inherit;
+  }
+  .entry:first-of-type { border-top: 1px solid var(--rule); }
+  .entry.pending { opacity: 0.42; cursor: default; pointer-events: none; }
+  .entry-row {
+    display: flex; align-items: baseline; gap: 8px; margin-bottom: 2px;
+  }
+  .entry-num {
+    font-size: 10px; color: var(--stone);
+    font-variant-numeric: tabular-nums; letter-spacing: 0.1em;
+    min-width: 22px;
+  }
+  .entry-jp {
+    font-family: var(--mincho); font-size: 15px;
+    color: var(--deep); letter-spacing: 0.06em;
+  }
+  .entry-date {
+    font-size: 10px; color: var(--stone); margin-left: auto;
+    font-variant-numeric: tabular-nums;
+  }
+  .entry-en {
+    font-size: 12px; color: var(--deep); margin: 0; line-height: 1.45;
+  }
+
+  .season-ornament {
+    text-align: center; margin-top: 32px;
+    padding-top: 20px; border-top: 1px solid var(--rule);
+  }
+  .season-ornament span {
+    font-family: var(--mincho); font-size: 64px;
+    color: var(--accent); opacity: 0.8; line-height: 1;
+  }
+
+  /* ── Bottom meta row ── */
+  .year-meta {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+    font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--stone);
+  }
+  .year-meta-cell {
+    padding: 12px 20px;
+    border-right: 1px solid var(--rule);
+    display: flex; justify-content: space-between;
+  }
+  .year-meta-cell:last-child { border-right: none; }
+  .year-meta-cell span:last-child { font-variant-numeric: tabular-nums; }
+
+  /* ── Footer / editor's note ── */
+  .note {
+    padding: 36px 48px 56px;
+    border-top: 1px solid var(--rule);
+    display: grid; grid-template-columns: 1fr auto;
+    gap: 32px; align-items: end;
+  }
+  .note-body {
+    font-family: var(--serif); font-style: italic; font-size: 14px;
+    color: var(--stone); max-width: 520px; margin: 0; line-height: 1.7;
+  }
+  .note-est {
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--stone); margin: 0;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 960px) {
+    .year-grid { grid-template-columns: repeat(2, 1fr); }
+    .year-meta { grid-template-columns: repeat(2, 1fr); }
+    .season-col:nth-child(2) { border-right: none; }
+    .year-meta-cell:nth-child(2) { border-right: none; }
+    .masthead-title { font-size: 64px; }
+  }
+  @media (max-width: 640px) {
+    .topbar { padding: 10px 20px; gap: 8px; flex-wrap: wrap; }
+    .masthead { padding: 40px 24px 28px; }
+    .masthead-title { font-size: 44px; }
+    .masthead-count-num { font-size: 36px; }
+    .year { padding: 24px 24px 40px; }
+    .year-grid { grid-template-columns: 1fr; }
+    .year-meta { grid-template-columns: 1fr; }
+    .season-col { border-right: none; }
+    .year-meta-cell { border-right: none; }
+    .note { grid-template-columns: 1fr; padding: 28px 24px 40px; }
   }
 </style>
 </head>
 <body>
-<div class="page">
 
-  <header class="site-header">
-    <p class="brand">Kō<span class="brand-kanji">候</span></p>
-    <p class="tagline">Japan's 72 micro-seasons, one at a time</p>
-    <div class="rule"></div>
-  </header>
 
-  
-  
-  <div class="grid">
+
+
+
+
+
+<!-- ── Thin top bar ── -->
+<nav class="topbar">
+  <a href="/" class="topbar-brand">Kō<span class="kanji">候</span></a>
+  <span>The Archive · Volume I · 72 Observations</span>
+</nav>
+
+<!-- ── Masthead ── -->
+<header class="masthead">
+  <div>
+    <p class="masthead-kicker">Shichijūni-kō · 七十二候</p>
+    <h1 class="masthead-title">The Year,<br>in seventy-two.</h1>
+  </div>
+  <div class="masthead-count">
+    <p class="masthead-count-label">Published to date</p>
+    <p class="masthead-count-num">1<span class="of">/72</span></p>
+  </div>
+  <p class="masthead-sub">
+    An index of every letter sent since the first thaw. The year is kept here as it
+    arrives — five days at a time, in four columns, in no particular hurry.
+  </p>
+</header>
+
+<!-- ── Four-column year ── -->
+<section class="year">
+  <div class="year-grid">
     
-    <a href="21-niji-hajimete-arawaru.html" style="display:block;color:inherit;text-decoration:none;">
-      <div class="season-row">
-        <span class="season-num">21</span>
-        <span class="season-jp">虹始見</span>
-        <span class="season-en">First rainbows appear</span>
-        <span class="season-date">Apr 15</span>
+      
+      <div class="season-col" style="--accent: var(--spring);">
+        <h2>Spring</h2>
+        <p class="season-sekki">Risshun → Kokū</p>
+
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">07</span>
+                <span class="entry-jp">東風解凍</span>
+                <span class="entry-date">Feb 4</span>
+              </span>
+              <p class="entry-en">East wind melts the ice</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">08</span>
+                <span class="entry-jp">黄鶯睍睆</span>
+                <span class="entry-date">Feb 9</span>
+              </span>
+              <p class="entry-en">Bush warblers start singing in the mountains</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">09</span>
+                <span class="entry-jp">魚上氷</span>
+                <span class="entry-date">Feb 14</span>
+              </span>
+              <p class="entry-en">Fish emerge from the ice</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">10</span>
+                <span class="entry-jp">土脈潤起</span>
+                <span class="entry-date">Feb 19</span>
+              </span>
+              <p class="entry-en">Rain moistens the soil</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">11</span>
+                <span class="entry-jp">霞始靆</span>
+                <span class="entry-date">Feb 24</span>
+              </span>
+              <p class="entry-en">Mist starts to linger</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">12</span>
+                <span class="entry-jp">草木萌動</span>
+                <span class="entry-date">Mar 1</span>
+              </span>
+              <p class="entry-en">Plants sprout, trees bud</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">13</span>
+                <span class="entry-jp">蟄虫啓戸</span>
+                <span class="entry-date">Mar 6</span>
+              </span>
+              <p class="entry-en">Hibernating insects emerge</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">14</span>
+                <span class="entry-jp">桃始笑</span>
+                <span class="entry-date">Mar 11</span>
+              </span>
+              <p class="entry-en">First peach blossoms open</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">15</span>
+                <span class="entry-jp">菜虫化蝶</span>
+                <span class="entry-date">Mar 16</span>
+              </span>
+              <p class="entry-en">Caterpillars become butterflies</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">16</span>
+                <span class="entry-jp">雀始巣</span>
+                <span class="entry-date">Mar 21</span>
+              </span>
+              <p class="entry-en">Sparrows start nesting</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">17</span>
+                <span class="entry-jp">桜始開</span>
+                <span class="entry-date">Mar 26</span>
+              </span>
+              <p class="entry-en">First cherry blossoms</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">18</span>
+                <span class="entry-jp">雷乃発声</span>
+                <span class="entry-date">Mar 31</span>
+              </span>
+              <p class="entry-en">Distant thunder</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">19</span>
+                <span class="entry-jp">玄鳥至</span>
+                <span class="entry-date">Apr 5</span>
+              </span>
+              <p class="entry-en">Swallows arrive</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">20</span>
+                <span class="entry-jp">鴻雁北</span>
+                <span class="entry-date">Apr 10</span>
+              </span>
+              <p class="entry-en">Wild geese fly north</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">21</span>
+                <span class="entry-jp">虹始見</span>
+                <span class="entry-date">Apr 15</span>
+              </span>
+              <p class="entry-en">First rainbows appear</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">22</span>
+                <span class="entry-jp">葭始生</span>
+                <span class="entry-date">Apr 20</span>
+              </span>
+              <p class="entry-en">First reeds sprout</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">23</span>
+                <span class="entry-jp">霜止出苗</span>
+                <span class="entry-date">Apr 25</span>
+              </span>
+              <p class="entry-en">Last frost, rice shoots sprout</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">24</span>
+                <span class="entry-jp">牡丹華</span>
+                <span class="entry-date">Apr 30</span>
+              </span>
+              <p class="entry-en">Peonies bloom</p>
+          
+            </span>
+          
+        
+
+        <div class="season-ornament">
+          <span>春</span>
+        </div>
       </div>
-    </a>
+    
+      
+      <div class="season-col" style="--accent: var(--summer);">
+        <h2>Summer</h2>
+        <p class="season-sekki">Rikka → Taisho</p>
+
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">25</span>
+                <span class="entry-jp">蛙始鳴</span>
+                <span class="entry-date">May 6</span>
+              </span>
+              <p class="entry-en">Frogs start calling</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">26</span>
+                <span class="entry-jp">蚯蚓出</span>
+                <span class="entry-date">May 11</span>
+              </span>
+              <p class="entry-en">Earthworms emerge</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">27</span>
+                <span class="entry-jp">竹笋生</span>
+                <span class="entry-date">May 16</span>
+              </span>
+              <p class="entry-en">Bamboo shoots appear</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">28</span>
+                <span class="entry-jp">蚕起食桑</span>
+                <span class="entry-date">May 21</span>
+              </span>
+              <p class="entry-en">Silkworms feast on mulberry leaves</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">29</span>
+                <span class="entry-jp">紅花栄</span>
+                <span class="entry-date">May 26</span>
+              </span>
+              <p class="entry-en">Safflowers bloom</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">30</span>
+                <span class="entry-jp">麦秋至</span>
+                <span class="entry-date">May 31</span>
+              </span>
+              <p class="entry-en">Wheat ripens and harvest begins</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">31</span>
+                <span class="entry-jp">螳螂生</span>
+                <span class="entry-date">Jun 6</span>
+              </span>
+              <p class="entry-en">Praying mantises hatch</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">32</span>
+                <span class="entry-jp">腐草為蛍</span>
+                <span class="entry-date">Jun 11</span>
+              </span>
+              <p class="entry-en">Decaying grass becomes fireflies</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">33</span>
+                <span class="entry-jp">梅子黄</span>
+                <span class="entry-date">Jun 16</span>
+              </span>
+              <p class="entry-en">Plums turn yellow</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">34</span>
+                <span class="entry-jp">乃東枯</span>
+                <span class="entry-date">Jun 21</span>
+              </span>
+              <p class="entry-en">Self-heal withers</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">35</span>
+                <span class="entry-jp">菖蒲華</span>
+                <span class="entry-date">Jun 26</span>
+              </span>
+              <p class="entry-en">Irises bloom</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">36</span>
+                <span class="entry-jp">半夏生</span>
+                <span class="entry-date">Jul 2</span>
+              </span>
+              <p class="entry-en">Crow-dipper sprouts</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">37</span>
+                <span class="entry-jp">温風至</span>
+                <span class="entry-date">Jul 7</span>
+              </span>
+              <p class="entry-en">Warm winds arrive</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">38</span>
+                <span class="entry-jp">蓮始開</span>
+                <span class="entry-date">Jul 12</span>
+              </span>
+              <p class="entry-en">Lotus blossoms open</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">39</span>
+                <span class="entry-jp">鷹乃学習</span>
+                <span class="entry-date">Jul 17</span>
+              </span>
+              <p class="entry-en">Young hawks learn to fly</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">40</span>
+                <span class="entry-jp">桐始結花</span>
+                <span class="entry-date">Jul 23</span>
+              </span>
+              <p class="entry-en">Paulownia trees bear first seeds</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">41</span>
+                <span class="entry-jp">土潤溽暑</span>
+                <span class="entry-date">Jul 28</span>
+              </span>
+              <p class="entry-en">Humid heat soaks the earth</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">42</span>
+                <span class="entry-jp">大雨時行</span>
+                <span class="entry-date">Aug 2</span>
+              </span>
+              <p class="entry-en">Heavy rains sometimes fall</p>
+          
+            </span>
+          
+        
+
+        <div class="season-ornament">
+          <span>夏</span>
+        </div>
+      </div>
+    
+      
+      <div class="season-col" style="--accent: var(--autumn);">
+        <h2>Autumn</h2>
+        <p class="season-sekki">Risshū → Sōkō</p>
+
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">43</span>
+                <span class="entry-jp">涼風至</span>
+                <span class="entry-date">Aug 7</span>
+              </span>
+              <p class="entry-en">Cool winds arrive</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">44</span>
+                <span class="entry-jp">寒蝉鳴</span>
+                <span class="entry-date">Aug 12</span>
+              </span>
+              <p class="entry-en">Evening cicadas sing</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">45</span>
+                <span class="entry-jp">蒙霧升降</span>
+                <span class="entry-date">Aug 17</span>
+              </span>
+              <p class="entry-en">Thick fog descends</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">46</span>
+                <span class="entry-jp">綿柎開</span>
+                <span class="entry-date">Aug 23</span>
+              </span>
+              <p class="entry-en">Cotton flowers open</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">47</span>
+                <span class="entry-jp">天地始粛</span>
+                <span class="entry-date">Aug 28</span>
+              </span>
+              <p class="entry-en">Heaven and earth begin to cool</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">48</span>
+                <span class="entry-jp">禾乃登</span>
+                <span class="entry-date">Sep 2</span>
+              </span>
+              <p class="entry-en">Rice ripens in the fields</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">49</span>
+                <span class="entry-jp">草露白</span>
+                <span class="entry-date">Sep 8</span>
+              </span>
+              <p class="entry-en">Dew glistens white on grass</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">50</span>
+                <span class="entry-jp">鶺鴒鳴</span>
+                <span class="entry-date">Sep 13</span>
+              </span>
+              <p class="entry-en">Wagtails start to sing</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">51</span>
+                <span class="entry-jp">玄鳥去</span>
+                <span class="entry-date">Sep 18</span>
+              </span>
+              <p class="entry-en">Swallows depart</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">52</span>
+                <span class="entry-jp">雷乃収声</span>
+                <span class="entry-date">Sep 23</span>
+              </span>
+              <p class="entry-en">Thunder falls silent</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">53</span>
+                <span class="entry-jp">蟄虫坏戸</span>
+                <span class="entry-date">Sep 28</span>
+              </span>
+              <p class="entry-en">Insects seal their dens</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">54</span>
+                <span class="entry-jp">水始涸</span>
+                <span class="entry-date">Oct 3</span>
+              </span>
+              <p class="entry-en">Water begins to dry up</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">55</span>
+                <span class="entry-jp">鴻雁来</span>
+                <span class="entry-date">Oct 8</span>
+              </span>
+              <p class="entry-en">Wild geese arrive from the north</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">56</span>
+                <span class="entry-jp">菊花開</span>
+                <span class="entry-date">Oct 13</span>
+              </span>
+              <p class="entry-en">Chrysanthemums bloom</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">57</span>
+                <span class="entry-jp">蟋蟀在戸</span>
+                <span class="entry-date">Oct 18</span>
+              </span>
+              <p class="entry-en">Crickets chirp around the door</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">58</span>
+                <span class="entry-jp">霜始降</span>
+                <span class="entry-date">Oct 23</span>
+              </span>
+              <p class="entry-en">First frost falls</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">59</span>
+                <span class="entry-jp">霎時施</span>
+                <span class="entry-date">Oct 28</span>
+              </span>
+              <p class="entry-en">Light rains sometimes fall</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">60</span>
+                <span class="entry-jp">楓蔦黄</span>
+                <span class="entry-date">Nov 2</span>
+              </span>
+              <p class="entry-en">Maple and ivy turn yellow</p>
+          
+            </span>
+          
+        
+
+        <div class="season-ornament">
+          <span>秋</span>
+        </div>
+      </div>
+    
+      
+      <div class="season-col" style="--accent: var(--winter);">
+        <h2>Winter</h2>
+        <p class="season-sekki">Rittō → Daikan</p>
+
+        
+          
+          
+            <a class="entry" href="/archive/01-seri-sunawachi-sakau.html">
+          
+              <span class="entry-row">
+                <span class="entry-num">01</span>
+                <span class="entry-jp">芹乃栄</span>
+                <span class="entry-date">Jan 5</span>
+              </span>
+              <p class="entry-en">Water parsley flourishes</p>
+          
+            </a>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">02</span>
+                <span class="entry-jp">水泉動</span>
+                <span class="entry-date">Jan 10</span>
+              </span>
+              <p class="entry-en">Springs thaw beneath the ice</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">03</span>
+                <span class="entry-jp">雉始雊</span>
+                <span class="entry-date">Jan 15</span>
+              </span>
+              <p class="entry-en">Pheasants start to call</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">04</span>
+                <span class="entry-jp">款冬華</span>
+                <span class="entry-date">Jan 20</span>
+              </span>
+              <p class="entry-en">Butterburs bud</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">05</span>
+                <span class="entry-jp">水沢腹堅</span>
+                <span class="entry-date">Jan 25</span>
+              </span>
+              <p class="entry-en">Ice thickens on streams</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">06</span>
+                <span class="entry-jp">鶏始乳</span>
+                <span class="entry-date">Jan 30</span>
+              </span>
+              <p class="entry-en">Hens start laying eggs</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">61</span>
+                <span class="entry-jp">山茶始開</span>
+                <span class="entry-date">Nov 7</span>
+              </span>
+              <p class="entry-en">Camellias start to bloom</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">62</span>
+                <span class="entry-jp">地始凍</span>
+                <span class="entry-date">Nov 12</span>
+              </span>
+              <p class="entry-en">Earth begins to freeze</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">63</span>
+                <span class="entry-jp">金盞香</span>
+                <span class="entry-date">Nov 17</span>
+              </span>
+              <p class="entry-en">Daffodils bloom and perfume the air</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">64</span>
+                <span class="entry-jp">虹蔵不見</span>
+                <span class="entry-date">Nov 22</span>
+              </span>
+              <p class="entry-en">Rainbows hide</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">65</span>
+                <span class="entry-jp">朔風払葉</span>
+                <span class="entry-date">Nov 27</span>
+              </span>
+              <p class="entry-en">North winds blow away the leaves</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">66</span>
+                <span class="entry-jp">橘始黄</span>
+                <span class="entry-date">Dec 2</span>
+              </span>
+              <p class="entry-en">Tachibana citrus starts to ripen</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">67</span>
+                <span class="entry-jp">閉塞成冬</span>
+                <span class="entry-date">Dec 7</span>
+              </span>
+              <p class="entry-en">Skies close and winter sets in</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">68</span>
+                <span class="entry-jp">熊蟄穴</span>
+                <span class="entry-date">Dec 12</span>
+              </span>
+              <p class="entry-en">Bears retreat to their dens</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">69</span>
+                <span class="entry-jp">鱖魚群</span>
+                <span class="entry-date">Dec 17</span>
+              </span>
+              <p class="entry-en">Salmon gather and swim upstream</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">70</span>
+                <span class="entry-jp">乃東生</span>
+                <span class="entry-date">Dec 22</span>
+              </span>
+              <p class="entry-en">Self-heal sprouts anew</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">71</span>
+                <span class="entry-jp">麋角解</span>
+                <span class="entry-date">Dec 27</span>
+              </span>
+              <p class="entry-en">Deer shed their antlers</p>
+          
+            </span>
+          
+        
+          
+          
+            <span class="entry pending">
+          
+              <span class="entry-row">
+                <span class="entry-num">72</span>
+                <span class="entry-jp">雪下出麦</span>
+                <span class="entry-date">Jan 1</span>
+              </span>
+              <p class="entry-en">Wheat sprouts under the snow</p>
+          
+            </span>
+          
+        
+
+        <div class="season-ornament">
+          <span>冬</span>
+        </div>
+      </div>
     
   </div>
-  
 
-  <footer>
-    <p>Kō &nbsp;·&nbsp; 1 of 72 seasons published</p>
-  </footer>
+  <!-- Bottom meta totals -->
+  <div class="year-meta">
+    
+      
+      
+      <div class="year-meta-cell">
+        <span>spring</span>
+        <span>0 / 18</span>
+      </div>
+    
+      
+      
+      <div class="year-meta-cell">
+        <span>summer</span>
+        <span>0 / 18</span>
+      </div>
+    
+      
+      
+      <div class="year-meta-cell">
+        <span>autumn</span>
+        <span>0 / 18</span>
+      </div>
+    
+      
+      
+      <div class="year-meta-cell">
+        <span>winter</span>
+        <span>1 / 18</span>
+      </div>
+    
+  </div>
+</section>
 
-</div>
+<!-- ── Editor's note ── -->
+<footer class="note">
+  <p class="note-body">
+    The seventy-two kō are a Japanese adaptation of the Chinese pentads, adopted in 1685
+    and refined to match the local calendar of wind, bird and petal.
+  </p>
+  <p class="note-est">Kō · Est. MMXXIV</p>
+</footer>
+
 </body>
 </html>

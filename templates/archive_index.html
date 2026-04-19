@@ -3,146 +3,289 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kō · All Seasons</title>
+<title>Kō — The Archive · 72 micro-seasons</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; }
+
   :root {
-    --ink:   #2a2520;
-    --mid:   #3d3530;
-    --soft:  #5a504a;
-    --muted: #8a7e74;
-    --rule:  #d6cfc4;
-    --bg:    #faf8f5;
-    --paper: #f5f2ed;
-    --tint:  #f0ece6;
-    --accent:#7a6e5a;
-  }
-  html { background: var(--paper); }
-  body {
-    margin: 0;
-    padding: 64px 24px;
-    background: var(--paper);
-    font-family: Georgia, 'Hiragino Mincho ProN', 'Yu Mincho', 'MS Mincho', serif;
-    color: var(--mid);
-    line-height: 1.8;
-  }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .page { max-width: 700px; margin: 0 auto; }
+    --ink:    #1a1a18;
+    --washi:  #f5f3ee;
+    --stone:  #888780;
+    --deep:   #2c2c2a;
+    --earth:  #4a3728;
+    --rule:   #d8d5ce;
+    --shell:  #e8e5de;
+    --tint:   #edeae3;
 
-  /* Header */
-  .site-header { text-align: center; margin-bottom: 64px; }
-  .site-header .brand {
-    font-family: Georgia, serif;
-    font-size: 36px;
-    letter-spacing: 0.08em;
-    color: var(--ink);
-    font-weight: 400;
-    margin-bottom: 4px;
-  }
-  .site-header .brand-kanji {
-    font-family: 'Hiragino Mincho ProN','Yu Mincho','MS Mincho',serif;
-    font-size: 20px;
-    color: var(--muted);
-    letter-spacing: 0.05em;
-    margin-left: 6px;
-    vertical-align: middle;
-  }
-  .site-header .tagline {
-    font-size: 13px;
-    letter-spacing: 0.14em;
-    color: var(--muted);
-    font-style: italic;
-  }
-  .site-header .rule {
-    width: 60px;
-    height: 1px;
-    background: var(--rule);
-    margin: 24px auto 0;
+    --spring: #6b8f71;
+    --summer: #c9734a;
+    --autumn: #d4a853;
+    --winter: #4a7fa5;
+
+    --serif:  Georgia, 'Times New Roman', serif;
+    --sans:   system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --mincho: 'Hiragino Mincho ProN', 'Yu Mincho', 'MS Mincho', Georgia, serif;
+    --mono:   ui-monospace, 'SF Mono', Menlo, monospace;
   }
 
-  /* Season grid */
-  .grid { display: flex; flex-direction: column; gap: 0; }
-  .season-row {
-    display: flex;
-    align-items: baseline;
-    padding: 14px 0;
+  html, body { margin: 0; padding: 0; background: var(--washi); }
+  body { font-family: var(--sans); color: var(--deep); line-height: 1.6; font-size: 15px; }
+  a { color: inherit; text-decoration: none; }
+
+  /* ── Thin top bar (Ink) ── */
+  .topbar {
+    background: var(--ink); color: var(--stone);
+    padding: 10px 48px;
+    font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .topbar-brand { font-family: var(--serif); font-size: 16px;
+                  letter-spacing: 0.02em; text-transform: none; color: var(--stone); }
+  .topbar-brand .kanji { font-family: var(--mincho); font-size: 10px;
+                         margin-left: 8px; color: var(--stone); }
+
+  /* ── Masthead ── */
+  .masthead {
+    padding: 56px 48px 36px;
+    border-bottom: 2px solid var(--deep);
+    display: flex; align-items: flex-end; justify-content: space-between; gap: 40px;
+    flex-wrap: wrap;
+  }
+  .masthead-kicker {
+    font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--stone); margin: 0;
+  }
+  .masthead-title {
+    font-family: var(--serif); font-weight: 400;
+    font-size: 96px; line-height: 0.95; letter-spacing: -0.04em;
+    margin: 4px 0 0; color: var(--deep);
+  }
+  .masthead-count { text-align: right; padding-bottom: 8px; }
+  .masthead-count-label {
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--stone); margin: 0;
+  }
+  .masthead-count-num {
+    font-family: var(--serif); font-size: 52px; margin: 2px 0 0;
+    color: var(--deep); line-height: 1; font-variant-numeric: tabular-nums;
+  }
+  .masthead-count-num .of { color: var(--stone); font-size: 28px; }
+  .masthead-sub {
+    font-family: var(--serif); font-style: italic; font-size: 15px;
+    color: var(--stone); margin: 28px 0 0; max-width: 520px; line-height: 1.7;
+    flex-basis: 100%;
+  }
+
+  /* ── Four-column year ── */
+  .year {
+    padding: 32px 48px 48px;
+  }
+  .year-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
     border-bottom: 1px solid var(--rule);
-    gap: 20px;
   }
-  .season-row:first-child { border-top: 1px solid var(--rule); }
-  .season-num {
-    font-size: 11px;
-    letter-spacing: 0.1em;
-    color: var(--muted);
-    width: 32px;
-    flex-shrink: 0;
-    text-align: right;
+  .season-col {
+    padding: 28px 20px;
+    border-right: 1px solid var(--rule);
+    border-top: 3px solid var(--accent);
   }
-  .season-jp {
-    font-family: 'Hiragino Mincho ProN','Yu Mincho','MS Mincho',serif;
-    font-size: 18px;
-    letter-spacing: 0.1em;
-    color: var(--ink);
-    width: 80px;
-    flex-shrink: 0;
+  .season-col:last-child { border-right: none; }
+  .season-col h2 {
+    font-family: var(--serif); font-weight: 400; font-size: 24px;
+    margin: 0 0 2px; color: var(--deep); letter-spacing: -0.005em;
   }
-  .season-en { font-size: 14px; color: var(--mid); flex: 1; }
-  .season-date { font-size: 12px; color: var(--muted); flex-shrink: 0; }
-
-  /* Empty state */
-  .empty {
-    text-align: center;
-    padding: 64px 0;
-    color: var(--muted);
-    font-size: 15px;
-    font-style: italic;
+  .season-sekki {
+    font-family: var(--serif); font-style: italic;
+    font-size: 11px; color: var(--stone); margin: 0 0 22px; letter-spacing: 0.04em;
   }
 
-  /* Footer */
-  footer {
-    margin-top: 64px;
-    text-align: center;
-    font-size: 12px;
-    letter-spacing: 0.1em;
-    color: var(--muted);
+  .entry {
+    padding: 10px 0;
+    border-top: 1px solid var(--rule);
+    cursor: pointer;
+    display: block;
+    color: inherit;
+  }
+  .entry:first-of-type { border-top: 1px solid var(--rule); }
+  .entry.pending { opacity: 0.42; cursor: default; pointer-events: none; }
+  .entry-row {
+    display: flex; align-items: baseline; gap: 8px; margin-bottom: 2px;
+  }
+  .entry-num {
+    font-size: 10px; color: var(--stone);
+    font-variant-numeric: tabular-nums; letter-spacing: 0.1em;
+    min-width: 22px;
+  }
+  .entry-jp {
+    font-family: var(--mincho); font-size: 15px;
+    color: var(--deep); letter-spacing: 0.06em;
+  }
+  .entry-date {
+    font-size: 10px; color: var(--stone); margin-left: auto;
+    font-variant-numeric: tabular-nums;
+  }
+  .entry-en {
+    font-size: 12px; color: var(--deep); margin: 0; line-height: 1.45;
+  }
+
+  .season-ornament {
+    text-align: center; margin-top: 32px;
+    padding-top: 20px; border-top: 1px solid var(--rule);
+  }
+  .season-ornament span {
+    font-family: var(--mincho); font-size: 64px;
+    color: var(--accent); opacity: 0.8; line-height: 1;
+  }
+
+  /* ── Bottom meta row ── */
+  .year-meta {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+    font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--stone);
+  }
+  .year-meta-cell {
+    padding: 12px 20px;
+    border-right: 1px solid var(--rule);
+    display: flex; justify-content: space-between;
+  }
+  .year-meta-cell:last-child { border-right: none; }
+  .year-meta-cell span:last-child { font-variant-numeric: tabular-nums; }
+
+  /* ── Footer / editor's note ── */
+  .note {
+    padding: 36px 48px 56px;
+    border-top: 1px solid var(--rule);
+    display: grid; grid-template-columns: 1fr auto;
+    gap: 32px; align-items: end;
+  }
+  .note-body {
+    font-family: var(--serif); font-style: italic; font-size: 14px;
+    color: var(--stone); max-width: 520px; margin: 0; line-height: 1.7;
+  }
+  .note-est {
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--stone); margin: 0;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 960px) {
+    .year-grid { grid-template-columns: repeat(2, 1fr); }
+    .year-meta { grid-template-columns: repeat(2, 1fr); }
+    .season-col:nth-child(2) { border-right: none; }
+    .year-meta-cell:nth-child(2) { border-right: none; }
+    .masthead-title { font-size: 64px; }
+  }
+  @media (max-width: 640px) {
+    .topbar { padding: 10px 20px; gap: 8px; flex-wrap: wrap; }
+    .masthead { padding: 40px 24px 28px; }
+    .masthead-title { font-size: 44px; }
+    .masthead-count-num { font-size: 36px; }
+    .year { padding: 24px 24px 40px; }
+    .year-grid { grid-template-columns: 1fr; }
+    .year-meta { grid-template-columns: 1fr; }
+    .season-col { border-right: none; }
+    .year-meta-cell { border-right: none; }
+    .note { grid-template-columns: 1fr; padding: 28px 24px 40px; }
   }
 </style>
 </head>
 <body>
-<div class="page">
 
-  <header class="site-header">
-    <p class="brand">Kō<span class="brand-kanji">候</span></p>
-    <p class="tagline">Japan's 72 micro-seasons, one at a time</p>
-    <div class="rule"></div>
-  </header>
+{% set months_short = ['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'] %}
+{% set season_order = ['spring', 'summer', 'autumn', 'winter'] %}
+{% set season_kanji = {'spring':'春', 'summer':'夏', 'autumn':'秋', 'winter':'冬'} %}
+{% set season_accent = {
+  'spring':'var(--spring)',
+  'summer':'var(--summer)',
+  'autumn':'var(--autumn)',
+  'winter':'var(--winter)'
+} %}
+{% set season_sekki_range = {
+  'spring':'Risshun → Kokū',
+  'summer':'Rikka → Taisho',
+  'autumn':'Risshū → Sōkō',
+  'winter':'Rittō → Daikan'
+} %}
 
-  {% if published %}
-  {% set months = ['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'] %}
-  <div class="grid">
-    {% for entry in published %}
-    <a href="{{ entry.filename }}" style="display:block;color:inherit;text-decoration:none;">
-      <div class="season-row">
-        <span class="season-num">{{ '%02d'|format(entry.season.id) }}</span>
-        <span class="season-jp">{{ entry.season.name_jp }}</span>
-        <span class="season-en">{{ entry.season.name_en }}</span>
-        <span class="season-date">{{ months[entry.season.start_month] }} {{ entry.season.start_day }}</span>
+<!-- ── Thin top bar ── -->
+<nav class="topbar">
+  <a href="/" class="topbar-brand">Kō<span class="kanji">候</span></a>
+  <span>The Archive · Volume I · 72 Observations</span>
+</nav>
+
+<!-- ── Masthead ── -->
+<header class="masthead">
+  <div>
+    <p class="masthead-kicker">Shichijūni-kō · 七十二候</p>
+    <h1 class="masthead-title">The Year,<br>in seventy-two.</h1>
+  </div>
+  <div class="masthead-count">
+    <p class="masthead-count-label">Published to date</p>
+    <p class="masthead-count-num">{{ published_count }}<span class="of">/72</span></p>
+  </div>
+  <p class="masthead-sub">
+    An index of every letter sent since the first thaw. The year is kept here as it
+    arrives — five days at a time, in four columns, in no particular hurry.
+  </p>
+</header>
+
+<!-- ── Four-column year ── -->
+<section class="year">
+  <div class="year-grid">
+    {% for sname in season_order %}
+      {% set season_entries = all_seasons | selectattr('major_season', 'equalto', sname) | list %}
+      <div class="season-col" style="--accent: {{ season_accent[sname] }};">
+        <h2>{{ sname | capitalize }}</h2>
+        <p class="season-sekki">{{ season_sekki_range[sname] }}</p>
+
+        {% for e in season_entries %}
+          {% set is_pub = e.id <= published_count %}
+          {% if is_pub %}
+            <a class="entry" href="{{ e.url }}">
+          {% else %}
+            <span class="entry pending">
+          {% endif %}
+              <span class="entry-row">
+                <span class="entry-num">{{ '%02d' | format(e.id) }}</span>
+                <span class="entry-jp">{{ e.name_jp }}</span>
+                <span class="entry-date">{{ months_short[e.start_month] }} {{ e.start_day }}</span>
+              </span>
+              <p class="entry-en">{{ e.name_en }}</p>
+          {% if is_pub %}
+            </a>
+          {% else %}
+            </span>
+          {% endif %}
+        {% endfor %}
+
+        <div class="season-ornament">
+          <span>{{ season_kanji[sname] }}</span>
+        </div>
       </div>
-    </a>
     {% endfor %}
   </div>
-  {% else %}
-  <div class="empty">
-    <p>No seasons published yet.</p>
-    <p style="font-size:13px;margin-top:8px;">Run <code>python season_mailer.py --force</code> to publish the first one.</p>
+
+  <!-- Bottom meta totals -->
+  <div class="year-meta">
+    {% for sname in season_order %}
+      {% set entries = all_seasons | selectattr('major_season', 'equalto', sname) | list %}
+      {% set pub = entries | selectattr('id', 'le', published_count) | list | length %}
+      <div class="year-meta-cell">
+        <span>{{ sname }}</span>
+        <span>{{ pub }} / {{ entries | length }}</span>
+      </div>
+    {% endfor %}
   </div>
-  {% endif %}
+</section>
 
-  <footer>
-    <p>Kō &nbsp;·&nbsp; {{ published|length }} of 72 seasons published</p>
-  </footer>
+<!-- ── Editor's note ── -->
+<footer class="note">
+  <p class="note-body">
+    The seventy-two kō are a Japanese adaptation of the Chinese pentads, adopted in 1685
+    and refined to match the local calendar of wind, bird and petal.
+  </p>
+  <p class="note-est">Kō · Est. MMXXIV</p>
+</footer>
 
-</div>
 </body>
 </html>
