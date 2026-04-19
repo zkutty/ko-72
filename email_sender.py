@@ -80,12 +80,15 @@ def send_email(season: dict, content: dict, worker_url: str = "https://subscribe
         duration_days=season["duration_days"],
     )
 
-    params: resend.Emails.SendParams = {
-        "from": "Kō <seasons@ko-72.com>",
-        "to": recipients,
-        "subject": f"Kō · {season['name_en']} ({season['name_romaji']})",
-        "html": html,
-    }
+    sent = 0
+    for recipient in recipients:
+        params: resend.Emails.SendParams = {
+            "from": "Kō <seasons@ko-72.com>",
+            "to": [recipient],
+            "subject": f"Kō · {season['name_en']} ({season['name_romaji']})",
+            "html": html,
+        }
+        resend.Emails.send(params)
+        sent += 1
 
-    response = resend.Emails.send(params)
-    print(f"Email sent to {len(recipients)} subscriber(s). Resend ID: {response['id']}")
+    print(f"Email sent to {sent} subscriber(s).")
