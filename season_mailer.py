@@ -152,6 +152,7 @@ def main() -> None:
     from content_generator import generate_content
     from email_sender import send_email
     from archive_builder import build_archive, build_website
+    from ingredient_generator import run as generate_lookups
 
     worker_url = os.environ.get("WORKER_URL", "https://subscribe.ko-72.com")
 
@@ -159,25 +160,33 @@ def main() -> None:
     cache = load_cache()
     cache_key = str(season["id"])
     if cache_key in cache:
-        log.info("Step 1/4 · Using cached content for season #%d.", season["id"])
+        log.info("Step 1/5 · Using cached content for season #%d.", season["id"])
         content = cache[cache_key]
     else:
-        log.info("Step 1/4 · Generating content with Claude …")
+        log.info("Step 1/5 · Generating content with Claude …")
         content = generate_content(season)
         cache[cache_key] = content
         save_cache(cache)
         log.info("Content generated and cached.")
 
+    log.info("Step 2/5 · Generating any new ingredient / dish lookups …")
+    stats = generate_lookups()
+    if stats["ingredients_added"] or stats["dishes_added"]:
+        log.info(
+            "Added %d ingredient(s) and %d dish(es) to lookup store.",
+            stats["ingredients_added"], stats["dishes_added"],
+        )
+
     if args.build_only:
-        log.info("Step 2/4 · Skipping email (--build-only).")
+        log.info("Step 3/5 · Skipping email (--build-only).")
     else:
-        log.info("Step 2/4 · Sending email …")
+        log.info("Step 3/5 · Sending email …")
         send_email(season, content, worker_url=worker_url)
 
-    log.info("Step 3/4 · Building archive page …")
+    log.info("Step 4/5 · Building archive page …")
     build_archive(season, content, seasons)
 
-    log.info("Step 4/4 · Rebuilding website homepage …")
+    log.info("Step 5/5 · Rebuilding website homepage …")
     build_website(season, content, all_seasons=seasons, worker_url=worker_url)
 
     log.info("Done ✓")

@@ -207,6 +207,9 @@ def build_website(
         if (ARCHIVE_DIR / _season_filename(s)).exists()
     ][-5:]
 
+    all_ingredients, all_dishes = _load_lookup()
+    page_ingredients, page_dishes = _slice_lookups(content, all_ingredients, all_dishes)
+
     html = env.get_template("website.html").render(
         season=season,
         content=content,
@@ -217,6 +220,10 @@ def build_website(
         recent=recent,
         worker_url=worker_url,
         cardinals=cardinal_labels(),
+        produce=_keyed_produce(content, all_ingredients),
+        dishes=_keyed_dishes(content, all_dishes),
+        ingredient_lookup=page_ingredients,
+        dish_lookup=page_dishes,
     )
     (ROOT_DIR / "index.html").write_text(html, encoding="utf-8")
     print("Website homepage rebuilt: index.html")
