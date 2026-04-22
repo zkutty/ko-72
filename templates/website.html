@@ -296,7 +296,7 @@
       {% set CTR   = WHEEL_SIZE / 2 %}
       {% set SEASON_COLORS = {'spring':'#6b8f71','summer':'#c9734a','autumn':'#d4a853','winter':'#4a7fa5'} %}
 
-      <svg class="wheel-svg" width="{{ WHEEL_SIZE }}" height="{{ WHEEL_SIZE }}" viewBox="0 0 {{ WHEEL_SIZE }} {{ WHEEL_SIZE }}">
+      <svg class="wheel-svg" viewBox="0 0 {{ WHEEL_SIZE }} {{ WHEEL_SIZE }}" preserveAspectRatio="xMidYMid meet">
         <circle cx="{{ CTR }}" cy="{{ CTR }}" r="{{ R_OUT + 10 }}" fill="none" stroke="var(--rule)" stroke-width="1"/>
         <circle cx="{{ CTR }}" cy="{{ CTR }}" r="{{ R_IN - 10 }}" fill="none" stroke="var(--rule)" stroke-width="1"/>
 
