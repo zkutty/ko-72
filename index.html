@@ -1020,14 +1020,14 @@
       
         <p>
           
-            <strong style="color: var(--deep);">Takenoko gohan.</strong>
+            <strong style="color: var(--deep);"><button class="lookup" type="button" data-kind="dish" data-key="takenoko-gohan">Takenoko gohan</button>.</strong>
           
           Rice cooked with freshly dug bamboo shoots, their sweetness peaking during these grain rains when the soil is perfectly moist.
         </p>
       
         <p>
           
-            <strong style="color: var(--deep);">Sawara no saikyo-yaki.</strong>
+            <strong style="color: var(--deep);"><button class="lookup" type="button" data-kind="dish" data-key="sawara-no-saikyo-yaki">Sawara no saikyo-yaki</button>.</strong>
           
           Spanish mackerel marinated in sweet white miso and grilled until caramelized, celebrating the fish&#39;s spring migration through the Seto Inland Sea.
         </p>
@@ -1049,19 +1049,19 @@
           <p class="market-col-head">Fruits</p>
           
             
-              <p class="market-item">Ichigo (strawberries)</p>
+              <p class="market-item"><button class="lookup" type="button" data-kind="ingredient" data-key="ichigo-strawberries">Ichigo (strawberries)</button></p>
             
           
             
-              <p class="market-item">Natsu mikan (summer citrus)</p>
+              <p class="market-item"><button class="lookup" type="button" data-kind="ingredient" data-key="natsu-mikan-summer-citrus">Natsu mikan (summer citrus)</button></p>
             
           
             
-              <p class="market-item">Biwa (loquat, early)</p>
+              <p class="market-item"><button class="lookup" type="button" data-kind="ingredient" data-key="biwa-loquat-early">Biwa (loquat, early)</button></p>
             
           
             
-              <p class="market-item">Amanatsu (sweet citrus)</p>
+              <p class="market-item"><button class="lookup" type="button" data-kind="ingredient" data-key="amanatsu-sweet-citrus">Amanatsu (sweet citrus)</button></p>
             
           
         </div>
@@ -1070,19 +1070,19 @@
           <p class="market-col-head">Vegetables</p>
           
             
-              <p class="market-item">Takenoko (bamboo shoots)</p>
+              <p class="market-item"><button class="lookup" type="button" data-kind="ingredient" data-key="takenoko-bamboo-shoots">Takenoko (bamboo shoots)</button></p>
             
           
             
-              <p class="market-item">Sansai (mountain vegetables)</p>
+              <p class="market-item"><button class="lookup" type="button" data-kind="ingredient" data-key="sansai-mountain-vegetables">Sansai (mountain vegetables)</button></p>
             
           
             
-              <p class="market-item">Wakame (young seaweed)</p>
+              <p class="market-item"><button class="lookup" type="button" data-kind="ingredient" data-key="wakame-young-seaweed">Wakame (young seaweed)</button></p>
             
           
             
-              <p class="market-item">Fuki (butterbur)</p>
+              <p class="market-item"><button class="lookup" type="button" data-kind="ingredient" data-key="fuki-butterbur">Fuki (butterbur)</button></p>
             
           
         </div>
@@ -1091,15 +1091,15 @@
           <p class="market-col-head">Fish</p>
           
             
-              <p class="market-item">Sayori (halfbeak)</p>
+              <p class="market-item"><button class="lookup" type="button" data-kind="ingredient" data-key="sayori-halfbeak">Sayori (halfbeak)</button></p>
             
           
             
-              <p class="market-item">Shirauo (icefish)</p>
+              <p class="market-item"><button class="lookup" type="button" data-kind="ingredient" data-key="shirauo-icefish">Shirauo (icefish)</button></p>
             
           
             
-              <p class="market-item">Sawara (Spanish mackerel)</p>
+              <p class="market-item"><button class="lookup" type="button" data-kind="ingredient" data-key="sawara-spanish-mackerel">Sawara (Spanish mackerel)</button></p>
             
           
         </div>
@@ -1206,6 +1206,63 @@
   });
 </script>
 
+
+<dialog class="lookup-dialog" id="lookup-dialog" aria-labelledby="lk-title">
+  <button class="lk-close" type="button" value="close" aria-label="Close">×</button>
+  <p class="lk-kicker" id="lk-kicker"></p>
+  <h2 class="lk-title" id="lk-title"></h2>
+  <p class="lk-jp" id="lk-jp"></p>
+  <p class="lk-romaji" id="lk-romaji"></p>
+  <p class="lk-peak" id="lk-peak"></p>
+  <p class="lk-note" id="lk-note"></p>
+</dialog>
+
+<script id="lookup-ingredients" type="application/json">{"amanatsu-sweet-citrus": {"category": "fruit", "name_en": "Amanatsu", "name_jp": "\u7518\u590f", "name_romaji": "amanatsu", "note": "A thick-skinned citrus whose flesh balances bright acidity with a honeyed sweetness that only emerges after months of patient storage past the winter harvest. The segments are often eaten fresh with a small fork at the breakfast table, or candied into marmalade that catches the last of spring\u0027s light.", "peak": "Late spring through early summer, when the bitter edge of winter citrus has mellowed", "source": "Amanatsu (sweet citrus)"}, "biwa-loquat-early": {"category": "fruit", "name_en": "Loquat", "name_jp": "\u6787\u6777", "name_romaji": "biwa", "note": "These early loquats arrive with skins still blushed pale orange, their flesh yielding a delicate sweetness cut by faint tartness \u2014 less honeyed than the fruit will become in a few weeks, but prized for that very restraint. In temple gardens and old farmhouse yards, the broad-leafed biwa tree signals the turning from spring\u0027s coolness toward the humid days ahead.", "peak": "Late spring into early summer, when the first warm rains have passed", "source": "Biwa (loquat, early)"}, "fuki-butterbur": {"category": "vegetable", "name_en": "Butterbur", "name_jp": "\u8557", "name_romaji": "fuki", "note": "Hollow stems with a distinctive bitterness that softens into something almost herbal when simmered in dashi and soy \u2014 their pale green translucence marking spring\u0027s middle passage. The labor of peeling and soaking in ash water to draw out harshness connects the cook to an older tempo, when preparing mountain vegetables was a patient, unhurried craft.", "peak": "Late spring, as the stalks lengthen before summer\u0027s heat arrives", "source": "Fuki (butterbur)"}, "ichigo-strawberries": {"category": "fruit", "name_en": "Strawberry", "name_jp": "\u82fa", "name_romaji": "ichigo", "note": "Japanese strawberries are bred for sweetness over tartness, their flesh yielding and fragrant, often eaten unadorned or perched atop shortcake in pristine rows. Though available year-round now, their true season arrives with the cold months, when varieties like Amaou and Tochiotome appear as gifts and symbols of celebration, their red brightness a quiet herald that spring will follow.", "peak": "Late winter through spring, when greenhouse cultivation meets rising warmth", "source": "Ichigo (strawberries)"}, "natsu-mikan-summer-citrus": {"category": "fruit", "name_en": "Summer orange", "name_jp": "\u590f\u871c\u67d1", "name_romaji": "natsu mikan", "note": "A thick-skinned citrus with segments that pull apart in satisfying wedges, its flesh bracingly tart with a faint bitter edge that cuts through the heaviness of humid days. Harvested in winter but left to mellow until now, it arrives at tables just as appetites begin to crave something bright and cleansing.", "peak": "Late spring through early summer, as the season turns warm and humid", "source": "Natsu mikan (summer citrus)"}, "sansai-mountain-vegetables": {"category": "vegetable", "name_en": "Mountain vegetables", "name_jp": "\u5c71\u83dc", "name_romaji": "sansai", "note": "A collective term for wild edibles foraged from mountainsides \u2014 fiddlehead ferns unfurling like clenched fists, bitter butterbur shoots, the fleeting kogomi \u2014 each carrying a mineral edge and faint astringency that wakens the palate from winter\u0027s slumber. Their brief appearance marks the true arrival of spring, prepared simply with a light tempura batter or blanched and dressed in walnut-miso to honor their ephemeral, slightly untamed character.", "peak": "Early spring through late spring, as snow recedes from forested slopes", "source": "Sansai (mountain vegetables)"}, "sawara-spanish-mackerel": {"category": "fish", "name_en": "Spanish mackerel", "name_jp": "\u9c06", "name_romaji": "sawara", "note": "A long, slender fish with flesh that firms beautifully when briefly seared, its oils carrying a clean sweetness that peaks as spawning season approaches. The kanji itself tells the story \u2014 \u9b5a beside \u6625 \u2014 marking sawara as the fish that announces spring\u0027s arrival to the Japanese table.", "peak": "Late spring through early summer, when waters warm along the Seto Inland Sea", "source": "Sawara (Spanish mackerel)"}, "sayori-halfbeak": {"category": "fish", "name_en": "Halfbeak", "name_jp": "\u9c75", "name_romaji": "sayori", "note": "A slender, silver-blue fish whose translucent flesh carries the faintest sweetness, prized for sashimi that gleams like morning light on still water. Its arrival signals the turn toward spring, served simply to honor the delicate clarity that cold seas impart before warmth softens the catch.", "peak": "Late winter through spring, when waters remain cold and flesh stays firm", "source": "Sayori (halfbeak)"}, "shirauo-icefish": {"category": "fish", "name_en": "Icefish", "name_jp": "\u767d\u9b5a", "name_romaji": "shirauo", "note": "These slender, almost transparent fish carry the faint sweetness of cold river water, their bodies so delicate they seem to dissolve on the tongue when eaten raw as odori-gui. They arrive with the first softening of winter, their brief season a quiet announcement that the year has begun to turn.", "peak": "Early spring, as river ice begins to yield", "source": "Shirauo (icefish)"}, "takenoko-bamboo-shoots": {"category": "vegetable", "name_en": "Bamboo shoot", "name_jp": "\u7b4d", "name_romaji": "takenoko", "note": "Freshly dug shoots, boiled within hours of harvest, yield a sweetness and faint astringency that fades by nightfall\u2014the flesh pale as new ivory, with a clean snap under the tooth. In the old calendar, takenoko marks the brief window when bamboo groves are worth entering at dawn, before the shoots toughen into timber.", "peak": "Late spring, from the grain rains through the first whispers of summer", "source": "Takenoko (bamboo shoots)"}, "wakame-young-seaweed": {"category": "vegetable", "name_en": "Wakame", "name_jp": "\u82e5\u5e03", "name_romaji": "wakame", "note": "Freshly harvested wakame has a silken texture and bright mineral sweetness that fades within hours of leaving the sea \u2014 nothing like its dried counterpart. It arrives in markets just as miso soup shifts from winter\u0027s root vegetables to spring\u0027s delicate greens, the seaweed\u0027s tender fronds signaling the ocean\u0027s own turning of the season.", "peak": "Early spring, when cold currents still run along the coast", "source": "Wakame (young seaweed)"}}</script>
+<script id="lookup-dishes" type="application/json">{"sawara-no-saikyo-yaki": {"name_en": "Saikyo miso-marinated Spanish mackerel", "name_jp": "\u9c06\u306e\u897f\u4eac\u713c\u304d", "name_romaji": "sawara no saikyo-yaki", "note": "Fillets of sawara are buried in sweet white Saikyo miso for two or three days, then grilled until the sugars in the paste caramelize into a burnished crust. The fish\u0027s name itself contains the character for spring (\u9c06), and its arrival off the Sanyo coast has long signaled the softening of winter\u0027s grip.", "season": "Late winter through early spring, when sawara swim into the Inland Sea", "source": "Sawara no saikyo-yaki"}, "takenoko-gohan": {"name_en": "Bamboo shoot rice", "name_jp": "\u7b4d\u3054\u98ef", "name_romaji": "takenoko gohan", "note": "Rice simmered with freshly dug bamboo shoots, seasoned simply with dashi, soy, and sake to let the shoot\u0027s faint sweetness come through. The dish marks the fleeting window when takenoko can be cooked within hours of harvest, before their sugars turn to woody fiber.", "season": "Mid-spring, when the first bamboo shoots break ground", "source": "Takenoko gohan"}}</script>
+<script>
+(function () {
+  var dialog = document.getElementById('lookup-dialog');
+  if (!dialog || typeof dialog.showModal !== 'function') return;
+
+  var ingredients = JSON.parse(document.getElementById('lookup-ingredients').textContent || '{}');
+  var dishes      = JSON.parse(document.getElementById('lookup-dishes').textContent || '{}');
+
+  var kicker = document.getElementById('lk-kicker');
+  var title  = document.getElementById('lk-title');
+  var jp     = document.getElementById('lk-jp');
+  var romaji = document.getElementById('lk-romaji');
+  var peak   = document.getElementById('lk-peak');
+  var note   = document.getElementById('lk-note');
+
+  function open(kind, key) {
+    var store = kind === 'dish' ? dishes : ingredients;
+    var entry = store[key];
+    if (!entry) return;
+
+    kicker.textContent = kind === 'dish' ? 'At the table' : (entry.category || 'In season');
+    title.textContent  = entry.name_en || entry.source || '';
+    jp.textContent     = entry.name_jp || '';
+    romaji.textContent = entry.name_romaji || '';
+    peak.textContent   = kind === 'dish' ? (entry.season || '') : (entry.peak || '');
+    note.textContent   = entry.note || '';
+
+    dialog.showModal();
+  }
+
+  document.querySelectorAll('button.lookup').forEach(function (btn) {
+    btn.addEventListener('click', function () { open(btn.dataset.kind, btn.dataset.key); });
+  });
+
+  dialog.querySelector('.lk-close').addEventListener('click', function () { dialog.close(); });
+
+  dialog.addEventListener('click', function (e) {
+    var r = dialog.getBoundingClientRect();
+    if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) {
+      dialog.close();
+    }
+  });
+})();
+</script>
 
 
 </body>
