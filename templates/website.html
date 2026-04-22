@@ -78,7 +78,7 @@
 
   /* ── HERO ── */
   .hero {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 48px;
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px;
     padding: 72px 56px 64px; align-items: center;
     border-bottom: 1px solid var(--rule);
   }
@@ -216,8 +216,9 @@
   @media (max-width: 860px) {
     .topbar { padding: 14px 24px; flex-wrap: wrap; gap: 12px; }
     .topbar-right { gap: 18px; }
-    .hero { grid-template-columns: 1fr; padding: 40px 24px 48px; gap: 32px; }
-    .wheel-col { max-width: 360px; margin: 0 auto; }
+    .hero { grid-template-columns: minmax(0, 1fr); padding: 40px 24px 48px; gap: 32px; }
+    .wheel-col { max-width: 320px; margin: 0 auto; }
+    .wheel-svg { max-width: 320px; }
     .display-en { font-size: 52px; }
     .opening-band { padding: 48px 24px; }
     .opening-inner { grid-template-columns: 1fr; gap: 0; }
