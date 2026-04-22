@@ -2,16 +2,19 @@
 Build static HTML archive pages, index, and website homepage.
 """
 
+import json
 from datetime import date
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader
 
+from ingredient_generator import slugify
 from wheel import cardinal_labels
 
 ARCHIVE_DIR = Path(__file__).parent / "archive"
 TEMPLATE_DIR = Path(__file__).parent / "templates"
 ROOT_DIR     = Path(__file__).parent
+DATA_DIR     = ROOT_DIR / "data"
 
 ACCENT_COLORS = {
     "spring": "#6b8f71",
@@ -41,6 +44,59 @@ def _published_ids(all_seasons: list) -> set:
     return {s["id"] for s in all_seasons if (ARCHIVE_DIR / _season_filename(s)).exists()}
 
 
+def _load_lookup() -> tuple[dict, dict]:
+    def _read(path: Path) -> dict:
+        return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+    return _read(DATA_DIR / "ingredients.json"), _read(DATA_DIR / "dishes.json")
+
+
+def _slice_lookups(content: dict, ingredients: dict, dishes: dict) -> tuple[dict, dict]:
+    """Return only the lookup entries that appear on this season's page.
+
+    Keeps per-page JSON small and annotates each produce / dish item with the
+    slug the template needs to render a clickable lookup button.
+    """
+    page_ing: dict[str, dict] = {}
+    page_dish: dict[str, dict] = {}
+
+    for items in content.get("seasonal_produce", {}).values():
+        for raw in items:
+            key = slugify(raw)
+            if key and key in ingredients:
+                page_ing[key] = ingredients[key]
+
+    for d in content.get("seasonal_dishes", []):
+        key = slugify(d.get("name", ""))
+        if key and key in dishes:
+            page_dish[key] = dishes[key]
+
+    return page_ing, page_dish
+
+
+def _keyed_produce(content: dict, ingredients: dict) -> dict:
+    """Transform content.seasonal_produce into lists of {raw, key} pairs."""
+    out: dict[str, list] = {}
+    for category, items in content.get("seasonal_produce", {}).items():
+        out[category] = [
+            {"raw": raw, "key": slugify(raw) if slugify(raw) in ingredients else None}
+            for raw in items
+        ]
+    return out
+
+
+def _keyed_dishes(content: dict, dishes: dict) -> list:
+    """Transform content.seasonal_dishes into dicts that carry the lookup key."""
+    out = []
+    for d in content.get("seasonal_dishes", []):
+        key = slugify(d.get("name", ""))
+        out.append({
+            "name": d.get("name", ""),
+            "description": d.get("description", ""),
+            "key": key if key in dishes else None,
+        })
+    return out
+
+
 # ── Individual archive page ────────────────────────────────────────────────────
 
 def build_archive(season: dict, content: dict, all_seasons: list) -> None:
@@ -57,6 +113,9 @@ def build_archive(season: dict, content: dict, all_seasons: list) -> None:
     today = date.today()
     published_date = date(today.year, season["start_month"], season["start_day"]).isoformat()
 
+    all_ingredients, all_dishes = _load_lookup()
+    page_ingredients, page_dishes = _slice_lookups(content, all_ingredients, all_dishes)
+
     html = env.get_template("archive_page.html").render(
         season=season,
         content=content,
@@ -67,6 +126,10 @@ def build_archive(season: dict, content: dict, all_seasons: list) -> None:
         prev=prev,
         next=next_s,
         all_seasons=all_seasons,
+        produce=_keyed_produce(content, all_ingredients),
+        dishes=_keyed_dishes(content, all_dishes),
+        ingredient_lookup=page_ingredients,
+        dish_lookup=page_dishes,
     )
 
     filename = _season_filename(season)

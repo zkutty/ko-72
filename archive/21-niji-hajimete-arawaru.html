@@ -207,6 +207,71 @@
     color: var(--deep); line-height: 1.5;
   }
 
+  /* ── Lookup button (produce + dish) ── */
+  button.lookup {
+    font: inherit; color: inherit;
+    background: none; border: 0; padding: 0; margin: 0;
+    text-align: left; cursor: pointer;
+    border-bottom: 1px dotted var(--rule);
+    transition: border-color 120ms ease, color 120ms ease;
+  }
+  button.lookup:hover, button.lookup:focus-visible {
+    color: var(--accent); border-bottom-color: var(--accent);
+    outline: none;
+  }
+  .produce-col p.item.has-lookup { margin: 0 0 6px; }
+  .dish-name.has-lookup button.lookup {
+    font-family: var(--serif); font-size: 18px; color: var(--deep);
+    letter-spacing: -0.005em; border-bottom-width: 1px;
+  }
+
+  /* ── Dialog ── */
+  dialog.lookup-dialog {
+    border: 1px solid var(--rule);
+    background: var(--washi);
+    color: var(--deep);
+    padding: 36px 40px 32px;
+    max-width: 480px; width: calc(100% - 40px);
+    border-radius: 2px;
+    box-shadow: 0 20px 60px rgba(26, 26, 24, 0.22);
+    font-family: var(--sans);
+  }
+  dialog.lookup-dialog::backdrop {
+    background: rgba(26, 26, 24, 0.45);
+  }
+  dialog.lookup-dialog .lk-kicker {
+    font-size: 10px; font-weight: 500; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--accent); margin: 0 0 10px;
+  }
+  dialog.lookup-dialog .lk-title {
+    font-family: var(--serif); font-size: 28px; line-height: 1.1;
+    color: var(--deep); margin: 0 0 4px; letter-spacing: -0.01em;
+  }
+  dialog.lookup-dialog .lk-jp {
+    font-family: var(--mincho); font-size: 18px; color: var(--stone);
+    margin: 0 0 2px; letter-spacing: 0.08em;
+  }
+  dialog.lookup-dialog .lk-romaji {
+    font-family: var(--serif); font-style: italic; font-size: 14px;
+    color: var(--stone); margin: 0 0 18px;
+  }
+  dialog.lookup-dialog .lk-peak {
+    font-size: 12px; color: var(--stone); line-height: 1.55;
+    border-top: 1px solid var(--rule);
+    padding-top: 14px; margin: 0 0 14px;
+  }
+  dialog.lookup-dialog .lk-note {
+    font-family: var(--serif); font-size: 15.5px; line-height: 1.7;
+    color: var(--deep); margin: 0;
+  }
+  dialog.lookup-dialog .lk-close {
+    position: absolute; top: 10px; right: 12px;
+    font: inherit; font-size: 22px; line-height: 1;
+    color: var(--stone); background: none; border: 0;
+    cursor: pointer; padding: 6px 10px;
+  }
+  dialog.lookup-dialog .lk-close:hover { color: var(--deep); }
+
   .dishes { max-width: 580px; margin: 0 0 48px; }
   .dish {
     display: grid; grid-template-columns: 24px 1fr; gap: 18px;
@@ -882,40 +947,66 @@
     <section class="produce">
       <p class="section-head">In season</p>
       <div class="produce-grid">
-        <div class="produce-col">
-          <p class="h">Fruits</p>
-          
-            <p class="item">Strawberries (ichigo)</p>
-          
-            <p class="item">Loquats (biwa)</p>
-          
-            <p class="item">Mikan (late variety)</p>
-          
-            <p class="item">Amanatsu citrus</p>
-          
-        </div>
-        <div class="produce-col">
-          <p class="h">Vegetables</p>
-          
-            <p class="item">Bamboo shoots (takenoko)</p>
-          
-            <p class="item">Spring cabbage (haru kyabetsu)</p>
-          
-            <p class="item">Fava beans (soramame)</p>
-          
-            <p class="item">Udo (mountain asparagus)</p>
-          
-        </div>
-        <div class="produce-col">
-          <p class="h">Fish</p>
-          
-            <p class="item">Sayori (halfbeak)</p>
-          
-            <p class="item">Shirauo (icefish)</p>
-          
-            <p class="item">Tai (sea bream)</p>
-          
-        </div>
+        
+          <div class="produce-col">
+            <p class="h">Fruits</p>
+            
+              
+                <p class="item">Strawberries (ichigo)</p>
+              
+            
+              
+                <p class="item">Loquats (biwa)</p>
+              
+            
+              
+                <p class="item">Mikan (late variety)</p>
+              
+            
+              
+                <p class="item">Amanatsu citrus</p>
+              
+            
+          </div>
+        
+          <div class="produce-col">
+            <p class="h">Vegetables</p>
+            
+              
+                <p class="item">Bamboo shoots (takenoko)</p>
+              
+            
+              
+                <p class="item">Spring cabbage (haru kyabetsu)</p>
+              
+            
+              
+                <p class="item">Fava beans (soramame)</p>
+              
+            
+              
+                <p class="item">Udo (mountain asparagus)</p>
+              
+            
+          </div>
+        
+          <div class="produce-col">
+            <p class="h">Fish</p>
+            
+              
+                <p class="item">Sayori (halfbeak)</p>
+              
+            
+              
+                <p class="item">Shirauo (icefish)</p>
+              
+            
+              
+                <p class="item">Tai (sea bream)</p>
+              
+            
+          </div>
+        
       </div>
     </section>
 
@@ -926,7 +1017,9 @@
         <div class="dish">
           <span class="dish-num">01</span>
           <div>
-            <p class="dish-name">Takenoko gohan</p>
+            
+              <p class="dish-name">Takenoko gohan</p>
+            
             <p class="dish-desc">Rice cooked with fresh bamboo shoots and dashi, celebrating the tender first harvest that appears only now in mid-spring.</p>
           </div>
         </div>
@@ -934,7 +1027,9 @@
         <div class="dish">
           <span class="dish-num">02</span>
           <div>
-            <p class="dish-name">Soramame no shioyude</p>
+            
+              <p class="dish-name">Soramame no shioyude</p>
+            
             <p class="dish-desc">Fava beans simply boiled in salted water, their jade-green color and sweet, nutty flavor at their peak before the pods begin to toughen.</p>
           </div>
         </div>
@@ -967,6 +1062,8 @@
 <footer class="page-foot">
   © 2026 Kō · Japan's 72 micro-seasons, one at a time · No cookies, no tracking
 </footer>
+
+
 
 </body>
 </html>
