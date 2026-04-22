@@ -148,6 +148,64 @@
   .market-item { font-family: var(--serif); font-size: 14px; color: var(--deep);
                  margin: 0 0 6px; line-height: 1.5; }
 
+  /* ── Lookup button (shared by market + table) ── */
+  button.lookup {
+    font: inherit; color: inherit;
+    background: none; border: 0; padding: 0; margin: 0;
+    text-align: left; cursor: pointer;
+    border-bottom: 1px dotted var(--rule);
+    transition: border-color 120ms ease, color 120ms ease;
+  }
+  button.lookup:hover, button.lookup:focus-visible {
+    color: var(--accent); border-bottom-color: var(--accent);
+    outline: none;
+  }
+
+  /* ── Dialog ── */
+  dialog.lookup-dialog {
+    border: 1px solid var(--rule);
+    background: var(--washi);
+    color: var(--deep);
+    padding: 36px 40px 32px;
+    max-width: 480px; width: calc(100% - 40px);
+    border-radius: 2px;
+    box-shadow: 0 20px 60px rgba(26, 26, 24, 0.22);
+    font-family: var(--sans);
+  }
+  dialog.lookup-dialog::backdrop { background: rgba(26, 26, 24, 0.45); }
+  dialog.lookup-dialog .lk-kicker {
+    font-size: 10px; font-weight: 500; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--accent); margin: 0 0 10px;
+  }
+  dialog.lookup-dialog .lk-title {
+    font-family: var(--serif); font-size: 28px; line-height: 1.1;
+    color: var(--deep); margin: 0 0 4px; letter-spacing: -0.01em;
+  }
+  dialog.lookup-dialog .lk-jp {
+    font-family: var(--mincho); font-size: 18px; color: var(--stone);
+    margin: 0 0 2px; letter-spacing: 0.08em;
+  }
+  dialog.lookup-dialog .lk-romaji {
+    font-family: var(--serif); font-style: italic; font-size: 14px;
+    color: var(--stone); margin: 0 0 18px;
+  }
+  dialog.lookup-dialog .lk-peak {
+    font-size: 12px; color: var(--stone); line-height: 1.55;
+    border-top: 1px solid var(--rule);
+    padding-top: 14px; margin: 0 0 14px;
+  }
+  dialog.lookup-dialog .lk-note {
+    font-family: var(--serif); font-size: 15.5px; line-height: 1.7;
+    color: var(--deep); margin: 0;
+  }
+  dialog.lookup-dialog .lk-close {
+    position: absolute; top: 10px; right: 12px;
+    font: inherit; font-size: 22px; line-height: 1;
+    color: var(--stone); background: none; border: 0;
+    cursor: pointer; padding: 6px 10px;
+  }
+  dialog.lookup-dialog .lk-close:hover { color: var(--deep); }
+
   /* ── Haiku ── */
   .haiku-band { padding: 88px 56px; text-align: center;
                 border-bottom: 1px solid var(--rule); }
@@ -960,9 +1018,19 @@
     <div class="spread-col">
       <h3>Table</h3>
       
-        <p><strong style="color: var(--deep);">Takenoko gohan.</strong> Rice cooked with freshly dug bamboo shoots, their sweetness peaking during these grain rains when the soil is perfectly moist.</p>
+        <p>
+          
+            <strong style="color: var(--deep);">Takenoko gohan.</strong>
+          
+          Rice cooked with freshly dug bamboo shoots, their sweetness peaking during these grain rains when the soil is perfectly moist.
+        </p>
       
-        <p><strong style="color: var(--deep);">Sawara no saikyo-yaki.</strong> Spanish mackerel marinated in sweet white miso and grilled until caramelized, celebrating the fish&#39;s spring migration through the Seto Inland Sea.</p>
+        <p>
+          
+            <strong style="color: var(--deep);">Sawara no saikyo-yaki.</strong>
+          
+          Spanish mackerel marinated in sweet white miso and grilled until caramelized, celebrating the fish&#39;s spring migration through the Seto Inland Sea.
+        </p>
       
     </div>
     <div class="spread-divider"></div>
@@ -976,40 +1044,66 @@
   <section class="market">
     <p class="market-label">At Market</p>
     <div class="market-grid">
-      <div class="market-col">
-        <p class="market-col-head">Fruits</p>
-        
-          <p class="market-item">Ichigo (strawberries)</p>
-        
-          <p class="market-item">Natsu mikan (summer citrus)</p>
-        
-          <p class="market-item">Biwa (loquat, early)</p>
-        
-          <p class="market-item">Amanatsu (sweet citrus)</p>
-        
-      </div>
-      <div class="market-col">
-        <p class="market-col-head">Vegetables</p>
-        
-          <p class="market-item">Takenoko (bamboo shoots)</p>
-        
-          <p class="market-item">Sansai (mountain vegetables)</p>
-        
-          <p class="market-item">Wakame (young seaweed)</p>
-        
-          <p class="market-item">Fuki (butterbur)</p>
-        
-      </div>
-      <div class="market-col">
-        <p class="market-col-head">Fish</p>
-        
-          <p class="market-item">Sayori (halfbeak)</p>
-        
-          <p class="market-item">Shirauo (icefish)</p>
-        
-          <p class="market-item">Sawara (Spanish mackerel)</p>
-        
-      </div>
+      
+        <div class="market-col">
+          <p class="market-col-head">Fruits</p>
+          
+            
+              <p class="market-item">Ichigo (strawberries)</p>
+            
+          
+            
+              <p class="market-item">Natsu mikan (summer citrus)</p>
+            
+          
+            
+              <p class="market-item">Biwa (loquat, early)</p>
+            
+          
+            
+              <p class="market-item">Amanatsu (sweet citrus)</p>
+            
+          
+        </div>
+      
+        <div class="market-col">
+          <p class="market-col-head">Vegetables</p>
+          
+            
+              <p class="market-item">Takenoko (bamboo shoots)</p>
+            
+          
+            
+              <p class="market-item">Sansai (mountain vegetables)</p>
+            
+          
+            
+              <p class="market-item">Wakame (young seaweed)</p>
+            
+          
+            
+              <p class="market-item">Fuki (butterbur)</p>
+            
+          
+        </div>
+      
+        <div class="market-col">
+          <p class="market-col-head">Fish</p>
+          
+            
+              <p class="market-item">Sayori (halfbeak)</p>
+            
+          
+            
+              <p class="market-item">Shirauo (icefish)</p>
+            
+          
+            
+              <p class="market-item">Sawara (Spanish mackerel)</p>
+            
+          
+        </div>
+      
     </div>
   </section>
 
@@ -1111,6 +1205,8 @@
     } catch { btn.disabled = false; btn.textContent = '→ Subscribe'; alert('Something went wrong.'); }
   });
 </script>
+
+
 
 </body>
 </html>

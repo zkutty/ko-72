@@ -183,30 +183,23 @@ year, grounded in a concrete detail."
 
 # ── main ──────────────────────────────────────────────────────────────────────
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description="Kō ingredient / dish lookup generator")
-    parser.add_argument("--force", action="store_true", help="Regenerate entries that already exist")
-    parser.add_argument("--dry-run", action="store_true", help="List work without calling Claude")
-    args = parser.parse_args()
+def run(force: bool = False, dry_run: bool = False) -> dict:
+    """Generate any missing ingredient / dish entries. Safe to call repeatedly.
 
+    Returns a small stats dict so callers (e.g. season_mailer) can log.
+    """
     if not CACHE_PATH.exists():
-        log.error("No content cache at %s — nothing to dedupe.", CACHE_PATH)
-        sys.exit(1)
+        log.warning("No content cache at %s — skipping ingredient generation.", CACHE_PATH)
+        return {"ingredients_added": 0, "dishes_added": 0}
 
     cache = _load_json(CACHE_PATH)
     discovered_ing, discovered_dish = collect_items(cache)
 
-    existing_ing = _load_json(INGREDIENTS_P)
+    existing_ing  = _load_json(INGREDIENTS_P)
     existing_dish = _load_json(DISHES_P)
 
-    ing_todo = {
-        k: v for k, v in discovered_ing.items()
-        if args.force or k not in existing_ing
-    }
-    dish_todo = {
-        k: v for k, v in discovered_dish.items()
-        if args.force or k not in existing_dish
-    }
+    ing_todo  = {k: v for k, v in discovered_ing.items()  if force or k not in existing_ing}
+    dish_todo = {k: v for k, v in discovered_dish.items() if force or k not in existing_dish}
 
     log.info(
         "Discovered %d ingredients (%d new) and %d dishes (%d new) across %d seasons.",
@@ -215,18 +208,20 @@ def main() -> None:
         len(cache),
     )
 
-    if args.dry_run:
+    if dry_run:
         for k, v in ing_todo.items():
             log.info("  [ingredient] %s  ←  %s", k, v["source"])
         for k, v in dish_todo.items():
             log.info("  [dish]       %s  ←  %s", k, v["source"])
-        return
+        return {"ingredients_added": 0, "dishes_added": 0}
 
     if not ing_todo and not dish_todo:
         log.info("Everything already generated. Nothing to do.")
-        return
+        return {"ingredients_added": 0, "dishes_added": 0}
 
     client = _client()
+    added_ing = 0
+    added_dish = 0
 
     for i, (key, meta) in enumerate(ing_todo.items(), 1):
         log.info("Ingredient %d/%d · %s (%s)", i, len(ing_todo), meta["source"], meta["category"])
@@ -237,7 +232,8 @@ def main() -> None:
             continue
         entry["source"] = meta["source"]
         existing_ing[key] = entry
-        _save_json(INGREDIENTS_P, existing_ing)  # save after each, so it's resumable
+        _save_json(INGREDIENTS_P, existing_ing)
+        added_ing += 1
 
     for i, (key, meta) in enumerate(dish_todo.items(), 1):
         log.info("Dish %d/%d · %s", i, len(dish_todo), meta["source"])
@@ -249,11 +245,21 @@ def main() -> None:
         entry["source"] = meta["source"]
         existing_dish[key] = entry
         _save_json(DISHES_P, existing_dish)
+        added_dish += 1
 
     log.info(
         "Done. %d ingredients and %d dishes on disk.",
         len(existing_ing), len(existing_dish),
     )
+    return {"ingredients_added": added_ing, "dishes_added": added_dish}
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Kō ingredient / dish lookup generator")
+    parser.add_argument("--force", action="store_true", help="Regenerate entries that already exist")
+    parser.add_argument("--dry-run", action="store_true", help="List work without calling Claude")
+    args = parser.parse_args()
+    run(force=args.force, dry_run=args.dry_run)
 
 
 if __name__ == "__main__":
