@@ -93,9 +93,62 @@ Go to **Settings → Secrets and variables → Actions** and add:
 | `RESEND_API_KEY` | Your Resend API key |
 | `SUBSCRIBER_EMAILS` | Comma-separated email list |
 
+Optional — for the social posting step (any platform with missing credentials is skipped silently):
+
+| Secret name | Value |
+|---|---|
+| `TWITTER_API_KEY` | Twitter/X consumer key |
+| `TWITTER_API_SECRET` | Twitter/X consumer secret |
+| `TWITTER_ACCESS_TOKEN` | Twitter/X access token |
+| `TWITTER_ACCESS_TOKEN_SECRET` | Twitter/X access-token secret |
+| `REDDIT_CLIENT_ID` | Reddit script-app client id |
+| `REDDIT_CLIENT_SECRET` | Reddit script-app client secret |
+| `REDDIT_USERNAME` | Reddit account username |
+| `REDDIT_PASSWORD` | Reddit account password |
+| `ARENA_ACCESS_TOKEN` | Are.na personal access token |
+| `ARENA_CHANNEL_SLUG` | Slug of the Kō channel on Are.na |
+
 ### Manual trigger
 
 You can also trigger the workflow manually from the **Actions** tab with the optional `force` checkbox to run regardless of today's date.
+
+## Social posting
+
+When a new micro-season triggers, `social_poster.py` runs after the email and
+archive page are published. It generates a platform-tuned post via Claude and
+publishes it to each network whose credentials are configured. Failures on any
+one platform are logged but never block the email or archive.
+
+### Where to get credentials
+
+| Platform | Where | Notes |
+|---|---|---|
+| Twitter / X | [developer.twitter.com](https://developer.twitter.com) → create app → Basic tier | Need OAuth 1.0a consumer key/secret + access token/secret with write scope |
+| Reddit | [reddit.com/prefs/apps](https://www.reddit.com/prefs/apps) → create app → script type | Use the script app's client id + secret plus your account username/password |
+| Are.na | [dev.are.na](https://dev.are.na) → request token | One personal access token, plus the slug of the channel you want blocks added to |
+
+### Required env vars
+
+```env
+# Twitter / X
+TWITTER_API_KEY=
+TWITTER_API_SECRET=
+TWITTER_ACCESS_TOKEN=
+TWITTER_ACCESS_TOKEN_SECRET=
+
+# Reddit
+REDDIT_CLIENT_ID=
+REDDIT_CLIENT_SECRET=
+REDDIT_USERNAME=
+REDDIT_PASSWORD=
+
+# Are.na
+ARENA_ACCESS_TOKEN=
+ARENA_CHANNEL_SLUG=
+```
+
+The Reddit handler attempts r/japan, r/japanlife, then r/LearnJapanese in order
+and stops on the first successful submission to avoid cross-posting spam.
 
 ## Customization
 

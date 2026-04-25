@@ -189,6 +189,17 @@ def main() -> None:
     log.info("Step 5/5 · Rebuilding website homepage …")
     build_website(season, content, all_seasons=seasons, worker_url=worker_url)
 
+    # Step 6: social posting — best-effort; never block the rest of the pipeline.
+    archive_url = f"https://ko-72.com/archive/{season['id']:02d}-{season['slug']}.html"
+    try:
+        from social_poster import post_all
+        print("Posting to social platforms...")
+        results = post_all(season, content, archive_url)
+        for platform, status in results.items():
+            print(f"  {platform}: {status}")
+    except Exception as e:
+        log.warning("Social posting step failed: %s", e)
+
     log.info("Done ✓")
 
 
