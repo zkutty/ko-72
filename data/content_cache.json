@@ -121,5 +121,89 @@
       "english": "Frost gone at last— / the seedlings' green reflected / in the flooded field"
     },
     "closing": "In the evening stillness, a single heron stands motionless at the paddy's edge, waiting for what the warming water will bring."
+  },
+  "24": {
+    "en": {
+      "summary": "Peonies open their heavy, fragrant blooms as late spring reaches its most opulent moment before giving way to summer.",
+      "opening": "The air has grown thick with warmth and the sweet, almost intoxicating scent of peonies unfolding in temple gardens and private courtyards. Their petals — layered like silk robes, flushed from palest shell-pink to deepest crimson — seem too extravagant for the modest scale of a flower. This is spring's final flourish, a last gesture of abundance before the rains.",
+      "nature_notes": "Peonies heavy with dew bow toward the earth each morning, their blooms so full they barely hold their form. Tree frogs have begun their evening chorus in earnest, and the first fireflies flicker in damp thickets near streams. Young bamboo shoots have pushed through the soil with startling speed, their pale green tips visible along forest edges.",
+      "seasonal_produce": {
+        "fruits": [
+          "Loquat",
+          "Late strawberries",
+          "Green ume plums",
+          "Early cherries"
+        ],
+        "vegetables": [
+          "Bamboo shoots",
+          "Fava beans",
+          "New ginger",
+          "Mitsuba"
+        ],
+        "fish": [
+          "Horse mackerel",
+          "Bonito",
+          "Flounder"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "Takenoko gohan",
+          "description": "Rice cooked with tender bamboo shoots and light dashi, capturing the sweetness of this year's first harvest."
+        },
+        {
+          "name": "Katsuo no tataki",
+          "description": "Lightly seared bonito, its arrival celebrated as the first catch of the season brings vitality and good fortune."
+        }
+      ],
+      "cultural_note": "The peony, known as the 'king of flowers,' has long symbolized nobility, prosperity, and feminine beauty in Japanese art. This period also marks the heart of Golden Week, when families travel to ancestral homes and temple grounds are crowded with visitors admiring the last of spring's showiest blooms. Children's Day on May 5th brings carp streamers rippling against bright skies.",
+      "haiku": {
+        "japanese": "牡丹散りて打ちかさなりぬ二三片",
+        "romaji": "botan chirite / uchikasanarinu / ni san hen",
+        "english": "Peony petals fall — / two, three, overlapping / on the garden stone"
+      },
+      "closing": "A single petal drifts to the moss, and somewhere beyond the garden wall, a child's koinobori catches the wind."
+    },
+    "ja": {
+      "summary": "牡丹が重たげに咲き誇り、晩春がもっとも華やかに極まるひととき。",
+      "opening": "庭先や寺院の境内に、牡丹の甘くむせ返るような香りが漂いはじめる。幾重にも重なる花弁は淡い桜貝色から深紅まで、まるで絹の衣を纏うかのよう。これが春の最後の贅、雨の季節を前にした花の宴である。",
+      "nature_notes": "朝露を含んだ牡丹は、その重みに耐えかねるように俯く。日暮れには雨蛙の声が水辺に響きわたり、湿った茂みでは今年初めの蛍がちらちらと光りはじめる。竹林の縁では筍が土を破り、若緑の穂先をのぞかせている。",
+      "seasonal_produce": {
+        "fruits": [
+          "枇杷",
+          "苺（名残り）",
+          "青梅",
+          "さくらんぼ"
+        ],
+        "vegetables": [
+          "筍",
+          "空豆",
+          "新生姜",
+          "三つ葉"
+        ],
+        "fish": [
+          "鯵",
+          "初鰹",
+          "鮃"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "筍ごはん",
+          "description": "掘りたての筍を薄味の出汁で炊き込み、春の甘みをそのまま味わう一品。"
+        },
+        {
+          "name": "鰹のたたき",
+          "description": "初夏を告げる初鰹を軽く炙り、薬味とともにいただく縁起物。"
+        }
+      ],
+      "cultural_note": "牡丹は「花の王」と称され、富貴と高雅の象徴として屏風絵や着物の意匠に描かれてきた。この時期は大型連休の只中にあたり、故郷へ帰省する人々や、牡丹寺と呼ばれる名所を訪れる人々で賑わう。五月五日の端午の節句には、鯉のぼりが薫風にはためく。",
+      "haiku": {
+        "japanese": "牡丹散りて打ちかさなりぬ二三片",
+        "romaji": "botan chirite / uchikasanarinu / ni san hen",
+        "english": "Peony petals fall — / two, three, overlapping / on the garden stone"
+      },
+      "closing": "苔の上に花弁がひとひら落ち、塀の向こうで鯉のぼりが風を孕む音がする。"
+    }
   }
 }
