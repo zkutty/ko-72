@@ -1043,7 +1043,7 @@
       
         <p>
           
-            <strong style="color: var(--deep);">Katsuo no tataki.</strong>
+            <strong style="color: var(--deep);"><button class="lookup" type="button" data-kind="dish" data-key="katsuo-no-tataki">Katsuo no tataki</button>.</strong>
           
           Lightly seared bonito, its arrival celebrated as the first catch of the season brings vitality and good fortune.
         </p>
@@ -1065,19 +1065,19 @@
           <p class="market-col-head">Fruits</p>
           
             
-              <p class="market-item">Loquat</p>
+              <p class="market-item"><button class="lookup" type="button" data-kind="ingredient" data-key="loquat">Loquat</button></p>
             
           
             
-              <p class="market-item">Late strawberries</p>
+              <p class="market-item"><button class="lookup" type="button" data-kind="ingredient" data-key="late-strawberries">Late strawberries</button></p>
             
           
             
-              <p class="market-item">Green ume plums</p>
+              <p class="market-item"><button class="lookup" type="button" data-kind="ingredient" data-key="green-ume-plums">Green ume plums</button></p>
             
           
             
-              <p class="market-item">Early cherries</p>
+              <p class="market-item"><button class="lookup" type="button" data-kind="ingredient" data-key="early-cherries">Early cherries</button></p>
             
           
         </div>
@@ -1086,19 +1086,19 @@
           <p class="market-col-head">Vegetables</p>
           
             
-              <p class="market-item">Bamboo shoots</p>
+              <p class="market-item"><button class="lookup" type="button" data-kind="ingredient" data-key="bamboo-shoots">Bamboo shoots</button></p>
             
           
             
-              <p class="market-item">Fava beans</p>
+              <p class="market-item"><button class="lookup" type="button" data-kind="ingredient" data-key="fava-beans">Fava beans</button></p>
             
           
             
-              <p class="market-item">New ginger</p>
+              <p class="market-item"><button class="lookup" type="button" data-kind="ingredient" data-key="new-ginger">New ginger</button></p>
             
           
             
-              <p class="market-item">Mitsuba</p>
+              <p class="market-item"><button class="lookup" type="button" data-kind="ingredient" data-key="mitsuba">Mitsuba</button></p>
             
           
         </div>
@@ -1107,15 +1107,15 @@
           <p class="market-col-head">Fish</p>
           
             
-              <p class="market-item">Horse mackerel</p>
+              <p class="market-item"><button class="lookup" type="button" data-kind="ingredient" data-key="horse-mackerel">Horse mackerel</button></p>
             
           
             
-              <p class="market-item">Bonito</p>
+              <p class="market-item"><button class="lookup" type="button" data-kind="ingredient" data-key="bonito">Bonito</button></p>
             
           
             
-              <p class="market-item">Flounder</p>
+              <p class="market-item"><button class="lookup" type="button" data-kind="ingredient" data-key="flounder">Flounder</button></p>
             
           
         </div>
@@ -1253,8 +1253,8 @@
   <p class="lk-note" id="lk-note"></p>
 </dialog>
 
-<script id="lookup-ingredients" type="application/json">{}</script>
-<script id="lookup-dishes" type="application/json">{"takenoko-gohan": {"name_en": "Bamboo-shoot rice", "name_jp": "\u7b4d\u3054\u98ef", "name_romaji": "takenoko gohan", "note": "Fresh-dug bamboo shoots, sliced thin and simmered with rice in dashi and light soy, their sweetness released as the pot steams. The dish marks the brief window when shoots can be cooked within hours of harvest, before bitterness sets in \u2014 a reminder that spring\u0027s gifts demand swift hands.", "season": "Mid-spring, when the first m\u014ds\u014d bamboo tips break through warming soil", "source": "Takenoko gohan"}}</script>
+<script id="lookup-ingredients" type="application/json">{"bamboo-shoots": {"category": "vegetable", "name_en": "Bamboo shoot", "name_jp": "\u7b4d", "name_romaji": "takenoko", "note": "Freshly dug shoots, still pale and smelling of earth, must be boiled within hours before bitterness sets in\u2014their texture at peak is both crisp and yielding, faintly sweet. They mark the brief window when spring\u0027s energy pushes visibly upward, appearing in nimono, takikomi gohan, and grilled with just soy and sansho.", "peak": "Mid-spring, around Kokuu when grain rains soften the soil", "source": "Bamboo shoots"}, "bonito": {"category": "fish", "name_en": "Bonito", "name_jp": "\u9c39", "name_romaji": "katsuo", "note": "The first bonito of the season, called hatsugatsuo, arrives lean and clean-fleshed, its deep red meat best eaten as tataki \u2014 seared over straw fire until the edges char while the center stays cool and raw. In Edo times, people paid small fortunes for the year\u0027s first catch, believing it added seventy-five days to one\u0027s life.", "peak": "Late spring into early summer, when the kuroshio current carries them northward", "source": "Bonito"}, "early-cherries": {"category": "fruit", "name_en": "Cherry", "name_jp": "\u685c\u6843", "name_romaji": "\u014dt\u014d", "note": "These earliest cherries arrive with flesh still firm and flavor caught between sweet and tart \u2014 a brightness that speaks of orchards not yet heavy with full summer. In Japan, they mark the brief window after cherry blossoms fall and before the plum rains begin, eaten chilled from the hand as a fleeting luxury.", "peak": "Late spring through early summer, as the first warm rains give way to longer days", "source": "Early cherries"}, "fava-beans": {"category": "vegetable", "name_en": "Fava bean", "name_jp": "\u7a7a\u8c46", "name_romaji": "soramame", "note": "The pods point skyward on their stalks \u2014 hence \u0027sky bean\u0027 \u2014 and inside, each kernel wears a pale jade skin that slips free after blanching, revealing flesh both sweet and faintly bitter. Grilled whole in their blackening pods or simmered simply with salt, they mark the brief window before summer\u0027s heat arrives, a fleeting green that Japanese cooks await each year.", "peak": "Late spring, as the beans swell beneath May\u0027s lengthening days", "source": "Fava beans"}, "flounder": {"category": "fish", "name_en": "Flounder", "name_jp": "\u9c08", "name_romaji": "karei", "note": "A flatfish whose paper-thin sashimi reveals an almost translucent sweetness, the meat gaining density and fat as winter deepens. In the Japanese kitchen, karei appears as engawa\u2014the prized fin-edge muscle\u2014or simmered whole in soy and ginger, a dish that speaks of shortened days and the patience of slow cooking.", "peak": "Late autumn through winter, when cold currents firm the flesh", "source": "Flounder"}, "green-ume-plums": {"category": "fruit", "name_en": "Green plum", "name_jp": "\u9752\u6885", "name_romaji": "aoume", "note": "Hard, astringent, and intensely fragrant, green plums arrive too sour to eat raw \u2014 their purpose is transformation. Soaked in shochu with rock sugar, they become umeshu by winter; packed in salt, they yield the umeboshi that will see a household through the year.", "peak": "Early summer, as the rains begin to veil the mountains", "source": "Green ume plums"}, "horse-mackerel": {"category": "fish", "name_en": "Horse mackerel", "name_jp": "\u9bf5", "name_romaji": "aji", "note": "A sleek, silver-blue fish with a distinctive lateral line of sharp scutes, prized now for flesh that balances clean oceanic sweetness with a whisper of beneficial fat \u2014 ideal eaten as tataki, its surface barely seared, the center still cool and translucent. In fishing towns along the Sagami coast, the first substantial catches of aji signal that tsuyu rains will soon give way to the full heat of summer.", "peak": "Early summer through late summer, when coastal waters warm and the fish fatten", "source": "Horse mackerel"}, "late-strawberries": {"category": "fruit", "name_en": "Late strawberry", "name_jp": "\u6669\u751f\u82fa", "name_romaji": "bansei ichigo", "note": "These final strawberries of the season arrive smaller and deeply flushed, their sugars concentrated by warming days into an almost jammy intensity that the pale spring berries never achieve. Japanese cooks prize them for preserves and strawberry daifuku, capturing the fruit\u0027s fleeting sweetness just before the fields go quiet until winter forcing begins again.", "peak": "Early summer, as the first hydrangeas begin to color", "source": "Late strawberries"}, "loquat": {"category": "fruit", "name_en": "Loquat", "name_jp": "\u6787\u6777", "name_romaji": "biwa", "note": "Beneath papery bronze skin, the flesh yields a delicate sweetness cut with bright acidity, its texture somewhere between apricot and pear. The fruit ripens just as hydrangeas begin to color, offering a fleeting taste of warmth before the long rains settle in.", "peak": "Late spring to early summer, as the rainy season approaches", "source": "Loquat"}, "mitsuba": {"category": "vegetable", "name_en": "Japanese wild parsley", "name_jp": "\u4e09\u3064\u8449", "name_romaji": "mitsuba", "note": "Three-lobed leaves on hollow stems carry a fragrance somewhere between celery and angelica, bright and faintly peppery, releasing their scent the moment they meet hot broth. A finishing herb rather than a cooked one, mitsuba floats atop chawanmushi and clear soups at the threshold of the new year, its pale green a quiet signal that warmth is returning.", "peak": "Early spring, when snow-melt still lingers in mountain valleys", "source": "Mitsuba"}, "new-ginger": {"category": "vegetable", "name_en": "New ginger", "name_jp": "\u65b0\u751f\u59dc", "name_romaji": "shin sh\u014dga", "note": "Harvested young before the rhizomes toughen, new ginger arrives with pale pink-tinged tips and a fiber so delicate it can be sliced paper-thin and eaten raw. Its sharp, almost floral heat\u2014closer to perfume than fire\u2014marks the moment when pickled ginger for the year is put up, filling kitchens with the clean scent of rice vinegar and anticipation.", "peak": "Early summer through midsummer, when the rains have just lifted", "source": "New ginger"}}</script>
+<script id="lookup-dishes" type="application/json">{"katsuo-no-tataki": {"name_en": "Seared bonito, lightly charred", "name_jp": "\u9c39\u306e\u305f\u305f\u304d", "name_romaji": "katsuo no tataki", "note": "Thick slices of bonito are seared over blazing straw until the edges char and the interior remains cool and ruby-dark, then dressed with ponzu, ginger, and raw garlic. The dish celebrates hatsu-gatsuo \u2014 the \u0027first bonito\u0027 of the season \u2014 prized in Edo times as a fleeting luxury worth trading one\u0027s wife\u0027s kimono to taste.", "season": "Late spring through early summer, when the first bonito migrate north along the Pacific coast", "source": "Katsuo no tataki"}, "takenoko-gohan": {"name_en": "Bamboo-shoot rice", "name_jp": "\u7b4d\u3054\u98ef", "name_romaji": "takenoko gohan", "note": "Short-grain rice simmered with freshly dug bamboo shoots, seasoned only with dashi, soy, and sake\u2014the pale crescents of shoot turning faintly amber at the edges. The dish marks the brief window when morning-harvested takenoko can be cooked before their sugars turn to fiber, a race against time that makes each bowl taste of the earth two hours prior.", "season": "Mid-spring, when m\u014ds\u014dchiku bamboo pushes through the warming soil", "source": "Takenoko gohan"}}</script>
 <script>
 (function () {
   var dialog = document.getElementById('lookup-dialog');
