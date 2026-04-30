@@ -79,30 +79,41 @@ def collect_items(cache: dict) -> tuple[dict, dict]:
     """Walk every cached season and return two dicts keyed by slug.
 
     Returns (ingredients, dishes), where each value is the canonical source
-    string (with category for ingredients).
+    string (with category for ingredients). Handles both the legacy flat
+    cache shape and the bilingual ``{"en": {...}, "ja": {...}}`` shape —
+    each language's produce/dish strings get their own lookup entry so the
+    email can link items in whichever language the recipient reads.
     """
     ingredients: dict[str, dict] = {}
     dishes: dict[str, dict] = {}
 
     for season in cache.values():
-        produce = season.get("seasonal_produce", {})
-        for category, items in produce.items():
-            # category is "fruits" / "vegetables" / "fish"
-            singular = {"fruits": "fruit", "vegetables": "vegetable", "fish": "fish"}.get(category, category)
-            for raw in items:
+        if not isinstance(season, dict):
+            continue
+        blocks = [
+            season[lang] for lang in ("en", "ja")
+            if isinstance(season.get(lang), dict)
+        ] or [season]
+
+        for block in blocks:
+            produce = block.get("seasonal_produce", {})
+            for category, items in produce.items():
+                # category is "fruits" / "vegetables" / "fish"
+                singular = {"fruits": "fruit", "vegetables": "vegetable", "fish": "fish"}.get(category, category)
+                for raw in items:
+                    key = slugify(raw)
+                    if not key:
+                        continue
+                    if key not in ingredients:
+                        ingredients[key] = {"source": raw, "category": singular}
+
+            for d in block.get("seasonal_dishes", []):
+                raw = d.get("name", "")
                 key = slugify(raw)
                 if not key:
                     continue
-                if key not in ingredients:
-                    ingredients[key] = {"source": raw, "category": singular}
-
-        for d in season.get("seasonal_dishes", []):
-            raw = d.get("name", "")
-            key = slugify(raw)
-            if not key:
-                continue
-            if key not in dishes:
-                dishes[key] = {"source": raw}
+                if key not in dishes:
+                    dishes[key] = {"source": raw}
 
     return ingredients, dishes
 
