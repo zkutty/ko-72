@@ -8,8 +8,10 @@ bilingual content payload via ``templates/email.html``.
 
 import json
 import os
+import time
 import urllib.request
 import urllib.error
+from collections import deque
 from datetime import date
 from pathlib import Path
 
@@ -30,6 +32,11 @@ LANGS = ("en", "ja")
 DEFAULT_LANG = "en"
 DATA_DIR = Path(__file__).parent / "data"
 STRINGS_PATH = DATA_DIR / "strings.json"
+
+# Resend caps us at 5 requests/sec; stay one slot below to leave headroom
+# for clock drift and retries.
+RESEND_MAX_PER_SEC = 4
+RESEND_RETRY_ATTEMPTS = 5
 
 
 def _fmt(month: int, day: int) -> str:
@@ -147,6 +154,30 @@ def _render(template, season, content, lang, strings, accent_color, archive_url,
     )
 
 
+def _throttle(window: deque) -> None:
+    """Block until another send would stay within RESEND_MAX_PER_SEC."""
+    now = time.monotonic()
+    while window and now - window[0] >= 1.0:
+        window.popleft()
+    if len(window) >= RESEND_MAX_PER_SEC:
+        time.sleep(1.0 - (now - window[0]))
+        window.popleft()
+    window.append(time.monotonic())
+
+
+def _send_with_retry(params: "resend.Emails.SendParams") -> None:
+    delay = 1.0
+    for attempt in range(1, RESEND_RETRY_ATTEMPTS + 1):
+        try:
+            resend.Emails.send(params)
+            return
+        except resend.exceptions.RateLimitError:
+            if attempt == RESEND_RETRY_ATTEMPTS:
+                raise
+            time.sleep(delay)
+            delay *= 2
+
+
 def _subject(season: dict, lang: str, strings: dict) -> str:
     if lang == "ja":
         return f"{strings['ja']['email_subject_prefix']} · {season['name_jp']}（{season['name_romaji']}）"
@@ -189,6 +220,7 @@ def send_email(season: dict, content: dict, worker_url: str = "https://subscribe
 
     sent = {lang: 0 for lang in rendered}
     skipped: list[str] = []
+    send_window: deque = deque()
     for recipient, lang in recipients:
         if lang not in rendered:
             # JA subscriber but no JA content yet (legacy cache before backfill) — fall back to EN.
@@ -202,7 +234,8 @@ def send_email(season: dict, content: dict, worker_url: str = "https://subscribe
             "subject": subject,
             "html": html,
         }
-        resend.Emails.send(params)
+        _throttle(send_window)
+        _send_with_retry(params)
         sent[lang] += 1
 
     summary = ", ".join(f"{lang}: {n}" for lang, n in sent.items() if n)
