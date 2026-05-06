@@ -205,5 +205,90 @@
       },
       "closing": "苔の上に花弁がひとひら落ち、塀の向こうで鯉のぼりが風を孕む音がする。"
     }
+  },
+  "25": {
+    "en": {
+      "summary": "The first frog calls break the evening stillness, announcing that summer has truly begun in the paddies and wetlands.",
+      "opening": "After nightfall, a single voice rises from the flooded rice field — tentative, then answered by another, and another, until the darkness pulses with song. The air carries the mineral scent of wet earth and young rice shoots. This is the threshold moment: winter's silence has lifted, and the land remembers its ancient chorus.",
+      "nature_notes": "Japanese tree frogs emerge from their hiding places to begin their mating calls, their high keening threading through the dusk. Rice paddies, newly flooded for planting, become mirrors reflecting the last light of day. Swallows dip low over the water's surface, hunting the insects that now swarm in the warming evenings.",
+      "seasonal_produce": {
+        "fruits": [
+          "ume (green plums)",
+          "loquat",
+          "strawberries",
+          "amanatsu citrus"
+        ],
+        "vegetables": [
+          "bamboo shoots",
+          "fava beans",
+          "spring cabbage",
+          "new ginger"
+        ],
+        "fish": [
+          "horse mackerel",
+          "sweetfish (ayu)",
+          "bonito (katsuo)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "Takenoko gohan",
+          "description": "Rice simmered with tender bamboo shoots captures the last sweetness of spring's most prized vegetable before the season turns."
+        },
+        {
+          "name": "Katsuo no tataki",
+          "description": "Seared bonito, barely touched by flame, arrives with the first strong catch of the season — its iron-red flesh a taste of the warming Kuroshio current."
+        }
+      ],
+      "cultural_note": "Early May brings the final days of Golden Week, when families return to ancestral villages and the countryside swells briefly with visitors. In farming communities, this is also the critical window for rice planting — taue — a practice still marked in some regions with ritual offerings to ensure a good harvest. The frog's voice has long been heard as a blessing on the water-filled fields.",
+      "haiku": {
+        "japanese": "田に水を引けば夜ごとの蛙かな",
+        "romaji": "ta ni mizu wo / hikeba yogoto no / kawazu kana",
+        "english": "water drawn to paddies — / and now each night belongs / to the frogs"
+      },
+      "closing": "The chorus swells and fades with the passing clouds, and in the spaces between calls, you hear the summer breathing in."
+    },
+    "ja": {
+      "summary": "夕暮れの田んぼから蛙の声が立ちのぼり、夏の到来を告げる頃。",
+      "opening": "日が沈み、水を張ったばかりの田から一声、また一声と蛙の鳴き声が重なってゆく。土と水の匂いが夜気に溶け、苗の緑がかすかに揺れる。長い沈黙の季節が終わり、田の声がよみがえる五日間である。",
+      "nature_notes": "雨蛙が繁殖の歌を歌い始め、夕闘から夜半にかけて田園に響きわたる。代掻きの終わった水田は空を映し、燕がその水面すれすれを飛びながら羽虫を追う。木々の緑は日ごとに濃さを増し、藤の花房が風に揺れている。",
+      "seasonal_produce": {
+        "fruits": [
+          "青梅",
+          "枇杷（びわ）",
+          "いちご",
+          "甘夏"
+        ],
+        "vegetables": [
+          "筍",
+          "そら豆",
+          "春キャベツ",
+          "新生姜"
+        ],
+        "fish": [
+          "鯵（あじ）",
+          "鮎",
+          "初鰹"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "筍ごはん",
+          "description": "掘りたての筍を炊き込んだご飯は、春の名残と初夏の気配を一椀に閉じ込める。"
+        },
+        {
+          "name": "鰹のたたき",
+          "description": "黒潮に乗って北上する初鰹を軽く炙り、旬の走りの力強さをそのまま味わう。"
+        }
+      ],
+      "cultural_note": "ゴールデンウィークの終盤、帰省客で賑わった田舎にも静けさが戻り、田植えの準備が本格化する。かつては田植えに先立ち、豊作を祈る神事が各地で行われた。蛙の鳴き声は水の恵みの証とされ、その合唱は稲作の始まりを祝福するものと考えられてきた。",
+      "haiku": {
+        "japanese": "田に水を引けば夜ごとの蛙かな",
+        "romaji": "ta ni mizu wo / hikeba yogoto no / kawazu kana",
+        "english": "water drawn to paddies — / and now each night belongs / to the frogs"
+      },
+      "closing": "声が重なり、途切れ、また重なる——その合間に、夏の息づかいが聞こえてくる。"
+    },
+    "_sent_on": "2026-05-06"
   }
 }
