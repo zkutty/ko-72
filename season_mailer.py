@@ -106,6 +106,105 @@ def save_cache(cache: dict) -> None:
         json.dump(cache, f, ensure_ascii=False, indent=2)
 
 
+# ── dish variety helpers ───────────────────────────────────────────────────────
+
+_LANG_KEYS = ("en", "ja")
+
+
+def _entry_lang_block(entry: dict, lang: str) -> dict | None:
+    """Return the language block of a cache entry.
+
+    Newer entries have ``{"en": {...}, "ja": {...}}``; legacy entries are flat
+    English content (no top-level ``"en"`` key). Treat legacy entries as the EN
+    block and as having no JA block.
+    """
+    if not isinstance(entry, dict):
+        return None
+    if "en" in entry and isinstance(entry["en"], dict):
+        block = entry.get(lang)
+        return block if isinstance(block, dict) else None
+    return entry if lang == "en" else None
+
+
+def collect_used_dishes(cache: dict, exclude_id: str | None = None) -> dict:
+    """Return ``{"en": set[str], "ja": set[str]}`` of normalized dish names
+    already featured in cached seasons (excluding the current season's id)."""
+    from content_generator import normalize_dish_name
+
+    used = {lang: set() for lang in _LANG_KEYS}
+    for sid, entry in cache.items():
+        if exclude_id is not None and sid == exclude_id:
+            continue
+        for lang in _LANG_KEYS:
+            block = _entry_lang_block(entry, lang)
+            if not block:
+                continue
+            for dish in block.get("seasonal_dishes") or []:
+                name = normalize_dish_name(dish.get("name", "") if isinstance(dish, dict) else "")
+                if name:
+                    used[lang].add(name)
+    return used
+
+
+def count_new_dishes_per_lang(content: dict, used: dict) -> dict:
+    """Return ``{"en": int, "ja": int}`` — how many dishes in each language
+    block are not present in the corresponding ``used`` set."""
+    from content_generator import normalize_dish_name
+
+    counts = {}
+    for lang in _LANG_KEYS:
+        block = _entry_lang_block(content, lang)
+        if not block:
+            counts[lang] = 0
+            continue
+        new_count = 0
+        for dish in block.get("seasonal_dishes") or []:
+            name = normalize_dish_name(dish.get("name", "") if isinstance(dish, dict) else "")
+            if name and name not in used.get(lang, set()):
+                new_count += 1
+        counts[lang] = new_count
+    return counts
+
+
+def generate_with_dish_variety(season: dict, used: dict, min_new: int = 2, max_attempts: int = 2) -> dict:
+    """Call ``generate_content`` and retry once if fewer than ``min_new`` dishes
+    are new in either language block. On retry, the just-generated dish names
+    are added to the exclusion list so Claude is pushed away from them."""
+    from content_generator import generate_content, normalize_dish_name
+
+    exclude = {lang: set(used.get(lang, set())) for lang in _LANG_KEYS}
+    last_content: dict | None = None
+    for attempt in range(1, max_attempts + 1):
+        content = generate_content(season, exclude_dishes=exclude)
+        counts = count_new_dishes_per_lang(content, used)
+        worst_lang = min(counts, key=lambda k: counts[k])
+        if counts[worst_lang] >= min_new:
+            log.info(
+                "Dish variety OK · new dishes per language: %s",
+                ", ".join(f"{k}={v}" for k, v in counts.items()),
+            )
+            return content
+        log.warning(
+            "Attempt %d returned only %d new dish(es) in '%s' (need %d) — retrying with stronger exclusion list.",
+            attempt, counts[worst_lang], worst_lang, min_new,
+        )
+        for lang in _LANG_KEYS:
+            block = _entry_lang_block(content, lang)
+            if not block:
+                continue
+            for dish in block.get("seasonal_dishes") or []:
+                name = normalize_dish_name(dish.get("name", "") if isinstance(dish, dict) else "")
+                if name:
+                    exclude[lang].add(name)
+        last_content = content
+
+    log.warning(
+        "Could not produce %d new dishes per language after %d attempts — using the last attempt anyway.",
+        min_new, max_attempts,
+    )
+    return last_content  # type: ignore[return-value]
+
+
 # ── main ───────────────────────────────────────────────────────────────────────
 
 def main() -> None:
@@ -149,7 +248,6 @@ def main() -> None:
         )
 
     # ── pipeline ──────────────────────────────────────────────────────────────
-    from content_generator import generate_content
     from email_sender import send_email
     from archive_builder import build_archive, build_website
     from ingredient_generator import run as generate_lookups
@@ -164,7 +262,12 @@ def main() -> None:
         content = cache[cache_key]
     else:
         log.info("Step 1/5 · Generating content with Claude …")
-        content = generate_content(season)
+        used_dishes = collect_used_dishes(cache, exclude_id=cache_key)
+        log.info(
+            "Steering away from %d previously used English dish name(s) and %d Japanese.",
+            len(used_dishes["en"]), len(used_dishes["ja"]),
+        )
+        content = generate_with_dish_variety(season, used_dishes)
         cache[cache_key] = content
         save_cache(cache)
         log.info("Content generated and cached.")
