@@ -8,8 +8,21 @@ LLM call.
 
 import json
 import os
+import re
 
 import anthropic
+
+
+def normalize_dish_name(name: str) -> str:
+    """Normalize a dish name for duplicate detection.
+
+    Strips parenthetical glosses, collapses whitespace, lowercases. Used so
+    "Katsuo no tataki" and "Katsuo no tataki (seared bonito)" compare equal.
+    """
+    if not name:
+        return ""
+    stripped = re.sub(r"[（(][^）)]*[)）]", "", name)
+    return " ".join(stripped.split()).strip().lower()
 
 
 SYSTEM_PROMPT = """You are a poetic writer specializing in Japanese nature, culture, and the traditional \
@@ -32,13 +45,17 @@ names where the kanji is uncommon).
 Always respond with valid JSON only — no markdown, no preamble, no explanation."""
 
 
-def generate_content(season: dict) -> dict:
+def generate_content(season: dict, exclude_dishes: dict | None = None) -> dict:
     """Call the Claude API to generate rich bilingual content for a micro-season.
 
     Args:
         season: A season dict from seasons.json with keys:
                 id, sekki, sekki_jp, ko_number, start_month, start_day,
                 name_jp, name_romaji, name_en, major_season
+        exclude_dishes: Optional dict ``{"en": iterable[str], "ja": iterable[str]}``
+                of dish names already featured in other cached seasons. Claude is
+                instructed to include at least two dishes that are NOT in these
+                lists, so consecutive seasons don't keep surfacing the same dish.
 
     Returns:
         A dict of the shape ``{"en": {...flat fields...}, "ja": {...flat fields...}}``.
@@ -81,6 +98,7 @@ which animals are behaving how, what plants are doing, what the sky and water lo
   "seasonal_dishes": [
     {{"name": "Japanese dish name", "description": "One sentence: what it is and why it belongs to this exact moment"}},
     {{"name": "Japanese dish name", "description": "One sentence: what it is and why it belongs to this exact moment"}}
+    // 2 to 4 entries — see the variety constraint below
   ],
   "cultural_note": "2-3 sentences about a specific Japanese cultural practice, festival, craft \
 tradition, or folk belief that is directly tied to this time of year.",
@@ -102,6 +120,28 @@ used (e.g. 「枇杷（びわ）」).
 - The haiku block in JA may share the same Japanese characters as in EN (the haiku itself is \
 Japanese-language poetry); romaji and english fields should remain identical across blocks. The other \
 fields (summary/opening/nature_notes/cultural_note/closing) must be original Japanese prose."""
+
+    en_excluded = sorted({normalize_dish_name(n): n for n in (exclude_dishes or {}).get("en", []) if n}.values())
+    ja_excluded = sorted({normalize_dish_name(n): n for n in (exclude_dishes or {}).get("ja", []) if n}.values())
+    if en_excluded or ja_excluded:
+        en_list = ", ".join(en_excluded) if en_excluded else "(none)"
+        ja_list = "、".join(ja_excluded) if ja_excluded else "（なし）"
+        user_prompt += f"""
+
+VARIETY CONSTRAINT — important:
+The newsletter has already featured the following dishes in earlier micro-seasons \
+this year, and readers will see them on the same page as the new entry. To keep \
+the year feeling fresh, return between 2 and 4 entries in "seasonal_dishes" for each \
+language block, and ensure that AT LEAST TWO entries per block are dishes whose names \
+do NOT appear in the lists below (compare case-insensitively, ignoring any \
+parenthetical glosses).
+
+Already-featured English dish names: {en_list}
+Already-featured Japanese dish names: {ja_list}
+
+You MAY include up to one or two dishes from the lists above only if they are truly \
+iconic and indispensable for this exact micro-season; otherwise pick fresh seasonally \
+appropriate dishes. Never let an entire dishes block be made up of repeats."""
 
     message = client.messages.create(
         model="claude-opus-4-5",
