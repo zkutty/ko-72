@@ -290,5 +290,106 @@
       "closing": "声が重なり、途切れ、また重なる——その合間に、夏の息づかいが聞こえてくる。"
     },
     "_sent_on": "2026-05-06"
+  },
+  "26": {
+    "en": {
+      "summary": "After spring rains soften the soil, earthworms surface in garden beds and field edges, their quiet labor marking summer's true arrival.",
+      "opening": "The soil breathes differently now. After overnight rain, you notice the dark, turned earth in vegetable patches glistening with moisture, and the faint mineral smell of worms at work rises through the morning air. This is summer not as heat but as hidden industry — life moving through the ground beneath your feet.",
+      "nature_notes": "Earthworms emerge in the cool hours before dawn, leaving their castings in small spirals on damp paths. Sparrows and thrushes wait at the edges of freshly turned beds, heads cocked. The green of rice paddies has deepened to a dense emerald, and dragonflies — still young, pale-bodied — begin their first circuits over the water.",
+      "seasonal_produce": {
+        "fruits": [
+          "loquat",
+          "ume (green plums)",
+          "strawberries",
+          "amanatsu citrus"
+        ],
+        "vegetables": [
+          "new ginger",
+          "green peas",
+          "spring cabbage",
+          "ashitaba"
+        ],
+        "fish": [
+          "horse mackerel",
+          "sweetfish (ayu)",
+          "ishidai (striped beakfish)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "shin-shōga no amazu-zuke",
+          "description": "Young ginger pickled in sweet vinegar, its pale pink blush and sharp freshness cleansing the palate as temperatures climb."
+        },
+        {
+          "name": "aji no tataki",
+          "description": "Horse mackerel lightly pounded with ginger and scallion, celebrating the fish's peak fat content in early summer waters."
+        },
+        {
+          "name": "biwa no compote",
+          "description": "Loquats poached in light syrup with a whisper of white wine, their honeyed flesh turned translucent and jewel-like."
+        },
+        {
+          "name": "ao-mame gohan",
+          "description": "Rice cooked with bright green peas, their sweetness captured whole, a bowl that tastes of fields in full growth."
+        }
+      ],
+      "cultural_note": "Farmers consider earthworm emergence a signal that the soil has warmed enough for planting summer vegetables in earnest. In traditional agriculture, the presence of earthworms indicated healthy, living earth — a gift requiring no fertilizer. Some rural communities still mark this period with offerings at local shrines to the ta-no-kami, the deity of rice paddies, asking for fertile ground.",
+      "haiku": {
+        "japanese": "蚯蚓出て土匂ひ立つ朝の庭",
+        "romaji": "mimizu idete / tsuchi nioi tatsu / asa no niwa",
+        "english": "Earthworms emerge — / the garden at dawn exhales / the scent of turned soil"
+      },
+      "closing": "Somewhere beneath the tomato seedling you transplanted yesterday, a worm is already at work, pulling summer down into the dark."
+    },
+    "ja": {
+      "summary": "春雨に緩んだ土から蚯蚓が地上に姿を現し、その静かな営みが夏の到来を土の中から告げている。",
+      "opening": "雨上がりの朝、畑の土が黒く湿り、歩くたびに足元からかすかに土の匂いが立ちのぼる。蚯蚓が動いた跡だ。まだ肌寒さの残る時間帯、地中で冬を越えた命がようやく地表へと這い出てくる。夏とは、暑さよりも先に、こうした見えない労働から始まるのかもしれない。",
+      "nature_notes": "明け方の畦道には蚯蚓の糞塊が小さな螺旋を描き、それを目当てに雀や鶫が首を傾げて待ち構える。田んぼの緑は日ごとに濃さを増し、羽化したばかりの蜻蛉が淡い体色のまま水面をゆるやかに旋回し始めた。",
+      "seasonal_produce": {
+        "fruits": [
+          "枇杷",
+          "青梅",
+          "苺",
+          "甘夏"
+        ],
+        "vegetables": [
+          "新生姜",
+          "グリーンピース",
+          "春キャベツ",
+          "明日葉"
+        ],
+        "fish": [
+          "鯵",
+          "鮎",
+          "石鯛"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "新生姜の甘酢漬け",
+          "description": "薄紅に染まった新生姜を甘酢に漬け込み、気温が上がり始めるこの頃、箸休めに爽やかな辛味を添える。"
+        },
+        {
+          "name": "鯵のたたき",
+          "description": "脂ののり始めた鯵を叩いて薬味とともに食す、初夏の海を丸ごと味わう一皿。"
+        },
+        {
+          "name": "枇杷のコンポート",
+          "description": "旬を迎えた枇杷を白ワインの香る軽い蜜で煮含め、琥珀色に透き通った果肉を味わう。"
+        },
+        {
+          "name": "青豆ごはん",
+          "description": "莢から出したばかりのグリーンピースを炊き込み、畑の甘さをそのまま閉じ込めた一膳。"
+        }
+      ],
+      "cultural_note": "蚯蚓の出現は、地温が十分に上がり夏野菜の本格的な植え付けが可能になった証とされてきた。蚯蚓のいる土は肥えた土――肥料を施さずとも作物が育つ、農家にとってありがたい土だ。この時期に田の神へ豊穣を祈願する集落も残っており、見えない土の中の営みに感謝を捧げる習わしが今も続く。",
+      "haiku": {
+        "japanese": "蚯蚓出て土匂ひ立つ朝の庭",
+        "romaji": "mimizu idete / tsuchi nioi tatsu / asa no niwa",
+        "english": "Earthworms emerge — / the garden at dawn exhales / the scent of turned soil"
+      },
+      "closing": "昨日植えたばかりの苗の根元、もう蚯蚓が夏を地中へと引き込み始めている。"
+    },
+    "_sent_on": "2026-05-11"
   }
 }
