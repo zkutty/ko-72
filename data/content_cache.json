@@ -391,5 +391,106 @@
       "closing": "昨日植えたばかりの苗の根元、もう蚯蚓が夏を地中へと引き込み始めている。"
     },
     "_sent_on": "2026-05-11"
+  },
+  "27": {
+    "en": {
+      "summary": "Bamboo groves rustle with new life as the season's first tender shoots push through the damp forest floor.",
+      "opening": "In the half-light before dawn, bamboo groves hold a particular stillness — then a soft cracking, almost imperceptible, as another shoot breaks through leaf litter. The air carries the green scent of growth itself, vegetal and clean. This is the brief window when mōsōchiku yields its sweetest harvest, before the shoots toughen and the moment passes.",
+      "nature_notes": "Mōsō bamboo shoots emerge with startling speed, sometimes growing thirty centimeters in a single day. Bush warblers have found their full voice now, their song threading through the bamboo's vertical shadows. The soil stays damp from intermittent rains, and where light penetrates the canopy, ferns unfurl their fiddleheads in slow spirals.",
+      "seasonal_produce": {
+        "fruits": [
+          "ume (green plums)",
+          "loquat",
+          "strawberries",
+          "amanatsu"
+        ],
+        "vegetables": [
+          "bamboo shoots",
+          "fava beans",
+          "new potatoes",
+          "sansai (mountain vegetables)"
+        ],
+        "fish": [
+          "horse mackerel",
+          "grunt",
+          "sweetfish (ayu)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "wakatake-ni",
+          "description": "Bamboo shoots simmered with wakame seaweed in delicate dashi — the meeting of mountain and sea that defines this fleeting harvest."
+        },
+        {
+          "name": "takenoko no tosani",
+          "description": "Shoots braised with bonito flakes until the umami penetrates each layer, a preparation named for Tosa's famed skipjack fishing grounds."
+        },
+        {
+          "name": "takenoko tempura",
+          "description": "Freshly dug shoots, sliced thick and fried until the batter shatters against the sweet, milky flesh inside."
+        },
+        {
+          "name": "sansai soba",
+          "description": "Chilled buckwheat noodles crowned with mountain vegetables — fiddleheads, udo, and kogomi — tasting of the forest floor after rain."
+        }
+      ],
+      "cultural_note": "Bamboo shoot digging is a cherished rural activity during these days, with families returning to ancestral groves at first light. The tradition honors the belief that shoots harvested before sunrise, while still cool from the earth, possess superior sweetness. In Kyoto, the Ōharano bamboo forests draw visitors who come not only to harvest but to walk the groves and feel the particular energy of bamboo in its most vital season.",
+      "closing": "Somewhere in the grove, another shoot has already risen overnight — tomorrow's harvest hiding in plain sight beneath scattered leaves.",
+      "haiku": {
+        "japanese": "朝掘りの笋ひとつ土の香",
+        "romaji": "asabori no / takenoko hitotsu / tsuchi no ka",
+        "english": "morning-dug bamboo — / a single shoot still carrying / the scent of earth"
+      }
+    },
+    "ja": {
+      "summary": "竹林の薄暗がりから、今年最初の筍がしっとりとした土を押し上げる頃。",
+      "opening": "夜明け前の竹藪には、凛とした静けさが満ちている。やがて、落ち葉を割るかすかな音——また一本、地表へと顔を出す気配。空気は青くさく、土くさく、生命そのものの匂いがする。孟宗竹の旬はほんのわずか、この五日ほどが最も甘く柔らかい。",
+      "nature_notes": "孟宗竹の筍は一日に三十センチも伸びることがある。鶯の声はもう迷いなく、竹の縦縞の影を縫うように響く。時折降る雨に土は湿り、木漏れ日の差すところでは蕨がゆっくりと渦を解き始めている。",
+      "seasonal_produce": {
+        "fruits": [
+          "青梅",
+          "枇杷（びわ）",
+          "いちご",
+          "甘夏"
+        ],
+        "vegetables": [
+          "タケノコ",
+          "そら豆",
+          "新じゃが",
+          "山菜"
+        ],
+        "fish": [
+          "鯵（あじ）",
+          "イサキ",
+          "鮎"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "若竹煮",
+          "description": "掘りたての筍と若布を薄味の出汁で炊き合わせる——山と海の出会いをそのまま椀に。"
+        },
+        {
+          "name": "筍の土佐煮",
+          "description": "鰹節をたっぷりまぶして煮含め、旨味を繊維の奥まで染み込ませる土佐伝来の味。"
+        },
+        {
+          "name": "筍の天ぷら",
+          "description": "厚めに切った生筍を揚げれば、衣の軽さと中の乳白色の甘みが際立つ。"
+        },
+        {
+          "name": "山菜蕎麦",
+          "description": "蕨、独活、こごみを冷たい蕎麦に添えて——雨上がりの山の匂いをそのまま啜る。"
+        }
+      ],
+      "cultural_note": "この時季、夜明けとともに竹藪へ向かう「朝掘り」が各地で行われる。日が昇る前に掘った筍はえぐみが少なく、格別に甘いとされてきた。京都・大原野の竹林には、収穫だけでなく、竹が最も生気に満ちるこの季節の空気を浴びに訪れる人も少なくない。",
+      "closing": "藪のどこかで、また一本——明日の収穫が、落ち葉の下でひそかに背を伸ばしている。",
+      "haiku": {
+        "japanese": "朝掘りの笋ひとつ土の香",
+        "romaji": "asabori no / takenoko hitotsu / tsuchi no ka",
+        "english": "morning-dug bamboo — / a single shoot still carrying / the scent of earth"
+      }
+    },
+    "_sent_on": "2026-05-16"
   }
 }
