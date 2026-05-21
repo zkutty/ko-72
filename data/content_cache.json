@@ -492,5 +492,106 @@
       }
     },
     "_sent_on": "2026-05-16"
+  },
+  "28": {
+    "en": {
+      "summary": "Silkworms awaken in their trays and begin devouring fresh mulberry leaves, their rhythmic eating filling traditional farmhouses with a sound like gentle rain.",
+      "opening": "The mulberry groves stand heavy with leaf, each tree a deep green cathedral humming with purpose. In sericulture villages, the soft rustle of thousands of tiny mouths on fresh leaves creates a continuous whisper — the sound of transformation beginning. The air carries the faint vegetal sweetness of chewed mulberry, mixing with the warmth of late May mornings.",
+      "nature_notes": "Silkworms, now in their voracious third and fourth instars, consume their body weight in mulberry leaves each day, growing visibly between feedings. Swallows dip and wheel above flooded paddies where rice seedlings have just been transplanted, their reflections doubling in the still water. The hydrangeas are budding but not yet open, holding their color in secret.",
+      "seasonal_produce": {
+        "fruits": [
+          "Loquat",
+          "Ume (green plums)",
+          "Sakuranbo (early cherries)",
+          "Amanatsu"
+        ],
+        "vegetables": [
+          "Silk pod peas",
+          "New garlic",
+          "Fava beans",
+          "Myōga shoots"
+        ],
+        "fish": [
+          "Isaki (grunt)",
+          "Kisu (Japanese whiting)",
+          "Suzuki (sea bass)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "Biwa no shiroppu-ni",
+          "description": "Loquats poached in light syrup, their coral flesh turning translucent, capturing the fleeting sweetness of early summer."
+        },
+        {
+          "name": "Kinusaya to ebi no itame",
+          "description": "Stir-fried silk pod peas with shrimp, the pods still crisp and almost squeaking, dressed simply with sake and salt."
+        },
+        {
+          "name": "Isaki no shioyaki",
+          "description": "Salt-grilled grunt fish, its skin blistered and crackling, the flesh at its sweetest before the rainy season arrives."
+        },
+        {
+          "name": "Shin-ninniku no醤油漬け",
+          "description": "New garlic cloves pickled in soy sauce, mild and juicy, without the bite of aged bulbs."
+        }
+      ],
+      "cultural_note": "This micro-season marks the height of traditional sericulture's most demanding period. Farming families once slept in shifts to feed silkworms around the clock, maintaining the warmth and humidity the creatures required. The phrase 'お蚕様' (okaikosama) — 'honorable silkworm' — reflects the reverence given to these insects that sustained entire regional economies, from the mountains of Gunma to the valleys of Nagano.",
+      "haiku": {
+        "japanese": "蚕の音や夜も絶えざる桑を食む",
+        "romaji": "kaiko no oto ya / yoru mo taezaru / kuwa wo hamu",
+        "english": "sound of silkworms — / through the night without ceasing / they devour mulberry"
+      },
+      "closing": "In the rearing house, a single silkworm lifts its pale head, searching for the next leaf — patient, ancient, already dreaming of silk."
+    },
+    "ja": {
+      "summary": "蚕が目覚め、桑の葉を食む音が養蚕農家に静かな雨のように響き始める頃。",
+      "opening": "桑畑は深い緑に満ち、一本一本の木が生命の使命を帯びて佇む。養蚕の里では、無数の小さな口が新芽を食む音が途切れることなく続き、変容の始まりを告げている。噛み砕かれた桑の青い香りが、五月下旬の朝の温もりと溶け合う。",
+      "nature_notes": "三齢、四齢を迎えた蚕は、一日に自らの体重ほどの桑葉を平らげ、餌やりのたびに目に見えて大きくなる。田植えを終えた水田の上を燕が低く舞い、水鏡にその姿が映る。紫陽花は蕾を固く結び、まだ色を秘めたまま。",
+      "seasonal_produce": {
+        "fruits": [
+          "枇杷",
+          "青梅",
+          "さくらんぼ（早生）",
+          "甘夏"
+        ],
+        "vegetables": [
+          "絹さや",
+          "新にんにく",
+          "そら豆",
+          "茗荷竹"
+        ],
+        "fish": [
+          "伊佐木（いさき）",
+          "鱚（きす）",
+          "鱸（すずき）"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "枇杷のシロップ煮",
+          "description": "薄い蜜で静かに煮含めた枇杷は、珊瑚色の果肉が透き通り、初夏の儚い甘さを閉じ込める。"
+        },
+        {
+          "name": "絹さやと海老の塩炒め",
+          "description": "きゅっと音がするほど歯触りの良い絹さやと海老を、酒と塩だけで手早く炒めた一皿。"
+        },
+        {
+          "name": "いさきの塩焼き",
+          "description": "梅雨入り前のいさきは脂の乗りが絶妙で、皮をぱりりと焼き上げると身の甘みが際立つ。"
+        },
+        {
+          "name": "新にんにくの醤油漬け",
+          "description": "掘りたての新にんにくを醤油に漬けると、辛味は穏やかで瑞々しく、箸が止まらない。"
+        }
+      ],
+      "cultural_note": "この候は、伝統的な養蚕において最も手のかかる時期にあたる。かつての農家は交代で眠り、昼夜を問わず蚕に桑を与え、温度と湿度を保ち続けた。「お蚕様」という敬称には、群馬の山間から信州の谷あいまで、地域経済を支えたこの小さな虫への深い畏敬が込められている。",
+      "haiku": {
+        "japanese": "蚕の音や夜も絶えざる桑を食む",
+        "romaji": "kaiko no oto ya / yoru mo taezaru / kuwa wo hamu",
+        "english": "sound of silkworms — / through the night without ceasing / they devour mulberry"
+      },
+      "closing": "蚕室の片隅で、一頭の蚕が白い頭をもたげ、次の葉を探している——静かに、太古から変わらず、すでに絹を夢見ながら。"
+    },
+    "_sent_on": "2026-05-21"
   }
 }
