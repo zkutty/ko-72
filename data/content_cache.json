@@ -593,5 +593,106 @@
       "closing": "蚕室の片隅で、一頭の蚕が白い頭をもたげ、次の葉を探している——静かに、太古から変わらず、すでに絹を夢見ながら。"
     },
     "_sent_on": "2026-05-21"
+  },
+  "29": {
+    "en": {
+      "summary": "Safflowers unfurl their thistle-like blooms in brilliant orange and yellow, signaling the deepening of early summer warmth.",
+      "opening": "The fields of Yamagata flush with color as safflower heads open under a sun that now climbs high and lingers long. The air carries a green sweetness — rice paddies filled, barley ripening, the earth drinking deeply. Mornings arrive with birdsong layered thick, and by afternoon, the light has a golden weight that presses gently on the skin.",
+      "nature_notes": "Safflowers reach their peak bloom, their tubular florets shifting from yellow to deep vermillion as they mature. Swallows are now feeding second broods, their darting silhouettes constant against pale evening skies. In the paddies, young rice plants have taken firm root, their green intensifying daily as frogs chorus through the humid nights.",
+      "seasonal_produce": {
+        "fruits": [
+          "ume (green plums)",
+          "biwa (loquat)",
+          "sakuranbo (early cherries)",
+          "suika (first watermelons)"
+        ],
+        "vegetables": [
+          "rakkyo (Japanese scallions)",
+          "shiso (perilla leaves)",
+          "myōga (ginger buds)",
+          "nasu (early eggplant)"
+        ],
+        "fish": [
+          "suzuki (sea bass)",
+          "kisu (sillago)",
+          "ayu (sweetfish)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "rakkyo no amazuzuke",
+          "description": "Crisp pickled Japanese scallions, their sharp sweetness a bright counterpoint to rich summer meals."
+        },
+        {
+          "name": "suzuki no usuzukuri",
+          "description": "Paper-thin slices of sea bass served chilled, showcasing the fish's clean, delicate flavor at its seasonal peak."
+        },
+        {
+          "name": "ayu no shioyaki",
+          "description": "Salt-grilled sweetfish, skewered whole, embodying the clear mountain rivers where they now run."
+        },
+        {
+          "name": "shiso to myōga no hiyayakko",
+          "description": "Chilled tofu crowned with fragrant perilla and ginger buds, a dish that cools the body as humidity rises."
+        }
+      ],
+      "cultural_note": "Safflower cultivation reaches back over a thousand years in Yamagata Prefecture, where the blooms were harvested to make beni — the precious red pigment for dyeing silk and tinting lips. Picking begins at dawn when dew softens the thorny bracts, and the harvested petals are fermented, pounded, and dried into cakes. This tradition of beni-making is now rare, kept alive by a handful of artisans who still produce the only organic red colorant permitted in traditional cosmetics.",
+      "haiku": {
+        "japanese": "紅花や朝露重き摘み手かな",
+        "romaji": "benibana ya / asatsuyu omoki / tsumite kana",
+        "english": "safflowers — / the picker's hands heavy / with morning dew"
+      },
+      "closing": "In the warm stillness of late May, the safflower's crimson deepens like a slow blush, holding summer's first true heat in its petals."
+    },
+    "ja": {
+      "summary": "紅花が鮮やかな橙と黄に咲き開き、初夏の深まりを告げる五日間。",
+      "opening": "山形の野に紅花が色づき始める頃、日はいよいよ高く、長く空に留まる。水を湛えた田んぼからは青い匂いが立ち、大麦は穂を垂れ、大地は潤いを深く吸い込んでいる。朝は幾重にも重なる鳥の声で明け、午後になれば光は黄金の重みを帯びて肌に触れる。",
+      "nature_notes": "紅花は盛りを迎え、筒状の花弁が黄から深い紅へと移ろう。燕は二番子を育て、薄暮の空をせわしなく飛び交う。田では早苗がしっかりと根を張り、日ごとに緑を濃くしていく。湿りを帯びた夜には蛙の合唱が絶えない。",
+      "seasonal_produce": {
+        "fruits": [
+          "青梅",
+          "枇杷（びわ）",
+          "さくらんぼ",
+          "西瓜（走り）"
+        ],
+        "vegetables": [
+          "らっきょう",
+          "紫蘇",
+          "茗荷",
+          "茄子（走り）"
+        ],
+        "fish": [
+          "鱸（すずき）",
+          "鱚（きす）",
+          "鮎"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "らっきょうの甘酢漬け",
+          "description": "歯切れのよい辛みと甘酸っぱさが、夏の濃い味に清涼を添える。"
+        },
+        {
+          "name": "鱸の薄造り",
+          "description": "旬を迎えた鱸を薄く引き、淡白ながら滋味深い味わいを冷たいまま楽しむ。"
+        },
+        {
+          "name": "鮎の塩焼き",
+          "description": "清流を遡上する若鮎を丸ごと串に打ち、塩のみで焼き上げる初夏の風物詩。"
+        },
+        {
+          "name": "紫蘇と茗荷の冷奴",
+          "description": "香り高い紫蘇と茗荷を冷たい豆腐にのせ、湿気を増す体を内から涼ませる一品。"
+        }
+      ],
+      "cultural_note": "山形では千年以上にわたり紅花が栽培されてきた。花弁から取れる「紅」は絹を染め、口紅の原料となる貴重な色素である。摘み取りは棘が柔らかくなる朝露の時刻に行われ、集めた花弁は発酵・搗き・乾燥を経て紅餅となる。今ではごく少数の職人のみがこの技を継ぎ、伝統的な化粧に使える唯一の天然赤色素を守り続けている。",
+      "haiku": {
+        "japanese": "紅花や朝露重き摘み手かな",
+        "romaji": "benibana ya / asatsuyu omoki / tsumite kana",
+        "english": "safflowers — / the picker's hands heavy / with morning dew"
+      },
+      "closing": "五月の終わり、紅花の色はゆっくりと深みを増し、夏の最初のまことの熱を花弁のうちに宿している。"
+    },
+    "_sent_on": "2026-05-26"
   }
 }
