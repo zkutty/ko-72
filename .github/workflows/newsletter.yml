@@ -7,6 +7,10 @@ on:
     branches: [main]
   workflow_dispatch:      # manual trigger — rebuilds static files only, no email
 
+concurrency:
+  group: ko-newsletter
+  cancel-in-progress: false
+
 jobs:
   send:
     runs-on: ubuntu-latest
@@ -46,4 +50,5 @@ jobs:
           test -f sitemap.xml && git add sitemap.xml || true
           test -f data/content_cache.json && git add data/content_cache.json || true
           git diff --staged --quiet || git commit -m "Build $(date +%Y-%m-%d): static rebuild"
+          git pull --rebase origin main
           git push
