@@ -50,5 +50,5 @@ jobs:
           test -f sitemap.xml && git add sitemap.xml || true
           test -f data/content_cache.json && git add data/content_cache.json || true
           git diff --staged --quiet || git commit -m "Build $(date +%Y-%m-%d): static rebuild"
-          git pull --rebase origin main
+          git pull --rebase --autostash origin main
           git push
