@@ -694,5 +694,105 @@
       "closing": "五月の終わり、紅花の色はゆっくりと深みを増し、夏の最初のまことの熱を花弁のうちに宿している。"
     },
     "_sent_on": "2026-05-26"
+  },
+  "30": {
+    "en": {
+      "summary": "The wheat fields turn golden under early summer sun, and the first harvest begins while the air grows thick with approaching rains.",
+      "opening": "Walk past any field in the lowlands and the wheat stands heavy-headed, bowing under its own ripeness. The morning light has shifted to something thicker, more golden — not yet the haze of full summer, but the luminous pause before the rainy season descends. There is a dry rustle when wind moves through the stalks, a sound that belongs only to these few days.",
+      "nature_notes": "Swallows skim low over the paddies, their flight paths tracing the humidity that builds each afternoon. The first hydrangeas begin to show color at their edges — still green at center, but flushing blue or pink where the petals thin. Frogs have found full voice now, and their chorus rises from every ditch and flooded field as dusk settles.",
+      "seasonal_produce": {
+        "fruits": [
+          "Biwa (loquat)",
+          "Ume (green plum)",
+          "Sakuranbo (early cherries)",
+          "Mango (Okinawan)"
+        ],
+        "vegetables": [
+          "Shiso leaves",
+          "Myōga (ginger buds)",
+          "Rakkyo (scallion bulbs)",
+          "New potatoes"
+        ],
+        "fish": [
+          "Aji (horse mackerel)",
+          "Kisu (whiting)",
+          "Iwashi (sardine)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "Mugi-toro gohan",
+          "description": "Grated yamaimo poured over barley rice — a cooling, nourishing dish that honors the wheat harvest and fortifies against summer's drain."
+        },
+        {
+          "name": "Kisu no tempura",
+          "description": "Delicate whiting fried in the lightest batter, its sweet flesh at its finest before the rains make the fish scarce."
+        },
+        {
+          "name": "Iwashi no umeni",
+          "description": "Sardines simmered with green ume plums, the fruit's acidity cutting the fish's richness while both are at their seasonal peak."
+        },
+        {
+          "name": "Shiso no mi no tsukudani",
+          "description": "Young shiso seeds cooked down in soy and mirin, a preserved taste of early summer to accompany plain rice."
+        }
+      ],
+      "cultural_note": "This micro-season marks mugi-aki — the 'autumn of wheat,' a poetic inversion naming harvest time after the season of reaping rather than growth. Farmers work quickly now, racing to bring in the grain before tsuyu rains arrive. In rural Shikoku and Kyushu, community threshing days still bring neighbors together, and shrines receive the first sheaves as offerings of gratitude.",
+      "haiku": {
+        "japanese": "麦秋や農婦の背なに陽の重し",
+        "romaji": "mugiaki ya / nōfu no sena ni / hi no omoshi",
+        "english": "wheat harvest — / on the farm woman's back / the weight of sun"
+      },
+      "closing": "The cut stubble releases a smell like warm bread, and somewhere beyond the fields, the first thunder of the season gathers its voice."
+    },
+    "ja": {
+      "summary": "麦畑が黄金色に染まり、梅雨入り前の陽射しの中で刈り入れが始まる。",
+      "opening": "畦道を歩けば、麦の穂が重たげに頭を垂れている。朝の光はどこか濃密で、まだ梅雨の靄ではないけれど、夏へと傾く透明な金色をしている。風が穂を揺らすと乾いた音がする——この数日だけに許された音だ。",
+      "nature_notes": "燕が水田の上を低く滑空し、午後になると湿気を含んだ空気が肌にまとわりつく。紫陽花は花びらの端からうっすらと色づき始め、中心はまだ緑を残している。蛙の声は日ごとに太くなり、夕暮れになると用水路や田んぼから一斉に立ちのぼる。",
+      "seasonal_produce": {
+        "fruits": [
+          "枇杷（びわ）",
+          "青梅",
+          "さくらんぼ",
+          "マンゴー（沖縄産）"
+        ],
+        "vegetables": [
+          "大葉",
+          "茗荷",
+          "らっきょう",
+          "新じゃが"
+        ],
+        "fish": [
+          "鯵",
+          "鱚（きす）",
+          "鰯"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "麦とろご飯",
+          "description": "麦飯にとろろをかけた素朴な一品、麦秋を祝いながら夏の疲れに備える滋養食。"
+        },
+        {
+          "name": "鱚の天ぷら",
+          "description": "梅雨前の鱚は身が締まり甘みが増す、衣を薄くまとわせて揚げたてを塩で。"
+        },
+        {
+          "name": "鰯の梅煮",
+          "description": "青梅と炊き合わせた鰯、梅の酸味が脂を引き締め、この時季ならではの取り合わせ。"
+        },
+        {
+          "name": "紫蘇の実の佃煮",
+          "description": "若い紫蘇の実を醤油とみりんで炊き上げた常備菜、初夏の香りを閉じ込めてご飯の友に。"
+        }
+      ],
+      "cultural_note": "「麦秋」という言葉は、麦にとっての実りの季節を秋に見立てた古い表現である。梅雨に入る前に刈り取りを終えなければならず、農家は空模様と競うように作業を進める。四国や九州の農村では今も共同の脱穀作業が残り、氏神様には初穂が供えられる。",
+      "haiku": {
+        "japanese": "麦秋や農婦の背なに陽の重し",
+        "romaji": "mugiaki ya / nōfu no sena ni / hi no omoshi",
+        "english": "wheat harvest — / on the farm woman's back / the weight of sun"
+      },
+      "closing": "刈り跡の藁からは焼きたてのパンに似た匂いが立ち、遠く、今年最初の雷がゆっくりと声を整えている。"
+    }
   }
 }
