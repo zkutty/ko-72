@@ -794,5 +794,106 @@
       },
       "closing": "刈り跡の藁からは焼きたてのパンに似た匂いが立ち、遠く、今年最初の雷がゆっくりと声を整えている。"
     }
+  },
+  "31": {
+    "en": {
+      "summary": "Tiny praying mantises emerge from papery egg cases, their pale bodies unfurling into the humid air of early June.",
+      "opening": "The air thickens with moisture now, carrying the green scent of rice paddies filling with water. In overgrown garden corners and along sun-warmed fences, pale specks of movement catch the eye — hundreds of miniature mantises hatching from foam-like oothecae, each no larger than a grain of rice. The rainy season approaches, and the world hums with small emergences.",
+      "nature_notes": "Praying mantis egg cases, attached to branches and fence posts since autumn, now split open as temperatures and humidity rise. The nymphs emerge in synchronized waves, dispersing quickly to avoid becoming each other's first meal. Hydrangeas begin to show color at their edges, fireflies gather near slow streams at dusk, and the calls of tree frogs pulse through the evening fog.",
+      "seasonal_produce": {
+        "fruits": [
+          "ume (green plums)",
+          "sakuranbo (cherries)",
+          "suika (early watermelon)",
+          "momo (early peaches)"
+        ],
+        "vegetables": [
+          "myōga (ginger buds)",
+          "shiso (perilla)",
+          "kyūri (cucumber)",
+          "nasu (eggplant)"
+        ],
+        "fish": [
+          "ayu (sweetfish)",
+          "anago (conger eel)",
+          "hamo (pike conger)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "ume-shigoto (plum preparations)",
+          "description": "Green plums arrive for the annual ritual of making umeshu, umeboshi, and ume syrup — the defining kitchen work of early June."
+        },
+        {
+          "name": "anago no shiroyaki",
+          "description": "Conger eel grilled without sauce, its delicate sweetness highlighted with just a touch of salt and sudachi — lighter than unagi for the warming days."
+        },
+        {
+          "name": "myōga no amazuzuke",
+          "description": "Tender early-season ginger buds pickled in sweet vinegar, their pink-tinged sharpness cutting through the humidity."
+        },
+        {
+          "name": "hiyashi-jiru",
+          "description": "A chilled miso soup from Miyazaki, thinned and poured over cold rice with cucumber and shiso — perfect as appetites wane in the damp heat."
+        }
+      ],
+      "cultural_note": "Early June marks the beginning of ume-shigoto, the traditional 'plum work' that occupies Japanese kitchens. Green ume arrive at markets for a brief window, and households across the country wash, dry, and prepare them for umeboshi pickles, umeshu liqueur, or ume syrup. This annual ritual connects generations — grandmothers teaching grandchildren the precise moment when the plums are ready, the careful removal of stems, the patient waiting through months of fermentation.",
+      "haiku": {
+        "japanese": "螳螂の子　露の重さを　知り初むる",
+        "romaji": "kamakiri no ko / tsuyu no omosa wo / shiri somuru",
+        "english": "mantis hatchlings — / for the first time learning / the weight of dew"
+      },
+      "closing": "The smallest hunters take their positions on leaf edges, waiting with ancient patience as the plum rains draw near."
+    },
+    "ja": {
+      "summary": "蟷螂の卵鞘から淡い体の幼虫が次々と孵り、梅雨を前にした湿った空気の中へ散ってゆく。",
+      "opening": "水を張った田んぼの匂いが風に乗る頃、庭の片隅や垣根に残された卵鞘が割れ始める。米粒ほどの小さな蟷螂が、泡のような殻から糸を引くように現れては、一斉に四方へ散ってゆく。空は日ごとに重くなり、梅雨入りの気配が近づいている。",
+      "nature_notes": "秋に産みつけられた蟷螂の卵が、気温と湿度の上昇とともに一斉に孵化する。幼虫たちは共食いを避けるように素早く散り、それぞれの狩場を求めて草むらへ消える。紫陽花の縁がうっすらと色づき始め、夕暮れの小川のほとりには蛍が舞い、夜には雨蛙の声が霧の中で重なり合う。",
+      "seasonal_produce": {
+        "fruits": [
+          "青梅",
+          "さくらんぼ",
+          "西瓜（すいか）",
+          "桃（早生）"
+        ],
+        "vegetables": [
+          "茗荷",
+          "紫蘇",
+          "胡瓜",
+          "茄子"
+        ],
+        "fish": [
+          "鮎",
+          "穴子",
+          "鱧"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "梅仕事",
+          "description": "青梅が出回るこの時季、梅酒・梅干し・梅シロップを仕込む——六月の台所を象徴する年中行事である。"
+        },
+        {
+          "name": "穴子の白焼き",
+          "description": "たれを使わず塩と酢橘だけで仕上げる白焼きは、蒸し暑さの増す頃にふさわしい淡白な旨味。"
+        },
+        {
+          "name": "茗荷の甘酢漬け",
+          "description": "出始めの茗荷をさっと甘酢に漬けると、薄桃色に染まった爽やかな香りが湿気を払ってくれる。"
+        },
+        {
+          "name": "冷や汁",
+          "description": "味噌を薄くのばして冷やし、胡瓜と紫蘇を添えて冷や飯にかける——食欲の落ちる梅雨時の知恵。"
+        }
+      ],
+      "cultural_note": "六月上旬は「梅仕事」の幕開け。八百屋に青梅が並ぶと、各家庭では一年分の梅干しや梅酒を仕込む準備が始まる。梅のへたを丁寧に取り、塩や氷砂糖と瓶に重ねてゆく手仕事は、祖母から孫へと受け継がれる初夏の風物詩。梅雨の湿気の中、台所には青梅の青い香りが満ちる。",
+      "haiku": {
+        "japanese": "螳螂の子　露の重さを　知り初むる",
+        "romaji": "kamakiri no ko / tsuyu no omosa wo / shiri somuru",
+        "english": "mantis hatchlings — / for the first time learning / the weight of dew"
+      },
+      "closing": "草の先に身を伏せた小さな狩人たちは、梅雨の雫が落ちてくるのを静かに待っている。"
+    },
+    "_sent_on": "2026-06-06"
   }
 }
