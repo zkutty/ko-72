@@ -121,7 +121,7 @@ def _get_subscribers() -> list[tuple[str, str]]:
                 print(f"Warning: could not fetch Buttondown subscribers: {e}")
                 break
             for sub in data.get("results", []):
-                email = sub.get("email_address", "").strip()
+                email = sub.get("email_address", "").strip().lower()
                 if email:
                     subscribers[email] = _lang_from_tags(sub.get("tags"))
             url = data.get("next") or None
@@ -130,7 +130,7 @@ def _get_subscribers() -> list[tuple[str, str]]:
     if fallback_lang not in LANGS:
         fallback_lang = DEFAULT_LANG
     for addr in os.environ.get("SUBSCRIBER_EMAILS", "").split(","):
-        addr = addr.strip()
+        addr = addr.strip().lower()
         if addr and addr not in subscribers:
             subscribers[addr] = fallback_lang
 
