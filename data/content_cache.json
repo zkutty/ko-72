@@ -895,5 +895,106 @@
       "closing": "草の先に身を伏せた小さな狩人たちは、梅雨の雫が落ちてくるのを静かに待っている。"
     },
     "_sent_on": "2026-06-06"
+  },
+  "32": {
+    "en": {
+      "summary": "Damp grass glows with fireflies at dusk, as summer humidity settles into the lowlands.",
+      "opening": "The rice paddies have filled with water, and in the blue hour between day and night, the first fireflies rise from the wet grass like scattered embers. The air is thick now, carrying the green scent of standing water and decaying vegetation — that particular sweetness of early summer decomposition. Somewhere between dusk and true dark, the boundary between earth and sky softens, and light appears where no light should be.",
+      "nature_notes": "Genji fireflies begin their mating flights along streams and irrigation channels, their slow yellow-green pulses synchronized in mysterious rhythms. Frogs have reached full chorus in the paddies, their calls layered and overlapping through the night. The hydrangea have opened fully, their colors deepening with the acidity of the rain-soaked soil, while the first summer grasses grow rank and tall in untended corners.",
+      "seasonal_produce": {
+        "fruits": [
+          "ume (green plums)",
+          "biwa (loquat)",
+          "sakuranbo (cherries)",
+          "suika (early watermelon)"
+        ],
+        "vegetables": [
+          "myōga (ginger buds)",
+          "nasu (eggplant)",
+          "tomorokoshi (young corn)",
+          "shiso"
+        ],
+        "fish": [
+          "ayu (sweetfish)",
+          "anago (conger eel)",
+          "hamo (pike conger)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "hamo no otoshi",
+          "description": "Pike conger sliced paper-thin and blanched, its flesh unfurling like white flowers — the quintessential Kyoto dish as summer humidity arrives."
+        },
+        {
+          "name": "ayu no urusuka",
+          "description": "Live sweetfish served in ice water with vinegar and miso, the fish still swimming — a fleeting delicacy of early summer river culture."
+        },
+        {
+          "name": "nasu dengaku",
+          "description": "Grilled eggplant glazed with sweet miso, the first tender nasu of the season yielding completely under the broiler's heat."
+        },
+        {
+          "name": "ume no kanroni",
+          "description": "Whole green plums simmered slowly in sugar syrup until translucent, capturing the season's brief window for preserving."
+        }
+      ],
+      "cultural_note": "This is the heart of hotaru-gari — firefly viewing — when families gather at streams and temple gardens to watch the ephemeral display. The ancient belief that fireflies are born from rotting grass speaks to a worldview where death and light, decay and beauty, are not opposites but continuous transformations. At Shimogamo Shrine in Kyoto, the annual Hotaru-nō performance illuminates this threshold moment between seen and unseen worlds.",
+      "haiku": {
+        "japanese": "草むらに灯のともりたる蛍かな",
+        "romaji": "kusamura ni / hi no tomotaritaru / hotaru kana",
+        "english": "in the tall grasses / a lamp has been lit — / firefly"
+      },
+      "closing": "The children stay out past bedtime, cupping brief light in their hands, learning that some things exist only in the moment of letting go."
+    },
+    "ja": {
+      "summary": "田んぼに水が張られ、夕暮れの湿った草むらから蛍が舞い上がる頃。",
+      "opening": "水を湛えた田の面に空の色が沈む頃、朽ちかけた草の根元からほのかな光が浮かび上がる。昼の熱がまだ地面に残り、水辺の空気には草いきれと泥の匂いが混じる。蛍火は暗闘の中を漂い、命あるものとないものの境を曖昧にしてゆく。",
+      "nature_notes": "源氏蛍が小川や用水路沿いで求愛の飛翔を始め、その明滅は不思議な同期を見せる。田んぼでは蛙の合唱が夜通し重なり合い、紫陽花は雨を含んだ土壌の酸度に応じて色を深めている。道端の草は丈を伸ばし、刈り残された一角には夏草の勢いが満ちてきた。",
+      "seasonal_produce": {
+        "fruits": [
+          "青梅",
+          "枇杷（びわ）",
+          "さくらんぼ",
+          "西瓜（初物）"
+        ],
+        "vegetables": [
+          "茗荷",
+          "茄子",
+          "とうもろこし",
+          "紫蘇"
+        ],
+        "fish": [
+          "鮎",
+          "穴子",
+          "鱧（はも）"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "鱧の落とし",
+          "description": "骨切りした鱧を湯引きにし、氷水で締めて花のように開かせる——蒸し暑さが増す京の夏を告げる一品。"
+        },
+        {
+          "name": "鮎のうるか",
+          "description": "鮎の内臓を塩辛にしたもので、苦みと旨みが重なる川魚文化の粋。"
+        },
+        {
+          "name": "茄子田楽",
+          "description": "初物の茄子を焼いて甘味噌を塗る、柔らかな果肉に味噌の香ばしさが染み入る。"
+        },
+        {
+          "name": "青梅の甘露煮",
+          "description": "青いうちの梅を蜜で静かに炊き、透き通るまで仕上げる——この時季だけの保存仕事。"
+        }
+      ],
+      "cultural_note": "蛍狩りの盛りである。小川や寺の庭に人々が集まり、闇に浮かぶ光を追う。「腐草蛍となる」という古い暦の言葉には、朽ちるものから光が生まれるという、死と再生が連続する世界観が息づいている。下鴨神社では蛍火の茶会が催され、幽玄の境に身を置くひとときとなる。",
+      "haiku": {
+        "japanese": "草むらに灯のともりたる蛍かな",
+        "romaji": "kusamura ni / hi no tomotaritaru / hotaru kana",
+        "english": "in the tall grasses / a lamp has been lit — / firefly"
+      },
+      "closing": "子どもたちは掌に蛍を包み、光は逃がすものだと、言葉より先に知ってゆく。"
+    },
+    "_sent_on": "2026-06-11"
   }
 }
