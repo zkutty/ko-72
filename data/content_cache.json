@@ -996,5 +996,106 @@
       "closing": "子どもたちは掌に蛍を包み、光は逃がすものだと、言葉より先に知ってゆく。"
     },
     "_sent_on": "2026-06-11"
+  },
+  "33": {
+    "en": {
+      "summary": "Green plums hanging heavy on branches finally soften and blush toward gold, filling the humid air with their tart fragrance.",
+      "opening": "The rains have deepened. In gardens and orchards across Japan, plums that were hard and jade-green just days ago now yield to the touch, their skins warming to amber and pale gold. The air itself seems thick with their astringent perfume, mixing with wet earth and the distant drone of cicadas testing their voices for the first time.",
+      "nature_notes": "Tree frogs chorus through the night, their calls amplified by the moisture-laden air. Hydrangeas have reached their peak saturation — blues darkening to purple, pinks bleeding into coral. In rice paddies, the young shoots have taken firm root, and dragonflies begin their reconnaissance flights low over the flooded fields.",
+      "seasonal_produce": {
+        "fruits": [
+          "yellow plums (完熟梅)",
+          "loquat",
+          "cherry",
+          "early peach"
+        ],
+        "vegetables": [
+          "myōga ginger shoots",
+          "green shiso",
+          "summer daikon",
+          "edamame"
+        ],
+        "fish": [
+          "conger eel (anago)",
+          "horse mackerel (aji)",
+          "sweetfish (ayu)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "umeboshi-zuke (梅干し漬け)",
+          "description": "The ritual of salting ripe yellow plums begins now, transforming summer's fleeting fruit into the preserved soul of Japanese pantries."
+        },
+        {
+          "name": "ume-shu shikomi",
+          "description": "Crystal rock sugar and white liquor receive whole green-gold plums, beginning their slow alchemical marriage into plum wine."
+        },
+        {
+          "name": "anago no yanagawa",
+          "description": "Tender conger eel simmered with burdock in sweet soy, then bound with beaten egg — sustenance for the humid weight of early summer."
+        },
+        {
+          "name": "ayu no nanbanzuke",
+          "description": "Fried sweetfish marinated in rice vinegar with chili — the sharp acidity cuts through the season's oppressive humidity."
+        }
+      ],
+      "cultural_note": "This micro-season marks the heart of ume-shigoto, the annual 'plum work' that defines early summer in Japanese households. Families gather around kitchen tables to sort, wash, and salt plums for umeboshi, or layer them with sugar for syrup. The practice connects generations — grandmothers teaching the precise salt ratios, children learning patience as they wait months for completion.",
+      "haiku": {
+        "japanese": "梅黄ばむ母の手つきを覚えをり",
+        "romaji": "ume kibamu / haha no tetsuki wo / oboe ori",
+        "english": "plums turning gold — / I still remember the way / mother's hands moved"
+      },
+      "closing": "In a ceramic crock, the first plums settle beneath their weight of salt, beginning the slow dissolution that will taste of this exact rain six months hence."
+    },
+    "ja": {
+      "summary": "枝にたわわに実った青梅がようやく柔らかみを帯び、黄金色へと熟していく頃、梅雨空にその芳香が漂う。",
+      "opening": "雨脚が深まる日々。ほんの数日前まで硬く青々としていた梅の実が、今や指で押せばわずかに沈むほどに熟している。皮は淡い琥珀色から山吹色へと移ろい、その青酸っぱい香りが湿った土の匂いと混じり合う。どこかで蝉が、初めての声を試すように鳴いている。",
+      "nature_notes": "雨蛙の合唱が夜通し響き、水気を含んだ空気にその声はいっそう大きく聞こえる。紫陽花は今が盛りで、青は紫へ、桃色は珊瑚色へと深みを増している。水田では早苗がしっかりと根を張り、蜻蛉が水面すれすれを偵察するように飛び始めた。",
+      "seasonal_produce": {
+        "fruits": [
+          "完熟梅",
+          "枇杷",
+          "さくらんぼ",
+          "早生桃"
+        ],
+        "vegetables": [
+          "茗荷",
+          "青紫蘇",
+          "夏大根",
+          "枝豆"
+        ],
+        "fish": [
+          "穴子",
+          "鯵",
+          "鮎"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "梅干し漬け",
+          "description": "黄熟した梅を塩で漬け込む作業がいよいよ始まる——夏のひとときを、一年の糧へと変える仕事である。"
+        },
+        {
+          "name": "梅酒仕込み",
+          "description": "氷砂糖と焼酎の中に青黄色の梅を沈め、数ヶ月後の琥珀色を夢見る。"
+        },
+        {
+          "name": "穴子の柳川",
+          "description": "穴子と牛蒡を甘辛く煮て卵でとじる——蒸し暑さに疲れた体を労る滋味深い一品。"
+        },
+        {
+          "name": "鮎の南蛮漬け",
+          "description": "揚げた鮎を唐辛子入りの酢に漬け込み、梅雨のだるさを吹き飛ばす酸味を添える。"
+        }
+      ],
+      "cultural_note": "この候は「梅仕事」の最盛期にあたる。台所に集まった家族が梅を選別し、洗い、塩をまぶす。祖母から孫へと伝わる塩加減の勘、完成まで数ヶ月を待つ子供の辛抱——梅仕事は、日本の夏を次の季節へとつなぐ家庭の営みそのものである。",
+      "haiku": {
+        "japanese": "梅黄ばむ母の手つきを覚えをり",
+        "romaji": "ume kibamu / haha no tetsuki wo / oboe ori",
+        "english": "plums turning gold — / I still remember the way / mother's hands moved"
+      },
+      "closing": "甕の底に沈んだ梅が、塩の重みを受け入れ始めている——半年後、この雨の記憶を宿した味になるために。"
+    },
+    "_sent_on": "2026-06-16"
   }
 }
