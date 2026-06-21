@@ -1097,5 +1097,106 @@
       "closing": "甕の底に沈んだ梅が、塩の重みを受け入れ始めている——半年後、この雨の記憶を宿した味になるために。"
     },
     "_sent_on": "2026-06-16"
+  },
+  "34": {
+    "en": {
+      "summary": "The self-heal plant, having bloomed purple through early summer, now withers brown as the year reaches its longest days.",
+      "opening": "The summer solstice has arrived, yet the sky hangs low with moisture, neither fully bright nor dark. In the fields, the purple spires of self-heal — utsubo-gusa — have completed their flowering and stand dry and brittle, rust-colored against the wet green. The air is thick, warm, pressing close to the skin like damp cloth.",
+      "nature_notes": "Tree frogs call incessantly from the evening gardens, their voices carrying through humid air. Hydrangeas deepen from pale blue to indigo as soil acidity shifts with the rains. Fireflies still flicker in isolated pockets near streams, though their season wanes. The nights, despite being the shortest, feel long — filled with the whir of insects and the drip of water from eaves.",
+      "seasonal_produce": {
+        "fruits": [
+          "Biwa (loquat)",
+          "Ume (green plum)",
+          "Suika (watermelon)",
+          "Prune plum"
+        ],
+        "vegetables": [
+          "Myōga (ginger bud)",
+          "Shiso (perilla)",
+          "Edamame",
+          "Aoyuzu (green yuzu)"
+        ],
+        "fish": [
+          "Anago (conger eel)",
+          "Isaki (grunt)",
+          "Aji (horse mackerel)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "Utsubo-gusa cha",
+          "description": "A folk tea brewed from dried self-heal flowers, traditionally drunk around the solstice to cool summer heat and soothe the throat."
+        },
+        {
+          "name": "Myōga to kyūri no sunomono",
+          "description": "Thinly sliced ginger buds and cucumber in rice vinegar, a dish of sharp clarity that cuts through the humidity."
+        },
+        {
+          "name": "Hamo no kabayaki",
+          "description": "Pike conger glazed with sweet soy and grilled, the rich eel of Kyoto's rainy season prepared in the style of unagi."
+        },
+        {
+          "name": "Edamame no nibitashi",
+          "description": "Young soybeans simmered in light dashi and cooled, their sweetness concentrated by gentle cooking."
+        }
+      ],
+      "cultural_note": "The solstice marks a turning point that passes almost unnoticed in Japan, overshadowed by the rains. Yet in Shinto tradition, this liminal moment — when light begins its slow retreat — carries quiet significance. Some shrines conduct nagoshi no harae purification rites, and the withering of natsukarekusa (self-heal) was observed by farmers as a sign that the year's yang energy had reached its peak.",
+      "closing": "The longest light falls on withered flowers, and something in the air shifts imperceptibly toward descent.",
+      "haiku": {
+        "japanese": "夏枯草や日の極まりて雨の音",
+        "romaji": "natsukarekusa ya / hi no kiwamarite / ame no oto",
+        "english": "self-heal withers — / the sun at its zenith, / only the sound of rain"
+      }
+    },
+    "ja": {
+      "summary": "夏至を迎え、初夏に紫の花穂を揺らした靫草が枯れ色に変わる五日間。",
+      "opening": "一年で最も昼の長い日が訪れたというのに、空は梅雨雲に覆われ、陽の気配は遠い。野に目をやれば、靫草の花穂はすでに褐色に枯れ、湿った緑の中で静かに朽ちてゆく。肌にまとわりつく空気の重さに、夏の盛りの予感がある。",
+      "nature_notes": "雨蛙の声が夕暮れの庭に響きわたり、紫陽花は淡い青から深い藍へと色を移す。小川のほとりでは蛍がまだ淡い光を放つが、その数は日ごとに減ってゆく。短いはずの夜は、虫の羽音と軒を打つ雨音に満ち、かえって長く感じられる。",
+      "seasonal_produce": {
+        "fruits": [
+          "枇杷",
+          "青梅",
+          "西瓜",
+          "プラム"
+        ],
+        "vegetables": [
+          "茗荷",
+          "紫蘇",
+          "枝豆",
+          "青柚子"
+        ],
+        "fish": [
+          "穴子",
+          "伊佐木",
+          "鯵"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "靫草茶（うつぼぐさちゃ）",
+          "description": "乾燥させた靫草を煎じた民間茶で、夏至の頃に暑気払いとして飲まれてきた。"
+        },
+        {
+          "name": "茗荷と胡瓜の酢の物",
+          "description": "薄切りの茗荷と胡瓜を酢で和えた一品、蒸し暑さの中に清涼を呼ぶ。"
+        },
+        {
+          "name": "鱧の蒲焼",
+          "description": "京の梅雨を代表する鱧を甘辛いたれで焼き上げ、濃厚な滋味を味わう。"
+        },
+        {
+          "name": "枝豆の煮浸し",
+          "description": "若い枝豆を薄味の出汁で煮含め、冷やしていただく初夏の肴。"
+        }
+      ],
+      "cultural_note": "夏至は梅雨の最中にあたり、日本では西洋ほど盛大に祝われることはない。しかし神道では陽の気が極まり陰に転ずる節目として静かに意識され、一部の神社では夏越の祓の準備が始まる。靫草の枯れる様子は、古くから農事暦において陽気の衰えを示す目印とされてきた。",
+      "closing": "最も長い光が枯れた花穂を照らし、季節はひそやかに下り坂へと傾いてゆく。",
+      "haiku": {
+        "japanese": "夏枯草や日の極まりて雨の音",
+        "romaji": "natsukarekusa ya / hi no kiwamarite / ame no oto",
+        "english": "self-heal withers — / the sun at its zenith, / only the sound of rain"
+      }
+    },
+    "_sent_on": "2026-06-21"
   }
 }
