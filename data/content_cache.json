@@ -1198,5 +1198,106 @@
       }
     },
     "_sent_on": "2026-06-21"
+  },
+  "35": {
+    "en": {
+      "summary": "Purple and violet irises open along waterways and in gardens, their elegant blooms marking the heart of early summer's humid warmth.",
+      "opening": "The air hangs thick with moisture, and along the edges of ponds and slow canals, irises unfurl their purple flags. Their petals, delicate as silk crepe, hold droplets from the morning mist. The scent of wet earth and green stems rises where one walks among them, and the light filtering through clouds gives every color a softened, almost underwater quality.",
+      "nature_notes": "Fireflies begin their brief, flickering courtship over rice paddies and stream banks in the evenings. Hydrangeas deepen from pale lavender to indigo as the soil's acidity shifts with the rains. Tree frogs call persistently from dusk onward, their chorus a pulse beneath the humid nights.",
+      "seasonal_produce": {
+        "fruits": [
+          "ume (green plums)",
+          "loquat",
+          "sakuranbo (cherries)",
+          "suika (early watermelon)"
+        ],
+        "vegetables": [
+          "myōga",
+          "green shiso",
+          "edamame",
+          "manganji peppers"
+        ],
+        "fish": [
+          "anago (conger eel)",
+          "isaki (grunt)",
+          "suzuki (sea bass)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "hamo no suimono",
+          "description": "Clear broth with pike conger and junsai water shield, its elegant simplicity cooling the palate as summer heat builds."
+        },
+        {
+          "name": "ayu no kanroni",
+          "description": "Sweetfish simmered until the bones soften in sweet soy, a preservation method that honors the river's brief abundance."
+        },
+        {
+          "name": "shiso maki",
+          "description": "Fragrant green shiso leaves wrapped around seasoned rice or pickles, their bright herbaceous bite cutting through humid-weather fatigue."
+        },
+        {
+          "name": "edamame no shio-yude",
+          "description": "Young soybeans boiled in salted water, their grassy sweetness at its peak before the pods toughen."
+        }
+      ],
+      "cultural_note": "Iris viewing, or hanashōbu, draws visitors to famous gardens such as Meiji Shrine's inner garden and Horikiri in Tokyo. Unlike cherry blossoms' fleeting days, irises bloom in succession for weeks, inviting contemplative return visits. The flower's association with purification and warding off illness dates to the ancient Tango no Sekku customs, when iris leaves were floated in baths.",
+      "haiku": {
+        "japanese": "水鏡花菖蒲映り蛍待つ",
+        "romaji": "mizukagami / hanashōbu utsuri / hotaru matsu",
+        "english": "in the water mirror / irises reflected — / waiting for fireflies"
+      },
+      "closing": "Where the iris bends toward its own reflection, the boundary between bloom and water dissolves into dusk."
+    },
+    "ja": {
+      "summary": "水辺や庭園に菖蒲が咲き揃い、紫の花弁が梅雨の湿り気の中で静かに揺れている。",
+      "opening": "雨上がりの朝、菖蒲田には霧が低く漂う。紫紺、藤色、白絞り——花弁の一枚一枚に露が宿り、曇り空の柔らかな光を映している。足元の土は黒く湿り、水路を渡る風にかすかな青い香りが混じる。",
+      "nature_notes": "蛍が水辺に姿を見せ始め、夕暮れ過ぎには淡い光が闇に点滅する。紫陽花は日ごとに色を深め、土の酸度によって青にも紅にも傾く。田圃ではアマガエルが鳴き交わし、夜の湿気に溶け込むように声が響く。",
+      "seasonal_produce": {
+        "fruits": [
+          "青梅",
+          "枇杷",
+          "さくらんぼ",
+          "小玉西瓜"
+        ],
+        "vegetables": [
+          "茗荷",
+          "青紫蘇",
+          "枝豆",
+          "万願寺唐辛子"
+        ],
+        "fish": [
+          "穴子",
+          "いさき",
+          "鱸"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "鱧の吸物",
+          "description": "骨切りした鱧と蓴菜を澄まし仕立てにした一椀、京の夏を告げる涼やかな味わい。"
+        },
+        {
+          "name": "鮎の甘露煮",
+          "description": "若鮎を飴色になるまで炊き上げ、骨まで柔らかく仕上げた保存食の知恵。"
+        },
+        {
+          "name": "紫蘇巻き",
+          "description": "香り高い青紫蘇で味噌や飯を巻いた素朴な一品、蒸し暑さに食欲を呼び起こす。"
+        },
+        {
+          "name": "枝豆の塩茹で",
+          "description": "莢ごと塩茹でにした若い枝豆、青々とした香りと甘みが夏の入り口を告げる。"
+        }
+      ],
+      "cultural_note": "この時季、明治神宮御苑や堀切菖蒲園では花菖蒲が見頃を迎える。桜のように一斉に散ることなく、品種ごとに咲き継ぐため、何度も足を運ぶ楽しみがある。古くは端午の節句に菖蒲湯として邪気を払う風習があり、花の凛とした姿は清浄の象徴とされてきた。",
+      "haiku": {
+        "japanese": "水鏡花菖蒲映り蛍待つ",
+        "romaji": "mizukagami / hanashōbu utsuri / hotaru matsu",
+        "english": "in the water mirror / irises reflected — / waiting for fireflies"
+      },
+      "closing": "花菖蒲が水面に影を落とす頃、昼と夜の境もまた滲んでゆく。"
+    },
+    "_sent_on": "2026-06-26"
   }
 }
