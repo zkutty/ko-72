@@ -1299,5 +1299,106 @@
       "closing": "花菖蒲が水面に影を落とす頃、昼と夜の境もまた滲んでゆく。"
     },
     "_sent_on": "2026-06-26"
+  },
+  "36": {
+    "en": {
+      "summary": "The humid air thickens as crow-dipper emerges from wet soil, marking the deepest pause of early summer before the rains withdraw.",
+      "opening": "The earth exhales moisture. In shaded corners of old gardens, the pale spike of crow-dipper — half-summer herb — pushes through black soil, its hooded flower strange and otherworldly. The air is heavy with the scent of wet stone and rotting leaves, and even at midday the light seems to carry a greenish weight.",
+      "nature_notes": "Frogs call continuously from flooded paddies, their chorus rising and falling through the night. Hydrangeas have deepened to their final blues and purples, petals beginning to brown at the edges. The rice seedlings, now firmly rooted, stand in perfect rows beneath a sky that rarely shows its full face — clouds drift and reform, threatening rain that may or may not fall.",
+      "seasonal_produce": {
+        "fruits": [
+          "sumomo (Japanese plum)",
+          "momo (white peach)",
+          "mango",
+          "blueberry"
+        ],
+        "vegetables": [
+          "myōga",
+          "nasu (eggplant)",
+          "okra",
+          "tomorokoshi (corn)"
+        ],
+        "fish": [
+          "anago (conger eel)",
+          "suzuki (sea bass)",
+          "tako (octopus)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "tako no yawarakai-ni",
+          "description": "Octopus simmered until impossibly tender — eaten on hange to pray for abundant rice, the eight legs symbolizing roots spreading strong."
+        },
+        {
+          "name": "hange-mochi",
+          "description": "Simple rice dumplings made with wheat, a folk offering marking the summer's turning point when fieldwork must pause."
+        },
+        {
+          "name": "myōga no misoshiru",
+          "description": "Miso soup afloat with fresh myōga slices, its bright sharpness cutting through the humid heaviness of these days."
+        },
+        {
+          "name": "nasu no nibitashi",
+          "description": "Eggplant slowly simmered in dashi and soy, served cold — the flesh silken, the flavor deepened by resting overnight."
+        }
+      ],
+      "cultural_note": "Hange is considered an inauspicious day — one of the sanrinbō, when field and garden work is forbidden lest the crops fail. Farmers rest, mend tools, and prepare offerings. In Kansai, eating octopus on this day remains a living custom, the creature's tenacious grip invoked to help rice roots take firm hold in the paddies.",
+      "haiku": {
+        "japanese": "半夏生水の底まで田の匂ひ",
+        "romaji": "hangeshou / mizu no soko made / ta no nioi",
+        "english": "crow-dipper sprouts — / down to the water's bottom / the scent of paddies"
+      },
+      "closing": "Somewhere beyond the grey ceiling, the sun has reached its longest arc — but here below, we move through green shadow, waiting for the rains to finish what they have begun."
+    },
+    "ja": {
+      "summary": "梅雨の湿気が極まり、半夏が芽吹く頃——田植えの労を終えた農村は、静かな祈りのうちに夏を迎える。",
+      "opening": "雨上がりの庭先、湿った土から半夏の白い仏炎苞がすっと立ち上がる。どこか妖しげなその姿が、この季節の名に刻まれている。空気は重く、苔の匂い、濡れた石の匂いが鼻の奥に届く。陽が出ても、光はどこか緑がかって沈んでいる。",
+      "nature_notes": "水を張った田んぼから蛙の声が絶えない。紫陽花は藍や紫の極みを過ぎ、花弁の端がわずかに茶色く縮れはじめた。早苗は根を下ろし、一列に並んで風を待つ。空は終日どんよりと曇り、降るか降らぬかの雨模様が続く。",
+      "seasonal_produce": {
+        "fruits": [
+          "すもも",
+          "白桃",
+          "マンゴー",
+          "ブルーベリー"
+        ],
+        "vegetables": [
+          "茗荷",
+          "茄子",
+          "オクラ",
+          "とうもろこし"
+        ],
+        "fish": [
+          "穴子",
+          "鱸（すずき）",
+          "蛸"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "蛸のやわらか煮",
+          "description": "半夏生に蛸を食す関西の風習——八本の足が稲の根のように大地をしっかり掴むようにと願いを込める。"
+        },
+        {
+          "name": "半夏餅",
+          "description": "小麦粉を混ぜた素朴な餅で、農作業を休める半夏生に供え、食す。"
+        },
+        {
+          "name": "茗荷の味噌汁",
+          "description": "刻んだ茗荷を浮かべた味噌汁。さわやかな辛味が、蒸し暑さで鈍った舌を呼び覚ます。"
+        },
+        {
+          "name": "茄子の煮浸し",
+          "description": "出汁と醤油でじっくり煮含め、冷やしていただく。一晩置くと味が沁みて、とろりとした茄子の甘みが際立つ。"
+        }
+      ],
+      "cultural_note": "半夏生は三隣亡に並ぶ物忌みの日とされ、田畑の仕事を休む慣わしがあった。関西では蛸を食べ、稲の根がしっかり張るよう祈願する。香川では饂飩を、福井では鯖を食べるなど、土地ごとに夏越しの知恵が息づいている。",
+      "haiku": {
+        "japanese": "半夏生水の底まで田の匂ひ",
+        "romaji": "hangeshou / mizu no soko made / ta no nioi",
+        "english": "crow-dipper sprouts — / down to the water's bottom / the scent of paddies"
+      },
+      "closing": "雲の向こうで、太陽はもっとも高い弧を描いている——けれど地上の私たちは、緑の翳りのなかで、雨明けを静かに待っている。"
+    },
+    "_sent_on": "2026-07-02"
   }
 }
