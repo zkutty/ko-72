@@ -1400,5 +1400,106 @@
       "closing": "雲の向こうで、太陽はもっとも高い弧を描いている——けれど地上の私たちは、緑の翳りのなかで、雨明けを静かに待っている。"
     },
     "_sent_on": "2026-07-02"
+  },
+  "37": {
+    "en": {
+      "summary": "The first truly hot winds sweep across Japan, carrying the dense humidity that signals high summer has begun.",
+      "opening": "Step outside and the air itself has weight — warm currents press against the skin like breath. The wind that arrives now is not cooling; it carries the accumulated heat of sun-baked earth and asphalt, the green scent of rice paddies reaching for the sky. Cicadas have not yet reached their crescendo, but in the stillness between gusts, you can hear the first tentative calls testing the summer air.",
+      "nature_notes": "Rice plants stand knee-high in flooded paddies, their green now deepening toward a lustrous jade. Fireflies complete their brief season in mountain valleys while dragonflies — red-bodied akatombo still weeks away — patrol the edges of ponds. The sky takes on that particular summer haze, blue but never quite clear, the horizon always softened by moisture rising from the land.",
+      "seasonal_produce": {
+        "fruits": [
+          "西瓜 (watermelon)",
+          "桃 (white peach)",
+          "プラム (plum)",
+          "ブルーベリー (blueberry)"
+        ],
+        "vegetables": [
+          "胡瓜 (cucumber)",
+          "トマト",
+          "ピーマン (green pepper)",
+          "オクラ (okra)"
+        ],
+        "fish": [
+          "鱧 (pike conger)",
+          "穴子 (conger eel)",
+          "スズキ (sea bass)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "Hiyashi chūka",
+          "description": "Cold ramen noodles draped with colorful toppings and tangy sesame or soy-vinegar sauce — the quintessential lunch when hot winds make the kitchen unbearable."
+        },
+        {
+          "name": "Suika no shiokake",
+          "description": "Chilled watermelon sprinkled with a few grains of salt, the contrast sharpening the fruit's sweetness while replacing minerals lost to summer sweat."
+        },
+        {
+          "name": "Kyūri no ichiyazuke",
+          "description": "Cucumbers quick-pickled overnight in salt and kelp, crisp and cooling, served alongside rice when appetites flag in the heat."
+        },
+        {
+          "name": "Okra no ohitashi",
+          "description": "Blanched okra dressed simply with dashi and soy, its slight viscosity prized for soothing summer-strained digestion."
+        }
+      ],
+      "cultural_note": "Early July marks the beginning of Obon preparations in many regions, as families begin cleaning ancestral graves and purchasing supplies for the mid-August homecoming of spirits. In areas following the old lunar calendar, Tanabata decorations still flutter from bamboo branches outside homes and shopping arcades, the paper wishes — tanzaku — now faded by sun and occasional rain. This liminal period between festivals invites quiet anticipation.",
+      "haiku": {
+        "japanese": "温風や畳の青さ深くなる",
+        "romaji": "atsukaze ya / tatami no aosa / fukaku naru",
+        "english": "warm wind arrives — / the green of fresh tatami / deepens in the room"
+      },
+      "closing": "Somewhere beyond the heat shimmer, a wind chime answers a gust no one else felt."
+    },
+    "ja": {
+      "summary": "南から熱を含んだ風が吹き渡り、肌にまとわりつく湿気とともに本格的な夏の到来を告げる。",
+      "opening": "戸を開ければ、風に重さがある。日に灼けた土と青田の匂いを乗せた温風が、頬を撫でるというより押し寄せてくる。蝉はまだ本調子ではないが、風の止む一瞬、どこかで試すような声がひとつ。空気の底に夏が満ちてゆく気配がある。",
+      "nature_notes": "水田の稲は膝丈ほどに伸び、葉の緑は日ごとに深みを増している。山あいでは蛍がその短い命を終えようとし、池のほとりでは塩辛蜻蛉が低く飛び交う。空は青いが澄み切ることなく、地から立ち昇る水気に地平線はいつもぼんやりと霞んでいる。",
+      "seasonal_produce": {
+        "fruits": [
+          "西瓜",
+          "桃",
+          "プラム",
+          "ブルーベリー"
+        ],
+        "vegetables": [
+          "胡瓜",
+          "トマト",
+          "ピーマン",
+          "オクラ"
+        ],
+        "fish": [
+          "鱧",
+          "穴子",
+          "鱸"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "冷やし中華",
+          "description": "色とりどりの具を載せた冷たい中華麺に、酢醤油か胡麻だれをかけて——温風に食欲が萎えるころ、これだけは喉を通る。"
+        },
+        {
+          "name": "西瓜の塩かけ",
+          "description": "よく冷えた西瓜にひとつまみの塩、汗で失われた塩分を補いながら甘さを際立たせる夏の知恵。"
+        },
+        {
+          "name": "胡瓜の一夜漬け",
+          "description": "塩と昆布で一晩漬けた胡瓜は、暑さで箸の進まぬ日の飯の友。"
+        },
+        {
+          "name": "オクラのお浸し",
+          "description": "さっと茹でて出汁醤油をかけるだけ、粘りが夏の疲れた胃に優しい。"
+        }
+      ],
+      "cultural_note": "七月上旬は、盆の支度が静かに始まる頃合いでもある。墓掃除の日取りを決め、迎え火・送り火の段取りを確かめる家も少なくない。旧暦の七夕を祝う地方では、まだ笹竹に短冊が揺れているが、日に晒されて色褪せたその紙片に、季節の移ろいを感じる人もいるだろう。",
+      "haiku": {
+        "japanese": "温風や畳の青さ深くなる",
+        "romaji": "atsukaze ya / tatami no aosa / fukaku naru",
+        "english": "warm wind arrives — / the green of fresh tatami / deepens in the room"
+      },
+      "closing": "陽炎の向こうで、誰も感じなかった風に風鈴がひとつ鳴る。"
+    },
+    "_sent_on": "2026-07-07"
   }
 }
