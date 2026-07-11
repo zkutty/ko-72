@@ -39,6 +39,22 @@ def _season_filename(season: dict) -> str:
     return f"{season['id']:02d}-{season['slug']}.html"
 
 
+def _season_id_from_cache_key(key: str) -> str:
+    """Cache keys are either a legacy bare season id ("24") or year-scoped
+    ("2026-24"); return the season id part either way."""
+    return key.rsplit("-", 1)[-1] if "-" in key else key
+
+
+def _latest_cache_key_for_season(cache: dict, season_id: str) -> str | None:
+    """Newest cache entry for a season id. Prefers year-scoped keys (highest
+    year) over a legacy bare-id key, since those are the more recent content."""
+    candidates = [k for k in cache if _season_id_from_cache_key(k) == season_id]
+    if not candidates:
+        return None
+    dated = sorted((k for k in candidates if "-" in k), key=lambda k: int(k.split("-", 1)[0]))
+    return dated[-1] if dated else candidates[0]
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Backfill Japanese content into the cache and rebuild.")
     parser.add_argument("--force", action="store_true", help="Regenerate every season, even if JA already present.")
@@ -71,7 +87,7 @@ def main() -> None:
         log.info("Will process %d season(s): %s", len(to_process), ", ".join(to_process))
 
     for key in to_process:
-        season = seasons_by_id.get(key)
+        season = seasons_by_id.get(_season_id_from_cache_key(key))
         if not season:
             log.warning("Cache key %s has no matching season in seasons.json — skipping.", key)
             continue
@@ -93,11 +109,14 @@ def main() -> None:
     for s in seasons:
         if (ARCHIVE_DIR / _season_filename(s)).exists():
             most_recent = s
-        if str(s["id"]) in cache:
-            build_archive(s, cache[str(s["id"])], seasons)
+        cache_key = _latest_cache_key_for_season(cache, str(s["id"]))
+        if cache_key:
+            build_archive(s, cache[cache_key], seasons)
 
-    if most_recent and str(most_recent["id"]) in cache:
-        build_website(most_recent, cache[str(most_recent["id"])], all_seasons=seasons)
+    if most_recent:
+        cache_key = _latest_cache_key_for_season(cache, str(most_recent["id"]))
+        if cache_key:
+            build_website(most_recent, cache[cache_key], all_seasons=seasons)
     log.info("Done ✓")
 
 

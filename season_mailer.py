@@ -14,12 +14,21 @@ import json
 import logging
 import os
 import sys
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from dotenv import load_dotenv
 
 load_dotenv()
+
+# Season transitions are defined in Japan Standard Time, not runner-local time.
+JST = ZoneInfo("Asia/Tokyo")
+
+
+def today_jst() -> date:
+    return datetime.now(JST).date()
+
 
 logging.basicConfig(
     level=logging.INFO,
@@ -34,18 +43,36 @@ CACHE_PATH = Path(__file__).parent / "data" / "content_cache.json"
 # ── data helpers ───────────────────────────────────────────────────────────────
 
 def enrich_seasons_with_end_dates(seasons: list, year: int = None) -> list:
-    year = year or date.today().year
+    """Attach end_month/end_day/duration_days to each season, in list order.
+
+    The 72 seasons wrap across a calendar year boundary mid-list, not just at
+    the array's end: e.g. season 71 starts Dec 27 and season 72 starts Jan 1
+    — season 72's start is chronologically in the *next* year relative to
+    season 71, even though it isn't the last entry. Comparing each season's
+    (month, day) to the next one's — rather than only special-casing the last
+    array index — is what makes the year rollover land on the right season
+    regardless of where in the list it falls.
+    """
+    year = year or today_jst().year
     enriched = []
+    current_year = year
     for i, season in enumerate(seasons):
         s = season.copy()
+        start = date(current_year, s["start_month"], s["start_day"])
+
         next_s = seasons[i + 1] if i < len(seasons) - 1 else seasons[0]
-        next_year = year if i < len(seasons) - 1 else year + 1
+        next_year = current_year
+        if (next_s["start_month"], next_s["start_day"]) <= (s["start_month"], s["start_day"]):
+            next_year += 1
         next_start = date(next_year, next_s["start_month"], next_s["start_day"])
+
         end = next_start - timedelta(days=1)
         s["end_month"] = end.month
         s["end_day"] = end.day
-        s["duration_days"] = (end - date(year, s["start_month"], s["start_day"])).days + 1
+        s["duration_days"] = (end - start).days + 1
         enriched.append(s)
+
+        current_year = next_year
     return enriched
 
 
@@ -60,6 +87,14 @@ def find_todays_season(seasons: list, today: date) -> dict | None:
         if s["start_month"] == today.month and s["start_day"] == today.day:
             return s
     return None
+
+
+def season_occurrence_year(season: dict, today: date) -> int:
+    """The calendar year of ``season``'s most recent start date on or before
+    ``today``. Handles the year-end wrap (e.g. today is early January but the
+    active season started in late December of the previous year)."""
+    candidate = date(today.year, season["start_month"], season["start_day"])
+    return today.year if candidate <= today else today.year - 1
 
 
 def find_active_season(seasons: list, today: date) -> dict:
@@ -229,7 +264,9 @@ def main() -> None:
     seasons = enrich_seasons_with_end_dates(seasons)
     from wheel import augment_seasons
     seasons = augment_seasons(seasons)
-    today = date.today()
+    today = today_jst()
+
+    cache = load_cache()
 
     if args.force:
         season = find_active_season(seasons, today)
@@ -239,13 +276,25 @@ def main() -> None:
         )
     else:
         season = find_todays_season(seasons, today)
-        if season is None:
-            log.info("Today (%s) is not the start of a new micro-season — nothing to do.", today)
-            sys.exit(0)
-        log.info(
-            "New micro-season begins today · #%d: %s (%s)",
-            season["id"], season["name_jp"], season["name_en"],
-        )
+        if season is not None:
+            log.info(
+                "New micro-season begins today · #%d: %s (%s)",
+                season["id"], season["name_jp"], season["name_en"],
+            )
+        else:
+            # No season starts exactly today. Catch up on the currently active
+            # season if it was never sent — a previous run may have failed
+            # (transient API error, Resend outage, runner hiccup) and the
+            # season would otherwise be permanently skipped.
+            active = find_active_season(seasons, today)
+            if cache.get(str(active["id"]), {}).get("_sent_on"):
+                log.info("Today (%s) is not the start of a new micro-season — nothing to do.", today)
+                sys.exit(0)
+            season = active
+            log.warning(
+                "Catching up on missed season · #%d: %s (%s) was never sent — a previous run likely failed.",
+                season["id"], season["name_jp"], season["name_en"],
+            )
 
     # ── pipeline ──────────────────────────────────────────────────────────────
     from email_sender import send_email
@@ -255,8 +304,11 @@ def main() -> None:
     worker_url = os.environ.get("WORKER_URL", "https://subscribe.ko-72.com")
 
     # Step 1: content (from cache if available)
-    cache = load_cache()
-    cache_key = str(season["id"])
+    # Cache is keyed by year + season id (not season id alone) so content is
+    # regenerated fresh each year instead of resending byte-identical
+    # newsletters forever once every season has been cached once. See
+    # README "Content freshness across years" for the full rationale.
+    cache_key = f"{season_occurrence_year(season, today)}-{season['id']}"
     if cache_key in cache:
         log.info("Step 1/5 · Using cached content for season #%d.", season["id"])
         content = cache[cache_key]

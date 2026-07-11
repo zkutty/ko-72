@@ -25,7 +25,18 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r requirements-dev.txt
+
+      - name: Run Python tests
+        run: pytest -q
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Run worker tests
+        working-directory: worker
+        run: node --test
 
       - name: Run mailer
         env:
@@ -34,6 +45,7 @@ jobs:
           SUBSCRIBER_EMAILS: ${{ secrets.SUBSCRIBER_EMAILS }}
           BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
           WORKER_URL: ${{ secrets.WORKER_URL }}
+          UNSUBSCRIBE_SECRET: ${{ secrets.UNSUBSCRIBE_SECRET }}
         run: |
           if [ "${{ github.event_name }}" = "schedule" ]; then
             python season_mailer.py
@@ -45,7 +57,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add archive/ || true
+          git add archive/ ja/ || true
           test -f index.html && git add index.html || true
           test -f sitemap.xml && git add sitemap.xml || true
           test -f data/content_cache.json && git add data/content_cache.json || true

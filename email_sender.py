@@ -6,7 +6,10 @@ subscribers default to English. Each language is rendered from the same
 bilingual content payload via ``templates/email.html``.
 """
 
+import hashlib
+import hmac
 import json
+import logging
 import os
 import time
 import urllib.request
@@ -14,12 +17,15 @@ import urllib.error
 from collections import deque
 from datetime import date
 from pathlib import Path
+from urllib.parse import quote
 
 import resend
 from jinja2 import Environment, FileSystemLoader
 
 from content_generator import normalize_content
 from ingredient_generator import slugify
+
+log = logging.getLogger(__name__)
 
 ACCENT_COLORS = {
     "Spring": "#6b8f71",
@@ -37,6 +43,27 @@ STRINGS_PATH = DATA_DIR / "strings.json"
 # for clock drift and retries.
 RESEND_MAX_PER_SEC = 4
 RESEND_RETRY_ATTEMPTS = 5
+
+# Rendered once per language batch, then swapped for each recipient's real,
+# tokenized unsubscribe link before sending (see `_unsubscribe_url`). Keeps
+# the (relatively expensive) template render per-language instead of per-recipient.
+_UNSUB_PLACEHOLDER = "%%UNSUBSCRIBE_URL%%"
+
+
+def _unsubscribe_token(email: str) -> str:
+    """HMAC-SHA256(secret, email) — proves the link came from an email we sent,
+    so the worker's /unsubscribe endpoint can reject third-party requests that
+    only know the address, not the secret."""
+    secret = os.environ.get("UNSUBSCRIBE_SECRET", "")
+    if not secret:
+        log.warning("UNSUBSCRIBE_SECRET is not set — unsubscribe links will not be verifiable.")
+    return hmac.new(secret.encode(), email.strip().lower().encode(), hashlib.sha256).hexdigest()
+
+
+def _unsubscribe_url(email: str, lang: str) -> str:
+    base = "https://ko-72.com/ja/unsubscribe.html" if lang == "ja" else "https://ko-72.com/unsubscribe.html"
+    url = f"{base}?email={quote(email)}&token={_unsubscribe_token(email)}"
+    return url.replace("&", "&amp;")  # embedded into an HTML href attribute
 
 
 def _fmt(month: int, day: int) -> str:
@@ -178,6 +205,10 @@ def _send_with_retry(params: "resend.Emails.SendParams") -> None:
             delay *= 2
 
 
+class AllSendsFailedError(RuntimeError):
+    """Raised when every recipient failed — nothing went out for this season."""
+
+
 def _subject(season: dict, lang: str, strings: dict) -> str:
     if lang == "ja":
         return f"{strings['ja']['email_subject_prefix']} · {season['name_jp']}（{season['name_romaji']}）"
@@ -208,18 +239,15 @@ def send_email(season: dict, content: dict, worker_url: str = "https://subscribe
             f"https://ko-72.com/ja/archive/{slug_path}" if lang == "ja"
             else f"https://ko-72.com/archive/{slug_path}"
         )
-        unsubscribe_url = (
-            "https://ko-72.com/ja/unsubscribe.html" if lang == "ja"
-            else "https://ko-72.com/unsubscribe.html"
-        )
         html = _render(
             template, season, bilingual[lang], lang, strings,
-            accent_color, archive_url, unsubscribe_url,
+            accent_color, archive_url, _UNSUB_PLACEHOLDER,
         )
         rendered[lang] = (_subject(season, lang, strings), html)
 
     sent = {lang: 0 for lang in rendered}
     skipped: list[str] = []
+    failed: list[tuple[str, str]] = []
     send_window: deque = deque()
     for recipient, lang in recipients:
         if lang not in rendered:
@@ -228,6 +256,7 @@ def send_email(season: dict, content: dict, worker_url: str = "https://subscribe
             skipped.append(f"{recipient} (wanted {lang}, sent {fallback})")
             lang = fallback
         subject, html = rendered[lang]
+        html = html.replace(_UNSUB_PLACEHOLDER, _unsubscribe_url(recipient, lang))
         params: resend.Emails.SendParams = {
             "from": "Kō <seasons@ko-72.com>",
             "to": [recipient],
@@ -235,10 +264,25 @@ def send_email(season: dict, content: dict, worker_url: str = "https://subscribe
             "html": html,
         }
         _throttle(send_window)
-        _send_with_retry(params)
+        try:
+            _send_with_retry(params)
+        except Exception as e:
+            log.error("Failed to send to %s: %s: %s", recipient, type(e).__name__, e)
+            failed.append((recipient, f"{type(e).__name__}: {e}"))
+            continue
         sent[lang] += 1
 
     summary = ", ".join(f"{lang}: {n}" for lang, n in sent.items() if n)
-    print(f"Email sent — {summary}.")
+    total_sent = sum(sent.values())
+    print(f"Email sent — {summary or '0'}.")
     for note in skipped:
         print(f"  fallback: {note}")
+    if failed:
+        print(f"  {len(failed)} recipient(s) failed:")
+        for recipient, error in failed:
+            print(f"    {recipient}: {error}")
+
+    if total_sent == 0 and failed:
+        raise AllSendsFailedError(
+            f"All {len(failed)} recipient(s) failed — no emails were sent for season #{season['id']}."
+        )
