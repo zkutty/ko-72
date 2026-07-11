@@ -43,6 +43,7 @@
     <button type="submit">{{ t.unsubscribe_btn }}</button>
   </form>
   <p class="msg success" id="success">{{ t.unsubscribe_success }}</p>
+  <p class="msg success" id="pending">{{ t.unsubscribe_pending }}</p>
   <p class="msg error" id="error">{{ t.unsubscribe_error }}</p>
   <br>
   <a href="{{ t.site_url }}/">{{ t.unsubscribe_back }}</a>
@@ -52,6 +53,7 @@
 <script>
   const params = new URLSearchParams(location.search);
   if (params.get('email')) document.getElementById('email').value = params.get('email');
+  const linkToken = params.get('token');
 
   document.getElementById('form').addEventListener('submit', async function(e) {
     e.preventDefault();
@@ -63,11 +65,12 @@
       const res = await fetch('https://subscribe.ko-72.com/unsubscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, token: linkToken, language: '{{ lang }}' }),
       });
       if (res.ok) {
+        const data = await res.json().catch(() => ({}));
         this.style.display = 'none';
-        document.getElementById('success').style.display = 'block';
+        document.getElementById(data.confirmed ? 'success' : 'pending').style.display = 'block';
       } else {
         throw new Error();
       }

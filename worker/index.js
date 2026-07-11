@@ -1,4 +1,4 @@
-import seasonsData from "../data/seasons.json";
+import seasonsData from "../data/seasons.json" with { type: "json" };
 
 const CORS_HEADERS = {
   "Access-Control-Allow-Origin": "https://ko-72.com",
@@ -80,21 +80,11 @@ function findActiveSeason(today) {
   return best;
 }
 
-function getSeasonDateRange(season) {
-  const seasons = seasonsData.seasons;
-  const idx = seasons.findIndex((s) => s.id === season.id);
-  const next = idx < seasons.length - 1 ? seasons[idx + 1] : seasons[0];
-  const year = new Date().getUTCFullYear();
-  const nextYear = idx < seasons.length - 1 ? year : year + 1;
-  const nextStart = new Date(Date.UTC(nextYear, next.start_month - 1, next.start_day));
-  const end = new Date(nextStart - 86400000); // day before next season
-  const endMonth = end.getUTCMonth() + 1;
-  const endDay = end.getUTCDate();
-  const duration = Math.round((end - new Date(Date.UTC(year, season.start_month - 1, season.start_day))) / 86400000) + 1;
-  return {
-    dateRange: `${MONTHS_SHORT[season.start_month]} ${season.start_day} – ${MONTHS_SHORT[endMonth]} ${endDay}`,
-    duration,
-  };
+// Compares two seasons' (start_month, start_day) ignoring year: negative if
+// `a` falls earlier in the calendar than `b`, zero if equal, positive if later.
+function compareMonthDay(a, b) {
+  if (a.start_month !== b.start_month) return a.start_month - b.start_month;
+  return a.start_day - b.start_day;
 }
 
 const WELCOME_COPY = {
@@ -140,7 +130,12 @@ function getSeasonDateRangeForLang(season, lang) {
   const idx = seasons.findIndex((s) => s.id === season.id);
   const next = idx < seasons.length - 1 ? seasons[idx + 1] : seasons[0];
   const year = new Date().getUTCFullYear();
-  const nextYear = idx < seasons.length - 1 ? year : year + 1;
+  // The 72 seasons wrap across a year boundary mid-list (season 71 starts
+  // Dec 27, season 72 starts Jan 1) — not just between the array's last and
+  // first entries. Comparing (month, day) to the next season, rather than
+  // only special-casing the last array index, puts the rollover on the
+  // right season regardless of where in the list it falls.
+  const nextYear = compareMonthDay(next, season) <= 0 ? year + 1 : year;
   const nextStart = new Date(Date.UTC(nextYear, next.start_month - 1, next.start_day));
   const end = new Date(nextStart - 86400000);
   const endMonth = end.getUTCMonth() + 1;
@@ -284,6 +279,59 @@ async function sendWelcomeEmail(env, email, lang = DEFAULT_LANG) {
   }
 }
 
+async function unsubscribeToken(secret, email) {
+  const enc = new TextEncoder();
+  const key = await crypto.subtle.importKey(
+    "raw", enc.encode(secret), { name: "HMAC", hash: "SHA-256" }, false, ["sign"]
+  );
+  const sig = await crypto.subtle.sign("HMAC", key, enc.encode(email.trim().toLowerCase()));
+  return [...new Uint8Array(sig)].map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+
+function timingSafeEqual(a, b) {
+  if (typeof a !== "string" || typeof b !== "string" || a.length !== b.length) return false;
+  let result = 0;
+  for (let i = 0; i < a.length; i++) result |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  return result === 0;
+}
+
+async function sendUnsubscribeConfirmationEmail(env, email, lang = DEFAULT_LANG) {
+  if (!env.RESEND_API_KEY) {
+    console.warn("RESEND_API_KEY not set — skipping unsubscribe confirmation email");
+    return;
+  }
+  const token = await unsubscribeToken(env.UNSUBSCRIBE_SECRET, email);
+  const confirmUrl = `${unsubscribeUrl(lang)}?email=${encodeURIComponent(email)}&token=${token}`;
+  const copy = lang === "ja"
+    ? {
+        subject: "Kō · 配信停止の確認",
+        body: `配信停止をご希望の場合は、下のリンクをクリックして確定してください。心当たりがない場合は、このメールは無視していただいて構いません。`,
+        cta: "配信停止を確定する",
+      }
+    : {
+        subject: "Kō · Confirm unsubscribe",
+        body: `Click below to confirm you'd like to stop receiving Kō. If you didn't request this, you can safely ignore this email.`,
+        cta: "Confirm unsubscribe",
+      };
+  const res = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${env.RESEND_API_KEY}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      from: "Kō <seasons@ko-72.com>",
+      to: [email],
+      subject: copy.subject,
+      html: `<p style="font-family:system-ui,-apple-system,sans-serif;font-size:15px;line-height:1.7;color:#2c2c2a;">${copy.body}</p><p><a href="${confirmUrl}" style="display:inline-block;font-family:system-ui,-apple-system,sans-serif;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:#f5f3ee;background-color:#1a1a18;text-decoration:none;padding:12px 24px;">${copy.cta}</a></p>`,
+    }),
+  });
+  if (!res.ok) {
+    const body = await res.text();
+    console.error(`Unsubscribe confirmation email failed (${res.status}): ${body}`);
+  }
+}
+
 async function reactivateSubscriber(env, email, lang = DEFAULT_LANG) {
   try {
     const listRes = await bdRequest(env, `/subscribers?email=${encodeURIComponent(email)}`);
@@ -323,9 +371,22 @@ export default {
       } catch {
         return json({ error: "Invalid JSON" }, 400);
       }
-      if (!email || !email.includes("@")) {
+      if (!email || typeof email !== "string" || !email.includes("@")) {
         return json({ error: "Invalid email" }, 400);
       }
+
+      // Basic abuse control: throttle repeated subscribe attempts per client IP
+      // so a single caller can't mail-bomb arbitrary addresses or burn Resend
+      // quota. Configured via the SUBSCRIBE_RATE_LIMITER binding in wrangler.toml;
+      // skipped (fail-open) if the binding isn't configured, e.g. local dev.
+      if (env.SUBSCRIBE_RATE_LIMITER) {
+        const clientIp = request.headers.get("CF-Connecting-IP") || "unknown";
+        const { success } = await env.SUBSCRIBE_RATE_LIMITER.limit({ key: clientIp });
+        if (!success) {
+          return json({ error: "Too many requests — please try again later." }, 429);
+        }
+      }
+
       const lang = normalizeLang(language);
       let res, data;
       try {
@@ -354,21 +415,79 @@ export default {
 
     // POST /unsubscribe
     if (url.pathname === "/unsubscribe" && request.method === "POST") {
-      let email;
+      let email, token, language;
       try {
-        ({ email } = await request.json());
+        ({ email, token, language } = await request.json());
       } catch {
         return json({ error: "Invalid JSON" }, 400);
       }
-      const listRes = await bdRequest(env, `/subscribers?email=${encodeURIComponent(email)}`);
-      const data = await listRes.json();
-      const subscriber = data.results?.[0];
-      if (subscriber) {
-        await bdRequest(env, `/subscribers/${subscriber.id}`, "DELETE");
+      if (!email || typeof email !== "string" || !email.includes("@")) {
+        return json({ error: "Invalid email" }, 400);
       }
-      return json({ ok: true });
+      if (!env.UNSUBSCRIBE_SECRET) {
+        console.error("UNSUBSCRIBE_SECRET not configured");
+        return json({ error: "Unsubscribe is temporarily unavailable" }, 502);
+      }
+      const lang = normalizeLang(language);
+
+      try {
+        if (typeof token === "string" && token) {
+          // Token present (came from the personalized link in a newsletter
+          // email) — verify it before touching the subscription, so a third
+          // party who only knows the address can't unsubscribe someone else.
+          const expected = await unsubscribeToken(env.UNSUBSCRIBE_SECRET, email);
+          if (!timingSafeEqual(token, expected)) {
+            return json({ error: "Invalid or expired unsubscribe link" }, 403);
+          }
+
+          const listRes = await bdRequest(env, `/subscribers?email=${encodeURIComponent(email)}`);
+          if (!listRes.ok) {
+            console.error(`Unsubscribe lookup failed (${listRes.status}) for ${email}`);
+            return json({ error: "Unsubscribe service unreachable" }, 502);
+          }
+          const data = await listRes.json();
+          const subscriber = data.results?.[0];
+          if (subscriber) {
+            // PATCH to "unsubscribed" rather than DELETE, so we keep the
+            // subscriber's history instead of destroying the record.
+            const patchRes = await bdRequest(env, `/subscribers/${subscriber.id}`, "PATCH", {
+              type: "unsubscribed",
+            });
+            if (!patchRes.ok) {
+              const body = await patchRes.text();
+              console.error(`Unsubscribe PATCH failed (${patchRes.status}) for ${email}: ${body}`);
+              return json({ error: "Unsubscribe failed" }, 502);
+            }
+          }
+          return json({ ok: true, confirmed: true });
+        }
+
+        // No token — this came from someone typing an address directly into
+        // the unsubscribe page, not from clicking their personalized link.
+        // Don't unsubscribe on that alone; email a one-click confirmation
+        // link so only the mailbox owner can complete it. Rate-limited: this
+        // is the one branch that lets an unauthenticated caller trigger an
+        // email to an arbitrary address, so without a limit it's a
+        // mail-bombing / Resend-quota vector the same way /subscribe is.
+        if (env.SUBSCRIBE_RATE_LIMITER) {
+          const clientIp = request.headers.get("CF-Connecting-IP") || "unknown";
+          const { success } = await env.SUBSCRIBE_RATE_LIMITER.limit({ key: `unsub:${clientIp}` });
+          if (!success) {
+            return json({ error: "Too many requests — please try again later." }, 429);
+          }
+        }
+        ctx.waitUntil(sendUnsubscribeConfirmationEmail(env, email, lang));
+        return json({ ok: true, confirmed: false });
+      } catch (err) {
+        console.error(`Unsubscribe request failed for ${email}: ${err.message}`);
+        return json({ error: "Unsubscribe service unreachable" }, 502);
+      }
     }
 
     return json({ error: "Not found" }, 404);
   },
 };
+
+// Named exports purely for unit testing (see index.test.js) — the Workers
+// runtime only uses the default export above.
+export { findActiveSeason, getSeasonDateRangeForLang, compareMonthDay, unsubscribeToken, timingSafeEqual };

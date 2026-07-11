@@ -102,6 +102,7 @@
     "unsubscribe_prompt": "Enter your email address and we'll remove you from the list.",
     "unsubscribe_btn": "Unsubscribe",
     "unsubscribe_success": "Done — you've been removed from the list.",
+    "unsubscribe_pending": "Check your inbox — we've sent a link to confirm you'd like to unsubscribe.",
     "unsubscribe_error": "Something went wrong. Please try again.",
     "unsubscribe_back": "← Back to ko-72.com",
     "site_meta_description": "Japan's 72 micro-seasons, one at a time."
@@ -209,6 +210,7 @@
     "unsubscribe_prompt": "メールアドレスをご入力ください。配信リストから削除いたします。",
     "unsubscribe_btn": "配信停止",
     "unsubscribe_success": "完了しました — リストから削除されました。",
+    "unsubscribe_pending": "受信箱をご確認ください — 配信停止を確定するリンクをお送りしました。",
     "unsubscribe_error": "問題が発生しました。もう一度お試しください。",
     "unsubscribe_back": "← ko-72.com へ戻る",
     "site_meta_description": "日本の七十二候を、ひとつずつ。"

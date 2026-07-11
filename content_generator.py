@@ -7,10 +7,14 @@ LLM call.
 """
 
 import json
+import logging
 import os
 import re
+import time
 
 import anthropic
+
+log = logging.getLogger(__name__)
 
 
 def normalize_dish_name(name: str) -> str:
@@ -143,35 +147,50 @@ You MAY include up to one or two dishes from the lists above only if they are tr
 iconic and indispensable for this exact micro-season; otherwise pick fresh seasonally \
 appropriate dishes. Never let an entire dishes block be made up of repeats."""
 
-    message = client.messages.create(
-        model="claude-opus-4-5",
-        max_tokens=3500,
-        system=[
-            {
-                "type": "text",
-                "text": SYSTEM_PROMPT,
-                "cache_control": {"type": "ephemeral"},
-            }
-        ],
-        messages=[{"role": "user", "content": user_prompt}],
-    )
+    max_attempts = 2
+    last_error: Exception | None = None
+    for attempt in range(1, max_attempts + 1):
+        try:
+            message = client.messages.create(
+                model="claude-opus-4-5",
+                max_tokens=3500,
+                system=[
+                    {
+                        "type": "text",
+                        "text": SYSTEM_PROMPT,
+                        "cache_control": {"type": "ephemeral"},
+                    }
+                ],
+                messages=[{"role": "user", "content": user_prompt}],
+            )
 
-    text = message.content[0].text.strip()
+            text = message.content[0].text.strip()
 
-    # Strip markdown code fences if present
-    if text.startswith("```"):
-        lines = text.splitlines()
-        text = "\n".join(lines[1:-1] if lines[-1].strip() == "```" else lines[1:])
+            # Strip markdown code fences if present
+            if text.startswith("```"):
+                lines = text.splitlines()
+                text = "\n".join(lines[1:-1] if lines[-1].strip() == "```" else lines[1:])
 
-    payload = json.loads(text)
+            payload = json.loads(text)
 
-    if not isinstance(payload, dict) or "en" not in payload or "ja" not in payload:
-        raise ValueError(
-            "Expected bilingual payload with top-level 'en' and 'ja' keys; got: "
-            f"{list(payload.keys()) if isinstance(payload, dict) else type(payload).__name__}"
-        )
+            if not isinstance(payload, dict) or "en" not in payload or "ja" not in payload:
+                raise ValueError(
+                    "Expected bilingual payload with top-level 'en' and 'ja' keys; got: "
+                    f"{list(payload.keys()) if isinstance(payload, dict) else type(payload).__name__}"
+                )
 
-    return payload
+            return payload
+        except (json.JSONDecodeError, ValueError, anthropic.APIStatusError, anthropic.APIConnectionError) as e:
+            last_error = e
+            if attempt == max_attempts:
+                break
+            log.warning(
+                "generate_content attempt %d/%d failed (%s: %s) — retrying.",
+                attempt, max_attempts, type(e).__name__, e,
+            )
+            time.sleep(2)
+
+    raise last_error
 
 
 def normalize_content(content: dict) -> dict:

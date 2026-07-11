@@ -4,4 +4,18 @@ compatibility_date = "2024-09-23"
 
 # Set secrets via wrangler (never commit them to this file):
 #   npx wrangler secret put BUTTONDOWN_API_KEY
-#   npx wrangler secret put RESEND_API_KEY   # used for welcome emails on /subscribe
+#   npx wrangler secret put RESEND_API_KEY      # used for welcome + unsubscribe-confirmation emails
+#   npx wrangler secret put UNSUBSCRIBE_SECRET  # HMAC key shared with season_mailer.py (same value as
+#                                                # the UNSUBSCRIBE_SECRET env var used to run season_mailer.py);
+#                                                # signs/verifies per-recipient unsubscribe links so a third
+#                                                # party who only knows an address can't unsubscribe someone else.
+
+# Throttles POST /subscribe, and the unauthenticated (no-token) branch of
+# POST /unsubscribe, per client IP — both can trigger an email to an
+# arbitrary address, so both are a mail-bombing / Resend-quota vector without
+# a limit. `namespace_id` just needs to be a stable string unique to this
+# binding within the account.
+[[ratelimits]]
+name = "SUBSCRIBE_RATE_LIMITER"
+namespace_id = "1001"
+simple = { limit = 5, period = 60 }
