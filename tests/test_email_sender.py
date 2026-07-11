@@ -1,7 +1,14 @@
 import hashlib
 import hmac
 
-from email_sender import _lang_from_tags, _unsubscribe_token, _unsubscribe_url
+import pytest
+
+from email_sender import (
+    MissingUnsubscribeSecretError,
+    _lang_from_tags,
+    _unsubscribe_token,
+    _unsubscribe_url,
+)
 
 
 def test_lang_from_tags_none_defaults_to_en():
@@ -54,3 +61,18 @@ def test_unsubscribe_url_embeds_email_and_token(monkeypatch):
     assert url.startswith("https://ko-72.com/ja/unsubscribe.html?")
     assert "email=a%40example.com" in url
     assert f"token={_unsubscribe_token('a@example.com')}" in url
+
+
+def test_unsubscribe_token_raises_when_secret_missing(monkeypatch):
+    """A missing/empty UNSUBSCRIBE_SECRET must fail loudly rather than
+    silently sign links with an empty-string secret — those links would
+    never verify against whatever secret the worker actually has configured."""
+    monkeypatch.delenv("UNSUBSCRIBE_SECRET", raising=False)
+    with pytest.raises(MissingUnsubscribeSecretError):
+        _unsubscribe_token("a@example.com")
+
+
+def test_unsubscribe_token_raises_when_secret_is_blank(monkeypatch):
+    monkeypatch.setenv("UNSUBSCRIBE_SECRET", "   ")
+    with pytest.raises(MissingUnsubscribeSecretError):
+        _unsubscribe_token("a@example.com")

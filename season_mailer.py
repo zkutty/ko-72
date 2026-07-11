@@ -97,6 +97,13 @@ def season_occurrence_year(season: dict, today: date) -> int:
     return today.year if candidate <= today else today.year - 1
 
 
+def cache_key_for(season: dict, today: date) -> str:
+    """Year-scoped cache/marker key for this season's current occurrence —
+    the single source of truth so the content cache and the `_sent_on`
+    catch-up check always agree on where a season's state lives."""
+    return f"{season_occurrence_year(season, today)}-{season['id']}"
+
+
 def find_active_season(seasons: list, today: date) -> dict:
     best: dict | None = None
     best_date: date | None = None
@@ -287,7 +294,7 @@ def main() -> None:
             # (transient API error, Resend outage, runner hiccup) and the
             # season would otherwise be permanently skipped.
             active = find_active_season(seasons, today)
-            if cache.get(str(active["id"]), {}).get("_sent_on"):
+            if cache.get(cache_key_for(active, today), {}).get("_sent_on"):
                 log.info("Today (%s) is not the start of a new micro-season — nothing to do.", today)
                 sys.exit(0)
             season = active
@@ -308,7 +315,7 @@ def main() -> None:
     # regenerated fresh each year instead of resending byte-identical
     # newsletters forever once every season has been cached once. See
     # README "Content freshness across years" for the full rationale.
-    cache_key = f"{season_occurrence_year(season, today)}-{season['id']}"
+    cache_key = cache_key_for(season, today)
     if cache_key in cache:
         log.info("Step 1/5 · Using cached content for season #%d.", season["id"])
         content = cache[cache_key]

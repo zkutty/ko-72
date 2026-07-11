@@ -465,7 +465,17 @@ export default {
         // No token — this came from someone typing an address directly into
         // the unsubscribe page, not from clicking their personalized link.
         // Don't unsubscribe on that alone; email a one-click confirmation
-        // link so only the mailbox owner can complete it.
+        // link so only the mailbox owner can complete it. Rate-limited: this
+        // is the one branch that lets an unauthenticated caller trigger an
+        // email to an arbitrary address, so without a limit it's a
+        // mail-bombing / Resend-quota vector the same way /subscribe is.
+        if (env.SUBSCRIBE_RATE_LIMITER) {
+          const clientIp = request.headers.get("CF-Connecting-IP") || "unknown";
+          const { success } = await env.SUBSCRIBE_RATE_LIMITER.limit({ key: `unsub:${clientIp}` });
+          if (!success) {
+            return json({ error: "Too many requests — please try again later." }, 429);
+          }
+        }
         ctx.waitUntil(sendUnsubscribeConfirmationEmail(env, email, lang));
         return json({ ok: true, confirmed: false });
       } catch (err) {

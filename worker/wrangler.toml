@@ -10,9 +10,11 @@ compatibility_date = "2024-09-23"
 #                                                # signs/verifies per-recipient unsubscribe links so a third
 #                                                # party who only knows an address can't unsubscribe someone else.
 
-# Throttles POST /subscribe per client IP so it can't be used to mail-bomb
-# arbitrary addresses or burn Resend quota. `namespace_id` just needs to be a
-# stable string unique to this binding within the account.
+# Throttles POST /subscribe, and the unauthenticated (no-token) branch of
+# POST /unsubscribe, per client IP — both can trigger an email to an
+# arbitrary address, so both are a mail-bombing / Resend-quota vector without
+# a limit. `namespace_id` just needs to be a stable string unique to this
+# binding within the account.
 [[ratelimits]]
 name = "SUBSCRIBE_RATE_LIMITER"
 namespace_id = "1001"

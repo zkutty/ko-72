@@ -50,13 +50,22 @@ RESEND_RETRY_ATTEMPTS = 5
 _UNSUB_PLACEHOLDER = "%%UNSUBSCRIBE_URL%%"
 
 
+class MissingUnsubscribeSecretError(RuntimeError):
+    """Raised when UNSUBSCRIBE_SECRET is unset/empty — sending would produce
+    unsubscribe links the worker can never verify (or that verify against a
+    different empty-string secret than whatever the worker actually has
+    configured), silently breaking unsubscribe for the whole campaign."""
+
+
 def _unsubscribe_token(email: str) -> str:
     """HMAC-SHA256(secret, email) — proves the link came from an email we sent,
     so the worker's /unsubscribe endpoint can reject third-party requests that
     only know the address, not the secret."""
-    secret = os.environ.get("UNSUBSCRIBE_SECRET", "")
+    secret = os.environ.get("UNSUBSCRIBE_SECRET", "").strip()
     if not secret:
-        log.warning("UNSUBSCRIBE_SECRET is not set — unsubscribe links will not be verifiable.")
+        raise MissingUnsubscribeSecretError(
+            "UNSUBSCRIBE_SECRET is not set — refusing to send newsletters with unverifiable unsubscribe links."
+        )
     return hmac.new(secret.encode(), email.strip().lower().encode(), hashlib.sha256).hexdigest()
 
 
@@ -217,6 +226,11 @@ def _subject(season: dict, lang: str, strings: dict) -> str:
 
 def send_email(season: dict, content: dict, worker_url: str = "https://subscribe.ko-72.com") -> None:
     resend.api_key = os.environ["RESEND_API_KEY"]
+
+    if not os.environ.get("UNSUBSCRIBE_SECRET", "").strip():
+        raise MissingUnsubscribeSecretError(
+            "UNSUBSCRIBE_SECRET is not set — refusing to send newsletters with unverifiable unsubscribe links."
+        )
 
     recipients = _get_subscribers()
     if not recipients:

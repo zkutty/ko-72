@@ -3,6 +3,7 @@ from datetime import date
 import pytest
 
 from season_mailer import (
+    cache_key_for,
     enrich_seasons_with_end_dates,
     find_active_season,
     find_todays_season,
@@ -106,3 +107,16 @@ def test_season_occurrence_year_wraps_to_previous_year(raw_seasons):
     today has already rolled into January of the following year."""
     season71 = next(s for s in raw_seasons if s["id"] == 71)  # Dec 27
     assert season_occurrence_year(season71, date(2027, 1, 2)) == 2026
+
+
+def test_cache_key_for_matches_across_the_send_and_catch_up_paths(raw_seasons):
+    """Regression: the content cache and the `_sent_on` catch-up marker must
+    resolve to the exact same key for the same (season, today) — otherwise
+    the catch-up check looks under a key the send path never wrote to, and
+    a season that was already sent looks unsent forever, resending daily."""
+    season1 = next(s for s in raw_seasons if s["id"] == 1)  # Jan 5
+    today = date(2026, 1, 5)
+    assert cache_key_for(season1, today) == "2026-1"
+
+    season71 = next(s for s in raw_seasons if s["id"] == 71)  # Dec 27
+    assert cache_key_for(season71, date(2027, 1, 2)) == "2026-71"
