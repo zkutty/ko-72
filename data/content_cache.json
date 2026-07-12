@@ -1501,5 +1501,106 @@
       "closing": "陽炎の向こうで、誰も感じなかった風に風鈴がひとつ鳴る。"
     },
     "_sent_on": "2026-07-07"
+  },
+  "38": {
+    "en": {
+      "summary": "Lotus flowers unfurl their pale pink petals at dawn, perfuming temple ponds with their sweet, otherworldly fragrance.",
+      "opening": "In the heavy stillness before sunrise, lotus buds that have waited all night begin to open with an almost audible sigh. The air above temple ponds grows thick with their honeyed scent, mingling with the green smell of paddy water. By midmorning, the blossoms will close again — this brief flowering belongs only to those who rise early.",
+      "nature_notes": "Dragonflies patrol the lotus ponds in territorial circuits, their wings catching the morning light like flecks of mica. Tree frogs call from the shade of broad lotus leaves, their voices carrying far across the water. The summer heat has settled in fully now, and cicadas begin their chorus earlier each day, the sound building in waves through the humid afternoons.",
+      "seasonal_produce": {
+        "fruits": [
+          "watermelon",
+          "white peach",
+          "muscat grapes",
+          "akebi melon"
+        ],
+        "vegetables": [
+          "lotus root",
+          "shiso leaves",
+          "bitter melon",
+          "tōgan (winter melon)"
+        ],
+        "fish": [
+          "conger eel",
+          "sweetfish",
+          "horse mackerel"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "hasu no kinpira",
+          "description": "Lotus root julienned and sautéed with sesame — its crisp, lace-like slices echo the season's flower."
+        },
+        {
+          "name": "gōya champurū",
+          "description": "Okinawan stir-fry of bitter melon with tofu and pork, a cooling dish that fights summer fatigue."
+        },
+        {
+          "name": "tōgan no soboroni",
+          "description": "Winter melon simmered with minced chicken in dashi, the pale flesh turning translucent and tender."
+        },
+        {
+          "name": "shirauo no kakiage",
+          "description": "Lacy tempura fritters of whitebait, capturing the delicate sweetness of summer's small fish."
+        }
+      ],
+      "cultural_note": "At Shinobazu Pond in Ueno and lotus-viewing sites across Japan, early risers gather for kanren — lotus appreciation. The Japanese have long associated the lotus with spiritual purity, its blossoms rising immaculate from murky water. Buddhist temples hold special dawn viewings, and some estates serve lotus tea, brewed by pouring water through the dew-filled leaves.",
+      "haiku": {
+        "japanese": "蓮開く音なき音に目覚めけり",
+        "romaji": "hasu hiraku / oto naki oto ni / mezame keri",
+        "english": "lotus opening — / I wake to the soundless sound / of its unfolding"
+      },
+      "closing": "A single petal drifts down to rest on the still water, and somewhere a temple bell marks the hour."
+    },
+    "ja": {
+      "summary": "夜明けとともに蓮の花が開き、寺の池に甘やかな香りが漂いはじめる頃。",
+      "opening": "夜通し固く閉じていた蕾が、払暁の水面にほのかな音を立てるように開く。蓮池の上には蜜を含んだ甘い香りが満ち、田の水の匂いと混じり合う。午前のうちに花はまた閉じてしまう——この一瞬の開花は、早起きした者だけのものである。",
+      "nature_notes": "蜻蛉が蓮池の上を縄張りを巡るように飛び交い、翅が朝日を受けて雲母のように煌めく。大きな蓮の葉陰では雨蛙が鳴き、その声は水面を渡って遠くまで響く。本格的な夏の暑さが据わり、蝉の声は日ごとに早まり、湿った午後に波のように押し寄せてくる。",
+      "seasonal_produce": {
+        "fruits": [
+          "西瓜",
+          "白桃",
+          "マスカット",
+          "アンデスメロン"
+        ],
+        "vegetables": [
+          "蓮根",
+          "大葉",
+          "苦瓜（ゴーヤー）",
+          "冬瓜"
+        ],
+        "fish": [
+          "穴子",
+          "鮎",
+          "鯵"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "蓮根のきんぴら",
+          "description": "薄切りの蓮根を胡麻油で炒め、その透かし模様が季節の花を思わせる一品。"
+        },
+        {
+          "name": "ゴーヤーチャンプルー",
+          "description": "苦瓜と豆腐、豚肉を炒めた沖縄料理、夏の疲れを癒す苦味が身体に沁みる。"
+        },
+        {
+          "name": "冬瓜のそぼろ煮",
+          "description": "鶏挽き肉と出汁で煮含めた冬瓜、透き通るほど柔らかな果肉が涼を呼ぶ。"
+        },
+        {
+          "name": "白魚のかき揚げ",
+          "description": "小さな白魚を花のように揚げた繊細な天ぷら、夏の淡い旨味を閉じ込める。"
+        }
+      ],
+      "cultural_note": "上野の不忍池をはじめ各地の蓮の名所では、早朝から観蓮会が催される。蓮は泥中より清らかな花を咲かせることから、古来より仏教で清浄の象徴とされてきた。寺院では特別な早朝拝観が行われ、蓮の葉に溜まった朝露を通して茶を淹れる「象鼻杯」を楽しむ風習も残っている。",
+      "haiku": {
+        "japanese": "蓮開く音なき音に目覚めけり",
+        "romaji": "hasu hiraku / oto naki oto ni / mezame keri",
+        "english": "lotus opening — / I wake to the soundless sound / of its unfolding"
+      },
+      "closing": "花弁が一枚、音もなく水面に落ち、どこか遠くで時を告げる鐘の音が響く。"
+    },
+    "_sent_on": "2026-07-12"
   }
 }
