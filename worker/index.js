@@ -323,6 +323,9 @@ export default {
       } catch {
         return json({ error: "Invalid JSON" }, 400);
       }
+      // Normalize so the same inbox can't create case/whitespace-variant
+      // Buttondown records (which caused duplicate newsletter sends).
+      email = (email || "").toString().trim().toLowerCase();
       if (!email || !email.includes("@")) {
         return json({ error: "Invalid email" }, 400);
       }
@@ -360,6 +363,7 @@ export default {
       } catch {
         return json({ error: "Invalid JSON" }, 400);
       }
+      email = (email || "").toString().trim().toLowerCase();
       const listRes = await bdRequest(env, `/subscribers?email=${encodeURIComponent(email)}`);
       const data = await listRes.json();
       const subscriber = data.results?.[0];

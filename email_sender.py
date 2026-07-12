@@ -102,37 +102,68 @@ def _lang_from_tags(tags) -> str:
     return DEFAULT_LANG
 
 
+def _normalize_email(addr: str) -> str:
+    """Canonical form used for deduplication: trimmed and lowercased."""
+    return addr.strip().lower()
+
+
+def _fetch_buttondown_subscribers(bd_key: str, status: str):
+    """Yield subscriber objects with the given Buttondown status, following pagination."""
+    url = f"https://api.buttondown.email/v1/subscribers?status={status}"
+    while url:
+        req = urllib.request.Request(
+            url,
+            headers={"Authorization": f"Token {bd_key}"},
+        )
+        try:
+            with urllib.request.urlopen(req) as resp:
+                data = json.loads(resp.read())
+        except urllib.error.URLError as e:
+            print(f"Warning: could not fetch Buttondown subscribers (status={status}): {e}")
+            return
+        yield from data.get("results", [])
+        url = data.get("next") or None
+
+
 def _get_subscribers() -> list[tuple[str, str]]:
-    """Fetch (email, language) pairs from Buttondown, plus the env fallback."""
+    """Fetch (email, language) pairs from Buttondown, plus the env fallback.
+
+    Addresses are normalized (trimmed, lowercased) before deduplication so the
+    same inbox can never appear twice — historically a case/alias mismatch
+    between Buttondown and SUBSCRIBER_EMAILS caused duplicate sends. The env
+    fallback also never re-adds an address that unsubscribed in Buttondown.
+    """
     subscribers: dict[str, str] = {}
+    unsubscribed: set[str] = set()
 
     bd_key = os.environ.get("BUTTONDOWN_API_KEY", "").strip()
     if bd_key:
-        url = "https://api.buttondown.email/v1/subscribers?status=regular"
-        while url:
-            req = urllib.request.Request(
-                url,
-                headers={"Authorization": f"Token {bd_key}"},
-            )
-            try:
-                with urllib.request.urlopen(req) as resp:
-                    data = json.loads(resp.read())
-            except urllib.error.URLError as e:
-                print(f"Warning: could not fetch Buttondown subscribers: {e}")
-                break
-            for sub in data.get("results", []):
-                email = sub.get("email_address", "").strip()
-                if email:
-                    subscribers[email] = _lang_from_tags(sub.get("tags"))
-            url = data.get("next") or None
+        for sub in _fetch_buttondown_subscribers(bd_key, "regular"):
+            email = _normalize_email(sub.get("email_address", ""))
+            if not email:
+                continue
+            if email in subscribers:
+                print(f"Warning: duplicate Buttondown records collapsed for {email}.")
+            subscribers[email] = _lang_from_tags(sub.get("tags"))
+        for sub in _fetch_buttondown_subscribers(bd_key, "unsubscribed"):
+            email = _normalize_email(sub.get("email_address", ""))
+            if email:
+                unsubscribed.add(email)
 
     fallback_lang = os.environ.get("SUBSCRIBER_FALLBACK_LANG", DEFAULT_LANG).strip().lower()
     if fallback_lang not in LANGS:
         fallback_lang = DEFAULT_LANG
     for addr in os.environ.get("SUBSCRIBER_EMAILS", "").split(","):
-        addr = addr.strip()
-        if addr and addr not in subscribers:
-            subscribers[addr] = fallback_lang
+        addr = _normalize_email(addr)
+        if not addr:
+            continue
+        if addr in unsubscribed:
+            print(f"Skipping {addr} from SUBSCRIBER_EMAILS — unsubscribed in Buttondown.")
+            continue
+        if addr in subscribers:
+            print(f"Skipping {addr} from SUBSCRIBER_EMAILS — already subscribed via Buttondown.")
+            continue
+        subscribers[addr] = fallback_lang
 
     return sorted(subscribers.items())
 
@@ -190,6 +221,7 @@ def send_email(season: dict, content: dict, worker_url: str = "https://subscribe
     recipients = _get_subscribers()
     if not recipients:
         raise ValueError("No subscribers found. Set SUBSCRIBER_EMAILS or BUTTONDOWN_API_KEY.")
+    print(f"Sending to {len(recipients)} unique subscriber(s).")
 
     bilingual = normalize_content(content)
     strings = _load_strings()
