@@ -1602,5 +1602,106 @@
       "closing": "花弁が一枚、音もなく水面に落ち、どこか遠くで時を告げる鐘の音が響く。"
     },
     "_sent_on": "2026-07-12"
+  },
+  "39": {
+    "en": {
+      "summary": "In the fierce heat of mid-July, young hawks take their first uncertain flights from the nest while cicadas reach full chorus.",
+      "opening": "The sun now strikes with an almost metallic weight, and shadows retreat to thin slivers beneath eaves and stone walls. In the mountains, the shrill cry of a fledgling hawk cuts through the drone of cicadas — a sound both urgent and ancient. The air itself seems to hold its breath in the hour before evening storms gather on the horizon.",
+      "nature_notes": "Young hawks, having grown their flight feathers through early summer, now launch themselves from cliff ledges and tall cryptomeria, their wingbeats uncertain but determined. Cicadas — particularly the minminzemi — have reached their peak volume, their synchronized chorus marking true midsummer. Morning glory vines climb feverishly, and the first lotus flowers open in temple ponds, their pale pink petals luminous against dark water.",
+      "seasonal_produce": {
+        "fruits": [
+          "桃 (white peach)",
+          "プラム (Japanese plum)",
+          "ブルーベリー",
+          "マンゴー"
+        ],
+        "vegetables": [
+          "茗荷",
+          "空芯菜",
+          "モロヘイヤ",
+          "とうもろこし"
+        ],
+        "fish": [
+          "鱧 (hamo)",
+          "穴子",
+          "鮑"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "Hamo no shabu-shabu",
+          "description": "Thinly sliced pike eel briefly swished in kelp broth, eaten with ponzu — the essential Kyoto dish for beating midsummer heat."
+        },
+        {
+          "name": "Tōmorokoshi gohan",
+          "description": "Rice cooked with fresh corn kernels and a touch of salt, capturing the sweetness that peaks in these blazing July days."
+        },
+        {
+          "name": "Momo no shiratama",
+          "description": "Chilled white peaches served with soft rice-flour dumplings in cold syrup — a cooling confection for the season of intense sun."
+        },
+        {
+          "name": "Kūshinai no itame",
+          "description": "Garlic-sautéed water spinach with a splash of fish sauce, a dish that thrives when this heat-loving green is at its crispest."
+        }
+      ],
+      "cultural_note": "This period falls within the days of summer doyo, when unagi (eel) is eaten to fortify the body against heat exhaustion — a practice dating to the Edo period. The specific 'Day of the Ox' within doyo, called Ushi no Hi, sees lines forming at eel restaurants across Japan. Simultaneously, many regions hold Gion Matsuri-related events, with the climax of Kyoto's great procession often occurring in these very days.",
+      "haiku": {
+        "japanese": "若鷹の翼ひろげて空を知る",
+        "romaji": "wakataka no / tsubasa hirogete / sora wo shiru",
+        "english": "young hawk spreads its wings — / for the first time it comes to know / the vastness of sky"
+      },
+      "closing": "Somewhere above the heat shimmer, a fledgling hawk catches a thermal and rises — and the summer tilts imperceptibly toward its zenith."
+    },
+    "ja": {
+      "summary": "蝉時雨のなか、巣立ちを迎えた若鷹が空へ飛び立つ真夏の候。",
+      "opening": "陽射しは刃のように鋭く、石畳に落ちる影は針のように細い。山あいからは若鷹の甲高い声が蝉の声を縫って届く。夕立を予感させる入道雲が、地平線の向こうに静かに頭をもたげる頃である。",
+      "nature_notes": "初夏から羽を育ててきた鷹の雛は、今まさに断崖や杉の大木から身を投げ出し、ぎこちなくも力強い翼で宙を掴む。蜩や油蝉に先駆けてミンミン蝉が鳴き盛り、朝顔は軒を這い登り、蓮池には薄紅の花弁がひらく。水面に映る蓮の葉は、風が渡るたびに銀色にゆらめく。",
+      "seasonal_produce": {
+        "fruits": [
+          "白桃",
+          "プラム",
+          "ブルーベリー",
+          "マンゴー"
+        ],
+        "vegetables": [
+          "茗荷",
+          "空芯菜",
+          "モロヘイヤ",
+          "とうもろこし"
+        ],
+        "fish": [
+          "鱧",
+          "穴子",
+          "鮑"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "鱧のしゃぶしゃぶ",
+          "description": "骨切りした鱧を昆布出汁にさっとくぐらせ、ポン酢でいただく京の夏の涼味。"
+        },
+        {
+          "name": "とうもろこしご飯",
+          "description": "甘みの増した真夏の玉蜀黍を塩と共に炊き込む、この時季ならではの滋味。"
+        },
+        {
+          "name": "桃の白玉",
+          "description": "冷やした白桃と白玉団子を冷たい蜜に浮かべた、暑気払いの甘味。"
+        },
+        {
+          "name": "空芯菜の炒め物",
+          "description": "蒜の香りを立たせて手早く炒めた夏野菜、しゃきしゃきとした歯触りが身上。"
+        }
+      ],
+      "cultural_note": "この時季は夏の土用にあたり、暑さに負けぬよう鰻を食す「土用の丑の日」が近い。江戸の頃より続くこの習わしは、今も鰻屋の前に長い列をつくる。京都では祇園祭が佳境を迎え、山鉾巡行の囃子が炎暑の町に響き渡る頃でもある。",
+      "haiku": {
+        "japanese": "若鷹の翼ひろげて空を知る",
+        "romaji": "wakataka no / tsubasa hirogete / sora wo shiru",
+        "english": "young hawk spreads its wings — / for the first time it comes to know / the vastness of sky"
+      },
+      "closing": "陽炎の彼方、若鷹が上昇気流を捉えて舞い上がる——夏は静かに頂へと近づいてゆく。"
+    },
+    "_sent_on": "2026-07-17"
   }
 }
