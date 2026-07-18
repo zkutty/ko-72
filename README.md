@@ -2,113 +2,171 @@
 
 *Japan's 72 micro-seasons, one at a time.*
 
-A newsletter automation that sends a beautiful HTML email at the start of each of Japan's 72 micro-seasons (七十二候, *shichijūni-kō*) — the traditional Japanese solar calendar that divides the year into five-day increments, each named for a subtle natural phenomenon.
+Kō is a bilingual newsletter and static site following Japan's 72 traditional
+micro-seasons (七十二候, *shichijūni-kō*). Every five or six days it publishes a
+short English and Japanese letter about the change in nature, what is in
+season, a cultural practice, and a haiku.
 
-## What it does
+## How it works
 
-On the first day of each micro-season, a GitHub Actions workflow:
+The production system has four parts:
 
-1. Calls the Claude API to generate poetic, seasonally-specific content (nature notes, seasonal produce, dishes, haiku, and a cultural note)
-2. Sends a beautiful HTML newsletter to your subscriber list via Resend
-3. Commits a static archive page to the repository
+1. `.github/workflows/newsletter.yml` runs daily at 01:00 UTC. On a
+   micro-season's start date, `season_mailer.py` generates or loads bilingual
+   content, sends the newsletter, and rebuilds the static site. Pushes to
+   `main` and manual runs rebuild the site without sending email.
+2. Claude generates bilingual content. `data/content_cache.json` stores one
+   evergreen entry per season so subsequent builds do not regenerate it.
+3. Buttondown is the subscriber source of truth and stores the `lang:en` or
+   `lang:ja` preference. Resend delivers the rendered email. The optional
+   `SUBSCRIBER_EMAILS` value is a bootstrap fallback, not a second subscriber
+   list; normalized duplicates and addresses unsubscribed in Buttondown are
+   skipped.
+4. The Cloudflare Worker in `worker/` handles website subscribe and
+   unsubscribe requests, updates Buttondown, and sends the bilingual welcome
+   email through Resend.
 
-## Project structure
+`.github/workflows/season_check.yml` is retained as a manual-only recovery
+workflow. It must not be scheduled alongside `newsletter.yml`, because two
+scheduled mailers can send the same letter twice.
 
+## Repository layout
+
+```text
+.
+├── .github/workflows/
+│   ├── newsletter.yml          # Production schedule and build workflow
+│   └── season_check.yml        # Manual recovery workflow only
+├── data/
+│   ├── seasons.json            # All 72 seasons and calendar metadata
+│   ├── strings.json            # English and Japanese interface strings
+│   ├── content_cache.json      # Generated bilingual season content
+│   ├── ingredients.json        # Generated ingredient reference data
+│   └── dishes.json             # Generated dish reference data
+├── templates/                  # Jinja templates for email and static pages
+├── archive/                    # Generated English archive
+├── ja/                         # Generated Japanese homepage and archive
+├── season_mailer.py            # Pipeline orchestrator
+├── content_generator.py        # Claude content generation
+├── email_sender.py             # Buttondown subscriber fetch + Resend delivery
+├── ingredient_generator.py     # Ingredient and dish lookup generation
+├── archive_builder.py          # Homepage, archive, sitemap, unsubscribe pages
+└── worker/
+    ├── index.js                # Subscribe/unsubscribe Worker
+    └── wrangler.toml           # Cloudflare Worker configuration
 ```
-72-seasons/
-├── .github/workflows/season_check.yml   # Daily cron at 7am PT
-├── data/seasons.json                    # All 72 micro-seasons with dates & names
-├── templates/
-│   ├── email.html                       # Jinja2 HTML email template
-│   ├── archive_page.html                # Individual season archive page
-│   └── archive_index.html              # Archive listing index
-├── archive/                             # Generated static pages (auto-committed)
-│   └── index.html
-├── season_mailer.py                     # Orchestrator — run this
-├── content_generator.py                 # Claude API integration
-├── email_sender.py                      # Resend email dispatch
-├── archive_builder.py                   # Static site generator
-└── requirements.txt
-```
 
-## Setup
+The generated English homepage is `index.html`. English archive pages live in
+`archive/`; Japanese equivalents live under `ja/`. Builds also update
+`sitemap.xml`, unsubscribe pages, the content cache, and lookup data.
 
-### 1. Clone and create a virtual environment
+## Local setup
+
+Requires Python 3.12 or newer and Node.js for Worker development.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/72-seasons.git
-cd 72-seasons
-python -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
+git clone https://github.com/zkutty/ko-72.git
+cd ko-72
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 2. Create a `.env` file
+Create a local `.env` when you need API-backed generation or delivery:
 
-```bash
-cp .env.example .env   # or create from scratch
-```
-
-Add your credentials to `.env`:
-
-```env
+```dotenv
 ANTHROPIC_API_KEY=sk-ant-...
 RESEND_API_KEY=re_...
-SUBSCRIBER_EMAILS=you@example.com,friend@example.com
+BUTTONDOWN_API_KEY=...
+WORKER_URL=https://subscribe.ko-72.com
+
+# Optional bootstrap fallback only. Prefer leaving this unset once Buttondown
+# contains the real subscriber list.
+SUBSCRIBER_EMAILS=
+SUBSCRIBER_FALLBACK_LANG=en
 ```
 
-- **ANTHROPIC_API_KEY** — Get one at [console.anthropic.com](https://console.anthropic.com)
-- **RESEND_API_KEY** — Get one at [resend.com](https://resend.com). You'll also need to verify a sending domain and update the `from:` address in `email_sender.py`
-- **SUBSCRIBER_EMAILS** — Comma-separated list of recipient email addresses
+Secrets and `.env` files are ignored by Git.
 
-### 3. Test locally with `--force`
+## Run the mailer
 
-The `--force` flag bypasses the date check and uses the currently active micro-season:
+The normal command exits without changes unless today starts a micro-season:
 
 ```bash
-python season_mailer.py --force
+python season_mailer.py
 ```
 
-This will:
-- Call Claude to generate content
-- Send an email to your SUBSCRIBER_EMAILS list
-- Write a page to `archive/` and regenerate `archive/index.html`
+For a local static rebuild of the currently active season, without sending
+mail:
 
-### 4. Check the output
+```bash
+python season_mailer.py --force --build-only
+```
 
-- Open `archive/index.html` in a browser to see the archive listing
-- Open `archive/01-seri-sunawachi-sakau.html` (or whichever season ran) to preview the page
+`--force` without `--build-only` sends email and bypasses the normal date and
+send guards. Use it only for an intentional recovery or end-to-end delivery
+test.
 
-## GitHub Actions setup
+The build writes generated files directly into the repository. Review the Git
+diff before committing them.
 
-The workflow runs daily at 15:00 UTC (7:00 AM Pacific Standard Time). It only sends an email when today matches a season's start date — otherwise it exits cleanly.
+## GitHub Actions configuration
 
-### Add secrets to your repository
+Add these repository secrets under **Settings → Secrets and variables →
+Actions**:
 
-Go to **Settings → Secrets and variables → Actions** and add:
-
-| Secret name | Value |
+| Secret | Purpose |
 |---|---|
-| `ANTHROPIC_API_KEY` | Your Anthropic API key |
-| `RESEND_API_KEY` | Your Resend API key |
-| `SUBSCRIBER_EMAILS` | Comma-separated email list |
+| `ANTHROPIC_API_KEY` | Generate season content and ingredient/dish references |
+| `RESEND_API_KEY` | Deliver newsletters |
+| `BUTTONDOWN_API_KEY` | Read subscribers and language preferences |
+| `WORKER_URL` | Public subscribe endpoint, normally `https://subscribe.ko-72.com` |
+| `SUBSCRIBER_EMAILS` | Optional comma-separated bootstrap fallback; normally unset |
 
-### Manual trigger
+The production workflow runs every day at 01:00 UTC. A scheduled run sends
+only when a new season begins. A push to `main` or a manual dispatch runs
+`python season_mailer.py --force --build-only`, so it rebuilds static files but
+does not email subscribers.
 
-You can also trigger the workflow manually from the **Actions** tab with the optional `force` checkbox to run regardless of today's date.
+The workflow stages the English archive, homepage, sitemap, and content cache
+and commits them back to `main` when they change. The build also renders the
+Japanese tree, unsubscribe pages, and ingredient/dish lookup files locally;
+review and stage those outputs explicitly when they change.
 
-## Customization
+## Cloudflare Worker
 
-- **Sending domain**: Update the `from:` address in `email_sender.py` once you've verified a domain with Resend
-- **Email design**: Edit `templates/email.html` — it uses inline CSS for email client compatibility
-- **Content style**: Adjust the prompt in `content_generator.py` to shift the tone or add fields
-- **Archive**: The `archive/` directory is auto-committed by the GitHub Actions workflow; you can host it on GitHub Pages
+The Worker requires its own Buttondown and Resend secrets. Set them with
+Wrangler; they are separate from GitHub Actions secrets:
 
-## The 72 micro-seasons
+```bash
+cd worker
+npx wrangler secret put BUTTONDOWN_API_KEY
+npx wrangler secret put RESEND_API_KEY
+```
 
-The 七十二候 are a Japanese adaptation of the Chinese 72 pentads, tied to the 24 solar terms (二十四節気). Each five-day period is named for a specific natural phenomenon — the cry of a pheasant, the thawing of springs, the first appearance of fireflies. They were first adopted in Japan in 1685 and remain a living part of traditional Japanese culture.
+Run it locally:
 
-The seasons in `data/seasons.json` use the standard modern Japanese dates.
+```bash
+npx wrangler dev
+```
+
+Deploy the configured `ko-72-subscribe` Worker:
+
+```bash
+npx wrangler deploy
+```
+
+Wrangler's `.wrangler/` directory is local cache/state and must never be
+committed.
+
+## Content and design
+
+- Edit `templates/email.html` for the newsletter and the remaining templates
+  for the website surfaces.
+- Edit the prompts in `content_generator.py` and `ingredient_generator.py` to
+  change generated content.
+- Follow `BRAND.md` for colors, typography, and editorial voice.
+- Season dates and names are defined in `data/seasons.json`.
 
 ## License
 
