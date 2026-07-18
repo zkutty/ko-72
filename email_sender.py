@@ -135,6 +135,7 @@ def _get_subscribers() -> list[tuple[str, str]]:
     """
     subscribers: dict[str, str] = {}
     unsubscribed: set[str] = set()
+    buttondown_regular: set[str] = set()
 
     bd_key = os.environ.get("BUTTONDOWN_API_KEY", "").strip()
     if bd_key:
@@ -145,6 +146,7 @@ def _get_subscribers() -> list[tuple[str, str]]:
             if email in subscribers:
                 print(f"Warning: duplicate Buttondown records collapsed for {email}.")
             subscribers[email] = _lang_from_tags(sub.get("tags"))
+            buttondown_regular.add(email)
         for sub in _fetch_buttondown_subscribers(bd_key, "unsubscribed"):
             email = _normalize_email(sub.get("email_address", ""))
             if email:
@@ -160,8 +162,11 @@ def _get_subscribers() -> list[tuple[str, str]]:
         if addr in unsubscribed:
             print(f"Skipping {addr} from SUBSCRIBER_EMAILS — unsubscribed in Buttondown.")
             continue
-        if addr in subscribers:
+        if addr in buttondown_regular:
             print(f"Skipping {addr} from SUBSCRIBER_EMAILS — already subscribed via Buttondown.")
+            continue
+        if addr in subscribers:
+            print(f"Warning: duplicate SUBSCRIBER_EMAILS entry collapsed for {addr}.")
             continue
         subscribers[addr] = fallback_lang
 
