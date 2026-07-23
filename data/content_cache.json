@@ -1703,5 +1703,106 @@
       "closing": "陽炎の彼方、若鷹が上昇気流を捉えて舞い上がる——夏は静かに頂へと近づいてゆく。"
     },
     "_sent_on": "2026-07-17"
+  },
+  "40": {
+    "en": {
+      "summary": "The paulownia trees, having flowered in spring, now form their first seed pods as the summer heat reaches its zenith.",
+      "opening": "The air sits heavy and still, saturated with moisture that clings to skin and leaf alike. High in the paulownia trees, where fragrant purple blossoms hung just weeks ago, green seed capsules begin to swell in the white heat. This is Taisho at its most intense — cicadas cry without pause, and even shadows offer little respite from the shimmering days.",
+      "nature_notes": "Higurashi cicadas join the chorus now, their melancholy evening calls layering over the daytime drone of aburazemi. Dragonflies patrol the still edges of ponds, and fireflies have given way to the flash of lightning bugs in mountain villages. The rice paddies have deepened to a vivid green, the stalks robust and beginning to form their first grain heads.",
+      "seasonal_produce": {
+        "fruits": [
+          "white peach",
+          "sudachi",
+          "early pear",
+          "passion fruit"
+        ],
+        "vegetables": [
+          "bitter melon",
+          "okra",
+          "shiso leaves",
+          "edamame"
+        ],
+        "fish": [
+          "conger eel",
+          "yellowtail amberjack",
+          "squid"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "hiyashi sōmen",
+          "description": "Ice-cold wheat noodles served in chilled water with dipping sauce, the perfect antidote to days when even thinking feels like effort."
+        },
+        {
+          "name": "unagi no kabayaki",
+          "description": "Grilled freshwater eel glazed with sweet soy — traditionally eaten near the midsummer Doyo no Ushi no Hi to restore stamina against the draining heat."
+        },
+        {
+          "name": "goya no shiraae",
+          "description": "Bitter melon dressed in mashed tofu and sesame, its sharp bite cutting through the humidity's lethargy."
+        },
+        {
+          "name": "tako to kyūri no sunomono",
+          "description": "Thinly sliced octopus and cucumber in rice vinegar, cool and clean on the palate when appetite falters."
+        }
+      ],
+      "cultural_note": "This period often encompasses Doyo no Ushi no Hi, the midsummer Day of the Ox, when eating eel is believed to fortify the body against natsubate — summer fatigue. The custom dates to the Edo period, when a scholar reportedly advised an eel seller to promote his wares on this auspicious day. Shops still display banners and lines form early for prized wild unagi.",
+      "haiku": {
+        "japanese": "桐の実や空の青さに触れもせず",
+        "romaji": "kiri no mi ya / sora no aosa ni / fure mo sezu",
+        "english": "paulownia seeds — / not yet touching / the blue of sky"
+      },
+      "closing": "In the breathless noon, a single paulownia pod hangs motionless, already dreaming of autumn winds that will carry its seeds away."
+    },
+    "ja": {
+      "summary": "春に花を咲かせた桐が、盛夏の陽射しの中で初めての実を結び始める頃。",
+      "opening": "大気は重く、肌にも葉にもまとわりつく湿り気を帯びている。つい先頃まで紫の花房を揺らしていた桐の高枝には、青い実が膨らみ始めた。大暑の極まり。蝉は鳴き止むことを知らず、日陰に逃げ込んでも熱気は追いかけてくる。",
+      "nature_notes": "夕暮れにはひぐらしの声が加わり、昼のあぶらぜみの合唱に哀切な旋律を重ねる。蜻蛉が池のほとりを巡り、蛍の季節は山里の稲妻虫へと移った。田の稲は濃い緑を深め、穂が孕み始める気配がある。",
+      "seasonal_produce": {
+        "fruits": [
+          "白桃",
+          "すだち",
+          "早生梨",
+          "パッションフルーツ"
+        ],
+        "vegetables": [
+          "苦瓜",
+          "オクラ",
+          "大葉",
+          "枝豆"
+        ],
+        "fish": [
+          "穴子",
+          "鰤（わらさ）",
+          "烏賊"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "冷やしそうめん",
+          "description": "氷水に浮かべた素麺を薬味とともに啜る、思考すら億劫な日の涼味。"
+        },
+        {
+          "name": "鰻の蒲焼",
+          "description": "甘辛の煮詰めを纏った鰻を土用の丑の日に食し、夏負けに抗う江戸以来の知恵。"
+        },
+        {
+          "name": "ゴーヤーの白和え",
+          "description": "苦瓜の鮮烈な苦みを豆腐と胡麻が和らげ、湿気に鈍った体を目覚めさせる。"
+        },
+        {
+          "name": "蛸と胡瓜の酢の物",
+          "description": "薄切りの蛸と胡瓜を酢で締めた一品、食欲の落ちる頃にさっぱりと口を潤す。"
+        }
+      ],
+      "cultural_note": "この時期はしばしば土用の丑の日と重なる。鰻を食べて精をつける風習は江戸時代に始まり、今も鰻屋の前には行列が絶えない。かつては「う」のつく食べ物——梅干し、瓜、うどん——を食す習慣もあり、暑気払いの知恵が息づいている。",
+      "haiku": {
+        "japanese": "桐の実や空の青さに触れもせず",
+        "romaji": "kiri no mi ya / sora no aosa ni / fure mo sezu",
+        "english": "paulownia seeds — / not yet touching / the blue of sky"
+      },
+      "closing": "風の止んだ真昼、桐の実がひとつ、秋風を夢見るように静かに揺れている。"
+    },
+    "_sent_on": "2026-07-23"
   }
 }
