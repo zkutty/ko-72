@@ -2713,5 +2713,106 @@
       "closing": "陽が高くなる頃には露は消え、草の冷たさだけが足首にかすかに残っている。"
     },
     "_sent_on": "2026-09-08"
+  },
+  "50": {
+    "en": {
+      "summary": "The sharp, rhythmic calls of wagtails pierce the cool morning air as autumn's clarity settles over rivers and garden edges.",
+      "opening": "A wagtail lands on a stone by the stream, its tail dipping and rising in that restless rhythm that gives the bird its name. The air has thinned; sounds travel farther now, each call distinct against the quiet. Dew clings heavy to spider silk strung between rushes, catching the first pale light.",
+      "nature_notes": "Wagtails have descended from mountain streams to lowland rivers, their high-pitched cries announcing territorial claims along waterways. The rice paddies are golden-green, stalks bending under the weight of nearly ripe grain. Morning mists rise from valleys only to burn off by mid-morning, leaving skies of startling depth.",
+      "seasonal_produce": {
+        "fruits": [
+          "Pione grapes",
+          "Shine Muscat grapes",
+          "Japanese pear (nashi)",
+          "Early persimmon (kaki)"
+        ],
+        "vegetables": [
+          "Matsutake mushroom",
+          "Ginkgo nuts (ginnan)",
+          "Shimeji mushroom",
+          "Japanese sweet potato"
+        ],
+        "fish": [
+          "Pacific saury (sanma)",
+          "Returning bonito (modori-gatsuo)",
+          "Japanese sea bass (suzuki)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "Ginnan no shioyaki",
+          "description": "Ginkgo nuts roasted in their shells until they pop open, releasing their jade-colored kernels — the first taste of deep autumn's arrival."
+        },
+        {
+          "name": "Shimeji to tofu no sumashijiru",
+          "description": "A clear soup of shimeji mushrooms and silken tofu, its clean broth echoing the clarified air of these September mornings."
+        },
+        {
+          "name": "Nashi no shira-ae",
+          "description": "Crisp Japanese pear dressed in silken tofu and sesame, a dish that captures the season's balance of sweetness and restraint."
+        },
+        {
+          "name": "Matsutake gohan",
+          "description": "Rice steamed with precious matsutake mushrooms, their forest-floor fragrance filling the kitchen with autumn's most anticipated scent."
+        }
+      ],
+      "cultural_note": "Mid-September marks the approach of Tsukimi, the autumn moon-viewing tradition. Families begin preparing by gathering susuki grass for arrangements and planning offerings of tsukimi-dango. The wagtail's song, clear and carrying, was traditionally heard as a voice calling attention to the perfected beauty of this season's moon.",
+      "haiku": {
+        "japanese": "鶺鴒の声の透けゆく朝の川",
+        "romaji": "sekirei no / koe no sukeyuku / asa no kawa",
+        "english": "wagtail's cry / passing clear through / the morning river"
+      },
+      "closing": "The wagtail lifts from its stone, a flash of white and grey, and the silence it leaves behind is sharper than before."
+    },
+    "ja": {
+      "summary": "川辺に鶺鴒の澄んだ声が響き、秋の透明な空気が朝ごとに深まる頃。",
+      "opening": "川石の上で鶺鴒が尾を振る。チチッ、チチッと高い声が水面を渡り、対岸の葦まで届く。朝露が蜘蛛の糸に数珠なりに光り、空気は薄く冷たく、遠くの音までよく聞こえる季節になった。",
+      "nature_notes": "鶺鴒は山間の渓流から里の川へ下り、縄張りを主張して鳴き交わす。田の稲穂は頭を垂れ始め、黄金色へと色づきつつある。朝靄は谷間から立ち昇るが、日が高くなれば消え、抜けるような青空が広がる。",
+      "seasonal_produce": {
+        "fruits": [
+          "ピオーネ",
+          "シャインマスカット",
+          "梨",
+          "早生柿"
+        ],
+        "vegetables": [
+          "松茸",
+          "銀杏",
+          "しめじ",
+          "薩摩芋"
+        ],
+        "fish": [
+          "秋刀魚",
+          "戻り鰹",
+          "鱸"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "銀杏の塩焼き",
+          "description": "殻ごと炒って弾けさせ、翡翠色の実を塩で食す——秋の深まりを告げる酒肴の定番。"
+        },
+        {
+          "name": "しめじと豆腐の澄まし汁",
+          "description": "しめじの香りと絹ごし豆腐を澄んだ出汁で仕立てた椀物、朝の清涼な空気そのもの。"
+        },
+        {
+          "name": "梨の白和え",
+          "description": "しゃりりとした梨を豆腐と胡麻で和えた一品、甘さと抑制の調和が秋らしい。"
+        },
+        {
+          "name": "松茸ご飯",
+          "description": "待ちに待った松茸を炊き込んだご飯、台所に満ちる森の香りが秋本番を告げる。"
+        }
+      ],
+      "cultural_note": "九月半ばは月見の支度が始まる頃。薄を摘み、月見団子の準備をし、澄んだ夜空に浮かぶ名月を待つ。鶺鴒の澄んだ声は、古くからこの時季の月の美しさを告げるものとされてきた。",
+      "haiku": {
+        "japanese": "鶺鴒の声の透けゆく朝の川",
+        "romaji": "sekirei no / koe no sukeyuku / asa no kawa",
+        "english": "wagtail's cry / passing clear through / the morning river"
+      },
+      "closing": "鶺鴒が石を離れ、白と灰色の影が川面をかすめてゆく——残された静けさは、一層深い。"
+    },
+    "_sent_on": "2026-09-13"
   }
 }

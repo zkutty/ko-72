@@ -260,6 +260,15 @@
     "peak": "Late summer into early autumn, when the first cool nights arrive",
     "source": "early pear"
   },
+  "early-persimmon-kaki": {
+    "category": "fruit",
+    "name_en": "Early persimmon",
+    "name_jp": "早柿",
+    "name_romaji": "hayagaki",
+    "note": "These first persimmons of the season arrive while summer's heat still lingers, their flesh firm and crisp rather than the jammy softness of later varieties — a clean sweetness with faint astringency at the edges. In the old calendar, their appearance signals the pivot from abundance to gathering, the kitchen's attention turning toward preservation and the coming months of scarcity.",
+    "peak": "Late summer into early autumn, when the first cool nights begin to concentrate the sugars",
+    "source": "Early persimmon (kaki)"
+  },
   "edamame": {
     "category": "vegetable",
     "name_en": "Edamame",
@@ -331,6 +340,15 @@
     "note": "Beneath their notoriously pungent flesh, these jade-green kernels offer a texture between chestnut and edamame, with a faint bitterness that deepens when skewered and salt-grilled over charcoal. Threaded onto pine needles in kaiseki courses or scattered through chawanmushi, they mark the turning toward winter with their almost resinous warmth.",
     "peak": "Late autumn, when the first hard frosts sweeten the fallen seeds",
     "source": "Ginkgo nuts"
+  },
+  "ginkgo-nuts-ginnan": {
+    "category": "vegetable",
+    "name_en": "Ginkgo nut",
+    "name_jp": "銀杏",
+    "name_romaji": "ginnan",
+    "note": "These jade-green kernels, encased in shells that crack with a satisfying pop, carry a faintly bitter, almost piney sweetness and a texture between chestnut and pine nut. Threaded onto skewers for yakitori or tucked into chawanmushi, they mark the shift toward warming foods as autumn deepens into early winter.",
+    "peak": "Late autumn, when ginkgo leaves turn golden and carpet temple grounds",
+    "source": "Ginkgo nuts (ginnan)"
   },
   "grape": {
     "category": "fruit",
@@ -513,6 +531,24 @@
     "note": "These small stone fruits arrive with flesh that ranges from honey-gold to deep crimson, their skin taut and faintly dusty, yielding to a sweetness edged with bright acidity. They appear just as the rainy season lifts, a fleeting bridge between the heaviness of tsuyu and the blazing days of true summer.",
     "peak": "Early summer through mid-summer, when cicadas first test their voices",
     "source": "プラム (Japanese plum)"
+  },
+  "japanese-sea-bass-suzuki": {
+    "category": "fish",
+    "name_en": "Japanese sea bass",
+    "name_jp": "鱸",
+    "name_romaji": "suzuki",
+    "note": "A sleek predator with translucent white flesh that firms beautifully when blanched and shocked in ice water — the classic arai preparation that defines summer eating. The fish grows through three name-changes as it matures, and catching one at peak season, fat from chasing sweetfish upstream, marks the true arrival of natsu.",
+    "peak": "Early summer through the height of the rainy season, when the fish enter estuaries",
+    "source": "Japanese sea bass (suzuki)"
+  },
+  "japanese-sweet-potato": {
+    "category": "vegetable",
+    "name_en": "Japanese sweet potato",
+    "name_jp": "薩摩芋",
+    "name_romaji": "satsumaimo",
+    "note": "The flesh beneath its purple-red skin turns from pale yellow to deep gold when roasted slowly, releasing a caramelized sweetness that needs nothing more. Street vendors' stone-roasting carts appear as the air sharpens, their calls of 'yaki-imo' marking autumn's transition into winter as reliably as falling leaves.",
+    "peak": "Late autumn through early winter, when the first frosts concentrate the sugars",
+    "source": "Japanese sweet potato"
   },
   "kabocha-squash": {
     "category": "vegetable",
@@ -1038,6 +1074,15 @@
     "note": "Small, ivory bulbs with a sharp bite somewhere between shallot and garlic, harvested before the humidity settles in. Pickled in sweet vinegar, they become the bright, crunchy counterpoint to rich summer curries — a preserve that carries the edge of June through the sweltering months ahead.",
     "peak": "Early summer, when the tsuyu rains draw near",
     "source": "Rakkyo (scallion bulbs)"
+  },
+  "returning-bonito-modori-gatsuo": {
+    "category": "fish",
+    "name_en": "Returning bonito",
+    "name_jp": "戻り鰹",
+    "name_romaji": "modori-gatsuo",
+    "note": "These bonito have spent summer feeding in cold Sanriku seas and now carry twice the fat of their spring selves — flesh dark as aged wood, rich enough to eat as sashimi with nothing but a whisper of ginger and ponzu. Where spring's hatsu-gatsuo announces arrival with lean, bright vigor, autumn's returning fish closes the circle, prized for the quiet depth that fattening brings.",
+    "peak": "Early autumn, when the fish return south fat with northern waters",
+    "source": "Returning bonito (modori-gatsuo)"
   },
   "sake-salmon": {
     "category": "fish",

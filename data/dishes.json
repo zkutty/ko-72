@@ -135,6 +135,14 @@
     "season": "High summer, when the vines hang heavy with knobbled green fruit",
     "source": "gōya champurū"
   },
+  "ginnan-no-shioyaki": {
+    "name_en": "Salt-roasted ginkgo nuts",
+    "name_jp": "銀杏の塩焼き",
+    "name_romaji": "ginnan no shioyaki",
+    "note": "Whole ginkgo nuts are roasted in their thin shells with coarse salt until the shells crack and the jade-colored flesh inside turns faintly translucent. The nuts appear just as the ichō leaves flame yellow along temple paths, their mild bitterness and waxy texture a fleeting pleasure before the trees stand bare.",
+    "season": "Late autumn, when ginkgo trees drop their fruit",
+    "source": "Ginnan no shioyaki"
+  },
   "goya-no-shiraae": {
     "name_en": "Bitter melon with tofu dressing",
     "name_jp": "ゴーヤの白和え",
@@ -423,6 +431,14 @@
     "season": "Early autumn, when the first pears ripen and the air turns dry",
     "source": "Nashi no mizore-ae"
   },
+  "nashi-no-shira-ae": {
+    "name_en": "Pear dressed in white tofu",
+    "name_jp": "梨の白和え",
+    "name_romaji": "nashi no shira-ae",
+    "note": "Crisp Asian pear is cut into matchsticks and folded into a silken dressing of mashed tofu seasoned with white sesame, mirin, and a whisper of salt. The dish appears when nashi reach their peak sweetness in late August and September, their grainy-wet texture playing against the cloud-soft tofu — a way of honoring the fruit before the trees go bare.",
+    "season": "Early autumn, as the first nashi pears ripen",
+    "source": "Nashi no shira-ae"
+  },
   "nashi-no-shirazuae": {
     "name_en": "Pear in white tofu dressing",
     "name_jp": "梨の白和え",
@@ -558,6 +574,14 @@
     "note": "Tiny brackish clams simmered just until they open, their briny liquor mingling with white miso into a broth both murky and clean. The dish appears when the body most craves gentle restoration — after winter's heaviest drinking, the shijimi's liver-soothing properties have made this soup the quiet morning remedy of sake country for generations.",
     "season": "Late winter through early spring, when rivers run cold and clear",
     "source": "Shijimi no misoshiru"
+  },
+  "shimeji-to-tofu-no-sumashijiru": {
+    "name_en": "Clear soup with shimeji mushrooms and tofu",
+    "name_jp": "しめじと豆腐の澄まし汁",
+    "name_romaji": "shimeji to tofu no sumashijiru",
+    "note": "A delicate dashi-based broth served with clusters of shimeji mushrooms and cubes of silken tofu, its clarity meant to showcase rather than mask the ingredients. Shimeji emerge with the autumn rains, their faint nuttiness a quiet signal that summer's heaviness has lifted and the palate now craves restraint.",
+    "season": "Early autumn, as the first cool nights settle in",
+    "source": "Shimeji to tofu no sumashijiru"
   },
   "shin-ninniku-no": {
     "name_en": "New garlic pickled in soy sauce",
