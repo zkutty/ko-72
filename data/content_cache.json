@@ -2814,5 +2814,106 @@
       "closing": "鶺鴒が石を離れ、白と灰色の影が川面をかすめてゆく——残された静けさは、一層深い。"
     },
     "_sent_on": "2026-09-13"
+  },
+  "51": {
+    "en": {
+      "summary": "The swallows that arrived in spring now gather on telephone wires at dusk, preparing their long journey south as the air carries the first true coolness of autumn.",
+      "opening": "In the slanting light of mid-September evenings, swallows congregate in restless flocks, their calls sharp against the deepening blue. The air has shifted — no longer the heavy humidity of summer, but something thinner, cleaner, carrying the faint sweetness of ripening persimmons from nearby orchards. One feels the year beginning its slow turn inward.",
+      "nature_notes": "Swallows perch in long rows along power lines, their numbers swelling each evening before they disappear southward by month's end. Silver grass (susuki) catches the low sun along riverbanks and hillsides, its plumes just beginning to unfurl. The cicada chorus has fallen silent, replaced by the evening songs of bell crickets and pine crickets, their delicate trilling carrying through open windows.",
+      "seasonal_produce": {
+        "fruits": [
+          "Pione grape",
+          "Shine Muscat grape",
+          "Nijisseiki pear (Asian pear)",
+          "Kaki (persimmon) — early varieties"
+        ],
+        "vegetables": [
+          "Matsutake (pine mushroom)",
+          "Renkon (lotus root)",
+          "Shimeji mushroom",
+          "Shungiku (garland chrysanthemum)"
+        ],
+        "fish": [
+          "Sanma (Pacific saury)",
+          "Saba (mackerel)",
+          "Kinmedai (golden-eye snapper)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "Sanma no tsukeyaki",
+          "description": "Pacific saury marinated in soy and mirin before grilling, the sweet glaze caramelizing against the fish's natural oils as autumn appetites deepen."
+        },
+        {
+          "name": "Kuri gohan",
+          "description": "Freshly harvested chestnuts steamed with rice and a touch of salt, their subtle sweetness embodying the quiet abundance of early autumn."
+        },
+        {
+          "name": "Kinoko no takikomi gohan",
+          "description": "Mixed rice cooked with an assortment of autumn mushrooms including shimeji and maitake, fragrant with the forest floor after rain."
+        },
+        {
+          "name": "Renkon no hasami-age",
+          "description": "Lotus root slices sandwiching seasoned meat, battered and fried — the satisfying crunch echoing the crispness arriving in the autumn air."
+        }
+      ],
+      "cultural_note": "This micro-season marks the departure of swallows, birds long considered auspicious in Japan. Farmhouses traditionally welcomed their nesting under eaves, believing they brought good fortune and protected against fire. Their leaving signals autumn's true arrival, and in old farming villages, people would note the day of their departure as carefully as their spring return — a living calendar written in wing and sky.",
+      "haiku": {
+        "japanese": "燕去る空に残りし風の道",
+        "romaji": "Tsubame saru / sora ni nokorishi / kaze no michi",
+        "english": "Swallows depart — / left behind in the sky / a road of wind"
+      },
+      "closing": "Where the swallows gathered yesterday, only the wire sways gently, holding the memory of wings."
+    },
+    "ja": {
+      "summary": "春に渡ってきた燕が電線に群れをなし、夕暮れ時に鳴き交わしながら南への旅支度を整える頃、空気には初めての秋の涼しさが混じる。",
+      "opening": "九月半ばの傾いた陽の中、燕たちが落ち着きなく群れを成す。その声は暮れなずむ空に鋭く響く。空気は変わった——夏の重たい湿気ではなく、どこか薄く澄んで、近くの果樹園から熟れゆく柿の甘い香りがかすかに漂う。一年がゆっくりと内へ向かい始める気配がある。",
+      "nature_notes": "燕は電線に長く並んで止まり、夕方ごとにその数を増やしては、月末までに南へと姿を消す。川辺や丘の斜面では薄（すすき）が低い陽を受けて銀色に光り、穂がようやくほどけ始めている。蝉の合唱は途絶え、代わりに鈴虫や松虫の澄んだ音色が開け放った窓から流れ込んでくる。",
+      "seasonal_produce": {
+        "fruits": [
+          "ピオーネ",
+          "シャインマスカット",
+          "二十世紀梨",
+          "柿（早生種）"
+        ],
+        "vegetables": [
+          "松茸",
+          "蓮根",
+          "しめじ",
+          "春菊"
+        ],
+        "fish": [
+          "秋刀魚",
+          "鯖",
+          "金目鯛"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "秋刀魚の漬け焼き",
+          "description": "醤油と味醂に漬け込んだ秋刀魚を香ばしく焼き上げ、脂の乗った身に甘辛いたれが絡む、秋の食欲を呼び覚ます一品。"
+        },
+        {
+          "name": "栗ご飯",
+          "description": "ほっくりとした新栗を塩少々で炊き込んだご飯、素朴な甘みが初秋の静かな実りを伝える。"
+        },
+        {
+          "name": "きのこの炊き込みご飯",
+          "description": "しめじや舞茸など秋のきのこを贅沢に炊き込み、雨上がりの山の香りを食卓に届ける。"
+        },
+        {
+          "name": "蓮根のはさみ揚げ",
+          "description": "蓮根で肉餡を挟み衣をつけて揚げた料理、歯切れの良い食感が秋風の爽やかさと呼応する。"
+        }
+      ],
+      "cultural_note": "燕は古くから瑞鳥とされ、農家では軒下に巣を作ることを歓迎した。火難を防ぎ、福を呼ぶと信じられていたからである。燕が去る日は、春に戻ってくる日と同様に暦の節目として大切にされてきた。電線に並ぶ燕の姿が日ごとに減っていく様は、翼と空が記す生きた暦そのものである。",
+      "haiku": {
+        "japanese": "燕去る空に残りし風の道",
+        "romaji": "Tsubame saru / sora ni nokorishi / kaze no michi",
+        "english": "Swallows depart — / left behind in the sky / a road of wind"
+      },
+      "closing": "昨日まで燕が止まっていた電線が、わずかに揺れて、翼の記憶を留めている。"
+    },
+    "_sent_on": "2026-09-18"
   }
 }

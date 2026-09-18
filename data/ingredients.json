@@ -577,6 +577,15 @@
     "peak": "Late summer through early autumn, when the green rind holds its sharpest fragrance",
     "source": "Kabosu citrus"
   },
+  "kaki-persimmon-early-varieties": {
+    "category": "fruit",
+    "name_en": "Persimmon",
+    "name_jp": "柿",
+    "name_romaji": "kaki",
+    "note": "Early varieties like Saijo and Nishimura-wase offer a firm, almost crisp flesh with a honeyed sweetness that intensifies after a light frost — the astringency of unripe fruit transformed into something purely clean. In Japan, the first persimmons signal that summer's heaviness has finally lifted, their bright orange forms appearing on branches just as the kitchen turns toward simmered dishes and the warmth of tea.",
+    "peak": "Early autumn, when the first cool nights arrive",
+    "source": "Kaki (persimmon) — early varieties"
+  },
   "katsuo-skipjack-tuna-returning-run": {
     "category": "fish",
     "name_en": "Skipjack tuna",
@@ -594,6 +603,15 @@
     "note": "The lean white flesh is almost transparent, mild to the point of sweetness, but it is the liver — creamy, rich as foie gras, tinged faintly orange — that devotees prize, mashed into soy sauce as a dipping medium for the sashimi. As autumn turns and the filefish fattens its liver against winter, sushi counters in Tokyo quietly shift their attention from summer's light catches to this homely fish with its sandpaper skin.",
     "peak": "Late autumn into early winter, when the liver swells with fat before the deep cold",
     "source": "Kawahagi (filefish)"
+  },
+  "kinmedai-golden-eye-snapper": {
+    "category": "fish",
+    "name_en": "Golden-eye snapper",
+    "name_jp": "金目鯛",
+    "name_romaji": "kinmedai",
+    "note": "A deep-sea fish with luminous crimson skin and large golden eyes, prized for flesh that turns silken and sweet when simmered in soy and ginger. In the Izu Peninsula, a whole kinmedai nitsuke marks winter's quiet celebrations, its rich oils a defense against the cold before spring's lighter fare arrives.",
+    "peak": "Late winter through early spring, when cold currents concentrate its fat",
+    "source": "Kinmedai (golden-eye snapper)"
   },
   "kisu-japanese-whiting": {
     "category": "fish",
@@ -774,6 +792,15 @@
     "note": "Emerging from the duff beneath aged red pines, matsutake releases a scent both spicy and resinous — somewhere between cinnamon bark and wet stone — that no other mushroom possesses. Its arrival marks the threshold of autumn's deepest turn, celebrated in dobinmushi, where the fragrance rises with the steam from a lidded teapot, carrying the forest to the table.",
     "peak": "Early to mid-autumn, when the first cold rains settle into red pine forests",
     "source": "Matsutake mushrooms"
+  },
+  "matsutake-pine-mushroom": {
+    "category": "vegetable",
+    "name_en": "Matsutake",
+    "name_jp": "松茸",
+    "name_romaji": "matsutake",
+    "note": "This dense, ivory-fleshed mushroom releases a fragrance unlike any other — spicy, almost cinnamon-like, with an undertone of wet forest floor that perfumers have tried and failed to capture. Its arrival beneath the pines marks the true beginning of autumn's table, celebrated in dobinmushi broth where the aroma rises with the steam.",
+    "peak": "Early autumn, when the first cool winds move through red pine forests",
+    "source": "Matsutake (pine mushroom)"
   },
   "mikan-late-variety": {
     "category": "fruit",
@@ -985,6 +1012,15 @@
     "peak": "Early autumn, when the first cool nights arrive",
     "source": "Nijisseiki pear (20th century pear)"
   },
+  "nijisseiki-pear-asian-pear": {
+    "category": "fruit",
+    "name_en": "Nijisseiki pear",
+    "name_jp": "二十世紀梨",
+    "name_romaji": "nijisseiki nashi",
+    "note": "Named 'twentieth century' for a future that has now become nostalgia, this pale jade sphere yields flesh so water-laden it seems to dissolve on the tongue, its sweetness restrained, almost austere. In the old fruit-giving season of early autumn, a chilled nijisseiki appears on lacquer plates to close a meal—its crisp bite a small ceremony marking summer's quiet departure.",
+    "peak": "Early autumn, as the century turns toward its golden afternoons",
+    "source": "Nijisseiki pear (Asian pear)"
+  },
   "okra": {
     "category": "vegetable",
     "name_en": "Okra",
@@ -1075,6 +1111,15 @@
     "peak": "Early summer, when the tsuyu rains draw near",
     "source": "Rakkyo (scallion bulbs)"
   },
+  "renkon-lotus-root": {
+    "category": "vegetable",
+    "name_en": "Lotus root",
+    "name_jp": "蓮根",
+    "name_romaji": "renkon",
+    "note": "Sliced crosswise, its lacework of air pockets holds dashi or vinegar in every chamber — the crunch stays bright even after simmering. At New Year, those same holes become symbols of clear vision into the year ahead, stacked in jubako boxes alongside other auspicious roots.",
+    "peak": "Late autumn through winter, when cold firms the flesh and concentrates the starch",
+    "source": "Renkon (lotus root)"
+  },
   "returning-bonito-modori-gatsuo": {
     "category": "fish",
     "name_en": "Returning bonito",
@@ -1083,6 +1128,15 @@
     "note": "These bonito have spent summer feeding in cold Sanriku seas and now carry twice the fat of their spring selves — flesh dark as aged wood, rich enough to eat as sashimi with nothing but a whisper of ginger and ponzu. Where spring's hatsu-gatsuo announces arrival with lean, bright vigor, autumn's returning fish closes the circle, prized for the quiet depth that fattening brings.",
     "peak": "Early autumn, when the fish return south fat with northern waters",
     "source": "Returning bonito (modori-gatsuo)"
+  },
+  "saba-mackerel": {
+    "category": "fish",
+    "name_en": "Mackerel",
+    "name_jp": "鯖",
+    "name_romaji": "saba",
+    "note": "The blue-green shimmer of its skin gives way to rich, oily meat that practically melts against the tongue — autumn saba carries a depth of flavor that leaner summer fish cannot match. Salted and grilled until the skin blisters, or cured in vinegar for shime-saba, it marks the turn toward hearty cooking as kitchens prepare for the long cold.",
+    "peak": "Late autumn through winter, when cold currents fatten the flesh",
+    "source": "Saba (mackerel)"
   },
   "sake-salmon": {
     "category": "fish",
@@ -1302,6 +1356,15 @@
     "note": "Each leaf carries a sharp, almost medicinal brightness—part mint, part basil, part something wilder—that cuts through the humidity of summer meals, wrapped around sashimi or torn into cold somen. The red variety colors umeboshi in June's pickling season, while green shiso appears beside every raw fish offering, a quiet signal that the kitchen is awake to the season.",
     "peak": "Early summer through the lingering heat, when leaves grow broad and fragrant",
     "source": "shiso (perilla leaves)"
+  },
+  "shungiku-garland-chrysanthemum": {
+    "category": "vegetable",
+    "name_en": "Garland chrysanthemum",
+    "name_jp": "春菊",
+    "name_romaji": "shungiku",
+    "note": "These serrated leaves carry a bracing, almost medicinal bitterness softened by an unexpected floral sweetness, their tender stems snapping cleanly between the teeth. Tossed into bubbling nabemono in the final moments of cooking, shungiku wilts to silken ribbons that cut through the richness of fatty beef or pork, a bright green counterpoint in the steamiest months of the Japanese table.",
+    "peak": "Late autumn through winter, when frost sweetens the leaves",
+    "source": "Shungiku (garland chrysanthemum)"
   },
   "silk-pod-peas": {
     "category": "vegetable",

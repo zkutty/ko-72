@@ -303,6 +303,14 @@
     "season": "Late spring through early summer, when the first bonito run north along the Pacific coast",
     "source": "Katsuo no tataki"
   },
+  "kinoko-no-takikomi-gohan": {
+    "name_en": "Mixed mushroom rice",
+    "name_jp": "茸の炊き込みご飯",
+    "name_romaji": "kinoko no takikomi gohan",
+    "note": "Rice simmered with an assortment of autumn mushrooms — maitake, shimeji, shiitake — in dashi and soy, the grains absorbing the woodsy, faintly mineral broth until tender and fragrant. The dish arrives when matsutake hunters return from mountain forests and market stalls overflow with fungi still carrying the scent of fallen leaves and damp earth.",
+    "season": "Early to mid-autumn, when wild mushrooms emerge after the first cool rains",
+    "source": "Kinoko no takikomi gohan"
+  },
   "kinusaya-to-ebi-no-itame": {
     "name_en": "Stir-fried snow peas and shrimp",
     "name_jp": "絹さやと海老の炒め",
@@ -318,6 +326,14 @@
     "note": "Delicate fillets of kisu, a slender white-fleshed fish prized for its clean sweetness, are dipped in cold batter and fried until the coating crisps to pale gold while the flesh stays almost translucent. The fish appears in coastal markets just as the rainy season lifts, its lightness a welcome counterpoint to the humidity — eaten with a pinch of salt rather than heavy sauce, it tastes of the bright days finally arriving.",
     "season": "Early summer, when the shallows warm and the fish run silver",
     "source": "Kisu no tempura"
+  },
+  "kuri-gohan": {
+    "name_en": "Chestnut rice",
+    "name_jp": "栗ご飯",
+    "name_romaji": "kuri gohan",
+    "note": "Short-grain rice steamed with peeled chestnuts, seasoned only with salt and a splash of sake to let the nuts' subtle sweetness come through. The dish arrives when the first chestnuts drop in mountain villages, their spiny burrs splitting open on forest floors — a sign that the lingering heat has finally broken.",
+    "season": "Early to mid-autumn, when wild chestnuts fall from mountain trees",
+    "source": "Kuri gohan"
   },
   "kuri-kinton": {
     "name_en": "Sweet chestnut paste",
@@ -495,6 +511,14 @@
     "season": "Late spring to early summer, when rakkyo bulbs emerge from sandy soil",
     "source": "rakkyo no amazuzuke"
   },
+  "renkon-no-hasami-age": {
+    "name_en": "Deep-fried lotus root sandwiches",
+    "name_jp": "蓮根の挟み揚げ",
+    "name_romaji": "renkon no hasami-age",
+    "note": "Thin rounds of lotus root are pressed around seasoned minced meat or shrimp, dipped in batter, and fried until the edges crisp while the centers remain faintly crisp-tender. The dish appears as autumn deepens and lotus roots are dug from muddy pond beds, their lace-like cross-sections revealing the channels through which Buddhist teachings say prayers pass from this world to the next.",
+    "season": "Late autumn through winter, when lotus roots are starch-sweet from the cold",
+    "source": "Renkon no hasami-age"
+  },
   "sake-no-chanchan-yaki": {
     "name_en": "Salmon grilled with miso and vegetables",
     "name_jp": "鮭のちゃんちゃん焼き",
@@ -518,6 +542,14 @@
     "note": "Whole saury rubbed with coarse salt and grilled over high flame until the skin blisters and the belly fat drips hissing onto the coals. The fish appears in markets just as the harvest moon rises and sudachi citrus ripens on the branch — the two arrive together, one to cut the richness of the other.",
     "season": "Early autumn, when saury run fat with oils from northern waters",
     "source": "Sanma no shioyaki"
+  },
+  "sanma-no-tsukeyaki": {
+    "name_en": "Grilled Pacific saury in sweet soy marinade",
+    "name_jp": "秋刀魚の漬け焼き",
+    "name_romaji": "sanma no tsukeyaki",
+    "note": "The fish is steeped in a mixture of soy sauce, mirin, and sake before being grilled until the skin blisters and the glaze caramelizes into sticky, faintly bitter edges. Sanma arrive with the autumn equinox, their oil-rich flesh a fleeting abundance that Japanese cooks have long honored — the kanji 秋刀魚 itself means 'autumn sword fish,' naming both the season and the blade-thin silhouette that flashes silver in September markets.",
+    "season": "Early to mid-autumn, when sanma run fat along the Sanriku coast",
+    "source": "Sanma no tsukeyaki"
   },
   "sanma-no-tsumire-jiru": {
     "name_en": "Pacific saury fish-ball soup",
