@@ -2915,5 +2915,98 @@
       "closing": "昨日まで燕が止まっていた電線が、わずかに揺れて、翼の記憶を留めている。"
     },
     "_sent_on": "2026-09-18"
+  },
+  "52": {
+    "en": {
+      "summary": "The summer storms have ended; after months of dramatic thunder, the sky falls into a deep, resonant quiet.",
+      "opening": "The last rumble of summer thunder has rolled beyond the mountains, leaving behind a stillness so complete it seems to have weight. Morning air carries a new crispness, and the light — no longer the harsh glare of August — slants golden through persimmon leaves. This is the autumnal equinox, when day and night hold equal measure, and the sky finally rests.",
+      "nature_notes": "Dragonflies patrol the paddies in greater numbers now, their wings catching the softer light. The cicadas have nearly finished their chorus, replaced by the gentler stridulation of bell crickets in the evening grass. Susuki grass plumes silver at the edges of fields, and the first spider lilies push their crimson stalks through the cooling earth.",
+      "seasonal_produce": {
+        "fruits": [
+          "Pear (nashi)",
+          "Kyoho grape",
+          "Persimmon (early varieties)",
+          "Sudachi citrus"
+        ],
+        "vegetables": [
+          "Ginkgo nut",
+          "Taro (satoimo)",
+          "Matsutake mushroom",
+          "Shungiku (chrysanthemum greens)"
+        ],
+        "fish": [
+          "Pacific saury (sanma)",
+          "Salmon (aki-sake)",
+          "Spanish mackerel (sawara)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "Ohagi",
+          "description": "Soft rice balls coated in sweet azuki bean paste, prepared for the autumn equinox week to honor ancestors during Ohigan."
+        },
+        {
+          "name": "Ginkgo rice (ginnan gohan)",
+          "description": "Fragrant rice studded with jade-green ginkgo nuts, their slight bitterness marking autumn's deepening."
+        },
+        {
+          "name": "Shungiku no goma-ae",
+          "description": "Chrysanthemum greens dressed in sesame, their faintly astringent flavor echoing the season's turn toward contemplation."
+        }
+      ],
+      "cultural_note": "This micro-season falls within Ohigan, the week-long Buddhist observance centered on the autumn equinox. Families visit ancestral graves, clearing away summer's overgrowth and offering fresh flowers — often the crimson spider lilies that bloom precisely now. The word 'higan' means 'the other shore,' and the equinox, poised between light and dark, is thought to bring the living and dead closer together.",
+      "haiku": {
+        "japanese": "雷去りて空の底まで澄みにけり",
+        "romaji": "kaminari sarite / sora no soko made / sumi ni keri",
+        "english": "Thunder has departed — / the sky clears all the way down / to its very floor"
+      },
+      "closing": "In the hush where thunder once lived, the bell cricket begins its silver thread of song."
+    },
+    "ja": {
+      "summary": "夏の雷が遠ざかり、空が静けさを取り戻す頃——秋分を迎え、昼と夜が等しく釣り合う。",
+      "opening": "幾度となく夏空を裂いた雷鳴が、いつしか山の向こうへ消えていった。朝の空気には涼やかな芯が通り、陽の光は柿の葉を透かして黄金色に傾く。秋分——昼と夜が同じ長さで並び立つこの日、空はようやく深い静寂を得る。",
+      "nature_notes": "赤蜻蛉が稲穂の上を悠々と巡り、夕暮れの草むらでは鈴虫の音色が響く。蝉の声はほとんど絶え、代わりに虫の合奏が夜を満たす。野辺には薄の穂が銀色に揺れ、彼岸花が畦道に緋色の炎を灯し始める。",
+      "seasonal_produce": {
+        "fruits": [
+          "梨",
+          "巨峰",
+          "柿（早生）",
+          "酢橘"
+        ],
+        "vegetables": [
+          "銀杏",
+          "里芋",
+          "松茸",
+          "春菊"
+        ],
+        "fish": [
+          "秋刀魚",
+          "秋鮭",
+          "鰆"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "おはぎ",
+          "description": "もち米を小豆餡で包んだ素朴な甘味、秋のお彼岸に先祖を供養する心を込めて作られる。"
+        },
+        {
+          "name": "銀杏ご飯",
+          "description": "翡翠色の銀杏を炊き込んだご飯、ほろ苦さが深まる秋の味覚を告げる。"
+        },
+        {
+          "name": "春菊の胡麻和え",
+          "description": "独特の香りと微かな渋みを持つ春菊を胡麻で和え、秋の内省的な気配を食卓に添える。"
+        }
+      ],
+      "cultural_note": "この候は「秋彼岸」の只中にあたる。彼岸とは、秋分の日を中日として前後三日ずつ、計七日間を指す。人々は墓参りに訪れ、夏草を払い、真紅の彼岸花を供える。昼夜が等しく分かれるこの時、此岸と彼岸の距離が最も近づくと信じられてきた。",
+      "haiku": {
+        "japanese": "雷去りて空の底まで澄みにけり",
+        "romaji": "kaminari sarite / sora no soko made / sumi ni keri",
+        "english": "Thunder has departed — / the sky clears all the way down / to its very floor"
+      },
+      "closing": "雷の去った空の下、鈴虫が細い銀の糸を紡ぎ始める。"
+    },
+    "_sent_on": "2026-09-23"
   }
 }

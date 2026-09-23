@@ -135,6 +135,14 @@
     "season": "High summer, when the vines hang heavy with knobbled green fruit",
     "source": "gōya champurū"
   },
+  "ginkgo-rice-ginnan-gohan": {
+    "name_en": "Ginkgo nut rice",
+    "name_jp": "銀杏ご飯",
+    "name_romaji": "ginnan gohan",
+    "note": "Rice steamed with shelled ginkgo nuts, whose jade-green flesh turns faintly golden and yields a texture between chestnut and new potato. The nuts fall in October and November, gathered from beneath female trees on temple grounds and city sidewalks while their flesh still reeks of butyric acid — a brief, pungent season that demands immediate work with rubber gloves and running water.",
+    "season": "Late autumn, when ginkgo trees drop their fruit",
+    "source": "Ginkgo rice (ginnan gohan)"
+  },
   "ginnan-no-shioyaki": {
     "name_en": "Salt-roasted ginkgo nuts",
     "name_jp": "銀杏の塩焼き",
@@ -495,6 +503,14 @@
     "season": "High summer, when eggplants grow heavy on the vine",
     "source": "nasu no nibitashi"
   },
+  "ohagi": {
+    "name_en": "Sweet rice balls coated in red bean paste",
+    "name_jp": "おはぎ",
+    "name_romaji": "ohagi",
+    "note": "Glutinous rice is half-pounded to retain some grain texture, then shaped into ovals and wrapped in a thick layer of tsubuan — coarse sweet azuki paste with visible bean skins. The name itself invokes bush clover (hagi), whose small purple flowers scatter across autumn hillsides during the equinox week when families visit ancestral graves.",
+    "season": "Autumn equinox, during the higan observance",
+    "source": "Ohagi"
+  },
   "okra-no-ohitashi": {
     "name_en": "Chilled okra in seasoned broth",
     "name_jp": "オクラのおひたし",
@@ -686,6 +702,14 @@
     "note": "Cold silken tofu served unadorned save for ribbons of shiso leaf and paper-thin slices of myōga ginger, dressed with a thread of soy. Myōga pushes up its pale buds in the shade of July gardens, and shiso reaches its most aromatic just as the body craves something to cut through the thickness of summer air.",
     "season": "High summer, when the humidity settles in and the appetite turns away from heat",
     "source": "shiso to myōga no hiyayakko"
+  },
+  "shungiku-no-goma-ae": {
+    "name_en": "Chrysanthemum greens with sesame dressing",
+    "name_jp": "春菊の胡麻和え",
+    "name_romaji": "shungiku no goma-ae",
+    "note": "Blanched chrysanthemum greens are dressed in a paste of ground sesame seeds, soy sauce, and a touch of sugar, the bitter leaves made gentle by the nutty coating. The plant's name literally means 'spring chrysanthemum,' yet it reaches its peak after the first cold snaps of November, when the serrated leaves grow tender and their distinctive medicinal edge softens into something almost floral.",
+    "season": "Late autumn through winter, when frost sweetens the leaves",
+    "source": "Shungiku no goma-ae"
   },
   "soramame-no-shioyude": {
     "name_en": "Salt-boiled fava beans",

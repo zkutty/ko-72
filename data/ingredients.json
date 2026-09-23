@@ -332,6 +332,15 @@
     "peak": "Late spring, when the stalks reach full height before summer's weight",
     "source": "Fuki (butterbur)"
   },
+  "ginkgo-nut": {
+    "category": "vegetable",
+    "name_en": "Ginkgo nut",
+    "name_jp": "銀杏",
+    "name_romaji": "ginnan",
+    "note": "These jade-green kernels hide beneath a notoriously pungent flesh, their flavor somewhere between chestnut and edamame with a faintly bitter, almost resinous finish. Skewered and salt-grilled at yakitori stands or scattered like small gems through chawanmushi, they mark the weeks when Tokyo's ginkgo-lined streets turn briefly golden.",
+    "peak": "Late autumn, when ginkgo trees drop their golden fans and the air sharpens with first frost",
+    "source": "Ginkgo nut"
+  },
   "ginkgo-nuts": {
     "category": "vegetable",
     "name_en": "Ginkgo nut",
@@ -1048,6 +1057,24 @@
     "peak": "Early summer through late August, when subtropical vines heavy with fruit signal the height of southern warmth",
     "source": "passion fruit"
   },
+  "pear-nashi": {
+    "category": "fruit",
+    "name_en": "Japanese pear",
+    "name_jp": "梨",
+    "name_romaji": "nashi",
+    "note": "Unlike its Western cousin, the nashi offers a crisp, granular flesh that shatters between the teeth, its juice running cool and faintly honeyed with none of the butter-soft yield of European varieties. Chilled slices appear beside grilled sanma in early autumn, their clean sweetness a foil to the fish's rich oils as the season turns.",
+    "peak": "Late summer through early autumn, when the cicadas' chorus begins to thin",
+    "source": "Pear (nashi)"
+  },
+  "persimmon-early-varieties": {
+    "category": "fruit",
+    "name_en": "Persimmon",
+    "name_jp": "柿",
+    "name_romaji": "kaki",
+    "note": "Early varieties like Saijo and Hiratanenashi arrive while summer's warmth lingers, their flesh still firm with a delicate sweetness that has not yet deepened to honey. These first persimmons mark the quiet pivot of the year, appearing on doorsteps and shrine offerings as the light begins to slant golden through thinning leaves.",
+    "peak": "Early autumn, when the first cool nights draw sugars into the ripening fruit",
+    "source": "Persimmon (early varieties)"
+  },
   "pike-conger": {
     "category": "fish",
     "name_en": "Pike conger",
@@ -1164,6 +1191,15 @@
     "note": "These first cherries arrive small and taut-skinned, their flesh snapping with a brightness that leans more toward tartness than the honeyed depth of later harvests. They mark the threshold between spring's blossoms and summer's abundance — a fleeting sweetness eaten standing at the kitchen counter, stems still attached.",
     "peak": "Early summer, when the plum rains have yet to settle in",
     "source": "Sakuranbo (early cherries)"
+  },
+  "salmon-aki-sake": {
+    "category": "fish",
+    "name_en": "Salmon",
+    "name_jp": "秋鮭",
+    "name_romaji": "aki-sake",
+    "note": "These salmon return from the Sea of Okhotsk to their birth rivers just as the maple leaves begin to turn, their flesh leaner and cleaner than spring-caught fish, prized for its firm texture in dishes like chanko-nabe or simply salted and grilled until the skin blisters. The arrival of aki-sake marks the true beginning of autumn's harvest, when fishermen along the Ishikari River in Hokkaido work through dawn mists to meet the ancestral run.",
+    "peak": "Early to mid-autumn, when the first cold currents stir the northern rivers",
+    "source": "Salmon (aki-sake)"
   },
   "sanma-pacific-saury": {
     "category": "fish",
@@ -1357,6 +1393,15 @@
     "peak": "Early summer through the lingering heat, when leaves grow broad and fragrant",
     "source": "shiso (perilla leaves)"
   },
+  "shungiku-chrysanthemum-greens": {
+    "category": "vegetable",
+    "name_en": "Chrysanthemum greens",
+    "name_jp": "春菊",
+    "name_romaji": "shungiku",
+    "note": "These serrated leaves carry a bracing, almost medicinal bitterness and a floral musk that cuts through rich broths — the reason they appear in hot pots just as the first real chill settles in. In the logic of the Japanese table, shungiku arrives to balance the fattiness of winter cooking, its bright green a reminder of vitality when the garden has gone still.",
+    "peak": "Late autumn through winter, when cold deepens their fragrance",
+    "source": "Shungiku (chrysanthemum greens)"
+  },
   "shungiku-garland-chrysanthemum": {
     "category": "vegetable",
     "name_en": "Garland chrysanthemum",
@@ -1383,6 +1428,15 @@
     "note": "Named 'sky beans' for their upward-reaching pods, soramame are best eaten the day they're picked, when their jade-green flesh holds a grassy sweetness that fades within hours. Grilled whole in their woolly pods or simmered simply with salt, they mark the brief window between cherry blossoms and the plum rains.",
     "peak": "Late spring, as pods swell skyward in the warmth before tsuyu rains",
     "source": "Soramame (fava beans)"
+  },
+  "spanish-mackerel-sawara": {
+    "category": "fish",
+    "name_en": "Spanish mackerel",
+    "name_jp": "鰆",
+    "name_romaji": "sawara",
+    "note": "The sawara's flesh is pale and delicate, with a clean sweetness that takes well to Saikyo-miso curing — the white miso paste blooming into caramel edges under the broiler. Its very name contains the character for spring (春), though in the Inland Sea region it is equally treasured when caught plump in winter.",
+    "peak": "Late spring to early summer, when the fish return fat from their spawning migration",
+    "source": "Spanish mackerel (sawara)"
   },
   "spring-cabbage": {
     "category": "vegetable",
@@ -1590,6 +1644,15 @@
     "note": "Beneath its rough, hairy skin lies flesh so dense with starch it becomes almost custard-like when simmered, releasing a faint earthiness that clings to the teeth. These 'village potatoes' anchor the autumn table in nimono and ozoni, their sticky texture believed to bind families together through moon-viewing nights and the coming New Year.",
     "peak": "Early autumn through winter, when the first frost sweetens the flesh",
     "source": "Taro"
+  },
+  "taro-satoimo": {
+    "category": "vegetable",
+    "name_en": "Taro",
+    "name_jp": "里芋",
+    "name_romaji": "satoimo",
+    "note": "These small, hairy corms yield flesh so starchy it becomes almost glutinous when simmered, coating the tongue with an earthy sweetness that clings. Central to autumn moon-viewing offerings and winter nimono, satoimo marks the season when Japanese kitchens turn inward toward slow-braised comfort.",
+    "peak": "Early autumn through winter, when the first frost sweetens the corms",
+    "source": "Taro (satoimo)"
   },
   "tomato": {
     "category": "vegetable",
