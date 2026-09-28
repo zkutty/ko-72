@@ -80,6 +80,15 @@
     "peak": "Late spring through early summer, when the stems are still tender and the sap runs yellow",
     "source": "ashitaba"
   },
+  "asian-persimmon-kaki": {
+    "category": "fruit",
+    "name_en": "Asian persimmon",
+    "name_jp": "柿",
+    "name_romaji": "kaki",
+    "note": "The hachiya variety yields to the slightest pressure when truly ripe, its flesh collapsing into a honeylike sweetness that tastes faintly of cinnamon and dates. Persimmons hang on bare branches like paper lanterns after the leaves have fallen, their bright orange the last vivid color before winter's gray descends.",
+    "peak": "Late autumn, when the first frosts concentrate the sugars",
+    "source": "Asian persimmon (kaki)"
+  },
   "ayu-sweetfish": {
     "category": "fish",
     "name_en": "Sweetfish",
@@ -358,6 +367,15 @@
     "note": "These jade-green kernels, encased in shells that crack with a satisfying pop, carry a faintly bitter, almost piney sweetness and a texture between chestnut and pine nut. Threaded onto skewers for yakitori or tucked into chawanmushi, they mark the shift toward warming foods as autumn deepens into early winter.",
     "peak": "Late autumn, when ginkgo leaves turn golden and carpet temple grounds",
     "source": "Ginkgo nuts (ginnan)"
+  },
+  "ginko-nuts-ginnan": {
+    "category": "vegetable",
+    "name_en": "Ginkgo nut",
+    "name_jp": "銀杏",
+    "name_romaji": "ginnan",
+    "note": "Jade-colored kernels with a faintly resinous, bittersweet taste and a texture that yields like a firm cheese between the teeth. Skewered and salt-grilled at yakitori counters or scattered through chawanmushi, they mark the weeks when ginkgo avenues turn gold and the air carries the unmistakable tang of the fruit's outer flesh.",
+    "peak": "Late autumn, when the first hard frosts sweeten the fallen seeds",
+    "source": "Ginko nuts (ginnan)"
   },
   "grape": {
     "category": "fruit",
@@ -730,6 +748,15 @@
     "peak": "Late autumn through winter, when cold sharpens the starches",
     "source": "lotus root"
   },
+  "lotus-root-renkon": {
+    "category": "vegetable",
+    "name_en": "Lotus root",
+    "name_jp": "蓮根",
+    "name_romaji": "renkon",
+    "note": "Sliced crosswise, each round reveals a wheel of hollow chambers — a pattern the Japanese read as 'seeing through to the future,' making it essential to New Year's osechi boxes. The flesh turns from crisp and faintly sweet when fresh-harvested to starchier and more yielding as winter deepens, adapting itself to nimono braises and tempura alike.",
+    "peak": "Late autumn through winter, when cold water sweetens the rhizomes beneath still ponds",
+    "source": "Lotus root (renkon)"
+  },
   "m-i-cucumber-okinawan-cucumber": {
     "category": "vegetable",
     "name_en": "Mōi cucumber",
@@ -738,6 +765,15 @@
     "note": "A pale, thick-skinned heirloom cucumber from Okinawa with crisp, almost melon-like flesh that stays cool and firm even in brutal subtropical heat. Sliced thin and dressed with a whisper of vinegar or simmered gently in awamori-spiked broth, it carries the quiet endurance of Ryukyuan summers to the table.",
     "peak": "Early summer through typhoon season, when Okinawan sun is most relentless",
     "source": "Mōi cucumber (Okinawan cucumber)"
+  },
+  "mackerel-saba": {
+    "category": "fish",
+    "name_en": "Mackerel",
+    "name_jp": "鯖",
+    "name_romaji": "saba",
+    "note": "The autumn mackerel carries a stripe of silver-blue iridescence and flesh so rich with oil it glistens when sliced for shimesaba. In fishing towns along the Japan Sea coast, this is the season of saba no misoni, the miso-simmered fillets that fill kitchens with the deep, sweet smell of coming winter.",
+    "peak": "Autumn into early winter, when the flesh firms with cold-water fat",
+    "source": "Mackerel (saba)"
   },
   "maitake-hen-of-the-woods-mushroom": {
     "category": "vegetable",
@@ -1200,6 +1236,15 @@
     "note": "These salmon return from the Sea of Okhotsk to their birth rivers just as the maple leaves begin to turn, their flesh leaner and cleaner than spring-caught fish, prized for its firm texture in dishes like chanko-nabe or simply salted and grilled until the skin blisters. The arrival of aki-sake marks the true beginning of autumn's harvest, when fishermen along the Ishikari River in Hokkaido work through dawn mists to meet the ancestral run.",
     "peak": "Early to mid-autumn, when the first cold currents stir the northern rivers",
     "source": "Salmon (aki-sake)"
+  },
+  "salmon-sake": {
+    "category": "fish",
+    "name_en": "Salmon",
+    "name_jp": "鮭",
+    "name_romaji": "sake",
+    "note": "The flesh deepens to a ruddy coral as autumn salmon return from the sea, their fat reserves at their richest before the spawning run — this is when the belly meat yields that particular silken texture prized for grilling with nothing but salt. In Japan, sake marks the transition from summer's light fare to the sustaining meals of winter, its roe appearing as ikura just as the rice harvest begins, linking river and paddy in the same grateful meal.",
+    "peak": "Early autumn through winter, as rivers run cold and clear",
+    "source": "Salmon (sake)"
   },
   "sanma-pacific-saury": {
     "category": "fish",

@@ -143,6 +143,14 @@
     "season": "Late autumn, when ginkgo trees drop their fruit",
     "source": "Ginkgo rice (ginnan gohan)"
   },
+  "ginnan-no-chawan-mushi": {
+    "name_en": "Ginkgo nut steamed custard",
+    "name_jp": "銀杏の茶碗蒸し",
+    "name_romaji": "ginnan no chawan-mushi",
+    "note": "A savory egg custard steamed in a lidded cup, its silk-smooth surface concealing jade-colored ginkgo nuts that yield with a faint, resinous bite. The dish appears when the first hard frosts loosen the malodorous husks from temple ginkgos, and foragers in rubber gloves gather the fallen fruit before the crows can claim them.",
+    "season": "Late autumn, when ginkgo trees drop their fruit",
+    "source": "Ginnan no chawan-mushi"
+  },
   "ginnan-no-shioyaki": {
     "name_en": "Salt-roasted ginkgo nuts",
     "name_jp": "銀杏の塩焼き",
@@ -295,6 +303,14 @@
     "season": "Early autumn, when winter squash sweetens after the first cool nights",
     "source": "Kabocha no soboro-an"
   },
+  "kaki-no-shira-ae": {
+    "name_en": "Persimmon with tofu dressing",
+    "name_jp": "柿の白和え",
+    "name_romaji": "kaki no shira-ae",
+    "note": "Ripe persimmon wedges are folded into a dressing of silken tofu ground with white sesame, sweetened lightly with mirin. The dish appears when kaki have softened just past their peak crispness, their honeyed flesh yielding against the cool, pale dressing — a quiet celebration before the trees stand bare.",
+    "season": "Late autumn, when persimmons reach full sweetness",
+    "source": "Kaki no shira-ae"
+  },
   "kanpachi-no-sashimi": {
     "name_en": "Greater amberjack sashimi",
     "name_jp": "間八の刺身",
@@ -310,6 +326,14 @@
     "note": "Thick slices of bonito are seared over high flame until the outer flesh turns pale while the center remains raw, then sliced and dressed with ponzu, ginger, and heaps of fresh garlic and myoga. This is hatsu-gatsuo — the 'first bonito' of the season — leaner and cleaner than the fatty autumn catch, its arrival in Tosa province once marked by fishermen racing to bring the year's earliest fish to Edo.",
     "season": "Late spring through early summer, when the first bonito run north along the Pacific coast",
     "source": "Katsuo no tataki"
+  },
+  "kinoko-jiru": {
+    "name_en": "Mushroom soup",
+    "name_jp": "茸汁",
+    "name_romaji": "kinoko-jiru",
+    "note": "A clear dashi broth simmered with seasonal wild mushrooms—shiitake, maitake, shimeji—finished with a thread of soy and perhaps a sliver of yuzu peel. It arrives on tables when the first cool mornings draw mycelia up through fallen leaves, and the forests of Nagano and Niigata smell of damp earth and decay turning to sweetness.",
+    "season": "Early to mid-autumn, when forest mushrooms emerge after the first rains",
+    "source": "Kinoko-jiru"
   },
   "kinoko-no-takikomi-gohan": {
     "name_en": "Mixed mushroom rice",
@@ -534,6 +558,14 @@
     "note": "Thin rounds of lotus root are pressed around seasoned minced meat or shrimp, dipped in batter, and fried until the edges crisp while the centers remain faintly crisp-tender. The dish appears as autumn deepens and lotus roots are dug from muddy pond beds, their lace-like cross-sections revealing the channels through which Buddhist teachings say prayers pass from this world to the next.",
     "season": "Late autumn through winter, when lotus roots are starch-sweet from the cold",
     "source": "Renkon no hasami-age"
+  },
+  "saba-no-misoni": {
+    "name_en": "Mackerel simmered in miso",
+    "name_jp": "鯖の味噌煮",
+    "name_romaji": "saba no misoni",
+    "note": "Thick cross-sections of mackerel are braised slowly in a sweet miso sauce darkened with sake and ginger until the flesh turns silken and the collagen-rich skin yields without resistance. The dish belongs to the cold months when ma-saba from the Pacific run heavy with fat, their oil mingling with the fermented paste to create a warmth that settles deep in the chest.",
+    "season": "Late autumn through winter, when mackerel fat peaks",
+    "source": "Saba no misoni"
   },
   "sake-no-chanchan-yaki": {
     "name_en": "Salmon grilled with miso and vegetables",
