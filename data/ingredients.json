@@ -440,6 +440,15 @@
     "peak": "Late spring through early summer, as waters warm along rocky coastlines",
     "source": "grunt"
   },
+  "hakusai-napa-cabbage": {
+    "category": "vegetable",
+    "name_en": "Napa cabbage",
+    "name_jp": "白菜",
+    "name_romaji": "hakusai",
+    "note": "Broad, pale leaves with crisp white ribs that turn silken when braised, their flavor deepening to a subtle sweetness after the first hard frost transforms their starches. A pillar of winter nabe pots and the base of homemade kimchi preparations that see households through the lean months.",
+    "peak": "Late autumn through winter's coldest months, sweetened by frost",
+    "source": "Hakusai (napa cabbage)"
+  },
   "hamo": {
     "category": "fish",
     "name_en": "Pike conger",
@@ -457,6 +466,24 @@
     "note": "A serpentine eel prized in Kyoto despite the sea being hours away — its flesh stays firm in summer heat, and skilled knife work transforms hundreds of hairline bones into something that blooms like a white flower when blanched. Essential to Gion Festival cuisine in July, where it arrives as hamo-otoshi: slices shocked in ice water, served with tart umeboshi paste to cut the humid air.",
     "peak": "Rainy season through midsummer, when the flesh grows richest before spawning",
     "source": "hamo (pike conger)"
+  },
+  "haze-goby": {
+    "category": "fish",
+    "name_en": "Goby",
+    "name_jp": "鯊",
+    "name_romaji": "haze",
+    "note": "A small, bottom-dwelling fish with translucent flesh that turns pure white when cooked, prized for its clean sweetness and delicate texture in tempura — the batter barely there, the fish tasting of cold river and sea meeting. In Tokyo's old pleasure quarters, haze tempura signaled autumn's true arrival, eaten hot from the oil while maple leaves began their slow turn.",
+    "peak": "Early autumn through first frost, when cooling waters firm the flesh",
+    "source": "Haze (goby)"
+  },
+  "hokke-atka-mackerel": {
+    "category": "fish",
+    "name_en": "Atka mackerel",
+    "name_jp": "𩸽",
+    "name_romaji": "hokke",
+    "note": "A fish of the northern seas, hokke yields pale, fatty meat that caramelizes beautifully when dried and grilled, its edges crisping while the flesh stays moist and faintly sweet. In izakaya across Japan, a whole butterflied hokke sizzling on a wire grill signals the arrival of drinking season, when cold nights call for salted fish and warm sake.",
+    "peak": "Late autumn through early winter, when cold currents firm the flesh",
+    "source": "Hokke (Atka mackerel)"
   },
   "horse-mackerel": {
     "category": "fish",
@@ -604,6 +631,15 @@
     "peak": "Late summer through early autumn, when the green rind holds its sharpest fragrance",
     "source": "Kabosu citrus"
   },
+  "kaki-persimmon": {
+    "category": "fruit",
+    "name_en": "Persimmon",
+    "name_jp": "柿",
+    "name_romaji": "kaki",
+    "note": "The hachiya variety yields to gentle pressure when perfectly ripe, its flesh collapsing into a honey-thick pulp that tastes of dates and brown sugar with a faint tannic whisper. Persimmons mark the transition from harvest abundance to winter preservation — sliced and dried on farmhouse eaves, they become hoshigaki, the amber-hued confection that carries autumn's sweetness into the cold months.",
+    "peak": "Late autumn, as the first frosts sweeten the hanging fruit",
+    "source": "Kaki (persimmon)"
+  },
   "kaki-persimmon-early-varieties": {
     "category": "fruit",
     "name_en": "Persimmon",
@@ -676,6 +712,15 @@
     "peak": "Late autumn through winter, when cold waters tighten the flesh",
     "source": "Kohada (gizzard shad)"
   },
+  "koshu-grape": {
+    "category": "fruit",
+    "name_en": "Koshu grape",
+    "name_jp": "甲州葡萄",
+    "name_romaji": "kōshū budō",
+    "note": "Japan's indigenous wine grape, cultivated in the foothills of Mount Fuji for over a millennium, with translucent pink-bronze skin that yields flesh of gentle sweetness and a faint mineral finish. The harvest coincides with the autumn equinox, when these grapes are pressed into delicate white wines or eaten fresh, their subtle flavor embodying the Japanese preference for restraint over intensity.",
+    "peak": "Late September through October, as autumn mists settle over the Yamanashi basin",
+    "source": "Koshu grape"
+  },
   "kosui-pear-asian-pear": {
     "category": "fruit",
     "name_en": "Kosui pear",
@@ -684,6 +729,15 @@
     "note": "The first major nashi of the season, Kōsui arrives with flesh so crisp it shatters against the teeth, releasing juice that tastes of honey touched with the faintest citrus acidity. Its name means 'abundant water' — a gift of refreshment that marks the pivot from high summer toward the gentler days of early autumn.",
     "peak": "Late summer, when cicada songs reach their peak and the heat begins its slow retreat",
     "source": "Kosui pear (Asian pear)"
+  },
+  "kuromame-zuke-black-soybeans": {
+    "category": "fruit",
+    "name_en": "Black soybean pickles",
+    "name_jp": "黒豆漬け",
+    "name_romaji": "kuromame-zuke",
+    "note": "Glossy black soybeans simmered until tender, then steeped in sweetened soy until each bean holds a lacquered sheen and faint molasses depth. A fixture of osechi ryōri, their name puns on 'mame' (diligent), carrying wishes for industrious health into the coming year.",
+    "peak": "New Year season, when the first days call for auspicious foods",
+    "source": "Kuromame-zuke (black soybeans)"
   },
   "kuruma-ebi-japanese-tiger-prawn": {
     "category": "fish",
@@ -900,6 +954,15 @@
     "note": "The white peach yields to the slightest pressure, its flesh so delicate it bruises at a glance — the juice runs clear and fragrant, tasting of flowers more than fruit. In Japan, a perfect momo arrives swaddled in foam netting like something precious, offered as a summer gift when words alone feel insufficient.",
     "peak": "High summer, from late July through August when the heat draws out the sugars",
     "source": "momo (white peach)"
+  },
+  "murasaki-imo-purple-sweet-potato": {
+    "category": "vegetable",
+    "name_en": "Purple sweet potato",
+    "name_jp": "紫芋",
+    "name_romaji": "murasaki-imo",
+    "note": "A dense, dry-fleshed sweet potato whose violet flesh deepens to near-indigo when steamed, yielding a chestnut-like sweetness with faint wine notes. Harvested as autumn wanes, it appears in wagashi and temple cuisine just as the maple viewing season gives way to winter's quietude.",
+    "peak": "Late autumn through early winter, when the first frosts concentrate the sugars",
+    "source": "Murasaki-imo (purple sweet potato)"
   },
   "muscat-grape": {
     "category": "fruit",

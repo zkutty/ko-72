@@ -3109,5 +3109,106 @@
       "closing": "静まりゆく庭の下で、無数の小さな扉が音もなく閉じられてゆく。"
     },
     "_sent_on": "2026-09-28"
+  },
+  "54": {
+    "en": {
+      "summary": "Rice paddies drain to reveal cracked earth, and the air carries the mineral scent of exposed soil as autumn settles into the land.",
+      "opening": "The paddies that shimmered green all summer now stand drained, their surfaces cracking into pale mosaic patterns under the thinning October sun. Morning mist rises from irrigation channels running low, carrying that particular smell of wet clay meeting dry air. This is the breath between harvest and rest — the land exhaling its summer waters back to the sky.",
+      "nature_notes": "Dragonflies still patrol the emptied fields, their shadows crossing the stubble where rice stalks were cut. Herons stand motionless at the edges of shrinking pools, fishing with patient intensity in the concentrated waters. The evening sky holds longer bands of purple and gold, and the first autumn rains have not yet come to replenish what the earth has released.",
+      "seasonal_produce": {
+        "fruits": [
+          "Nashi (Asian pear)",
+          "Koshu grape",
+          "Kaki (persimmon)",
+          "Kuromame-zuke (black soybeans)"
+        ],
+        "vegetables": [
+          "Satoimo (taro root)",
+          "Matsutake (pine mushroom)",
+          "Murasaki-imo (purple sweet potato)",
+          "Hakusai (napa cabbage)"
+        ],
+        "fish": [
+          "Sawara (Spanish mackerel)",
+          "Hokke (Atka mackerel)",
+          "Haze (goby)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "Haze no tempura",
+          "description": "Delicate goby fish, abundant now in estuaries and drained waterways, fried to a golden crisp — a dish that marks the draining season."
+        },
+        {
+          "name": "Satoimo no kinuta-maki",
+          "description": "Silky taro wrapped in thin daikon sheets, a refined presentation that honors the taro harvest just beginning in earnest."
+        },
+        {
+          "name": "Murasaki-imo no chakin-shibori",
+          "description": "Purple sweet potato twisted into cloth-wrapped parcels, their vivid color celebrating autumn's deepening palette."
+        },
+        {
+          "name": "Nashi to mizuna no sarada",
+          "description": "Crisp Asian pear paired with peppery mizuna greens, dressed lightly — the sweetness of fruit meeting the season's last green bite."
+        }
+      ],
+      "cultural_note": "This micro-season marks the traditional end of rice cultivation's active phase, when farmers would hold Mizu-agari ceremonies thanking the water deities who sustained the paddies. In some regions, small offerings are still placed at irrigation gates — sake, rice, and salt — acknowledging the partnership between human labor and the flow of water that makes Japan's staple crop possible.",
+      "haiku": {
+        "japanese": "干潟より鷺の一歩や秋深む",
+        "romaji": "Higata yori / sagi no ippo ya / aki fukamu",
+        "english": "From the mudflat / a heron's single step — / autumn deepens"
+      },
+      "closing": "In the cracked geometry of the drained paddy, one sees the year's labor written in earth — and already, the soil begins its quiet preparation for spring."
+    },
+    "ja": {
+      "summary": "田から水が引き、乾いた土の匂いが秋の空気に混じる頃。",
+      "opening": "夏の間、緑の波を揺らしていた田んぼは今、水を落とされ、淡い灰色のひび割れ模様を晒している。用水路の水位は下がり、朝靄が粘土質の土と乾いた空気の境界から立ち上る。収穫と休息のあわいに、大地は夏の水を空へと返しつつある。",
+      "nature_notes": "赤とんぼが刈り跡の残る田を巡り、その影が乾いた株の上を渡る。鷺は縮んだ水溜まりの端にじっと立ち、凝縮された水の中で魚を狙う。夕空には紫と金の帯が長く伸び、秋雨はまだ訪れず、大地は静かに渇きを深めている。",
+      "seasonal_produce": {
+        "fruits": [
+          "梨",
+          "甲州葡萄",
+          "柿",
+          "黒枝豆"
+        ],
+        "vegetables": [
+          "里芋",
+          "松茸",
+          "紫芋",
+          "白菜"
+        ],
+        "fish": [
+          "鰆（さわら）",
+          "𩸽（ほっけ）",
+          "鯊（はぜ）"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "鯊の天ぷら",
+          "description": "水が引いた河口や水路に集まる鯊を軽く揚げた一品、まさに水涸れの季節を告げる味覚。"
+        },
+        {
+          "name": "里芋の砧巻き",
+          "description": "絹のような里芋を薄い大根で巻いた上品な仕立て、芋の出盛りを寿ぐ。"
+        },
+        {
+          "name": "紫芋の茶巾絞り",
+          "description": "鮮やかな紫色の薩摩芋を茶巾に絞り、深まる秋の色を菓子に映す。"
+        },
+        {
+          "name": "梨と水菜のサラダ",
+          "description": "瑞々しい梨とほろ苦い水菜を合わせ、果実の甘さと青の余韻を一皿に。"
+        }
+      ],
+      "cultural_note": "この候は稲作の「水上げ」の時期にあたり、各地で水神への感謝を捧げる習わしがあった。用水路の取水口に酒や塩、米を供え、一年の水の恵みに礼を尽くす。田に水を引き、水を落とす——その繰り返しの中に、日本の農と祈りの形が息づいている。",
+      "haiku": {
+        "japanese": "干潟より鷺の一歩や秋深む",
+        "romaji": "Higata yori / sagi no ippo ya / aki fukamu",
+        "english": "From the mudflat / a heron's single step — / autumn deepens"
+      },
+      "closing": "干上がった田のひび割れに、一年の仕事の跡を読む——そして土は静かに、来る春への備えを始めている。"
+    },
+    "_sent_on": "2026-10-03"
   }
 }

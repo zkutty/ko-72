@@ -215,6 +215,14 @@
     "season": "Autumn through early winter, when lotus roots reach peak sweetness",
     "source": "hasu no kinpira"
   },
+  "haze-no-tempura": {
+    "name_en": "Goby tempura",
+    "name_jp": "鯊の天麩羅",
+    "name_romaji": "haze no tempura",
+    "note": "Small goby fish, each no longer than a finger, are dredged in light batter and fried until the bones turn crisp enough to eat whole. The fish reach peak sweetness as autumn coolness settles over Tokyo Bay's tidal flats, their flesh dense with the sugars stored for winter.",
+    "season": "Early autumn, when gobies fatten in brackish estuaries",
+    "source": "Haze no tempura"
+  },
   "hiyashi-ch-ka": {
     "name_en": "Chilled Chinese-style noodles",
     "name_jp": "冷やし中華",
@@ -439,6 +447,14 @@
     "season": "Early summer, as the muggy heat begins to settle",
     "source": "Mugi-toro gohan"
   },
+  "murasaki-imo-no-chakin-shibori": {
+    "name_en": "Purple sweet potato tea-cloth dumplings",
+    "name_jp": "紫芋の茶巾絞り",
+    "name_romaji": "murasaki-imo no chakin-shibori",
+    "note": "Steamed purple sweet potato is mashed, lightly sweetened, then twisted inside cloth to form elegant pleated dumplings that hold the impression of gathered fabric. The violet flesh of murasaki-imo intensifies after autumn storage, and these confections appear on tea trays when the harvest is complete and the air carries the first cold edge of approaching winter.",
+    "season": "Late autumn, when purple sweet potatoes reach their deepest color after the first frost",
+    "source": "Murasaki-imo no chakin-shibori"
+  },
   "my-ga-gohan": {
     "name_en": "Myōga ginger rice",
     "name_jp": "茗荷ご飯",
@@ -494,6 +510,14 @@
     "note": "Crisp Asian pear is cut into matchsticks and folded into a silken dressing of mashed tofu, white sesame, and a whisper of mirin. The dish arrives as summer's humidity finally breaks — the cool, granular snap of the fruit against the creamy dressing feels like the first breath of autumn air.",
     "season": "Early autumn, when nashi pears reach their peak sweetness",
     "source": "Nashi no shirazuae"
+  },
+  "nashi-to-mizuna-no-sarada": {
+    "name_en": "Pear and mizuna salad",
+    "name_jp": "梨と水菜のサラダ",
+    "name_romaji": "nashi to mizuna no sarada",
+    "note": "Crisp Asian pear slices are tossed with peppery mizuna greens and dressed lightly, often with rice vinegar and sesame. The dish arrives when nashi trees heavy with fruit signal the turn from lingering summer heat toward the cooler days of autumn equinox.",
+    "season": "Early autumn, when nashi pears reach their peak sweetness",
+    "source": "Nashi to mizuna no sarada"
   },
   "nashi-to-nama-hamu-no-sarada": {
     "name_en": "Pear and prosciutto salad",
@@ -614,6 +638,14 @@
     "note": "Chilled or hot buckwheat noodles served with a tangle of foraged mountain vegetables — bracken fern, ostrich fiddleheads, butterbur stems — blanched and dressed simply. The dish marks the brief window when villagers climb thawing hillsides to gather the first bitter shoots pushing through last autumn's leaves.",
     "season": "Late spring, when snow recedes from mountain slopes",
     "source": "sansai soba"
+  },
+  "satoimo-no-kinuta-maki": {
+    "name_en": "Taro wrapped in daikon sheets",
+    "name_jp": "里芋の砧巻き",
+    "name_romaji": "satoimo no kinuta-maki",
+    "note": "Simmered taro is wrapped in paper-thin sheets of daikon radish, the bundle tied with a strip of kombu or mitsuba stem, then dressed in a light vinegar sauce. The dish takes its name from the kinuta, the wooden fulling block used to soften cloth — the translucent daikon sheet recalls that beaten fabric, and appears when both root vegetables share the cold earth of the eleventh month.",
+    "season": "Late autumn through early winter, when taro reaches its starchy peak",
+    "source": "Satoimo no kinuta-maki"
   },
   "satoimo-no-miso-ni": {
     "name_en": "Taro simmered in miso",
