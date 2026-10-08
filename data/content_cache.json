@@ -3210,5 +3210,106 @@
       "closing": "干上がった田のひび割れに、一年の仕事の跡を読む——そして土は静かに、来る春への備えを始めている。"
     },
     "_sent_on": "2026-10-03"
+  },
+  "55": {
+    "en": {
+      "summary": "The first skeins of wild geese cross autumn skies, their calls announcing the deepening of the season as cold dew settles on morning fields.",
+      "opening": "In the predawn stillness, a distant honking drifts down from clouds still holding the night's chill. The geese arrive in wavering V-formations, their wings catching the first rose light as they descend toward reed-fringed wetlands. The air carries that particular clarity of mid-autumn — sharp enough to taste, cool enough to quicken the breath.",
+      "nature_notes": "Wild geese from Siberia begin their annual arrival at Japan's lakes and coastal marshlands, their calls echoing across water surfaces pearled with morning dew. Cosmos flowers stand in full bloom along riverbanks, their delicate pink petals trembling in winds that carry the faint sweetness of kinmokusei beginning to fade. The rice harvest continues in earnest, leaving stubbled fields where flocks will soon forage.",
+      "seasonal_produce": {
+        "fruits": [
+          "Kaki (persimmon)",
+          "Karin (Chinese quince)",
+          "Mukago (mountain yam bulbils)",
+          "Yamabudo (wild mountain grape)"
+        ],
+        "vegetables": [
+          "Ginnan (ginkgo nut)",
+          "Satoimo (taro root)",
+          "Shimeji (beech mushroom)",
+          "Shungiku (garland chrysanthemum)"
+        ],
+        "fish": [
+          "Sawara (Spanish mackerel)",
+          "Hatatehagi (filefish)",
+          "Hirame (flounder)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "Kamo-nanban soba",
+          "description": "Hot buckwheat noodles with duck and long onion, a dish that welcomes the return of waterfowl and the appetite for warming broths."
+        },
+        {
+          "name": "Hirame no kobujime",
+          "description": "Flounder pressed between sheets of kelp to concentrate its delicate sweetness, perfect as autumn waters cool and the fish firms."
+        },
+        {
+          "name": "Mukago gohan",
+          "description": "Rice cooked with tiny mountain yam bulbils that impart an earthy nuttiness, gathered now before the first frosts."
+        },
+        {
+          "name": "Kaki no namerō",
+          "description": "Minced persimmon dressed with miso and ginger, transforming the season's sweetest fruit into an unexpected savory preparation."
+        }
+      ],
+      "cultural_note": "The arrival of the wild geese has been watched for centuries as confirmation that autumn has truly settled in. In classical poetry, the kari (wild goose) appears as a messenger between worlds — linking the living to departed loved ones, summer shores to winter skies. Farmers once timed certain late plantings by the geese's first calls, trusting the birds' ancient rhythms more than any calendar.",
+      "haiku": {
+        "japanese": "雁の声遠き湖面に波紋かな",
+        "romaji": "kari no koe / tōki komen ni / hamon kana",
+        "english": "wild goose calls — / across the distant lake / ripples spread"
+      },
+      "closing": "On quiet evenings now, one learns to pause mid-step and look upward, listening for that traveling cry that carries winter's first whisper south."
+    },
+    "ja": {
+      "summary": "シベリアからの雁が隊列を組んで渡来し、その鳴き声が秋の深まりを告げる頃、野には寒露が降りる。",
+      "opening": "夜明け前の静寂を破って、遠くから雁の声が降りてくる。薄闇の中をV字に連なる影が、東雲の淡い紅に翼を染めながら、葦の茂る湿地へと降下していく。空気は透き通り、肌に触れる冷気には、秋が確かに深まったことを知らせる重みがある。",
+      "nature_notes": "シベリアから渡ってきた雁が、各地の湖沼や干潟に姿を見せ始める。水面には朝露が真珠のように光り、その上を渡る雁の声が響く。河川敷ではコスモスが満開を迎え、名残の金木犀の香りを含んだ風に花弁を揺らしている。刈り入れの進む田んぼには、やがて雁が餌を求めて降り立つだろう。",
+      "seasonal_produce": {
+        "fruits": [
+          "柿",
+          "花梨",
+          "むかご",
+          "山葡萄"
+        ],
+        "vegetables": [
+          "銀杏",
+          "里芋",
+          "しめじ",
+          "春菊"
+        ],
+        "fish": [
+          "鰆",
+          "カワハギ",
+          "鮃"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "鴨南蛮蕎麦",
+          "description": "渡り鳥の季節にふさわしく、鴨肉と長葱を温かい蕎麦に仕立て、身体の芯から温まる一杯。"
+        },
+        {
+          "name": "鮃の昆布締め",
+          "description": "秋の冷たい海で身が締まった鮃を昆布で挟み、旨味を凝縮させた繊細な刺身。"
+        },
+        {
+          "name": "むかごご飯",
+          "description": "山芋の小さな実を炊き込んだご飯は、野山の滋味をそのまま味わえる素朴な秋の味。"
+        },
+        {
+          "name": "柿のなめろう",
+          "description": "熟した柿を味噌と生姜で和えた意外な一品、甘さと塩味の妙を楽しむ。"
+        }
+      ],
+      "cultural_note": "雁の渡来は、古来より秋の深まりを告げる確かな便りとされてきた。『万葉集』や『古今集』では、雁は彼岸と此岸を行き来する使者として詠まれ、亡き人への思いを託す鳥でもあった。農家はかつて雁の初鳴きを聞いて、霜の前に済ませるべき仕事を急いだという。",
+      "haiku": {
+        "japanese": "雁の声遠き湖面に波紋かな",
+        "romaji": "kari no koe / tōki komen ni / hamon kana",
+        "english": "wild goose calls — / across the distant lake / ripples spread"
+      },
+      "closing": "暮れなずむ空を見上げれば、南へ向かう雁の列がゆっくりと消えていく——その先に、冬の気配がかすかに滲んでいる。"
+    },
+    "_sent_on": "2026-10-08"
   }
 }

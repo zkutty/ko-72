@@ -377,6 +377,15 @@
     "peak": "Late autumn, when the first hard frosts sweeten the fallen seeds",
     "source": "Ginko nuts (ginnan)"
   },
+  "ginnan-ginkgo-nut": {
+    "category": "vegetable",
+    "name_en": "Ginkgo nut",
+    "name_jp": "銀杏",
+    "name_romaji": "ginnan",
+    "note": "The pale jade kernels, freed from their pungent husks, offer a waxy bite and faint bitterness that carries the mineral taste of late autumn. Skewered and salt-grilled at yakitori stalls or tucked into chawanmushi, they mark the transition when matsutake gives way to root vegetables and the kitchen turns inward.",
+    "peak": "Late autumn, when the first cold nights turn ginkgo leaves to gold",
+    "source": "Ginnan (ginkgo nut)"
+  },
   "grape": {
     "category": "fruit",
     "name_en": "Grape",
@@ -467,6 +476,15 @@
     "peak": "Rainy season through midsummer, when the flesh grows richest before spawning",
     "source": "hamo (pike conger)"
   },
+  "hatatehagi-filefish": {
+    "category": "fish",
+    "name_en": "Filefish",
+    "name_jp": "皮剥",
+    "name_romaji": "kawahagi",
+    "note": "A fish whose rough, sandpaper skin must be stripped away to reveal meat so clean and mild it borders on sweetness, its liver swelling rich and creamy as waters chill. The prized kimo-ae preparation—sashimi dressed with its own mashed liver—marks the quieting of autumn into winter, a dish of restrained indulgence before the year's end.",
+    "peak": "Late autumn through early winter, when cold currents firm the flesh",
+    "source": "Hatatehagi (filefish)"
+  },
   "haze-goby": {
     "category": "fish",
     "name_en": "Goby",
@@ -475,6 +493,15 @@
     "note": "A small, bottom-dwelling fish with translucent flesh that turns pure white when cooked, prized for its clean sweetness and delicate texture in tempura — the batter barely there, the fish tasting of cold river and sea meeting. In Tokyo's old pleasure quarters, haze tempura signaled autumn's true arrival, eaten hot from the oil while maple leaves began their slow turn.",
     "peak": "Early autumn through first frost, when cooling waters firm the flesh",
     "source": "Haze (goby)"
+  },
+  "hirame-flounder": {
+    "category": "fish",
+    "name_en": "Olive flounder",
+    "name_jp": "鮃",
+    "name_romaji": "hirame",
+    "note": "A left-eyed flatfish prized for its translucent white flesh, served as usuzukuri — slices so thin they reveal the pattern of the plate beneath, each piece offering a clean, faintly sweet resistance to the teeth. Winter hirame, fattened against the cold, arrives at the peak of its engawa season, when the gelatinous fin edges carry their richest concentration of umami.",
+    "peak": "Deep winter, when cold currents firm the flesh",
+    "source": "Hirame (flounder)"
   },
   "hokke-atka-mackerel": {
     "category": "fish",
@@ -955,6 +982,15 @@
     "peak": "High summer, from late July through August when the heat draws out the sugars",
     "source": "momo (white peach)"
   },
+  "mukago-mountain-yam-bulbils": {
+    "category": "fruit",
+    "name_en": "Mountain yam bulbil",
+    "name_jp": "零余子",
+    "name_romaji": "mukago",
+    "note": "These thumbnail-sized aerial tubers form where leaf meets stem on the wild yamanoimo vine, their thin russet skin yielding to a faintly sticky, nutty flesh when roasted in their jackets with coarse salt. Gathered in the brief weeks before hard frost, they appear in rice cooked with new-harvest grains, a humble delicacy marking the mountain's quiet retreat into winter.",
+    "peak": "Late autumn, when the first frosts threaten the withering vines",
+    "source": "Mukago (mountain yam bulbils)"
+  },
   "murasaki-imo-purple-sweet-potato": {
     "category": "vegetable",
     "name_en": "Purple sweet potato",
@@ -1401,6 +1437,15 @@
     "note": "These small, dark-shelled clams yield a broth of surprising depth — faintly sweet, touched with iron, the color of weak tea. A bowl of shijimi miso soup after a night of drinking is less remedy than ritual, the liver's quiet ally as humidity settles over the archipelago.",
     "peak": "Late spring through summer, when warm waters draw them toward the shallows",
     "source": "Shijimi (freshwater clams)"
+  },
+  "shimeji-beech-mushroom": {
+    "category": "vegetable",
+    "name_en": "Shimeji mushroom",
+    "name_jp": "しめじ",
+    "name_romaji": "shimeji",
+    "note": "These slender clusters of buff-capped mushrooms release a faint nuttiness when heated, their crisp stems yielding to a texture somewhere between snap and silk. Gathered with the last chrysanthemums and the first frost, they arrive in Japanese kitchens for nabemono and takikomi gohan, their earthy sweetness deepening as the year turns inward.",
+    "peak": "Mid-autumn through early winter, when cool nights concentrate their flavor",
+    "source": "Shimeji (beech mushroom)"
   },
   "shimeji-mushroom": {
     "category": "vegetable",
@@ -1887,6 +1932,15 @@
     "note": "Cradled in foam nets at fruit shops, these pale beauties yield flesh so tender it bruises at a glance, their perfume filling a room before the first bite releases floods of honeyed juice. The white peach arrives as a cooling grace note in the humid peak of summer, given as elegant gifts in paulownia boxes or eaten chilled over the sink, juice running down wrists.",
     "peak": "High summer, from late July through August, when the cicadas reach their crescendo",
     "source": "White peach (hakutō)"
+  },
+  "yamabudo-wild-mountain-grape": {
+    "category": "fruit",
+    "name_en": "Wild mountain grape",
+    "name_jp": "山葡萄",
+    "name_romaji": "yamabudo",
+    "note": "These small, intensely flavored grapes grow wild on vines that climb forest trees, their deep purple-black clusters yielding a juice so tart and concentrated it stains the tongue. Foragers prize the narrow window between ripening and the birds' discovery, pressing the fruit into ruby-dark vinegars and wines that carry the astringent memory of high places into winter's meals.",
+    "peak": "Late autumn, when the first frosts have touched the mountain slopes",
+    "source": "Yamabudo (wild mountain grape)"
   },
   "yellow-plums": {
     "category": "fruit",

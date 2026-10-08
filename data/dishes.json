@@ -223,6 +223,14 @@
     "season": "Early autumn, when gobies fatten in brackish estuaries",
     "source": "Haze no tempura"
   },
+  "hirame-no-kobujime": {
+    "name_en": "Kelp-cured flounder",
+    "name_jp": "平目の昆布締め",
+    "name_romaji": "hirame no kobujime",
+    "note": "Thin slices of hirame are pressed between sheets of kombu for several hours, drawing moisture from the flesh while imparting the kelp's quiet umami. The technique suits the cold months when flounder swims in frigid waters and arrives with a clean, resilient texture that accepts the cure without turning slack.",
+    "season": "Late winter through early spring, when wild flounder is at its firmest",
+    "source": "Hirame no kobujime"
+  },
   "hiyashi-ch-ka": {
     "name_en": "Chilled Chinese-style noodles",
     "name_jp": "冷やし中華",
@@ -311,6 +319,14 @@
     "season": "Early autumn, when winter squash sweetens after the first cool nights",
     "source": "Kabocha no soboro-an"
   },
+  "kaki-no-namer": {
+    "name_en": "Minced persimmon tartare",
+    "name_jp": "柿のなめろう",
+    "name_romaji": "kaki no namerō",
+    "note": "Ripe persimmon is finely minced with miso, ginger, and shiso in the style of the fisherman's dish namerō, yielding a silken, umami-sweet paste typically spread on crackers or tucked into small cups. The dish appears when kaki hang heavy on bare branches and the first real cold sharpens their sugars, a moment when cooks seek new ways to honor the brief window before frost softens the fruit to mush.",
+    "season": "Late autumn, when persimmons reach their amber peak",
+    "source": "Kaki no namerō"
+  },
   "kaki-no-shira-ae": {
     "name_en": "Persimmon with tofu dressing",
     "name_jp": "柿の白和え",
@@ -318,6 +334,14 @@
     "note": "Ripe persimmon wedges are folded into a dressing of silken tofu ground with white sesame, sweetened lightly with mirin. The dish appears when kaki have softened just past their peak crispness, their honeyed flesh yielding against the cool, pale dressing — a quiet celebration before the trees stand bare.",
     "season": "Late autumn, when persimmons reach full sweetness",
     "source": "Kaki no shira-ae"
+  },
+  "kamo-nanban-soba": {
+    "name_en": "Duck and leek soba in hot broth",
+    "name_jp": "鴨南蛮蕎麦",
+    "name_romaji": "kamo-nanban soba",
+    "note": "Sliced duck breast is seared until the skin renders, then simmered briefly in a dashi-based broth with lengths of thick Tokyo negi, the whole ladled over buckwheat noodles. The dish belongs to the coldest weeks of the year, when wild ducks have fattened for their southward journey and frost-touched leeks turn almost creamy at their core.",
+    "season": "Deep winter, when duck fat runs rich and negi sweetens after frost",
+    "source": "Kamo-nanban soba"
   },
   "kanpachi-no-sashimi": {
     "name_en": "Greater amberjack sashimi",
@@ -446,6 +470,14 @@
     "note": "Chewy pressed barley rice topped with a cascade of grated yamaimo, the raw tuber whipped until it falls in glossy ribbons, seasoned simply with dashi and soy. The dish appears when humidity saps the appetite — the cool, slippery yam sliding over nutty grain offers sustenance that asks nothing of a weary body.",
     "season": "Early summer, as the muggy heat begins to settle",
     "source": "Mugi-toro gohan"
+  },
+  "mukago-gohan": {
+    "name_en": "Mountain yam bulbil rice",
+    "name_jp": "むかごご飯",
+    "name_romaji": "mukago gohan",
+    "note": "Rice steamed with mukago — the thumbnail-sized bulbils that form along yamaimo vines — seasoned simply with sake and salt, the tiny spheres turning slightly nutty and dense within the grain. Foragers gather them in October and November before the first hard frost, when the vine leaves yellow and the bulbils detach at a touch, signaling the mountain's quiet retreat into winter.",
+    "season": "Late autumn, when aerial bulbils drop from wild yam vines",
+    "source": "Mukago gohan"
   },
   "murasaki-imo-no-chakin-shibori": {
     "name_en": "Purple sweet potato tea-cloth dumplings",
