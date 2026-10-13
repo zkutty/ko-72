@@ -3311,5 +3311,106 @@
       "closing": "暮れなずむ空を見上げれば、南へ向かう雁の列がゆっくりと消えていく——その先に、冬の気配がかすかに滲んでいる。"
     },
     "_sent_on": "2026-10-08"
+  },
+  "56": {
+    "en": {
+      "summary": "Chrysanthemums open their layered petals across gardens and temple grounds, their sharp, green fragrance announcing autumn's deepening.",
+      "opening": "The morning air carries a clarity that makes distant mountains seem closer than they are. Chrysanthemums unfurl in gardens throughout Japan—white, gold, russet, pale violet—each bloom a small architecture of autumn. Their scent, somewhere between herb and forest floor, rises when you brush past them in the early chill.",
+      "nature_notes": "Migrating geese continue their journey southward, their calls echoing across twilight skies. Spider webs catch the low morning sun, each strand jeweled with dew that evaporates by midday. Persimmon leaves begin their slow turn from green to orange, while the fruit beneath them deepens toward ripeness.",
+      "seasonal_produce": {
+        "fruits": [
+          "Kaki (persimmon)",
+          "Kurinameshi pear (Japanese pear)",
+          "Sudachi (citrus)",
+          "Ringo (apple)"
+        ],
+        "vegetables": [
+          "Shungiku (chrysanthemum greens)",
+          "Gobō (burdock root)",
+          "Satoimo (taro)",
+          "Kabu (turnip)"
+        ],
+        "fish": [
+          "Sanma (Pacific saury)",
+          "Sawara (Spanish mackerel)",
+          "Kinmedai (splendid alfonsino)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "Kiku no ohitashi",
+          "description": "Blanched edible chrysanthemum petals dressed in dashi and soy, bringing the season's namesake flower directly to the table."
+        },
+        {
+          "name": "Kiku-kabu",
+          "description": "Turnip carved into chrysanthemum shapes and pickled in sweet vinegar, a dish that honors the flower's form while celebrating the season's harvest."
+        },
+        {
+          "name": "Gobō to kinoko no kimpira",
+          "description": "Burdock root sautéed with autumn mushrooms in soy and mirin, a warm dish suited to cooling evenings."
+        },
+        {
+          "name": "Kinmedai no nitsuke",
+          "description": "Splendid alfonsino simmered in sweetened soy, its rich flesh perfect for the richer appetites autumn brings."
+        }
+      ],
+      "cultural_note": "The ninth day of the ninth lunar month—originally around this time—was Chōyō no Sekku, the Chrysanthemum Festival, when people floated chrysanthemum petals in sake and drank to longevity. Even now, some shrines hold chrysanthemum exhibitions, and the flower remains the emblem of the imperial house, appearing on passports and official seals as a symbol of endurance and refinement.",
+      "haiku": {
+        "japanese": "朝露に菊の重さの加はりぬ",
+        "romaji": "asatsuyu ni / kiku no omosa no / kuwawarinu",
+        "english": "In morning dew, / the chrysanthemum grows heavier— / autumn deepening"
+      },
+      "closing": "A single petal loosens from a white chrysanthemum and rests on the stone path, waiting for no one in particular."
+    },
+    "ja": {
+      "summary": "菊がその重なり合う花弁を開き、凛とした青い香りが庭々に漂い始める頃。",
+      "opening": "朝の空気に透明な冷たさが宿り、遠くの山稜がいつもより近く感じられる。庭先や寺社の境内では菊が咲き揃い、白、黄、錆朱、淡い藤色と、それぞれが秋の小さな造形を見せている。花の傍を通ると、草と土の間のような清々しい香りが立ちのぼる。",
+      "nature_notes": "雁の群れは南への旅路を続け、暮れ方の空にその声を響かせる。朝露に濡れた蜘蛛の巣が低い陽光を受けて光り、昼前には跡形もなく乾いてしまう。柿の葉は緑から橙へとゆるやかに色を移し、その下の実も日ごとに熟れを深めている。",
+      "seasonal_produce": {
+        "fruits": [
+          "柿",
+          "梨（二十世紀・豊水）",
+          "酢橘",
+          "林檎"
+        ],
+        "vegetables": [
+          "春菊",
+          "牛蒡",
+          "里芋",
+          "蕪"
+        ],
+        "fish": [
+          "秋刀魚",
+          "鰆",
+          "金目鯛"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "菊のお浸し",
+          "description": "湯がいた食用菊の花弁を出汁醤油で和えた一品、季節の名を冠する花を直に味わう。"
+        },
+        {
+          "name": "菊花蕪",
+          "description": "蕪を菊の花に見立てて飾り切りし甘酢に漬けたもの、秋の収穫と菊の意匠を重ねる。"
+        },
+        {
+          "name": "牛蒡と茸のきんぴら",
+          "description": "牛蒡と秋茸を醤油と味醂で炒り煮にした一皿、冷えゆく夕べに似合う滋味。"
+        },
+        {
+          "name": "金目鯛の煮付け",
+          "description": "脂の乗った金目鯛を甘辛く煮含めた料理、秋深まる頃の食欲に応える。"
+        }
+      ],
+      "cultural_note": "旧暦九月九日はかつてこの時期にあたり、重陽の節句として菊の花を酒に浮かべ長寿を祈った。現代でも各地の神社で菊花展が催され、菊は皇室の紋章としてパスポートや公印に刻まれ、不変と気品の象徴であり続けている。",
+      "haiku": {
+        "japanese": "朝露に菊の重さの加はりぬ",
+        "romaji": "asatsuyu ni / kiku no omosa no / kuwawarinu",
+        "english": "In morning dew, / the chrysanthemum grows heavier— / autumn deepening"
+      },
+      "closing": "白菊の花弁がひとひら、石畳の上にそっと落ちて、誰を待つでもなく静かに留まっている。"
+    },
+    "_sent_on": "2026-10-13"
   }
 }

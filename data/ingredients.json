@@ -386,6 +386,15 @@
     "peak": "Late autumn, when the first cold nights turn ginkgo leaves to gold",
     "source": "Ginnan (ginkgo nut)"
   },
+  "gob-burdock-root": {
+    "category": "vegetable",
+    "name_en": "Burdock root",
+    "name_jp": "牛蒡",
+    "name_romaji": "gobō",
+    "note": "A slender, earth-colored root with bark-rough skin and flesh that oxidizes to pale rust the moment it meets air; prized for its dense, almost meaty chew and faint sweetness that emerges after long simmering. In the cold months, it anchors kinpira and fills the kitchen with its mineral, loamy scent—a quiet reminder that nourishment lies buried beneath frozen ground.",
+    "peak": "Late autumn through winter, when cold deepens the roots' sweetness",
+    "source": "Gobō (burdock root)"
+  },
   "grape": {
     "category": "fruit",
     "name_en": "Grape",
@@ -658,6 +667,15 @@
     "peak": "Late summer through early autumn, when the green rind holds its sharpest fragrance",
     "source": "Kabosu citrus"
   },
+  "kabu-turnip": {
+    "category": "vegetable",
+    "name_en": "Turnip",
+    "name_jp": "蕪",
+    "name_romaji": "kabu",
+    "note": "The Japanese turnip is smaller and more delicate than its Western counterpart, with skin so thin it need not be peeled and flesh that turns silken when simmered in dashi. It appears in winter nimono and pickled as senmaizuke in Kyoto, marking the transition from autumn's last harvests to the spare, warming dishes of the cold months.",
+    "peak": "Late autumn through early winter, when the first frosts sweeten the flesh",
+    "source": "Kabu (turnip)"
+  },
   "kaki-persimmon": {
     "category": "fruit",
     "name_en": "Persimmon",
@@ -712,6 +730,15 @@
     "peak": "Late winter through early spring, when cold currents concentrate its fat",
     "source": "Kinmedai (golden-eye snapper)"
   },
+  "kinmedai-splendid-alfonsino": {
+    "category": "fish",
+    "name_en": "Splendid alfonsino",
+    "name_jp": "金目鯛",
+    "name_romaji": "kinmedai",
+    "note": "A deep-sea fish with luminous golden eyes and rose-pink skin, its flesh turns silken and sweet when simmered in soy and mirin, the fat melting into the braising liquid. Prized for winter nabe and celebratory meals, kinmedai appears on New Year tables and at moments when richness feels earned against the cold.",
+    "peak": "Deep winter through early spring, when cold currents concentrate its fat",
+    "source": "Kinmedai (splendid alfonsino)"
+  },
   "kisu-japanese-whiting": {
     "category": "fish",
     "name_en": "Japanese whiting",
@@ -765,6 +792,15 @@
     "note": "The first major nashi of the season, Kōsui arrives with flesh so crisp it shatters against the teeth, releasing juice that tastes of honey touched with the faintest citrus acidity. Its name means 'abundant water' — a gift of refreshment that marks the pivot from high summer toward the gentler days of early autumn.",
     "peak": "Late summer, when cicada songs reach their peak and the heat begins its slow retreat",
     "source": "Kosui pear (Asian pear)"
+  },
+  "kurinameshi-pear-japanese-pear": {
+    "category": "fruit",
+    "name_en": "Kurinameshi pear",
+    "name_jp": "栗南水",
+    "name_romaji": "kurinameshi",
+    "note": "A newer nashi cultivar bred for exceptional sweetness and dense, fine-grained flesh that shatters cleanly between the teeth, its juice running clear as spring water. It arrives as persimmons color the eaves and families gather for the quiet abundance of autumn tables.",
+    "peak": "Late autumn, when the first frosts sharpen the air and deepen the sugars",
+    "source": "Kurinameshi pear (Japanese pear)"
   },
   "kuromame-zuke-black-soybeans": {
     "category": "fruit",
@@ -1300,6 +1336,15 @@
     "peak": "Early autumn, when the fish return south fat with northern waters",
     "source": "Returning bonito (modori-gatsuo)"
   },
+  "ringo-apple": {
+    "category": "fruit",
+    "name_en": "Apple",
+    "name_jp": "林檎",
+    "name_romaji": "ringo",
+    "note": "Japanese apples arrive large and impeccably crisp, their flesh shattering cleanly under the teeth with a spray of juice that carries both sweetness and a faint wine-like depth. Fuji and Tsugaru varieties mark the shift from harvest abundance to winter's quieter table, often given as gifts wrapped in protective foam nets, each fruit a small ceremony of the season's closing.",
+    "peak": "Late autumn through early winter, when cold nights deepen the sugars",
+    "source": "Ringo (apple)"
+  },
   "saba-mackerel": {
     "category": "fish",
     "name_en": "Mackerel",
@@ -1392,6 +1437,15 @@
     "note": "The flesh turns richly oiled as waters warm, each small silver body firm enough to eat as sashimi yet soft enough to dissolve into tsumire fish cakes. Fishermen's wives once grilled them simply over charcoal at dawn — now that same sweet, mineral taste marks the shift from cherry blossoms to the drowsy heat of rainy season.",
     "peak": "Late spring through early summer, when schools run thick along Pacific currents",
     "source": "Sardine (iwashi)"
+  },
+  "satoimo-taro": {
+    "category": "vegetable",
+    "name_en": "Taro",
+    "name_jp": "里芋",
+    "name_romaji": "satoimo",
+    "note": "The flesh yields to the teeth with a dense, almost glutinous give, its surface faintly slick from mucilage that speaks of the wet paddies where it grew. Simmered in dashi until the broth clouds slightly, satoimo appears in nimono throughout the harvest months, its quiet sweetness a grounding note as the year turns inward.",
+    "peak": "Early autumn through winter, when the first cold nights concentrate the starches",
+    "source": "Satoimo (taro)"
   },
   "satoimo-taro-root": {
     "category": "vegetable",

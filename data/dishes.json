@@ -159,6 +159,14 @@
     "season": "Late autumn, when ginkgo trees drop their fruit",
     "source": "Ginnan no shioyaki"
   },
+  "gob-to-kinoko-no-kimpira": {
+    "name_en": "Sautéed burdock root and mushrooms in sweet soy",
+    "name_jp": "牛蒡と茸のきんぴら",
+    "name_romaji": "gobō to kinoko no kimpira",
+    "note": "Julienned burdock root and sliced mushrooms are stir-fried in sesame oil, then glazed with soy, mirin, and a whisper of chili until the edges caramelize and the fibers turn supple. This is food for the cooling days when the soil releases its deep flavors — gobō dug after first frost carries a sweetness that summer roots never possess, and the mushrooms echo the damp forest floor before winter closes in.",
+    "season": "Late autumn, when burdock reaches peak earthiness and wild mushrooms appear",
+    "source": "Gobō to kinoko no kimpira"
+  },
   "goya-no-shiraae": {
     "name_en": "Bitter melon with tofu dressing",
     "name_jp": "ゴーヤの白和え",
@@ -358,6 +366,30 @@
     "note": "Thick slices of bonito are seared over high flame until the outer flesh turns pale while the center remains raw, then sliced and dressed with ponzu, ginger, and heaps of fresh garlic and myoga. This is hatsu-gatsuo — the 'first bonito' of the season — leaner and cleaner than the fatty autumn catch, its arrival in Tosa province once marked by fishermen racing to bring the year's earliest fish to Edo.",
     "season": "Late spring through early summer, when the first bonito run north along the Pacific coast",
     "source": "Katsuo no tataki"
+  },
+  "kiku-kabu": {
+    "name_en": "Chrysanthemum-cut turnip",
+    "name_jp": "菊蕪",
+    "name_romaji": "kiku-kabu",
+    "note": "Small white turnips are scored in a fine crosshatch pattern, then pickled in sweetened vinegar until they fan open like chrysanthemum blossoms. The dish appears on autumn tables when the actual flowers are at their peak — a cook's quiet echo of the season, edible and vinegar-bright.",
+    "season": "Late autumn, when turnips are sweet and chrysanthemums bloom",
+    "source": "Kiku-kabu"
+  },
+  "kiku-no-ohitashi": {
+    "name_en": "Chilled chrysanthemum greens in light dashi",
+    "name_jp": "菊のお浸し",
+    "name_romaji": "kiku no ohitashi",
+    "note": "Petals of edible chrysanthemum are blanched briefly, then steeped in a delicate dashi and soy mixture and served cold, their faint bitterness yielding to a floral, grassy sweetness. The dish appears on tables around the ninth day of the ninth month, when the Chrysanthemum Festival marks the flower as a symbol of longevity and the last warmth before winter's approach.",
+    "season": "Early to mid-autumn, when edible chrysanthemums come into bloom",
+    "source": "Kiku no ohitashi"
+  },
+  "kinmedai-no-nitsuke": {
+    "name_en": "Simmered splendid alfonsino",
+    "name_jp": "金目鯛の煮付け",
+    "name_romaji": "kinmedai no nitsuke",
+    "note": "A whole fillet of kinmedai braised in sweetened soy with ginger until the collagen-rich skin turns glossy and the flesh flakes in clean, rose-tinted layers. The fish runs fattest in the cold months off the Izu coast, its crimson scales a stroke of luck on New Year tables and a last indulgence before the leaner catches of spring.",
+    "season": "Late winter through early spring, when the fish carry their deepest fat",
+    "source": "Kinmedai no nitsuke"
   },
   "kinoko-jiru": {
     "name_en": "Mushroom soup",
