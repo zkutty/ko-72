@@ -503,6 +503,15 @@
     "peak": "Early autumn through first frost, when cooling waters firm the flesh",
     "source": "Haze (goby)"
   },
+  "haze-yellowfin-goby": {
+    "category": "fish",
+    "name_en": "Yellowfin goby",
+    "name_jp": "鯊",
+    "name_romaji": "haze",
+    "note": "A small, slender bottom-dweller prized for its delicate white flesh that crisps beautifully in tempura — the subtle sweetness intensifying as autumn deepens. In Edo-period Tokyo, haze tempura marked the arrival of cool weather, a fleeting luxury eaten while the fish still carried the clarity of autumn tides.",
+    "peak": "Late autumn through early winter, when waters cool and flesh firms",
+    "source": "Haze (yellowfin goby)"
+  },
   "hirame-flounder": {
     "category": "fish",
     "name_en": "Olive flounder",
@@ -676,6 +685,15 @@
     "peak": "Late autumn through early winter, when the first frosts sweeten the flesh",
     "source": "Kabu (turnip)"
   },
+  "kaki-japanese-persimmon": {
+    "category": "fruit",
+    "name_en": "Japanese persimmon",
+    "name_jp": "柿",
+    "name_romaji": "kaki",
+    "note": "The fuyu variety yields to the teeth with a crisp, honeyed snap, while hachiya must soften to custard-like translucence before its tannic grip releases into pure sweetness. Dried on farmhouse eaves as hoshigaki, persimmons become winter's amber jewels — a taste of concentrated autumn light carried through the cold months.",
+    "peak": "Late autumn, when the first frosts sweeten the flesh",
+    "source": "Kaki (Japanese persimmon)"
+  },
   "kaki-persimmon": {
     "category": "fruit",
     "name_en": "Persimmon",
@@ -720,6 +738,24 @@
     "note": "The lean white flesh is almost transparent, mild to the point of sweetness, but it is the liver — creamy, rich as foie gras, tinged faintly orange — that devotees prize, mashed into soy sauce as a dipping medium for the sashimi. As autumn turns and the filefish fattens its liver against winter, sushi counters in Tokyo quietly shift their attention from summer's light catches to this homely fish with its sandpaper skin.",
     "peak": "Late autumn into early winter, when the liver swells with fat before the deep cold",
     "source": "Kawahagi (filefish)"
+  },
+  "kikuna-chrysanthemum-greens": {
+    "category": "vegetable",
+    "name_en": "Chrysanthemum greens",
+    "name_jp": "菊菜",
+    "name_romaji": "kikuna",
+    "note": "These serrated leaves carry the sharp, herbaceous perfume of chrysanthemum petals themselves — a bitter green brightness that cuts through rich nabemono broths. In the Kansai region especially, no winter hot pot feels complete without their slight astringency, added in the final moments so they wilt but never lose their edge.",
+    "peak": "Late autumn through winter, when cold nights concentrate their fragrance",
+    "source": "Kikuna (chrysanthemum greens)"
+  },
+  "kinki-thornyhead-rockfish": {
+    "category": "fish",
+    "name_en": "Thornyhead rockfish",
+    "name_jp": "喜知次",
+    "name_romaji": "kinki",
+    "note": "A deep-water fish with skin that turns brilliant vermilion when cooked, its flesh so rich with fat that it bastes itself while simmering, yielding meat that separates into silken flakes. Prized in Hokkaido for nabe and simmered dishes during the coldest months, kinki arrives at winter tables like stored sunlight — its very name written with characters meaning 'joy' and 'fortune.'",
+    "peak": "Deep winter, when the Sea of Okhotsk currents run coldest",
+    "source": "Kinki (thornyhead rockfish)"
   },
   "kinmedai-golden-eye-snapper": {
     "category": "fish",
@@ -837,6 +873,15 @@
     "note": "These dark purple grapes slip from their skins with a gentle squeeze, revealing translucent flesh so sweet and musky it perfumes the fingers. Their arrival signals the threshold between summer's end and autumn's gathering, when fruit bowls shift from bright citrus to the deeper, wine-dark tones of the cooling season.",
     "peak": "Late summer through early autumn, when cicada songs begin to fade",
     "source": "Kyoho grape"
+  },
+  "la-france-pear": {
+    "category": "fruit",
+    "name_en": "La France pear",
+    "name_jp": "ラ・フランス",
+    "name_romaji": "ra furansu",
+    "note": "A French variety that found its true home in Japan's Tōhoku region, this pear yields flesh so yielding it nearly dissolves on the tongue, with a perfume of honey and white flowers that fills the room when perfectly ripe. Harvested in October but eaten weeks later after careful storage, it arrives at tables just as the year turns inward, a gift of concentrated sweetness before winter closes in.",
+    "peak": "Late autumn, when the first true cold settles into Yamagata's orchards",
+    "source": "La France pear"
   },
   "late-strawberries": {
     "category": "fruit",

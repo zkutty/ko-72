@@ -3412,5 +3412,106 @@
       "closing": "白菊の花弁がひとひら、石畳の上にそっと落ちて、誰を待つでもなく静かに留まっている。"
     },
     "_sent_on": "2026-10-13"
+  },
+  "57": {
+    "en": {
+      "summary": "Crickets gather near doorways, their chirping now close and intimate as autumn deepens toward its coldest nights.",
+      "opening": "In the blue darkness before dawn, a cricket's song rises from the threshold — no longer from distant fields, but from the very stones of the genkan. The chill has driven these small musicians to seek warmth near human dwellings, and their voices carry a plaintive clarity that seems to measure the shortening days. Dew gathers heavy on morning glories that have long since closed, and the air holds the faint sweetness of decaying leaves.",
+      "nature_notes": "Crickets and other autumn insects cluster in the gaps between foundation stones and beneath wooden eaves, their songs intensifying in the evening hours before falling silent well before midnight as temperatures drop. Wild persimmons begin to show orange through yellowing leaves, while cosmos flowers reach their peak bloom along roadsides. The sky takes on a particular depth of blue unique to mid-autumn — what the Japanese call 'sora no aosa' — and migrating geese can be heard passing overhead in the early morning darkness.",
+      "seasonal_produce": {
+        "fruits": [
+          "Kaki (Japanese persimmon)",
+          "Karin (Chinese quince)",
+          "La France pear",
+          "Yamabudo (wild mountain grape)"
+        ],
+        "vegetables": [
+          "Murasaki-imo (purple sweet potato)",
+          "Kikuna (chrysanthemum greens)",
+          "Lotus root",
+          "Shimeji mushroom"
+        ],
+        "fish": [
+          "Kinki (thornyhead rockfish)",
+          "Sawara (Spanish mackerel)",
+          "Haze (yellowfin goby)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "Kinki no nitsuke",
+          "description": "Thornyhead rockfish simmered in sweetened soy — its rich, fatty flesh perfectly suited to the deepening cold of late Kanro."
+        },
+        {
+          "name": "Kaki no shira-ae",
+          "description": "Ripe persimmon dressed with silken tofu and white sesame, the fruit's honeyed sweetness balanced by the gentle bitterness of late-season greens."
+        },
+        {
+          "name": "Kikuna no karashi-ae",
+          "description": "Chrysanthemum greens blanched and dressed with mustard and soy — the slight bitterness echoing the season's turn toward winter's edge."
+        },
+        {
+          "name": "Sawara no misozuke-yaki",
+          "description": "Spanish mackerel marinated in sweet white miso then grilled until caramelized, its autumn richness deepened by fermentation."
+        }
+      ],
+      "cultural_note": "This micro-season falls within the period of 'mushi-kiki' — insect listening — a refined Heian-era pastime that persists in quieter forms today. Families might leave a window cracked to hear the crickets' song, understanding that these voices will soon fall silent. In classical poetry, the cricket at the door is a melancholy image, suggesting both intimacy and transience: the insect seeks warmth even as winter approaches to claim it.",
+      "haiku": {
+        "japanese": "戸に寄りて蟋蟀の声細くなる",
+        "romaji": "to ni yorite / kirigirisu no koe / hosoku naru",
+        "english": "drawing near the door — / the cricket's voice grows thin / in the deepening cold"
+      },
+      "closing": "A single cricket falls silent mid-phrase, and in the pause, you hear the first wild geese calling south through the darkness."
+    },
+    "ja": {
+      "summary": "蟋蟀が戸口に集まり、その声は遠い野原からではなく、家の軒先や敷石の隙間から聞こえてくる。",
+      "opening": "明け方の藍色の闘の中、玄関先から蟋蟀の声が立ち上る。冷え込みを避けて人の住まいに近づいた小さな楽師たちは、日ごとに細くなる声で短くなる秋を数えているかのようだ。朝顔の萎れた蔓には露が重く宿り、空気には落ち葉が朽ちてゆく甘い匂いがかすかに漂う。",
+      "nature_notes": "蟋蟀や鈴虫は、基礎石の隙間や軒下に身を寄せ、夕暮れから夜半前にかけて懸命に鳴く。気温が下がると急に静まり、その沈黙が寒さを告げる。野の柿が色づき始め、道端には秋桜が盛りを迎える。空は「天高く」と呼ばれる中秋特有の深い青を見せ、早朝の暗がりには雁の渡る声が聞こえる。",
+      "seasonal_produce": {
+        "fruits": [
+          "柿",
+          "花梨",
+          "ラ・フランス",
+          "山葡萄"
+        ],
+        "vegetables": [
+          "紫芋",
+          "菊菜（春菊）",
+          "蓮根",
+          "しめじ"
+        ],
+        "fish": [
+          "喜知次（きんき）",
+          "鰆",
+          "鯊（ハゼ）"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "きんきの煮付け",
+          "description": "脂ののった喜知次を甘辛く煮含め、寒露の冷え込みに沁み入る滋味深い一品。"
+        },
+        {
+          "name": "柿の白和え",
+          "description": "熟した柿を絹豆腐と白胡麻で和え、晩秋の果実の蜜のような甘さを引き立てる。"
+        },
+        {
+          "name": "菊菜の辛子和え",
+          "description": "さっと茹でた菊菜を辛子醤油で和え、ほのかな苦味が冬への移ろいを感じさせる。"
+        },
+        {
+          "name": "鰆の味噌漬け焼き",
+          "description": "白味噌に漬け込んだ鰆を香ばしく焼き上げ、秋深まる頃の旨味を凝縮させた焼き物。"
+        }
+      ],
+      "cultural_note": "この候は「虫聴き」の時節と重なる。平安貴族が籠に入れた鈴虫の声を愛でた風雅は、今も窓を少し開けて戸口の蟋蟀に耳を傾ける静かな形で続いている。古歌において戸に寄る蟋蟀は、寒さを逃れて人に近づきながらも、やがて声を失う運命を負う、親しみと哀感の象徴である。",
+      "haiku": {
+        "japanese": "戸に寄りて蟋蟀の声細くなる",
+        "romaji": "to ni yorite / kirigirisu no koe / hosoku naru",
+        "english": "drawing near the door — / the cricket's voice grows thin / in the deepening cold"
+      },
+      "closing": "一匹の蟋蟀がふと声を止め、その間に、南へ渡る雁の初音が闇を渡ってゆく。"
+    },
+    "_sent_on": "2026-10-18"
   }
 }
