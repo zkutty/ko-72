@@ -3513,5 +3513,98 @@
       "closing": "一匹の蟋蟀がふと声を止め、その間に、南へ渡る雁の初音が闇を渡ってゆく。"
     },
     "_sent_on": "2026-10-18"
+  },
+  "58": {
+    "en": {
+      "summary": "The year's first frost silvers the edges of fallen leaves and withered grasses, marking autumn's deepening toward winter.",
+      "opening": "Before dawn, the world holds its breath. A thin rime of frost coats the browning grass, each blade transformed into a needle of white. The air carries that particular stillness of late October mornings — when breath becomes visible and the last persimmons glow like lanterns against bare branches.",
+      "nature_notes": "Migrating geese continue their southward journeys, their calls echoing through pewter skies. Wild chrysanthemums bloom in ditches and along mountain paths, their bitter fragrance intensifying in the cold. The maples on higher slopes have turned fully now, while those in the valleys still hold green at their centers, creating landscapes of layered color.",
+      "seasonal_produce": {
+        "fruits": [
+          "Fuyu persimmon (kaki)",
+          "Asian pear (nashi)",
+          "Satsuma mandarin (mikan)",
+          "Quince (karin)"
+        ],
+        "vegetables": [
+          "Lotus root (renkon)",
+          "Japanese turnip (kabu)",
+          "Chrysanthemum greens (shungiku)",
+          "Butterbur stem (fuki)"
+        ],
+        "fish": [
+          "Pacific saury (sanma)",
+          "Yellowtail (buri)",
+          "Salmon roe (ikura)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "Kabu no soboro-ni",
+          "description": "Tender Japanese turnips simmered with chicken soboro in light dashi — a dish that warms without heaviness, perfect when frost first touches the garden."
+        },
+        {
+          "name": "Buri daikon",
+          "description": "Young yellowtail braised slowly with daikon radish, the fish's autumn fat melting into the vegetable as both reach their seasonal peak together."
+        },
+        {
+          "name": "Kaki no shira-ae",
+          "description": "Ripe persimmon dressed in silken tofu and sesame, balancing the fruit's honeyed sweetness with the subtle bitterness of the season's last warmth."
+        }
+      ],
+      "cultural_note": "This micro-season marks the traditional time for preparing winter clothing and bedding. Families would air out futons and bring down padded kimono from storage, performing mushi-boshi — the ritual sunning of textiles to prevent mold and insects. The first frost also signaled farmers to harvest the last of their daikon and prepare root cellars for winter storage.",
+      "haiku": {
+        "japanese": "初霜や枯葉の縁の白き息",
+        "romaji": "hatsushimo ya / kareha no fuchi no / shiroki iki",
+        "english": "first frost — / along the edge of dead leaves / a white breath"
+      },
+      "closing": "In the blue hour before sunrise, each frozen blade of grass catches the first light and releases it — a field of small flames, extinguished by the warming sun."
+    },
+    "ja": {
+      "summary": "夜明け前、枯草や落葉の縁が白く凍てつき、秋が冬へと深まる気配を告げる初霜の候。",
+      "opening": "払暁の静寂のなか、世界は息をひそめている。庭先の枯草に薄霜がおり、一本一本が白い針のように光る。吐く息が白く立ちのぼる十月末の朝——裸になりかけた枝に残る柿の実が、まるで提灯のように橙色に輝いている。",
+      "nature_notes": "雁の群れは鉛色の空を南へ渡り、その声が冷えた大気に響く。道端や山裾では野菊がひっそりと咲き、冷気のなかでその苦みを帯びた香りがいっそう際立つ。高い山の紅葉は盛りを過ぎ、里ではまだ緑を残す木々もあり、山肌は幾重もの色の層をなしている。",
+      "seasonal_produce": {
+        "fruits": [
+          "柿",
+          "梨",
+          "蜜柑",
+          "花梨（かりん）"
+        ],
+        "vegetables": [
+          "蓮根",
+          "蕪",
+          "春菊",
+          "蕗"
+        ],
+        "fish": [
+          "秋刀魚",
+          "鰤（ぶり）",
+          "いくら"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "蕪のそぼろ煮",
+          "description": "霜に当たって甘みを増した蕪を鶏そぼろとともに薄味の出汁で炊き、身体の芯からじんわりと温まる一品。"
+        },
+        {
+          "name": "鰤大根",
+          "description": "脂の乗り始めた若い鰤と、寒さで甘みを蓄えた大根をじっくり炊き合わせ、互いの旨味が染み渡る晩秋の定番。"
+        },
+        {
+          "name": "柿の白和え",
+          "description": "熟した柿の蜜のような甘さを、絹ごし豆腐と胡麻の衣がやさしく包み、秋の名残を味わう和え物。"
+        }
+      ],
+      "cultural_note": "霜降の頃は、冬支度を本格的に始める時節である。蔵や箪笥から綿入れの着物や布団を出し、虫干しをして陽に当てる。農家では最後の大根を引き、土室（つちむろ）に野菜を貯え、来たる冬に備える。初霜は、自然と人の暮らしが冬へと歩調を合わせる合図であった。",
+      "haiku": {
+        "japanese": "初霜や枯葉の縁の白き息",
+        "romaji": "hatsushimo ya / kareha no fuchi no / shiroki iki",
+        "english": "first frost — / along the edge of dead leaves / a white breath"
+      },
+      "closing": "夜明けの藍色のなか、凍てついた草の一本一本が朝日を受けて燃え立ち、やがて陽が昇るにつれ、その小さな炎は静かに消えてゆく。"
+    },
+    "_sent_on": "2026-10-23"
   }
 }

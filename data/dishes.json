@@ -103,6 +103,14 @@
     "season": "Early autumn, when Delaware and Kyoho grapes hang heavy on the vine",
     "source": "Budō to mozzarella no sarada"
   },
+  "buri-daikon": {
+    "name_en": "Simmered yellowtail with daikon radish",
+    "name_jp": "鰤大根",
+    "name_romaji": "buri daikon",
+    "note": "Thick cuts of wild yellowtail are braised low and slow with wedges of daikon in soy, mirin, and sake until the radish turns translucent and drinks up the fish's rich oils. The dish marks the arrival of kan-buri — 'cold yellowtail' — caught between December and February when the fish have fattened for their spawning migration, their flesh marbled and sweet against winter's first real bite.",
+    "season": "Deep winter, when buri arrives fat from cold northern seas",
+    "source": "Buri daikon"
+  },
   "doj-nabe": {
     "name_en": "Loach hot pot",
     "name_jp": "泥鰌鍋",
@@ -326,6 +334,14 @@
     "note": "Wedges of kabocha are simmered in dashi until tender, then blanketed in a glossy sauce thickened with minced chicken and a whisper of ginger. The dish arrives as the equinox passes and nights lengthen — a moment when cooks turn to foods that warm from within, and the squash, having sat in storage just long enough, reaches its fullest sweetness.",
     "season": "Early autumn, when winter squash sweetens after the first cool nights",
     "source": "Kabocha no soboro-an"
+  },
+  "kabu-no-soboro-ni": {
+    "name_en": "Turnip simmered with crumbled meat",
+    "name_jp": "蕪のそぼろ煮",
+    "name_romaji": "kabu no soboro-ni",
+    "note": "Small white turnips are braised until yielding in dashi, then finished with seasoned crumbled chicken or pork that clings to each tender wedge. The dish belongs to the weeks after the first hard frost, when kabu develop a dense sweetness that only cold nights can coax from the root.",
+    "season": "Late autumn through early winter, when frost-touched turnips reach their sweetest",
+    "source": "Kabu no soboro-ni"
   },
   "kaki-no-namer": {
     "name_en": "Minced persimmon tartare",
