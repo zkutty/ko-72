@@ -1,0 +1,3380 @@
+{
+  "status": "working_draft",
+  "scope": "Seasonal produce in currently cached letters; regenerates as the remaining letters arrive",
+  "source_seasons": 36,
+  "source_mentions": 396,
+  "entry_count": 235,
+  "unmatched_catalog_names": 191,
+  "entries": [
+    {
+      "category": "fish",
+      "display_name": "Aji (horse mackerel)",
+      "source_labels": [
+        "Aji (horse mackerel)"
+      ],
+      "season_ids": [
+        30,
+        34,
+        44,
+        45
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "anago (conger eel)",
+      "source_labels": [
+        "anago (conger eel)",
+        "Anago (conger eel)"
+      ],
+      "season_ids": [
+        31,
+        32,
+        34,
+        35,
+        36
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "ayu (sweetfish)",
+      "source_labels": [
+        "ayu (sweetfish)"
+      ],
+      "season_ids": [
+        29,
+        31,
+        32
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Bonito",
+      "source_labels": [
+        "Bonito"
+      ],
+      "season_ids": [
+        24
+      ],
+      "catalog_candidates": [
+        "bonito",
+        "bonito-katsuo"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "bonito (katsuo)",
+      "source_labels": [
+        "bonito (katsuo)"
+      ],
+      "season_ids": [
+        25
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "conger eel",
+      "source_labels": [
+        "conger eel"
+      ],
+      "season_ids": [
+        38,
+        40
+      ],
+      "catalog_candidates": [
+        "anago-conger-eel",
+        "conger-eel",
+        "conger-eel-anago"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "conger eel (anago)",
+      "source_labels": [
+        "conger eel (anago)"
+      ],
+      "season_ids": [
+        33
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Flounder",
+      "source_labels": [
+        "Flounder"
+      ],
+      "season_ids": [
+        24
+      ],
+      "catalog_candidates": [
+        "flounder"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "grunt",
+      "source_labels": [
+        "grunt"
+      ],
+      "season_ids": [
+        27
+      ],
+      "catalog_candidates": [
+        "grunt"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "hamo (pike conger)",
+      "source_labels": [
+        "hamo (pike conger)",
+        "Hamo (pike conger)"
+      ],
+      "season_ids": [
+        31,
+        32,
+        41
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Hatatehagi (filefish)",
+      "source_labels": [
+        "Hatatehagi (filefish)"
+      ],
+      "season_ids": [
+        55
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Haze (goby)",
+      "source_labels": [
+        "Haze (goby)"
+      ],
+      "season_ids": [
+        54
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Hirame (flounder)",
+      "source_labels": [
+        "Hirame (flounder)"
+      ],
+      "season_ids": [
+        55
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Hokke (Atka mackerel)",
+      "source_labels": [
+        "Hokke (Atka mackerel)"
+      ],
+      "season_ids": [
+        54
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Horse mackerel",
+      "source_labels": [
+        "Horse mackerel",
+        "horse mackerel"
+      ],
+      "season_ids": [
+        24,
+        25,
+        26,
+        27,
+        38
+      ],
+      "catalog_candidates": [
+        "aji-horse-mackerel",
+        "horse-mackerel",
+        "horse-mackerel-aji"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "horse mackerel (aji)",
+      "source_labels": [
+        "horse mackerel (aji)"
+      ],
+      "season_ids": [
+        33
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Hotaru ika (firefly squid)",
+      "source_labels": [
+        "Hotaru ika (firefly squid)"
+      ],
+      "season_ids": [
+        23
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Isaki (grunt)",
+      "source_labels": [
+        "Isaki (grunt)",
+        "isaki (grunt)"
+      ],
+      "season_ids": [
+        28,
+        34,
+        35
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "ishidai (striped beakfish)",
+      "source_labels": [
+        "ishidai (striped beakfish)"
+      ],
+      "season_ids": [
+        26
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Iwashi (sardine)",
+      "source_labels": [
+        "Iwashi (sardine)"
+      ],
+      "season_ids": [
+        30
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Japanese sea bass (suzuki)",
+      "source_labels": [
+        "Japanese sea bass (suzuki)"
+      ],
+      "season_ids": [
+        50
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Katsuo (skipjack tuna, returning run)",
+      "source_labels": [
+        "Katsuo (skipjack tuna, returning run)"
+      ],
+      "season_ids": [
+        49
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Kawahagi (filefish)",
+      "source_labels": [
+        "Kawahagi (filefish)"
+      ],
+      "season_ids": [
+        43
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Kinmedai (golden-eye snapper)",
+      "source_labels": [
+        "Kinmedai (golden-eye snapper)"
+      ],
+      "season_ids": [
+        51
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Kinmedai (splendid alfonsino)",
+      "source_labels": [
+        "Kinmedai (splendid alfonsino)"
+      ],
+      "season_ids": [
+        56
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Kisu (Japanese whiting)",
+      "source_labels": [
+        "Kisu (Japanese whiting)"
+      ],
+      "season_ids": [
+        28
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "kisu (sillago)",
+      "source_labels": [
+        "kisu (sillago)"
+      ],
+      "season_ids": [
+        29
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Kisu (whiting)",
+      "source_labels": [
+        "Kisu (whiting)"
+      ],
+      "season_ids": [
+        30
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Kohada (gizzard shad)",
+      "source_labels": [
+        "Kohada (gizzard shad)"
+      ],
+      "season_ids": [
+        46
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Kuruma ebi (Japanese tiger prawn)",
+      "source_labels": [
+        "Kuruma ebi (Japanese tiger prawn)"
+      ],
+      "season_ids": [
+        45
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Kuruma-ebi (Japanese tiger prawn)",
+      "source_labels": [
+        "Kuruma-ebi (Japanese tiger prawn)"
+      ],
+      "season_ids": [
+        43
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Mackerel (saba)",
+      "source_labels": [
+        "Mackerel (saba)"
+      ],
+      "season_ids": [
+        53
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Pacific saury (sanma)",
+      "source_labels": [
+        "Pacific saury (sanma)"
+      ],
+      "season_ids": [
+        47,
+        50,
+        52,
+        53
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Returning bonito (modori-gatsuo)",
+      "source_labels": [
+        "Returning bonito (modori-gatsuo)"
+      ],
+      "season_ids": [
+        50
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Saba (mackerel)",
+      "source_labels": [
+        "Saba (mackerel)"
+      ],
+      "season_ids": [
+        51
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Sake (salmon)",
+      "source_labels": [
+        "Sake (salmon)"
+      ],
+      "season_ids": [
+        48
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Salmon (aki-sake)",
+      "source_labels": [
+        "Salmon (aki-sake)"
+      ],
+      "season_ids": [
+        52
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Salmon (sake)",
+      "source_labels": [
+        "Salmon (sake)"
+      ],
+      "season_ids": [
+        53
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Sanma (Pacific saury)",
+      "source_labels": [
+        "Sanma (Pacific saury)"
+      ],
+      "season_ids": [
+        43,
+        44,
+        45,
+        46,
+        48,
+        49,
+        51,
+        56
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Sardine (iwashi)",
+      "source_labels": [
+        "Sardine (iwashi)"
+      ],
+      "season_ids": [
+        47
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Sawara (Spanish mackerel)",
+      "source_labels": [
+        "Sawara (Spanish mackerel)"
+      ],
+      "season_ids": [
+        22,
+        23,
+        54,
+        55,
+        56
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Sayori (halfbeak)",
+      "source_labels": [
+        "Sayori (halfbeak)"
+      ],
+      "season_ids": [
+        21,
+        22
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Shiira (mahi-mahi)",
+      "source_labels": [
+        "Shiira (mahi-mahi)"
+      ],
+      "season_ids": [
+        46
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Shijimi (freshwater clams)",
+      "source_labels": [
+        "Shijimi (freshwater clams)"
+      ],
+      "season_ids": [
+        41
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Shirauo (icefish)",
+      "source_labels": [
+        "Shirauo (icefish)"
+      ],
+      "season_ids": [
+        21,
+        22,
+        23
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Spanish mackerel (sawara)",
+      "source_labels": [
+        "Spanish mackerel (sawara)"
+      ],
+      "season_ids": [
+        52
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "squid",
+      "source_labels": [
+        "squid"
+      ],
+      "season_ids": [
+        40
+      ],
+      "catalog_candidates": [
+        "squid"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Suzuki (Japanese sea bass)",
+      "source_labels": [
+        "Suzuki (Japanese sea bass)"
+      ],
+      "season_ids": [
+        41,
+        44
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Suzuki (sea bass)",
+      "source_labels": [
+        "Suzuki (sea bass)",
+        "suzuki (sea bass)"
+      ],
+      "season_ids": [
+        28,
+        29,
+        35,
+        36
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "sweetfish",
+      "source_labels": [
+        "sweetfish"
+      ],
+      "season_ids": [
+        38
+      ],
+      "catalog_candidates": [
+        "ayu-sweetfish",
+        "sweetfish",
+        "sweetfish-ayu"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "sweetfish (ayu)",
+      "source_labels": [
+        "sweetfish (ayu)"
+      ],
+      "season_ids": [
+        25,
+        26,
+        27,
+        33
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Tai (sea bream)",
+      "source_labels": [
+        "Tai (sea bream)"
+      ],
+      "season_ids": [
+        21,
+        48,
+        49
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "tako (octopus)",
+      "source_labels": [
+        "tako (octopus)"
+      ],
+      "season_ids": [
+        36
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "yellowtail amberjack",
+      "source_labels": [
+        "yellowtail amberjack"
+      ],
+      "season_ids": [
+        40
+      ],
+      "catalog_candidates": [
+        "yellowtail-amberjack"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "Yellowtail amberjack (kanpachi)",
+      "source_labels": [
+        "Yellowtail amberjack (kanpachi)"
+      ],
+      "season_ids": [
+        47
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "スズキ (sea bass)",
+      "source_labels": [
+        "スズキ (sea bass)"
+      ],
+      "season_ids": [
+        37,
+        42
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "太刀魚 (beltfish)",
+      "source_labels": [
+        "太刀魚 (beltfish)"
+      ],
+      "season_ids": [
+        42
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "穴子 (conger eel)",
+      "source_labels": [
+        "穴子 (conger eel)"
+      ],
+      "season_ids": [
+        37,
+        39
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "鮑 (abalone)",
+      "source_labels": [
+        "鮑 (abalone)"
+      ],
+      "season_ids": [
+        39
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "鯵 (horse mackerel)",
+      "source_labels": [
+        "鯵 (horse mackerel)"
+      ],
+      "season_ids": [
+        42
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fish",
+      "display_name": "鱧 (pike conger)",
+      "source_labels": [
+        "鱧 (pike conger)"
+      ],
+      "season_ids": [
+        37,
+        39
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "akebi melon",
+      "source_labels": [
+        "akebi melon"
+      ],
+      "season_ids": [
+        38
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "amanatsu",
+      "source_labels": [
+        "amanatsu",
+        "Amanatsu"
+      ],
+      "season_ids": [
+        27,
+        28
+      ],
+      "catalog_candidates": [
+        "amanatsu-sweet-citrus"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Amanatsu (sweet citrus)",
+      "source_labels": [
+        "Amanatsu (sweet citrus)"
+      ],
+      "season_ids": [
+        22
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Amanatsu citrus",
+      "source_labels": [
+        "Amanatsu citrus",
+        "amanatsu citrus"
+      ],
+      "season_ids": [
+        21,
+        25,
+        26
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Asian persimmon (kaki)",
+      "source_labels": [
+        "Asian persimmon (kaki)"
+      ],
+      "season_ids": [
+        53
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "biwa (loquat)",
+      "source_labels": [
+        "biwa (loquat)",
+        "Biwa (loquat)"
+      ],
+      "season_ids": [
+        29,
+        30,
+        32,
+        34
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Biwa (loquat), early",
+      "source_labels": [
+        "Biwa (loquat), early"
+      ],
+      "season_ids": [
+        23
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Biwa (loquat, early)",
+      "source_labels": [
+        "Biwa (loquat, early)"
+      ],
+      "season_ids": [
+        22
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "blueberry",
+      "source_labels": [
+        "blueberry"
+      ],
+      "season_ids": [
+        36
+      ],
+      "catalog_candidates": [
+        "blueberry"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Budō (Japanese grapes)",
+      "source_labels": [
+        "Budō (Japanese grapes)"
+      ],
+      "season_ids": [
+        41
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "cherry",
+      "source_labels": [
+        "cherry"
+      ],
+      "season_ids": [
+        33
+      ],
+      "catalog_candidates": [
+        "cherry",
+        "early-cherries",
+        "sakuranbo-cherries",
+        "sakuranbo-early-cherries"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Early cherries",
+      "source_labels": [
+        "Early cherries"
+      ],
+      "season_ids": [
+        24
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "early peach",
+      "source_labels": [
+        "early peach"
+      ],
+      "season_ids": [
+        33
+      ],
+      "catalog_candidates": [
+        "early-peach"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "early pear",
+      "source_labels": [
+        "early pear"
+      ],
+      "season_ids": [
+        40
+      ],
+      "catalog_candidates": [
+        "early-pear"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Early persimmon (kaki)",
+      "source_labels": [
+        "Early persimmon (kaki)"
+      ],
+      "season_ids": [
+        50
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Early-harvest persimmon (kaki)",
+      "source_labels": [
+        "Early-harvest persimmon (kaki)"
+      ],
+      "season_ids": [
+        47
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Fig (ichijiku)",
+      "source_labels": [
+        "Fig (ichijiku)"
+      ],
+      "season_ids": [
+        47
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Figs",
+      "source_labels": [
+        "Figs"
+      ],
+      "season_ids": [
+        49
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Green ume plums",
+      "source_labels": [
+        "Green ume plums"
+      ],
+      "season_ids": [
+        24
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Ichigo (strawberries)",
+      "source_labels": [
+        "Ichigo (strawberries)"
+      ],
+      "season_ids": [
+        22
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Japanese pear (nashi)",
+      "source_labels": [
+        "Japanese pear (nashi)"
+      ],
+      "season_ids": [
+        44,
+        46,
+        47,
+        50
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Kabosu citrus",
+      "source_labels": [
+        "Kabosu citrus"
+      ],
+      "season_ids": [
+        48
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Kaki (persimmon)",
+      "source_labels": [
+        "Kaki (persimmon)"
+      ],
+      "season_ids": [
+        54,
+        55,
+        56
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Kaki (persimmon) — early varieties",
+      "source_labels": [
+        "Kaki (persimmon) — early varieties"
+      ],
+      "season_ids": [
+        51
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Karin (Chinese quince)",
+      "source_labels": [
+        "Karin (Chinese quince)"
+      ],
+      "season_ids": [
+        55
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Koshu grape",
+      "source_labels": [
+        "Koshu grape"
+      ],
+      "season_ids": [
+        54
+      ],
+      "catalog_candidates": [
+        "koshu-grape"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Kosui pear (Asian pear)",
+      "source_labels": [
+        "Kosui pear (Asian pear)"
+      ],
+      "season_ids": [
+        49
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Kurinameshi pear (Japanese pear)",
+      "source_labels": [
+        "Kurinameshi pear (Japanese pear)"
+      ],
+      "season_ids": [
+        56
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Kuromame-zuke (black soybeans)",
+      "source_labels": [
+        "Kuromame-zuke (black soybeans)"
+      ],
+      "season_ids": [
+        54
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Kyoho grape",
+      "source_labels": [
+        "Kyoho grape"
+      ],
+      "season_ids": [
+        46,
+        47,
+        52
+      ],
+      "catalog_candidates": [
+        "kyoho-grape"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Late strawberries",
+      "source_labels": [
+        "Late strawberries"
+      ],
+      "season_ids": [
+        24
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Loquat",
+      "source_labels": [
+        "Loquat",
+        "loquat"
+      ],
+      "season_ids": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        33,
+        35
+      ],
+      "catalog_candidates": [
+        "biwa-loquat",
+        "biwa-loquat-early",
+        "loquat",
+        "loquats-biwa"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Loquats (biwa)",
+      "source_labels": [
+        "Loquats (biwa)"
+      ],
+      "season_ids": [
+        21
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "mango",
+      "source_labels": [
+        "mango"
+      ],
+      "season_ids": [
+        36
+      ],
+      "catalog_candidates": [
+        "mango",
+        "mango-okinawan"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Mango (Okinawan)",
+      "source_labels": [
+        "Mango (Okinawan)"
+      ],
+      "season_ids": [
+        30
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Mikan (late variety)",
+      "source_labels": [
+        "Mikan (late variety)"
+      ],
+      "season_ids": [
+        21
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "momo (early peaches)",
+      "source_labels": [
+        "momo (early peaches)"
+      ],
+      "season_ids": [
+        31
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "momo (white peach)",
+      "source_labels": [
+        "momo (white peach)",
+        "Momo (white peach)"
+      ],
+      "season_ids": [
+        36,
+        41
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Mukago (mountain yam bulbils)",
+      "source_labels": [
+        "Mukago (mountain yam bulbils)"
+      ],
+      "season_ids": [
+        55
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Muscat grape",
+      "source_labels": [
+        "Muscat grape"
+      ],
+      "season_ids": [
+        44
+      ],
+      "catalog_candidates": [
+        "muscat-grape",
+        "muscat-grapes"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "muscat grapes",
+      "source_labels": [
+        "muscat grapes",
+        "Muscat grapes"
+      ],
+      "season_ids": [
+        38,
+        49,
+        53
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Nashi (Asian pear)",
+      "source_labels": [
+        "Nashi (Asian pear)"
+      ],
+      "season_ids": [
+        41,
+        43,
+        54
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Natsu mikan (summer citrus)",
+      "source_labels": [
+        "Natsu mikan (summer citrus)"
+      ],
+      "season_ids": [
+        22,
+        23
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Nijisseiki pear (20th century pear)",
+      "source_labels": [
+        "Nijisseiki pear (20th century pear)",
+        "Nijisseiki pear (20th Century pear)"
+      ],
+      "season_ids": [
+        45,
+        48
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Nijisseiki pear (Asian pear)",
+      "source_labels": [
+        "Nijisseiki pear (Asian pear)"
+      ],
+      "season_ids": [
+        51
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "passion fruit",
+      "source_labels": [
+        "passion fruit"
+      ],
+      "season_ids": [
+        40
+      ],
+      "catalog_candidates": [
+        "passion-fruit"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Pear (nashi)",
+      "source_labels": [
+        "Pear (nashi)"
+      ],
+      "season_ids": [
+        52,
+        53
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Persimmon (early varieties)",
+      "source_labels": [
+        "Persimmon (early varieties)"
+      ],
+      "season_ids": [
+        52
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Pione grape",
+      "source_labels": [
+        "Pione grape"
+      ],
+      "season_ids": [
+        43,
+        44,
+        45,
+        46,
+        51
+      ],
+      "catalog_candidates": [
+        "pione-grape",
+        "pione-grapes"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Pione grapes",
+      "source_labels": [
+        "Pione grapes"
+      ],
+      "season_ids": [
+        48,
+        49,
+        50
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Prune plum",
+      "source_labels": [
+        "Prune plum"
+      ],
+      "season_ids": [
+        34
+      ],
+      "catalog_candidates": [
+        "prune-plum"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Ringo (apple)",
+      "source_labels": [
+        "Ringo (apple)"
+      ],
+      "season_ids": [
+        56
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "sakuranbo (cherries)",
+      "source_labels": [
+        "sakuranbo (cherries)"
+      ],
+      "season_ids": [
+        31,
+        32,
+        35
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Sakuranbo (early cherries)",
+      "source_labels": [
+        "Sakuranbo (early cherries)",
+        "sakuranbo (early cherries)"
+      ],
+      "season_ids": [
+        28,
+        29,
+        30
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Shine Muscat grape",
+      "source_labels": [
+        "Shine Muscat grape"
+      ],
+      "season_ids": [
+        45,
+        51
+      ],
+      "catalog_candidates": [
+        "shine-muscat-grape",
+        "shine-muscat-grapes"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Shine Muscat grapes",
+      "source_labels": [
+        "Shine Muscat grapes"
+      ],
+      "season_ids": [
+        48,
+        50
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Strawberries",
+      "source_labels": [
+        "Strawberries",
+        "strawberries"
+      ],
+      "season_ids": [
+        23,
+        25,
+        26,
+        27
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Strawberries (ichigo)",
+      "source_labels": [
+        "Strawberries (ichigo)"
+      ],
+      "season_ids": [
+        21
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "sudachi",
+      "source_labels": [
+        "sudachi"
+      ],
+      "season_ids": [
+        40
+      ],
+      "catalog_candidates": [
+        "sudachi",
+        "sudachi-citrus"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Sudachi (citrus)",
+      "source_labels": [
+        "Sudachi (citrus)"
+      ],
+      "season_ids": [
+        56
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Sudachi citrus",
+      "source_labels": [
+        "Sudachi citrus"
+      ],
+      "season_ids": [
+        43,
+        52,
+        53
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "suika (early watermelon)",
+      "source_labels": [
+        "suika (early watermelon)"
+      ],
+      "season_ids": [
+        31,
+        32,
+        35
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "suika (first watermelons)",
+      "source_labels": [
+        "suika (first watermelons)"
+      ],
+      "season_ids": [
+        29
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Suika (watermelon)",
+      "source_labels": [
+        "Suika (watermelon)"
+      ],
+      "season_ids": [
+        34,
+        41
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "sumomo (Japanese plum)",
+      "source_labels": [
+        "sumomo (Japanese plum)"
+      ],
+      "season_ids": [
+        36
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Ume (green plum)",
+      "source_labels": [
+        "Ume (green plum)"
+      ],
+      "season_ids": [
+        30,
+        34
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "ume (green plums)",
+      "source_labels": [
+        "ume (green plums)",
+        "Ume (green plums)"
+      ],
+      "season_ids": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        32,
+        35
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Ume (green plums), just appearing",
+      "source_labels": [
+        "Ume (green plums), just appearing"
+      ],
+      "season_ids": [
+        23
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "watermelon",
+      "source_labels": [
+        "watermelon"
+      ],
+      "season_ids": [
+        38
+      ],
+      "catalog_candidates": [
+        "suika-early-watermelon",
+        "suika-first-watermelons",
+        "suika-watermelon",
+        "watermelon"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "white peach",
+      "source_labels": [
+        "white peach",
+        "White peach"
+      ],
+      "season_ids": [
+        38,
+        40,
+        45
+      ],
+      "catalog_candidates": [
+        "momo-white-peach",
+        "white-peach",
+        "white-peach-hakut"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "White peach (hakutō)",
+      "source_labels": [
+        "White peach (hakutō)"
+      ],
+      "season_ids": [
+        43,
+        44,
+        46
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "Yamabudo (wild mountain grape)",
+      "source_labels": [
+        "Yamabudo (wild mountain grape)"
+      ],
+      "season_ids": [
+        55
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "yellow plums (完熟梅)",
+      "source_labels": [
+        "yellow plums (完熟梅)"
+      ],
+      "season_ids": [
+        33
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "すいか (watermelon)",
+      "source_labels": [
+        "すいか (watermelon)"
+      ],
+      "season_ids": [
+        42
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "ぶどう (grape)",
+      "source_labels": [
+        "ぶどう (grape)"
+      ],
+      "season_ids": [
+        42
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "ブルーベリー (blueberry)",
+      "source_labels": [
+        "ブルーベリー (blueberry)"
+      ],
+      "season_ids": [
+        37,
+        39
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "プラム (plum)",
+      "source_labels": [
+        "プラム (plum)"
+      ],
+      "season_ids": [
+        37,
+        39
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "マンゴー (mango)",
+      "source_labels": [
+        "マンゴー (mango)"
+      ],
+      "season_ids": [
+        39
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "桃 (white peach)",
+      "source_labels": [
+        "桃 (white peach)"
+      ],
+      "season_ids": [
+        37,
+        39
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "梨 (Japanese pear)",
+      "source_labels": [
+        "梨 (Japanese pear)"
+      ],
+      "season_ids": [
+        42
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "白桃 (white peach)",
+      "source_labels": [
+        "白桃 (white peach)"
+      ],
+      "season_ids": [
+        42
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "fruit",
+      "display_name": "西瓜 (watermelon)",
+      "source_labels": [
+        "西瓜 (watermelon)"
+      ],
+      "season_ids": [
+        37
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Aoyuzu (green yuzu)",
+      "source_labels": [
+        "Aoyuzu (green yuzu)"
+      ],
+      "season_ids": [
+        34
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "ashitaba",
+      "source_labels": [
+        "ashitaba"
+      ],
+      "season_ids": [
+        26
+      ],
+      "catalog_candidates": [
+        "ashitaba"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Bamboo shoots",
+      "source_labels": [
+        "Bamboo shoots",
+        "bamboo shoots"
+      ],
+      "season_ids": [
+        24,
+        25,
+        27
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Bamboo shoots (takenoko)",
+      "source_labels": [
+        "Bamboo shoots (takenoko)"
+      ],
+      "season_ids": [
+        21
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "bitter melon",
+      "source_labels": [
+        "bitter melon"
+      ],
+      "season_ids": [
+        38,
+        40
+      ],
+      "catalog_candidates": [
+        "bitter-melon",
+        "bitter-melon-g-ya"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Bitter melon (gōya)",
+      "source_labels": [
+        "Bitter melon (gōya)"
+      ],
+      "season_ids": [
+        43
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "edamame",
+      "source_labels": [
+        "edamame",
+        "Edamame"
+      ],
+      "season_ids": [
+        33,
+        34,
+        35,
+        40,
+        46
+      ],
+      "catalog_candidates": [
+        "edamame"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Fava beans",
+      "source_labels": [
+        "Fava beans",
+        "fava beans"
+      ],
+      "season_ids": [
+        24,
+        25,
+        27,
+        28
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Fava beans (soramame)",
+      "source_labels": [
+        "Fava beans (soramame)"
+      ],
+      "season_ids": [
+        21
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Fuki (butterbur)",
+      "source_labels": [
+        "Fuki (butterbur)"
+      ],
+      "season_ids": [
+        22,
+        23
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Ginkgo nut",
+      "source_labels": [
+        "Ginkgo nut"
+      ],
+      "season_ids": [
+        52
+      ],
+      "catalog_candidates": [
+        "ginkgo-nut",
+        "ginkgo-nuts",
+        "ginkgo-nuts-ginnan",
+        "ginko-nuts-ginnan",
+        "ginnan-ginkgo-nut"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Ginkgo nuts",
+      "source_labels": [
+        "Ginkgo nuts"
+      ],
+      "season_ids": [
+        48
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Ginkgo nuts (ginnan)",
+      "source_labels": [
+        "Ginkgo nuts (ginnan)"
+      ],
+      "season_ids": [
+        50
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Ginko nuts (ginnan)",
+      "source_labels": [
+        "Ginko nuts (ginnan)"
+      ],
+      "season_ids": [
+        53
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Ginnan (ginkgo nut)",
+      "source_labels": [
+        "Ginnan (ginkgo nut)"
+      ],
+      "season_ids": [
+        55
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Gobō (burdock root)",
+      "source_labels": [
+        "Gobō (burdock root)"
+      ],
+      "season_ids": [
+        56
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "green peas",
+      "source_labels": [
+        "green peas"
+      ],
+      "season_ids": [
+        26
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "green shiso",
+      "source_labels": [
+        "green shiso"
+      ],
+      "season_ids": [
+        33,
+        35
+      ],
+      "catalog_candidates": [
+        "green-shiso",
+        "green-shiso-ba"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Green shiso (ōba)",
+      "source_labels": [
+        "Green shiso (ōba)"
+      ],
+      "season_ids": [
+        47
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Hakusai (napa cabbage)",
+      "source_labels": [
+        "Hakusai (napa cabbage)"
+      ],
+      "season_ids": [
+        54
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Japanese sweet potato",
+      "source_labels": [
+        "Japanese sweet potato"
+      ],
+      "season_ids": [
+        50
+      ],
+      "catalog_candidates": [
+        "japanese-sweet-potato"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Jūroku-sasage (yard-long beans)",
+      "source_labels": [
+        "Jūroku-sasage (yard-long beans)"
+      ],
+      "season_ids": [
+        41
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Kabocha (winter squash)",
+      "source_labels": [
+        "Kabocha (winter squash)"
+      ],
+      "season_ids": [
+        43,
+        45
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Kabocha squash",
+      "source_labels": [
+        "Kabocha squash"
+      ],
+      "season_ids": [
+        46,
+        47
+      ],
+      "catalog_candidates": [
+        "kabocha-squash"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Kabu (turnip)",
+      "source_labels": [
+        "Kabu (turnip)"
+      ],
+      "season_ids": [
+        56
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "kyūri (cucumber)",
+      "source_labels": [
+        "kyūri (cucumber)"
+      ],
+      "season_ids": [
+        31
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "lotus root",
+      "source_labels": [
+        "lotus root",
+        "Lotus root"
+      ],
+      "season_ids": [
+        38,
+        45,
+        49
+      ],
+      "catalog_candidates": [
+        "lotus-root",
+        "lotus-root-renkon",
+        "renkon-lotus-root"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Lotus root (renkon)",
+      "source_labels": [
+        "Lotus root (renkon)"
+      ],
+      "season_ids": [
+        53
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Maitake (hen of the woods mushroom)",
+      "source_labels": [
+        "Maitake (hen of the woods mushroom)"
+      ],
+      "season_ids": [
+        45
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Manganji pepper",
+      "source_labels": [
+        "Manganji pepper"
+      ],
+      "season_ids": [
+        43
+      ],
+      "catalog_candidates": [
+        "manganji-pepper",
+        "manganji-peppers"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "manganji peppers",
+      "source_labels": [
+        "manganji peppers"
+      ],
+      "season_ids": [
+        35
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Matsutake (pine mushroom)",
+      "source_labels": [
+        "Matsutake (pine mushroom)"
+      ],
+      "season_ids": [
+        51,
+        54
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Matsutake mushroom",
+      "source_labels": [
+        "Matsutake mushroom"
+      ],
+      "season_ids": [
+        49,
+        50,
+        52,
+        53
+      ],
+      "catalog_candidates": [
+        "matsutake-mushroom",
+        "matsutake-mushrooms"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Matsutake mushrooms",
+      "source_labels": [
+        "Matsutake mushrooms"
+      ],
+      "season_ids": [
+        48
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Mitsuba",
+      "source_labels": [
+        "Mitsuba"
+      ],
+      "season_ids": [
+        24
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Mitsuba (Japanese wild parsley)",
+      "source_labels": [
+        "Mitsuba (Japanese wild parsley)"
+      ],
+      "season_ids": [
+        49
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Murasaki-imo (purple sweet potato)",
+      "source_labels": [
+        "Murasaki-imo (purple sweet potato)"
+      ],
+      "season_ids": [
+        54
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "myōga",
+      "source_labels": [
+        "myōga"
+      ],
+      "season_ids": [
+        35,
+        36
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Myōga (ginger bud)",
+      "source_labels": [
+        "Myōga (ginger bud)"
+      ],
+      "season_ids": [
+        34
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "myōga (ginger buds)",
+      "source_labels": [
+        "myōga (ginger buds)",
+        "Myōga (ginger buds)"
+      ],
+      "season_ids": [
+        29,
+        30,
+        31,
+        32
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Myōga (myoga ginger)",
+      "source_labels": [
+        "Myōga (myoga ginger)"
+      ],
+      "season_ids": [
+        41,
+        43,
+        44,
+        46
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "myōga ginger shoots",
+      "source_labels": [
+        "myōga ginger shoots"
+      ],
+      "season_ids": [
+        33
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Myōga shoots",
+      "source_labels": [
+        "Myōga shoots"
+      ],
+      "season_ids": [
+        28
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Mōi cucumber (Okinawan cucumber)",
+      "source_labels": [
+        "Mōi cucumber (Okinawan cucumber)"
+      ],
+      "season_ids": [
+        44
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "nasu (early eggplant)",
+      "source_labels": [
+        "nasu (early eggplant)"
+      ],
+      "season_ids": [
+        29
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "nasu (eggplant)",
+      "source_labels": [
+        "nasu (eggplant)"
+      ],
+      "season_ids": [
+        31,
+        32,
+        36
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "New garlic",
+      "source_labels": [
+        "New garlic"
+      ],
+      "season_ids": [
+        28
+      ],
+      "catalog_candidates": [
+        "new-garlic"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "New ginger",
+      "source_labels": [
+        "New ginger",
+        "new ginger"
+      ],
+      "season_ids": [
+        24,
+        25,
+        26
+      ],
+      "catalog_candidates": [
+        "new-ginger"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "new potatoes",
+      "source_labels": [
+        "new potatoes",
+        "New potatoes"
+      ],
+      "season_ids": [
+        27,
+        30
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "okra",
+      "source_labels": [
+        "okra"
+      ],
+      "season_ids": [
+        36,
+        40
+      ],
+      "catalog_candidates": [
+        "okra"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "rakkyo (Japanese scallions)",
+      "source_labels": [
+        "rakkyo (Japanese scallions)"
+      ],
+      "season_ids": [
+        29
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Rakkyo (scallion bulbs)",
+      "source_labels": [
+        "Rakkyo (scallion bulbs)"
+      ],
+      "season_ids": [
+        30
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Renkon (lotus root)",
+      "source_labels": [
+        "Renkon (lotus root)"
+      ],
+      "season_ids": [
+        51
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Sansai (mountain vegetables)",
+      "source_labels": [
+        "Sansai (mountain vegetables)",
+        "sansai (mountain vegetables)"
+      ],
+      "season_ids": [
+        22,
+        27
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Sanshō (young pepper leaves)",
+      "source_labels": [
+        "Sanshō (young pepper leaves)"
+      ],
+      "season_ids": [
+        23
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Satoimo (taro root)",
+      "source_labels": [
+        "Satoimo (taro root)"
+      ],
+      "season_ids": [
+        48,
+        54,
+        55
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Satoimo (taro)",
+      "source_labels": [
+        "Satoimo (taro)"
+      ],
+      "season_ids": [
+        56
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Shimeji (beech mushroom)",
+      "source_labels": [
+        "Shimeji (beech mushroom)"
+      ],
+      "season_ids": [
+        55
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Shimeji mushroom",
+      "source_labels": [
+        "Shimeji mushroom"
+      ],
+      "season_ids": [
+        47,
+        50,
+        51,
+        53
+      ],
+      "catalog_candidates": [
+        "shimeji-beech-mushroom",
+        "shimeji-mushroom",
+        "shimeji-mushrooms"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Shimeji mushrooms",
+      "source_labels": [
+        "Shimeji mushrooms"
+      ],
+      "season_ids": [
+        48
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Shishito pepper",
+      "source_labels": [
+        "Shishito pepper"
+      ],
+      "season_ids": [
+        45,
+        46
+      ],
+      "catalog_candidates": [
+        "shishit-shishito-pepper",
+        "shishito-pepper"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Shishitō (shishito pepper)",
+      "source_labels": [
+        "Shishitō (shishito pepper)"
+      ],
+      "season_ids": [
+        44
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "shiso",
+      "source_labels": [
+        "shiso"
+      ],
+      "season_ids": [
+        32
+      ],
+      "catalog_candidates": [
+        "shiso-leaves"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "shiso (perilla leaves)",
+      "source_labels": [
+        "shiso (perilla leaves)"
+      ],
+      "season_ids": [
+        29
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "shiso (perilla)",
+      "source_labels": [
+        "shiso (perilla)",
+        "Shiso (perilla)"
+      ],
+      "season_ids": [
+        31,
+        34
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Shiso leaves",
+      "source_labels": [
+        "Shiso leaves",
+        "shiso leaves"
+      ],
+      "season_ids": [
+        30,
+        38,
+        40
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Shungiku (chrysanthemum greens)",
+      "source_labels": [
+        "Shungiku (chrysanthemum greens)"
+      ],
+      "season_ids": [
+        52,
+        56
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Shungiku (garland chrysanthemum)",
+      "source_labels": [
+        "Shungiku (garland chrysanthemum)"
+      ],
+      "season_ids": [
+        51,
+        55
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Silk pod peas",
+      "source_labels": [
+        "Silk pod peas"
+      ],
+      "season_ids": [
+        28
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Soramame (fava beans)",
+      "source_labels": [
+        "Soramame (fava beans)"
+      ],
+      "season_ids": [
+        23
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "spring cabbage",
+      "source_labels": [
+        "spring cabbage"
+      ],
+      "season_ids": [
+        25,
+        26
+      ],
+      "catalog_candidates": [
+        "spring-cabbage",
+        "spring-cabbage-haru-kyabetsu"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Spring cabbage (haru kyabetsu)",
+      "source_labels": [
+        "Spring cabbage (haru kyabetsu)"
+      ],
+      "season_ids": [
+        21
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "summer daikon",
+      "source_labels": [
+        "summer daikon"
+      ],
+      "season_ids": [
+        33
+      ],
+      "catalog_candidates": [
+        "summer-daikon"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Sweet potato (satsumaimo)",
+      "source_labels": [
+        "Sweet potato (satsumaimo)"
+      ],
+      "season_ids": [
+        47
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Takenoko (bamboo shoots)",
+      "source_labels": [
+        "Takenoko (bamboo shoots)"
+      ],
+      "season_ids": [
+        22,
+        23
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Taro",
+      "source_labels": [
+        "Taro"
+      ],
+      "season_ids": [
+        49
+      ],
+      "catalog_candidates": [
+        "satoimo-taro",
+        "taro",
+        "taro-satoimo"
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Taro (satoimo)",
+      "source_labels": [
+        "Taro (satoimo)"
+      ],
+      "season_ids": [
+        52
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "tomorokoshi (corn)",
+      "source_labels": [
+        "tomorokoshi (corn)"
+      ],
+      "season_ids": [
+        36
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "tomorokoshi (young corn)",
+      "source_labels": [
+        "tomorokoshi (young corn)"
+      ],
+      "season_ids": [
+        32
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Tsuru-murasaki (Malabar spinach)",
+      "source_labels": [
+        "Tsuru-murasaki (Malabar spinach)"
+      ],
+      "season_ids": [
+        41
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Tsurumurasaki (Malabar spinach)",
+      "source_labels": [
+        "Tsurumurasaki (Malabar spinach)"
+      ],
+      "season_ids": [
+        44
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "tōgan (winter melon)",
+      "source_labels": [
+        "tōgan (winter melon)",
+        "Tōgan (winter melon)"
+      ],
+      "season_ids": [
+        38,
+        41
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Udo (mountain asparagus)",
+      "source_labels": [
+        "Udo (mountain asparagus)"
+      ],
+      "season_ids": [
+        21
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Wakame (young seaweed)",
+      "source_labels": [
+        "Wakame (young seaweed)"
+      ],
+      "season_ids": [
+        22
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "とうもろこし (sweet corn)",
+      "source_labels": [
+        "とうもろこし (sweet corn)"
+      ],
+      "season_ids": [
+        39,
+        42
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "オクラ (okra)",
+      "source_labels": [
+        "オクラ (okra)"
+      ],
+      "season_ids": [
+        37
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "トマト (tomato)",
+      "source_labels": [
+        "トマト (tomato)"
+      ],
+      "season_ids": [
+        37
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "ピーマン (green pepper)",
+      "source_labels": [
+        "ピーマン (green pepper)"
+      ],
+      "season_ids": [
+        37
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "モロヘイヤ (molokhia)",
+      "source_labels": [
+        "モロヘイヤ (molokhia)"
+      ],
+      "season_ids": [
+        39,
+        42
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "空芯菜 (water spinach)",
+      "source_labels": [
+        "空芯菜 (water spinach)"
+      ],
+      "season_ids": [
+        39,
+        42
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "胡瓜 (cucumber)",
+      "source_labels": [
+        "胡瓜 (cucumber)"
+      ],
+      "season_ids": [
+        37
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    },
+    {
+      "category": "vegetable",
+      "display_name": "茗荷 (myoga ginger)",
+      "source_labels": [
+        "茗荷 (myoga ginger)"
+      ],
+      "season_ids": [
+        39,
+        42
+      ],
+      "catalog_candidates": [],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected"
+    }
+  ]
+}
