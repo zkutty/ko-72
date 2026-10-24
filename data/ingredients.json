@@ -685,6 +685,15 @@
     "peak": "Late autumn through early winter, when the first frosts concentrate the sugars",
     "source": "Japanese sweet potato"
   },
+  "japanese-turnip-kabu": {
+    "category": "vegetable",
+    "name_en": "Japanese turnip",
+    "name_jp": "蕪",
+    "name_romaji": "kabu",
+    "note": "Small, ivory-skinned, and tender enough to eat raw, kabu yields to the tooth with a crisp snap and a sweetness that deepens after the first cold snap. Pickled in rice bran, simmered whole in dashi, or served with its greens still attached, it marks the table's turn toward the warming dishes of winter.",
+    "peak": "Late autumn through winter's first frost, when cold nights concentrate the sugars",
+    "source": "Japanese turnip (kabu)"
+  },
   "kabocha-squash": {
     "category": "vegetable",
     "name_en": "Kabocha squash",
