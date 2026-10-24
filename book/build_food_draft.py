@@ -157,7 +157,7 @@ def build_glossary(glossary: dict, catalog: dict, image_path: Path) -> None:
     pdf.setTitle("Kō — working fruit, vegetable, and fish glossary")
     glossary_cover(pdf, image_path, glossary["entry_count"])
     page_number = 2
-    for category, title in (("fruit", "Fruit"), ("vegetable", "Vegetables"), ("fish", "Fish & seafood")):
+    for category_index, (category, title) in enumerate((("fruit", "Fruit"), ("vegetable", "Vegetables"), ("fish", "Fish & seafood"))):
         entries = [e for e in glossary["entries"] if e["category"] == category]
         for start in range(0, len(entries), 12):
             page_background(pdf)
@@ -167,7 +167,25 @@ def build_glossary(glossary: dict, catalog: dict, image_path: Path) -> None:
             pdf.setFillColor(STONE)
             pdf.setFont("Helvetica", 7)
             pdf.drawRightString(PAGE_W - 36, 558, f"WORKING GLOSSARY / {start + 1}–{min(start + 12, len(entries))} OF {len(entries)}")
-            y = 522
+            if start == 0:
+                # Repeat only the relevant study from the opener at the first
+                # page of each category. Clip in the PDF; keep source art intact.
+                panel_x, panel_y, panel_w, panel_h = PAGE_W - 136, 488, 100, 48
+                pdf.saveState()
+                clip = pdf.beginPath()
+                clip.rect(panel_x, panel_y, panel_w, panel_h)
+                pdf.clipPath(clip, stroke=0, fill=0)
+                source_starts = (0.04, 0.34, 0.68)
+                full_w = panel_w * 4
+                source_w, source_h = ImageReader(str(image_path)).getSize()
+                pdf.drawImage(str(image_path), panel_x - source_starts[category_index] * full_w,
+                              panel_y - 50, width=full_w, height=full_w * source_h / source_w)
+                pdf.restoreState()
+                y = 470
+                row_step = 36
+            else:
+                y = 522
+                row_step = 37
             for entry in entries[start:start + 12]:
                 pdf.setFillColor(INK)
                 name_font = "ArialUnicode" if any(ord(ch) > 127 for ch in entry["display_name"]) else "Georgia"
@@ -185,7 +203,7 @@ def build_glossary(glossary: dict, catalog: dict, image_path: Path) -> None:
                 draw_paragraph(pdf, detail, 36, y - 6, PAGE_W - 72, "ArialUnicode", 7.2, 9, STONE)
                 pdf.setStrokeColor(RULE)
                 pdf.line(36, y - 27, PAGE_W - 36, y - 27)
-                y -= 37
+                y -= row_step
             pdf.setFont("Helvetica", 6.5)
             pdf.setFillColor(STONE)
             pdf.drawString(36, 27, "SEASON NUMBERS ARE CANONICAL IDS / COPY AND IDENTITIES UNVERIFIED")
