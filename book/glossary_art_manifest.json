@@ -1,0 +1,17 @@
+{
+  "status": "draft",
+  "entries": [
+    {
+      "path": "book/art/glossary/food-triptych-draft.png",
+      "width_px": 1942,
+      "height_px": 809,
+      "sha256": "699b69f1ad990aff81d52ae0b6bf9f1895f918e0b3d58c3704293bd87691f659",
+      "subjects": ["loquat", "fava beans", "horse mackerel"],
+      "placement": "working glossary opener",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-food-triptych.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    }
+  ]
+}

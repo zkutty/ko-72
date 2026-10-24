@@ -10,6 +10,10 @@ This directory holds a design pilot for a future 72-season book. The newsletter 
 - `inventory.json` — generated snapshot of all 72 source/art states; do not edit by hand.
 - `art/source/` — original 1024 × 1536 pilot PNGs. These are design-resolution drafts, not final print exports.
 - `proofs/` — a one-page contact sheet and nine-page four-season spread proof (title page plus four spreads).
+- `build_glossary.py` and `glossary.json` — reproducible working glossary from every fruit, vegetable, and fish label in cached letters. Alias merging and definitions are editorial review items.
+- `build_sections.py` and `section_inventory.json` — required section status for every one of the 72 seasons, including explicit pending slots.
+- `build_food_draft.py` — a second, food-inclusive two-page-per-season layout proof and an illustrated working glossary proof in `proofs/`.
+- `art/glossary/food-triptych-draft.png` and `glossary_art_manifest.json` — selected draft imagery for the glossary opener.
 
 ## Rebuild and verify
 
@@ -28,3 +32,14 @@ pdftoppm -png -r 110 book/proofs/ko-four-season-spread-proof.pdf /tmp/ko-spread
 ```
 
 The contact sheet is for style comparison. The proof reuses cached English letter excerpts for IDs 24, 38, and 55 and explicitly marks ID 1's winter copy as pending. None of the copy or illustration subjects is certified for final publication. The current source images yield at most about 181 PPI if placed across the full proposed 5.5 × 8.5 inch page; final art production needs printer-specific resolution, crop, bleed, and color validation.
+
+The food-inclusive proof shows every fruit, vegetable, and fish/seafood label from the three available pilot letters. Nature and culture prose are excerpts so the two-page format can be judged without implying a finished edit. Its winter page has empty, labeled slots. The glossary proof indexes every current food-list label by category and canonical season ID; descriptions and alias consolidation remain pending. Regenerate and check with:
+
+```sh
+python3 book/build_glossary.py
+python3 book/build_glossary.py --check
+python3 book/build_sections.py
+python3 book/build_sections.py --check
+python3 book/build_inventory.py --check
+/Users/zbkutlow/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 book/build_food_draft.py
+```
