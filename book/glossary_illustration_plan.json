@@ -1,0 +1,342 @@
+{
+  "status": "draft",
+  "layout": "Two unique, captioned ingredient studies on every glossary category page",
+  "entries": [
+    {
+      "category": "fruit",
+      "page": 1,
+      "items": [
+        {
+          "label": "amanatsu",
+          "subject": "one ripe amanatsu citrus fruit with a leaf"
+        },
+        {
+          "label": "cherry",
+          "subject": "a small pair of ripe cherries with their stems"
+        }
+      ],
+      "image_path": "book/art/glossary/pages/fruit-01.png",
+      "prompt_path": "book/prompts/glossary-pages/fruit-01.txt"
+    },
+    {
+      "category": "fruit",
+      "page": 2,
+      "items": [
+        {
+          "label": "Fig (ichijiku)",
+          "subject": "one ripe fig, one half showing its seeded interior"
+        },
+        {
+          "label": "Green ume plums",
+          "subject": "two firm green ume plums with a leaf"
+        }
+      ],
+      "image_path": "book/art/glossary/pages/fruit-02.png",
+      "prompt_path": "book/prompts/glossary-pages/fruit-02.txt"
+    },
+    {
+      "category": "fruit",
+      "page": 3,
+      "items": [
+        {
+          "label": "Karin (Chinese quince)",
+          "subject": "one golden Chinese quince fruit with a leaf"
+        },
+        {
+          "label": "mango",
+          "subject": "one ripe mango fruit with a small leaf"
+        }
+      ],
+      "image_path": "book/art/glossary/pages/fruit-03.png",
+      "prompt_path": "book/prompts/glossary-pages/fruit-03.txt"
+    },
+    {
+      "category": "fruit",
+      "page": 4,
+      "items": [
+        {
+          "label": "muscat grapes",
+          "subject": "a small cluster of pale green muscat grapes"
+        },
+        {
+          "label": "passion fruit",
+          "subject": "one passion fruit and one cut half showing seeds"
+        }
+      ],
+      "image_path": "book/art/glossary/pages/fruit-04.png",
+      "prompt_path": "book/prompts/glossary-pages/fruit-04.txt"
+    },
+    {
+      "category": "fruit",
+      "page": 5,
+      "items": [
+        {
+          "label": "Ringo (apple)",
+          "subject": "one red Japanese apple with a leaf"
+        },
+        {
+          "label": "Strawberries",
+          "subject": "two ripe strawberries with green calyxes"
+        }
+      ],
+      "image_path": "book/art/glossary/pages/fruit-05.png",
+      "prompt_path": "book/prompts/glossary-pages/fruit-05.txt"
+    },
+    {
+      "category": "fruit",
+      "page": 6,
+      "items": [
+        {
+          "label": "watermelon",
+          "subject": "a small watermelon and one cut slice with red flesh"
+        },
+        {
+          "label": "white peach",
+          "subject": "one pale white peach with soft blush and a leaf"
+        }
+      ],
+      "image_path": "book/art/glossary/pages/fruit-06.png",
+      "prompt_path": "book/prompts/glossary-pages/fruit-06.txt"
+    },
+    {
+      "category": "fruit",
+      "page": 7,
+      "items": [
+        {
+          "label": "Yamabudo (wild mountain grape)",
+          "subject": "a small cluster of dark wild mountain grapes on a vine"
+        },
+        {
+          "label": "梨 (Japanese pear)",
+          "subject": "one round Japanese pear with a leaf"
+        }
+      ],
+      "image_path": "book/art/glossary/pages/fruit-07.png",
+      "prompt_path": "book/prompts/glossary-pages/fruit-07.txt"
+    },
+    {
+      "category": "vegetable",
+      "page": 1,
+      "items": [
+        {
+          "label": "Bamboo shoots",
+          "subject": "one fresh bamboo shoot in layered husk"
+        },
+        {
+          "label": "bitter melon",
+          "subject": "one green bitter melon with its ridged surface"
+        }
+      ],
+      "image_path": "book/art/glossary/pages/vegetable-01.png",
+      "prompt_path": "book/prompts/glossary-pages/vegetable-01.txt"
+    },
+    {
+      "category": "vegetable",
+      "page": 2,
+      "items": [
+        {
+          "label": "Gobō (burdock root)",
+          "subject": "two long slender burdock roots with a few leaves"
+        },
+        {
+          "label": "Kabocha squash",
+          "subject": "one dark green kabocha squash and one cut wedge"
+        }
+      ],
+      "image_path": "book/art/glossary/pages/vegetable-02.png",
+      "prompt_path": "book/prompts/glossary-pages/vegetable-02.txt"
+    },
+    {
+      "category": "vegetable",
+      "page": 3,
+      "items": [
+        {
+          "label": "lotus root",
+          "subject": "one lotus rhizome segment and one sliced cross-section with holes"
+        },
+        {
+          "label": "Matsutake mushroom",
+          "subject": "one matsutake mushroom with thick white stem and brown cap"
+        }
+      ],
+      "image_path": "book/art/glossary/pages/vegetable-03.png",
+      "prompt_path": "book/prompts/glossary-pages/vegetable-03.txt"
+    },
+    {
+      "category": "vegetable",
+      "page": 4,
+      "items": [
+        {
+          "label": "Murasaki-imo (purple sweet potato)",
+          "subject": "one purple sweet potato and one cut section showing purple flesh"
+        },
+        {
+          "label": "Myōga (ginger bud)",
+          "subject": "two pink myoga ginger flower buds"
+        }
+      ],
+      "image_path": "book/art/glossary/pages/vegetable-04.png",
+      "prompt_path": "book/prompts/glossary-pages/vegetable-04.txt"
+    },
+    {
+      "category": "vegetable",
+      "page": 5,
+      "items": [
+        {
+          "label": "okra",
+          "subject": "two green okra pods and one cut star-shaped section"
+        },
+        {
+          "label": "Satoimo (taro root)",
+          "subject": "two small taro corms, one peeled to pale flesh"
+        }
+      ],
+      "image_path": "book/art/glossary/pages/vegetable-05.png",
+      "prompt_path": "book/prompts/glossary-pages/vegetable-05.txt"
+    },
+    {
+      "category": "vegetable",
+      "page": 6,
+      "items": [
+        {
+          "label": "Shishito pepper",
+          "subject": "two slender green shishito peppers"
+        },
+        {
+          "label": "Shungiku (chrysanthemum greens)",
+          "subject": "a small sprig of edible chrysanthemum greens with lobed leaves"
+        }
+      ],
+      "image_path": "book/art/glossary/pages/vegetable-06.png",
+      "prompt_path": "book/prompts/glossary-pages/vegetable-06.txt"
+    },
+    {
+      "category": "vegetable",
+      "page": 7,
+      "items": [
+        {
+          "label": "spring cabbage",
+          "subject": "one tender pale-green spring cabbage head"
+        },
+        {
+          "label": "tomorokoshi (young corn)",
+          "subject": "one young corn cob partly in its green husk"
+        }
+      ],
+      "image_path": "book/art/glossary/pages/vegetable-07.png",
+      "prompt_path": "book/prompts/glossary-pages/vegetable-07.txt"
+    },
+    {
+      "category": "vegetable",
+      "page": 8,
+      "items": [
+        {
+          "label": "tōgan (winter melon)",
+          "subject": "one green winter melon and one cut wedge with pale flesh"
+        },
+        {
+          "label": "トマト (tomato)",
+          "subject": "one ripe red tomato on a short vine"
+        }
+      ],
+      "image_path": "book/art/glossary/pages/vegetable-08.png",
+      "prompt_path": "book/prompts/glossary-pages/vegetable-08.txt"
+    },
+    {
+      "category": "fish",
+      "page": 1,
+      "items": [
+        {
+          "label": "Bonito",
+          "subject": "one whole bonito fish in side profile"
+        },
+        {
+          "label": "Flounder",
+          "subject": "one whole flat flounder seen from above"
+        }
+      ],
+      "image_path": "book/art/glossary/pages/fish-01.png",
+      "prompt_path": "book/prompts/glossary-pages/fish-01.txt"
+    },
+    {
+      "category": "fish",
+      "page": 2,
+      "items": [
+        {
+          "label": "Horse mackerel",
+          "subject": "one whole silver-blue horse mackerel in side profile"
+        },
+        {
+          "label": "Hotaru ika (firefly squid)",
+          "subject": "one small firefly squid with visible tentacles"
+        }
+      ],
+      "image_path": "book/art/glossary/pages/fish-02.png",
+      "prompt_path": "book/prompts/glossary-pages/fish-02.txt"
+    },
+    {
+      "category": "fish",
+      "page": 3,
+      "items": [
+        {
+          "label": "Kinmedai (splendid alfonsino)",
+          "subject": "one red splendid alfonsino fish with large golden eye"
+        },
+        {
+          "label": "Kuruma ebi (Japanese tiger prawn)",
+          "subject": "one striped kuruma tiger prawn with antennae"
+        }
+      ],
+      "image_path": "book/art/glossary/pages/fish-03.png",
+      "prompt_path": "book/prompts/glossary-pages/fish-03.txt"
+    },
+    {
+      "category": "fish",
+      "page": 4,
+      "items": [
+        {
+          "label": "Pacific saury (sanma)",
+          "subject": "one long slender Pacific saury fish in side profile"
+        },
+        {
+          "label": "Sake (salmon)",
+          "subject": "one whole salmon fish in side profile"
+        }
+      ],
+      "image_path": "book/art/glossary/pages/fish-04.png",
+      "prompt_path": "book/prompts/glossary-pages/fish-04.txt"
+    },
+    {
+      "category": "fish",
+      "page": 5,
+      "items": [
+        {
+          "label": "Sayori (halfbeak)",
+          "subject": "one slender Japanese halfbeak with its longer lower jaw"
+        },
+        {
+          "label": "squid",
+          "subject": "one whole squid with mantle, fins, and tentacles"
+        }
+      ],
+      "image_path": "book/art/glossary/pages/fish-05.png",
+      "prompt_path": "book/prompts/glossary-pages/fish-05.txt"
+    },
+    {
+      "category": "fish",
+      "page": 6,
+      "items": [
+        {
+          "label": "tako (octopus)",
+          "subject": "one small octopus with eight visible arms"
+        },
+        {
+          "label": "太刀魚 (beltfish)",
+          "subject": "one long silver beltfish in side profile"
+        }
+      ],
+      "image_path": "book/art/glossary/pages/fish-06.png",
+      "prompt_path": "book/prompts/glossary-pages/fish-06.txt"
+    }
+  ]
+}

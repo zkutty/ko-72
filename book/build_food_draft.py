@@ -3,8 +3,11 @@
 from __future__ import annotations
 
 from pathlib import Path
+from tempfile import TemporaryDirectory
 
+from PIL import Image
 from reportlab.lib.utils import ImageReader
+from build_glossary_prompts import pages_for
 from reportlab.pdfgen import canvas
 
 from build_proof import (
@@ -147,70 +150,127 @@ def glossary_cover(pdf: canvas.Canvas, image_path: Path, count: int) -> None:
     draw_paragraph(pdf, f"{count} distinct source labels from currently cached season letters. Every listed fruit, vegetable, and fish has an entry and season cross-reference. Names, duplicate aliases, Japanese spellings, and descriptions need editorial and source review before print.", 36, 214, PAGE_W - 72, "Georgia", 9.5, 14)
     pdf.setFillColor(STONE)
     pdf.setFont("Helvetica", 7)
-    pdf.drawString(36, 48, "ILLUSTRATED STUDIES: LOQUAT · FAVA BEANS · HORSE MACKEREL")
+    pdf.drawString(36, 48, "42 ITEM STUDIES / TWO ON EACH OF 21 CATEGORY PAGES")
     pdf.drawString(36, 29, "DESIGN PROOF / IMAGE SUBJECTS AND COPY UNVERIFIED")
     pdf.showPage()
 
 
-def build_glossary(glossary: dict, catalog: dict, image_path: Path) -> None:
+def fitted_text(pdf: canvas.Canvas, text: str, x: float, y: float, max_width: float,
+                font: str, size: float, color=INK) -> None:
+    while size > 6 and pdf.stringWidth(text, font, size) > max_width:
+        size -= 0.2
+    if pdf.stringWidth(text, font, size) > max_width:
+        raise ValueError(f"Glossary text does not fit: {text}")
+    pdf.setFillColor(color)
+    pdf.setFont(font, size)
+    pdf.drawString(x, y, text)
+
+
+def season_key(pdf: canvas.Canvas, seasons: dict[int, dict], number: int) -> int:
+    for half in range(2):
+        page_background(pdf)
+        pdf.setFillColor(INK)
+        pdf.setFont("Georgia", 22)
+        pdf.drawString(36, 551, "Season key")
+        pdf.setFillColor(STONE)
+        pdf.setFont("Helvetica", 7)
+        pdf.drawString(36, 532, "CANONICAL KO IDS  /  APPROXIMATE START DATES")
+        for column in range(2):
+            for row in range(18):
+                sid = half * 36 + column * 18 + row + 1
+                season = seasons[sid]
+                x = 36 + column * 164
+                y = 504 - row * 25
+                pdf.setFillColor(ACCENTS[season["major_season"]])
+                pdf.rect(x, y - 1, 16, 2, stroke=0, fill=1)
+                fitted_text(pdf, f"{sid:02d}", x, y + 5, 19, "Helvetica-Bold", 7, INK)
+                fitted_text(pdf, season["name_en"], x + 23, y + 5, 137, "Georgia", 8, INK)
+                pdf.setFillColor(STONE)
+                pdf.setFont("Helvetica", 6.2)
+                pdf.drawString(x + 23, y - 5, f"{season['start_month']:02d}/{season['start_day']:02d}  ·  {season['major_season']}")
+        pdf.setFillColor(STONE)
+        pdf.setFont("Helvetica", 6.5)
+        pdf.drawString(36, 27, "DATES VARY SLIGHTLY BY YEAR / GLOSSARY REFERENCES SOURCE LETTERS")
+        pdf.drawRightString(PAGE_W - 36, 27, f"{number:03d}")
+        pdf.showPage()
+        number += 1
+    return number
+
+
+def build_glossary(glossary: dict, seasons: dict[int, dict], image_path: Path) -> None:
     pdf = canvas.Canvas(str(PROOFS / "ko-food-glossary-draft.pdf"), pagesize=(PAGE_W, PAGE_H))
-    pdf.setTitle("Kō — working fruit, vegetable, and fish glossary")
+    proof_images = TemporaryDirectory(prefix="ko-glossary-proof-")
+    pdf.setTitle("Kō — illustrated fruit, vegetable, and fish glossary")
     glossary_cover(pdf, image_path, glossary["entry_count"])
     page_number = 2
-    for category_index, (category, title) in enumerate((("fruit", "Fruit"), ("vegetable", "Vegetables"), ("fish", "Fish & seafood"))):
+    plan = load(BOOK / "glossary_illustration_plan.json")
+    art_pages = {(item["category"], item["page"]): item for item in plan["entries"]}
+    for category, title in (("fruit", "Fruit"), ("vegetable", "Vegetables"), ("fish", "Fish & seafood")):
         entries = [e for e in glossary["entries"] if e["category"] == category]
-        for start in range(0, len(entries), 12):
+        cursor = 0
+        for page_index, page in enumerate(pages_for(entries), 1):
+            study = art_pages[(category, page_index)]
+            picture = ROOT / study["image_path"]
+            if not picture.exists():
+                raise ValueError(f"Missing glossary illustration: {picture}")
+            proof_picture = Path(proof_images.name) / f"{category}-{page_index:02d}.jpg"
+            with Image.open(picture) as source_image:
+                proof_height = round(1400 * source_image.height / source_image.width)
+                source_image.convert("RGB").resize((1400, proof_height)).save(
+                    proof_picture, format="JPEG", quality=86, optimize=True)
             page_background(pdf)
             pdf.setFillColor(INK)
-            pdf.setFont("Georgia", 23)
+            pdf.setFont("Georgia", 22)
             pdf.drawString(36, 556, title)
             pdf.setFillColor(STONE)
             pdf.setFont("Helvetica", 7)
-            pdf.drawRightString(PAGE_W - 36, 558, f"WORKING GLOSSARY / {start + 1}–{min(start + 12, len(entries))} OF {len(entries)}")
-            if start == 0:
-                # Repeat only the relevant study from the opener at the first
-                # page of each category. Clip in the PDF; keep source art intact.
-                panel_x, panel_y, panel_w, panel_h = PAGE_W - 136, 488, 100, 48
+            pdf.drawRightString(PAGE_W - 36, 558,
+                                f"WORKING GLOSSARY / {cursor + 1}–{cursor + len(page)} OF {len(entries)}")
+            cursor += len(page)
+            # One image sheet contains two independent item studies. Clip each
+            # half into a distinct frame without changing the source artwork.
+            frame_y, frame_h, frame_w = 466, 69, 155
+            source = ImageReader(str(proof_picture))
+            iw, ih = source.getSize()
+            for index, selected in enumerate(study["items"]):
+                x = 36 + index * 173
                 pdf.saveState()
                 clip = pdf.beginPath()
-                clip.rect(panel_x, panel_y, panel_w, panel_h)
+                clip.rect(x, frame_y, frame_w, frame_h)
                 pdf.clipPath(clip, stroke=0, fill=0)
-                source_starts = (0.04, 0.34, 0.68)
-                full_w = panel_w * 4
-                source_w, source_h = ImageReader(str(image_path)).getSize()
-                pdf.drawImage(str(image_path), panel_x - source_starts[category_index] * full_w,
-                              panel_y - 50, width=full_w, height=full_w * source_h / source_w)
+                scaled_w = frame_w * 2
+                scaled_h = scaled_w * ih / iw
+                pdf.drawImage(source, x - index * frame_w, frame_y + (frame_h - scaled_h) / 2,
+                              width=scaled_w, height=scaled_h)
                 pdf.restoreState()
-                y = 470
-                row_step = 36
-            else:
-                y = 522
-                row_step = 37
-            for entry in entries[start:start + 12]:
-                pdf.setFillColor(INK)
-                name_font = "ArialUnicode" if any(ord(ch) > 127 for ch in entry["display_name"]) else "Georgia"
-                pdf.setFont(name_font, 9.5)
-                pdf.drawString(36, y, entry["display_name"][:48])
-                pdf.setFillColor(STONE)
-                pdf.setFont("Helvetica", 7)
-                refs = ", ".join(f"{sid:02d}" for sid in entry["season_ids"])
-                pdf.drawRightString(PAGE_W - 36, y, refs)
-                if len(entry["catalog_candidates"]) == 1:
-                    item = catalog[entry["catalog_candidates"][0]]
-                    detail = f"{item.get('name_romaji') or '—'}  /  catalog name match; description pending review"
-                else:
-                    detail = "Name or alias mapping pending editorial review"
-                draw_paragraph(pdf, detail, 36, y - 6, PAGE_W - 72, "ArialUnicode", 7.2, 9, STONE)
+                fitted_text(pdf, f"{index + 1}  {selected['label']}", x, 452, frame_w,
+                            "ArialUnicode", 7.2, STONE)
+            for row_index, entry in enumerate(page):
+                y = 426 - row_index * 32
+                marker = next((str(i + 1) for i, item in enumerate(study["items"])
+                               if item["label"] == entry["display_name"]), "")
+                fitted_text(pdf, marker, 36, y, 10, "Helvetica-Bold", 7,
+                            ACCENTS[seasons[entry["season_ids"][0]]["major_season"]])
+                fitted_text(pdf, entry["english"], 48, y, 174, "Georgia", 8.7)
+                written = f"{entry['kanji']}  ·  {entry['kana']}" if entry["kanji"] else entry["kana"]
+                fitted_text(pdf, written, 224, y, 132, "ArialUnicode", 8.1)
+                fitted_text(pdf, entry["romaji"], 48, y - 11, 159, "ArialUnicode", 7.1, STONE)
+                ids = ", ".join(f"{sid:02d}" for sid in entry["season_ids"])
+                fitted_text(pdf, f"IN SEASON  {ids}", 209, y - 11, 147, "Helvetica", 6.5, STONE)
+                if entry["display_name"].casefold() != entry["english"].casefold():
+                    fitted_text(pdf, f"SOURCE  {entry['display_name']}", 48, y - 20, 308,
+                                "ArialUnicode", 5.9, STONE)
                 pdf.setStrokeColor(RULE)
-                pdf.line(36, y - 27, PAGE_W - 36, y - 27)
-                y -= row_step
-            pdf.setFont("Helvetica", 6.5)
+                pdf.line(36, y - 28, PAGE_W - 36, y - 28)
+            pdf.setFont("Helvetica", 6.1)
             pdf.setFillColor(STONE)
-            pdf.drawString(36, 27, "SEASON NUMBERS ARE CANONICAL IDS / COPY AND IDENTITIES UNVERIFIED")
+            pdf.drawString(36, 27, "IMAGE NUMBERS MATCH ENTRIES / FULL SEASON NAMES IN KEY / DRAFT")
             pdf.drawRightString(PAGE_W - 36, 27, f"{page_number:03d}")
             pdf.showPage()
             page_number += 1
+    season_key(pdf, seasons, page_number)
     pdf.save()
+    proof_images.cleanup()
 
 
 def main() -> None:
@@ -220,11 +280,10 @@ def main() -> None:
     cache = load(ROOT / "data" / "content_cache.json")
     art = load(BOOK / "art_manifest.json")["entries"]
     glossary = load(BOOK / "glossary.json")
-    catalog = load(ROOT / "data" / "ingredients.json")
     if glossary["source_seasons"] != len(cache):
         raise ValueError("Glossary is stale")
     build_seasons(seasons, cache, art)
-    build_glossary(glossary, catalog, BOOK / "art" / "glossary" / "food-triptych-draft.png")
+    build_glossary(glossary, seasons, BOOK / "art" / "glossary" / "food-triptych-draft.png")
     print("Built food-inclusive season layout and working glossary proofs")
 
 
