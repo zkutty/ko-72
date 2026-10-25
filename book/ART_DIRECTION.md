@@ -1,5 +1,19 @@
 # Kō illustration direction — pilot v1
 
+## Glossary spot treatment
+
+Use isolated ink-and-watercolor studies with transparent backgrounds on the warm
+`#f5f3ee` page. Let each selected study sit beside its numbered glossary entry,
+alternating sides across a section. Give the art a small exclusion zone so the
+name forms and season references wrap beside it, then resume the full measure
+below. Keep captions tied to the entry number and English name. Avoid image
+frames, artificial shadows, or a second paper color around the painting.
+
+The transparent versions are layout derivatives of the original studies. Check
+the subject silhouette and anatomy against the source after each edit, and
+review the full spread at print size. The cutouts remain draft identification
+art until editorial and print reviews are complete.
+
 Status: proposed visual system. Compare four pilot images together before approving this for all 72 seasons.
 
 ## Core image grammar

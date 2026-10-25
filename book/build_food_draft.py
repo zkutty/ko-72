@@ -145,7 +145,7 @@ def glossary_cover(pdf: canvas.Canvas, image_path: Path, count: int,
     iw, ih = image.getSize()
     image_w = PAGE_W - 36
     image_h = image_w * ih / iw
-    pdf.drawImage(image, 18, 255, width=image_w, height=image_h)
+    pdf.drawImage(image, 18, 255, width=image_w, height=image_h, mask="auto")
     pdf.setStrokeColor(RULE)
     pdf.line(36, 235, PAGE_W - 36, 235)
     draw_paragraph(pdf, f"{count} distinct source labels from currently cached season letters. Every listed fruit, vegetable, and fish has an entry and season cross-reference. Names, duplicate aliases, Japanese spellings, and descriptions need editorial and source review before print.", 36, 214, PAGE_W - 72, "Georgia", 9.5, 14)
@@ -202,51 +202,61 @@ def season_key(pdf: canvas.Canvas, seasons: dict[int, dict], number: int) -> int
 
 
 def glossary_entry(pdf: canvas.Canvas, entry: dict, x: float, y: float,
-                   selected_number: int | None, seasons: dict[int, dict]) -> None:
-    """Draw one entry as a quiet, fixed-height reading block."""
-    content_x = x + 13
+                   width: float, selected_number: int | None,
+                   seasons: dict[int, dict]) -> None:
+    """Set the complete name and season reference beside any floating study."""
     accent = ACCENTS[seasons[entry["season_ids"][0]]["major_season"]]
     if selected_number is not None:
-        fitted_text(pdf, str(selected_number), x, y, 9, "Helvetica-Bold", 7.2, accent)
-    fitted_text(pdf, entry["english"], content_x, y, 140, "Georgia", 9.4)
+        fitted_text(pdf, f"{selected_number:02d}", x, y, 13, "Helvetica-Bold", 7, accent)
+    content_x = x + (17 if selected_number is not None else 0)
+    text_width = width - (17 if selected_number is not None else 0)
+    fitted_text(pdf, entry["english"], content_x, y, text_width, "Georgia", 10.4)
     written = f"{entry['kanji']}  ·  {entry['kana']}" if entry["kanji"] else entry["kana"]
-    fitted_text(pdf, written, content_x, y - 12, 140, "ArialUnicode", 8.5)
-    fitted_text(pdf, entry["romaji"], content_x, y - 22, 140, "ArialUnicode", 7.7, STONE)
+    fitted_text(pdf, written, content_x, y - 12.5, text_width, "ArialUnicode", 8.8)
     ids = ", ".join(f"{sid:02d}" for sid in entry["season_ids"])
-    fitted_text(pdf, f"IN SEASON  {ids}", content_x, y - 32, 140, "Helvetica", 7.2, STONE)
-    if entry["display_name"].casefold() != entry["english"].casefold():
-        fitted_text(pdf, f"SOURCE  {entry['display_name']}", content_x, y - 42,
-                    140, "ArialUnicode", 6.0, STONE)
-    pdf.setStrokeColor(RULE)
-    pdf.line(content_x, y - 47, x + 153, y - 47)
+    fitted_text(pdf, f"{entry['romaji']}   /   KŌ {ids}", content_x, y - 24.5,
+                text_width, "ArialUnicode", 7.3, STONE)
 
 
-def inline_study(pdf: canvas.Canvas, image: ImageReader, image_size: tuple[int, int],
-                 selected: dict, number: int, x: float, top: float) -> None:
-    """Place the matching image immediately after its entry, within its column."""
-    frame_w, frame_h = 153, 78
+def floating_study(pdf: canvas.Canvas, image: ImageReader,
+                   image_size: tuple[int, int], entry: dict,
+                   number: int, x: float, top: float) -> None:
+    """Draw an unframed cutout whose exclusion zone spans the nearby text."""
+    frame_w, frame_h = 88, 70
     iw, ih = image_size
-    frame_bottom = top - 82
-    if selected["panel"] == "full":
-        scale = min(frame_w / iw, frame_h / ih)
-        scaled_w, scaled_h = iw * scale, ih * scale
-        draw_x = x + (frame_w - scaled_w) / 2
-        clip_x, clip_w = x, frame_w
-    else:
-        half_w = min(frame_w, frame_h * (iw / (2 * ih)) * 1.25)
-        scaled_w = half_w * 2
-        scaled_h = scaled_w * ih / iw
-        clip_x, clip_w = x + (frame_w - half_w) / 2, half_w
-        draw_x = clip_x - selected["panel"] * half_w
-    pdf.saveState()
-    clip = pdf.beginPath()
-    clip.rect(clip_x, frame_bottom, clip_w, frame_h)
-    pdf.clipPath(clip, stroke=0, fill=0)
-    pdf.drawImage(image, draw_x, frame_bottom + (frame_h - scaled_h) / 2,
-                  width=scaled_w, height=scaled_h)
-    pdf.restoreState()
-    fitted_text(pdf, f"{number}  {selected['label']}", x, top - 92, frame_w,
-                "ArialUnicode", 7.2, STONE)
+    scale = min(frame_w / iw, frame_h / ih)
+    scaled_w, scaled_h = iw * scale, ih * scale
+    pdf.drawImage(image, x + (frame_w - scaled_w) / 2,
+                  top - frame_h + (frame_h - scaled_h) / 2,
+                  width=scaled_w, height=scaled_h, mask="auto")
+    fitted_text(pdf, f"{number:02d} / {entry['english']}", x, top - 79,
+                frame_w, "ArialUnicode", 6.2, STONE)
+
+
+def prepare_cutout(path: Path, panel: int | str, output: Path) -> None:
+    """Crop transparent padding for typesetting; keep source art untouched."""
+    with Image.open(path) as source:
+        art = source.convert("RGBA")
+    if panel in (0, 1):
+        alpha = art.getchannel("A")
+        width, height = art.size
+        # The separator between the two studies may sit off exact center.
+        candidates = range(round(width * .43), round(width * .57))
+        split = min(candidates, key=lambda col: sum(
+            alpha.getpixel((col, row)) > 20 for row in range(0, height, 5)))
+        art = art.crop((0, 0, split, height) if panel == 0
+                       else (split, 0, width, height))
+    visible = art.getchannel("A").point(lambda value: 255 if value > 18 else 0)
+    bounds = visible.getbbox()
+    if not bounds:
+        raise ValueError(f"Blank glossary cutout: {path}")
+    padding = round(max(art.size) * .015)
+    art = art.crop((max(0, bounds[0] - padding), max(0, bounds[1] - padding),
+                    min(art.width, bounds[2] + padding),
+                    min(art.height, bounds[3] + padding)))
+    if max(art.size) > 480:
+        art.thumbnail((480, 480), Image.Resampling.LANCZOS)
+    art.save(output, format="PNG", optimize=True)
 
 
 def build_glossary(glossary: dict, seasons: dict[int, dict], image_path: Path) -> None:
@@ -258,25 +268,27 @@ def build_glossary(glossary: dict, seasons: dict[int, dict], image_path: Path) -
                    len(plan["entries"]), sum(len(p["items"]) for p in plan["entries"]))
     page_number = 2
     art_pages = {(item["category"], item["page"]): item for item in plan["entries"]}
-    proof_cache: dict[str, tuple[ImageReader, tuple[int, int]]] = {}
+    proof_cache: dict[tuple[str, int | str], tuple[ImageReader, tuple[int, int]]] = {}
     for category, title in (("fruit", "Fruit"), ("vegetable", "Vegetables"), ("fish", "Fish & seafood")):
         entries = [e for e in glossary["entries"] if e["category"] == category]
         cursor = 0
         for page_index, page in enumerate(pages_for(entries, category), 1):
             study = art_pages[(category, page_index)]
             for selected in study["items"]:
-                path = selected["image_path"]
-                if path not in proof_cache:
-                    picture = ROOT / path
+                path = str(BOOK / "art" / "glossary" / "cutouts" /
+                           Path(selected["image_path"]).name)
+                key = (path, selected["panel"])
+                if key not in proof_cache:
+                    picture = Path(path)
                     if not picture.exists():
                         raise ValueError(f"Missing glossary illustration: {picture}")
-                    proof_picture = Path(proof_images.name) / f"study-{len(proof_cache):02d}.jpg"
+                    proof_picture = Path(proof_images.name) / f"study-{len(proof_cache):02d}.png"
                     with Image.open(picture) as source_image:
-                        proof_height = round(1400 * source_image.height / source_image.width)
-                        source_image.convert("RGB").resize((1400, proof_height)).save(
-                            proof_picture, format="JPEG", quality=86, optimize=True)
+                        if "A" not in source_image.getbands():
+                            raise ValueError(f"Cutout has no transparency: {picture}")
+                    prepare_cutout(picture, selected["panel"], proof_picture)
                     reader = ImageReader(str(proof_picture))
-                    proof_cache[path] = (reader, reader.getSize())
+                    proof_cache[key] = (reader, reader.getSize())
             page_background(pdf)
             pdf.setFillColor(INK)
             pdf.setFont("Georgia", 23)
@@ -288,34 +300,44 @@ def build_glossary(glossary: dict, seasons: dict[int, dict], image_path: Path) -
             cursor += len(page)
             pdf.setStrokeColor(RULE)
             pdf.line(36, 538, PAGE_W - 36, 538)
-            pdf.line(198, 515, 198, 49)
-            # Each study follows its corresponding entry, so the art moves
-            # naturally through the two text columns rather than forming a
-            # detached banner at the top of every page.
-            midpoint = (len(page) + 1) // 2
-            for col_index, column in enumerate((page[:midpoint], page[midpoint:])):
-                x = 36 + col_index * 171
-                y = 515
-                art_count = sum(entry["display_name"] in
-                                {item["label"] for item in study["items"]} for entry in column)
-                entry_step = min(70, (515 - 48 - art_count * 103) / len(column))
-                if entry_step < 52:
-                    raise ValueError(f"No readable glossary spacing on {category} page {page_index}")
-                for entry in column:
-                    numbered = next((i + 1 for i, item in enumerate(study["items"])
-                                     if item["label"] == entry["display_name"]), None)
-                    glossary_entry(pdf, entry, x, y, numbered, seasons)
-                    y -= entry_step
-                    if numbered is not None:
-                        selected = study["items"][numbered - 1]
-                        reader, size = proof_cache[selected["image_path"]]
-                        inline_study(pdf, reader, size, selected, numbered, x, y)
-                        y -= 103
-                if y < 48:
-                    raise ValueError(f"Glossary column overflows on {category} page {page_index}: {y}")
+            # One reading stream with transparent art floating alongside two
+            # neighbouring entries. Each line is measured against the art's
+            # exclusion zone, so the words wrap around its placement.
+            top, bottom = 515, 68
+            step = (top - bottom) / len(page)
+            placements = []
+            for number, selected in enumerate(study["items"], 1):
+                index = next(i for i, entry in enumerate(page)
+                             if entry["display_name"] == selected["label"])
+                y = top - index * step
+                side = "right" if (page_index + number) % 2 == 0 else "left"
+                x = 272 if side == "right" else 36
+                placements.append((number, selected, page[index], x, y + 8, side))
+            for number, selected, entry, x, art_top, side in placements:
+                path = str(BOOK / "art" / "glossary" / "cutouts" /
+                           Path(selected["image_path"]).name)
+                reader, size = proof_cache[(path, selected["panel"])]
+                floating_study(pdf, reader, size, entry,
+                               number, x, art_top)
+            for index, entry in enumerate(page):
+                y = top - index * step
+                active = [item for item in placements
+                          if y - 12 < item[4] + 4 and y - 12 > item[4] - 82]
+                left_float = any(item[5] == "left" for item in active)
+                right_float = any(item[5] == "right" for item in active)
+                x = 136 if left_float else 36
+                right = 260 if right_float else 360
+                width = right - x
+                if width < 118:
+                    raise ValueError(f"Glossary wrap too narrow on {category} page {page_index}")
+                numbered = next((item[0] for item in placements
+                                 if item[2]["display_name"] == entry["display_name"]), None)
+                glossary_entry(pdf, entry, x, y, width, numbered, seasons)
+            if top - (len(page) - 1) * step - 26 < 55:
+                raise ValueError(f"Glossary text overflows on {category} page {page_index}")
             pdf.setFont("Helvetica", 6.1)
             pdf.setFillColor(STONE)
-            pdf.drawString(36, 27, "NUMBERED STUDIES FOLLOW THEIR ENTRIES / SEASON KEY AT BACK / DRAFT")
+            pdf.drawString(36, 27, "STUDIES KEYED TO ENTRIES / KO IDS IN SEASON KEY / DRAFT")
             pdf.drawRightString(PAGE_W - 36, 27, f"{page_number:03d}")
             pdf.showPage()
             page_number += 1
