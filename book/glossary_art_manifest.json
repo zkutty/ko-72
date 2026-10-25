@@ -331,6 +331,174 @@
       "prompt_path": "book/prompts/glossary-pages/fish-06.txt",
       "subject_review": "pending",
       "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/singles/fruit-01-new.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "410820db7fc0e5a6805f04c26b24215e5b15dd42b600a60c948bcc38f9bd8351",
+      "subjects": [
+        "blueberry"
+      ],
+      "placement": "fruit glossary page 1",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fruit-01-new.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/singles/fruit-04-new.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "9e792a5aa1716f77d8158749dddc33f453a4c6c29df26a574eb63d071e246639",
+      "subjects": [
+        "Kyoho grape"
+      ],
+      "placement": "fruit glossary page 4",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fruit-04-new.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/singles/fruit-06-new.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "7cef161b91e6674d69ae47e39391aa68eb5761170f5fd80b55e5d5cffbe2b26e",
+      "subjects": [
+        "Pear (nashi)"
+      ],
+      "placement": "fruit glossary page 6",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fruit-06-new.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/singles/fruit-07-new.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "8bee6314ff12479c1ef60fd515a0a05d0241465c6b81540586a94ef0052b8636",
+      "subjects": [
+        "suika (early watermelon)"
+      ],
+      "placement": "fruit glossary page 7",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fruit-07-new.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/singles/fruit-09-new.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "eeb2b844ca2304bbd67a4e96df6011902ba618ecdc4516dcae782213a2af7232",
+      "subjects": [
+        "プラム (plum)"
+      ],
+      "placement": "fruit glossary page 9",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fruit-09-new.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/singles/vegetable-02-new.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "3bf22a6fa5658ddc92cc4ceff45fedb2ab44e3dd95c5fd8c0ea13b30a35f1a06",
+      "subjects": [
+        "Ginnan (ginkgo nut)"
+      ],
+      "placement": "vegetable glossary page 2",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/vegetable-02-new.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/singles/vegetable-05-new.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "92daac988c760036c7d290d352d56d46cecf623495bab17d5ee2ef1ffa37c1cf",
+      "subjects": [
+        "nasu (eggplant)"
+      ],
+      "placement": "vegetable glossary page 5",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/vegetable-05-new.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/singles/vegetable-07-new.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "1ac939d63a3e1237fcf257745a3b173d46ab5a4b9fd2f5bde6243df6d35dde86",
+      "subjects": [
+        "shiso (perilla leaves)"
+      ],
+      "placement": "vegetable glossary page 7",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/vegetable-07-new.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/singles/vegetable-10-new.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "72d2641785288b6e20aee72834e891632ad24c59c97dc74f04de79aa7804b88d",
+      "subjects": [
+        "胡瓜 (cucumber)"
+      ],
+      "placement": "vegetable glossary page 10",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/vegetable-10-new.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/singles/fish-03-new.png",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "13e333369b398dd16023e6ccd6a299459c34c7ef199dd1d8825ca69bbccea9c3",
+      "subjects": [
+        "Iwashi (sardine)"
+      ],
+      "placement": "fish glossary page 3",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fish-03-new.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/singles/fish-05-new.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "46b02932712f5d03cb4cbfba31de966af414c66f5ae41c3cf4f257922dfa8e6f",
+      "subjects": [
+        "Shijimi (freshwater clams)"
+      ],
+      "placement": "fish glossary page 5",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fish-05-new.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/singles/fish-07-new.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "ae98037bfb968b93793d944a7c1078af01f31a326e59595cc727ad212cb74338",
+      "subjects": [
+        "鮑 (abalone)"
+      ],
+      "placement": "fish glossary page 7",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fish-07-new.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
     }
   ]
 }
