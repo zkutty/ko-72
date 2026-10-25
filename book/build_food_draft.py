@@ -168,7 +168,7 @@ def fitted_text(pdf: canvas.Canvas, text: str, x: float, y: float, max_width: fl
 
 
 def season_key(pdf: canvas.Canvas, seasons: dict[int, dict], number: int) -> int:
-    for half in range(2):
+    for part in range(3):
         page_background(pdf)
         pdf.setFillColor(INK)
         pdf.setFont("Georgia", 22)
@@ -177,18 +177,21 @@ def season_key(pdf: canvas.Canvas, seasons: dict[int, dict], number: int) -> int
         pdf.setFont("Helvetica", 7)
         pdf.drawString(36, 532, "CANONICAL KO IDS  /  APPROXIMATE START DATES")
         for column in range(2):
-            for row in range(18):
-                sid = half * 36 + column * 18 + row + 1
+            for row in range(12):
+                sid = part * 24 + column * 12 + row + 1
                 season = seasons[sid]
                 x = 36 + column * 164
-                y = 504 - row * 25
+                y = 498 - row * 35
                 pdf.setFillColor(ACCENTS[season["major_season"]])
-                pdf.rect(x, y - 1, 16, 2, stroke=0, fill=1)
-                fitted_text(pdf, f"{sid:02d}", x, y + 5, 19, "Helvetica-Bold", 7, INK)
-                fitted_text(pdf, season["name_en"], x + 23, y + 5, 137, "Georgia", 8, INK)
+                pdf.rect(x, y - 2, 16, 2, stroke=0, fill=1)
+                fitted_text(pdf, f"{sid:02d}", x, y + 6, 19, "Helvetica-Bold", 8, INK)
+                fitted_text(pdf, season["name_en"], x + 23, y + 6, 137, "Georgia", 9, INK)
+                fitted_text(pdf, season["name_jp"], x + 23, y - 7, 33,
+                            "ArialUnicode", 7.5, STONE)
                 pdf.setFillColor(STONE)
-                pdf.setFont("Helvetica", 6.2)
-                pdf.drawString(x + 23, y - 5, f"{season['start_month']:02d}/{season['start_day']:02d}  ·  {season['major_season']}")
+                pdf.setFont("Helvetica", 7)
+                pdf.drawString(x + 65, y - 7,
+                               f"{season['start_month']:02d}/{season['start_day']:02d}  ·  {season['major_season']}")
         pdf.setFillColor(STONE)
         pdf.setFont("Helvetica", 6.5)
         pdf.drawString(36, 27, "DATES VARY SLIGHTLY BY YEAR / GLOSSARY REFERENCES SOURCE LETTERS")
