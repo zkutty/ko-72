@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 BOOK = Path(__file__).resolve().parent
-MAX_ENTRIES = 10
+MAX_ENTRIES = 6
 
 
 def pages_for(entries: list[dict], category: str | None = None) -> list[list[dict]]:
@@ -87,6 +87,9 @@ def main() -> None:
             if study["origin"] == "new_inline_art":
                 path = BOOK / "prompts" / "glossary-pages" / Path(study["prompt_path"]).name
                 path.write_text(prompt_for(study) + "\n")
+            elif study["origin"] == "new_transparent_art":
+                if study["panel"] != "full":
+                    raise ValueError(f"Invalid transparent art panel for {identity}")
             elif study["origin"] != "paired_pilot_art" or study["panel"] not in (0, 1):
                 raise ValueError(f"Invalid source art for {identity}")
             if not (BOOK.parent / study["prompt_path"]).exists():

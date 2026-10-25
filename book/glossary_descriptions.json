@@ -1,0 +1,1122 @@
+{
+  "status": "working_draft",
+  "source": "data/ingredients.json note, first sentence only",
+  "editorial_policy": "One complete catalog sentence per named entry; source facts and prose require editorial review before print",
+  "entries": {
+    "abalone": {
+      "text": "The muscular foot, sliced thin against its grain, yields a clean brine and a crunch that softens to velvet, prized raw as sashimi or barely kissed by steam.",
+      "source_note_sha256": "02bf6a3bfa8366811057625a0e3d990f1e32364246a7170b6011c4496cb5a4c5",
+      "copy_status": "draft_unverified"
+    },
+    "aji-horse-mackerel": {
+      "text": "A silver-skinned fish with a clean, faintly sweet flesh that carries none of the heaviness of fattier blue fish, at its peak now, the meat firms up and develops a bright mineral finish perfect for tataki or sashimi with grated ginger.",
+      "source_note_sha256": "1e0cc465793c32a73cd086f3c928f6a6f7308ab0408312436d7ccc1c051a0c58",
+      "copy_status": "draft_unverified"
+    },
+    "akebi-melon": {
+      "text": "A wild vine fruit with pale lavender skin that cracks to reveal translucent, seed-studded flesh tasting faintly of honeydew and lychee, the soft interior is eaten fresh while the bitter rind is stuffed with miso-seasoned meat and fried.",
+      "source_note_sha256": "eb9cb0160e5937e34c81b8573c1989577ea1d6fc7d171cc0b1568f3959d5a028",
+      "copy_status": "draft_unverified"
+    },
+    "amanatsu": {
+      "text": "A thick-skinned hybrid citrus whose flesh delivers bright acidity tempered by a honeyed undertone, the bitterness of its pith prized for marmalades and candied peel.",
+      "source_note_sha256": "90ddf09e8445b8d1c46e76539f3200007830eae070f0be3a52fb59dd500af069",
+      "copy_status": "draft_unverified"
+    },
+    "amanatsu-citrus": {
+      "text": "Harvested in winter but left to mellow until April or May, amanatsu trades sharpness for a honeyed acidity, its thick pith still carrying enough pleasant bitterness to wake the palate.",
+      "source_note_sha256": "d8654d87e45898c1fe134027dc5c0b68424ce7365aafb723b2c63789cb1d628b",
+      "copy_status": "draft_unverified"
+    },
+    "amanatsu-sweet-citrus": {
+      "text": "A thick-skinned citrus whose flesh balances bright acidity with a honeyed sweetness that only emerges after months of patient storage past the winter harvest.",
+      "source_note_sha256": "e397c3918bba2720698503fb8fcf5afd72439b81860db8f2e5bef97edac72142",
+      "copy_status": "draft_unverified"
+    },
+    "anago-conger-eel": {
+      "text": "Unlike its richer cousin unagi, anago offers a delicate, almost ephemeral sweetness, its pale flesh turning silky when simmered in a light soy broth or brushed with nikiri and torched atop sushi.",
+      "source_note_sha256": "9b4e6a1c55f96f5ba84e47059ddbdbab9944ef055e58acefad371c424b221a6a",
+      "copy_status": "draft_unverified"
+    },
+    "aoyuzu-green-yuzu": {
+      "text": "Harvested unripe, green yuzu offers a sharper, more herbaceous bite than its mature form, the zest bright with volatile oils that sting the nose pleasantly when grated over warm dishes.",
+      "source_note_sha256": "24a5f47e0c5660144e18180f0036199d20221c0959bdc06c85758a8fbc9f8469",
+      "copy_status": "draft_unverified"
+    },
+    "ashitaba": {
+      "text": "A coastal herb from the Izu Islands whose thick stems weep golden sap when cut, the flavor sits between celery and angelica, with a faint medicinal bitterness that tempura transforms into something almost sweet.",
+      "source_note_sha256": "5a8c92f38fac9926bbe982e791fc78a1c00724fe01773aa67313cd437f2e283c",
+      "copy_status": "draft_unverified"
+    },
+    "asian-persimmon-kaki": {
+      "text": "The hachiya variety yields to the slightest pressure when truly ripe, its flesh collapsing into a honeylike sweetness that tastes faintly of cinnamon and dates.",
+      "source_note_sha256": "0b9094734c65f3308dd93d748998602664e4797b11129e9f8039d5c3c33ff62f",
+      "copy_status": "draft_unverified"
+    },
+    "ayu-sweetfish": {
+      "text": "A slender river fish whose flesh carries the faint fragrance of watermelon and fresh cucumber, the result of feeding on algae from clean mountain streams.",
+      "source_note_sha256": "c6ad0f6362819cf180eb13604fb4a5b49ed1a450454cb0c2bb08e77abc3b8f4b",
+      "copy_status": "draft_unverified"
+    },
+    "bamboo-shoots": {
+      "text": "Dug at dawn before the sun can turn their sugars bitter, fresh takenoko have a faint sweetness and a texture that yields with a clean snap, nothing like the pallid canned version.",
+      "source_note_sha256": "f4e2635b7ed5daab63563dd28daadf1f65060a069bde38f448bc3c76eb9162fa",
+      "copy_status": "draft_unverified"
+    },
+    "bamboo-shoots-takenoko": {
+      "text": "Freshly dug takenoko must reach the pot within hours, before its sugars turn to woody bitterness; the flesh should taste faintly sweet, with a clean vegetal snap unlike anything that has traveled far.",
+      "source_note_sha256": "6e888f2c0578bd6b39f1ae6992196e670a6fee4af05a40f8b57b3b3a02d55a45",
+      "copy_status": "draft_unverified"
+    },
+    "beltfish": {
+      "text": "Named for its resemblance to a Japanese sword, the tachiuo is a ribbon of silver that swims vertically in deep waters, its flesh turning translucent and sweet as autumn deepens.",
+      "source_note_sha256": "a5486ff6cb6276101b3631d5d78c194c15f67672850a605d084386f0a80f29df",
+      "copy_status": "draft_unverified"
+    },
+    "bitter-melon": {
+      "text": "The warted jade skin yields to a spongy, pale interior whose bracing bitterness cuts through the humidity like a cold cloth on the neck.",
+      "source_note_sha256": "92b67decd3cc4c8e12a805cbba715c5cf19a5c6552d16ba990c4877b73830a45",
+      "copy_status": "draft_unverified"
+    },
+    "bitter-melon-g-ya": {
+      "text": "This ridged, warty gourd yields flesh of startling bitterness, a quality prized precisely because it cools the body and sharpens the appetite when humid air sits heavy on the skin.",
+      "source_note_sha256": "656237b38b1767f0efd7f28283ffa76d6ed59a9efbf9547e80391d354de13be3",
+      "copy_status": "draft_unverified"
+    },
+    "biwa-loquat": {
+      "text": "Beneath thin, tawny skin lies flesh the color of pale apricot, yielding and faintly perfumed, with a sweetness that recalls honey warmed by afternoon sun.",
+      "source_note_sha256": "c435097c7f7fcf77c7049d362e14f6b63ae4ed51d2c525033c3a88fe929b73ca",
+      "copy_status": "draft_unverified"
+    },
+    "biwa-loquat-early": {
+      "text": "These early loquats arrive with skin still pale orange and flesh that yields a bright, faintly tart sweetness, not yet the honeyed depth of peak season, but refreshing as a first sip of something cold.",
+      "source_note_sha256": "9a4adfe47bc111f01564b87bed1c31a0bb625706b014886f59ca956d3e01e517",
+      "copy_status": "draft_unverified"
+    },
+    "blueberry": {
+      "text": "Japanese blueberries grown in highland orchards reach their sweetest point in July and August, their skins taut with a bloom of pale dust that smudges at the touch.",
+      "source_note_sha256": "b5656cafa473873aa0d973f11944b10b4f9493a018edc2a0c9f74f631f111f8c",
+      "copy_status": "draft_unverified"
+    },
+    "bonito": {
+      "text": "The first bonito of the season, called hatsugatsuo, arrives lean and clean-fleshed, its deep red meat best eaten as tataki, seared over straw fire until the edges char while the center stays cool and raw.",
+      "source_note_sha256": "022cd445062a88f42d243ff33b855994a3599ced93a5f0577efc8b0b3f464a63",
+      "copy_status": "draft_unverified"
+    },
+    "bonito-katsuo": {
+      "text": "The spring bonito, called hatsu-gatsuo, runs lean and firm with a clean, almost metallic brightness that sashimi lovers prize for its lack of fattiness.",
+      "source_note_sha256": "2bf52abe7ad915c4c31d847cfbc2a6c341f7ddac407d6ff906b9d5b82870b9bb",
+      "copy_status": "draft_unverified"
+    },
+    "bud-japanese-grapes": {
+      "text": "Japanese grapes like Kyoho and Shine Muscat are prized for flesh that slips clean from the skin, intensely sweet with a musky depth that fills the mouth.",
+      "source_note_sha256": "1377779f7f123ad22446fe67e10d16aacb39c35e2478435dfffd2f2569868e1c",
+      "copy_status": "draft_unverified"
+    },
+    "cherry": {
+      "text": "Japanese cherries arrive with flesh so tender it yields at the slightest pressure, their sweetness balanced by a faint tartness that lingers on the tongue.",
+      "source_note_sha256": "05ddb4f524b117c4bbd2648fcd88550f63c3bd95adaf7dc119762946ac1c58a4",
+      "copy_status": "draft_unverified"
+    },
+    "conger-eel": {
+      "text": "Anago offers a gentler, more delicate sweetness than its cousin unagi, its flesh turning silken when brushed with sweet soy and kissed by charcoal flame.",
+      "source_note_sha256": "422aa61d7b9ed292180ee6beb32e14e68da35454792f71ff98f747f4bec79f69",
+      "copy_status": "draft_unverified"
+    },
+    "conger-eel-anago": {
+      "text": "Unlike its richer cousin unagi, anago offers a lighter, more delicate sweetness, its pale flesh turns silken when simmered in sweet soy, draped warm over sushi rice in Edomae style.",
+      "source_note_sha256": "ea7659fc60660c1ecf5e05a772ce7afe4035b14abf1aaabe4b1eabfaec5d3070",
+      "copy_status": "draft_unverified"
+    },
+    "cucumber": {
+      "text": "Sliced thin and dressed with nothing more than salt and rice vinegar, the summer cucumber offers a clean snap and faint grassy sweetness that cuts through the weight of humid days.",
+      "source_note_sha256": "94645d105854d55898e2ea3cc4da9b6aa3181d79943c2c942656dc3f46fdc2a3",
+      "copy_status": "draft_unverified"
+    },
+    "early-cherries": {
+      "text": "These earliest cherries arrive with flesh still firm and flavor caught between sweet and tart, a brightness that speaks of orchards not yet heavy with full summer.",
+      "source_note_sha256": "2fb844fcb884263105010e676a5dfb26c034f68bc64d7f847b1a75dc8086f765",
+      "copy_status": "draft_unverified"
+    },
+    "early-harvest-persimmon-kaki": {
+      "text": "These early-harvest persimmons arrive while still carrying a faint astringency, their flesh firm enough to slice cleanly, revealing that particular orange that seems to hold the last warmth of summer.",
+      "source_note_sha256": "385555609f613c8257ff610b5cff4344c20a57da7fb468543763d96710735b80",
+      "copy_status": "draft_unverified"
+    },
+    "early-peach": {
+      "text": "The first peaches of the season arrive smaller and firmer than their midsummer kin, their flesh yielding a clean, almost floral sweetness that carries a whisper of tartness near the stone.",
+      "source_note_sha256": "df86d8c189a9aaba7cac0f536c744d5f0eb8fead71a5ad968e27410ce70312f8",
+      "copy_status": "draft_unverified"
+    },
+    "early-pear": {
+      "text": "These first nashi of the season arrive with flesh so crisp it shatters against the teeth, their juice running clear and faintly honeyed before the deeper sweetness of later harvests develops.",
+      "source_note_sha256": "23083018b57987b0a52ca52ff07c6bf6b1fda8c961f179c2099e285c3482e9a9",
+      "copy_status": "draft_unverified"
+    },
+    "early-persimmon-kaki": {
+      "text": "These first persimmons of the season arrive while summer's heat still lingers, their flesh firm and crisp rather than the jammy softness of later varieties, a clean sweetness with faint astringency at the edges.",
+      "source_note_sha256": "e496fe0e7fd923055695a2b21de48d6bdd6da8f5939859da06ef5f744a4c0ce1",
+      "copy_status": "draft_unverified"
+    },
+    "edamame": {
+      "text": "Young soybeans harvested still clinging to the branch, their pods furred with fine hairs that hold the morning dew; bite through and the beans slide out with a faint sweetness, tasting of green growth and salt.",
+      "source_note_sha256": "8dca285691dcc6e001e683332f6b197cac8f5e817f12a330383a3a3e5003e91e",
+      "copy_status": "draft_unverified"
+    },
+    "fava-beans": {
+      "text": "Called 'sky beans' for the way their pods point upward on the stem, these legumes arrive with a fleeting sweetness and grass-green fragrance that disappears within days of harvest.",
+      "source_note_sha256": "3e2676ec3841a8d14a3ffcd92e2be163ea5cc378a8c5de55d662354a76d3118b",
+      "copy_status": "draft_unverified"
+    },
+    "fava-beans-soramame": {
+      "text": "Named 'sky beans' for the way their pods point upward before harvest, soramame offer a fleeting sweetness best captured within three days of picking, grilled in their pods until charred, the beans inside turn creamy with a faint grassy brightness.",
+      "source_note_sha256": "5c62b2c091e81ef370685e9143a6882fa64749cb0f6125213d6752319e28e1de",
+      "copy_status": "draft_unverified"
+    },
+    "fig-ichijiku": {
+      "text": "The flesh yields to the teeth in a way that feels almost liquid, honey-sweet with a faint graininess from the countless tiny seeds within.",
+      "source_note_sha256": "4da2d5c6af33240e85626eee5813975082405ade0d44acdf1e5a137a11d83197",
+      "copy_status": "draft_unverified"
+    },
+    "figs": {
+      "text": "The flesh yields to the teeth with almost no resistance, a soft collapse into honeyed sweetness, the tiny seeds adding just enough texture to remind you this is fruit, not confection.",
+      "source_note_sha256": "5441b19d3076cad62489dad27fc82ff20c65bd4962fccc003f24aaff5ab705bf",
+      "copy_status": "draft_unverified"
+    },
+    "flounder": {
+      "text": "A flatfish whose paper-thin sashimi reveals an almost translucent sweetness, the meat gaining density and fat as winter deepens.",
+      "source_note_sha256": "70bc5e9a31030b77dd56553e20a464c1c6531effcc6e26d63cba991f3e49b18e",
+      "copy_status": "draft_unverified"
+    },
+    "fuki-butterbur": {
+      "text": "Pale green stems with a mineral bitterness that lingers clean on the tongue, their hollow centers ideal for simmering in dashi until the fibers turn silken.",
+      "source_note_sha256": "99ed40decfad54c2fcedcb8e5cca159f9d11cf7178b93ed806366f7c7168d5bf",
+      "copy_status": "draft_unverified"
+    },
+    "ginkgo-nut": {
+      "text": "These jade-green kernels hide beneath a notoriously pungent flesh, their flavor somewhere between chestnut and edamame with a faintly bitter, almost resinous finish.",
+      "source_note_sha256": "389087a0575eb96777c66ed835ab790978e7984390e9dd4310877ad6eed18e26",
+      "copy_status": "draft_unverified"
+    },
+    "ginkgo-nuts": {
+      "text": "Beneath their notoriously pungent flesh, these jade-green kernels offer a texture between chestnut and edamame, with a faint bitterness that deepens when skewered and salt-grilled over charcoal.",
+      "source_note_sha256": "7dfb804cf2c65c5943446b0ba2ef9b5e5e91d43af9e0099df51493389e81654f",
+      "copy_status": "draft_unverified"
+    },
+    "ginkgo-nuts-ginnan": {
+      "text": "These jade-green kernels, encased in shells that crack with a satisfying pop, carry a faintly bitter, almost piney sweetness and a texture between chestnut and pine nut.",
+      "source_note_sha256": "6b534495986df557a26b41269d97dc34f5a21c2021203b0dff71f6b01280d4fe",
+      "copy_status": "draft_unverified"
+    },
+    "ginko-nuts-ginnan": {
+      "text": "Jade-colored kernels with a faintly resinous, bittersweet taste and a texture that yields like a firm cheese between the teeth.",
+      "source_note_sha256": "35725fb66d114bf3f9b88549604a1b06f9a9cd8783d37dd84f2274fd7c7fc9b7",
+      "copy_status": "draft_unverified"
+    },
+    "ginnan-ginkgo-nut": {
+      "text": "The pale jade kernels, freed from their pungent husks, offer a waxy bite and faint bitterness that carries the mineral taste of late autumn.",
+      "source_note_sha256": "b081a2a3588e7753ae4e41f8d26edf4bad173acf71adcbdb52d1ebc844af3a1d",
+      "copy_status": "draft_unverified"
+    },
+    "gob-burdock-root": {
+      "text": "A slender, earth-colored root with bark-rough skin and flesh that oxidizes to pale rust the moment it meets air; prized for its dense, almost meaty chew and faint sweetness that emerges after long simmering.",
+      "source_note_sha256": "4cc8bd177b563581e372abfc626e03723921c46aea48a983258e06d0fec032cc",
+      "copy_status": "draft_unverified"
+    },
+    "grape": {
+      "text": "Japanese grapes arrive heavy on the stem, their skins slipping free to reveal flesh so sweet it borders on floral, varieties like Kyoho and Shine Muscat prized for size, fragrance, and that first cold bite.",
+      "source_note_sha256": "43476804990309d4e53509981d15788456d9e170a497e4d9e488b1e6ed200e6d",
+      "copy_status": "draft_unverified"
+    },
+    "green-peas": {
+      "text": "Freshly shelled peas possess a sweetness that fades within hours of harvest, their sugars converting to starch even as you carry them home.",
+      "source_note_sha256": "a550498f22f137ba07732b46dae8d88dfe55e5fb373d95fe96af2205052c45b3",
+      "copy_status": "draft_unverified"
+    },
+    "green-pepper": {
+      "text": "Summer-harvested specimens have thin, yielding walls and a clean vegetal bitterness that children famously protest and adults come to crave, char them quickly over high flame until the skin blisters and the flesh turns silken.",
+      "source_note_sha256": "37241cc729f067e36bc55b2b64e4fe1cef5e79634013be37eaa0789f659bdd6f",
+      "copy_status": "draft_unverified"
+    },
+    "green-shiso": {
+      "text": "The jagged leaves release their unmistakable fragrance only when torn or bruised, a sharp, almost mentholated freshness that cuts through the heaviness of raw fish and summer heat.",
+      "source_note_sha256": "785eb510dae048352ce4811eb1ae710361eac8c85d734ecb5e94ddda08330547",
+      "copy_status": "draft_unverified"
+    },
+    "green-shiso-ba": {
+      "text": "These broad, serrated leaves release a bright, almost electric fragrance when torn, part mint, part basil, part something wilder that belongs only to itself.",
+      "source_note_sha256": "a5e294ecb8c500fbe62ec6e281a76a72fff10f77d7faa9f172017bdd6e5f7f7d",
+      "copy_status": "draft_unverified"
+    },
+    "green-ume-plums": {
+      "text": "Hard, astringent, and intensely fragrant, green plums arrive too sour to eat raw, their purpose is transformation.",
+      "source_note_sha256": "bf2152cad460e0f5a56f211bb3ca1c916cdd46f231ccdcf4c4772464979ca158",
+      "copy_status": "draft_unverified"
+    },
+    "grunt": {
+      "text": "The striped beakfish, called ishidai for its habit of crushing shellfish against stones, yields firm white flesh with a clean mineral sweetness prized in sashimi and usuzukuri.",
+      "source_note_sha256": "27a5307218c11693904d951cebdc9b28e4875cac7876fafc7bb4e71ed2b4a8d3",
+      "copy_status": "draft_unverified"
+    },
+    "hakusai-napa-cabbage": {
+      "text": "Broad, pale leaves with crisp white ribs that turn silken when braised, their flavor deepening to a subtle sweetness after the first hard frost transforms their starches.",
+      "source_note_sha256": "63792c60e3155252adc9bcf27802eb6460334a8090a4a501232a67f1dc734d5b",
+      "copy_status": "draft_unverified"
+    },
+    "hamo-pike-conger": {
+      "text": "A serpentine eel prized in Kyoto despite the sea being hours away, its flesh stays firm in summer heat, and skilled knife work transforms hundreds of hairline bones into something that blooms like a white flower when blanched.",
+      "source_note_sha256": "f13bc80ad67b8e199d2473acbaab6c3d783412c5fd4ba487a14e53c3a423e1e8",
+      "copy_status": "draft_unverified"
+    },
+    "hatatehagi-filefish": {
+      "text": "A fish whose rough, sandpaper skin must be stripped away to reveal meat so clean and mild it borders on sweetness, its liver swelling rich and creamy as waters chill.",
+      "source_note_sha256": "814cdcf6bd112610e6c0b22da275a779f7717cc6dc1d1daab50a7629a4b0ea71",
+      "copy_status": "draft_unverified"
+    },
+    "haze-goby": {
+      "text": "A small, bottom-dwelling fish with translucent flesh that turns pure white when cooked, prized for its clean sweetness and delicate texture in tempura, the batter barely there, the fish tasting of cold river and sea meeting.",
+      "source_note_sha256": "32e3c885a0bbcfb0d008fe27f9fb5ebeb07e24c9f6f13857cf6dda28a809fbb8",
+      "copy_status": "draft_unverified"
+    },
+    "hirame-flounder": {
+      "text": "A left-eyed flatfish prized for its translucent white flesh, served as usuzukuri, slices so thin they reveal the pattern of the plate beneath, each piece offering a clean, faintly sweet resistance to the teeth.",
+      "source_note_sha256": "3b5c471d64381d7064780c71980069998a9a6275fdefdb588adaa8428f611c12",
+      "copy_status": "draft_unverified"
+    },
+    "hokke-atka-mackerel": {
+      "text": "A fish of the northern seas, hokke yields pale, fatty meat that caramelizes beautifully when dried and grilled, its edges crisping while the flesh stays moist and faintly sweet.",
+      "source_note_sha256": "db9dcf877cdb3ae58d41a57b03a833be9c11a0b09a0659f1b8ed9bb9334bb522",
+      "copy_status": "draft_unverified"
+    },
+    "horse-mackerel": {
+      "text": "A silvery fish with a distinctive lateral line of bony scutes, its flesh now carries the clean, faintly sweet fat that comes before the humid months, best eaten as tataki, seared just at the edges, or in sashimi so fresh the meat still has tension.",
+      "source_note_sha256": "a8160d4a2f583b2432d0125a7f749f171f1a6f0886c6a00ebd2ac4cd8beef04b",
+      "copy_status": "draft_unverified"
+    },
+    "horse-mackerel-aji": {
+      "text": "A silver-sided fish with a distinctive row of bony scutes along its lateral line, aji at its peak carries a clean sweetness and firm flesh that needs nothing more than a squeeze of ginger and scallion as tataki or namero.",
+      "source_note_sha256": "fc76752f130d77128d0e04e4fa932d8747124f5f540c4f9c03be1a0557bfd662",
+      "copy_status": "draft_unverified"
+    },
+    "hotaru-ika-firefly-squid": {
+      "text": "These thumb-sized squid rise from deep waters to spawn, their photophores glowing an ethereal blue-white, eaten whole, their bodies burst with a briny sweetness and faint bitterness from the viscera.",
+      "source_note_sha256": "6ab529ad79690f07c34319b9efb6ec699c24ec17590a95d31b74aa4226ea3793",
+      "copy_status": "draft_unverified"
+    },
+    "ichigo-strawberries": {
+      "text": "Japanese strawberries are bred for sweetness over tartness, their flesh yielding and fragrant, often eaten unadorned or perched atop shortcake in pristine rows.",
+      "source_note_sha256": "c743bec5c1a3948717b0b207f111ef117aae5ee6a9c875445f2149af7c2c9345",
+      "copy_status": "draft_unverified"
+    },
+    "isaki-grunt": {
+      "text": "A handsome striped fish whose flesh reaches its richest state just before spawning, firm yet yielding, with a clean sweetness that needs only salt and flame.",
+      "source_note_sha256": "4c80ee1abcedbb42ba234b063009b395fda975c25d3b0e01f50e0308b9dac433",
+      "copy_status": "draft_unverified"
+    },
+    "ishidai-striped-beakfish": {
+      "text": "A powerful reef fish with a parrot-like beak and bold black stripes that fade with age, its firm white flesh carries a clean, faintly sweet taste prized for sashimi, the texture dense enough to resist the teeth before yielding.",
+      "source_note_sha256": "eff8aefd388206084cf433f08b847863fa223dd2213c96dfa814433f10e0a056",
+      "copy_status": "draft_unverified"
+    },
+    "iwashi-sardine": {
+      "text": "The silvery skin flashes blue-green like oil on water, and the meat beneath runs dark and rich with the fat that will carry the fish through lean months.",
+      "source_note_sha256": "4ef20748d04e46c914466f96d8f7fefa0b7006628b3c3c4d66179334ea69eb85",
+      "copy_status": "draft_unverified"
+    },
+    "j-roku-sasage-yard-long-beans": {
+      "text": "Named for the sixteen seeds that line each slender pod, these beans snap with a grassy sweetness and cook to a silken texture that green beans cannot match.",
+      "source_note_sha256": "4149364c5346f4ca740c360d221d6b931d8e82c14fc500f23fbe4386e2386eb4",
+      "copy_status": "draft_unverified"
+    },
+    "japanese-pear": {
+      "text": "Unlike Western pears, nashi yields a crisp, granular flesh that shatters between the teeth, its juice cool and faintly floral, chilled slices served after dinner carry the first relief of cooler nights.",
+      "source_note_sha256": "9cdd1d6bafc1c0a72f05e242854247e7ffe2acc7263ef5cd94bedef65627f90a",
+      "copy_status": "draft_unverified"
+    },
+    "japanese-pear-nashi": {
+      "text": "Unlike its Western cousins, nashi offers a crisp, granular flesh that shatters between the teeth with a spray of cool, faintly floral juice, refreshment distilled into fruit form.",
+      "source_note_sha256": "c3260c1ba744e228e969eaac2c035040b9b08b54b3abd6e80639faa401f4a17a",
+      "copy_status": "draft_unverified"
+    },
+    "japanese-sea-bass-suzuki": {
+      "text": "A sleek predator with translucent white flesh that firms beautifully when blanched and shocked in ice water, the classic arai preparation that defines summer eating.",
+      "source_note_sha256": "072bf97b80c2d9f50396ca304a3f75d4c5f30f4cd1a969ab039db0c981b06694",
+      "copy_status": "draft_unverified"
+    },
+    "japanese-sweet-potato": {
+      "text": "The flesh beneath its purple-red skin turns from pale yellow to deep gold when roasted slowly, releasing a caramelized sweetness that needs nothing more.",
+      "source_note_sha256": "b5d675e98f07ee276ab9403e1d6083910d3002d6a146d214eab4a82cbd964eb6",
+      "copy_status": "draft_unverified"
+    },
+    "kabocha-squash": {
+      "text": "A dense-fleshed winter squash with deep green rind and flesh the color of persimmon, prized for its chestnut-like sweetness that intensifies in storage.",
+      "source_note_sha256": "3aa5c26f71da12cf89f9e5b1cd45fcb4cb9eb365e400fdfd9b5fbced6a5b67c9",
+      "copy_status": "draft_unverified"
+    },
+    "kabocha-winter-squash": {
+      "text": "A dense-fleshed winter squash with dry, chestnut-like sweetness and skin tender enough to eat, the flesh turns almost jam-thick when simmered in dashi and soy.",
+      "source_note_sha256": "6e26e53b5c785e3b03e8f7633fb513bcaea341855fd4093f220c0158651d985d",
+      "copy_status": "draft_unverified"
+    },
+    "kabosu-citrus": {
+      "text": "A golf ball-sized citrus from Ōita Prefecture, kabosu yields a juice more rounded than sudachi, less bitter than lemon, its pale green flesh releasing an aroma somewhere between bergamot and fresh-cut grass when squeezed over grilled sanma.",
+      "source_note_sha256": "aaa5647c04131b0971da07dbf7cb16c465c06fc7ea7ce487f82665d891c48112",
+      "copy_status": "draft_unverified"
+    },
+    "kabu-turnip": {
+      "text": "The Japanese turnip is smaller and more delicate than its Western counterpart, with skin so thin it need not be peeled and flesh that turns silken when simmered in dashi.",
+      "source_note_sha256": "aca0d88d6efb4d5b45d8653c034153ae15bf5584d8c3c2797e489486c48dd5c7",
+      "copy_status": "draft_unverified"
+    },
+    "kaki-persimmon": {
+      "text": "The hachiya variety yields to gentle pressure when perfectly ripe, its flesh collapsing into a honey-thick pulp that tastes of dates and brown sugar with a faint tannic whisper.",
+      "source_note_sha256": "1f56fd02e3505c4f18413ded1c2dda4d7a3eeb8bb6efbac56ee3659b9dcd93f2",
+      "copy_status": "draft_unverified"
+    },
+    "kaki-persimmon-early-varieties": {
+      "text": "Early varieties like Saijo and Nishimura-wase offer a firm, almost crisp flesh with a honeyed sweetness that intensifies after a light frost, the astringency of unripe fruit transformed into something purely clean.",
+      "source_note_sha256": "023f6f65e0f67281da94bde4e5af961856d5494f9e8444c5781e394f6a434e6f",
+      "copy_status": "draft_unverified"
+    },
+    "karin-chinese-quince": {
+      "text": "Too hard and astringent to eat raw, the golden karin is prized for its intoxicating fragrance, a honeyed sweetness that fills winter rooms when placed in a bowl.",
+      "source_note_sha256": "b826e7a5ef1e60993321302e4f08643d58beae0da781a3d09b321206c00f3fa8",
+      "copy_status": "draft_unverified"
+    },
+    "katsuo-skipjack-tuna-returning-run": {
+      "text": "The returning run yields flesh rich with fat from months of feeding in northern seas, deep crimson, almost burgundy, with a sweetness that needs only a whisper of ginger and ponzu.",
+      "source_note_sha256": "20241dd68d54c6bf778f35edfbce140636bcf8cac4dd5f8b81d0413da989ffea",
+      "copy_status": "draft_unverified"
+    },
+    "kawahagi-filefish": {
+      "text": "The lean white flesh is almost transparent, mild to the point of sweetness, but it is the liver, creamy, rich as foie gras, tinged faintly orange, that devotees prize, mashed into soy sauce as a dipping medium for the sashimi.",
+      "source_note_sha256": "72f0caab2c25541b7f22e68202b83836d839d4783a7c41bd251637dd6eda73a3",
+      "copy_status": "draft_unverified"
+    },
+    "kinmedai-golden-eye-snapper": {
+      "text": "A deep-sea fish with luminous crimson skin and large golden eyes, prized for flesh that turns silken and sweet when simmered in soy and ginger.",
+      "source_note_sha256": "622022c0b4847bb95d3f4217d91939cc3b516997e34700ba539944d9588ec270",
+      "copy_status": "draft_unverified"
+    },
+    "kinmedai-splendid-alfonsino": {
+      "text": "A deep-sea fish with luminous golden eyes and rose-pink skin, its flesh turns silken and sweet when simmered in soy and mirin, the fat melting into the braising liquid.",
+      "source_note_sha256": "9c6f72a20fc97083382be82998133f12cbb44696805c4bb67ad2cc7d0ed07ce5",
+      "copy_status": "draft_unverified"
+    },
+    "kisu-japanese-whiting": {
+      "text": "A slender, silver-skinned fish whose flesh is so delicate and clean-tasting it seems to dissolve on the tongue, the definitive tempura fish, its light sweetness heightened by a whisper-thin batter.",
+      "source_note_sha256": "87827339c62a5918c8e90f28ef8f3b0390381c18a10c048f1e9b531135330d59",
+      "copy_status": "draft_unverified"
+    },
+    "kisu-sillago": {
+      "text": "A slender, silver-skinned fish with flesh so delicate and clean it seems to hold the lightness of early summer itself, the classic tempura-dane, its fillets curling golden in the oil while staying sweet and faintly briny within.",
+      "source_note_sha256": "7196ad5909b00b4dd5dabc3c3e11609ea227e038f026b516b9e46b029ef6c558",
+      "copy_status": "draft_unverified"
+    },
+    "kisu-whiting": {
+      "text": "A slender silver fish with flesh so delicate it seems to dissolve on the tongue, prized for tempura where its clean sweetness emerges through the lightest batter.",
+      "source_note_sha256": "038dd56924484adc5459cf9f48b59838625cba79ec966e9c7525cbdc468715c7",
+      "copy_status": "draft_unverified"
+    },
+    "kohada-gizzard-shad": {
+      "text": "A slender silver fish whose skin shimmers with an iridescent blue-green sheen, kohada is prized for its delicate balance of rich oils and clean brine, the vinegar cure of edomae sushi tradition draws out its brightness without masking the sea.",
+      "source_note_sha256": "3c31769579b6c34d2f4d6e6a5fe49422c3a9a958c67667b13d076349e81e0b80",
+      "copy_status": "draft_unverified"
+    },
+    "koshu-grape": {
+      "text": "Japan's indigenous wine grape, cultivated in the foothills of Mount Fuji for over a millennium, with translucent pink-bronze skin that yields flesh of gentle sweetness and a faint mineral finish.",
+      "source_note_sha256": "63202870108bca6ad03133261fa03dbcd55999c7370d676eea00e806049fb286",
+      "copy_status": "draft_unverified"
+    },
+    "kosui-pear-asian-pear": {
+      "text": "The first major nashi of the season, Kōsui arrives with flesh so crisp it shatters against the teeth, releasing juice that tastes of honey touched with the faintest citrus acidity.",
+      "source_note_sha256": "dd6e7b54692641bd18fac198f248cd6aeb1f0a3557cb1b0e96f43da36c7e6900",
+      "copy_status": "draft_unverified"
+    },
+    "kurinameshi-pear-japanese-pear": {
+      "text": "A newer nashi cultivar bred for exceptional sweetness and dense, fine-grained flesh that shatters cleanly between the teeth, its juice running clear as spring water.",
+      "source_note_sha256": "a244ba0ab8791c35c209418a060f7a1ace51fcad4da39cfdb5e5493c1bffef5b",
+      "copy_status": "draft_unverified"
+    },
+    "kuromame-zuke-black-soybeans": {
+      "text": "Glossy black soybeans simmered until tender, then steeped in sweetened soy until each bean holds a lacquered sheen and faint molasses depth.",
+      "source_note_sha256": "4271dbb35e99a0c07cd39f6d6cc1594cb09b6cdcc742dd561152d4febe69fac6",
+      "copy_status": "draft_unverified"
+    },
+    "kuruma-ebi-japanese-tiger-prawn": {
+      "text": "Named for the striped wheel-like pattern that curves along its shell, this prawn offers flesh that is sweet, firm, and faintly translucent, prized raw as odori, still quivering, or graced by the lightest tempura batter.",
+      "source_note_sha256": "fb87d646bbeb0dc52a721b813d57a82e570390755a768407c8e0ff17258b08ff",
+      "copy_status": "draft_unverified"
+    },
+    "ky-ri-cucumber": {
+      "text": "Japanese cucumbers arrive slender and thin-skinned, their flesh dense with a grassy sweetness that shatters cleanly between the teeth, nothing like their waterlogged Western cousins.",
+      "source_note_sha256": "3f1e35a8c409b242cf9c97acb7b9fc9e28697fcb60c1091144412dc7670e6379",
+      "copy_status": "draft_unverified"
+    },
+    "kyoho-grape": {
+      "text": "These dark purple grapes slip from their skins with a gentle squeeze, revealing translucent flesh so sweet and musky it perfumes the fingers.",
+      "source_note_sha256": "5ff47534dd414f496c592abfceb2836d7ac6ba0e64b425130a4fb5448a89f54f",
+      "copy_status": "draft_unverified"
+    },
+    "late-strawberries": {
+      "text": "These final strawberries of the season arrive smaller and deeply flushed, their sugars concentrated by warming days into an almost jammy intensity that the pale spring berries never achieve.",
+      "source_note_sha256": "1ae823fdb3e4ec2c7cbdda74e64fdaaf16730b41f1159f2154fffb67da5dd38b",
+      "copy_status": "draft_unverified"
+    },
+    "loquat": {
+      "text": "Beneath its thin, downy skin lies flesh the color of apricot preserve, yielding, faintly tart, with a floral sweetness that vanishes almost as quickly as it arrives.",
+      "source_note_sha256": "57bf891e1c1a5d3e3d8ef0449f32a5c06c8bf03b8e0646ab24024b7083506b66",
+      "copy_status": "draft_unverified"
+    },
+    "loquats-biwa": {
+      "text": "Beneath thin, suede-like skin lies flesh the color of apricot sunset, faintly tart, honeyed, with a floral finish that dissolves on the tongue.",
+      "source_note_sha256": "3b8e20d6a118d65cd508a3ee29b31159d58609c0bc3dd2b99196e807ca354df0",
+      "copy_status": "draft_unverified"
+    },
+    "lotus-root": {
+      "text": "Cut crosswise, the wheel reveals its lace of air pockets, a pattern read as 'seeing clearly into the future,' making it essential to New Year's osechi.",
+      "source_note_sha256": "c5d6639c06080c8eacb6d09510a1b13326185572d6dba60b3a115136a3cd5b67",
+      "copy_status": "draft_unverified"
+    },
+    "lotus-root-renkon": {
+      "text": "Sliced crosswise, each round reveals a wheel of hollow chambers, a pattern the Japanese read as 'seeing through to the future,' making it essential to New Year's osechi boxes.",
+      "source_note_sha256": "6c8c25cdf8de723d59c6f4d75681655c93510c86dd7611efff6bb91042cb1992",
+      "copy_status": "draft_unverified"
+    },
+    "m-i-cucumber-okinawan-cucumber": {
+      "text": "A pale, thick-skinned heirloom cucumber from Okinawa with crisp, almost melon-like flesh that stays cool and firm even in brutal subtropical heat.",
+      "source_note_sha256": "5da91e464957a1df5dcf42ce3242202297a1da3a22039bfe9c446b9315bb099f",
+      "copy_status": "draft_unverified"
+    },
+    "mackerel-saba": {
+      "text": "The autumn mackerel carries a stripe of silver-blue iridescence and flesh so rich with oil it glistens when sliced for shimesaba.",
+      "source_note_sha256": "269fbd862f467ff2e4eea5b129beaa0d61b8d21a0eb0ce888ed8fdc2dfb540df",
+      "copy_status": "draft_unverified"
+    },
+    "maitake-hen-of-the-woods-mushroom": {
+      "text": "Found clustered at the base of old oaks and chestnuts, maitake unfolds in rippling bronze-gray fronds with an earthy fragrance and a texture that stays toothsome whether grilled with a brush of soy or torn into tempura batter.",
+      "source_note_sha256": "5601b65d8caff8db4181551d0d34a7c733e15412aa2c528b572db054d9fbba2a",
+      "copy_status": "draft_unverified"
+    },
+    "manganji-pepper": {
+      "text": "A long, thick-fleshed sweet pepper from Maizuru, Kyoto, virtually without heat, its skin blisters and chars beautifully over flame, releasing a green sweetness that tastes of summer rain on warm soil.",
+      "source_note_sha256": "013e11e38d7b1cdfd7f12e2e2622f8b5589be842d71fd314ee24ed916c90abd6",
+      "copy_status": "draft_unverified"
+    },
+    "manganji-peppers": {
+      "text": "These long, slender peppers from Maizuru carry almost no heat, just a grassy sweetness and skin so thin it blisters in seconds over high flame, releasing a faint char perfume.",
+      "source_note_sha256": "7bb73a4abb7eea4f2324f3cfd64ad98fefabb9ea8457ef44963e4f035b6ef204",
+      "copy_status": "draft_unverified"
+    },
+    "mango": {
+      "text": "Miyazaki's Taiyo no Tamago mangoes arrive with flesh so dense and perfumed it yields like custard beneath the knife, their skin blushing from green to sunset red.",
+      "source_note_sha256": "0a7aff11301b065a72e7a89ea41ff14f98c76a8b88f5e18d2265e00c3cb81ece",
+      "copy_status": "draft_unverified"
+    },
+    "mango-okinawan": {
+      "text": "Okinawan mangoes, predominantly the Irwin variety, are harvested only after they drop naturally into nets suspended beneath the trees, their flesh a deep saffron, almost custardy, with a fragrance that fills a room before the knife touches skin.",
+      "source_note_sha256": "9be91b28c06bed7ff30548c5f95ef01d0357d0979bba4452a290c15f5d0146ab",
+      "copy_status": "draft_unverified"
+    },
+    "matsutake-mushroom": {
+      "text": "Found beneath fallen needles in ancient pine groves, this dense-fleshed mushroom releases a scent like cinnamon and cypress that no other fungus possesses, sliced thin and grilled over charcoal, it needs only a whisper of sudachi citrus.",
+      "source_note_sha256": "590deaaa40467a054ff3ca97ea417715a858baea0ce6b654f7aa5394341f080a",
+      "copy_status": "draft_unverified"
+    },
+    "matsutake-mushrooms": {
+      "text": "Emerging from the duff beneath aged red pines, matsutake releases a scent both spicy and resinous, somewhere between cinnamon bark and wet stone, that no other mushroom possesses.",
+      "source_note_sha256": "ee6aa0907cc1f1d6f40d538f5fab118bb98bfc7dc3b55552343955a365909aa1",
+      "copy_status": "draft_unverified"
+    },
+    "matsutake-pine-mushroom": {
+      "text": "This dense, ivory-fleshed mushroom releases a fragrance unlike any other, spicy, almost cinnamon-like, with an undertone of wet forest floor that perfumers have tried and failed to capture.",
+      "source_note_sha256": "c81b5cf20801aaa92bab2ba2b3acbcdf4198525789e227e352e1205a49093360",
+      "copy_status": "draft_unverified"
+    },
+    "mikan-late-variety": {
+      "text": "These late-ripening satsuma mandarins have thicker skins and denser flesh than their autumn cousins, their sweetness deepened by months of winter chill into something almost honeyed.",
+      "source_note_sha256": "0023df8f4248cbaaedf1c74b6a283199977741cbf5b57e6d2b83183eb9f35657",
+      "copy_status": "draft_unverified"
+    },
+    "mitsuba": {
+      "text": "Three-lobed leaves on hollow stems carry a fragrance somewhere between celery and angelica, bright and faintly peppery, releasing their scent the moment they meet hot broth.",
+      "source_note_sha256": "96ddb5d5576775ec4a7aafc0e767545e37d2998a00df79189537ca7143a9ea61",
+      "copy_status": "draft_unverified"
+    },
+    "mitsuba-japanese-wild-parsley": {
+      "text": "Three-leaved stems with a celery-bright bite and faint anise whisper, prized for their snap when floated raw atop clear soups or scattered over chawanmushi at the final moment.",
+      "source_note_sha256": "f39a3af998d36b31dbc91aa643372c87925348b871e2fcbad380a0bd9215560e",
+      "copy_status": "draft_unverified"
+    },
+    "molokhia": {
+      "text": "An Egyptian mallow whose dark, almost jade leaves release a silken mucilage when chopped, thickening soups with a vegetal richness that clings to the spoon.",
+      "source_note_sha256": "2dd664d1485228a177c78abf9cccef01905a5f20b706855858fbc806d29c341b",
+      "copy_status": "draft_unverified"
+    },
+    "momo-early-peaches": {
+      "text": "These early peaches arrive with flesh still pale and firm, their sweetness restrained, carrying a faint astringency that softens only after a day on the kitchen counter.",
+      "source_note_sha256": "c36286c2af98bf8cce833ea6a73606eb6c4645828be0fe45491b15a4495b91de",
+      "copy_status": "draft_unverified"
+    },
+    "momo-white-peach": {
+      "text": "The white peach yields to the slightest pressure, its flesh so delicate it bruises at a glance, the juice runs clear and fragrant, tasting of flowers more than fruit.",
+      "source_note_sha256": "8eece980e359d9c4a59a4ce4ae6fd4ba60b7030d6cf945016200284f8caafaac",
+      "copy_status": "draft_unverified"
+    },
+    "mukago-mountain-yam-bulbils": {
+      "text": "These thumbnail-sized aerial tubers form where leaf meets stem on the wild yamanoimo vine, their thin russet skin yielding to a faintly sticky, nutty flesh when roasted in their jackets with coarse salt.",
+      "source_note_sha256": "63933182abeca7886e7661874ffa1aeef389267cd8918ab1c9cfa0572182bbdc",
+      "copy_status": "draft_unverified"
+    },
+    "murasaki-imo-purple-sweet-potato": {
+      "text": "A dense, dry-fleshed sweet potato whose violet flesh deepens to near-indigo when steamed, yielding a chestnut-like sweetness with faint wine notes.",
+      "source_note_sha256": "79a2f3935fa44d2dd3814ee99bf53e82e06c927b4d10f1fbac4599b6e0a07498",
+      "copy_status": "draft_unverified"
+    },
+    "muscat-grape": {
+      "text": "Shine Muscat grapes arrive with skins so thin you eat them whole, their flesh crisp and perfumed with a sweetness that tastes almost of white flowers.",
+      "source_note_sha256": "c6b1431461358c6a6b4697834d7d5a79779169c988d1b5cff3d00752ebbeb08e",
+      "copy_status": "draft_unverified"
+    },
+    "muscat-grapes": {
+      "text": "Japanese Shine Muscat grapes yield to the teeth with a crisp snap, their translucent jade flesh releasing a perfume somewhere between lychee and white flowers, eaten skin and all, no seeds to interrupt the pleasure.",
+      "source_note_sha256": "b963603a33f1e6e05626baeedbb1a17878e47407040b95d2ca639962e095fb35",
+      "copy_status": "draft_unverified"
+    },
+    "my-ga": {
+      "text": "These pale pink buds emerge from the soil with a sharp, clean fragrance, sliced thin, they cut through the heaviness of summer with their peppery bite and subtle resin.",
+      "source_note_sha256": "ce6af93382a91d380a33dea790e56243da1b4dca0f3182c32a549047d0683b68",
+      "copy_status": "draft_unverified"
+    },
+    "my-ga-ginger-bud": {
+      "text": "The pale pink bud of a wild ginger relative, sliced into threads that release a clean, resinous bite, bright against cold sōmen or scattered over chilled tofu.",
+      "source_note_sha256": "337cd6ea3ee81462c203a950b602d17630d3e67404893c39c415d1162be123a2",
+      "copy_status": "draft_unverified"
+    },
+    "my-ga-ginger-buds": {
+      "text": "These pale pink torpedo-shaped buds carry a bright, resinous sting that cuts through the heaviness of humid days, sliced thin, they shatter against cold sōmen or float in clear soup.",
+      "source_note_sha256": "c13c4da77f0367138e18380f6860ca0679a5afdf3d291ae9be6eddb2df979af4",
+      "copy_status": "draft_unverified"
+    },
+    "my-ga-ginger-shoots": {
+      "text": "These torpedo-shaped flower buds carry a bright, resinous bite that cuts through summer's humidity, sliced thin, they dissolve into cold sōmen or scatter across chilled tofu like pink-tinged shards of clarity.",
+      "source_note_sha256": "c54e17a8fd219e5d9b187dab857a76aabafae5f6f174efbbd6534ce79b7a45c7",
+      "copy_status": "draft_unverified"
+    },
+    "my-ga-myoga-ginger": {
+      "text": "The pale pink buds of this shade-loving ginger offer a clean, resinous bite that cuts through humidity-dulled appetites, sliced thin, they float in chilled sōmen broth or crown a block of cold tofu.",
+      "source_note_sha256": "f6ef063e36925a94793127a3bf13f1f13103554d6935e57f3b562a4b2acc1b08",
+      "copy_status": "draft_unverified"
+    },
+    "my-ga-shoots": {
+      "text": "These blanched young stems of the myōga ginger plant emerge before the familiar flower buds, offering a milder, more delicate bite, crisp as celery, faintly perfumed, often sliced thin for clear soups or dressed simply with miso.",
+      "source_note_sha256": "810fa1b4c59b8b97ee3b8e5edeb0671182a86979298e4be019d169f868c91cee",
+      "copy_status": "draft_unverified"
+    },
+    "myoga-ginger": {
+      "text": "The pale pink buds emerge from shaded soil with a clean, resinous bite that cuts through summer's heaviness, sliced fine into cold sōmen or scattered over chilled tofu.",
+      "source_note_sha256": "f5d21f9e3a70a76b40a80cdc9be1eb4c1179c2a3c414b7db1d6e67a8882fb746",
+      "copy_status": "draft_unverified"
+    },
+    "nashi-asian-pear": {
+      "text": "Unlike its Western cousin, the nashi yields a spray of cold, granular juice the moment teeth break skin, more refreshing than sweet, like biting into autumn itself.",
+      "source_note_sha256": "1ee5f6750be2d5fa586439c97b69c137bbc70186daf12f7e5c3f33eed55126c3",
+      "copy_status": "draft_unverified"
+    },
+    "nasu-early-eggplant": {
+      "text": "The season's first eggplants arrive with thin, delicate skins and flesh so fine it barely resists the tooth, nothing like the dense globes of late summer.",
+      "source_note_sha256": "08d14e0a87a52b1c1e725669798e02402d7bf2916e8345569324c090babd45d9",
+      "copy_status": "draft_unverified"
+    },
+    "nasu-eggplant": {
+      "text": "The skin turns glossy purple-black, stretched taut over cream-colored flesh that collapses into silk when grilled over charcoal.",
+      "source_note_sha256": "3a3176b544ac59409fca660320083c9fc79780800ba0f31a24096fcc742e3bd6",
+      "copy_status": "draft_unverified"
+    },
+    "natsu-mikan-summer-citrus": {
+      "text": "A thick-skinned citrus with segments that pull apart in uneven petals, its juice bracingly acidic with a faint honeyed finish that arrives only after months of patience on the branch.",
+      "source_note_sha256": "d5382110107f7de9709dfa9baab2dd437bcba57bdaef5c7e800cff71b77bfff9",
+      "copy_status": "draft_unverified"
+    },
+    "new-garlic": {
+      "text": "Harvested young, new garlic offers a mild sweetness and moisture absent from cured heads, the cloves almost creamy when roasted whole, without the sharp bite that builds through storage.",
+      "source_note_sha256": "c4d4b32ef73544342b0c7457f5131c2b130e0661d06f51e01dd0d547a20f1b4c",
+      "copy_status": "draft_unverified"
+    },
+    "new-ginger": {
+      "text": "Pale as winter moonlight with tips blushed pink, new ginger arrives with flesh so delicate and fibers so fine it can be sliced tissue-thin and eaten raw, its heat bright but fleeting on the tongue.",
+      "source_note_sha256": "9e7c7fae85378c489c7d605be60716e0a263f2dafb5f0703ccfd4675eaf71389",
+      "copy_status": "draft_unverified"
+    },
+    "new-potatoes": {
+      "text": "Harvested before their skins have set, new potatoes possess a waxy, almost translucent flesh and a sweetness that dissipates within days of digging.",
+      "source_note_sha256": "e1311abc9613ead37303bb0892d18d7377ea83042b26f67e163a23af81389bf5",
+      "copy_status": "draft_unverified"
+    },
+    "nijisseiki-pear-20th-century-pear": {
+      "text": "A thin-skinned pear with jade-pale flesh so crisp it shatters between the teeth, releasing a flood of juice sweet as spring water.",
+      "source_note_sha256": "13c0c2d6d7c7c2f84a96ab5253d935413a007e5431e704dae9f0153a5b8d9b0d",
+      "copy_status": "draft_unverified"
+    },
+    "nijisseiki-pear-asian-pear": {
+      "text": "Named 'twentieth century' for a future that has now become nostalgia, this pale jade sphere yields flesh so water-laden it seems to dissolve on the tongue, its sweetness restrained, almost austere.",
+      "source_note_sha256": "7210a26d51e7f4b99d3725f97efa37a4f6f1bb330a63acbc1d7a6e8476721ad4",
+      "copy_status": "draft_unverified"
+    },
+    "okra": {
+      "text": "Cut crosswise, each pod reveals a perfect five-pointed star, its mucilaginous threads binding dashi and soy into something cool and slippery against the August heat.",
+      "source_note_sha256": "0ce7c8c7dc5415fabaf986574aa9e58e6601af5a409d1df0525ea1ed5ccc82e3",
+      "copy_status": "draft_unverified"
+    },
+    "pacific-saury-sanma": {
+      "text": "A slender, steel-blue fish whose rich flesh turns sweet and oily in September, best eaten simply salted and grilled until the skin blisters and the fat sizzles onto the coals below.",
+      "source_note_sha256": "4510062a70a46d13875d7947ae7642bef6f7ee532a293ba612ac66cd412b515c",
+      "copy_status": "draft_unverified"
+    },
+    "passion-fruit": {
+      "text": "Cut crosswise, the wrinkled purple shell reveals a glistening cavity of black seeds suspended in translucent golden pulp, intensely aromatic, at once tart and honeyed, with a fragrance that fills the room.",
+      "source_note_sha256": "453c594176a8ea307ff7060ce06e5a722cbc1927becb1872fca4d79537217bca",
+      "copy_status": "draft_unverified"
+    },
+    "pear-nashi": {
+      "text": "Unlike its Western cousin, the nashi offers a crisp, granular flesh that shatters between the teeth, its juice running cool and faintly honeyed with none of the butter-soft yield of European varieties.",
+      "source_note_sha256": "7f0d22b58f9e6f685322650d235b5e2d020b0c842e4b4079c5dc35a580e3ce00",
+      "copy_status": "draft_unverified"
+    },
+    "persimmon-early-varieties": {
+      "text": "Early varieties like Saijo and Hiratanenashi arrive while summer's warmth lingers, their flesh still firm with a delicate sweetness that has not yet deepened to honey.",
+      "source_note_sha256": "07fc35199340ca606bfde159df0cba7c9f761a6d7e6619675dc77872ad341b83",
+      "copy_status": "draft_unverified"
+    },
+    "pike-conger": {
+      "text": "A serpentine eel with a jaw full of fine bones, requiring the hamo-giri knife technique, hundreds of precise cuts that transform danger into silk, the flesh blooming white when blanched and dressed with tart umeboshi.",
+      "source_note_sha256": "5406ba8be89ab4cc45c461299ce551b794e2697ca2cd35394d84e43676603bce",
+      "copy_status": "draft_unverified"
+    },
+    "pione-grape": {
+      "text": "A cross between Kyoho and Cannon Hall Muscat, Pione yields berries the size of small plums with blue-black skin that slips away to reveal translucent flesh of startling sweetness and faint musk.",
+      "source_note_sha256": "378a6c181bef4640f047bc2104215b6bbeb8636d9b2957adf004b83e886894f7",
+      "copy_status": "draft_unverified"
+    },
+    "pione-grapes": {
+      "text": "A cross between Kyoho and Cannon Hall Muscat, Pione grapes carry the deep purple-black bloom of their parent with flesh that slips cleanly from the skin, each orb bursting with concentrated sweetness balanced by faint acidity.",
+      "source_note_sha256": "0ab4d26f2a15add2fe7bf9ab0ee5e45ef04221c180b05101fb4729cd8e6eb56b",
+      "copy_status": "draft_unverified"
+    },
+    "plum": {
+      "text": "These Western-style plums arrive with flesh that yields to the tooth in a single clean give, their skins taut and blushed from deep garnet to pale gold, each variety balancing tart snap against honeyed sweetness.",
+      "source_note_sha256": "5af8a81bddbdb08a0fd80a5a36fcbe3206d92104762632d10af1a7082744510b",
+      "copy_status": "draft_unverified"
+    },
+    "prune-plum": {
+      "text": "These oval European plums arrive with flesh that yields to honey-sweetness, their skins carrying that particular dusty bloom that rubs away under the thumb.",
+      "source_note_sha256": "604fba4e9b4d6e8532d4b5d6210beb2b51b90099e8f04b9b9fbd31dc8debc868",
+      "copy_status": "draft_unverified"
+    },
+    "rakkyo-japanese-scallions": {
+      "text": "These small, ivory bulbs, somewhere between shallot and garlic in pungency, are harvested just as humidity settles over the archipelago, their crisp bite a natural foil for rich summer dishes.",
+      "source_note_sha256": "9ac6b1e686a63ab1d833fbd2b116c056b7666d94d367125147eea6c7b3b0ba98",
+      "copy_status": "draft_unverified"
+    },
+    "rakkyo-scallion-bulbs": {
+      "text": "Small, ivory bulbs with a sharp bite somewhere between shallot and garlic, harvested before the humidity settles in.",
+      "source_note_sha256": "0a2692c52600aea8e90c922de271fcca444f105fd5e7bdfce3d7c848976220b1",
+      "copy_status": "draft_unverified"
+    },
+    "renkon-lotus-root": {
+      "text": "Sliced crosswise, its lacework of air pockets holds dashi or vinegar in every chamber, the crunch stays bright even after simmering.",
+      "source_note_sha256": "9b75878af685b00b8875c8230c311db55725832ef1b82063719263cc14a2a9a1",
+      "copy_status": "draft_unverified"
+    },
+    "returning-bonito-modori-gatsuo": {
+      "text": "These bonito have spent summer feeding in cold Sanriku seas and now carry twice the fat of their spring selves, flesh dark as aged wood, rich enough to eat as sashimi with nothing but a whisper of ginger and ponzu.",
+      "source_note_sha256": "1bd17ec6751186efe6434f10b1d63be8aaa5c2911a395712633a76ae8b5c1492",
+      "copy_status": "draft_unverified"
+    },
+    "ringo-apple": {
+      "text": "Japanese apples arrive large and impeccably crisp, their flesh shattering cleanly under the teeth with a spray of juice that carries both sweetness and a faint wine-like depth.",
+      "source_note_sha256": "3d29835bf70e8bc65ccd7a20326c653836027611367d4ce254ce89f7b25c2035",
+      "copy_status": "draft_unverified"
+    },
+    "saba-mackerel": {
+      "text": "The blue-green shimmer of its skin gives way to rich, oily meat that practically melts against the tongue, autumn saba carries a depth of flavor that leaner summer fish cannot match.",
+      "source_note_sha256": "c2d0779fecfcd4fbe5d04b3f45ed64a10bfaaedd6b971d3fbcf17a31abb8e2d8",
+      "copy_status": "draft_unverified"
+    },
+    "sake-salmon": {
+      "text": "Wild salmon arriving in autumn carry the deep coral flesh and clean fat of fish that have journeyed thousands of miles to spawn.",
+      "source_note_sha256": "23e38426b9862aea9f1260f9deb9d27af07e81048e3dcbdc60731a0de54d3b8e",
+      "copy_status": "draft_unverified"
+    },
+    "sakuranbo-cherries": {
+      "text": "These are not the ornamental cherries of hanami but eating varieties, Satonishiki with their heart-shaped bodies yielding flesh that snaps clean and sweet against the teeth.",
+      "source_note_sha256": "537ab962bb70f1b9856ee428c485783c950d72e2d543ce615c85fe5d5753ff68",
+      "copy_status": "draft_unverified"
+    },
+    "sakuranbo-early-cherries": {
+      "text": "These first cherries arrive small and taut-skinned, their flesh snapping with a brightness that leans more toward tartness than the honeyed depth of later harvests.",
+      "source_note_sha256": "843fbe2d8396892f1685e5de40dddd4213837d8fd0ad5cbd339d6f6a77952923",
+      "copy_status": "draft_unverified"
+    },
+    "salmon-aki-sake": {
+      "text": "These salmon return from the Sea of Okhotsk to their birth rivers just as the maple leaves begin to turn, their flesh leaner and cleaner than spring-caught fish, prized for its firm texture in dishes like chanko-nabe or simply salted and grilled until the skin blisters.",
+      "source_note_sha256": "7f6a32ff41dd1abce4b6d92f9050e0d107c5341df71341cc68481e33c669d79c",
+      "copy_status": "draft_unverified"
+    },
+    "salmon-sake": {
+      "text": "The flesh deepens to a ruddy coral as autumn salmon return from the sea, their fat reserves at their richest before the spawning run, this is when the belly meat yields that particular silken texture prized for grilling with nothing but salt.",
+      "source_note_sha256": "e37abc40d6764f10b141da1a43eb89893eef5e321f4bb09788e0af740c8a985a",
+      "copy_status": "draft_unverified"
+    },
+    "sanma-pacific-saury": {
+      "text": "A slender, silver-blue fish whose belly fat reaches its richest point as September nights grow crisp, grilled whole over charcoal until the skin blisters and crackles, eaten with a squeeze of sudachi and grated daikon to cut the oils.",
+      "source_note_sha256": "cee6a2a1cdc4363f3f57fe5b6afe2c387b096362da6f97352efba160bb36457b",
+      "copy_status": "draft_unverified"
+    },
+    "sansai-mountain-vegetables": {
+      "text": "A collective term for wild edibles foraged from mountain and woodland, fiddlehead ferns, butterbur buds, fatsia shoots, each carrying its own bright bitterness that wakes the palate from winter's heaviness.",
+      "source_note_sha256": "efce265c50a8ec28668a69c34966e8678783c0f23ae9b8f6fbcded8c211d8375",
+      "copy_status": "draft_unverified"
+    },
+    "sansh-young-pepper-leaves": {
+      "text": "These young leaves carry a bright, almost electric tingle on the tongue, with a citrus-pine fragrance that cuts through rich dishes like simmered bamboo shoot or grilled eel.",
+      "source_note_sha256": "80ed96d8abf2f72fcf459ffe6b0f4436bfa50611063b638be6b0d3c20c637f2d",
+      "copy_status": "draft_unverified"
+    },
+    "sardine-iwashi": {
+      "text": "The flesh turns richly oiled as waters warm, each small silver body firm enough to eat as sashimi yet soft enough to dissolve into tsumire fish cakes.",
+      "source_note_sha256": "fd3a6423d2d23a4d8e0b5bd9f9a3c536025e9a2aab00bb134ad6e908b8e87ec8",
+      "copy_status": "draft_unverified"
+    },
+    "satoimo-taro": {
+      "text": "The flesh yields to the teeth with a dense, almost glutinous give, its surface faintly slick from mucilage that speaks of the wet paddies where it grew.",
+      "source_note_sha256": "fbd42a6e7850f32c7e431340c5d22312b5296d15802bb3f710222bad1aa7d46f",
+      "copy_status": "draft_unverified"
+    },
+    "satoimo-taro-root": {
+      "text": "These small, hairy corms yield flesh so slippery it seems to refuse the chopsticks, a quality called nameraka, prized in simmered dishes where the silken texture absorbs dashi to its core.",
+      "source_note_sha256": "53559a769f3571253baf9f1e7dd898d8cf5d0c5d34df3a503b6e1340e8204abc",
+      "copy_status": "draft_unverified"
+    },
+    "sawara-spanish-mackerel": {
+      "text": "A long, silver-blue predator whose flesh turns from pale coral to creamy white when salted overnight and grilled until the skin blisters and chars at the edges, releasing oils that taste of the sea's own sweetness.",
+      "source_note_sha256": "9f3314d404db564cae479c89417a3d990290ede968015eeb66e1fa5d66c2709c",
+      "copy_status": "draft_unverified"
+    },
+    "sayori-halfbeak": {
+      "text": "A slender, silver-blue fish whose translucent flesh carries the faintest sweetness, prized for sashimi that gleams like morning light on still water.",
+      "source_note_sha256": "bb24ebc4fc994d8d718d065d3dc995ea582710e2de4c8d63f08a0203641501f7",
+      "copy_status": "draft_unverified"
+    },
+    "sea-bass": {
+      "text": "A sleek predator with firm, translucent flesh that carries a clean sweetness, prized now for arai, ice-chilled sashimi slices that tighten into a texture both yielding and crisp.",
+      "source_note_sha256": "fd4e24cf861ea96c3ff68b3df102845a8bab3c1bff77cbf00571b92cf045c238",
+      "copy_status": "draft_unverified"
+    },
+    "shiira-mahi-mahi": {
+      "text": "A muscular, iridescent fish whose firm white flesh takes well to the grill, yielding a clean sweetness with none of the heaviness of fattier catches.",
+      "source_note_sha256": "4707f81d6774335dc83c62a106eac9052b0cefc506a0430ddf71952db124c4d1",
+      "copy_status": "draft_unverified"
+    },
+    "shijimi-freshwater-clams": {
+      "text": "These small, dark-shelled clams yield a broth of surprising depth, faintly sweet, touched with iron, the color of weak tea.",
+      "source_note_sha256": "0071189eff76e327331336f22f193df4556bd63c8b44bd4f6033a7d99a65d38e",
+      "copy_status": "draft_unverified"
+    },
+    "shimeji-beech-mushroom": {
+      "text": "These slender clusters of buff-capped mushrooms release a faint nuttiness when heated, their crisp stems yielding to a texture somewhere between snap and silk.",
+      "source_note_sha256": "8d27d695170eb4d10b9c25771b947e8aa37ee6b6799b25ad7a54485d7bc595c5",
+      "copy_status": "draft_unverified"
+    },
+    "shimeji-mushroom": {
+      "text": "These tight clusters of slender stems and small brown caps carry a faint bitterness that sweetens only with heat, releasing an umami depth prized in nabemono and takikomi gohan.",
+      "source_note_sha256": "3be05497c62a8dbd107bd22f97f3d7e1a9af03f25ec614cfc6be22df9027af38",
+      "copy_status": "draft_unverified"
+    },
+    "shimeji-mushrooms": {
+      "text": "These clustered mushrooms grow in tight bundles, their small buff-colored caps firm and slightly bitter when raw, turning silken and faintly nutty once heat unlocks their umami.",
+      "source_note_sha256": "ccbfa8fa0a06ed361c9b37666926ede553c0ff4dbcc19325cb00172f0b4952c4",
+      "copy_status": "draft_unverified"
+    },
+    "shine-muscat-grape": {
+      "text": "A seedless grape with skin so thin it yields without resistance, releasing flesh that tastes of muscat perfume and white honey.",
+      "source_note_sha256": "399c1eadaa941cfb92b430927bdb68a6e235fec9e09a7b718d8ffc6f37dda162",
+      "copy_status": "draft_unverified"
+    },
+    "shine-muscat-grapes": {
+      "text": "A seedless grape with skin so thin you eat it whole, each orb bursting with a honeyed sweetness that carries faint notes of muscat and citrus blossom.",
+      "source_note_sha256": "5f12eecfbb0d066b3c917164859c9c263c69403d8db1ac8c4c6660acd914ff0b",
+      "copy_status": "draft_unverified"
+    },
+    "shirauo-icefish": {
+      "text": "These slender, glass-clear fish arrive when winter loosens its grip, their flesh so translucent you can see the dark thread of their spines.",
+      "source_note_sha256": "4ff9863989f42b60a158dbe43b1442e22d7634f2c21a7549be2054f8abebbaca",
+      "copy_status": "draft_unverified"
+    },
+    "shishit-shishito-pepper": {
+      "text": "Thin-skinned and mostly mild, these wrinkled fingers of pepper blister quickly in a hot pan, their flesh collapsing into something sweet and faintly smoky, though one in ten carries an unexpected bite of heat that keeps the eater alert.",
+      "source_note_sha256": "bc9407b88fbd4a1800ba39a2da118e42dda8454fb3fd2d6291c15d617b653df2",
+      "copy_status": "draft_unverified"
+    },
+    "shishito-pepper": {
+      "text": "Named for the wrinkled tip that resembles a lion's head, these thin-walled peppers blister quickly in hot oil, collapsing into tender pockets of grassy sweetness with an occasional surprising bite of heat, perhaps one in ten carries real fire.",
+      "source_note_sha256": "de068cc0f07aebcd7e304919aae56311849acc6cad16ec3f75220715f700864e",
+      "copy_status": "draft_unverified"
+    },
+    "shiso": {
+      "text": "The deeply serrated leaves release a bright, almost electric fragrance when torn, part basil, part mint, part something entirely its own, cutting through the richness of raw fish or fried foods.",
+      "source_note_sha256": "15dabff5b68803df8c567443ddfff242d14a3650e61804f27629dec2c3045afd",
+      "copy_status": "draft_unverified"
+    },
+    "shiso-leaves": {
+      "text": "These jagged, aromatic leaves carry a flavor somewhere between mint and basil, with a faint citrus edge that cuts through the heaviness of rich foods.",
+      "source_note_sha256": "ea8a24a9ae2ec3d1e8e7f36f24c99ebfa02b8f9c19ef28694de56291a1447867",
+      "copy_status": "draft_unverified"
+    },
+    "shiso-perilla": {
+      "text": "Each leaf carries a bright, almost mentholated sharpness that cuts through the humidity of rainy season, wrap one around a bite of sashimi and the fish tastes cleaner, cooler.",
+      "source_note_sha256": "f4097e85adc6904d651fd205811efb6a4f6085c1ad3182bde9891f79ac37c443",
+      "copy_status": "draft_unverified"
+    },
+    "shiso-perilla-leaves": {
+      "text": "Each leaf carries a sharp, almost medicinal brightness, part mint, part basil, part something wilder, that cuts through the humidity of summer meals, wrapped around sashimi or torn into cold somen.",
+      "source_note_sha256": "b6a399bc8a3a235d8e0f4bf3181597760c12704fc8d604bac2fd4cb472669d19",
+      "copy_status": "draft_unverified"
+    },
+    "shungiku-chrysanthemum-greens": {
+      "text": "These serrated leaves carry a bracing, almost medicinal bitterness and a floral musk that cuts through rich broths, the reason they appear in hot pots just as the first real chill settles in.",
+      "source_note_sha256": "218ed8defca90ab14df10e9698b8ce635e3ea675ef4484155d78cbc027e67b88",
+      "copy_status": "draft_unverified"
+    },
+    "shungiku-garland-chrysanthemum": {
+      "text": "These serrated leaves carry a bracing, almost medicinal bitterness softened by an unexpected floral sweetness, their tender stems snapping cleanly between the teeth.",
+      "source_note_sha256": "c46f80a2e6f14885744c3c391463e4fa1a1bb7a6b5be85aca9cce925c7a3ea36",
+      "copy_status": "draft_unverified"
+    },
+    "silk-pod-peas": {
+      "text": "These flat, edible-podded peas earn their name from the silken sheen of their pale green skin, so thin it seems to hold light.",
+      "source_note_sha256": "0cae5a626d1a03bf4a52043f09b1f7066cc6075c3eefad626cc251160da7258e",
+      "copy_status": "draft_unverified"
+    },
+    "soramame-fava-beans": {
+      "text": "Named 'sky beans' for their upward-reaching pods, soramame are best eaten the day they're picked, when their jade-green flesh holds a grassy sweetness that fades within hours.",
+      "source_note_sha256": "aa0984619042a664efc9df20df53b85b2a583344fd4f3b4b4fea9df5c069d20d",
+      "copy_status": "draft_unverified"
+    },
+    "spanish-mackerel-sawara": {
+      "text": "The sawara's flesh is pale and delicate, with a clean sweetness that takes well to Saikyo-miso curing, the white miso paste blooming into caramel edges under the broiler.",
+      "source_note_sha256": "71bc02a524e12972a2a38fade5f0c2196d5b7d4c4998d03bc12aa76d6457c396",
+      "copy_status": "draft_unverified"
+    },
+    "spring-cabbage": {
+      "text": "Unlike the tight, pale heads of winter, spring cabbage arrives with leaves so tender they tear like wet paper, their sweetness bright enough to eat raw with nothing but a drift of salt.",
+      "source_note_sha256": "5379ed9bd04e8fb45eef7fba2af1900aed460bd0fe02bdd0590be181b8f1e594",
+      "copy_status": "draft_unverified"
+    },
+    "spring-cabbage-haru-kyabetsu": {
+      "text": "Looser-headed than winter varieties, with pale yellow-green leaves so tender they're eaten raw in ribbons alongside tonkatsu, their sweetness bright and almost grassy.",
+      "source_note_sha256": "c8a64322759e529142de45e7413afe25533df7a3f54833ca0be23bc7621bb392",
+      "copy_status": "draft_unverified"
+    },
+    "squid": {
+      "text": "The flesh of summer squid is firm yet yielding, its sweetness clean as sea spray, best shown in sashimi cut so thin light passes through.",
+      "source_note_sha256": "8a9d81dab4fa67ba5420af76c51b2de34ba1ba8a5111e5a2f476c97032037838",
+      "copy_status": "draft_unverified"
+    },
+    "strawberries": {
+      "text": "Japanese strawberries are bred for delicate sweetness and tender flesh, varieties like Amaou and Tochiotome prized for their fragrance and jewel-like appearance on white porcelain.",
+      "source_note_sha256": "c8e0fcf29c1237ade5a7bf9b119dc75fb3f1087d12c65b60845726a2ccce6237",
+      "copy_status": "draft_unverified"
+    },
+    "strawberries-ichigo": {
+      "text": "Japanese strawberries are bred for sweetness over tartness, their flesh so tender it bruises at a careless touch, varieties like Amaou and Tochiotome yield berries with a perfumed intensity that fills the room when sliced.",
+      "source_note_sha256": "46e4b7f0c49c3e7f2dc3e9a8f50f3d66f2f0270a68f8c6411dce20e476a0c829",
+      "copy_status": "draft_unverified"
+    },
+    "sudachi": {
+      "text": "A small citrus no larger than a golf ball, prized not for eating whole but for its intensely aromatic juice, a few drops over grilled sanma or matsutake bring the umami into sudden, bright focus.",
+      "source_note_sha256": "28e9d0b26bd6cfc2b04f921d80993bae43cd38237732dae8051ef2a303849db3",
+      "copy_status": "draft_unverified"
+    },
+    "sudachi-citrus": {
+      "text": "A small citrus no larger than a golf ball, prized not for its flesh but for its intensely aromatic rind and bracingly sour juice, a few drops transform grilled sanma or matsutake soup with bright, clean acidity.",
+      "source_note_sha256": "95932c77fd110e12181162038d82123e0062fa1db30eed7f2c56849562e8cb8e",
+      "copy_status": "draft_unverified"
+    },
+    "suika-early-watermelon": {
+      "text": "These early specimens arrive smaller and denser than their midsummer cousins, their flesh a concentrated pink with a crispness that yields cleanly to the teeth.",
+      "source_note_sha256": "07c6f1aef1cdb34abb11181d0d0d838d5b95780ee8a0dae9c8b58b958504dafa",
+      "copy_status": "draft_unverified"
+    },
+    "suika-first-watermelons": {
+      "text": "The season's first watermelons arrive with flesh still pale at the edges, their sweetness restrained and clean, a coolness you taste before you feel.",
+      "source_note_sha256": "037c96dce6ba0e105d18e4053c1c2c4792f645da879d647f4b7c97266b653dea",
+      "copy_status": "draft_unverified"
+    },
+    "suika-watermelon": {
+      "text": "The flesh should give way with an audible crack when split, its sweetness concentrated where the seeds cluster darkest near the rind.",
+      "source_note_sha256": "e75cd4895600fb7fc9950e9333e1432da459753a5faaeb3fcb9db986511d2d6e",
+      "copy_status": "draft_unverified"
+    },
+    "summer-daikon": {
+      "text": "Unlike the mild, sweet daikon of winter, summer daikon carries a peppery sting that cuts through humid days, grated raw, it becomes a cooling condiment with real presence.",
+      "source_note_sha256": "452cb76c5b0e4aa72a9f58033f64a40fff2c460ede2f782497159c640abb4b3d",
+      "copy_status": "draft_unverified"
+    },
+    "sumomo-japanese-plum": {
+      "text": "Smaller and rounder than its Western cousins, the sumomo offers flesh that ranges from honey-gold to deep crimson, with a tartness at the skin that yields to syrupy sweetness near the stone.",
+      "source_note_sha256": "5f3d0d27abee1138c383892d6830878dea3efc2e1ea7e0a1ffa34bc79a0b857b",
+      "copy_status": "draft_unverified"
+    },
+    "suzuki-japanese-sea-bass": {
+      "text": "A fish that grows into its name, called different things at different sizes, finally earning 'suzuki' only when its flesh turns firm and clean, with a sweetness that takes well to a brief sear or thin-sliced as sashimi.",
+      "source_note_sha256": "3dfb0c1eb185a461d0e614ab6966ee6390db1df63eba3204e74319ac90d6e196",
+      "copy_status": "draft_unverified"
+    },
+    "suzuki-sea-bass": {
+      "text": "A fish that changes names as it grows, seigo, fukko, then finally suzuki, its flesh at summer peak is clean and sweet, firm enough to hold its shape in usuzukuri slices yet yielding a delicate fat that blooms on the tongue.",
+      "source_note_sha256": "6d748dd6378d35f85368ff8f798cec4ee8a89300108f151dce3e0b49561a81a5",
+      "copy_status": "draft_unverified"
+    },
+    "sweet-corn": {
+      "text": "Harvested at dawn and rushed to market, the kernels still hold their milk-sweet juice, bite through the taut skin and the sugars haven't yet begun their slow turn to starch.",
+      "source_note_sha256": "bd535e10369814bc5c7f28ba295bdce9f30265b8a7a5ced603c5477031dabb26",
+      "copy_status": "draft_unverified"
+    },
+    "sweet-potato-satsumaimo": {
+      "text": "Freshly dug sweet potatoes need weeks of curing before their dense, chestnut-like flesh develops the honeyed sweetness that caramelizes at the edges of a stone-roasted imo.",
+      "source_note_sha256": "9251cfec5c6d43f2d33d2c236f9c1da0ed2628891cad7b82341479bf4b7d5542",
+      "copy_status": "draft_unverified"
+    },
+    "sweetfish": {
+      "text": "A slender, elegant river fish whose flesh carries the faint fragrance of watermelon and fresh cucumber, the scent of the algae it grazes from sun-warmed stones.",
+      "source_note_sha256": "38d3cd4a0dd759613e1d89f4452ecc9f2e21c2101a9540fc87a81c56f4e4abdb",
+      "copy_status": "draft_unverified"
+    },
+    "sweetfish-ayu": {
+      "text": "A slender river fish whose flesh carries the faint fragrance of watermelon and fresh cucumber, the scent of clean mountain streams translated into protein.",
+      "source_note_sha256": "907f6471d95e1e3b764b01972e4afa73d5ba40098aa6ae0a784c09973337787b",
+      "copy_status": "draft_unverified"
+    },
+    "t-gan-winter-melon": {
+      "text": "Despite its name suggesting winter, this pale gourd reaches its prime in July and August, its translucent flesh turning almost glass-like when simmered in dashi, cooling the body from within.",
+      "source_note_sha256": "39ebe61959d6f5afaf875f7daadc5fbad0d572e15ed6874f65400a5a5b3d0948",
+      "copy_status": "draft_unverified"
+    },
+    "tai-sea-bream": {
+      "text": "The firm, translucent flesh carries a clean sweetness that intensifies as spawning season approaches, the skin crisping to a burnished rose when salt-grilled.",
+      "source_note_sha256": "40ecc003d31eedb1a10f870dd36af757c50a557225d7d12d99baae44348a0876",
+      "copy_status": "draft_unverified"
+    },
+    "takenoko-bamboo-shoots": {
+      "text": "Freshly dug shoots, still pale and faintly sweet, must be boiled within hours before bitterness sets in, the flesh should yield like young daikon, with a clean vegetal snap.",
+      "source_note_sha256": "147685d78c6873df3d45939a80f8ccfe1f9af9b87e743bf08cac4efac7674bd8",
+      "copy_status": "draft_unverified"
+    },
+    "tako-octopus": {
+      "text": "Summer tako yields firm, resilient flesh with a clean sweetness that snaps between the teeth, boiled just until the skin turns that distinctive burgundy, sliced thin for sunomono or simmered tender in oden.",
+      "source_note_sha256": "0a0ba9de1368e3a52ee6c13bdb28df759dc8a899698859d8a3436ded877568c8",
+      "copy_status": "draft_unverified"
+    },
+    "taro": {
+      "text": "Beneath its rough, hairy skin lies flesh so dense with starch it becomes almost custard-like when simmered, releasing a faint earthiness that clings to the teeth.",
+      "source_note_sha256": "d16b7451edf023482d41057d48e1f24b1437b664cea120618b7970daea49b25f",
+      "copy_status": "draft_unverified"
+    },
+    "taro-satoimo": {
+      "text": "These small, hairy corms yield flesh so starchy it becomes almost glutinous when simmered, coating the tongue with an earthy sweetness that clings.",
+      "source_note_sha256": "2c161a77fd1b0ba66b40a75911b87dfeca474200a6f29ccbcc280e5ede29829a",
+      "copy_status": "draft_unverified"
+    },
+    "tomato": {
+      "text": "At peak ripeness, the flesh gives way to a balance of sweetness and faint acidity, the skin still warm from the afternoon heat.",
+      "source_note_sha256": "3e39b766f91c96bd8b6bc684bfb5beb613ca421145be5175473b101a612275de",
+      "copy_status": "draft_unverified"
+    },
+    "tomorokoshi-corn": {
+      "text": "Freshly harvested ears possess a milky sweetness that fades within hours of picking, the kernels so tender they burst against the teeth with grassy, almost floral notes.",
+      "source_note_sha256": "4e29a6af2e505ea36d6377d441b52249279cce871b74f01c1de89e9afe9d45e8",
+      "copy_status": "draft_unverified"
+    },
+    "tomorokoshi-young-corn": {
+      "text": "Harvested before the kernels fully set, young corn offers a milky sweetness and tender cob you can eat whole, the silk still pale, the husk tight with morning dew.",
+      "source_note_sha256": "c67b767978376e6bfac73348d275f514db0b05f13a011c12028b6fecaf1613d8",
+      "copy_status": "draft_unverified"
+    },
+    "tsuru-murasaki-malabar-spinach": {
+      "text": "A climbing vine whose thick, glossy leaves release a gentle mucilage when cooked, lending a cooling slip to summer dishes that cuts through the season's heaviness.",
+      "source_note_sha256": "0b26f2f772537cf4038396bc6aeb6c87c5a3dd01460840f3db182e18d896affc",
+      "copy_status": "draft_unverified"
+    },
+    "tsurumurasaki-malabar-spinach": {
+      "text": "A climbing vine whose heart-shaped leaves release a subtle mucilage when cut, lending body to clear soups and a cooling slickness against the August heat.",
+      "source_note_sha256": "5e7df2efdf6c6bc967aa4015da243854e208a80f088a8bf0d9d7098d812b659c",
+      "copy_status": "draft_unverified"
+    },
+    "udo-mountain-asparagus": {
+      "text": "A tall, celery-pale stalk with a flavor caught between asparagus and fennel, prized for its crisp bite and faint bitterness that speaks of wild places.",
+      "source_note_sha256": "f84bb1c872ed841c748ff26e4833f11aa1f6ae3716bbcf64b5db35285b65280a",
+      "copy_status": "draft_unverified"
+    },
+    "ume-green-plum": {
+      "text": "Hard, intensely sour, and fragrant with a sharp green perfume, these unripe plums are never eaten raw but transformed through salt or sugar into umeboshi and umeshu.",
+      "source_note_sha256": "aa16f4fad8e6f654a07f4b096f3a6542b42e44a4a31dbd53e67e4fc1919349f0",
+      "copy_status": "draft_unverified"
+    },
+    "ume-green-plums": {
+      "text": "Hard, astringent, and intensely fragrant, green plums arrive too sour to eat raw, their flesh meant instead for transformation into umeshu liqueur or the salt-preserved umeboshi that will sustain appetites through humid months ahead.",
+      "source_note_sha256": "bcb3f8fe13a5a0c6cd7ea0952e35fc59882dc4e5b497f837aa6e8534b7b75e85",
+      "copy_status": "draft_unverified"
+    },
+    "ume-green-plums-just-appearing": {
+      "text": "Hard, astringent, and intensely fragrant, green plums arrive too sour to eat raw, their sharp vegetal scent fills the kitchen as they wait to be transformed into umeshu or umeboshi.",
+      "source_note_sha256": "c75f6d2b54738c7cef7338205d7a620b70001cb92445bca7cf298fbdf87b2586",
+      "copy_status": "draft_unverified"
+    },
+    "wakame-young-seaweed": {
+      "text": "Freshly harvested wakame has a silken texture and bright mineral sweetness that fades within hours of leaving the sea, nothing like its dried counterpart.",
+      "source_note_sha256": "ff02c173f233ba27a1ff51762c58aaa59b7da1b6dda33e1eff3783b84d09110e",
+      "copy_status": "draft_unverified"
+    },
+    "water-spinach": {
+      "text": "Named for its hollow stems that stay crisp even after a flash in the wok, this Southeast Asian green thrives in Japan's muggy July and August, offering a texture between spinach and morning glory vine.",
+      "source_note_sha256": "cc07679ee6c02150325ba99ace4a379cb33052d4d49e2c30e6b1ab03e974054a",
+      "copy_status": "draft_unverified"
+    },
+    "watermelon": {
+      "text": "The flesh should give way with an audible crack when split, its sweetness concentrated in the pale heart where seeds cluster darkest.",
+      "source_note_sha256": "9395796e6a6edef1abb371f02afaa2e8c78ec4c6e0638d96e309aa7a7c26f4c9",
+      "copy_status": "draft_unverified"
+    },
+    "white-peach": {
+      "text": "Japanese white peaches yield to the slightest pressure, their pale flesh so juicy it must be eaten over the sink, fragrant with a sweetness that seems to hold the whole of summer afternoons.",
+      "source_note_sha256": "0a2787bde689de2e25ce89e538f30f3db0bff6eefc5eba9addccf1abaf4b5110",
+      "copy_status": "draft_unverified"
+    },
+    "white-peach-hakut": {
+      "text": "Cradled in foam nets at fruit shops, these pale beauties yield flesh so tender it bruises at a glance, their perfume filling a room before the first bite releases floods of honeyed juice.",
+      "source_note_sha256": "8c5141051454a834286be40c0fcc4a362af41de9b9a9e231dd1ac9d9d5a48862",
+      "copy_status": "draft_unverified"
+    },
+    "yamabudo-wild-mountain-grape": {
+      "text": "These small, intensely flavored grapes grow wild on vines that climb forest trees, their deep purple-black clusters yielding a juice so tart and concentrated it stains the tongue.",
+      "source_note_sha256": "6e2c9d48eb6c147f0ec9ff2227a597ccf269e0460538a6f066bd67a471d2928e",
+      "copy_status": "draft_unverified"
+    },
+    "yellow-plums": {
+      "text": "These are ume left on the branch until they blush gold and yield to gentle pressure, their flesh now fragrant with apricot-like sweetness rather than the sharp green astringency of earlier pickings.",
+      "source_note_sha256": "5440a6e495c0445000588e9b36f5901f3041c1d5b015bfbd0cc3928c26c10659",
+      "copy_status": "draft_unverified"
+    },
+    "yellowtail-amberjack": {
+      "text": "The winter buri, called kan-buri, carries ribbons of rich fat between its rosy flesh, each slice gleaming with an almost sweet unctuousness that coats the tongue.",
+      "source_note_sha256": "13ee16382e646a00e3b3a762fbb6c351aa95b065c76a20e497f0a1b8cdb5803b",
+      "copy_status": "draft_unverified"
+    },
+    "yellowtail-amberjack-kanpachi": {
+      "text": "Named for the dark band between its eyes that forms the kanji for 'eight' (八), kanpachi yields flesh that is leaner and more delicate than its buri cousins, pale pink, with a clean sweetness and subtle crunch when sliced for sashimi.",
+      "source_note_sha256": "8cda18397dcef2339130216706550bf60f18371805e07ee05516b24dcc0d0d1f",
+      "copy_status": "draft_unverified"
+    }
+  }
+}
