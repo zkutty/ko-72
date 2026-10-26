@@ -27,7 +27,7 @@
           "entry_id": "fruit:ringo-apple"
         }
       ],
-      "end_label": "Blueberry"
+      "end_label": "Black soybean pickles"
     },
     {
       "category": "fruit",
@@ -54,7 +54,7 @@
           "entry_id": "fruit:early-peach"
         }
       ],
-      "end_label": "Early persimmon"
+      "end_label": "Early pear"
     },
     {
       "category": "fruit",
@@ -71,6 +71,23 @@
           "entry_id": "fruit:fig-ichijiku"
         },
         {
+          "label": "Green plum",
+          "subject": "two firm green ume plums with a leaf",
+          "image_path": "book/art/glossary/pages/fruit-02.png",
+          "panel": 1,
+          "prompt_path": "book/prompts/glossary-pages/fruit-02.txt",
+          "origin": "paired_pilot_art",
+          "source_label": "Green ume plums",
+          "entry_id": "fruit:green-ume-plums"
+        }
+      ],
+      "end_label": "Green plum"
+    },
+    {
+      "category": "fruit",
+      "page": 4,
+      "items": [
+        {
           "label": "Japanese pear",
           "subject": "one round Japanese nashi pear with a leaf",
           "image_path": "book/art/glossary/singles/fruit-06-new.png",
@@ -78,25 +95,25 @@
           "prompt_path": "book/prompts/glossary-pages/fruit-06-new.txt",
           "origin": "new_inline_art",
           "source_label": "Pear (nashi)",
-          "entry_id": "fruit:japanese-pear"
+          "entry_id": "fruit:asian-pear-nashi"
+        },
+        {
+          "label": "Koshu grape",
+          "subject": "one compact cluster of ripe Koshu grapes with translucent dusty rose-purple berries and one vine leaf",
+          "image_path": "book/art/glossary/cutouts/additions/fruit-04-koshu-grape.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/fruit-04-koshu-grape.txt",
+          "origin": "new_transparent_art",
+          "source_label": "Koshu grape",
+          "entry_id": "fruit:koshu-grape"
         }
       ],
-      "end_label": "Japanese plum"
+      "end_label": "Kosui pear"
     },
     {
       "category": "fruit",
-      "page": 4,
+      "page": 5,
       "items": [
-        {
-          "label": "Kabosu",
-          "subject": "one small green kabosu citrus fruit and one cut half showing pale juicy segments",
-          "image_path": "book/art/glossary/cutouts/additions/fruit-04-kabosu.png",
-          "panel": "full",
-          "prompt_path": "book/prompts/glossary-additions/fruit-04-kabosu.txt",
-          "origin": "new_transparent_art",
-          "source_label": "Kabosu citrus",
-          "entry_id": "fruit:kabosu-citrus"
-        },
         {
           "label": "Kyoho grape",
           "subject": "a compact cluster of dark purple Kyoho grapes with one vine leaf",
@@ -106,14 +123,7 @@
           "origin": "new_inline_art",
           "source_label": "Kyoho grape",
           "entry_id": "fruit:kyoho-grape"
-        }
-      ],
-      "end_label": "Kyoho grape"
-    },
-    {
-      "category": "fruit",
-      "page": 5,
-      "items": [
+        },
         {
           "label": "Loquat",
           "subject": "a small branch bearing three ripe golden-orange Japanese loquats (biwa) and two long, leathery, serrated leaves",
@@ -123,24 +133,24 @@
           "origin": "new_transparent_art",
           "source_label": "Biwa (loquat), early",
           "entry_id": "fruit:biwa-loquat"
-        },
-        {
-          "label": "Mikan",
-          "subject": "two small late-season Japanese satsuma mandarins (mikan), one peeled enough to show segments and one intact",
-          "image_path": "book/art/glossary/cutouts/additions/fruit-06-mikan.png",
-          "panel": "full",
-          "prompt_path": "book/prompts/glossary-additions/fruit-06-mikan.txt",
-          "origin": "new_transparent_art",
-          "source_label": "Mikan (late variety)",
-          "entry_id": "fruit:mikan-late-variety"
         }
       ],
-      "end_label": "Mountain yam bulbil"
+      "end_label": "Loquat"
     },
     {
       "category": "fruit",
       "page": 6,
       "items": [
+        {
+          "label": "Mango",
+          "subject": "one ripe mango fruit with a small leaf",
+          "image_path": "book/art/glossary/pages/fruit-03.png",
+          "panel": 1,
+          "prompt_path": "book/prompts/glossary-pages/fruit-03.txt",
+          "origin": "paired_pilot_art",
+          "source_label": "mango",
+          "entry_id": "fruit:mango"
+        },
         {
           "label": "Muscat grape",
           "subject": "a small cluster of pale green muscat grapes",
@@ -150,24 +160,24 @@
           "origin": "paired_pilot_art",
           "source_label": "muscat grapes",
           "entry_id": "fruit:muscat-grape"
-        },
-        {
-          "label": "Persimmon",
-          "subject": "one ripe orange Japanese kaki persimmon with a leafy calyx and one cut half showing amber flesh",
-          "image_path": "book/art/glossary/cutouts/additions/fruit-01-persimmon.png",
-          "panel": "full",
-          "prompt_path": "book/prompts/glossary-additions/fruit-01-persimmon.txt",
-          "origin": "new_transparent_art",
-          "source_label": "Asian persimmon (kaki)",
-          "entry_id": "fruit:asian-persimmon-kaki"
         }
       ],
-      "end_label": "Pione grape"
+      "end_label": "Muscat grape"
     },
     {
       "category": "fruit",
       "page": 7,
       "items": [
+        {
+          "label": "Passion fruit",
+          "subject": "one passion fruit and one cut half showing seeds",
+          "image_path": "book/art/glossary/pages/fruit-04.png",
+          "panel": 1,
+          "prompt_path": "book/prompts/glossary-pages/fruit-04.txt",
+          "origin": "paired_pilot_art",
+          "source_label": "passion fruit",
+          "entry_id": "fruit:passion-fruit"
+        },
         {
           "label": "Plum",
           "subject": "two ripe Japanese plums, one with a leaf",
@@ -177,6 +187,23 @@
           "origin": "new_inline_art",
           "source_label": "プラム (plum)",
           "entry_id": "fruit:plum"
+        }
+      ],
+      "end_label": "Plum"
+    },
+    {
+      "category": "fruit",
+      "page": 8,
+      "items": [
+        {
+          "label": "Prune plum",
+          "subject": "two ripe dark-purple prune plums, one whole and one cut to show yellow flesh",
+          "image_path": "book/art/glossary/cutouts/additions/fruit-08-prune-plum.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/fruit-08-prune-plum.txt",
+          "origin": "new_transparent_art",
+          "source_label": "Prune plum",
+          "entry_id": "fruit:prune-plum"
         },
         {
           "label": "Strawberry",
@@ -193,7 +220,7 @@
     },
     {
       "category": "fruit",
-      "page": 8,
+      "page": 9,
       "items": [
         {
           "label": "Sudachi",
@@ -257,7 +284,7 @@
           "prompt_path": "book/prompts/glossary-additions/vegetable-02-fuki.txt",
           "origin": "new_transparent_art",
           "source_label": "Fuki (butterbur)",
-          "entry_id": "vegetable:fuki-butterbur"
+          "entry_id": "vegetable:butterbur-stem-fuki"
         },
         {
           "label": "Cucumber",
@@ -611,23 +638,6 @@
           "entry_id": "fish:kinmedai-golden-eye-snapper"
         },
         {
-          "label": "Halfbeak",
-          "subject": "one slender Japanese halfbeak with its longer lower jaw",
-          "image_path": "book/art/glossary/pages/fish-05.png",
-          "panel": 0,
-          "prompt_path": "book/prompts/glossary-pages/fish-05.txt",
-          "origin": "paired_pilot_art",
-          "source_label": "Sayori (halfbeak)",
-          "entry_id": "fish:sayori-halfbeak"
-        }
-      ],
-      "end_label": "Halfbeak"
-    },
-    {
-      "category": "fish",
-      "page": 5,
-      "items": [
-        {
           "label": "Horse mackerel",
           "subject": "one whole silver-blue horse mackerel in side profile",
           "image_path": "book/art/glossary/pages/fish-02.png",
@@ -636,7 +646,14 @@
           "origin": "paired_pilot_art",
           "source_label": "Horse mackerel",
           "entry_id": "fish:aji-horse-mackerel"
-        },
+        }
+      ],
+      "end_label": "Horse mackerel"
+    },
+    {
+      "category": "fish",
+      "page": 5,
+      "items": [
         {
           "label": "Japanese tiger prawn",
           "subject": "one striped kuruma tiger prawn with antennae",
@@ -646,14 +663,7 @@
           "origin": "paired_pilot_art",
           "source_label": "Kuruma ebi (Japanese tiger prawn)",
           "entry_id": "fish:kuruma-ebi-japanese-tiger-prawn"
-        }
-      ],
-      "end_label": "Japanese tiger prawn"
-    },
-    {
-      "category": "fish",
-      "page": 6,
-      "items": [
+        },
         {
           "label": "Japanese whiting",
           "subject": "one Japanese kisu whiting, a small slender silver fish with pale gold back and delicate translucent fins",
@@ -663,7 +673,14 @@
           "origin": "new_transparent_art",
           "source_label": "Kisu (whiting)",
           "entry_id": "fish:kisu-japanese-whiting"
-        },
+        }
+      ],
+      "end_label": "Mackerel"
+    },
+    {
+      "category": "fish",
+      "page": 6,
+      "items": [
         {
           "label": "Octopus",
           "subject": "one small octopus with eight visible arms",
@@ -673,14 +690,7 @@
           "origin": "paired_pilot_art",
           "source_label": "tako (octopus)",
           "entry_id": "fish:tako-octopus"
-        }
-      ],
-      "end_label": "Olive flounder"
-    },
-    {
-      "category": "fish",
-      "page": 7,
-      "items": [
+        },
         {
           "label": "Pacific saury",
           "subject": "one Pacific saury (sanma), long and slender with a blue steel back, silver belly, pointed snout and delicate fins",
@@ -690,6 +700,23 @@
           "origin": "new_transparent_art",
           "source_label": "Pacific saury (sanma)",
           "entry_id": "fish:pacific-saury-sanma"
+        }
+      ],
+      "end_label": "Pike conger"
+    },
+    {
+      "category": "fish",
+      "page": 7,
+      "items": [
+        {
+          "label": "Salmon",
+          "subject": "one whole salmon fish in side profile",
+          "image_path": "book/art/glossary/pages/fish-04.png",
+          "panel": 1,
+          "prompt_path": "book/prompts/glossary-pages/fish-04.txt",
+          "origin": "paired_pilot_art",
+          "source_label": "Sake (salmon)",
+          "entry_id": "fish:sake-salmon"
         },
         {
           "label": "Sea bream",
@@ -702,7 +729,7 @@
           "entry_id": "fish:tai-sea-bream"
         }
       ],
-      "end_label": "Sea bream"
+      "end_label": "Skipjack tuna"
     },
     {
       "category": "fish",
@@ -729,7 +756,7 @@
           "entry_id": "fish:ayu-sweetfish"
         }
       ],
-      "end_label": "Yellowtail amberjack"
+      "end_label": "Yellowtail"
     }
   ]
 }

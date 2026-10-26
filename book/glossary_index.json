@@ -1,10 +1,10 @@
 {
   "status": "working_draft",
   "scope": "Seasonal produce in currently cached letters; regenerates as the remaining letters arrive",
-  "source_seasons": 36,
-  "source_mentions": 396,
-  "source_label_entries": 235,
-  "entry_count": 128,
+  "source_seasons": 38,
+  "source_mentions": 418,
+  "source_label_entries": 249,
+  "entry_count": 133,
   "entries": [
     {
       "id": "fish:abalone",
@@ -688,14 +688,17 @@
       "romaji": "haze",
       "catalog_key": "haze-goby",
       "source_catalog_keys": [
-        "haze-goby"
+        "haze-goby",
+        "haze-yellowfin-goby"
       ],
       "source_labels": [
-        "Haze (goby)"
+        "Haze (goby)",
+        "Haze (yellowfin goby)"
       ],
-      "source_entry_count": 1,
+      "source_entry_count": 2,
       "season_ids": [
-        54
+        54,
+        57
       ],
       "season_refs": [
         {
@@ -705,9 +708,17 @@
           "start_month": 10,
           "start_day": 3,
           "major_season": "autumn"
+        },
+        {
+          "id": 57,
+          "name_en": "Crickets chirp around the door",
+          "name_jp": "蟋蟀在戸",
+          "start_month": 10,
+          "start_day": 18,
+          "major_season": "autumn"
         }
       ],
-      "identity_review_status": "pending",
+      "identity_review_status": "needs_editorial_review",
       "entry_copy_status": "unverified",
       "source_entries": [
         {
@@ -718,6 +729,16 @@
           "catalog_key": "haze-goby",
           "season_ids": [
             54
+          ]
+        },
+        {
+          "label": "Haze (yellowfin goby)",
+          "labels": [
+            "Haze (yellowfin goby)"
+          ],
+          "catalog_key": "haze-yellowfin-goby",
+          "season_ids": [
+            57
           ]
         }
       ]
@@ -1728,7 +1749,8 @@
         51,
         52,
         53,
-        56
+        56,
+        58
       ],
       "season_refs": [
         {
@@ -1826,6 +1848,14 @@
           "start_month": 10,
           "start_day": 13,
           "major_season": "autumn"
+        },
+        {
+          "id": 58,
+          "name_en": "First frost falls",
+          "name_jp": "霜始降",
+          "start_month": 10,
+          "start_day": 23,
+          "major_season": "autumn"
         }
       ],
       "identity_review_status": "pending",
@@ -1841,7 +1871,8 @@
             47,
             50,
             52,
-            53
+            53,
+            58
           ]
         },
         {
@@ -2042,6 +2073,50 @@
           "catalog_key": "salmon-sake",
           "season_ids": [
             53
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fish:salmon-roe-ikura",
+      "category": "fish",
+      "display_name": "Salmon roe",
+      "english": "Salmon roe",
+      "kanji": null,
+      "kana": "いくら",
+      "romaji": "ikura",
+      "catalog_key": "salmon-roe-ikura",
+      "source_catalog_keys": [
+        "salmon-roe-ikura"
+      ],
+      "source_labels": [
+        "Salmon roe (ikura)"
+      ],
+      "source_entry_count": 1,
+      "season_ids": [
+        58
+      ],
+      "season_refs": [
+        {
+          "id": 58,
+          "name_en": "First frost falls",
+          "name_jp": "霜始降",
+          "start_month": 10,
+          "start_day": 23,
+          "major_season": "autumn"
+        }
+      ],
+      "identity_review_status": "pending",
+      "entry_copy_status": "unverified",
+      "source_entries": [
+        {
+          "label": "Salmon roe (ikura)",
+          "labels": [
+            "Salmon roe (ikura)"
+          ],
+          "catalog_key": "salmon-roe-ikura",
+          "season_ids": [
+            58
           ]
         }
       ]
@@ -2264,7 +2339,8 @@
         52,
         54,
         55,
-        56
+        56,
+        57
       ],
       "season_refs": [
         {
@@ -2314,6 +2390,14 @@
           "start_month": 10,
           "start_day": 13,
           "major_season": "autumn"
+        },
+        {
+          "id": 57,
+          "name_en": "Crickets chirp around the door",
+          "name_jp": "蟋蟀在戸",
+          "start_month": 10,
+          "start_day": 18,
+          "major_season": "autumn"
         }
       ],
       "identity_review_status": "pending",
@@ -2330,7 +2414,8 @@
             23,
             54,
             55,
-            56
+            56,
+            57
           ]
         },
         {
@@ -2526,23 +2611,70 @@
       ]
     },
     {
-      "id": "fish:yellowtail-amberjack",
+      "id": "fish:kinki-thornyhead-rockfish",
       "category": "fish",
-      "display_name": "Yellowtail amberjack",
-      "english": "Yellowtail amberjack",
-      "kanji": "鰤",
-      "kana": "ぶり",
-      "romaji": "buri",
-      "catalog_key": "yellowtail-amberjack",
+      "display_name": "Thornyhead rockfish",
+      "english": "Thornyhead rockfish",
+      "kanji": "喜知次",
+      "kana": "きんき",
+      "romaji": "kinki",
+      "catalog_key": "kinki-thornyhead-rockfish",
       "source_catalog_keys": [
-        "yellowtail-amberjack"
+        "kinki-thornyhead-rockfish"
       ],
       "source_labels": [
-        "yellowtail amberjack"
+        "Kinki (thornyhead rockfish)"
       ],
       "source_entry_count": 1,
       "season_ids": [
-        40
+        57
+      ],
+      "season_refs": [
+        {
+          "id": 57,
+          "name_en": "Crickets chirp around the door",
+          "name_jp": "蟋蟀在戸",
+          "start_month": 10,
+          "start_day": 18,
+          "major_season": "autumn"
+        }
+      ],
+      "identity_review_status": "pending",
+      "entry_copy_status": "unverified",
+      "source_entries": [
+        {
+          "label": "Kinki (thornyhead rockfish)",
+          "labels": [
+            "Kinki (thornyhead rockfish)"
+          ],
+          "catalog_key": "kinki-thornyhead-rockfish",
+          "season_ids": [
+            57
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fish:yellowtail-amberjack",
+      "category": "fish",
+      "display_name": "Yellowtail",
+      "english": "Yellowtail",
+      "kanji": "鰤",
+      "kana": "ぶり",
+      "romaji": "buri",
+      "catalog_key": "yellowtail-buri",
+      "source_catalog_keys": [
+        "yellowtail-amberjack",
+        "yellowtail-buri"
+      ],
+      "source_labels": [
+        "Yellowtail (buri)",
+        "yellowtail amberjack"
+      ],
+      "source_entry_count": 2,
+      "season_ids": [
+        40,
+        58
       ],
       "season_refs": [
         {
@@ -2552,11 +2684,29 @@
           "start_month": 7,
           "start_day": 23,
           "major_season": "summer"
+        },
+        {
+          "id": 58,
+          "name_en": "First frost falls",
+          "name_jp": "霜始降",
+          "start_month": 10,
+          "start_day": 23,
+          "major_season": "autumn"
         }
       ],
-      "identity_review_status": "pending",
+      "identity_review_status": "needs_editorial_review",
       "entry_copy_status": "unverified",
       "source_entries": [
+        {
+          "label": "Yellowtail (buri)",
+          "labels": [
+            "Yellowtail (buri)"
+          ],
+          "catalog_key": "yellowtail-buri",
+          "season_ids": [
+            58
+          ]
+        },
         {
           "label": "yellowtail amberjack",
           "labels": [
@@ -3054,14 +3204,18 @@
       "romaji": "karin",
       "catalog_key": "karin-chinese-quince",
       "source_catalog_keys": [
-        "karin-chinese-quince"
+        "karin-chinese-quince",
+        "quince-karin"
       ],
       "source_labels": [
-        "Karin (Chinese quince)"
+        "Karin (Chinese quince)",
+        "Quince (karin)"
       ],
-      "source_entry_count": 1,
+      "source_entry_count": 2,
       "season_ids": [
-        55
+        55,
+        57,
+        58
       ],
       "season_refs": [
         {
@@ -3071,9 +3225,25 @@
           "start_month": 10,
           "start_day": 8,
           "major_season": "autumn"
+        },
+        {
+          "id": 57,
+          "name_en": "Crickets chirp around the door",
+          "name_jp": "蟋蟀在戸",
+          "start_month": 10,
+          "start_day": 18,
+          "major_season": "autumn"
+        },
+        {
+          "id": 58,
+          "name_en": "First frost falls",
+          "name_jp": "霜始降",
+          "start_month": 10,
+          "start_day": 23,
+          "major_season": "autumn"
         }
       ],
-      "identity_review_status": "pending",
+      "identity_review_status": "needs_editorial_review",
       "entry_copy_status": "unverified",
       "source_entries": [
         {
@@ -3083,7 +3253,18 @@
           ],
           "catalog_key": "karin-chinese-quince",
           "season_ids": [
-            55
+            55,
+            57
+          ]
+        },
+        {
+          "label": "Quince (karin)",
+          "labels": [
+            "Quince (karin)"
+          ],
+          "catalog_key": "quince-karin",
+          "season_ids": [
+            58
           ]
         }
       ]
@@ -3281,6 +3462,50 @@
           "catalog_key": "figs",
           "season_ids": [
             49
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fruit:fuyu-persimmon-kaki",
+      "category": "fruit",
+      "display_name": "Fuyu persimmon",
+      "english": "Fuyu persimmon",
+      "kanji": "富有柿",
+      "kana": "ふゆがき",
+      "romaji": "fuyu-gaki",
+      "catalog_key": "fuyu-persimmon-kaki",
+      "source_catalog_keys": [
+        "fuyu-persimmon-kaki"
+      ],
+      "source_labels": [
+        "Fuyu persimmon (kaki)"
+      ],
+      "source_entry_count": 1,
+      "season_ids": [
+        58
+      ],
+      "season_refs": [
+        {
+          "id": 58,
+          "name_en": "First frost falls",
+          "name_jp": "霜始降",
+          "start_month": 10,
+          "start_day": 23,
+          "major_season": "autumn"
+        }
+      ],
+      "identity_review_status": "pending",
+      "entry_copy_status": "unverified",
+      "source_entries": [
+        {
+          "label": "Fuyu persimmon (kaki)",
+          "labels": [
+            "Fuyu persimmon (kaki)"
+          ],
+          "catalog_key": "fuyu-persimmon-kaki",
+          "season_ids": [
+            58
           ]
         }
       ]
@@ -3540,7 +3765,7 @@
       ]
     },
     {
-      "id": "fruit:japanese-pear",
+      "id": "fruit:asian-pear-nashi",
       "category": "fruit",
       "display_name": "Japanese pear",
       "english": "Japanese pear",
@@ -3549,18 +3774,20 @@
       "romaji": "nashi",
       "catalog_key": "japanese-pear-nashi",
       "source_catalog_keys": [
+        "asian-pear-nashi",
         "japanese-pear",
         "japanese-pear-nashi",
         "nashi-asian-pear",
         "pear-nashi"
       ],
       "source_labels": [
+        "Asian pear (nashi)",
         "Japanese pear (nashi)",
         "Nashi (Asian pear)",
         "Pear (nashi)",
         "梨 (Japanese pear)"
       ],
-      "source_entry_count": 4,
+      "source_entry_count": 5,
       "season_ids": [
         41,
         42,
@@ -3571,7 +3798,8 @@
         50,
         52,
         53,
-        54
+        54,
+        58
       ],
       "season_refs": [
         {
@@ -3653,11 +3881,29 @@
           "start_month": 10,
           "start_day": 3,
           "major_season": "autumn"
+        },
+        {
+          "id": 58,
+          "name_en": "First frost falls",
+          "name_jp": "霜始降",
+          "start_month": 10,
+          "start_day": 23,
+          "major_season": "autumn"
         }
       ],
       "identity_review_status": "needs_editorial_review",
       "entry_copy_status": "unverified",
       "source_entries": [
+        {
+          "label": "Asian pear (nashi)",
+          "labels": [
+            "Asian pear (nashi)"
+          ],
+          "catalog_key": "asian-pear-nashi",
+          "season_ids": [
+            58
+          ]
+        },
         {
           "label": "Japanese pear (nashi)",
           "labels": [
@@ -3986,6 +4232,50 @@
             46,
             47,
             52
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fruit:la-france-pear",
+      "category": "fruit",
+      "display_name": "La France pear",
+      "english": "La France pear",
+      "kanji": null,
+      "kana": "ラ・フランス",
+      "romaji": "ra furansu",
+      "catalog_key": "la-france-pear",
+      "source_catalog_keys": [
+        "la-france-pear"
+      ],
+      "source_labels": [
+        "La France pear"
+      ],
+      "source_entry_count": 1,
+      "season_ids": [
+        57
+      ],
+      "season_refs": [
+        {
+          "id": 57,
+          "name_en": "Crickets chirp around the door",
+          "name_jp": "蟋蟀在戸",
+          "start_month": 10,
+          "start_day": 18,
+          "major_season": "autumn"
+        }
+      ],
+      "identity_review_status": "pending",
+      "entry_copy_status": "unverified",
+      "source_entries": [
+        {
+          "label": "La France pear",
+          "labels": [
+            "La France pear"
+          ],
+          "catalog_key": "la-france-pear",
+          "season_ids": [
+            57
           ]
         }
       ]
@@ -4648,6 +4938,7 @@
       "source_catalog_keys": [
         "asian-persimmon-kaki",
         "early-harvest-persimmon-kaki",
+        "kaki-japanese-persimmon",
         "kaki-persimmon",
         "kaki-persimmon-early-varieties",
         "persimmon-early-varieties"
@@ -4655,11 +4946,12 @@
       "source_labels": [
         "Asian persimmon (kaki)",
         "Early-harvest persimmon (kaki)",
+        "Kaki (Japanese persimmon)",
         "Kaki (persimmon)",
         "Kaki (persimmon) — early varieties",
         "Persimmon (early varieties)"
       ],
-      "source_entry_count": 5,
+      "source_entry_count": 6,
       "season_ids": [
         47,
         51,
@@ -4667,7 +4959,8 @@
         53,
         54,
         55,
-        56
+        56,
+        57
       ],
       "season_refs": [
         {
@@ -4725,6 +5018,14 @@
           "start_month": 10,
           "start_day": 13,
           "major_season": "autumn"
+        },
+        {
+          "id": 57,
+          "name_en": "Crickets chirp around the door",
+          "name_jp": "蟋蟀在戸",
+          "start_month": 10,
+          "start_day": 18,
+          "major_season": "autumn"
         }
       ],
       "identity_review_status": "needs_editorial_review",
@@ -4748,6 +5049,16 @@
           "catalog_key": "early-harvest-persimmon-kaki",
           "season_ids": [
             47
+          ]
+        },
+        {
+          "label": "Kaki (Japanese persimmon)",
+          "labels": [
+            "Kaki (Japanese persimmon)"
+          ],
+          "catalog_key": "kaki-japanese-persimmon",
+          "season_ids": [
+            57
           ]
         },
         {
@@ -5047,6 +5358,50 @@
           "catalog_key": "yellow-plums",
           "season_ids": [
             33
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fruit:satsuma-mandarin-mikan",
+      "category": "fruit",
+      "display_name": "Satsuma mandarin",
+      "english": "Satsuma mandarin",
+      "kanji": "蜜柑",
+      "kana": "みかん",
+      "romaji": "mikan",
+      "catalog_key": "satsuma-mandarin-mikan",
+      "source_catalog_keys": [
+        "satsuma-mandarin-mikan"
+      ],
+      "source_labels": [
+        "Satsuma mandarin (mikan)"
+      ],
+      "source_entry_count": 1,
+      "season_ids": [
+        58
+      ],
+      "season_refs": [
+        {
+          "id": 58,
+          "name_en": "First frost falls",
+          "name_jp": "霜始降",
+          "start_month": 10,
+          "start_day": 23,
+          "major_season": "autumn"
+        }
+      ],
+      "identity_review_status": "pending",
+      "entry_copy_status": "unverified",
+      "source_entries": [
+        {
+          "label": "Satsuma mandarin (mikan)",
+          "labels": [
+            "Satsuma mandarin (mikan)"
+          ],
+          "catalog_key": "satsuma-mandarin-mikan",
+          "season_ids": [
+            58
           ]
         }
       ]
@@ -5818,7 +6173,8 @@
       ],
       "source_entry_count": 1,
       "season_ids": [
-        55
+        55,
+        57
       ],
       "season_refs": [
         {
@@ -5827,6 +6183,14 @@
           "name_jp": "鴻雁来",
           "start_month": 10,
           "start_day": 8,
+          "major_season": "autumn"
+        },
+        {
+          "id": 57,
+          "name_en": "Crickets chirp around the door",
+          "name_jp": "蟋蟀在戸",
+          "start_month": 10,
+          "start_day": 18,
           "major_season": "autumn"
         }
       ],
@@ -5840,7 +6204,8 @@
           ],
           "catalog_key": "yamabudo-wild-mountain-grape",
           "season_ids": [
-            55
+            55,
+            57
           ]
         }
       ]
@@ -6127,7 +6492,7 @@
       ]
     },
     {
-      "id": "vegetable:fuki-butterbur",
+      "id": "vegetable:butterbur-stem-fuki",
       "category": "vegetable",
       "display_name": "Butterbur",
       "english": "Butterbur",
@@ -6136,15 +6501,18 @@
       "romaji": "fuki",
       "catalog_key": "fuki-butterbur",
       "source_catalog_keys": [
+        "butterbur-stem-fuki",
         "fuki-butterbur"
       ],
       "source_labels": [
+        "Butterbur stem (fuki)",
         "Fuki (butterbur)"
       ],
-      "source_entry_count": 1,
+      "source_entry_count": 2,
       "season_ids": [
         22,
-        23
+        23,
+        58
       ],
       "season_refs": [
         {
@@ -6162,11 +6530,29 @@
           "start_month": 4,
           "start_day": 25,
           "major_season": "spring"
+        },
+        {
+          "id": 58,
+          "name_en": "First frost falls",
+          "name_jp": "霜始降",
+          "start_month": 10,
+          "start_day": 23,
+          "major_season": "autumn"
         }
       ],
-      "identity_review_status": "pending",
+      "identity_review_status": "needs_editorial_review",
       "entry_copy_status": "unverified",
       "source_entries": [
+        {
+          "label": "Butterbur stem (fuki)",
+          "labels": [
+            "Butterbur stem (fuki)"
+          ],
+          "catalog_key": "butterbur-stem-fuki",
+          "season_ids": [
+            58
+          ]
+        },
         {
           "label": "Fuki (butterbur)",
           "labels": [
@@ -6181,7 +6567,7 @@
       ]
     },
     {
-      "id": "vegetable:shungiku-chrysanthemum-greens",
+      "id": "vegetable:chrysanthemum-greens-shungiku",
       "category": "vegetable",
       "display_name": "Chrysanthemum greens",
       "english": "Chrysanthemum greens",
@@ -6190,19 +6576,25 @@
       "romaji": "shungiku",
       "catalog_key": "shungiku-chrysanthemum-greens",
       "source_catalog_keys": [
+        "chrysanthemum-greens-shungiku",
+        "kikuna-chrysanthemum-greens",
         "shungiku-chrysanthemum-greens",
         "shungiku-garland-chrysanthemum"
       ],
       "source_labels": [
+        "Chrysanthemum greens (shungiku)",
+        "Kikuna (chrysanthemum greens)",
         "Shungiku (chrysanthemum greens)",
         "Shungiku (garland chrysanthemum)"
       ],
-      "source_entry_count": 2,
+      "source_entry_count": 4,
       "season_ids": [
         51,
         52,
         55,
-        56
+        56,
+        57,
+        58
       ],
       "season_refs": [
         {
@@ -6236,11 +6628,47 @@
           "start_month": 10,
           "start_day": 13,
           "major_season": "autumn"
+        },
+        {
+          "id": 57,
+          "name_en": "Crickets chirp around the door",
+          "name_jp": "蟋蟀在戸",
+          "start_month": 10,
+          "start_day": 18,
+          "major_season": "autumn"
+        },
+        {
+          "id": 58,
+          "name_en": "First frost falls",
+          "name_jp": "霜始降",
+          "start_month": 10,
+          "start_day": 23,
+          "major_season": "autumn"
         }
       ],
       "identity_review_status": "needs_editorial_review",
       "entry_copy_status": "unverified",
       "source_entries": [
+        {
+          "label": "Chrysanthemum greens (shungiku)",
+          "labels": [
+            "Chrysanthemum greens (shungiku)"
+          ],
+          "catalog_key": "chrysanthemum-greens-shungiku",
+          "season_ids": [
+            58
+          ]
+        },
+        {
+          "label": "Kikuna (chrysanthemum greens)",
+          "labels": [
+            "Kikuna (chrysanthemum greens)"
+          ],
+          "catalog_key": "kikuna-chrysanthemum-greens",
+          "season_ids": [
+            57
+          ]
+        },
         {
           "label": "Shungiku (chrysanthemum greens)",
           "labels": [
@@ -7218,7 +7646,9 @@
         45,
         49,
         51,
-        53
+        53,
+        57,
+        58
       ],
       "season_refs": [
         {
@@ -7260,6 +7690,22 @@
           "start_month": 9,
           "start_day": 28,
           "major_season": "autumn"
+        },
+        {
+          "id": 57,
+          "name_en": "Crickets chirp around the door",
+          "name_jp": "蟋蟀在戸",
+          "start_month": 10,
+          "start_day": 18,
+          "major_season": "autumn"
+        },
+        {
+          "id": 58,
+          "name_en": "First frost falls",
+          "name_jp": "霜始降",
+          "start_month": 10,
+          "start_day": 23,
+          "major_season": "autumn"
         }
       ],
       "identity_review_status": "pending",
@@ -7275,7 +7721,8 @@
           "season_ids": [
             38,
             45,
-            49
+            49,
+            57
           ]
         },
         {
@@ -7285,7 +7732,8 @@
           ],
           "catalog_key": "lotus-root-renkon",
           "season_ids": [
-            53
+            53,
+            58
           ]
         },
         {
@@ -8471,7 +8919,8 @@
       ],
       "source_entry_count": 1,
       "season_ids": [
-        54
+        54,
+        57
       ],
       "season_refs": [
         {
@@ -8480,6 +8929,14 @@
           "name_jp": "水始涸",
           "start_month": 10,
           "start_day": 3,
+          "major_season": "autumn"
+        },
+        {
+          "id": 57,
+          "name_en": "Crickets chirp around the door",
+          "name_jp": "蟋蟀在戸",
+          "start_month": 10,
+          "start_day": 18,
           "major_season": "autumn"
         }
       ],
@@ -8493,7 +8950,8 @@
           ],
           "catalog_key": "murasaki-imo-purple-sweet-potato",
           "season_ids": [
-            54
+            54,
+            57
           ]
         }
       ]
@@ -8589,7 +9047,8 @@
         50,
         51,
         53,
-        55
+        55,
+        57
       ],
       "season_refs": [
         {
@@ -8639,6 +9098,14 @@
           "start_month": 10,
           "start_day": 8,
           "major_season": "autumn"
+        },
+        {
+          "id": 57,
+          "name_en": "Crickets chirp around the door",
+          "name_jp": "蟋蟀在戸",
+          "start_month": 10,
+          "start_day": 18,
+          "major_season": "autumn"
         }
       ],
       "identity_review_status": "needs_editorial_review",
@@ -8664,7 +9131,8 @@
             47,
             50,
             51,
-            53
+            53,
+            57
           ]
         },
         {
@@ -9208,7 +9676,7 @@
       ]
     },
     {
-      "id": "vegetable:kabu-turnip",
+      "id": "vegetable:japanese-turnip-kabu",
       "category": "vegetable",
       "display_name": "Turnip",
       "english": "Turnip",
@@ -9217,14 +9685,17 @@
       "romaji": "kabu",
       "catalog_key": "kabu-turnip",
       "source_catalog_keys": [
+        "japanese-turnip-kabu",
         "kabu-turnip"
       ],
       "source_labels": [
+        "Japanese turnip (kabu)",
         "Kabu (turnip)"
       ],
-      "source_entry_count": 1,
+      "source_entry_count": 2,
       "season_ids": [
-        56
+        56,
+        58
       ],
       "season_refs": [
         {
@@ -9234,11 +9705,29 @@
           "start_month": 10,
           "start_day": 13,
           "major_season": "autumn"
+        },
+        {
+          "id": 58,
+          "name_en": "First frost falls",
+          "name_jp": "霜始降",
+          "start_month": 10,
+          "start_day": 23,
+          "major_season": "autumn"
         }
       ],
-      "identity_review_status": "pending",
+      "identity_review_status": "needs_editorial_review",
       "entry_copy_status": "unverified",
       "source_entries": [
+        {
+          "label": "Japanese turnip (kabu)",
+          "labels": [
+            "Japanese turnip (kabu)"
+          ],
+          "catalog_key": "japanese-turnip-kabu",
+          "season_ids": [
+            58
+          ]
+        },
         {
           "label": "Kabu (turnip)",
           "labels": [

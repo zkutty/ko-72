@@ -193,6 +193,11 @@
       "source_note_sha256": "99ed40decfad54c2fcedcb8e5cca159f9d11cf7178b93ed806366f7c7168d5bf",
       "copy_status": "draft_unverified"
     },
+    "fuyu-persimmon-kaki": {
+      "text": "A squat, tomato-shaped persimmon eaten crisp like an apple, its flesh dense and honey-sweet without a trace of astringency.",
+      "source_note_sha256": "c0d776da6f7c53e1cd52437819d6c0a5b95d50f73383ad0b144782855ed2a8ba",
+      "copy_status": "draft_unverified"
+    },
     "ginkgo-nut": {
       "text": "These jade-green kernels hide beneath a notoriously pungent flesh, their flavor somewhere between chestnut and edamame with a faintly bitter, almost resinous finish.",
       "source_note_sha256": "389087a0575eb96777c66ed835ab790978e7984390e9dd4310877ad6eed18e26",
@@ -393,6 +398,11 @@
       "source_note_sha256": "72f0caab2c25541b7f22e68202b83836d839d4783a7c41bd251637dd6eda73a3",
       "copy_status": "draft_unverified"
     },
+    "kinki-thornyhead-rockfish": {
+      "text": "A deep-water fish with skin that turns brilliant vermilion when cooked, its flesh so rich with fat that it bastes itself while simmering, yielding meat that separates into silken flakes.",
+      "source_note_sha256": "816dd3f3fca0bf31d08a080057d1ddf4b886655cf08baccd1e6927d9ae66bb37",
+      "copy_status": "draft_unverified"
+    },
     "kinmedai-golden-eye-snapper": {
       "text": "A deep-sea fish with luminous crimson skin and large golden eyes, prized for flesh that turns silken and sweet when simmered in soy and ginger.",
       "source_note_sha256": "622022c0b4847bb95d3f4217d91939cc3b516997e34700ba539944d9588ec270",
@@ -456,6 +466,11 @@
     "kyoho-grape": {
       "text": "These dark purple grapes slip from their skins with a gentle squeeze, revealing translucent flesh so sweet and musky it perfumes the fingers.",
       "source_note_sha256": "5ff47534dd414f496c592abfceb2836d7ac6ba0e64b425130a4fb5448a89f54f",
+      "copy_status": "draft_unverified"
+    },
+    "la-france-pear": {
+      "text": "A French variety that found its true home in Japan's Tōhoku region, this pear yields flesh so yielding it nearly dissolves on the tongue, with a perfume of honey and white flowers that fills the room when perfectly ripe.",
+      "source_note_sha256": "60067c4f5a18f2d9942514f001a2c2697fd69b8547310dac419bc5cc8519b0ac",
       "copy_status": "draft_unverified"
     },
     "late-strawberries": {
@@ -763,6 +778,11 @@
       "source_note_sha256": "7f6a32ff41dd1abce4b6d92f9050e0d107c5341df71341cc68481e33c669d79c",
       "copy_status": "draft_unverified"
     },
+    "salmon-roe-ikura": {
+      "text": "Each jewel-bright orb bursts against the palate with a clean, oceanic sweetness and a faint mineral finish - the essence of cold Hokkaido waters concentrated into a single membrane.",
+      "source_note_sha256": "9653b1233f4a3d135998aad24b70cbd6a2bc1c47e175724b5783c4ba582cab74",
+      "copy_status": "draft_unverified"
+    },
     "salmon-sake": {
       "text": "The flesh deepens to a ruddy coral as autumn salmon return from the sea, their fat reserves at their richest before the spawning run, this is when the belly meat yields that particular silken texture prized for grilling with nothing but salt.",
       "source_note_sha256": "e37abc40d6764f10b141da1a43eb89893eef5e321f4bb09788e0af740c8a985a",
@@ -796,6 +816,11 @@
     "satoimo-taro-root": {
       "text": "These small, hairy corms yield flesh so slippery it seems to refuse the chopsticks, a quality called nameraka, prized in simmered dishes where the silken texture absorbs dashi to its core.",
       "source_note_sha256": "53559a769f3571253baf9f1e7dd898d8cf5d0c5d34df3a503b6e1340e8204abc",
+      "copy_status": "draft_unverified"
+    },
+    "satsuma-mandarin-mikan": {
+      "text": "The loose, pebbled skin yields to thumb pressure with a soft tearing sound, releasing a spray of citrus oil before the segments separate cleanly along their seams.",
+      "source_note_sha256": "a89afaae69bb3d3c8e0b7947a36afc060501138ad47f6eef9f43e8771c40b7a2",
       "copy_status": "draft_unverified"
     },
     "sawara-spanish-mackerel": {
@@ -1116,6 +1141,11 @@
     "yellowtail-amberjack-kanpachi": {
       "text": "Named for the dark band between its eyes that forms the kanji for 'eight' (八), kanpachi yields flesh that is leaner and more delicate than its buri cousins, pale pink, with a clean sweetness and subtle crunch when sliced for sashimi.",
       "source_note_sha256": "8cda18397dcef2339130216706550bf60f18371805e07ee05516b24dcc0d0d1f",
+      "copy_status": "draft_unverified"
+    },
+    "yellowtail-buri": {
+      "text": "A fish that grows into its name - called by different words at each stage of life, it reaches its peak as buri only when winter seas have layered it with rich, rose-colored fat that melts against warm rice.",
+      "source_note_sha256": "76b85a5b2bcab739fdbf494b2d4b3d875017e466240258eaef073a130d46a877",
       "copy_status": "draft_unverified"
     }
   }

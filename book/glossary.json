@@ -1,11 +1,11 @@
 {
   "status": "working_draft",
   "scope": "Seasonal produce in currently cached letters; regenerates as the remaining letters arrive",
-  "source_seasons": 36,
-  "source_mentions": 396,
-  "entry_count": 235,
+  "source_seasons": 38,
+  "source_mentions": 418,
+  "entry_count": 249,
   "explicit_alias_mappings": 12,
-  "derived_kana_readings": 214,
+  "derived_kana_readings": 226,
   "entries": [
     {
       "category": "fish",
@@ -479,6 +479,36 @@
     },
     {
       "category": "fish",
+      "display_name": "Haze (yellowfin goby)",
+      "english": "Yellowfin goby",
+      "kanji": "鯊",
+      "kana": "はぜ",
+      "romaji": "haze",
+      "catalog_key": "haze-yellowfin-goby",
+      "name_match_method": "catalog_source_exact",
+      "reading_method": "derived_from_catalog_romaji",
+      "name_review_status": "pending",
+      "source_labels": [
+        "Haze (yellowfin goby)"
+      ],
+      "season_ids": [
+        57
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected",
+      "season_refs": [
+        {
+          "id": 57,
+          "name_en": "Crickets chirp around the door",
+          "name_jp": "蟋蟀在戸",
+          "start_month": 10,
+          "start_day": 18,
+          "major_season": "autumn"
+        }
+      ]
+    },
+    {
+      "category": "fish",
       "display_name": "Hirame (flounder)",
       "english": "Olive flounder",
       "kanji": "鮃",
@@ -865,6 +895,36 @@
     },
     {
       "category": "fish",
+      "display_name": "Kinki (thornyhead rockfish)",
+      "english": "Thornyhead rockfish",
+      "kanji": "喜知次",
+      "kana": "きんき",
+      "romaji": "kinki",
+      "catalog_key": "kinki-thornyhead-rockfish",
+      "name_match_method": "catalog_source_exact",
+      "reading_method": "derived_from_catalog_romaji",
+      "name_review_status": "pending",
+      "source_labels": [
+        "Kinki (thornyhead rockfish)"
+      ],
+      "season_ids": [
+        57
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected",
+      "season_refs": [
+        {
+          "id": 57,
+          "name_en": "Crickets chirp around the door",
+          "name_jp": "蟋蟀在戸",
+          "start_month": 10,
+          "start_day": 18,
+          "major_season": "autumn"
+        }
+      ]
+    },
+    {
+      "category": "fish",
       "display_name": "Kinmedai (golden-eye snapper)",
       "english": "Golden-eye snapper",
       "kanji": "金目鯛",
@@ -1151,7 +1211,8 @@
         47,
         50,
         52,
-        53
+        53,
+        58
       ],
       "entry_copy_status": "unverified",
       "illustration_status": "not_selected",
@@ -1186,6 +1247,14 @@
           "name_jp": "蟄虫坏戸",
           "start_month": 9,
           "start_day": 28,
+          "major_season": "autumn"
+        },
+        {
+          "id": 58,
+          "name_en": "First frost falls",
+          "name_jp": "霜始降",
+          "start_month": 10,
+          "start_day": 23,
           "major_season": "autumn"
         }
       ]
@@ -1342,6 +1411,36 @@
     },
     {
       "category": "fish",
+      "display_name": "Salmon roe (ikura)",
+      "english": "Salmon roe",
+      "kanji": null,
+      "kana": "いくら",
+      "romaji": "ikura",
+      "catalog_key": "salmon-roe-ikura",
+      "name_match_method": "catalog_source_exact",
+      "reading_method": "catalog_kana",
+      "name_review_status": "pending",
+      "source_labels": [
+        "Salmon roe (ikura)"
+      ],
+      "season_ids": [
+        58
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected",
+      "season_refs": [
+        {
+          "id": 58,
+          "name_en": "First frost falls",
+          "name_jp": "霜始降",
+          "start_month": 10,
+          "start_day": 23,
+          "major_season": "autumn"
+        }
+      ]
+    },
+    {
+      "category": "fish",
       "display_name": "Sanma (Pacific saury)",
       "english": "Pacific saury",
       "kanji": "秋刀魚",
@@ -1482,7 +1581,8 @@
         23,
         54,
         55,
-        56
+        56,
+        57
       ],
       "entry_copy_status": "unverified",
       "illustration_status": "not_selected",
@@ -1525,6 +1625,14 @@
           "name_jp": "菊花開",
           "start_month": 10,
           "start_day": 13,
+          "major_season": "autumn"
+        },
+        {
+          "id": 57,
+          "name_en": "Crickets chirp around the door",
+          "name_jp": "蟋蟀在戸",
+          "start_month": 10,
+          "start_day": 18,
           "major_season": "autumn"
         }
       ]
@@ -2000,6 +2108,36 @@
     },
     {
       "category": "fish",
+      "display_name": "Yellowtail (buri)",
+      "english": "Yellowtail",
+      "kanji": "鰤",
+      "kana": "ぶり",
+      "romaji": "buri",
+      "catalog_key": "yellowtail-buri",
+      "name_match_method": "catalog_source_exact",
+      "reading_method": "derived_from_catalog_romaji",
+      "name_review_status": "pending",
+      "source_labels": [
+        "Yellowtail (buri)"
+      ],
+      "season_ids": [
+        58
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected",
+      "season_refs": [
+        {
+          "id": 58,
+          "name_en": "First frost falls",
+          "name_jp": "霜始降",
+          "start_month": 10,
+          "start_day": 23,
+          "major_season": "autumn"
+        }
+      ]
+    },
+    {
+      "category": "fish",
       "display_name": "yellowtail amberjack",
       "english": "Yellowtail amberjack",
       "kanji": "鰤",
@@ -2411,6 +2549,36 @@
           "start_month": 5,
           "start_day": 11,
           "major_season": "summer"
+        }
+      ]
+    },
+    {
+      "category": "fruit",
+      "display_name": "Asian pear (nashi)",
+      "english": "Asian pear",
+      "kanji": "梨",
+      "kana": "なし",
+      "romaji": "nashi",
+      "catalog_key": "asian-pear-nashi",
+      "name_match_method": "catalog_source_exact",
+      "reading_method": "derived_from_catalog_romaji",
+      "name_review_status": "pending",
+      "source_labels": [
+        "Asian pear (nashi)"
+      ],
+      "season_ids": [
+        58
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected",
+      "season_refs": [
+        {
+          "id": 58,
+          "name_en": "First frost falls",
+          "name_jp": "霜始降",
+          "start_month": 10,
+          "start_day": 23,
+          "major_season": "autumn"
         }
       ]
     },
@@ -2864,6 +3032,36 @@
     },
     {
       "category": "fruit",
+      "display_name": "Fuyu persimmon (kaki)",
+      "english": "Fuyu persimmon",
+      "kanji": "富有柿",
+      "kana": "ふゆがき",
+      "romaji": "fuyu-gaki",
+      "catalog_key": "fuyu-persimmon-kaki",
+      "name_match_method": "catalog_source_exact",
+      "reading_method": "derived_from_catalog_romaji",
+      "name_review_status": "pending",
+      "source_labels": [
+        "Fuyu persimmon (kaki)"
+      ],
+      "season_ids": [
+        58
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected",
+      "season_refs": [
+        {
+          "id": 58,
+          "name_en": "First frost falls",
+          "name_jp": "霜始降",
+          "start_month": 10,
+          "start_day": 23,
+          "major_season": "autumn"
+        }
+      ]
+    },
+    {
+      "category": "fruit",
       "display_name": "Green ume plums",
       "english": "Green plum",
       "kanji": "青梅",
@@ -3011,6 +3209,36 @@
     },
     {
       "category": "fruit",
+      "display_name": "Kaki (Japanese persimmon)",
+      "english": "Japanese persimmon",
+      "kanji": "柿",
+      "kana": "かき",
+      "romaji": "kaki",
+      "catalog_key": "kaki-japanese-persimmon",
+      "name_match_method": "catalog_source_exact",
+      "reading_method": "derived_from_catalog_romaji",
+      "name_review_status": "pending",
+      "source_labels": [
+        "Kaki (Japanese persimmon)"
+      ],
+      "season_ids": [
+        57
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected",
+      "season_refs": [
+        {
+          "id": 57,
+          "name_en": "Crickets chirp around the door",
+          "name_jp": "蟋蟀在戸",
+          "start_month": 10,
+          "start_day": 18,
+          "major_season": "autumn"
+        }
+      ]
+    },
+    {
+      "category": "fruit",
       "display_name": "Kaki (persimmon)",
       "english": "Persimmon",
       "kanji": "柿",
@@ -3102,7 +3330,8 @@
         "Karin (Chinese quince)"
       ],
       "season_ids": [
-        55
+        55,
+        57
       ],
       "entry_copy_status": "unverified",
       "illustration_status": "not_selected",
@@ -3113,6 +3342,14 @@
           "name_jp": "鴻雁来",
           "start_month": 10,
           "start_day": 8,
+          "major_season": "autumn"
+        },
+        {
+          "id": 57,
+          "name_en": "Crickets chirp around the door",
+          "name_jp": "蟋蟀在戸",
+          "start_month": 10,
+          "start_day": 18,
           "major_season": "autumn"
         }
       ]
@@ -3281,6 +3518,36 @@
           "name_jp": "雷乃収声",
           "start_month": 9,
           "start_day": 23,
+          "major_season": "autumn"
+        }
+      ]
+    },
+    {
+      "category": "fruit",
+      "display_name": "La France pear",
+      "english": "La France pear",
+      "kanji": null,
+      "kana": "ラ・フランス",
+      "romaji": "ra furansu",
+      "catalog_key": "la-france-pear",
+      "name_match_method": "catalog_source_exact",
+      "reading_method": "catalog_kana",
+      "name_review_status": "pending",
+      "source_labels": [
+        "La France pear"
+      ],
+      "season_ids": [
+        57
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected",
+      "season_refs": [
+        {
+          "id": 57,
+          "name_en": "Crickets chirp around the door",
+          "name_jp": "蟋蟀在戸",
+          "start_month": 10,
+          "start_day": 18,
           "major_season": "autumn"
         }
       ]
@@ -4101,6 +4368,36 @@
     },
     {
       "category": "fruit",
+      "display_name": "Quince (karin)",
+      "english": "Quince",
+      "kanji": "花梨",
+      "kana": "かりん",
+      "romaji": "karin",
+      "catalog_key": "quince-karin",
+      "name_match_method": "catalog_source_exact",
+      "reading_method": "derived_from_catalog_romaji",
+      "name_review_status": "pending",
+      "source_labels": [
+        "Quince (karin)"
+      ],
+      "season_ids": [
+        58
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected",
+      "season_refs": [
+        {
+          "id": 58,
+          "name_en": "First frost falls",
+          "name_jp": "霜始降",
+          "start_month": 10,
+          "start_day": 23,
+          "major_season": "autumn"
+        }
+      ]
+    },
+    {
+      "category": "fruit",
       "display_name": "Ringo (apple)",
       "english": "Apple",
       "kanji": "林檎",
@@ -4223,6 +4520,36 @@
           "start_month": 5,
           "start_day": 31,
           "major_season": "summer"
+        }
+      ]
+    },
+    {
+      "category": "fruit",
+      "display_name": "Satsuma mandarin (mikan)",
+      "english": "Satsuma mandarin",
+      "kanji": "蜜柑",
+      "kana": "みかん",
+      "romaji": "mikan",
+      "catalog_key": "satsuma-mandarin-mikan",
+      "name_match_method": "catalog_source_exact",
+      "reading_method": "derived_from_catalog_romaji",
+      "name_review_status": "pending",
+      "source_labels": [
+        "Satsuma mandarin (mikan)"
+      ],
+      "season_ids": [
+        58
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected",
+      "season_refs": [
+        {
+          "id": 58,
+          "name_en": "First frost falls",
+          "name_jp": "霜始降",
+          "start_month": 10,
+          "start_day": 23,
+          "major_season": "autumn"
         }
       ]
     },
@@ -4952,7 +5279,8 @@
         "Yamabudo (wild mountain grape)"
       ],
       "season_ids": [
-        55
+        55,
+        57
       ],
       "entry_copy_status": "unverified",
       "illustration_status": "not_selected",
@@ -4963,6 +5291,14 @@
           "name_jp": "鴻雁来",
           "start_month": 10,
           "start_day": 8,
+          "major_season": "autumn"
+        },
+        {
+          "id": 57,
+          "name_en": "Crickets chirp around the door",
+          "name_jp": "蟋蟀在戸",
+          "start_month": 10,
+          "start_day": 18,
           "major_season": "autumn"
         }
       ]
@@ -5504,6 +5840,66 @@
     },
     {
       "category": "vegetable",
+      "display_name": "Butterbur stem (fuki)",
+      "english": "Butterbur stem",
+      "kanji": "蕗",
+      "kana": "ふき",
+      "romaji": "fuki",
+      "catalog_key": "butterbur-stem-fuki",
+      "name_match_method": "catalog_source_exact",
+      "reading_method": "derived_from_catalog_romaji",
+      "name_review_status": "pending",
+      "source_labels": [
+        "Butterbur stem (fuki)"
+      ],
+      "season_ids": [
+        58
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected",
+      "season_refs": [
+        {
+          "id": 58,
+          "name_en": "First frost falls",
+          "name_jp": "霜始降",
+          "start_month": 10,
+          "start_day": 23,
+          "major_season": "autumn"
+        }
+      ]
+    },
+    {
+      "category": "vegetable",
+      "display_name": "Chrysanthemum greens (shungiku)",
+      "english": "Chrysanthemum greens",
+      "kanji": "春菊",
+      "kana": "しゅんぎく",
+      "romaji": "shungiku",
+      "catalog_key": "chrysanthemum-greens-shungiku",
+      "name_match_method": "catalog_source_exact",
+      "reading_method": "derived_from_catalog_romaji",
+      "name_review_status": "pending",
+      "source_labels": [
+        "Chrysanthemum greens (shungiku)"
+      ],
+      "season_ids": [
+        58
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected",
+      "season_refs": [
+        {
+          "id": 58,
+          "name_en": "First frost falls",
+          "name_jp": "霜始降",
+          "start_month": 10,
+          "start_day": 23,
+          "major_season": "autumn"
+        }
+      ]
+    },
+    {
+      "category": "vegetable",
       "display_name": "edamame",
       "english": "Edamame",
       "kanji": "枝豆",
@@ -6037,6 +6433,36 @@
     },
     {
       "category": "vegetable",
+      "display_name": "Japanese turnip (kabu)",
+      "english": "Japanese turnip",
+      "kanji": "蕪",
+      "kana": "かぶ",
+      "romaji": "kabu",
+      "catalog_key": "japanese-turnip-kabu",
+      "name_match_method": "catalog_source_exact",
+      "reading_method": "derived_from_catalog_romaji",
+      "name_review_status": "pending",
+      "source_labels": [
+        "Japanese turnip (kabu)"
+      ],
+      "season_ids": [
+        58
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected",
+      "season_refs": [
+        {
+          "id": 58,
+          "name_en": "First frost falls",
+          "name_jp": "霜始降",
+          "start_month": 10,
+          "start_day": 23,
+          "major_season": "autumn"
+        }
+      ]
+    },
+    {
+      "category": "vegetable",
       "display_name": "Jūroku-sasage (yard-long beans)",
       "english": "Yard-long bean",
       "kanji": "十六ささげ",
@@ -6175,6 +6601,36 @@
     },
     {
       "category": "vegetable",
+      "display_name": "Kikuna (chrysanthemum greens)",
+      "english": "Chrysanthemum greens",
+      "kanji": "菊菜",
+      "kana": "きくな",
+      "romaji": "kikuna",
+      "catalog_key": "kikuna-chrysanthemum-greens",
+      "name_match_method": "catalog_source_exact",
+      "reading_method": "derived_from_catalog_romaji",
+      "name_review_status": "pending",
+      "source_labels": [
+        "Kikuna (chrysanthemum greens)"
+      ],
+      "season_ids": [
+        57
+      ],
+      "entry_copy_status": "unverified",
+      "illustration_status": "not_selected",
+      "season_refs": [
+        {
+          "id": 57,
+          "name_en": "Crickets chirp around the door",
+          "name_jp": "蟋蟀在戸",
+          "start_month": 10,
+          "start_day": 18,
+          "major_season": "autumn"
+        }
+      ]
+    },
+    {
+      "category": "vegetable",
       "display_name": "kyūri (cucumber)",
       "english": "Cucumber",
       "kanji": "胡瓜",
@@ -6221,7 +6677,8 @@
       "season_ids": [
         38,
         45,
-        49
+        49,
+        57
       ],
       "entry_copy_status": "unverified",
       "illustration_status": "not_selected",
@@ -6249,6 +6706,14 @@
           "start_month": 9,
           "start_day": 8,
           "major_season": "autumn"
+        },
+        {
+          "id": 57,
+          "name_en": "Crickets chirp around the door",
+          "name_jp": "蟋蟀在戸",
+          "start_month": 10,
+          "start_day": 18,
+          "major_season": "autumn"
         }
       ]
     },
@@ -6267,7 +6732,8 @@
         "Lotus root (renkon)"
       ],
       "season_ids": [
-        53
+        53,
+        58
       ],
       "entry_copy_status": "unverified",
       "illustration_status": "not_selected",
@@ -6278,6 +6744,14 @@
           "name_jp": "蟄虫坏戸",
           "start_month": 9,
           "start_day": 28,
+          "major_season": "autumn"
+        },
+        {
+          "id": 58,
+          "name_en": "First frost falls",
+          "name_jp": "霜始降",
+          "start_month": 10,
+          "start_day": 23,
           "major_season": "autumn"
         }
       ]
@@ -6573,7 +7047,8 @@
         "Murasaki-imo (purple sweet potato)"
       ],
       "season_ids": [
-        54
+        54,
+        57
       ],
       "entry_copy_status": "unverified",
       "illustration_status": "not_selected",
@@ -6584,6 +7059,14 @@
           "name_jp": "水始涸",
           "start_month": 10,
           "start_day": 3,
+          "major_season": "autumn"
+        },
+        {
+          "id": 57,
+          "name_en": "Crickets chirp around the door",
+          "name_jp": "蟋蟀在戸",
+          "start_month": 10,
+          "start_day": 18,
           "major_season": "autumn"
         }
       ]
@@ -7384,7 +7867,8 @@
         47,
         50,
         51,
-        53
+        53,
+        57
       ],
       "entry_copy_status": "unverified",
       "illustration_status": "not_selected",
@@ -7419,6 +7903,14 @@
           "name_jp": "蟄虫坏戸",
           "start_month": 9,
           "start_day": 28,
+          "major_season": "autumn"
+        },
+        {
+          "id": 57,
+          "name_en": "Crickets chirp around the door",
+          "name_jp": "蟋蟀在戸",
+          "start_month": 10,
+          "start_day": 18,
           "major_season": "autumn"
         }
       ]

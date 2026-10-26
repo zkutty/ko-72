@@ -1,8 +1,8 @@
 {
   "status": "editorial_review_pending",
-  "source_label_entries": 235,
-  "canonical_entries": 128,
-  "collapsed_entries": 107,
+  "source_label_entries": 249,
+  "canonical_entries": 133,
+  "collapsed_entries": 116,
   "duplicate_groups": [
     {
       "id": "fish:aji-horse-mackerel",
@@ -157,6 +157,23 @@
       "season_ids": [
         43,
         55
+      ],
+      "identity_review_status": "needs_editorial_review"
+    },
+    {
+      "id": "fish:haze-goby",
+      "display_name": "Goby",
+      "labels": [
+        "Haze (goby)",
+        "Haze (yellowfin goby)"
+      ],
+      "catalog_keys": [
+        "haze-goby",
+        "haze-yellowfin-goby"
+      ],
+      "season_ids": [
+        54,
+        57
       ],
       "identity_review_status": "needs_editorial_review"
     },
@@ -316,7 +333,8 @@
         51,
         52,
         53,
-        56
+        56,
+        58
       ],
       "identity_review_status": "pending"
     },
@@ -357,9 +375,27 @@
         52,
         54,
         55,
-        56
+        56,
+        57
       ],
       "identity_review_status": "pending"
+    },
+    {
+      "id": "fish:yellowtail-amberjack",
+      "display_name": "Yellowtail",
+      "labels": [
+        "Yellowtail (buri)",
+        "yellowtail amberjack"
+      ],
+      "catalog_keys": [
+        "yellowtail-amberjack",
+        "yellowtail-buri"
+      ],
+      "season_ids": [
+        40,
+        58
+      ],
+      "identity_review_status": "needs_editorial_review"
     },
     {
       "id": "fruit:amanatsu",
@@ -387,11 +423,44 @@
       "identity_review_status": "needs_editorial_review"
     },
     {
+      "id": "fruit:asian-pear-nashi",
+      "display_name": "Japanese pear",
+      "labels": [
+        "Asian pear (nashi)",
+        "Japanese pear (nashi)",
+        "Nashi (Asian pear)",
+        "Pear (nashi)",
+        "梨 (Japanese pear)"
+      ],
+      "catalog_keys": [
+        "asian-pear-nashi",
+        "japanese-pear",
+        "japanese-pear-nashi",
+        "nashi-asian-pear",
+        "pear-nashi"
+      ],
+      "season_ids": [
+        41,
+        42,
+        43,
+        44,
+        46,
+        47,
+        50,
+        52,
+        53,
+        54,
+        58
+      ],
+      "identity_review_status": "needs_editorial_review"
+    },
+    {
       "id": "fruit:asian-persimmon-kaki",
       "display_name": "Persimmon",
       "labels": [
         "Asian persimmon (kaki)",
         "Early-harvest persimmon (kaki)",
+        "Kaki (Japanese persimmon)",
         "Kaki (persimmon)",
         "Kaki (persimmon) — early varieties",
         "Persimmon (early varieties)"
@@ -399,6 +468,7 @@
       "catalog_keys": [
         "asian-persimmon-kaki",
         "early-harvest-persimmon-kaki",
+        "kaki-japanese-persimmon",
         "kaki-persimmon",
         "kaki-persimmon-early-varieties",
         "persimmon-early-varieties"
@@ -410,7 +480,8 @@
         53,
         54,
         55,
-        56
+        56,
+        57
       ],
       "identity_review_status": "needs_editorial_review"
     },
@@ -586,31 +657,20 @@
       "identity_review_status": "pending"
     },
     {
-      "id": "fruit:japanese-pear",
-      "display_name": "Japanese pear",
+      "id": "fruit:karin-chinese-quince",
+      "display_name": "Chinese quince",
       "labels": [
-        "Japanese pear (nashi)",
-        "Nashi (Asian pear)",
-        "Pear (nashi)",
-        "梨 (Japanese pear)"
+        "Karin (Chinese quince)",
+        "Quince (karin)"
       ],
       "catalog_keys": [
-        "japanese-pear",
-        "japanese-pear-nashi",
-        "nashi-asian-pear",
-        "pear-nashi"
+        "karin-chinese-quince",
+        "quince-karin"
       ],
       "season_ids": [
-        41,
-        42,
-        43,
-        44,
-        46,
-        47,
-        50,
-        52,
-        53,
-        54
+        55,
+        57,
+        58
       ],
       "identity_review_status": "needs_editorial_review"
     },
@@ -843,6 +903,49 @@
       "identity_review_status": "needs_editorial_review"
     },
     {
+      "id": "vegetable:butterbur-stem-fuki",
+      "display_name": "Butterbur",
+      "labels": [
+        "Butterbur stem (fuki)",
+        "Fuki (butterbur)"
+      ],
+      "catalog_keys": [
+        "butterbur-stem-fuki",
+        "fuki-butterbur"
+      ],
+      "season_ids": [
+        22,
+        23,
+        58
+      ],
+      "identity_review_status": "needs_editorial_review"
+    },
+    {
+      "id": "vegetable:chrysanthemum-greens-shungiku",
+      "display_name": "Chrysanthemum greens",
+      "labels": [
+        "Chrysanthemum greens (shungiku)",
+        "Kikuna (chrysanthemum greens)",
+        "Shungiku (chrysanthemum greens)",
+        "Shungiku (garland chrysanthemum)"
+      ],
+      "catalog_keys": [
+        "chrysanthemum-greens-shungiku",
+        "kikuna-chrysanthemum-greens",
+        "shungiku-chrysanthemum-greens",
+        "shungiku-garland-chrysanthemum"
+      ],
+      "season_ids": [
+        51,
+        52,
+        55,
+        56,
+        57,
+        58
+      ],
+      "identity_review_status": "needs_editorial_review"
+    },
+    {
       "id": "vegetable:cucumber",
       "display_name": "Cucumber",
       "labels": [
@@ -945,6 +1048,23 @@
       "identity_review_status": "needs_editorial_review"
     },
     {
+      "id": "vegetable:japanese-turnip-kabu",
+      "display_name": "Turnip",
+      "labels": [
+        "Japanese turnip (kabu)",
+        "Kabu (turnip)"
+      ],
+      "catalog_keys": [
+        "japanese-turnip-kabu",
+        "kabu-turnip"
+      ],
+      "season_ids": [
+        56,
+        58
+      ],
+      "identity_review_status": "needs_editorial_review"
+    },
+    {
       "id": "vegetable:kabocha-squash",
       "display_name": "Kabocha",
       "labels": [
@@ -982,7 +1102,9 @@
         45,
         49,
         51,
-        53
+        53,
+        57,
+        58
       ],
       "identity_review_status": "pending"
     },
@@ -1179,7 +1301,8 @@
         50,
         51,
         53,
-        55
+        55,
+        57
       ],
       "identity_review_status": "needs_editorial_review"
     },
@@ -1230,25 +1353,6 @@
       "identity_review_status": "needs_editorial_review"
     },
     {
-      "id": "vegetable:shungiku-chrysanthemum-greens",
-      "display_name": "Chrysanthemum greens",
-      "labels": [
-        "Shungiku (chrysanthemum greens)",
-        "Shungiku (garland chrysanthemum)"
-      ],
-      "catalog_keys": [
-        "shungiku-chrysanthemum-greens",
-        "shungiku-garland-chrysanthemum"
-      ],
-      "season_ids": [
-        51,
-        52,
-        55,
-        56
-      ],
-      "identity_review_status": "needs_editorial_review"
-    },
-    {
       "id": "vegetable:spring-cabbage",
       "display_name": "Spring cabbage",
       "labels": [
@@ -1287,18 +1391,24 @@
   "review_groups": [
     "fish:grunt",
     "fish:hatatehagi-filefish",
+    "fish:haze-goby",
     "fish:katsuo-skipjack-tuna-returning-run",
     "fish:kinmedai-golden-eye-snapper",
     "fish:sake-salmon",
+    "fish:yellowtail-amberjack",
     "fruit:amanatsu",
+    "fruit:asian-pear-nashi",
     "fruit:asian-persimmon-kaki",
     "fruit:bud-japanese-grapes",
     "fruit:cherry",
-    "fruit:japanese-pear",
+    "fruit:karin-chinese-quince",
     "fruit:momo-early-peaches",
     "vegetable:bitter-melon",
+    "vegetable:butterbur-stem-fuki",
+    "vegetable:chrysanthemum-greens-shungiku",
     "vegetable:green-shiso",
     "vegetable:japanese-sweet-potato",
+    "vegetable:japanese-turnip-kabu",
     "vegetable:kabocha-squash",
     "vegetable:manganji-pepper",
     "vegetable:matsutake-mushroom",
@@ -1306,7 +1416,6 @@
     "vegetable:satoimo-taro",
     "vegetable:shimeji-beech-mushroom",
     "vegetable:shiso",
-    "vegetable:shungiku-chrysanthemum-greens",
     "vegetable:tsuru-murasaki-malabar-spinach"
   ],
   "possible_duplicates": [

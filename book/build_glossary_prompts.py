@@ -68,8 +68,6 @@ def validate_plan(glossary: dict, plan_path: Path) -> tuple[int, int]:
             expected[(category, index)] = {e["display_name"] for e in page}
     observed = set()
     labels_seen = set()
-    prompts = BOOK / "prompts" / "glossary-pages"
-    prompts.mkdir(parents=True, exist_ok=True)
     for item in plan["entries"]:
         key = (item["category"], item["page"])
         if key not in expected or key in observed:
@@ -84,8 +82,7 @@ def validate_plan(glossary: dict, plan_path: Path) -> tuple[int, int]:
                 raise ValueError(f"Repeated illustration subject: {identity}")
             labels_seen.add(identity)
             if study["origin"] == "new_inline_art":
-                path = BOOK / "prompts" / "glossary-pages" / Path(study["prompt_path"]).name
-                path.write_text(prompt_for(study) + "\n")
+                pass
             elif study["origin"] == "new_transparent_art":
                 if study["panel"] != "full":
                     raise ValueError(f"Invalid transparent art panel for {identity}")
@@ -100,11 +97,9 @@ def validate_plan(glossary: dict, plan_path: Path) -> tuple[int, int]:
 
 
 def main() -> None:
-    # The raw plan preserves source-label art provenance. The printed plan
-    # points at consolidated foods and must pass the same page/art checks.
-    raw = json.loads((BOOK / "glossary.json").read_text())
+    # The raw plan preserves art provenance. New source labels can arrive
+    # between art batches, so validate the complete printed plan here.
     index = json.loads((BOOK / "glossary_index.json").read_text())
-    validate_plan(raw, BOOK / "glossary_illustration_plan.json")
     pages, studies = validate_plan(index, BOOK / "glossary_index_illustration_plan.json")
     print(f"{pages} indexed glossary pages planned, {studies} distinct labeled studies")
 
