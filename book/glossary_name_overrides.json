@@ -1,0 +1,19 @@
+{
+  "catalog_aliases": {
+    "fish:conger eel": "conger-eel",
+    "fish:kuruma ebi (japanese tiger prawn)": "kuruma-ebi-japanese-tiger-prawn",
+    "fish:鯵 (horse mackerel)": "aji-horse-mackerel",
+    "fruit:biwa (loquat), early": "biwa-loquat-early",
+    "fruit:sudachi (citrus)": "sudachi-citrus",
+    "fruit:すいか (watermelon)": "suika-watermelon",
+    "fruit:ブルーベリー (blueberry)": "blueberry",
+    "fruit:watermelon": "watermelon",
+    "fruit:white peach": "white-peach-hakut",
+    "fruit:マンゴー (mango)": "mango",
+    "fruit:白桃 (white peach)": "white-peach-hakut",
+    "vegetable:オクラ (okra)": "okra"
+  },
+  "kana_readings": {
+    "ōba": "おおば"
+  }
+}

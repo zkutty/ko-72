@@ -1,0 +1,949 @@
+{
+  "status": "draft",
+  "layout": "At most six entries and two unique floating item studies per category page; one source-derived food note per entry",
+  "entries": [
+    {
+      "category": "fruit",
+      "page": 1,
+      "items": [
+        {
+          "label": "amanatsu",
+          "subject": "one ripe amanatsu citrus fruit with a leaf",
+          "image_path": "book/art/glossary/pages/fruit-01.png",
+          "panel": 0,
+          "prompt_path": "book/prompts/glossary-pages/fruit-01.txt",
+          "origin": "paired_pilot_art"
+        },
+        {
+          "label": "Asian persimmon (kaki)",
+          "subject": "one ripe orange Japanese kaki persimmon with a leafy calyx and one cut half showing amber flesh",
+          "image_path": "book/art/glossary/cutouts/additions/fruit-01-persimmon.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/fruit-01-persimmon.txt",
+          "origin": "new_transparent_art"
+        }
+      ],
+      "end_label": "Asian persimmon (kaki)"
+    },
+    {
+      "category": "fruit",
+      "page": 2,
+      "items": [
+        {
+          "label": "Biwa (loquat), early",
+          "subject": "a small branch bearing three ripe golden-orange Japanese loquats (biwa) and two long, leathery, serrated leaves",
+          "image_path": "book/art/glossary/cutouts/additions/fruit-01-loquat.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/fruit-01-loquat.txt",
+          "origin": "new_transparent_art"
+        },
+        {
+          "label": "cherry",
+          "subject": "a small pair of ripe cherries with their stems",
+          "image_path": "book/art/glossary/pages/fruit-01.png",
+          "panel": 1,
+          "prompt_path": "book/prompts/glossary-pages/fruit-01.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "cherry"
+    },
+    {
+      "category": "fruit",
+      "page": 3,
+      "items": [
+        {
+          "label": "early peach",
+          "subject": "two small early Japanese peaches with pale pink blush, fine fuzz and a short leafy twig",
+          "image_path": "book/art/glossary/cutouts/additions/fruit-03-early-peach.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/fruit-03-early-peach.txt",
+          "origin": "new_transparent_art"
+        },
+        {
+          "label": "Fig (ichijiku)",
+          "subject": "one ripe fig, one half showing its seeded interior",
+          "image_path": "book/art/glossary/pages/fruit-02.png",
+          "panel": 0,
+          "prompt_path": "book/prompts/glossary-pages/fruit-02.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "Fig (ichijiku)"
+    },
+    {
+      "category": "fruit",
+      "page": 4,
+      "items": [
+        {
+          "label": "Green ume plums",
+          "subject": "two firm green ume plums with a leaf",
+          "image_path": "book/art/glossary/pages/fruit-02.png",
+          "panel": 1,
+          "prompt_path": "book/prompts/glossary-pages/fruit-02.txt",
+          "origin": "paired_pilot_art"
+        },
+        {
+          "label": "Kabosu citrus",
+          "subject": "one small green kabosu citrus fruit and one cut half showing pale juicy segments",
+          "image_path": "book/art/glossary/cutouts/additions/fruit-04-kabosu.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/fruit-04-kabosu.txt",
+          "origin": "new_transparent_art"
+        }
+      ],
+      "end_label": "Kaki (persimmon)"
+    },
+    {
+      "category": "fruit",
+      "page": 5,
+      "items": [
+        {
+          "label": "Karin (Chinese quince)",
+          "subject": "one golden Chinese quince fruit with a leaf",
+          "image_path": "book/art/glossary/pages/fruit-03.png",
+          "panel": 0,
+          "prompt_path": "book/prompts/glossary-pages/fruit-03.txt",
+          "origin": "paired_pilot_art"
+        },
+        {
+          "label": "Koshu grape",
+          "subject": "one compact cluster of ripe Koshu grapes with translucent dusty rose-purple berries and one vine leaf",
+          "image_path": "book/art/glossary/cutouts/additions/fruit-04-koshu-grape.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/fruit-04-koshu-grape.txt",
+          "origin": "new_transparent_art"
+        }
+      ],
+      "end_label": "Kuromame-zuke (black soybeans)"
+    },
+    {
+      "category": "fruit",
+      "page": 6,
+      "items": [
+        {
+          "label": "Kyoho grape",
+          "subject": "a compact cluster of dark purple Kyoho grapes with one vine leaf",
+          "image_path": "book/art/glossary/singles/fruit-04-new.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-pages/fruit-04-new.txt",
+          "origin": "new_inline_art"
+        },
+        {
+          "label": "mango",
+          "subject": "one ripe mango fruit with a small leaf",
+          "image_path": "book/art/glossary/pages/fruit-03.png",
+          "panel": 1,
+          "prompt_path": "book/prompts/glossary-pages/fruit-03.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "Mango (Okinawan)"
+    },
+    {
+      "category": "fruit",
+      "page": 7,
+      "items": [
+        {
+          "label": "Mikan (late variety)",
+          "subject": "two small late-season Japanese satsuma mandarins (mikan), one peeled enough to show segments and one intact",
+          "image_path": "book/art/glossary/cutouts/additions/fruit-06-mikan.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/fruit-06-mikan.txt",
+          "origin": "new_transparent_art"
+        },
+        {
+          "label": "muscat grapes",
+          "subject": "a small cluster of pale green muscat grapes",
+          "image_path": "book/art/glossary/pages/fruit-04.png",
+          "panel": 0,
+          "prompt_path": "book/prompts/glossary-pages/fruit-04.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "muscat grapes"
+    },
+    {
+      "category": "fruit",
+      "page": 8,
+      "items": [
+        {
+          "label": "passion fruit",
+          "subject": "one passion fruit and one cut half showing seeds",
+          "image_path": "book/art/glossary/pages/fruit-04.png",
+          "panel": 1,
+          "prompt_path": "book/prompts/glossary-pages/fruit-04.txt",
+          "origin": "paired_pilot_art"
+        },
+        {
+          "label": "Pear (nashi)",
+          "subject": "one round Japanese nashi pear with a leaf",
+          "image_path": "book/art/glossary/singles/fruit-06-new.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-pages/fruit-06-new.txt",
+          "origin": "new_inline_art"
+        }
+      ],
+      "end_label": "Pear (nashi)"
+    },
+    {
+      "category": "fruit",
+      "page": 9,
+      "items": [
+        {
+          "label": "Prune plum",
+          "subject": "two ripe dark-purple prune plums, one whole and one cut to show yellow flesh",
+          "image_path": "book/art/glossary/cutouts/additions/fruit-08-prune-plum.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/fruit-08-prune-plum.txt",
+          "origin": "new_transparent_art"
+        },
+        {
+          "label": "Ringo (apple)",
+          "subject": "one red Japanese apple with a leaf",
+          "image_path": "book/art/glossary/pages/fruit-05.png",
+          "panel": 0,
+          "prompt_path": "book/prompts/glossary-pages/fruit-05.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "Ringo (apple)"
+    },
+    {
+      "category": "fruit",
+      "page": 10,
+      "items": [
+        {
+          "label": "Shine Muscat grape",
+          "subject": "one compact cluster of luminous pale-green Shine Muscat grapes with a vine leaf",
+          "image_path": "book/art/glossary/cutouts/additions/fruit-10-shine-muscat.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/fruit-10-shine-muscat.txt",
+          "origin": "new_transparent_art"
+        },
+        {
+          "label": "Strawberries",
+          "subject": "two ripe strawberries with green calyxes",
+          "image_path": "book/art/glossary/pages/fruit-05.png",
+          "panel": 1,
+          "prompt_path": "book/prompts/glossary-pages/fruit-05.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "Strawberries (ichigo)"
+    },
+    {
+      "category": "fruit",
+      "page": 11,
+      "items": [
+        {
+          "label": "Sudachi (citrus)",
+          "subject": "two small green sudachi citrus fruits, one sliced to reveal pale-green juicy segments",
+          "image_path": "book/art/glossary/cutouts/additions/fruit-11-sudachi.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/fruit-11-sudachi.txt",
+          "origin": "new_transparent_art"
+        },
+        {
+          "label": "suika (early watermelon)",
+          "subject": "one small striped watermelon and one cut wedge showing the red flesh",
+          "image_path": "book/art/glossary/singles/fruit-07-new.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-pages/fruit-07-new.txt",
+          "origin": "new_inline_art"
+        }
+      ],
+      "end_label": "Suika (watermelon)"
+    },
+    {
+      "category": "fruit",
+      "page": 12,
+      "items": [
+        {
+          "label": "Ume (green plum)",
+          "subject": "two firm green Japanese ume plums on a short leafy twig",
+          "image_path": "book/art/glossary/cutouts/additions/fruit-10-green-ume.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/fruit-10-green-ume.txt",
+          "origin": "new_transparent_art"
+        },
+        {
+          "label": "watermelon",
+          "subject": "a small watermelon and one cut slice with red flesh",
+          "image_path": "book/art/glossary/pages/fruit-06.png",
+          "panel": 0,
+          "prompt_path": "book/prompts/glossary-pages/fruit-06.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "white peach"
+    },
+    {
+      "category": "fruit",
+      "page": 13,
+      "items": [
+        {
+          "label": "Yamabudo (wild mountain grape)",
+          "subject": "a small cluster of dark wild mountain grapes on a vine",
+          "image_path": "book/art/glossary/pages/fruit-07.png",
+          "panel": 0,
+          "prompt_path": "book/prompts/glossary-pages/fruit-07.txt",
+          "origin": "paired_pilot_art"
+        },
+        {
+          "label": "yellow plums (完熟梅)",
+          "subject": "two ripe golden-yellow Japanese ume plums with a small green leaf, one showing warm amber blush",
+          "image_path": "book/art/glossary/cutouts/additions/fruit-11-yellow-ume.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/fruit-11-yellow-ume.txt",
+          "origin": "new_transparent_art"
+        }
+      ],
+      "end_label": "ブルーベリー (blueberry)"
+    },
+    {
+      "category": "fruit",
+      "page": 14,
+      "items": [
+        {
+          "label": "プラム (plum)",
+          "subject": "two ripe Japanese plums, one with a leaf",
+          "image_path": "book/art/glossary/singles/fruit-09-new.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-pages/fruit-09-new.txt",
+          "origin": "new_inline_art"
+        },
+        {
+          "label": "梨 (Japanese pear)",
+          "subject": "one round Japanese pear with a leaf",
+          "image_path": "book/art/glossary/pages/fruit-07.png",
+          "panel": 1,
+          "prompt_path": "book/prompts/glossary-pages/fruit-07.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "西瓜 (watermelon)"
+    },
+    {
+      "category": "vegetable",
+      "page": 1,
+      "items": [
+        {
+          "label": "Bamboo shoots",
+          "subject": "one fresh bamboo shoot in layered husk",
+          "image_path": "book/art/glossary/pages/vegetable-01.png",
+          "panel": 0,
+          "prompt_path": "book/prompts/glossary-pages/vegetable-01.txt",
+          "origin": "paired_pilot_art"
+        },
+        {
+          "label": "bitter melon",
+          "subject": "one green bitter melon with its ridged surface",
+          "image_path": "book/art/glossary/pages/vegetable-01.png",
+          "panel": 1,
+          "prompt_path": "book/prompts/glossary-pages/vegetable-01.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "bitter melon"
+    },
+    {
+      "category": "vegetable",
+      "page": 2,
+      "items": [
+        {
+          "label": "Fava beans",
+          "subject": "two fresh broad bean (soramame) pods, one opened to reveal three plump pale-green beans",
+          "image_path": "book/art/glossary/cutouts/additions/vegetable-02-fava-beans.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/vegetable-02-fava-beans.txt",
+          "origin": "new_transparent_art"
+        },
+        {
+          "label": "Fuki (butterbur)",
+          "subject": "fresh fuki butterbur: two long pale-green hollow leaf stalks with one broad round leaf",
+          "image_path": "book/art/glossary/cutouts/additions/vegetable-02-fuki.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/vegetable-02-fuki.txt",
+          "origin": "new_transparent_art"
+        }
+      ],
+      "end_label": "Fuki (butterbur)"
+    },
+    {
+      "category": "vegetable",
+      "page": 3,
+      "items": [
+        {
+          "label": "Ginnan (ginkgo nut)",
+          "subject": "a small group of ginkgo nuts in their pale shells with one fan-shaped ginkgo leaf",
+          "image_path": "book/art/glossary/singles/vegetable-02-new.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-pages/vegetable-02-new.txt",
+          "origin": "new_inline_art"
+        },
+        {
+          "label": "Gobō (burdock root)",
+          "subject": "two long slender burdock roots with a few leaves",
+          "image_path": "book/art/glossary/pages/vegetable-02.png",
+          "panel": 0,
+          "prompt_path": "book/prompts/glossary-pages/vegetable-02.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "Gobō (burdock root)"
+    },
+    {
+      "category": "vegetable",
+      "page": 4,
+      "items": [
+        {
+          "label": "green peas",
+          "subject": "three tender green pea pods, one opened to show a neat row of round fresh peas",
+          "image_path": "book/art/glossary/cutouts/additions/vegetable-04-green-peas.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/vegetable-04-green-peas.txt",
+          "origin": "new_transparent_art"
+        },
+        {
+          "label": "Jūroku-sasage (yard-long beans)",
+          "subject": "a small bunch of very long slender green yard-long beans (jūroku-sasage), looped loosely with a few leaves",
+          "image_path": "book/art/glossary/cutouts/additions/vegetable-04-yardlong-beans.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/vegetable-04-yardlong-beans.txt",
+          "origin": "new_transparent_art"
+        }
+      ],
+      "end_label": "Jūroku-sasage (yard-long beans)"
+    },
+    {
+      "category": "vegetable",
+      "page": 5,
+      "items": [
+        {
+          "label": "Kabocha squash",
+          "subject": "one dark green kabocha squash and one cut wedge",
+          "image_path": "book/art/glossary/pages/vegetable-02.png",
+          "panel": 1,
+          "prompt_path": "book/prompts/glossary-pages/vegetable-02.txt",
+          "origin": "paired_pilot_art"
+        },
+        {
+          "label": "lotus root",
+          "subject": "one lotus rhizome segment and one sliced cross-section with holes",
+          "image_path": "book/art/glossary/pages/vegetable-03.png",
+          "panel": 0,
+          "prompt_path": "book/prompts/glossary-pages/vegetable-03.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "Lotus root (renkon)"
+    },
+    {
+      "category": "vegetable",
+      "page": 6,
+      "items": [
+        {
+          "label": "Maitake (hen of the woods mushroom)",
+          "subject": "one clustered maitake mushroom (hen of the woods), overlapping thin gray-brown fronds at its base",
+          "image_path": "book/art/glossary/cutouts/additions/vegetable-05-maitake.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/vegetable-05-maitake.txt",
+          "origin": "new_transparent_art"
+        },
+        {
+          "label": "Matsutake mushroom",
+          "subject": "one matsutake mushroom with thick white stem and brown cap",
+          "image_path": "book/art/glossary/pages/vegetable-03.png",
+          "panel": 1,
+          "prompt_path": "book/prompts/glossary-pages/vegetable-03.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "Matsutake mushrooms"
+    },
+    {
+      "category": "vegetable",
+      "page": 7,
+      "items": [
+        {
+          "label": "Murasaki-imo (purple sweet potato)",
+          "subject": "one purple sweet potato and one cut section showing purple flesh",
+          "image_path": "book/art/glossary/pages/vegetable-04.png",
+          "panel": 0,
+          "prompt_path": "book/prompts/glossary-pages/vegetable-04.txt",
+          "origin": "paired_pilot_art"
+        },
+        {
+          "label": "Myōga (ginger bud)",
+          "subject": "two pink myoga ginger flower buds",
+          "image_path": "book/art/glossary/pages/vegetable-04.png",
+          "panel": 1,
+          "prompt_path": "book/prompts/glossary-pages/vegetable-04.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "myōga (ginger buds)"
+    },
+    {
+      "category": "vegetable",
+      "page": 8,
+      "items": [
+        {
+          "label": "Mōi cucumber (Okinawan cucumber)",
+          "subject": "one thick pale-green Okinawan mōi cucumber with natural ribbing and one cut end showing seeds",
+          "image_path": "book/art/glossary/cutouts/additions/vegetable-08-moi-cucumber.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/vegetable-08-moi-cucumber.txt",
+          "origin": "new_transparent_art"
+        },
+        {
+          "label": "nasu (eggplant)",
+          "subject": "one glossy purple Japanese eggplant with green calyx",
+          "image_path": "book/art/glossary/singles/vegetable-05-new.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-pages/vegetable-05-new.txt",
+          "origin": "new_inline_art"
+        }
+      ],
+      "end_label": "nasu (eggplant)"
+    },
+    {
+      "category": "vegetable",
+      "page": 9,
+      "items": [
+        {
+          "label": "New garlic",
+          "subject": "one newly harvested garlic bulb with purple-white papery skin, roots and an attached green stem",
+          "image_path": "book/art/glossary/cutouts/additions/vegetable-07-new-garlic.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/vegetable-07-new-garlic.txt",
+          "origin": "new_transparent_art"
+        },
+        {
+          "label": "okra",
+          "subject": "two green okra pods and one cut star-shaped section",
+          "image_path": "book/art/glossary/pages/vegetable-05.png",
+          "panel": 0,
+          "prompt_path": "book/prompts/glossary-pages/vegetable-05.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "okra"
+    },
+    {
+      "category": "vegetable",
+      "page": 10,
+      "items": [
+        {
+          "label": "Sanshō (young pepper leaves)",
+          "subject": "a short branch of tender young sanshō Japanese pepper leaves, finely divided bright-green leaflets",
+          "image_path": "book/art/glossary/cutouts/additions/vegetable-10-sansho-leaves.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/vegetable-10-sansho-leaves.txt",
+          "origin": "new_transparent_art"
+        },
+        {
+          "label": "Satoimo (taro root)",
+          "subject": "two small taro corms, one peeled to pale flesh",
+          "image_path": "book/art/glossary/pages/vegetable-05.png",
+          "panel": 1,
+          "prompt_path": "book/prompts/glossary-pages/vegetable-05.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "Satoimo (taro root)"
+    },
+    {
+      "category": "vegetable",
+      "page": 11,
+      "items": [
+        {
+          "label": "Shimeji (beech mushroom)",
+          "subject": "one small cluster of Japanese shimeji mushrooms with slender pale stems and tan-brown rounded caps",
+          "image_path": "book/art/glossary/cutouts/additions/vegetable-09-shimeji.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/vegetable-09-shimeji.txt",
+          "origin": "new_transparent_art"
+        },
+        {
+          "label": "Shishito pepper",
+          "subject": "two slender green shishito peppers",
+          "image_path": "book/art/glossary/pages/vegetable-06.png",
+          "panel": 0,
+          "prompt_path": "book/prompts/glossary-pages/vegetable-06.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "Shishitō (shishito pepper)"
+    },
+    {
+      "category": "vegetable",
+      "page": 12,
+      "items": [
+        {
+          "label": "shiso (perilla leaves)",
+          "subject": "a sprig of serrated green shiso leaves",
+          "image_path": "book/art/glossary/singles/vegetable-07-new.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-pages/vegetable-07-new.txt",
+          "origin": "new_inline_art"
+        },
+        {
+          "label": "Shungiku (chrysanthemum greens)",
+          "subject": "a small sprig of edible chrysanthemum greens with lobed leaves",
+          "image_path": "book/art/glossary/pages/vegetable-06.png",
+          "panel": 1,
+          "prompt_path": "book/prompts/glossary-pages/vegetable-06.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "Shungiku (garland chrysanthemum)"
+    },
+    {
+      "category": "vegetable",
+      "page": 13,
+      "items": [
+        {
+          "label": "Silk pod peas",
+          "subject": "three tender flat green silk pod peas, one opened slightly to show tiny peas",
+          "image_path": "book/art/glossary/cutouts/additions/vegetable-11-silk-pod-peas.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/vegetable-11-silk-pod-peas.txt",
+          "origin": "new_transparent_art"
+        },
+        {
+          "label": "spring cabbage",
+          "subject": "one tender pale-green spring cabbage head",
+          "image_path": "book/art/glossary/pages/vegetable-07.png",
+          "panel": 0,
+          "prompt_path": "book/prompts/glossary-pages/vegetable-07.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "Sweet potato (satsumaimo)"
+    },
+    {
+      "category": "vegetable",
+      "page": 14,
+      "items": [
+        {
+          "label": "tomorokoshi (young corn)",
+          "subject": "one young corn cob partly in its green husk",
+          "image_path": "book/art/glossary/pages/vegetable-07.png",
+          "panel": 1,
+          "prompt_path": "book/prompts/glossary-pages/vegetable-07.txt",
+          "origin": "paired_pilot_art"
+        },
+        {
+          "label": "Tsuru-murasaki (Malabar spinach)",
+          "subject": "one short vine of Malabar spinach (tsurumurasaki) with thick glossy heart-shaped green leaves and a purple-green stem",
+          "image_path": "book/art/glossary/cutouts/additions/vegetable-12-malabar-spinach.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/vegetable-12-malabar-spinach.txt",
+          "origin": "new_transparent_art"
+        }
+      ],
+      "end_label": "Tsuru-murasaki (Malabar spinach)"
+    },
+    {
+      "category": "vegetable",
+      "page": 15,
+      "items": [
+        {
+          "label": "tōgan (winter melon)",
+          "subject": "one green winter melon and one cut wedge with pale flesh",
+          "image_path": "book/art/glossary/pages/vegetable-08.png",
+          "panel": 0,
+          "prompt_path": "book/prompts/glossary-pages/vegetable-08.txt",
+          "origin": "paired_pilot_art"
+        },
+        {
+          "label": "Udo (mountain asparagus)",
+          "subject": "two pale tender udo mountain asparagus shoots with small leaf tips and fine roots",
+          "image_path": "book/art/glossary/cutouts/additions/vegetable-13-udo.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/vegetable-13-udo.txt",
+          "origin": "new_transparent_art"
+        }
+      ],
+      "end_label": "オクラ (okra)"
+    },
+    {
+      "category": "vegetable",
+      "page": 16,
+      "items": [
+        {
+          "label": "トマト (tomato)",
+          "subject": "one ripe red tomato on a short vine",
+          "image_path": "book/art/glossary/pages/vegetable-08.png",
+          "panel": 1,
+          "prompt_path": "book/prompts/glossary-pages/vegetable-08.txt",
+          "origin": "paired_pilot_art"
+        },
+        {
+          "label": "胡瓜 (cucumber)",
+          "subject": "one slim Japanese cucumber with a leaf and a small blossom",
+          "image_path": "book/art/glossary/singles/vegetable-10-new.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-pages/vegetable-10-new.txt",
+          "origin": "new_inline_art"
+        }
+      ],
+      "end_label": "茗荷 (myoga ginger)"
+    },
+    {
+      "category": "fish",
+      "page": 1,
+      "items": [
+        {
+          "label": "ayu (sweetfish)",
+          "subject": "one slender Japanese ayu sweetfish, olive-silver river fish with a subtle yellow mark near the gill and natural fins",
+          "image_path": "book/art/glossary/cutouts/additions/fish-01-ayu.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/fish-01-ayu.txt",
+          "origin": "new_transparent_art"
+        },
+        {
+          "label": "Bonito",
+          "subject": "one whole bonito fish in side profile",
+          "image_path": "book/art/glossary/pages/fish-01.png",
+          "panel": 0,
+          "prompt_path": "book/prompts/glossary-pages/fish-01.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "Bonito"
+    },
+    {
+      "category": "fish",
+      "page": 2,
+      "items": [
+        {
+          "label": "conger eel (anago)",
+          "subject": "one Japanese conger eel (anago), a long slender brown-gray marine eel with clearly visible fins and natural anatomy",
+          "image_path": "book/art/glossary/cutouts/additions/fish-01-conger-eel.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/fish-01-conger-eel.txt",
+          "origin": "new_transparent_art"
+        },
+        {
+          "label": "Flounder",
+          "subject": "one whole flat flounder seen from above",
+          "image_path": "book/art/glossary/pages/fish-01.png",
+          "panel": 1,
+          "prompt_path": "book/prompts/glossary-pages/fish-01.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "Flounder"
+    },
+    {
+      "category": "fish",
+      "page": 3,
+      "items": [
+        {
+          "label": "Hatatehagi (filefish)",
+          "subject": "one Japanese filefish, a small laterally flattened gray-tan fish with rough skin, tiny mouth and first dorsal spine",
+          "image_path": "book/art/glossary/cutouts/additions/fish-03-filefish.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/fish-03-filefish.txt",
+          "origin": "new_transparent_art"
+        },
+        {
+          "label": "Hokke (Atka mackerel)",
+          "subject": "one Hokke Atka mackerel, a mottled gray-brown marine fish with long dorsal fin and natural proportions",
+          "image_path": "book/art/glossary/cutouts/additions/fish-02-hokke.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/fish-02-hokke.txt",
+          "origin": "new_transparent_art"
+        }
+      ],
+      "end_label": "Hokke (Atka mackerel)"
+    },
+    {
+      "category": "fish",
+      "page": 4,
+      "items": [
+        {
+          "label": "Horse mackerel",
+          "subject": "one whole silver-blue horse mackerel in side profile",
+          "image_path": "book/art/glossary/pages/fish-02.png",
+          "panel": 0,
+          "prompt_path": "book/prompts/glossary-pages/fish-02.txt",
+          "origin": "paired_pilot_art"
+        },
+        {
+          "label": "Hotaru ika (firefly squid)",
+          "subject": "one small firefly squid with visible tentacles",
+          "image_path": "book/art/glossary/pages/fish-02.png",
+          "panel": 1,
+          "prompt_path": "book/prompts/glossary-pages/fish-02.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "ishidai (striped beakfish)"
+    },
+    {
+      "category": "fish",
+      "page": 5,
+      "items": [
+        {
+          "label": "Iwashi (sardine)",
+          "subject": "one whole silver Japanese sardine in clear side profile",
+          "image_path": "book/art/glossary/singles/fish-03-new.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-pages/fish-03-new.txt",
+          "origin": "new_inline_art"
+        },
+        {
+          "label": "Kinmedai (splendid alfonsino)",
+          "subject": "one red splendid alfonsino fish with large golden eye",
+          "image_path": "book/art/glossary/pages/fish-03.png",
+          "panel": 0,
+          "prompt_path": "book/prompts/glossary-pages/fish-03.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "Kinmedai (splendid alfonsino)"
+    },
+    {
+      "category": "fish",
+      "page": 6,
+      "items": [
+        {
+          "label": "Kisu (whiting)",
+          "subject": "one Japanese kisu whiting, a small slender silver fish with pale gold back and delicate translucent fins",
+          "image_path": "book/art/glossary/cutouts/additions/fish-04-kisu.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/fish-04-kisu.txt",
+          "origin": "new_transparent_art"
+        },
+        {
+          "label": "Kuruma ebi (Japanese tiger prawn)",
+          "subject": "one striped kuruma tiger prawn with antennae",
+          "image_path": "book/art/glossary/pages/fish-03.png",
+          "panel": 1,
+          "prompt_path": "book/prompts/glossary-pages/fish-03.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "Kuruma-ebi (Japanese tiger prawn)"
+    },
+    {
+      "category": "fish",
+      "page": 7,
+      "items": [
+        {
+          "label": "Pacific saury (sanma)",
+          "subject": "one Pacific saury (sanma), long and slender with a blue steel back, silver belly, pointed snout and delicate fins",
+          "image_path": "book/art/glossary/cutouts/additions/fish-05-pacific-saury.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/fish-05-pacific-saury.txt",
+          "origin": "new_transparent_art"
+        },
+        {
+          "label": "Sake (salmon)",
+          "subject": "one whole salmon fish in side profile",
+          "image_path": "book/art/glossary/pages/fish-04.png",
+          "panel": 1,
+          "prompt_path": "book/prompts/glossary-pages/fish-04.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "Salmon (aki-sake)"
+    },
+    {
+      "category": "fish",
+      "page": 8,
+      "items": [
+        {
+          "label": "Sawara (Spanish mackerel)",
+          "subject": "one Japanese sawara Spanish mackerel, long streamlined silver fish with blue-gray back and small dark side markings",
+          "image_path": "book/art/glossary/cutouts/additions/fish-08-sawara.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/fish-08-sawara.txt",
+          "origin": "new_transparent_art"
+        },
+        {
+          "label": "Sayori (halfbeak)",
+          "subject": "one slender Japanese halfbeak with its longer lower jaw",
+          "image_path": "book/art/glossary/pages/fish-05.png",
+          "panel": 0,
+          "prompt_path": "book/prompts/glossary-pages/fish-05.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "Shiira (mahi-mahi)"
+    },
+    {
+      "category": "fish",
+      "page": 9,
+      "items": [
+        {
+          "label": "Shijimi (freshwater clams)",
+          "subject": "three small dark freshwater shijimi clams, one slightly open",
+          "image_path": "book/art/glossary/singles/fish-05-new.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-pages/fish-05-new.txt",
+          "origin": "new_inline_art"
+        },
+        {
+          "label": "squid",
+          "subject": "one whole squid with mantle, fins, and tentacles",
+          "image_path": "book/art/glossary/pages/fish-05.png",
+          "panel": 1,
+          "prompt_path": "book/prompts/glossary-pages/fish-05.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "Suzuki (sea bass)"
+    },
+    {
+      "category": "fish",
+      "page": 10,
+      "items": [
+        {
+          "label": "Tai (sea bream)",
+          "subject": "one red Japanese sea bream (tai), oval-bodied with rose-red scales, spiny dorsal fin and natural proportions",
+          "image_path": "book/art/glossary/cutouts/additions/fish-08-sea-bream.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-additions/fish-08-sea-bream.txt",
+          "origin": "new_transparent_art"
+        },
+        {
+          "label": "tako (octopus)",
+          "subject": "one small octopus with eight visible arms",
+          "image_path": "book/art/glossary/pages/fish-06.png",
+          "panel": 0,
+          "prompt_path": "book/prompts/glossary-pages/fish-06.txt",
+          "origin": "paired_pilot_art"
+        }
+      ],
+      "end_label": "Yellowtail amberjack (kanpachi)"
+    },
+    {
+      "category": "fish",
+      "page": 11,
+      "items": [
+        {
+          "label": "太刀魚 (beltfish)",
+          "subject": "one long silver beltfish in side profile",
+          "image_path": "book/art/glossary/pages/fish-06.png",
+          "panel": 1,
+          "prompt_path": "book/prompts/glossary-pages/fish-06.txt",
+          "origin": "paired_pilot_art"
+        },
+        {
+          "label": "鮑 (abalone)",
+          "subject": "one abalone shell with its living mantle visible in natural-history study view",
+          "image_path": "book/art/glossary/singles/fish-07-new.png",
+          "panel": "full",
+          "prompt_path": "book/prompts/glossary-pages/fish-07-new.txt",
+          "origin": "new_inline_art"
+        }
+      ],
+      "end_label": "鱧 (pike conger)"
+    }
+  ]
+}
