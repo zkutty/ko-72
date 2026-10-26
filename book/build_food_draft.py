@@ -149,7 +149,7 @@ def glossary_cover(pdf: canvas.Canvas, image_path: Path, count: int,
     pdf.drawImage(image, 18, 255, width=image_w, height=image_h, mask="auto")
     pdf.setStrokeColor(RULE)
     pdf.line(36, 235, PAGE_W - 36, 235)
-    draw_paragraph(pdf, f"{count} foods consolidated from {source_count} source labels in currently cached season letters. Every listed fruit, vegetable, and fish has a name, a short food note, and season cross-reference. Food identities, Japanese spellings, and catalogue-derived notes need editorial and source review before print.", 36, 214, PAGE_W - 72, "Georgia", 9.5, 14)
+    draw_paragraph(pdf, f"{count} foods consolidated from {source_count} source labels in currently cached season letters. Each year band highlights the Kō letters that mention that food, beginning with spring in February. These are source references, not verified availability windows: missing letters and regional differences still need review. Food identities, Japanese spellings, and notes also need review before print.", 36, 214, PAGE_W - 72, "Georgia", 9.5, 14)
     pdf.setFillColor(STONE)
     pdf.setFont("Helvetica", 7)
     pdf.drawString(36, 48, f"{study_count} ITEM STUDIES / TWO ON EACH OF {page_count} CATEGORY PAGES")
@@ -166,6 +166,37 @@ def fitted_text(pdf: canvas.Canvas, text: str, x: float, y: float, max_width: fl
     pdf.setFillColor(color)
     pdf.setFont(font, size)
     pdf.drawString(x, y, text)
+
+
+YEAR_ORDER = tuple(range(7, 73)) + tuple(range(1, 7))
+SEASON_ORDER = ("spring", "summer", "autumn", "winter")
+
+
+def season_band(pdf: canvas.Canvas, ids: list[int], x: float, top: float,
+                width: float, seasons: dict[int, dict]) -> None:
+    """Unroll the 72-part Kō wheel into a compact, spring-first year band."""
+    if len(YEAR_ORDER) != 72 or len(set(YEAR_ORDER)) != 72:
+        raise ValueError("Year band must contain all 72 seasons exactly once")
+    if set(ids) - set(YEAR_ORDER):
+        raise ValueError(f"Unknown Kō IDs in year band: {sorted(set(ids) - set(YEAR_ORDER))}")
+    band_width = min(width, 216)
+    group_gap, tick_gap = 3, .45
+    tick_width = (band_width - 3 * group_gap - 68 * tick_gap) / 72
+    if tick_width < 1.5:
+        raise ValueError("Year band is too narrow to distinguish its marks")
+    selected = set(ids)
+    cursor = x
+    for index, sid in enumerate(YEAR_ORDER):
+        if index and index % 18 == 0:
+            cursor += group_gap
+        elif index:
+            cursor += tick_gap
+        season = seasons[sid]["major_season"]
+        if season != SEASON_ORDER[index // 18]:
+            raise ValueError(f"Kō {sid:02d} is in the wrong year-band quarter")
+        pdf.setFillColor(ACCENTS[season] if sid in selected else RULE)
+        pdf.rect(cursor, top - 5, tick_width, 5, fill=1, stroke=0)
+        cursor += tick_width
 
 
 def season_key(pdf: canvas.Canvas, seasons: dict[int, dict], number: int) -> int:
@@ -219,8 +250,10 @@ def glossary_entry(pdf: canvas.Canvas, entry: dict, x: float, y: float,
                 text_width, "ArialUnicode", 7.3, STONE)
     bottom = draw_paragraph(pdf, description, content_x, y - 32,
                             text_width, "Georgia", 7.6, 9.2, INK)
+    season_band(pdf, entry["season_ids"], content_x, bottom - 8,
+                text_width, seasons)
     # The next title ascends above its baseline; allow room below the note.
-    return y - bottom + 16
+    return y - bottom + 25
 
 
 def floating_study(pdf: canvas.Canvas, image: ImageReader,
@@ -259,8 +292,8 @@ def prepare_cutout(path: Path, panel: int | str, output: Path) -> None:
     art = art.crop((max(0, bounds[0] - padding), max(0, bounds[1] - padding),
                     min(art.width, bounds[2] + padding),
                     min(art.height, bounds[3] + padding)))
-    if max(art.size) > 480:
-        art.thumbnail((480, 480), Image.Resampling.LANCZOS)
+    if max(art.size) > 320:
+        art.thumbnail((320, 320), Image.Resampling.LANCZOS)
     art.save(output, format="PNG", optimize=True)
 
 
@@ -312,9 +345,17 @@ def build_glossary(glossary: dict, seasons: dict[int, dict], image_path: Path) -
             cursor += len(page)
             pdf.setStrokeColor(RULE)
             pdf.line(36, 538, PAGE_W - 36, 538)
+            for quarter, label in enumerate(("SPR  /  FEB", "SUM  /  MAY",
+                                             "AUT  /  AUG", "WIN  /  NOV")):
+                legend_x = 36 + quarter * 82
+                pdf.setFillColor(ACCENTS[SEASON_ORDER[quarter]])
+                pdf.rect(legend_x, 521, 10, 2, fill=1, stroke=0)
+                pdf.setFillColor(STONE)
+                pdf.setFont("Helvetica", 5.8)
+                pdf.drawString(legend_x + 13, 519, label)
             # Selected entries use an art exclusion zone beside the complete
             # note. The following entry resumes the full text measure.
-            y = 520
+            y = 501
             for entry in page:
                 numbered = next((number for number, item in enumerate(study["items"], 1)
                                  if item["label"] == entry["display_name"]), None)
@@ -340,7 +381,7 @@ def build_glossary(glossary: dict, seasons: dict[int, dict], image_path: Path) -
                 raise ValueError(f"Glossary text overflows on {category} page {page_index}: {y:.1f}")
             pdf.setFont("Helvetica", 6.1)
             pdf.setFillColor(STONE)
-            pdf.drawString(36, 27, "STUDIES KEYED TO ENTRIES / KO IDS IN SEASON KEY / DRAFT")
+            pdf.drawString(36, 27, "COLOR = MENTIONED IN A CACHED KO LETTER / UNMARKED = UNVERIFIED")
             pdf.drawRightString(PAGE_W - 36, 27, f"{page_number:03d}")
             pdf.showPage()
             page_number += 1
