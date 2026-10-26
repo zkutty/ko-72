@@ -11,9 +11,10 @@ BOOK = Path(__file__).resolve().parent
 MAX_ENTRIES = 6
 
 
-def pages_for(entries: list[dict], category: str | None = None) -> list[list[dict]]:
+def pages_for(entries: list[dict], category: str | None = None,
+              plan_path: Path | None = None) -> list[list[dict]]:
     if category is not None:
-        plan = json.loads((BOOK / "glossary_illustration_plan.json").read_text())
+        plan = json.loads((plan_path or BOOK / "glossary_illustration_plan.json").read_text())
         boundaries = [item["end_label"] for item in plan["entries"] if item["category"] == category]
         if not boundaries:
             raise ValueError(f"No glossary page boundaries for {category}")
@@ -58,14 +59,12 @@ def prompt_for(item: dict) -> str:
     )
 
 
-def main() -> None:
-    glossary = json.loads((BOOK / "glossary.json").read_text())
-    plan_path = BOOK / "glossary_illustration_plan.json"
+def validate_plan(glossary: dict, plan_path: Path) -> tuple[int, int]:
     plan = json.loads(plan_path.read_text())
     expected = {}
     for category in ("fruit", "vegetable", "fish"):
         entries = [e for e in glossary["entries"] if e["category"] == category]
-        for index, page in enumerate(pages_for(entries, category), 1):
+        for index, page in enumerate(pages_for(entries, category, plan_path), 1):
             expected[(category, index)] = {e["display_name"] for e in page}
     observed = set()
     labels_seen = set()
@@ -97,7 +96,17 @@ def main() -> None:
         observed.add(key)
     if observed != set(expected):
         raise ValueError(f"Illustration plan missing pages: {sorted(set(expected) - observed)}")
-    print(f"{len(observed)} glossary pages planned, {len(labels_seen)} distinct labeled studies")
+    return len(observed), len(labels_seen)
+
+
+def main() -> None:
+    # The raw plan preserves source-label art provenance. The printed plan
+    # points at consolidated foods and must pass the same page/art checks.
+    raw = json.loads((BOOK / "glossary.json").read_text())
+    index = json.loads((BOOK / "glossary_index.json").read_text())
+    validate_plan(raw, BOOK / "glossary_illustration_plan.json")
+    pages, studies = validate_plan(index, BOOK / "glossary_index_illustration_plan.json")
+    print(f"{pages} indexed glossary pages planned, {studies} distinct labeled studies")
 
 
 if __name__ == "__main__":

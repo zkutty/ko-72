@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import argparse
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
@@ -132,7 +133,7 @@ def build_seasons(seasons: dict, cache: dict, art: dict) -> None:
 
 
 def glossary_cover(pdf: canvas.Canvas, image_path: Path, count: int,
-                   page_count: int, study_count: int) -> None:
+                   source_count: int, page_count: int, study_count: int) -> None:
     page_background(pdf)
     pdf.setFillColor(INK)
     pdf.setFont("Georgia", 27)
@@ -148,7 +149,7 @@ def glossary_cover(pdf: canvas.Canvas, image_path: Path, count: int,
     pdf.drawImage(image, 18, 255, width=image_w, height=image_h, mask="auto")
     pdf.setStrokeColor(RULE)
     pdf.line(36, 235, PAGE_W - 36, 235)
-    draw_paragraph(pdf, f"{count} distinct source labels from currently cached season letters. Every listed fruit, vegetable, and fish has a name, a short food note, and season cross-reference. Names, duplicate aliases, Japanese spellings, and catalogue-derived notes need editorial and source review before print.", 36, 214, PAGE_W - 72, "Georgia", 9.5, 14)
+    draw_paragraph(pdf, f"{count} foods consolidated from {source_count} source labels in currently cached season letters. Every listed fruit, vegetable, and fish has a name, a short food note, and season cross-reference. Food identities, Japanese spellings, and catalogue-derived notes need editorial and source review before print.", 36, 214, PAGE_W - 72, "Georgia", 9.5, 14)
     pdf.setFillColor(STONE)
     pdf.setFont("Helvetica", 7)
     pdf.drawString(36, 48, f"{study_count} ITEM STUDIES / TWO ON EACH OF {page_count} CATEGORY PAGES")
@@ -267,12 +268,14 @@ def build_glossary(glossary: dict, seasons: dict[int, dict], image_path: Path) -
     pdf = canvas.Canvas(str(PROOFS / "ko-food-glossary-draft.pdf"), pagesize=(PAGE_W, PAGE_H))
     proof_images = TemporaryDirectory(prefix="ko-glossary-proof-")
     pdf.setTitle("Kō — illustrated fruit, vegetable, and fish glossary")
-    plan = load(BOOK / "glossary_illustration_plan.json")
+    plan_path = BOOK / "glossary_index_illustration_plan.json"
+    plan = load(plan_path)
     descriptions = load(BOOK / "glossary_descriptions.json")["entries"]
     missing = {entry["catalog_key"] for entry in glossary["entries"]} - set(descriptions)
     if missing:
         raise ValueError(f"Missing glossary food notes: {sorted(missing)}")
     glossary_cover(pdf, image_path, glossary["entry_count"],
+                   glossary["source_label_entries"],
                    len(plan["entries"]), sum(len(p["items"]) for p in plan["entries"]))
     page_number = 2
     art_pages = {(item["category"], item["page"]): item for item in plan["entries"]}
@@ -280,7 +283,7 @@ def build_glossary(glossary: dict, seasons: dict[int, dict], image_path: Path) -
     for category, title in (("fruit", "Fruit"), ("vegetable", "Vegetables"), ("fish", "Fish & seafood")):
         entries = [e for e in glossary["entries"] if e["category"] == category]
         cursor = 0
-        for page_index, page in enumerate(pages_for(entries, category), 1):
+        for page_index, page in enumerate(pages_for(entries, category, plan_path), 1):
             study = art_pages[(category, page_index)]
             for selected in study["items"]:
                 path = str(ROOT / selected["image_path"] if selected["origin"] == "new_transparent_art"
@@ -329,7 +332,9 @@ def build_glossary(glossary: dict, seasons: dict[int, dict], image_path: Path) -
                     reader, size = proof_cache[(path, selected["panel"])]
                     floating_study(pdf, reader, size, entry, numbered,
                                    272 if side == "right" else 36, y + 8)
-                    entry_height = max(entry_height, 80)
+                    # The illustration caption sits 71 pt below the entry
+                    # baseline; leave clear space before the next title.
+                    entry_height = max(entry_height, 96)
                 y -= entry_height
             if y < 42:
                 raise ValueError(f"Glossary text overflows on {category} page {page_index}: {y:.1f}")
@@ -345,15 +350,19 @@ def build_glossary(glossary: dict, seasons: dict[int, dict], image_path: Path) -
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--glossary-only", action="store_true")
+    args = parser.parse_args()
     fonts()
     PROOFS.mkdir(exist_ok=True)
     seasons = {s["id"]: s for s in load(ROOT / "data" / "seasons.json")["seasons"]}
     cache = load(ROOT / "data" / "content_cache.json")
     art = load(BOOK / "art_manifest.json")["entries"]
-    glossary = load(BOOK / "glossary.json")
+    glossary = load(BOOK / "glossary_index.json")
     if glossary["source_seasons"] != len(cache):
         raise ValueError("Glossary is stale")
-    build_seasons(seasons, cache, art)
+    if not args.glossary_only:
+        build_seasons(seasons, cache, art)
     build_glossary(glossary, seasons, BOOK / "art" / "glossary" / "food-triptych-draft.png")
     print("Built food-inclusive season layout and working glossary proofs")
 
