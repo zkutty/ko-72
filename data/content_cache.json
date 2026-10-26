@@ -3412,5 +3412,199 @@
       "closing": "白菊の花弁がひとひら、石畳の上にそっと落ちて、誰を待つでもなく静かに留まっている。"
     },
     "_sent_on": "2026-10-13"
+  },
+  "57": {
+    "en": {
+      "summary": "Crickets gather near doorways, their chirping now close and intimate as autumn deepens toward its coldest nights.",
+      "opening": "In the blue darkness before dawn, a cricket's song rises from the threshold — no longer from distant fields, but from the very stones of the genkan. The chill has driven these small musicians to seek warmth near human dwellings, and their voices carry a plaintive clarity that seems to measure the shortening days. Dew gathers heavy on morning glories that have long since closed, and the air holds the faint sweetness of decaying leaves.",
+      "nature_notes": "Crickets and other autumn insects cluster in the gaps between foundation stones and beneath wooden eaves, their songs intensifying in the evening hours before falling silent well before midnight as temperatures drop. Wild persimmons begin to show orange through yellowing leaves, while cosmos flowers reach their peak bloom along roadsides. The sky takes on a particular depth of blue unique to mid-autumn — what the Japanese call 'sora no aosa' — and migrating geese can be heard passing overhead in the early morning darkness.",
+      "seasonal_produce": {
+        "fruits": [
+          "Kaki (Japanese persimmon)",
+          "Karin (Chinese quince)",
+          "La France pear",
+          "Yamabudo (wild mountain grape)"
+        ],
+        "vegetables": [
+          "Murasaki-imo (purple sweet potato)",
+          "Kikuna (chrysanthemum greens)",
+          "Lotus root",
+          "Shimeji mushroom"
+        ],
+        "fish": [
+          "Kinki (thornyhead rockfish)",
+          "Sawara (Spanish mackerel)",
+          "Haze (yellowfin goby)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "Kinki no nitsuke",
+          "description": "Thornyhead rockfish simmered in sweetened soy — its rich, fatty flesh perfectly suited to the deepening cold of late Kanro."
+        },
+        {
+          "name": "Kaki no shira-ae",
+          "description": "Ripe persimmon dressed with silken tofu and white sesame, the fruit's honeyed sweetness balanced by the gentle bitterness of late-season greens."
+        },
+        {
+          "name": "Kikuna no karashi-ae",
+          "description": "Chrysanthemum greens blanched and dressed with mustard and soy — the slight bitterness echoing the season's turn toward winter's edge."
+        },
+        {
+          "name": "Sawara no misozuke-yaki",
+          "description": "Spanish mackerel marinated in sweet white miso then grilled until caramelized, its autumn richness deepened by fermentation."
+        }
+      ],
+      "cultural_note": "This micro-season falls within the period of 'mushi-kiki' — insect listening — a refined Heian-era pastime that persists in quieter forms today. Families might leave a window cracked to hear the crickets' song, understanding that these voices will soon fall silent. In classical poetry, the cricket at the door is a melancholy image, suggesting both intimacy and transience: the insect seeks warmth even as winter approaches to claim it.",
+      "haiku": {
+        "japanese": "戸に寄りて蟋蟀の声細くなる",
+        "romaji": "to ni yorite / kirigirisu no koe / hosoku naru",
+        "english": "drawing near the door — / the cricket's voice grows thin / in the deepening cold"
+      },
+      "closing": "A single cricket falls silent mid-phrase, and in the pause, you hear the first wild geese calling south through the darkness."
+    },
+    "ja": {
+      "summary": "蟋蟀が戸口に集まり、その声は遠い野原からではなく、家の軒先や敷石の隙間から聞こえてくる。",
+      "opening": "明け方の藍色の闘の中、玄関先から蟋蟀の声が立ち上る。冷え込みを避けて人の住まいに近づいた小さな楽師たちは、日ごとに細くなる声で短くなる秋を数えているかのようだ。朝顔の萎れた蔓には露が重く宿り、空気には落ち葉が朽ちてゆく甘い匂いがかすかに漂う。",
+      "nature_notes": "蟋蟀や鈴虫は、基礎石の隙間や軒下に身を寄せ、夕暮れから夜半前にかけて懸命に鳴く。気温が下がると急に静まり、その沈黙が寒さを告げる。野の柿が色づき始め、道端には秋桜が盛りを迎える。空は「天高く」と呼ばれる中秋特有の深い青を見せ、早朝の暗がりには雁の渡る声が聞こえる。",
+      "seasonal_produce": {
+        "fruits": [
+          "柿",
+          "花梨",
+          "ラ・フランス",
+          "山葡萄"
+        ],
+        "vegetables": [
+          "紫芋",
+          "菊菜（春菊）",
+          "蓮根",
+          "しめじ"
+        ],
+        "fish": [
+          "喜知次（きんき）",
+          "鰆",
+          "鯊（ハゼ）"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "きんきの煮付け",
+          "description": "脂ののった喜知次を甘辛く煮含め、寒露の冷え込みに沁み入る滋味深い一品。"
+        },
+        {
+          "name": "柿の白和え",
+          "description": "熟した柿を絹豆腐と白胡麻で和え、晩秋の果実の蜜のような甘さを引き立てる。"
+        },
+        {
+          "name": "菊菜の辛子和え",
+          "description": "さっと茹でた菊菜を辛子醤油で和え、ほのかな苦味が冬への移ろいを感じさせる。"
+        },
+        {
+          "name": "鰆の味噌漬け焼き",
+          "description": "白味噌に漬け込んだ鰆を香ばしく焼き上げ、秋深まる頃の旨味を凝縮させた焼き物。"
+        }
+      ],
+      "cultural_note": "この候は「虫聴き」の時節と重なる。平安貴族が籠に入れた鈴虫の声を愛でた風雅は、今も窓を少し開けて戸口の蟋蟀に耳を傾ける静かな形で続いている。古歌において戸に寄る蟋蟀は、寒さを逃れて人に近づきながらも、やがて声を失う運命を負う、親しみと哀感の象徴である。",
+      "haiku": {
+        "japanese": "戸に寄りて蟋蟀の声細くなる",
+        "romaji": "to ni yorite / kirigirisu no koe / hosoku naru",
+        "english": "drawing near the door — / the cricket's voice grows thin / in the deepening cold"
+      },
+      "closing": "一匹の蟋蟀がふと声を止め、その間に、南へ渡る雁の初音が闇を渡ってゆく。"
+    },
+    "_sent_on": "2026-10-18"
+  },
+  "58": {
+    "en": {
+      "summary": "The year's first frost silvers the edges of fallen leaves and withered grasses, marking autumn's deepening toward winter.",
+      "opening": "Before dawn, the world holds its breath. A thin rime of frost coats the browning grass, each blade transformed into a needle of white. The air carries that particular stillness of late October mornings — when breath becomes visible and the last persimmons glow like lanterns against bare branches.",
+      "nature_notes": "Migrating geese continue their southward journeys, their calls echoing through pewter skies. Wild chrysanthemums bloom in ditches and along mountain paths, their bitter fragrance intensifying in the cold. The maples on higher slopes have turned fully now, while those in the valleys still hold green at their centers, creating landscapes of layered color.",
+      "seasonal_produce": {
+        "fruits": [
+          "Fuyu persimmon (kaki)",
+          "Asian pear (nashi)",
+          "Satsuma mandarin (mikan)",
+          "Quince (karin)"
+        ],
+        "vegetables": [
+          "Lotus root (renkon)",
+          "Japanese turnip (kabu)",
+          "Chrysanthemum greens (shungiku)",
+          "Butterbur stem (fuki)"
+        ],
+        "fish": [
+          "Pacific saury (sanma)",
+          "Yellowtail (buri)",
+          "Salmon roe (ikura)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "Kabu no soboro-ni",
+          "description": "Tender Japanese turnips simmered with chicken soboro in light dashi — a dish that warms without heaviness, perfect when frost first touches the garden."
+        },
+        {
+          "name": "Buri daikon",
+          "description": "Young yellowtail braised slowly with daikon radish, the fish's autumn fat melting into the vegetable as both reach their seasonal peak together."
+        },
+        {
+          "name": "Kaki no shira-ae",
+          "description": "Ripe persimmon dressed in silken tofu and sesame, balancing the fruit's honeyed sweetness with the subtle bitterness of the season's last warmth."
+        }
+      ],
+      "cultural_note": "This micro-season marks the traditional time for preparing winter clothing and bedding. Families would air out futons and bring down padded kimono from storage, performing mushi-boshi — the ritual sunning of textiles to prevent mold and insects. The first frost also signaled farmers to harvest the last of their daikon and prepare root cellars for winter storage.",
+      "haiku": {
+        "japanese": "初霜や枯葉の縁の白き息",
+        "romaji": "hatsushimo ya / kareha no fuchi no / shiroki iki",
+        "english": "first frost — / along the edge of dead leaves / a white breath"
+      },
+      "closing": "In the blue hour before sunrise, each frozen blade of grass catches the first light and releases it — a field of small flames, extinguished by the warming sun."
+    },
+    "ja": {
+      "summary": "夜明け前、枯草や落葉の縁が白く凍てつき、秋が冬へと深まる気配を告げる初霜の候。",
+      "opening": "払暁の静寂のなか、世界は息をひそめている。庭先の枯草に薄霜がおり、一本一本が白い針のように光る。吐く息が白く立ちのぼる十月末の朝——裸になりかけた枝に残る柿の実が、まるで提灯のように橙色に輝いている。",
+      "nature_notes": "雁の群れは鉛色の空を南へ渡り、その声が冷えた大気に響く。道端や山裾では野菊がひっそりと咲き、冷気のなかでその苦みを帯びた香りがいっそう際立つ。高い山の紅葉は盛りを過ぎ、里ではまだ緑を残す木々もあり、山肌は幾重もの色の層をなしている。",
+      "seasonal_produce": {
+        "fruits": [
+          "柿",
+          "梨",
+          "蜜柑",
+          "花梨（かりん）"
+        ],
+        "vegetables": [
+          "蓮根",
+          "蕪",
+          "春菊",
+          "蕗"
+        ],
+        "fish": [
+          "秋刀魚",
+          "鰤（ぶり）",
+          "いくら"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "蕪のそぼろ煮",
+          "description": "霜に当たって甘みを増した蕪を鶏そぼろとともに薄味の出汁で炊き、身体の芯からじんわりと温まる一品。"
+        },
+        {
+          "name": "鰤大根",
+          "description": "脂の乗り始めた若い鰤と、寒さで甘みを蓄えた大根をじっくり炊き合わせ、互いの旨味が染み渡る晩秋の定番。"
+        },
+        {
+          "name": "柿の白和え",
+          "description": "熟した柿の蜜のような甘さを、絹ごし豆腐と胡麻の衣がやさしく包み、秋の名残を味わう和え物。"
+        }
+      ],
+      "cultural_note": "霜降の頃は、冬支度を本格的に始める時節である。蔵や箪笥から綿入れの着物や布団を出し、虫干しをして陽に当てる。農家では最後の大根を引き、土室（つちむろ）に野菜を貯え、来たる冬に備える。初霜は、自然と人の暮らしが冬へと歩調を合わせる合図であった。",
+      "haiku": {
+        "japanese": "初霜や枯葉の縁の白き息",
+        "romaji": "hatsushimo ya / kareha no fuchi no / shiroki iki",
+        "english": "first frost — / along the edge of dead leaves / a white breath"
+      },
+      "closing": "夜明けの藍色のなか、凍てついた草の一本一本が朝日を受けて燃え立ち、やがて陽が昇るにつれ、その小さな炎は静かに消えてゆく。"
+    },
+    "_sent_on": "2026-10-23"
   }
 }

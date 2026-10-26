@@ -103,6 +103,14 @@
     "season": "Early autumn, when Delaware and Kyoho grapes hang heavy on the vine",
     "source": "Budō to mozzarella no sarada"
   },
+  "buri-daikon": {
+    "name_en": "Simmered yellowtail with daikon radish",
+    "name_jp": "鰤大根",
+    "name_romaji": "buri daikon",
+    "note": "Thick cuts of wild yellowtail are braised low and slow with wedges of daikon in soy, mirin, and sake until the radish turns translucent and drinks up the fish's rich oils. The dish marks the arrival of kan-buri — 'cold yellowtail' — caught between December and February when the fish have fattened for their spawning migration, their flesh marbled and sweet against winter's first real bite.",
+    "season": "Deep winter, when buri arrives fat from cold northern seas",
+    "source": "Buri daikon"
+  },
   "doj-nabe": {
     "name_en": "Loach hot pot",
     "name_jp": "泥鰌鍋",
@@ -327,6 +335,14 @@
     "season": "Early autumn, when winter squash sweetens after the first cool nights",
     "source": "Kabocha no soboro-an"
   },
+  "kabu-no-soboro-ni": {
+    "name_en": "Turnip simmered with crumbled meat",
+    "name_jp": "蕪のそぼろ煮",
+    "name_romaji": "kabu no soboro-ni",
+    "note": "Small white turnips are braised until yielding in dashi, then finished with seasoned crumbled chicken or pork that clings to each tender wedge. The dish belongs to the weeks after the first hard frost, when kabu develop a dense sweetness that only cold nights can coax from the root.",
+    "season": "Late autumn through early winter, when frost-touched turnips reach their sweetest",
+    "source": "Kabu no soboro-ni"
+  },
   "kaki-no-namer": {
     "name_en": "Minced persimmon tartare",
     "name_jp": "柿のなめろう",
@@ -382,6 +398,22 @@
     "note": "Petals of edible chrysanthemum are blanched briefly, then steeped in a delicate dashi and soy mixture and served cold, their faint bitterness yielding to a floral, grassy sweetness. The dish appears on tables around the ninth day of the ninth month, when the Chrysanthemum Festival marks the flower as a symbol of longevity and the last warmth before winter's approach.",
     "season": "Early to mid-autumn, when edible chrysanthemums come into bloom",
     "source": "Kiku no ohitashi"
+  },
+  "kikuna-no-karashi-ae": {
+    "name_en": "Chrysanthemum greens with mustard dressing",
+    "name_jp": "菊菜の辛子和え",
+    "name_romaji": "kikuna no karashi-ae",
+    "note": "Blanched crown daisy greens are dressed in a sharp mixture of karashi mustard, soy, and a whisper of dashi — the bitterness of the leaf meeting the heat of the seed. Kikuna reaches peak sweetness after the first hard frosts, its serrated leaves softening in the cold, making this pungent ae-mono a fixture of winter tables when the body craves something to cut through richer fare.",
+    "season": "Late autumn through early spring, when the leaves are most tender",
+    "source": "Kikuna no karashi-ae"
+  },
+  "kinki-no-nitsuke": {
+    "name_en": "Simmered thornyhead rockfish",
+    "name_jp": "金目の煮付け",
+    "name_romaji": "kinki no nitsuke",
+    "note": "A whole thornyhead rockfish braised in sweetened soy sauce until the flesh turns silken and the skin takes on a lacquered sheen. Kinki reaches peak oil content in the coldest months, its rose-colored body pulled from waters off Hokkaido when snow buries the fishing villages — a dish that warms from within when daylight is shortest.",
+    "season": "Deep winter, when the fish carries its richest fat",
+    "source": "Kinki no nitsuke"
   },
   "kinmedai-no-nitsuke": {
     "name_en": "Simmered splendid alfonsino",
@@ -734,6 +766,14 @@
     "note": "Rice steamed with cubes of Japanese sweet potato, their golden flesh turning creamy and faintly caramelized where it meets the pot. The dish arrives as farmers dig satsumaimo from sandy soil still warm with October sun, the starches having converted to sugars through weeks of curing in earthen storehouses.",
     "season": "Mid-autumn, when the first frost sweetens the tubers",
     "source": "Satsumaimo gohan"
+  },
+  "sawara-no-misozuke-yaki": {
+    "name_en": "Miso-marinated Spanish mackerel, grilled",
+    "name_jp": "鰆の味噌漬け焼き",
+    "name_romaji": "sawara no misozuke-yaki",
+    "note": "Thick cuts of sawara are buried in sweet white miso for a day or two, then wiped clean and grilled until the edges char and the paste caramelizes into a lacquered glaze. The fish's name contains the character for spring (鰆), and this preparation celebrates the brief window when its flesh is leanest and most fragrant, just before the waters warm.",
+    "season": "Late spring, when sawara migrate into the Seto Inland Sea",
+    "source": "Sawara no misozuke-yaki"
   },
   "sawara-no-saikyo-yaki": {
     "name_en": "Saikyo miso-marinated Spanish mackerel",

@@ -80,6 +80,15 @@
     "peak": "Late spring through early summer, when the stems are still tender and the sap runs yellow",
     "source": "ashitaba"
   },
+  "asian-pear-nashi": {
+    "category": "fruit",
+    "name_en": "Asian pear",
+    "name_jp": "梨",
+    "name_romaji": "nashi",
+    "note": "A fruit of startling crispness, the nashi yields to the teeth with a clean snap and floods the mouth with juice so cold it seems to carry the memory of well water. Its grainy-sweet flesh arrives just as summer's heaviness lifts, a refreshment offered at the threshold of autumn's cooler appetites.",
+    "peak": "Late summer through early autumn, when the air begins to thin and cicada songs quiet",
+    "source": "Asian pear (nashi)"
+  },
   "asian-persimmon-kaki": {
     "category": "fruit",
     "name_en": "Asian persimmon",
@@ -197,6 +206,15 @@
     "peak": "Late summer through early autumn, when the air turns crisp and vine leaves begin to bronze",
     "source": "Budō (Japanese grapes)"
   },
+  "butterbur-stem-fuki": {
+    "category": "vegetable",
+    "name_en": "Butterbur stem",
+    "name_jp": "蕗",
+    "name_romaji": "fuki",
+    "note": "These pale green stalks, fibrous yet tender when peeled and simmered, carry a gentle bitterness that lingers like mountain air after rain. Simmered in dashi with soy and mirin as nimono, fuki marks the moment when foragers turn from buried shoots to what rises boldly above the soil.",
+    "peak": "Late spring, when hollow stems grow tall before summer's weight",
+    "source": "Butterbur stem (fuki)"
+  },
   "cherry": {
     "category": "fruit",
     "name_en": "Cherry",
@@ -205,6 +223,15 @@
     "note": "Japanese cherries arrive with flesh so tender it yields at the slightest pressure, their sweetness balanced by a faint tartness that lingers on the tongue. The brief harvest marks a fleeting pause between spring's blossoms and summer's full heat — a fruit enjoyed quickly, often simply, before its moment passes.",
     "peak": "Early summer, when the rainy season's first mists settle over the orchards",
     "source": "cherry"
+  },
+  "chrysanthemum-greens-shungiku": {
+    "category": "vegetable",
+    "name_en": "Chrysanthemum greens",
+    "name_jp": "春菊",
+    "name_romaji": "shungiku",
+    "note": "These serrated leaves carry a bracing, almost medicinal bitterness and a floral musk that cuts through rich broths—the classic last handful thrown into a bubbling nabe just before serving. Their name means 'spring chrysanthemum,' yet they reach their aromatic peak in the cold months, a green counterpoint to the heavy comfort of winter hot pots.",
+    "peak": "Late autumn through winter, when cold nights concentrate their fragrance",
+    "source": "Chrysanthemum greens (shungiku)"
   },
   "conger-eel": {
     "category": "fish",
@@ -340,6 +367,15 @@
     "note": "Pale green stems with a mineral bitterness that lingers clean on the tongue, their hollow centers ideal for simmering in dashi until the fibers turn silken. After the fleeting fuki-no-tō buds of early spring, these mature stalks arrive as the season's quieter second act — peeled, blanched, and often preserved as tsukudani to carry spring's memory into the humid months ahead.",
     "peak": "Late spring, when the stalks reach full height before summer's weight",
     "source": "Fuki (butterbur)"
+  },
+  "fuyu-persimmon-kaki": {
+    "category": "fruit",
+    "name_en": "Fuyu persimmon",
+    "name_jp": "富有柿",
+    "name_romaji": "fuyu-gaki",
+    "note": "A squat, tomato-shaped persimmon eaten crisp like an apple, its flesh dense and honey-sweet without a trace of astringency. The fuyu arrives when maple leaves are falling, a bright orange lantern on bare November branches — sliced thin, it brings autumn's last sweetness to the morning table.",
+    "peak": "Late autumn through early winter, when the first frosts sweeten the flesh",
+    "source": "Fuyu persimmon (kaki)"
   },
   "ginkgo-nut": {
     "category": "vegetable",
@@ -503,6 +539,15 @@
     "peak": "Early autumn through first frost, when cooling waters firm the flesh",
     "source": "Haze (goby)"
   },
+  "haze-yellowfin-goby": {
+    "category": "fish",
+    "name_en": "Yellowfin goby",
+    "name_jp": "鯊",
+    "name_romaji": "haze",
+    "note": "A small, slender bottom-dweller prized for its delicate white flesh that crisps beautifully in tempura — the subtle sweetness intensifying as autumn deepens. In Edo-period Tokyo, haze tempura marked the arrival of cool weather, a fleeting luxury eaten while the fish still carried the clarity of autumn tides.",
+    "peak": "Late autumn through early winter, when waters cool and flesh firms",
+    "source": "Haze (yellowfin goby)"
+  },
   "hirame-flounder": {
     "category": "fish",
     "name_en": "Olive flounder",
@@ -640,6 +685,15 @@
     "peak": "Late autumn through early winter, when the first frosts concentrate the sugars",
     "source": "Japanese sweet potato"
   },
+  "japanese-turnip-kabu": {
+    "category": "vegetable",
+    "name_en": "Japanese turnip",
+    "name_jp": "蕪",
+    "name_romaji": "kabu",
+    "note": "Small, ivory-skinned, and tender enough to eat raw, kabu yields to the tooth with a crisp snap and a sweetness that deepens after the first cold snap. Pickled in rice bran, simmered whole in dashi, or served with its greens still attached, it marks the table's turn toward the warming dishes of winter.",
+    "peak": "Late autumn through winter's first frost, when cold nights concentrate the sugars",
+    "source": "Japanese turnip (kabu)"
+  },
   "kabocha-squash": {
     "category": "vegetable",
     "name_en": "Kabocha squash",
@@ -675,6 +729,15 @@
     "note": "The Japanese turnip is smaller and more delicate than its Western counterpart, with skin so thin it need not be peeled and flesh that turns silken when simmered in dashi. It appears in winter nimono and pickled as senmaizuke in Kyoto, marking the transition from autumn's last harvests to the spare, warming dishes of the cold months.",
     "peak": "Late autumn through early winter, when the first frosts sweeten the flesh",
     "source": "Kabu (turnip)"
+  },
+  "kaki-japanese-persimmon": {
+    "category": "fruit",
+    "name_en": "Japanese persimmon",
+    "name_jp": "柿",
+    "name_romaji": "kaki",
+    "note": "The fuyu variety yields to the teeth with a crisp, honeyed snap, while hachiya must soften to custard-like translucence before its tannic grip releases into pure sweetness. Dried on farmhouse eaves as hoshigaki, persimmons become winter's amber jewels — a taste of concentrated autumn light carried through the cold months.",
+    "peak": "Late autumn, when the first frosts sweeten the flesh",
+    "source": "Kaki (Japanese persimmon)"
   },
   "kaki-persimmon": {
     "category": "fruit",
@@ -720,6 +783,24 @@
     "note": "The lean white flesh is almost transparent, mild to the point of sweetness, but it is the liver — creamy, rich as foie gras, tinged faintly orange — that devotees prize, mashed into soy sauce as a dipping medium for the sashimi. As autumn turns and the filefish fattens its liver against winter, sushi counters in Tokyo quietly shift their attention from summer's light catches to this homely fish with its sandpaper skin.",
     "peak": "Late autumn into early winter, when the liver swells with fat before the deep cold",
     "source": "Kawahagi (filefish)"
+  },
+  "kikuna-chrysanthemum-greens": {
+    "category": "vegetable",
+    "name_en": "Chrysanthemum greens",
+    "name_jp": "菊菜",
+    "name_romaji": "kikuna",
+    "note": "These serrated leaves carry the sharp, herbaceous perfume of chrysanthemum petals themselves — a bitter green brightness that cuts through rich nabemono broths. In the Kansai region especially, no winter hot pot feels complete without their slight astringency, added in the final moments so they wilt but never lose their edge.",
+    "peak": "Late autumn through winter, when cold nights concentrate their fragrance",
+    "source": "Kikuna (chrysanthemum greens)"
+  },
+  "kinki-thornyhead-rockfish": {
+    "category": "fish",
+    "name_en": "Thornyhead rockfish",
+    "name_jp": "喜知次",
+    "name_romaji": "kinki",
+    "note": "A deep-water fish with skin that turns brilliant vermilion when cooked, its flesh so rich with fat that it bastes itself while simmering, yielding meat that separates into silken flakes. Prized in Hokkaido for nabe and simmered dishes during the coldest months, kinki arrives at winter tables like stored sunlight — its very name written with characters meaning 'joy' and 'fortune.'",
+    "peak": "Deep winter, when the Sea of Okhotsk currents run coldest",
+    "source": "Kinki (thornyhead rockfish)"
   },
   "kinmedai-golden-eye-snapper": {
     "category": "fish",
@@ -837,6 +918,15 @@
     "note": "These dark purple grapes slip from their skins with a gentle squeeze, revealing translucent flesh so sweet and musky it perfumes the fingers. Their arrival signals the threshold between summer's end and autumn's gathering, when fruit bowls shift from bright citrus to the deeper, wine-dark tones of the cooling season.",
     "peak": "Late summer through early autumn, when cicada songs begin to fade",
     "source": "Kyoho grape"
+  },
+  "la-france-pear": {
+    "category": "fruit",
+    "name_en": "La France pear",
+    "name_jp": "ラ・フランス",
+    "name_romaji": "ra furansu",
+    "note": "A French variety that found its true home in Japan's Tōhoku region, this pear yields flesh so yielding it nearly dissolves on the tongue, with a perfume of honey and white flowers that fills the room when perfectly ripe. Harvested in October but eaten weeks later after careful storage, it arrives at tables just as the year turns inward, a gift of concentrated sweetness before winter closes in.",
+    "peak": "Late autumn, when the first true cold settles into Yamagata's orchards",
+    "source": "La France pear"
   },
   "late-strawberries": {
     "category": "fruit",
@@ -1300,6 +1390,15 @@
     "peak": "Late summer through early autumn, as the cicadas quiet",
     "source": "Prune plum"
   },
+  "quince-karin": {
+    "category": "fruit",
+    "name_en": "Quince",
+    "name_jp": "花梨",
+    "name_romaji": "karin",
+    "note": "This golden, knobby fruit cannot be eaten raw — its flesh is astringent and hard as wood — but simmered with honey or steeped in spirits, it yields a fragrant syrup prized for soothing winter throats. The perfume of a single quince left on a kitchen shelf will scent an entire room, a small ceremony of waiting as the cold deepens.",
+    "peak": "Late autumn, when the first frosts sweeten the flesh",
+    "source": "Quince (karin)"
+  },
   "rakkyo-japanese-scallions": {
     "category": "vegetable",
     "name_en": "Rakkyo",
@@ -1390,6 +1489,15 @@
     "peak": "Early to mid-autumn, when the first cold currents stir the northern rivers",
     "source": "Salmon (aki-sake)"
   },
+  "salmon-roe-ikura": {
+    "category": "fish",
+    "name_en": "Salmon roe",
+    "name_jp": "いくら",
+    "name_romaji": "ikura",
+    "note": "Each jewel-bright orb bursts against the palate with a clean, oceanic sweetness and a faint mineral finish — the essence of cold Hokkaido waters concentrated into a single membrane. The arrival of ikura signals the turning of the year toward preservation and abundance, when fishermen's wives once sat separating roe from the skein, preparing the household's winter stores.",
+    "peak": "Early autumn, when chum salmon return to northern rivers",
+    "source": "Salmon roe (ikura)"
+  },
   "salmon-sake": {
     "category": "fish",
     "name_en": "Salmon",
@@ -1455,6 +1563,15 @@
     "note": "These small, hairy corms yield flesh so slippery it seems to refuse the chopsticks — a quality called nameraka, prized in simmered dishes where the silken texture absorbs dashi to its core. Satoimo appears on the autumn moon-viewing altar beside susuki grass, marking the harvest moon when families once gave thanks for the tuber that sustained villages through lean winters.",
     "peak": "Mid-autumn through early winter, when the first frosts sweeten the flesh",
     "source": "Satoimo (taro root)"
+  },
+  "satsuma-mandarin-mikan": {
+    "category": "fruit",
+    "name_en": "Satsuma mandarin",
+    "name_jp": "蜜柑",
+    "name_romaji": "mikan",
+    "note": "The loose, pebbled skin yields to thumb pressure with a soft tearing sound, releasing a spray of citrus oil before the segments separate cleanly along their seams. In the kotatsu season, a pyramid of mikan in a bamboo basket becomes the centerpiece of family warmth, the peels curling dry on the heated table.",
+    "peak": "Late autumn through winter, when cold nights concentrate the sugars",
+    "source": "Satsuma mandarin (mikan)"
   },
   "sawara-spanish-mackerel": {
     "category": "fish",
@@ -2031,5 +2148,14 @@
     "note": "Named for the dark band between its eyes that forms the kanji for 'eight' (八), kanpachi yields flesh that is leaner and more delicate than its buri cousins — pale pink, with a clean sweetness and subtle crunch when sliced for sashimi. It arrives at the height of summer when heavier fish feel wrong, offering a lightness that suits the season's humid weight.",
     "peak": "High summer through early autumn, when the fish fatten in warm currents",
     "source": "Yellowtail amberjack (kanpachi)"
+  },
+  "yellowtail-buri": {
+    "category": "fish",
+    "name_en": "Yellowtail",
+    "name_jp": "鰤",
+    "name_romaji": "buri",
+    "note": "A fish that grows into its name — called by different words at each stage of life, it reaches its peak as buri only when winter seas have layered it with rich, rose-colored fat that melts against warm rice. The year's first buri, caught as snow settles on the Japan Sea coast, arrives on New Year's tables as a promise of advancement and good fortune.",
+    "peak": "Deep winter, when cold currents fatten the flesh",
+    "source": "Yellowtail (buri)"
   }
 }
