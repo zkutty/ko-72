@@ -3606,5 +3606,106 @@
       "closing": "夜明けの藍色のなか、凍てついた草の一本一本が朝日を受けて燃え立ち、やがて陽が昇るにつれ、その小さな炎は静かに消えてゆく。"
     },
     "_sent_on": "2026-10-23"
+  },
+  "59": {
+    "en": {
+      "summary": "Brief, soft rains arrive without warning, leaving the late autumn air cool and the fallen leaves glistening before the first frosts come.",
+      "opening": "The rain comes in whispers now — not the insistent downpours of summer, but tentative showers that appear suddenly from pale grey skies and vanish just as quickly. The air carries a mineral coolness, the scent of wet stone and decaying leaves mingling in the stillness. Between showers, the world seems held in suspension, each droplet on a persimmon leaf catching what little light remains.",
+      "nature_notes": "Migrating birds pass through in greater numbers, their calls threading through the damp air as they move southward. The last dragonflies of autumn rest motionless on browning reeds, their wings jeweled with rain. Mushrooms push up through the forest floor in these damp intervals, while the maples deepen from orange toward crimson in the mountain valleys.",
+      "seasonal_produce": {
+        "fruits": [
+          "Persimmon (kaki)",
+          "Asian pear (nashi)",
+          "Mukago (mountain yam bulbils)",
+          "Yuzu (citrus, early harvest)"
+        ],
+        "vegetables": [
+          "Shungiku (chrysanthemum greens)",
+          "Naga-negi (long green onion)",
+          "Satoimo (taro root)",
+          "Renkon (lotus root)"
+        ],
+        "fish": [
+          "Sawara (Japanese Spanish mackerel)",
+          "Hirame (olive flounder)",
+          "Hata (grouper)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "Kaki no tempura",
+          "description": "Firm persimmon slices, lightly battered and fried until just warm through, their sweetness intensified by the brief heat."
+        },
+        {
+          "name": "Naga-negi no nuta-ae",
+          "description": "Blanched long onions dressed in a tangy white miso-vinegar sauce, a dish that welcomes the colder nights."
+        },
+        {
+          "name": "Hata no nitsuke",
+          "description": "Grouper simmered in sweetened soy, the flesh falling into silky flakes, perfect for evenings when the rain taps at the windows."
+        },
+        {
+          "name": "Renkon manju",
+          "description": "Grated lotus root formed into soft dumplings and steamed, served in warm dashi — a gentle dish for uncertain weather."
+        }
+      ],
+      "cultural_note": "As October draws to a close, preparations begin for Shichi-Go-San, the celebration of children aged three, five, and seven held on November 15th. Kimono shops display their finest children's attire, and families begin selecting the long chitose-ame candies symbolizing longevity. The soft rains of this micro-season are sometimes called 'shrine-washing rains,' as if the heavens themselves are preparing sacred grounds for the coming festival.",
+      "haiku": {
+        "japanese": "時雨過ぎ軒に残りし雫かな",
+        "romaji": "shigure sugi / noki ni nokorishi / shizuku kana",
+        "english": "passing autumn shower — / at the eaves, a single drop / still clinging there"
+      },
+      "closing": "The rain stops, and in the silence, a crow calls once from the cryptomeria grove, its voice carrying far through the dampened air."
+    },
+    "ja": {
+      "summary": "ふいに小雨がぱらつき、晩秋の空気はひんやりと、落ち葉は濡れて艶めく頃。",
+      "opening": "雨は囁くように降る。夏の驟雨とは違い、鼠色の空からふと現れては消える、ためらいがちな時雨。濡れた石と朽ち葉の匂いが静けさの中に漂う。雨の合間、柿の葉に残る雫が、わずかな光を映して揺れている。",
+      "nature_notes": "渡り鳥の群れが空を渡り、その声が湿った空気を縫うように南へ流れてゆく。晩秋の赤とんぼは枯れ始めた葦に翅を休め、雨粒を宝石のようにまとっている。山の谷では紅葉が橙から深紅へと染まり、雨上がりの森には茸が静かに顔を出す。",
+      "seasonal_produce": {
+        "fruits": [
+          "柿",
+          "梨",
+          "むかご",
+          "柚子（走り）"
+        ],
+        "vegetables": [
+          "春菊",
+          "長葱",
+          "里芋",
+          "蓮根"
+        ],
+        "fish": [
+          "鰆",
+          "鮃",
+          "羽太（ハタ）"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "柿の天ぷら",
+          "description": "硬めの柿を薄衣でさっと揚げ、ほのかな温かさが甘味を引き立てる。"
+        },
+        {
+          "name": "長葱のぬた和え",
+          "description": "さっと茹でた長葱を白味噌と酢で和えた一品、肌寒い夜にふさわしい。"
+        },
+        {
+          "name": "羽太の煮付け",
+          "description": "脂ののった羽太を甘辛く炊き上げ、雨音を聞きながらいただく。"
+        },
+        {
+          "name": "蓮根饅頭",
+          "description": "すりおろした蓮根を蒸し上げ、温かい餡をかけて供す、天気の定まらぬ頃のやさしい一椀。"
+        }
+      ],
+      "cultural_note": "十月も終わりに近づくと、十一月十五日の七五三に向けた支度が始まる。呉服店には晴れ着が並び、千歳飴を選ぶ親子の姿が見られるようになる。この時期のにわか雨は「社洗いの雨」とも呼ばれ、祝いの場を清めるかのように降るという。",
+      "haiku": {
+        "japanese": "時雨過ぎ軒に残りし雫かな",
+        "romaji": "shigure sugi / noki ni nokorishi / shizuku kana",
+        "english": "passing autumn shower — / at the eaves, a single drop / still clinging there"
+      },
+      "closing": "雨が止み、静寂の中、杉木立から一声、鴉が鳴いた。湿りを帯びた空気に、その声だけが遠くまで届いてゆく。"
+    },
+    "_sent_on": "2026-10-28"
   }
 }

@@ -521,6 +521,15 @@
     "peak": "Rainy season through midsummer, when the flesh grows richest before spawning",
     "source": "hamo (pike conger)"
   },
+  "hata-grouper": {
+    "category": "fish",
+    "name_en": "Grouper",
+    "name_jp": "羽太",
+    "name_romaji": "hata",
+    "note": "A deep-bodied fish with firm, almost translucent flesh that yields a clean sweetness, prized for sashimi and the delicate collagen richness of its ara (bony scraps) simmered into nabe. In summer kitchens, hata appears as a cooling usuzukuri, its slices fanned thin as paper, dressed only with ponzu and a whisper of momiji-oroshi.",
+    "peak": "Early summer through autumn, when waters warm along rocky coastlines",
+    "source": "Hata (grouper)"
+  },
   "hatatehagi-filefish": {
     "category": "fish",
     "name_en": "Filefish",
@@ -556,6 +565,15 @@
     "note": "A left-eyed flatfish prized for its translucent white flesh, served as usuzukuri — slices so thin they reveal the pattern of the plate beneath, each piece offering a clean, faintly sweet resistance to the teeth. Winter hirame, fattened against the cold, arrives at the peak of its engawa season, when the gelatinous fin edges carry their richest concentration of umami.",
     "peak": "Deep winter, when cold currents firm the flesh",
     "source": "Hirame (flounder)"
+  },
+  "hirame-olive-flounder": {
+    "category": "fish",
+    "name_en": "Olive flounder",
+    "name_jp": "平目",
+    "name_romaji": "hirame",
+    "note": "A left-eyed flatfish prized for its translucent white flesh that yields a clean, faintly sweet resistance between the teeth — the engawa edge meat, ribboned with fat, is the sushi counter's quiet treasure. Winter hirame, called kan-birame, reaches its peak as the year grows coldest, the fish having stored reserves against the chill, arriving at the cutting board with a clarity that speaks of dark, slow-moving seas.",
+    "peak": "Deep winter, when cold currents firm the flesh",
+    "source": "Hirame (olive flounder)"
   },
   "hokke-atka-mackerel": {
     "category": "fish",
@@ -1218,6 +1236,15 @@
     "peak": "High summer through early autumn, when humidity hangs thick and appetites falter",
     "source": "茗荷 (myoga ginger)"
   },
+  "naga-negi-long-green-onion": {
+    "category": "vegetable",
+    "name_en": "Long green onion",
+    "name_jp": "長葱",
+    "name_romaji": "naga-negi",
+    "note": "The blanched white portion, sometimes a foot long, turns silken and almost sweet when grilled over charcoal or simmered in nabemono, its sharp edge mellowed by cold nights in the field. In the depths of winter, naga-negi anchors hot pots and warms the belly—sliced on the bias, it releases a gentle heat that cuts through rich broths.",
+    "peak": "Deep winter, when frost sweetens the white shafts",
+    "source": "Naga-negi (long green onion)"
+  },
   "nashi-asian-pear": {
     "category": "fruit",
     "id": "nashi",
@@ -1344,6 +1371,15 @@
     "note": "Early varieties like Saijo and Hiratanenashi arrive while summer's warmth lingers, their flesh still firm with a delicate sweetness that has not yet deepened to honey. These first persimmons mark the quiet pivot of the year, appearing on doorsteps and shrine offerings as the light begins to slant golden through thinning leaves.",
     "peak": "Early autumn, when the first cool nights draw sugars into the ripening fruit",
     "source": "Persimmon (early varieties)"
+  },
+  "persimmon-kaki": {
+    "category": "fruit",
+    "name_en": "Persimmon",
+    "name_jp": "柿",
+    "name_romaji": "kaki",
+    "note": "The hachiya persimmon yields only when fully soft, its flesh turning to a honey-thick custard that tastes of brown sugar and dried apricot. Eaten fresh, dried into amber hoshigaki, or paired with the last of autumn's chrysanthemum, kaki marks the moment when Japan turns inward toward winter's quiet.",
+    "peak": "Late autumn, when the first frosts sweeten the fruit on bare branches",
+    "source": "Persimmon (kaki)"
   },
   "pike-conger": {
     "category": "fish",
@@ -1572,6 +1608,15 @@
     "note": "The loose, pebbled skin yields to thumb pressure with a soft tearing sound, releasing a spray of citrus oil before the segments separate cleanly along their seams. In the kotatsu season, a pyramid of mikan in a bamboo basket becomes the centerpiece of family warmth, the peels curling dry on the heated table.",
     "peak": "Late autumn through winter, when cold nights concentrate the sugars",
     "source": "Satsuma mandarin (mikan)"
+  },
+  "sawara-japanese-spanish-mackerel": {
+    "category": "fish",
+    "name_en": "Japanese Spanish mackerel",
+    "name_jp": "鰆",
+    "name_romaji": "sawara",
+    "note": "A long, slender fish with silvery-blue skin and pale flesh that turns silky when salted overnight and grilled until the edges crisp and char. The kanji 鰆 combines 'fish' with 'spring' — this is the fish that announces the season's turn, appearing in Seto Inland Sea markets just as cherry blossoms scatter.",
+    "peak": "Late spring through early summer, when waters warm and the fish fatten near shore",
+    "source": "Sawara (Japanese Spanish mackerel)"
   },
   "sawara-spanish-mackerel": {
     "category": "fish",
@@ -2157,5 +2202,14 @@
     "note": "A fish that grows into its name — called by different words at each stage of life, it reaches its peak as buri only when winter seas have layered it with rich, rose-colored fat that melts against warm rice. The year's first buri, caught as snow settles on the Japan Sea coast, arrives on New Year's tables as a promise of advancement and good fortune.",
     "peak": "Deep winter, when cold currents fatten the flesh",
     "source": "Yellowtail (buri)"
+  },
+  "yuzu-citrus-early-harvest": {
+    "category": "fruit",
+    "name_en": "Yuzu",
+    "name_jp": "柚子",
+    "name_romaji": "yuzu",
+    "note": "These early-harvest yuzu arrive with thin, intensely aromatic skin still tinged green, their oil-rich zest releasing a bright, floral perfume sharper than the mellower winter fruit to come. In the Japanese kitchen, this citrus marks the threshold between autumn's last warmth and winter's arrival — its juice brightening hot pots, its zest scattered over simmered dishes as the year turns inward.",
+    "peak": "Early winter, as the first frost sharpens the air",
+    "source": "Yuzu (citrus, early harvest)"
   }
 }

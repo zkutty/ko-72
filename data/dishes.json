@@ -231,6 +231,14 @@
     "season": "Autumn through early winter, when lotus roots reach peak sweetness",
     "source": "hasu no kinpira"
   },
+  "hata-no-nitsuke": {
+    "name_en": "Simmered grouper",
+    "name_jp": "羽太の煮付け",
+    "name_romaji": "hata no nitsuke",
+    "note": "A whole fillet or bone-in cut of grouper braised in sweetened soy with ginger until the sauce glazes and clings. Hata reaches peak flavor as waters warm in early summer, its clean, resilient flesh a brief luxury before the fish disperses to deeper, cooler grounds.",
+    "season": "Late spring through early summer, when grouper flesh is firmest",
+    "source": "Hata no nitsuke"
+  },
   "haze-no-tempura": {
     "name_en": "Goby tempura",
     "name_jp": "鯊の天麩羅",
@@ -358,6 +366,14 @@
     "note": "Ripe persimmon wedges are folded into a dressing of silken tofu ground with white sesame, sweetened lightly with mirin. The dish appears when kaki have softened just past their peak crispness, their honeyed flesh yielding against the cool, pale dressing — a quiet celebration before the trees stand bare.",
     "season": "Late autumn, when persimmons reach full sweetness",
     "source": "Kaki no shira-ae"
+  },
+  "kaki-no-tempura": {
+    "name_en": "Persimmon tempura",
+    "name_jp": "柿の天ぷら",
+    "name_romaji": "kaki no tempura",
+    "note": "Ripe persimmon slices are dipped in light batter and fried until the exterior crisps while the flesh turns almost molten within. The dish appears when fuyu persimmons hang heavy on bare branches in October, their tannic astringency finally mellowed by cool nights into pure honeyed sweetness.",
+    "season": "Mid-autumn, when persimmons reach their peak sweetness",
+    "source": "Kaki no tempura"
   },
   "kamo-nanban-soba": {
     "name_en": "Duck and leek soba in hot broth",
@@ -583,6 +599,14 @@
     "season": "High summer, when myōga shoots push through shade-damp soil",
     "source": "Myōga to kyūri no sunomono"
   },
+  "naga-negi-no-nuta-ae": {
+    "name_en": "Long green onions in mustard-miso dressing",
+    "name_jp": "長葱のぬた和え",
+    "name_romaji": "naga-negi no nuta-ae",
+    "note": "Thick white sections of long onion are blanched until silken, then dressed in a pale gold sauce of white miso whisked with rice vinegar and hot mustard. The dish marks the final weeks of winter when naga-negi, having converted their starches to sugar against the cold, taste almost confectionery — a last gift from the frozen earth before spring greens arrive.",
+    "season": "Late winter to early spring, when frost-sweetened onions reach their peak",
+    "source": "Naga-negi no nuta-ae"
+  },
   "nashi-no-mizore-ae": {
     "name_en": "Pear dressed in grated daikon",
     "name_jp": "梨のみぞれ和え",
@@ -670,6 +694,14 @@
     "note": "Small torpedo-shaped scallion bulbs are trimmed, salted briefly, then steeped in a sweetened rice vinegar brine until they turn translucent and develop a sharp, sweet crunch. Rakkyo arrive in markets for just a few weeks around late May, and the ritual of pickling them at home marks the threshold between spring's end and the humid weight of tsuyu, the rainy season.",
     "season": "Late spring to early summer, when rakkyo bulbs emerge from sandy soil",
     "source": "rakkyo no amazuzuke"
+  },
+  "renkon-manju": {
+    "name_en": "Lotus root dumplings",
+    "name_jp": "蓮根饅頭",
+    "name_romaji": "renkon manjū",
+    "note": "Grated lotus root is shaped into small rounds, often encasing a filling of shrimp or mushroom, then steamed or deep-fried until the exterior turns faintly translucent and the center stays dense and sticky. The dish appears as lotus ponds go dormant and the roots, buried in cold mud, concentrate their sugars — served in clear dashi with a ginger-spiked ankake, it warms the body just as the first true chill settles over the fields.",
+    "season": "Late autumn through winter, when lotus roots reach peak starchiness",
+    "source": "Renkon manju"
   },
   "renkon-no-hasami-age": {
     "name_en": "Deep-fried lotus root sandwiches",
