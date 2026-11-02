@@ -3707,5 +3707,98 @@
       "closing": "雨が止み、静寂の中、杉木立から一声、鴉が鳴いた。湿りを帯びた空気に、その声だけが遠くまで届いてゆく。"
     },
     "_sent_on": "2026-10-28"
+  },
+  "60": {
+    "en": {
+      "summary": "Mountain maples and climbing ivy flush gold and crimson, painting hillsides in the last warm colors before winter's approach.",
+      "opening": "The maples have reached their moment. Along temple paths and mountain valleys, leaves turn from green through gold to deep vermilion, each tree finding its own pace. Morning mist rises through forests now blazing with color, and the air carries that particular crispness that makes breath visible in early light.",
+      "nature_notes": "Wild boar move down from higher elevations, foraging actively to build fat reserves. Migratory thrushes arrive from the north, their calls echoing through deciduous forests. The ivy that climbed summer walls now drops golden leaves, revealing the stone beneath. Mountain streams run cold and clear, their surfaces scattered with floating maple leaves.",
+      "seasonal_produce": {
+        "fruits": [
+          "Fuyu persimmon (kaki)",
+          "Mikan (satsuma mandarin)",
+          "Ringo (apple)",
+          "Yuzu"
+        ],
+        "vegetables": [
+          "Shungiku (chrysanthemum greens)",
+          "Kabu (Japanese turnip)",
+          "Yamaimo (mountain yam)",
+          "Negi (Japanese leek)"
+        ],
+        "fish": [
+          "Hirame (olive flounder)",
+          "Sawara (Spanish mackerel)",
+          "Hokke (Atka mackerel)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "Momiji tempura",
+          "description": "Actual maple leaves, battered and fried until crisp — a centuries-old Osaka tradition that lets you taste the season itself."
+        },
+        {
+          "name": "Yamaimo no tororo-jiru",
+          "description": "Grated mountain yam in warm dashi broth, its silken texture providing gentle nourishment as temperatures drop."
+        },
+        {
+          "name": "Hokke no hiraki",
+          "description": "Split and dried Atka mackerel, grilled until the edges char and the rich flesh turns flaky — a warming autumn staple."
+        }
+      ],
+      "cultural_note": "This is the heart of momiji-gari, the tradition of 'hunting' autumn leaves. Unlike hanami's festive picnics, momiji-gari tends toward quiet contemplation — walking temple gardens at dawn, pausing on mountain paths to witness a single perfect branch. At Tōfuku-ji in Kyoto, visitors cross the Tsūten-kyō bridge through a sea of red and gold stretching below.",
+      "haiku": {
+        "japanese": "蔦の葉の離るる音や夕日影",
+        "romaji": "tsuta no ha no / hanaruru oto ya / yūhi kage",
+        "english": "the sound of ivy / releasing its leaves — / evening sun's last light"
+      },
+      "closing": "A single maple leaf, still holding its crimson, spins slowly down through motionless air toward the waiting earth."
+    },
+    "ja": {
+      "summary": "山の楓と蔦が黄に染まり、紅葉が深まる晩秋の五日間。",
+      "opening": "楓が最も美しい時を迎えている。寺の参道から山間の谷まで、一枚一枚の葉が緑から黄、そして深い朱へと移ろう。朝霧が錦に染まる森を立ち昇り、吐く息が白く見える澄んだ空気が辺りを包む。",
+      "nature_notes": "猪が脂肪を蓄えるため山を下り、里近くまで姿を見せる。北から渡ってきた鶫の声が落葉樹の森に響く。夏の間、石垣を覆っていた蔦も黄葉して散り始め、下の石肌が露わになる。山の渓流は冷たく澄み、水面に紅葉が浮かんで流れてゆく。",
+      "seasonal_produce": {
+        "fruits": [
+          "柿",
+          "蜜柑",
+          "林檎",
+          "柚子"
+        ],
+        "vegetables": [
+          "春菊",
+          "蕪",
+          "山芋",
+          "長葱"
+        ],
+        "fish": [
+          "鮃（ひらめ）",
+          "鰆",
+          "𩸽（ほっけ）"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "紅葉の天ぷら",
+          "description": "本物の楓の葉に衣をつけて揚げる大阪箕面の名物で、季節をそのまま味わう風雅な一品。"
+        },
+        {
+          "name": "山芋のとろろ汁",
+          "description": "すりおろした山芋を温かい出汁でのばし、冷え込む夜に体を優しく温める。"
+        },
+        {
+          "name": "𩸽の開き",
+          "description": "干した𩸽を香ばしく焼き上げ、脂の乗った身をほぐしていただく秋の朝餉の定番。"
+        }
+      ],
+      "cultural_note": "紅葉狩りの最盛期である。花見の賑わいとは異なり、紅葉狩りは静かな観照を旨とする。早朝の寺院の庭を歩き、山道で一枝の紅葉に足を止める。京都の東福寺では通天橋から眼下に広がる紅の海を眺め、人々は声を潜めて秋の深まりを味わう。",
+      "haiku": {
+        "japanese": "蔦の葉の離るる音や夕日影",
+        "romaji": "tsuta no ha no / hanaruru oto ya / yūhi kage",
+        "english": "the sound of ivy / releasing its leaves — / evening sun's last light"
+      },
+      "closing": "一枚の紅葉が、まだ朱を湛えたまま、静止した空気の中をゆっくりと舞い降りてゆく。"
+    },
+    "_sent_on": "2026-11-02"
   }
 }

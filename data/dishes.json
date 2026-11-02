@@ -295,6 +295,14 @@
     "season": "High summer, when the heat settles into everything",
     "source": "Hiyashi udon"
   },
+  "hokke-no-hiraki": {
+    "name_en": "Dried and split Atka mackerel",
+    "name_jp": "ホッケの開き",
+    "name_romaji": "hokke no hiraki",
+    "note": "The Atka mackerel is split open butterfly-style, salted, and dried in frigid northern air until the flesh becomes dense and sweet, then grilled until the skin blisters and the fat runs clear. This preservation method arose in Hokkaido fishing villages where the dry winter wind served as nature's dehydrator, concentrating the fish's oils before the seas grew too rough to fish.",
+    "season": "Late autumn through winter, when cold Hokkaido winds are strongest",
+    "source": "Hokke no hiraki"
+  },
   "ichijiku-no-goma-ae": {
     "name_en": "Figs dressed in sesame",
     "name_jp": "無花果の胡麻和え",
@@ -526,6 +534,14 @@
     "note": "Thick slices of bonito are seared over high flame until the edges char while the core stays ruby-raw, then dressed with ponzu and heaped with ginger, garlic, and myoga. The autumn 'returning bonito' have fattened on their northern feeding grounds and carry twice the oil of their lean spring counterparts — their richness signals the pivot from summer's light eating toward heartier fare.",
     "season": "Early autumn, when bonito return south through Japanese waters",
     "source": "Modori-gatsuo no tataki"
+  },
+  "momiji-tempura": {
+    "name_en": "Deep-fried maple leaves",
+    "name_jp": "紅葉天ぷら",
+    "name_romaji": "momiji tempura",
+    "note": "Whole maple leaves are preserved in salt for a year, then dipped in a sweet sesame batter and fried until amber and crisp. The dish belongs to Osaka's Minoh district, where temple visitors have eaten these lacquered leaves beneath the same ancient trees since the Edo period, the crunch a way of holding the fleeting color a moment longer.",
+    "season": "Late autumn, when maples turn crimson in the Minoh valley",
+    "source": "Momiji tempura"
   },
   "momo-no-shiratama": {
     "name_en": "Peach shiratama dumplings",
@@ -1090,5 +1106,13 @@
     "note": "Fresh bamboo shoots are simmered in dashi with tender wakame seaweed, the two ingredients melding into a delicate broth seasoned simply with soy and mirin. The dish celebrates a brief window when young takenoko are dug at dawn and new-growth wakame arrives from cold spring waters — two fleeting harvests meeting in the same bowl.",
     "season": "Late March through April, when bamboo shoots break ground",
     "source": "wakatake-ni"
+  },
+  "yamaimo-no-tororo-jiru": {
+    "name_en": "Grated mountain yam soup",
+    "name_jp": "山芋のとろろ汁",
+    "name_romaji": "yamaimo no tororo-jiru",
+    "note": "Wild or cultivated mountain yam is grated to a frothy, viscous pulp and loosened with warm dashi, sometimes enriched with miso or soy, then poured over hot rice or soba. The dish appears when the first frosts sweeten the tubers still buried in cold earth, and the body craves something warming yet easy to swallow — a gentle fortification against the chill.",
+    "season": "Late autumn through winter, when the tubers have stored their starch",
+    "source": "Yamaimo no tororo-jiru"
   }
 }

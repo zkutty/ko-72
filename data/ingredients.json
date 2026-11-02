@@ -739,6 +739,15 @@
     "peak": "Late summer through early autumn, when the green rind holds its sharpest fragrance",
     "source": "Kabosu citrus"
   },
+  "kabu-japanese-turnip": {
+    "category": "vegetable",
+    "name_en": "Japanese turnip",
+    "name_jp": "蕪",
+    "name_romaji": "kabu",
+    "note": "A small, ivory-skinned root with flesh so tender it yields to the tooth like pear, its mild sweetness intensifying after the first cold nights. Pickled in rice bran, simmered in dashi until translucent, or served raw with its peppery greens still attached, kabu marks the kitchen's quiet turn toward warming dishes and the preserving work of winter.",
+    "peak": "Late autumn through early winter, when frost sweetens the flesh",
+    "source": "Kabu (Japanese turnip)"
+  },
   "kabu-turnip": {
     "category": "vegetable",
     "name_en": "Turnip",
@@ -1090,6 +1099,15 @@
     "peak": "Late winter through early spring, when cold has concentrated the sugars",
     "source": "Mikan (late variety)"
   },
+  "mikan-satsuma-mandarin": {
+    "category": "fruit",
+    "name_en": "Satsuma mandarin",
+    "name_jp": "蜜柑",
+    "name_romaji": "mikan",
+    "note": "The loose, yielding skin peels away in one unbroken spiral, releasing a bright citrus oil that clings to fingertips. Piled in wooden bowls beside the kotatsu, mikan mark the long evenings of winter — their segments shared wordlessly between family members as the year draws toward its close.",
+    "peak": "Early winter, when the first frost sweetens the flesh",
+    "source": "Mikan (satsuma mandarin)"
+  },
   "mitsuba": {
     "category": "vegetable",
     "name_en": "Japanese wild parsley",
@@ -1281,6 +1299,15 @@
     "note": "A thick-skinned citrus with segments that pull apart in uneven petals, its juice bracingly acidic with a faint honeyed finish that arrives only after months of patience on the branch. Once a Meiji-era novelty from Yamaguchi, it bridges the gap between winter's last satsuma and summer's first peach, its pale flesh a refreshment for the humid days ahead.",
     "peak": "Late spring through early summer, when the bitter pith mellows and the flesh turns from sour to sweet-tart",
     "source": "Natsu mikan (summer citrus)"
+  },
+  "negi-japanese-leek": {
+    "category": "vegetable",
+    "name_en": "Japanese leek",
+    "name_jp": "葱",
+    "name_romaji": "negi",
+    "note": "The long pale shanks, blanched by mounding soil against the stalks through autumn, turn almost custard-soft when grilled over charcoal, their sulfurous bite mellowing to something approaching sweetness. In the cold months, negi anchors nabemono and appears charred alongside yakitori — a winter constant that farmers have coaxed from dark earth since the Nara period.",
+    "peak": "Deep winter, when frost sweetens the buried whites",
+    "source": "Negi (Japanese leek)"
   },
   "new-garlic": {
     "category": "vegetable",
@@ -2167,6 +2194,15 @@
     "peak": "Late autumn, when the first frosts have touched the mountain slopes",
     "source": "Yamabudo (wild mountain grape)"
   },
+  "yamaimo-mountain-yam": {
+    "category": "vegetable",
+    "name_en": "Mountain yam",
+    "name_jp": "山芋",
+    "name_romaji": "yamaimo",
+    "note": "Grated into a cloud of sticky, almost viscous tororo, this wild-dug yam offers a texture found nowhere else — slippery yet substantial, catching light like raw silk. It arrives as kitchens turn inward, ladled over warm rice or slipped into hot soba broth, a quiet fortification against the deepening cold.",
+    "peak": "Late autumn through winter, when cold sharpens the tuber's starch",
+    "source": "Yamaimo (mountain yam)"
+  },
   "yellow-plums": {
     "category": "fruit",
     "name_en": "Ripe plum",
@@ -2202,6 +2238,15 @@
     "note": "A fish that grows into its name — called by different words at each stage of life, it reaches its peak as buri only when winter seas have layered it with rich, rose-colored fat that melts against warm rice. The year's first buri, caught as snow settles on the Japan Sea coast, arrives on New Year's tables as a promise of advancement and good fortune.",
     "peak": "Deep winter, when cold currents fatten the flesh",
     "source": "Yellowtail (buri)"
+  },
+  "yuzu": {
+    "category": "fruit",
+    "name_en": "Yuzu",
+    "name_jp": "柚子",
+    "name_romaji": "yuzu",
+    "note": "A citrus whose fragrance arrives before its flavor — the rind's volatile oils carry notes of pine, thyme, and bitter orange blossom, prized more for zest and juice than flesh. On tōji, the winter solstice, whole fruits float in steaming baths across Japan, their essence believed to ward off colds and ease the body into the year's darkest passage.",
+    "peak": "Late autumn through winter solstice, when the first true cold sharpens its oils",
+    "source": "Yuzu"
   },
   "yuzu-citrus-early-harvest": {
     "category": "fruit",
