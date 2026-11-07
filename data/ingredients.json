@@ -260,6 +260,15 @@
     "peak": "Early summer through the humid months, when the body craves what is cool and crisp",
     "source": "胡瓜 (cucumber)"
   },
+  "daikon-japanese-radish": {
+    "category": "vegetable",
+    "name_en": "Daikon",
+    "name_jp": "大根",
+    "name_romaji": "daikon",
+    "note": "This long white radish reaches its peak after the first hard frosts, when cold stress converts its starches to sugar, yielding flesh that is both crisp and faintly honeyed. Simmered in oden until translucent, grated raw as oroshi to cut through rich grilled fish, or pickled into takuan — daikon anchors the winter kitchen with quiet, adaptable presence.",
+    "peak": "Deep winter, when frost sweetens the flesh",
+    "source": "Daikon (Japanese radish)"
+  },
   "early-cherries": {
     "category": "fruit",
     "name_en": "Cherry",
@@ -376,6 +385,15 @@
     "note": "A squat, tomato-shaped persimmon eaten crisp like an apple, its flesh dense and honey-sweet without a trace of astringency. The fuyu arrives when maple leaves are falling, a bright orange lantern on bare November branches — sliced thin, it brings autumn's last sweetness to the morning table.",
     "peak": "Late autumn through early winter, when the first frosts sweeten the flesh",
     "source": "Fuyu persimmon (kaki)"
+  },
+  "fuyu-persimmon-sweet-persimmon": {
+    "category": "fruit",
+    "name_en": "Fuyu persimmon",
+    "name_jp": "富有柿",
+    "name_romaji": "fuyu-gaki",
+    "note": "A squat, tomato-shaped persimmon with crisp flesh that yields to the teeth like a firm apple, its sweetness clean and bright without the tannic pucker of astringent varieties. In the Japanese kitchen, fuyu arrives when maple leaves turn and is eaten fresh in slices, its coral flesh a quiet counterpoint to the spare beauty of late autumn tables.",
+    "peak": "Late autumn through early winter, when the first frosts concentrate the sugars",
+    "source": "Fuyu persimmon (sweet persimmon)"
   },
   "ginkgo-nut": {
     "category": "vegetable",
@@ -883,6 +901,15 @@
     "peak": "Late autumn through winter, when cold waters tighten the flesh",
     "source": "Kohada (gizzard shad)"
   },
+  "komatsuna-japanese-mustard-spinach": {
+    "category": "vegetable",
+    "name_en": "Japanese mustard spinach",
+    "name_jp": "小松菜",
+    "name_romaji": "komatsuna",
+    "note": "Dark jade leaves with crisp, pale stems that snap cleanly — their mild peppery bite mellows to something almost sweet when seared quickly in sesame oil. Named for Komatsugawa village near Edo, this sturdy green bridges the lean months, appearing in clear dashi broths and alongside fried tofu when little else grows tender.",
+    "peak": "Late autumn through winter, when cold nights concentrate sweetness in the leaves",
+    "source": "Komatsuna (Japanese mustard spinach)"
+  },
   "koshu-grape": {
     "category": "fruit",
     "name_en": "Koshu grape",
@@ -1262,6 +1289,15 @@
     "note": "The blanched white portion, sometimes a foot long, turns silken and almost sweet when grilled over charcoal or simmered in nabemono, its sharp edge mellowed by cold nights in the field. In the depths of winter, naga-negi anchors hot pots and warms the belly—sliced on the bias, it releases a gentle heat that cuts through rich broths.",
     "peak": "Deep winter, when frost sweetens the white shafts",
     "source": "Naga-negi (long green onion)"
+  },
+  "naga-negi-long-welsh-onion": {
+    "category": "vegetable",
+    "name_en": "Long Welsh onion",
+    "name_jp": "長葱",
+    "name_romaji": "naga-negi",
+    "note": "These thick-stalked alliums develop their finest character after hard freezes, the cold converting starches to sugars in the blanched stems that can reach a forearm's length. Grilled whole over charcoal until charred and collapsing into silken sweetness, they anchor winter nabemono and appear alongside yakitori as the essential counterpoint to rich meats.",
+    "peak": "Deep winter, when frost sweetens the buried white shafts",
+    "source": "Naga-negi (long welsh onion)"
   },
   "nashi-asian-pear": {
     "category": "fruit",
@@ -1734,6 +1770,15 @@
     "note": "A seedless grape with skin so thin you eat it whole, each orb bursting with a honeyed sweetness that carries faint notes of muscat and citrus blossom. Arriving as summer's heat loosens its grip, these grapes have become the new jewel of autumn gift-giving, their pale jade clusters wrapped in tissue like small treasures.",
     "peak": "Late summer through early autumn, when the nights begin to cool",
     "source": "Shine Muscat grapes"
+  },
+  "shirako-cod-milt": {
+    "category": "fish",
+    "name_en": "Cod milt",
+    "name_jp": "白子",
+    "name_romaji": "shirako",
+    "note": "The sperm sacs of male cod, prized for their impossibly delicate texture—a gentle heat transforms them into something between custard and the sea itself, rich yet clean on the tongue. Shirako appears in the coldest months as a fleeting luxury, served lightly poached in ponzu or grilled until the surface just firms, a reminder that winter's severity yields its own quiet extravagance.",
+    "peak": "Deep winter, when Pacific cod gather in frigid northern waters to spawn",
+    "source": "Shirako (cod milt)"
   },
   "shirauo-icefish": {
     "category": "fish",
@@ -2247,6 +2292,15 @@
     "note": "A citrus whose fragrance arrives before its flavor — the rind's volatile oils carry notes of pine, thyme, and bitter orange blossom, prized more for zest and juice than flesh. On tōji, the winter solstice, whole fruits float in steaming baths across Japan, their essence believed to ward off colds and ease the body into the year's darkest passage.",
     "peak": "Late autumn through winter solstice, when the first true cold sharpens its oils",
     "source": "Yuzu"
+  },
+  "yuzu-citrus": {
+    "category": "fruit",
+    "name_en": "Yuzu",
+    "name_jp": "柚子",
+    "name_romaji": "yuzu",
+    "note": "A citrus prized less for its scant, seed-crowded flesh than for its rind—intensely floral, bitter-bright, releasing volatile oils that cut through thefattiness of winter dishes. The fruit reaches its ritual peak at the winter solstice, when whole yuzu float in steaming baths during yuzuyu, their fragrance believed to ward off colds and purify the body for the darkest nights of the year.",
+    "peak": "Late autumn through winter solstice, when cold sharpens the rind's oils",
+    "source": "Yuzu citrus"
   },
   "yuzu-citrus-early-harvest": {
     "category": "fruit",

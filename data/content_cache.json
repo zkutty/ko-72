@@ -3800,5 +3800,106 @@
       "closing": "一枚の紅葉が、まだ朱を湛えたまま、静止した空気の中をゆっくりと舞い降りてゆく。"
     },
     "_sent_on": "2026-11-02"
+  },
+  "61": {
+    "en": {
+      "summary": "The first camellia blossoms open in temple gardens, signaling winter's true arrival as morning frost begins to silver the fallen leaves.",
+      "opening": "In the hush of early November, the first camellias unfurl — waxy petals of crimson and white against glossy dark leaves. The air carries a new sharpness now, and breath rises visible in temple courtyards at dawn. This is the threshold moment when autumn's lingering warmth finally surrenders to winter's quiet authority.",
+      "nature_notes": "Wild geese settle into their winter territories along rivers and wetlands, their calls echoing across cold morning skies. The last maple leaves cling stubbornly while ginkgo trees blaze gold against increasingly bare branches. Mountain streams run clearer and colder, and the first thin ice forms at the edges of stone water basins in shadowed gardens.",
+      "seasonal_produce": {
+        "fruits": [
+          "Fuyu persimmon (sweet persimmon)",
+          "Mikan (satsuma mandarin)",
+          "Yuzu citrus",
+          "La France pear"
+        ],
+        "vegetables": [
+          "Shungiku (chrysanthemum greens)",
+          "Daikon (Japanese radish)",
+          "Komatsuna (Japanese mustard spinach)",
+          "Naga-negi (long welsh onion)"
+        ],
+        "fish": [
+          "Hirame (olive flounder)",
+          "Sawara (Spanish mackerel)",
+          "Shirako (cod milt)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "Furofuki daikon",
+          "description": "Thick rounds of daikon simmered until translucent and tender, served with sweet miso — the first true comfort food as cold settles in."
+        },
+        {
+          "name": "Shirako ponzu",
+          "description": "Fresh cod milt, barely blanched and dressed in citrus ponzu, a delicacy prized at the start of its brief winter season."
+        },
+        {
+          "name": "Sawara no yūan-yaki",
+          "description": "Spanish mackerel marinated in soy, mirin, and yuzu then grilled, capturing the season's first citrus in its glaze."
+        },
+        {
+          "name": "Shungiku no shira-ae",
+          "description": "Chrysanthemum greens in silken tofu dressing, their slight bitterness balanced by sesame and the season's new sweetness in vegetables."
+        }
+      ],
+      "cultural_note": "The camellia — tsubaki — holds deep significance in Japanese culture, adorning tea ceremony spaces and winter kimono patterns. Unlike cherry blossoms that scatter petal by petal, camellias fall whole, which historically made warriors uneasy but appealed to tea masters for their honest, complete beauty. This micro-season marks the beginning of the tea ceremony's ro season, when the sunken hearth is opened and the room's atmosphere shifts to intimate winter warmth.",
+      "haiku": {
+        "japanese": "山茶花や庭石濡らす朝の霜",
+        "romaji": "sazanka ya / niwa-ishi nurasu / asa no shimo",
+        "english": "winter camellia — / morning frost dampens / the garden stones"
+      },
+      "closing": "In the temple garden, a single camellia rests on dark wet earth — fallen whole, still perfect, teaching its quiet lesson about letting go."
+    },
+    "ja": {
+      "summary": "寺社の庭に山茶花が咲き始め、朝霜が落ち葉を白く染める頃、冬の訪れを肌で感じる。",
+      "opening": "十一月初旬、山茶花が蝋を塗ったような紅白の花弁を開く。艶やかな深緑の葉を背に、凛とした姿が境内に映える。夜明けの空気には刃のような冷気が混じり、吐く息が白く立ち上る。秋の名残がようやく消え、冬が静かに歩み寄る境目の五日間である。",
+      "nature_notes": "雁は川辺や湿地に落ち着き、冷えた朝空にその鳴き声が響く。最後の紅葉がしがみつく中、銀杏は裸の枝々を背に黄金色に燃え上がる。山の渓流はいっそう澄み、日陰の手水鉢には薄氷が張り始める。",
+      "seasonal_produce": {
+        "fruits": [
+          "富有柿",
+          "蜜柑",
+          "柚子",
+          "ラ・フランス"
+        ],
+        "vegetables": [
+          "春菊",
+          "大根",
+          "小松菜",
+          "長葱"
+        ],
+        "fish": [
+          "鮃（ひらめ）",
+          "鰆",
+          "白子"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "ふろふき大根",
+          "description": "厚く輪切りにした大根を透き通るまで炊き、甘味噌をかけて供す——寒さが深まる頃、最初の滋味。"
+        },
+        {
+          "name": "白子ポン酢",
+          "description": "鱈の白子をさっと湯引きし、柚子を効かせたポン酢でいただく、冬の走りの珍味。"
+        },
+        {
+          "name": "鰆の幽庵焼き",
+          "description": "醤油、味醂、柚子に漬けた鰆を香ばしく焼き上げ、初冬の柑橘の香りを閉じ込めた一品。"
+        },
+        {
+          "name": "春菊の白和え",
+          "description": "ほろ苦い春菊を絹ごし豆腐と胡麻で和え、冬野菜の甘みが増す季節を味わう。"
+        }
+      ],
+      "cultural_note": "山茶花は茶の湯の席や冬の着物の意匠に欠かせない花である。桜が花弁を散らすのに対し、椿や山茶花は花ごと落ちるため、武士には忌まれたが、茶人はその潔さと完全な姿に美を見出した。この候は炉開きの時節にあたり、風炉から炉へと切り替わることで、茶室に冬の親密な温もりが宿る。",
+      "haiku": {
+        "japanese": "山茶花や庭石濡らす朝の霜",
+        "romaji": "sazanka ya / niwa-ishi nurasu / asa no shimo",
+        "english": "winter camellia — / morning frost dampens / the garden stones"
+      },
+      "closing": "苔むす庭石の上に、一輪の山茶花がそのままの姿で落ちている——完璧なまま手放すことを、静かに教えて。"
+    },
+    "_sent_on": "2026-11-07"
   }
 }

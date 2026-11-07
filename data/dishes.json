@@ -135,6 +135,14 @@
     "season": "Early summer through mid-August, when pods are plump but still bright green",
     "source": "edamame no shio-yude"
   },
+  "furofuki-daikon": {
+    "name_en": "Simmered daikon with miso",
+    "name_jp": "風呂吹き大根",
+    "name_romaji": "furofuki daikon",
+    "note": "Thick rounds of daikon are simmered until utterly tender, then served with a slick of sweet miso — often yuzu-scented or made with white Saikyo miso. The dish appears when winter daikon reaches its peak density and sweetness, the cold having converted starches to sugars in fields left unharvested through the first hard frosts.",
+    "season": "Deep winter, when frost has sweetened the roots",
+    "source": "Furofuki daikon"
+  },
   "g-ya-champur": {
     "name_en": "Bitter melon stir-fry",
     "name_jp": "ゴーヤーチャンプルー",
@@ -831,6 +839,14 @@
     "season": "Late winter through early spring, when sawara swim into the Inland Sea",
     "source": "Sawara no saikyo-yaki"
   },
+  "sawara-no-y-an-yaki": {
+    "name_en": "Grilled Spanish mackerel in citrus-soy marinade",
+    "name_jp": "鰆の幽庵焼き",
+    "name_romaji": "sawara no yūan-yaki",
+    "note": "Thick sawara fillets are steeped in a yūan-ji marinade of soy, mirin, and sake brightened with yuzu slices, then grilled until the edges catch and caramelize. The dish honors the season when both the fish—its name containing the character for spring yet richest in winter—and the yuzu arrive together, their meeting a small celebration of the cold months' quiet abundance.",
+    "season": "Late autumn through early spring, when sawara fat peaks in cold waters",
+    "source": "Sawara no yūan-yaki"
+  },
   "shijimi-no-misoshiru": {
     "name_en": "Freshwater clam miso soup",
     "name_jp": "蜆の味噌汁",
@@ -870,6 +886,14 @@
     "note": "Freshly harvested rice, polished and steamed without embellishment, served in a way that honors its milky sweetness and faint vegetal fragrance. The first shinmai appears when cosmos flowers line the paddies and the air turns crisp — a bowl eaten plain, perhaps with nothing more than a slick of salted plum, marks the farmer's year coming full circle.",
     "season": "Early autumn, when the year's first rice harvest arrives",
     "source": "Shinmai no gohan"
+  },
+  "shirako-ponzu": {
+    "name_en": "Milt with ponzu",
+    "name_jp": "白子ポン酢",
+    "name_romaji": "shirako ponzu",
+    "note": "The soft, ivory-white milt sacs of cod or sea bream are poached briefly and served chilled beneath a bright pour of citrus-soy ponzu, often with a wisp of grated daikon and a sliver of scallion. This dish arrives at its peak during the coldest weeks of January and February, when tara (Pacific cod) swim in frigid northern waters and their shirako reach maximum creaminess—a prized delicacy that Japanese fishmongers handle with the same reverence as the season's first fugu.",
+    "season": "Deep winter, when coldwater fish carry their richest roe",
+    "source": "Shirako ponzu"
   },
   "shirauo-no-kakiage": {
     "name_en": "Whitebait tempura fritters",
@@ -926,6 +950,14 @@
     "note": "Blanched chrysanthemum greens are dressed in a paste of ground sesame seeds, soy sauce, and a touch of sugar, the bitter leaves made gentle by the nutty coating. The plant's name literally means 'spring chrysanthemum,' yet it reaches its peak after the first cold snaps of November, when the serrated leaves grow tender and their distinctive medicinal edge softens into something almost floral.",
     "season": "Late autumn through winter, when frost sweetens the leaves",
     "source": "Shungiku no goma-ae"
+  },
+  "shungiku-no-shira-ae": {
+    "name_en": "Chrysanthemum greens with tofu dressing",
+    "name_jp": "春菊の白和え",
+    "name_romaji": "shungiku no shira-ae",
+    "note": "Blanched crown daisy leaves are dressed in a creamy paste of mashed tofu seasoned with sesame, mirin, and a touch of white miso. The slightly bitter, aromatic greens reach their peak sweetness after the first frost, their flavor a counterpoint to the mild richness of the dressing.",
+    "season": "Late autumn through winter, when the leaves grow most tender",
+    "source": "Shungiku no shira-ae"
   },
   "soramame-no-shioyude": {
     "name_en": "Salt-boiled fava beans",
