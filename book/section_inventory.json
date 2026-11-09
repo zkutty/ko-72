@@ -1,0 +1,1239 @@
+{
+  "status": "working_draft",
+  "required_sections": [
+    "opening",
+    "nature_notes",
+    "cultural_note",
+    "haiku",
+    "fruits",
+    "vegetables",
+    "fish",
+    "dishes"
+  ],
+  "entries": [
+    {
+      "season_id": 1,
+      "season_name": "Water parsley flourishes",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 2,
+      "season_name": "Springs thaw beneath the ice",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 3,
+      "season_name": "Pheasants start to call",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 4,
+      "season_name": "Butterburs bud",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 5,
+      "season_name": "Ice thickens on streams",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 6,
+      "season_name": "Hens start laying eggs",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 7,
+      "season_name": "East wind melts the ice",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 8,
+      "season_name": "Bush warblers start singing in the mountains",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 9,
+      "season_name": "Fish emerge from the ice",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 10,
+      "season_name": "Rain moistens the soil",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 11,
+      "season_name": "Mist starts to linger",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 12,
+      "season_name": "Plants sprout, trees bud",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 13,
+      "season_name": "Hibernating insects emerge",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 14,
+      "season_name": "First peach blossoms open",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 15,
+      "season_name": "Caterpillars become butterflies",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 16,
+      "season_name": "Sparrows start nesting",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 17,
+      "season_name": "First cherry blossoms",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 18,
+      "season_name": "Distant thunder",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 19,
+      "season_name": "Swallows arrive",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 20,
+      "season_name": "Wild geese fly north",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 21,
+      "season_name": "First rainbows appear",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 22,
+      "season_name": "First reeds sprout",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 23,
+      "season_name": "Last frost, rice shoots sprout",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 24,
+      "season_name": "Peonies bloom",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 25,
+      "season_name": "Frogs start calling",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 26,
+      "season_name": "Earthworms emerge",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 27,
+      "season_name": "Bamboo shoots appear",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 28,
+      "season_name": "Silkworms feast on mulberry leaves",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 29,
+      "season_name": "Safflowers bloom",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 30,
+      "season_name": "Wheat ripens and harvest begins",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 31,
+      "season_name": "Praying mantises hatch",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 32,
+      "season_name": "Decaying grass becomes fireflies",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 33,
+      "season_name": "Plums turn yellow",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 34,
+      "season_name": "Self-heal withers",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 35,
+      "season_name": "Irises bloom",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 36,
+      "season_name": "Crow-dipper sprouts",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 37,
+      "season_name": "Warm winds arrive",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 38,
+      "season_name": "Lotus blossoms open",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 39,
+      "season_name": "Young hawks learn to fly",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 40,
+      "season_name": "Paulownia trees bear first seeds",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 41,
+      "season_name": "Humid heat soaks the earth",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 42,
+      "season_name": "Heavy rains sometimes fall",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 43,
+      "season_name": "Cool winds arrive",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 44,
+      "season_name": "Evening cicadas sing",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 45,
+      "season_name": "Thick fog descends",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 46,
+      "season_name": "Cotton flowers open",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 47,
+      "season_name": "Heaven and earth begin to cool",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 48,
+      "season_name": "Rice ripens in the fields",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 49,
+      "season_name": "Dew glistens white on grass",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 50,
+      "season_name": "Wagtails start to sing",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 51,
+      "season_name": "Swallows depart",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 52,
+      "season_name": "Thunder falls silent",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 53,
+      "season_name": "Insects seal their dens",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 54,
+      "season_name": "Water begins to dry up",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 55,
+      "season_name": "Wild geese arrive from the north",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 56,
+      "season_name": "Chrysanthemums bloom",
+      "source_letter": "cached",
+      "sections": {
+        "opening": "source_available",
+        "nature_notes": "source_available",
+        "cultural_note": "source_available",
+        "haiku": "source_available",
+        "fruits": "source_available",
+        "vegetables": "source_available",
+        "fish": "source_available",
+        "dishes": "source_available"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 57,
+      "season_name": "Crickets chirp around the door",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 58,
+      "season_name": "First frost falls",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 59,
+      "season_name": "Light rains sometimes fall",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 60,
+      "season_name": "Maple and ivy turn yellow",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 61,
+      "season_name": "Camellias start to bloom",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 62,
+      "season_name": "Earth begins to freeze",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 63,
+      "season_name": "Daffodils bloom and perfume the air",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 64,
+      "season_name": "Rainbows hide",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 65,
+      "season_name": "North winds blow away the leaves",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 66,
+      "season_name": "Tachibana citrus starts to ripen",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 67,
+      "season_name": "Skies close and winter sets in",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 68,
+      "season_name": "Bears retreat to their dens",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 69,
+      "season_name": "Salmon gather and swim upstream",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 70,
+      "season_name": "Self-heal sprouts anew",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 71,
+      "season_name": "Deer shed their antlers",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    },
+    {
+      "season_id": 72,
+      "season_name": "Wheat sprouts under the snow",
+      "source_letter": "pending",
+      "sections": {
+        "opening": "pending_source",
+        "nature_notes": "pending_source",
+        "cultural_note": "pending_source",
+        "haiku": "pending_source",
+        "fruits": "pending_source",
+        "vegetables": "pending_source",
+        "fish": "pending_source",
+        "dishes": "pending_source"
+      },
+      "book_edit": "not_started",
+      "fact_review": "not_started"
+    }
+  ]
+}

@@ -1,0 +1,573 @@
+{
+  "status": "draft",
+  "purpose": "Transparent cutouts for floating glossary illustrations",
+  "entries": [
+    {
+      "path": "book/art/glossary/cutouts/fish-01.png",
+      "source_path": "book/art/glossary/pages/fish-01.png",
+      "source_sha256": "593b9a6274fdef172e3d67a1baad5cccb4840041c714394829912d4a544163e0",
+      "width_px": 2048,
+      "height_px": 768,
+      "sha256": "949304fe796617729a2a6ce84a219e6330cbed9be5fc0f89be8c1a305f36e4cf",
+      "subjects": [
+        "Bonito",
+        "Flounder"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit the attached paired food watercolor into a true transparent-background PNG for editorial book typesetting. Preserve exactly both original illustrated subjects, their species/food identity, shapes, color, inking, relative size, left/right positions and broad separation. Remove only all off-white paper background and texture, including open gaps around fins, stems, leaves and food. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/fish-02.png",
+      "source_path": "book/art/glossary/pages/fish-02.png",
+      "source_sha256": "0366808798be37f1bae4d78b7e8ef496121cd613c947a495c56e81684291ac07",
+      "width_px": 1942,
+      "height_px": 809,
+      "sha256": "e122d8da1d20c8711442bcf8e993f88b51d802e235253976245b989416724f6a",
+      "subjects": [
+        "Horse mackerel",
+        "Hotaru ika (firefly squid)"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit the attached paired food watercolor into a true transparent-background PNG for editorial book typesetting. Preserve exactly both original illustrated subjects, their species/food identity, shapes, color, inking, relative size, left/right positions and broad separation. Remove only all off-white paper background and texture, including open gaps around fins, stems, leaves and food. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/fish-03-new.png",
+      "source_path": "book/art/glossary/singles/fish-03-new.png",
+      "source_sha256": "13e333369b398dd16023e6ccd6a299459c34c7ef199dd1d8825ca69bbccea9c3",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "b450d5b2d9e4a193707cd377b04246d700a0911e22f0fdb888d534b399539440",
+      "subjects": [
+        "Iwashi (sardine)"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit this single illustrated food or seafood watercolor into a true transparent-background PNG for editorial book typesetting. Preserve the exact original subject, species/food identity, anatomy, shape, color, inking and scale. Remove only all off-white paper background and texture, including open gaps around stems, shells, fins and food. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/fish-03.png",
+      "source_path": "book/art/glossary/pages/fish-03.png",
+      "source_sha256": "f579bf5a7fdb1579b42b64a6881c29102bfbf5852eeaba141044bb51b876954e",
+      "width_px": 1983,
+      "height_px": 793,
+      "sha256": "de25318768c83afc05a5af8ba36b567fdf7345d6f35b444ce38e642b6c895958",
+      "subjects": [
+        "Kinmedai (splendid alfonsino)",
+        "Kuruma ebi (Japanese tiger prawn)"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit the attached paired seafood watercolor into a true transparent-background PNG for editorial book typesetting. Preserve exactly both original illustrated subjects, their fish/seafood identity, anatomy, shapes, color, inking, relative size, left/right positions and broad separation. Remove only all off-white paper background and texture, including open gaps around fins, tails, antennae and tentacles. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/fish-04.png",
+      "source_path": "book/art/glossary/pages/fish-04.png",
+      "source_sha256": "246dbf191cc19a3b7f82c124e0d1692c7851728ed87cdd84aa8a6df52a63abe5",
+      "width_px": 2048,
+      "height_px": 768,
+      "sha256": "a9843988c12a416fdf243f9560ee40c911eb2daed7dc008150f937c0e5fa6e6c",
+      "subjects": [
+        "Pacific saury (sanma)",
+        "Sake (salmon)"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit the attached paired seafood watercolor into a true transparent-background PNG for editorial book typesetting. Preserve exactly both original illustrated subjects, their fish/seafood identity, anatomy, shapes, color, inking, relative size, left/right positions and broad separation. Remove only all off-white paper background and texture, including open gaps around fins, tails, antennae and tentacles. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/fish-05-new.png",
+      "source_path": "book/art/glossary/singles/fish-05-new.png",
+      "source_sha256": "46b02932712f5d03cb4cbfba31de966af414c66f5ae41c3cf4f257922dfa8e6f",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "9b7d5bd5b5a56ea8240f8bba55a7fa331fee07d2fa1298c26df2db5c8cd461d2",
+      "subjects": [
+        "Shijimi (freshwater clams)"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit this single illustrated food or seafood watercolor into a true transparent-background PNG for editorial book typesetting. Preserve the exact original subject, species/food identity, anatomy, shape, color, inking and scale. Remove only all off-white paper background and texture, including open gaps around stems, shells, fins and food. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/fish-05.png",
+      "source_path": "book/art/glossary/pages/fish-05.png",
+      "source_sha256": "4aa5a13c111f594cb1147cde60ac000fd55d9726553dd5eb0f2f222194039ca8",
+      "width_px": 1956,
+      "height_px": 804,
+      "sha256": "b7630db324855bef7ebd8a60f86c78798800db19b13fa45cdb6a9e5d99269095",
+      "subjects": [
+        "Sayori (halfbeak)",
+        "squid"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit the attached paired seafood watercolor into a true transparent-background PNG for editorial book typesetting. Preserve exactly both original illustrated subjects, their fish/seafood identity, anatomy, shapes, color, inking, relative size, left/right positions and broad separation. Remove only all off-white paper background and texture, including open gaps around fins, tails, antennae and tentacles. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/fish-06.png",
+      "source_path": "book/art/glossary/pages/fish-06.png",
+      "source_sha256": "4f7bbbed63b578b8c37c5f8d192465abcb1e03af6aecb4a061dd5fea419dee8d",
+      "width_px": 1944,
+      "height_px": 809,
+      "sha256": "3132496947ea74b00d25a913b875b204e6044a09cec669c2518693e2dc85a1b4",
+      "subjects": [
+        "tako (octopus)",
+        "太刀魚 (beltfish)"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit the attached paired seafood watercolor into a true transparent-background PNG for editorial book typesetting. Preserve exactly both original illustrated subjects, their fish/seafood identity, anatomy, shapes, color, inking, relative size, left/right positions and broad separation. Remove only all off-white paper background and texture, including open gaps around fins, tails, antennae and tentacles. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/fish-07-new.png",
+      "source_path": "book/art/glossary/singles/fish-07-new.png",
+      "source_sha256": "ae98037bfb968b93793d944a7c1078af01f31a326e59595cc727ad212cb74338",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "64c6dcd2b95092b0e47821dd199e2ae742a852c806bf2f254eeb076650e27b66",
+      "subjects": [
+        "鮑 (abalone)"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit this single illustrated food or seafood watercolor into a true transparent-background PNG for editorial book typesetting. Preserve the exact original subject, species/food identity, anatomy, shape, color, inking and scale. Remove only all off-white paper background and texture, including open gaps around stems, shells, fins and food. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/food-triptych-draft.png",
+      "source_path": "book/art/glossary/food-triptych-draft.png",
+      "source_sha256": "699b69f1ad990aff81d52ae0b6bf9f1895f918e0b3d58c3704293bd87691f659",
+      "width_px": 1942,
+      "height_px": 809,
+      "sha256": "c7344f00e8f84216c83e7ae54b248e347684989221612b06f53087c6b761a3b4",
+      "subjects": [
+        "loquat",
+        "fava beans",
+        "horse mackerel"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit this existing watercolor triptych for a book cover to have a true transparent background. Preserve exactly the three original subject groups, their food identities, colors, inking, size, positions and separation: loquat branch at left, fava beans in center, fish at right. Remove only the off-white textured paper, including all whitespace between objects. Clean natural cutout contours. No other background, shadows, text, labels, frames or new objects.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/fruit-01-new.png",
+      "source_path": "book/art/glossary/singles/fruit-01-new.png",
+      "source_sha256": "410820db7fc0e5a6805f04c26b24215e5b15dd42b600a60c948bcc38f9bd8351",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "502b4deb23d56769248aeffe41c23fbbcf300026529146d6171b89a40a778999",
+      "subjects": [
+        "blueberry"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit this single botanical food watercolor into a true transparent-background PNG for editorial book typesetting. Preserve the exact original illustrated subject, species/food identity, anatomy, shape, color, inking and scale. Remove only all off-white paper background and texture, including open gaps around leaves, stems and fruit. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/fruit-01.png",
+      "source_path": "book/art/glossary/pages/fruit-01.png",
+      "source_sha256": "8565d0331350abb997785b8e3f25b181be114014909ecd4aa3b69551c61376d1",
+      "width_px": 1944,
+      "height_px": 809,
+      "sha256": "2c5905192427cdb303086e63d6882c62c9b03b9f28f299f9c43907ff1d017c7f",
+      "subjects": [
+        "amanatsu",
+        "cherry"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit this existing paired botanical food illustration into a true transparent-background PNG for book typesetting. Preserve exactly the two original studies: amanatsu citrus on left and two cherries on right; preserve their watercolor and ink color, shape, subject details, relative positions and separation. Remove only the off-white paper texture/background, including gaps around leaf, stems and fruit. Clean natural cutout edges with subtle watercolor texture inside subjects. No white or colored rectangular backdrop, no cast shadow, no added objects, no labels, no text, no watermark.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/fruit-02.png",
+      "source_path": "book/art/glossary/pages/fruit-02.png",
+      "source_sha256": "ad2d87f59ebbe7a64a9275bea843a989a2bf9badadf54dc53efed60f68d8d0ed",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "217151d17e3dff8c042e5e007aaff9bb72981819a9b187b87a299681e33f1c48",
+      "subjects": [
+        "Fig (ichijiku)",
+        "Green ume plums"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit the attached paired food watercolor into a true transparent-background PNG for editorial book typesetting. Preserve exactly both original illustrated subjects, their species/food identity, shapes, color, inking, relative size, left/right positions and broad separation. Remove only all off-white paper background and texture, including open gaps around leaves, stems and food. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/fruit-03.png",
+      "source_path": "book/art/glossary/pages/fruit-03.png",
+      "source_sha256": "3a1e1bae4e52fba23694dcb2e85ba852c0907c469d3b048c8d3e11fda7427bfe",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "da778147f0550bb03af1c0a1b983a29145c21399f4a42053534416997693ecd4",
+      "subjects": [
+        "Karin (Chinese quince)",
+        "mango"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit the attached paired food watercolor into a true transparent-background PNG for editorial book typesetting. Preserve exactly both original illustrated subjects, their species/food identity, shapes, color, inking, relative size, left/right positions and broad separation. Remove only all off-white paper background and texture, including open gaps around leaves, stems and food. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/fruit-04-new.png",
+      "source_path": "book/art/glossary/singles/fruit-04-new.png",
+      "source_sha256": "9e792a5aa1716f77d8158749dddc33f453a4c6c29df26a574eb63d071e246639",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "b1af45bdf9abda9239a8a7a4485b79bc4c33a35d217f61cee2a8fd41f7dff382",
+      "subjects": [
+        "Kyoho grape"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit this single botanical food watercolor into a true transparent-background PNG for editorial book typesetting. Preserve the exact original illustrated subject, species/food identity, anatomy, shape, color, inking and scale. Remove only all off-white paper background and texture, including open gaps around leaves, stems and fruit. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/fruit-04.png",
+      "source_path": "book/art/glossary/pages/fruit-04.png",
+      "source_sha256": "0d38de2bbf7e05180ccc5eca71d7f3a1db79f5fc6f89e6f1e24be11e56efe05e",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "6b7bfe0370eb6e58ecc745d7038ca954843f11425e96eadf9bc49ebaf18c3a17",
+      "subjects": [
+        "muscat grapes",
+        "passion fruit"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit the attached paired food watercolor into a true transparent-background PNG for editorial book typesetting. Preserve exactly both original illustrated subjects, their species/food identity, shapes, color, inking, relative size, left/right positions and broad separation. Remove only all off-white paper background and texture, including open gaps around leaves, stems and food. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/fruit-05.png",
+      "source_path": "book/art/glossary/pages/fruit-05.png",
+      "source_sha256": "774896bf9a283f534061a71e7de876a280b38d3ae55771b55a8dd6e2c9d1ef6e",
+      "width_px": 1905,
+      "height_px": 825,
+      "sha256": "b67a5a79ada029e194061e21da320779c1274f5cd6cae112daa1cf3608be6646",
+      "subjects": [
+        "Ringo (apple)",
+        "Strawberries"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit the attached paired food watercolor into a true transparent-background PNG for editorial book typesetting. Preserve exactly both original illustrated subjects, their species/food identity, shapes, color, inking, relative size, left/right positions and broad separation. Remove only all off-white paper background and texture, including open gaps around leaves, stems and food. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/fruit-06-new.png",
+      "source_path": "book/art/glossary/singles/fruit-06-new.png",
+      "source_sha256": "7cef161b91e6674d69ae47e39391aa68eb5761170f5fd80b55e5d5cffbe2b26e",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "9d84d38b0cf4866643c0b3a5a1b4a8a6a2ecd34eea781e494e1af012cca4e543",
+      "subjects": [
+        "Pear (nashi)"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit this single botanical food watercolor into a true transparent-background PNG for editorial book typesetting. Preserve the exact original illustrated subject, species/food identity, anatomy, shape, color, inking and scale. Remove only all off-white paper background and texture, including open gaps around leaves, stems and fruit. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/fruit-06.png",
+      "source_path": "book/art/glossary/pages/fruit-06.png",
+      "source_sha256": "3d24b8cee4e09547ab89b3593b09fc122765583bec4624c5de0a867c0dfb3b35",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "2473fb10ca3f1b1c510e88366e4e116f0ea9cacd860d8564d7ca1629d56ba7d8",
+      "subjects": [
+        "watermelon",
+        "white peach"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit the attached paired food watercolor into a true transparent-background PNG for editorial book typesetting. Preserve exactly both original illustrated subjects, their species/food identity, shapes, color, inking, relative size, left/right positions and broad separation. Remove only all off-white paper background and texture, including open gaps around fins, stems, leaves and food. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/fruit-07-new.png",
+      "source_path": "book/art/glossary/singles/fruit-07-new.png",
+      "source_sha256": "8bee6314ff12479c1ef60fd515a0a05d0241465c6b81540586a94ef0052b8636",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "5b359c9a71c592eade5fdeb3219db454d1936482b53142f7e4d50407a652bd3e",
+      "subjects": [
+        "suika (early watermelon)"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit this single botanical food watercolor into a true transparent-background PNG for editorial book typesetting. Preserve the exact original illustrated subject, species/food identity, anatomy, shape, color, inking and scale. Remove only all off-white paper background and texture, including open gaps around leaves, stems and fruit. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/fruit-07.png",
+      "source_path": "book/art/glossary/pages/fruit-07.png",
+      "source_sha256": "86a2c8eb124644db8ae7d49a3fbecf1952204841248b15a5d3b2914fde6cadb8",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "a63f42c4b8d3318cef425f038ecdd5e233beadce9b8fa56362865f6ab3659b58",
+      "subjects": [
+        "Yamabudo (wild mountain grape)",
+        "梨 (Japanese pear)"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit the attached paired food watercolor into a true transparent-background PNG for editorial book typesetting. Preserve exactly both original illustrated subjects, their species/food identity, shapes, color, inking, relative size, left/right positions and broad separation. Remove only all off-white paper background and texture, including open gaps around fins, stems, leaves and food. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/fruit-09-new.png",
+      "source_path": "book/art/glossary/singles/fruit-09-new.png",
+      "source_sha256": "eeb2b844ca2304bbd67a4e96df6011902ba618ecdc4516dcae782213a2af7232",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "a126a9bb632a659c39dc96c7d88ff14804309d583451d5f8b70869cfb5b42776",
+      "subjects": [
+        "プラム (plum)"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit this single botanical food watercolor into a true transparent-background PNG for editorial book typesetting. Preserve the exact original illustrated subject, species/food identity, anatomy, shape, color, inking and scale. Remove only all off-white paper background and texture, including open gaps around leaves, stems and food. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/vegetable-01.png",
+      "source_path": "book/art/glossary/pages/vegetable-01.png",
+      "source_sha256": "e5ac66892550dfcdb5c354de6a24c61e337144454c03467c79c18a0abed73530",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "b73b8079f5b578380d8ede8b6134095b9663b000ecbf9c38d112618a3980ad68",
+      "subjects": [
+        "Bamboo shoots",
+        "bitter melon"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit the attached paired food watercolor into a true transparent-background PNG for editorial book typesetting. Preserve exactly both original illustrated subjects, their species/food identity, shapes, color, inking, relative size, left/right positions and broad separation. Remove only all off-white paper background and texture, including open gaps around fins, stems, leaves and food. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/vegetable-02-new.png",
+      "source_path": "book/art/glossary/singles/vegetable-02-new.png",
+      "source_sha256": "3bf22a6fa5658ddc92cc4ceff45fedb2ab44e3dd95c5fd8c0ea13b30a35f1a06",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "1d37191a266ee88cc7608edd432e5ecde9dfaef04085848fad2c5f66546fcea2",
+      "subjects": [
+        "Ginnan (ginkgo nut)"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit this single botanical food watercolor into a true transparent-background PNG for editorial book typesetting. Preserve the exact original illustrated subject, species/food identity, anatomy, shape, color, inking and scale. Remove only all off-white paper background and texture, including open gaps around leaves, stems and food. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/vegetable-02.png",
+      "source_path": "book/art/glossary/pages/vegetable-02.png",
+      "source_sha256": "7b9d164c2dd0366f0d6602f4788429f3c1f499488b979dd3322e92660c1ee0c0",
+      "width_px": 2048,
+      "height_px": 768,
+      "sha256": "b7511a92444666b743230968f7ca00906ef9583d3ca8c2b902c32dfcd56aa6bb",
+      "subjects": [
+        "Gobō (burdock root)",
+        "Kabocha squash"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit the attached paired food watercolor into a true transparent-background PNG for editorial book typesetting. Preserve exactly both original illustrated subjects, their species/food identity, shapes, color, inking, relative size, left/right positions and broad separation. Remove only all off-white paper background and texture, including open gaps around fins, stems, leaves and food. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/vegetable-03.png",
+      "source_path": "book/art/glossary/pages/vegetable-03.png",
+      "source_sha256": "a988c1a70b14aa963d95473c42d49b28fe618ca6446215711094a8c3b2d0edca",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "13f3eea3c4cfe1d0f273c74325e6c4bdd508f85ae63e01b2cab2f5e23afba6b6",
+      "subjects": [
+        "lotus root",
+        "Matsutake mushroom"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit the attached paired food watercolor into a true transparent-background PNG for editorial book typesetting. Preserve exactly both original illustrated subjects, their species/food identity, shapes, color, inking, relative size, left/right positions and broad separation. Remove only all off-white paper background and texture, including open gaps around leaves, stems and food. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/vegetable-04.png",
+      "source_path": "book/art/glossary/pages/vegetable-04.png",
+      "source_sha256": "c2fb624075dcdaeb02ebe7d282316f6bea5b5464add578f3774e2d690fc942b5",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "3b369e7b6075e484aa01b65139ca652f555a656ed19ef9447b0a4bd7c26d8957",
+      "subjects": [
+        "Murasaki-imo (purple sweet potato)",
+        "Myōga (ginger bud)"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit the attached paired food watercolor into a true transparent-background PNG for editorial book typesetting. Preserve exactly both original illustrated subjects, their species/food identity, shapes, color, inking, relative size, left/right positions and broad separation. Remove only all off-white paper background and texture, including open gaps around leaves, stems and food. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/vegetable-05-new.png",
+      "source_path": "book/art/glossary/singles/vegetable-05-new.png",
+      "source_sha256": "92daac988c760036c7d290d352d56d46cecf623495bab17d5ee2ef1ffa37c1cf",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "be1040326f1acc30ee84afcf3ad77d1eaab540f36a00914fc003e0b1de4b4142",
+      "subjects": [
+        "nasu (eggplant)"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit this single botanical food watercolor into a true transparent-background PNG for editorial book typesetting. Preserve the exact original illustrated subject, species/food identity, anatomy, shape, color, inking and scale. Remove only all off-white paper background and texture, including open gaps around leaves, stems and food. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/vegetable-05.png",
+      "source_path": "book/art/glossary/pages/vegetable-05.png",
+      "source_sha256": "6a1b1567f3c9a266af3704bee40d28222ebdf320b143eddc25c3fd0cf6b3a791",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "d637af22d0a2a244bc2d7426057a742ceab801864f8ab7c0d6331dd7bbdcf28c",
+      "subjects": [
+        "okra",
+        "Satoimo (taro root)"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit the attached paired food watercolor into a true transparent-background PNG for editorial book typesetting. Preserve exactly both original illustrated subjects, their species/food identity, shapes, color, inking, relative size, left/right positions and broad separation. Remove only all off-white paper background and texture, including open gaps around leaves, stems and food. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/vegetable-06.png",
+      "source_path": "book/art/glossary/pages/vegetable-06.png",
+      "source_sha256": "536223f432d6346434fa0d905e625520d8b59dffa76dfc1be1da5a7d859513ce",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "2f69d040280a8b8fa606877da84f1076db0a05eaf017225f51c1e5d6b85c1089",
+      "subjects": [
+        "Shishito pepper",
+        "Shungiku (chrysanthemum greens)"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit the attached paired food watercolor into a true transparent-background PNG for editorial book typesetting. Preserve exactly both original illustrated subjects, their species/food identity, shapes, color, inking, relative size, left/right positions and broad separation. Remove only all off-white paper background and texture, including open gaps around leaves, stems and food. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/vegetable-07-new.png",
+      "source_path": "book/art/glossary/singles/vegetable-07-new.png",
+      "source_sha256": "1ac939d63a3e1237fcf257745a3b173d46ab5a4b9fd2f5bde6243df6d35dde86",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "3f748518748993526c68a5e9f1deb705c5f2be43c15fd12988979425cc7335ff",
+      "subjects": [
+        "shiso (perilla leaves)"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit this single botanical food watercolor into a true transparent-background PNG for editorial book typesetting. Preserve the exact original illustrated subject, species/food identity, anatomy, shape, color, inking and scale. Remove only all off-white paper background and texture, including open gaps around leaves, stems and food. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/vegetable-07.png",
+      "source_path": "book/art/glossary/pages/vegetable-07.png",
+      "source_sha256": "d5b45724d13537742552b2620745e7a0c763af09ef254114ff2e6563d3447509",
+      "width_px": 1956,
+      "height_px": 804,
+      "sha256": "5a9f9ec3e0e54db8416ac3494b903578b9849ea4574153c602cfe31a0b94220f",
+      "subjects": [
+        "spring cabbage",
+        "tomorokoshi (young corn)"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit the attached paired food watercolor into a true transparent-background PNG for editorial book typesetting. Preserve exactly both original illustrated subjects, their species/food identity, shapes, color, inking, relative size, left/right positions and broad separation. Remove only all off-white paper background and texture, including open gaps around fins, stems, leaves and food. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/vegetable-08.png",
+      "source_path": "book/art/glossary/pages/vegetable-08.png",
+      "source_sha256": "bff89aae7f8fc64f1805f027d48990ab493266eb24b835d41f161ce42241d8cc",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "db0a32bdf355ca244f7a3a3bb8086f5d5452c9195c2fc04e9bb9a803f1eacf5c",
+      "subjects": [
+        "tōgan (winter melon)",
+        "トマト (tomato)"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit the attached paired food watercolor into a true transparent-background PNG for editorial book typesetting. Preserve exactly both original illustrated subjects, their species/food identity, shapes, color, inking, relative size, left/right positions and broad separation. Remove only all off-white paper background and texture, including open gaps around fins, stems, leaves and food. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/cutouts/vegetable-10-new.png",
+      "source_path": "book/art/glossary/singles/vegetable-10-new.png",
+      "source_sha256": "72d2641785288b6e20aee72834e891632ad24c59c97dc74f04de79aa7804b88d",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "67b0c3b7eceed251d39e7d4b37edf548c8dae1ce02aab2ee26057774670c47de",
+      "subjects": [
+        "胡瓜 (cucumber)"
+      ],
+      "tool": "built-in image_gen edit",
+      "transparent_background": true,
+      "edit_prompt": "Edit this single illustrated food or seafood watercolor into a true transparent-background PNG for editorial book typesetting. Preserve the exact original subject, species/food identity, anatomy, shape, color, inking and scale. Remove only all off-white paper background and texture, including open gaps around stems, shells, fins and food. Keep natural clean cutout contours. No rectangular backdrop, no cast shadow, no new objects, no labels or text.",
+      "subject_review": "pending",
+      "print_review": "pending"
+    }
+  ]
+}

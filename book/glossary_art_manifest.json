@@ -1,0 +1,504 @@
+{
+  "status": "draft",
+  "entries": [
+    {
+      "path": "book/art/glossary/food-triptych-draft.png",
+      "width_px": 1942,
+      "height_px": 809,
+      "sha256": "699b69f1ad990aff81d52ae0b6bf9f1895f918e0b3d58c3704293bd87691f659",
+      "subjects": [
+        "loquat",
+        "fava beans",
+        "horse mackerel"
+      ],
+      "placement": "working glossary opener",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-food-triptych.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/pages/fruit-01.png",
+      "width_px": 1942,
+      "height_px": 809,
+      "sha256": "8565d0331350abb997785b8e3f25b181be114014909ecd4aa3b69551c61376d1",
+      "subjects": [
+        "amanatsu",
+        "cherry"
+      ],
+      "placement": "fruit glossary page 1",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fruit-01.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/pages/fruit-02.png",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "ad2d87f59ebbe7a64a9275bea843a989a2bf9badadf54dc53efed60f68d8d0ed",
+      "subjects": [
+        "Fig (ichijiku)",
+        "Green ume plums"
+      ],
+      "placement": "fruit glossary page 2",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fruit-02.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/pages/fruit-03.png",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "3a1e1bae4e52fba23694dcb2e85ba852c0907c469d3b048c8d3e11fda7427bfe",
+      "subjects": [
+        "Karin (Chinese quince)",
+        "mango"
+      ],
+      "placement": "fruit glossary page 3",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fruit-03.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/pages/fruit-04.png",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "0d38de2bbf7e05180ccc5eca71d7f3a1db79f5fc6f89e6f1e24be11e56efe05e",
+      "subjects": [
+        "muscat grapes",
+        "passion fruit"
+      ],
+      "placement": "fruit glossary page 4",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fruit-04.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/pages/fruit-05.png",
+      "width_px": 1904,
+      "height_px": 826,
+      "sha256": "774896bf9a283f534061a71e7de876a280b38d3ae55771b55a8dd6e2c9d1ef6e",
+      "subjects": [
+        "Ringo (apple)",
+        "Strawberries"
+      ],
+      "placement": "fruit glossary page 5",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fruit-05.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/pages/fruit-06.png",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "3d24b8cee4e09547ab89b3593b09fc122765583bec4624c5de0a867c0dfb3b35",
+      "subjects": [
+        "watermelon",
+        "white peach"
+      ],
+      "placement": "fruit glossary page 6",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fruit-06.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/pages/fruit-07.png",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "86a2c8eb124644db8ae7d49a3fbecf1952204841248b15a5d3b2914fde6cadb8",
+      "subjects": [
+        "Yamabudo (wild mountain grape)",
+        "梨 (Japanese pear)"
+      ],
+      "placement": "fruit glossary page 7",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fruit-07.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/pages/vegetable-01.png",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "e5ac66892550dfcdb5c354de6a24c61e337144454c03467c79c18a0abed73530",
+      "subjects": [
+        "Bamboo shoots",
+        "bitter melon"
+      ],
+      "placement": "vegetable glossary page 1",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/vegetable-01.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/pages/vegetable-02.png",
+      "width_px": 2048,
+      "height_px": 768,
+      "sha256": "7b9d164c2dd0366f0d6602f4788429f3c1f499488b979dd3322e92660c1ee0c0",
+      "subjects": [
+        "Gobō (burdock root)",
+        "Kabocha squash"
+      ],
+      "placement": "vegetable glossary page 2",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/vegetable-02.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/pages/vegetable-03.png",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "a988c1a70b14aa963d95473c42d49b28fe618ca6446215711094a8c3b2d0edca",
+      "subjects": [
+        "lotus root",
+        "Matsutake mushroom"
+      ],
+      "placement": "vegetable glossary page 3",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/vegetable-03.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/pages/vegetable-04.png",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "c2fb624075dcdaeb02ebe7d282316f6bea5b5464add578f3774e2d690fc942b5",
+      "subjects": [
+        "Murasaki-imo (purple sweet potato)",
+        "Myōga (ginger bud)"
+      ],
+      "placement": "vegetable glossary page 4",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/vegetable-04.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/pages/vegetable-05.png",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "6a1b1567f3c9a266af3704bee40d28222ebdf320b143eddc25c3fd0cf6b3a791",
+      "subjects": [
+        "okra",
+        "Satoimo (taro root)"
+      ],
+      "placement": "vegetable glossary page 5",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/vegetable-05.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/pages/vegetable-06.png",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "536223f432d6346434fa0d905e625520d8b59dffa76dfc1be1da5a7d859513ce",
+      "subjects": [
+        "Shishito pepper",
+        "Shungiku (chrysanthemum greens)"
+      ],
+      "placement": "vegetable glossary page 6",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/vegetable-06.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/pages/vegetable-07.png",
+      "width_px": 1956,
+      "height_px": 804,
+      "sha256": "d5b45724d13537742552b2620745e7a0c763af09ef254114ff2e6563d3447509",
+      "subjects": [
+        "spring cabbage",
+        "tomorokoshi (young corn)"
+      ],
+      "placement": "vegetable glossary page 7",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/vegetable-07.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/pages/vegetable-08.png",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "bff89aae7f8fc64f1805f027d48990ab493266eb24b835d41f161ce42241d8cc",
+      "subjects": [
+        "tōgan (winter melon)",
+        "トマト (tomato)"
+      ],
+      "placement": "vegetable glossary page 8",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/vegetable-08.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/pages/fish-01.png",
+      "width_px": 2048,
+      "height_px": 768,
+      "sha256": "593b9a6274fdef172e3d67a1baad5cccb4840041c714394829912d4a544163e0",
+      "subjects": [
+        "Bonito",
+        "Flounder"
+      ],
+      "placement": "fish glossary page 1",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fish-01.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/pages/fish-02.png",
+      "width_px": 1942,
+      "height_px": 809,
+      "sha256": "0366808798be37f1bae4d78b7e8ef496121cd613c947a495c56e81684291ac07",
+      "subjects": [
+        "Horse mackerel",
+        "Hotaru ika (firefly squid)"
+      ],
+      "placement": "fish glossary page 2",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fish-02.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/pages/fish-03.png",
+      "width_px": 1983,
+      "height_px": 793,
+      "sha256": "f579bf5a7fdb1579b42b64a6881c29102bfbf5852eeaba141044bb51b876954e",
+      "subjects": [
+        "Kinmedai (splendid alfonsino)",
+        "Kuruma ebi (Japanese tiger prawn)"
+      ],
+      "placement": "fish glossary page 3",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fish-03.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/pages/fish-04.png",
+      "width_px": 2048,
+      "height_px": 768,
+      "sha256": "246dbf191cc19a3b7f82c124e0d1692c7851728ed87cdd84aa8a6df52a63abe5",
+      "subjects": [
+        "Pacific saury (sanma)",
+        "Sake (salmon)"
+      ],
+      "placement": "fish glossary page 4",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fish-04.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/pages/fish-05.png",
+      "width_px": 1956,
+      "height_px": 804,
+      "sha256": "4aa5a13c111f594cb1147cde60ac000fd55d9726553dd5eb0f2f222194039ca8",
+      "subjects": [
+        "Sayori (halfbeak)",
+        "squid"
+      ],
+      "placement": "fish glossary page 5",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fish-05.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/pages/fish-06.png",
+      "width_px": 1942,
+      "height_px": 809,
+      "sha256": "4f7bbbed63b578b8c37c5f8d192465abcb1e03af6aecb4a061dd5fea419dee8d",
+      "subjects": [
+        "tako (octopus)",
+        "太刀魚 (beltfish)"
+      ],
+      "placement": "fish glossary page 6",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fish-06.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/singles/fruit-01-new.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "410820db7fc0e5a6805f04c26b24215e5b15dd42b600a60c948bcc38f9bd8351",
+      "subjects": [
+        "blueberry"
+      ],
+      "placement": "fruit glossary page 1",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fruit-01-new.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/singles/fruit-04-new.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "9e792a5aa1716f77d8158749dddc33f453a4c6c29df26a574eb63d071e246639",
+      "subjects": [
+        "Kyoho grape"
+      ],
+      "placement": "fruit glossary page 4",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fruit-04-new.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/singles/fruit-06-new.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "7cef161b91e6674d69ae47e39391aa68eb5761170f5fd80b55e5d5cffbe2b26e",
+      "subjects": [
+        "Pear (nashi)"
+      ],
+      "placement": "fruit glossary page 6",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fruit-06-new.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/singles/fruit-07-new.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "8bee6314ff12479c1ef60fd515a0a05d0241465c6b81540586a94ef0052b8636",
+      "subjects": [
+        "suika (early watermelon)"
+      ],
+      "placement": "fruit glossary page 7",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fruit-07-new.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/singles/fruit-09-new.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "eeb2b844ca2304bbd67a4e96df6011902ba618ecdc4516dcae782213a2af7232",
+      "subjects": [
+        "プラム (plum)"
+      ],
+      "placement": "fruit glossary page 9",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fruit-09-new.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/singles/vegetable-02-new.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "3bf22a6fa5658ddc92cc4ceff45fedb2ab44e3dd95c5fd8c0ea13b30a35f1a06",
+      "subjects": [
+        "Ginnan (ginkgo nut)"
+      ],
+      "placement": "vegetable glossary page 2",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/vegetable-02-new.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/singles/vegetable-05-new.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "92daac988c760036c7d290d352d56d46cecf623495bab17d5ee2ef1ffa37c1cf",
+      "subjects": [
+        "nasu (eggplant)"
+      ],
+      "placement": "vegetable glossary page 5",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/vegetable-05-new.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/singles/vegetable-07-new.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "1ac939d63a3e1237fcf257745a3b173d46ab5a4b9fd2f5bde6243df6d35dde86",
+      "subjects": [
+        "shiso (perilla leaves)"
+      ],
+      "placement": "vegetable glossary page 7",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/vegetable-07-new.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/singles/vegetable-10-new.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "72d2641785288b6e20aee72834e891632ad24c59c97dc74f04de79aa7804b88d",
+      "subjects": [
+        "胡瓜 (cucumber)"
+      ],
+      "placement": "vegetable glossary page 10",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/vegetable-10-new.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/singles/fish-03-new.png",
+      "width_px": 1774,
+      "height_px": 887,
+      "sha256": "13e333369b398dd16023e6ccd6a299459c34c7ef199dd1d8825ca69bbccea9c3",
+      "subjects": [
+        "Iwashi (sardine)"
+      ],
+      "placement": "fish glossary page 3",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fish-03-new.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/singles/fish-05-new.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "46b02932712f5d03cb4cbfba31de966af414c66f5ae41c3cf4f257922dfa8e6f",
+      "subjects": [
+        "Shijimi (freshwater clams)"
+      ],
+      "placement": "fish glossary page 5",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fish-05-new.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    },
+    {
+      "path": "book/art/glossary/singles/fish-07-new.png",
+      "width_px": 1536,
+      "height_px": 1024,
+      "sha256": "ae98037bfb968b93793d944a7c1078af01f31a326e59595cc727ad212cb74338",
+      "subjects": [
+        "鮑 (abalone)"
+      ],
+      "placement": "fish glossary page 7",
+      "tool": "built-in image_gen",
+      "prompt_path": "book/prompts/glossary-pages/fish-07-new.txt",
+      "subject_review": "pending",
+      "print_review": "pending"
+    }
+  ]
+}

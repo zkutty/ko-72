@@ -27,6 +27,8 @@ jobs:
           node-version: '22'
       - run: pip install -r requirements.txt
       - run: python -m unittest discover -s tests -v
+      - run: python book/build_glossary.py --check
+      - run: python book/build_glossary_index.py --check
       - run: npm test --prefix worker
       - name: Cache-only static validation (no delivery secrets)
         run: |
