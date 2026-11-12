@@ -23,6 +23,14 @@
     "season": "Early summer, when conger eel fattens in warming coastal waters",
     "source": "anago no yanagawa"
   },
+  "ank-nabe": {
+    "name_en": "Monkfish hot pot",
+    "name_jp": "鮟鱇鍋",
+    "name_romaji": "ankō-nabe",
+    "note": "A communal clay pot simmers with chunks of monkfish — the gelatinous skin, firm flesh, and prized liver melting into a miso or soy broth alongside tofu and vegetables. The dish belongs to the coldest months when this bottom-dwelling fish, hauled from the frigid waters off Ibaraki and Aomori, develops the voluptuous liver that clouds the broth with warming richness.",
+    "season": "Deep winter, when monkfish flesh is fattest and the liver richest",
+    "source": "Ankō-nabe"
+  },
   "ao-mame-gohan": {
     "name_en": "Green soybean rice",
     "name_jp": "青豆ご飯",
@@ -190,6 +198,14 @@
     "note": "Sliced bitter melon is blanched briefly to temper its bite, then dressed in a silken paste of mashed tofu seasoned with white sesame, mirin, and a whisper of sugar. The dish arrives when goya vines heavy with warted green fruit climb Okinawan trellises and mainland gardens alike — its cooling bitterness a folk remedy against summer fatigue, the pale tofu a balm against the glare of August.",
     "season": "High summer, when the heat is most oppressive",
     "source": "goya no shiraae"
+  },
+  "hakusai-to-buta-niku-no-mille-feuille-nabe": {
+    "name_en": "Layered napa cabbage and pork belly hot pot",
+    "name_jp": "白菜と豚肉のミルフィーユ鍋",
+    "name_romaji": "hakusai to buta-niku no miru-fīyu nabe",
+    "note": "Alternating leaves of napa cabbage and thin slices of pork belly are stacked, cut crosswise, and arranged upright in a clay pot to simmer in dashi or light broth. The dish belongs to the coldest weeks of January and February, when frost-touched hakusai reaches its peak sweetness and families gather around the nabe for warmth.",
+    "season": "Deep winter, when napa cabbage sweetens after the first hard frosts",
+    "source": "Hakusai to buta-niku no mille-feuille nabe"
   },
   "hamo-no-kabayaki": {
     "name_en": "Grilled pike eel in sweet soy glaze",
@@ -695,6 +711,14 @@
     "season": "High summer, when eggplants grow heavy on the vine",
     "source": "nasu no nibitashi"
   },
+  "negi-ma-nabe": {
+    "name_en": "Tuna and leek hot pot",
+    "name_jp": "葱鮪鍋",
+    "name_romaji": "negi-ma nabe",
+    "note": "Cubes of fatty tuna belly and lengths of thick white leek are simmered in a light soy-dashi broth, the fish releasing its oils into the warming liquid. This was once a winter staple of Edo commoners, born when maguro toro was considered too oily for proper sashimi and sold cheaply to be cooked with the frost-sweetened nebuka leeks of the Kantō plain.",
+    "season": "Deep winter, when Tokyo leeks reach their sweetest",
+    "source": "Negi-ma nabe"
+  },
   "ohagi": {
     "name_en": "Sweet rice balls coated in red bean paste",
     "name_jp": "おはぎ",
@@ -1146,5 +1170,13 @@
     "note": "Wild or cultivated mountain yam is grated to a frothy, viscous pulp and loosened with warm dashi, sometimes enriched with miso or soy, then poured over hot rice or soba. The dish appears when the first frosts sweeten the tubers still buried in cold earth, and the body craves something warming yet easy to swallow — a gentle fortification against the chill.",
     "season": "Late autumn through winter, when the tubers have stored their starch",
     "source": "Yamaimo no tororo-jiru"
+  },
+  "yud-fu": {
+    "name_en": "Simmered tofu in hot water",
+    "name_jp": "湯豆腐",
+    "name_romaji": "yudōfu",
+    "note": "Blocks of silken tofu are warmed gently in kombu-steeped water, lifted out trembling and dressed only with soy, citrus, and perhaps a whisper of grated ginger. It belongs to the coldest months when the body craves warmth without weight, and when Kyoto's soft well water yields tofu of particular sweetness—a dish born in temple kitchens where simplicity itself became the point.",
+    "season": "Deep winter, when Kyoto temples are wrapped in silence",
+    "source": "Yudōfu"
   }
 }

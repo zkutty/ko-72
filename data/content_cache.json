@@ -3901,5 +3901,106 @@
       "closing": "苔むす庭石の上に、一輪の山茶花がそのままの姿で落ちている——完璧なまま手放すことを、静かに教えて。"
     },
     "_sent_on": "2026-11-07"
+  },
+  "62": {
+    "en": {
+      "summary": "The first hard frost etches the ground, and the earth beneath your feet begins to stiffen with cold.",
+      "opening": "Morning arrives with a new severity. The ground, soft with autumn's last rains, now resists the footfall — a thin crust of frost binding soil and fallen leaves into a single brittle membrane. The air has an iron taste, and breath hangs visible in the still darkness before dawn.",
+      "nature_notes": "Wild geese have settled into their winter wetlands, their calls carrying far across the hardening fields. Deciduous trees stand nearly bare, their last leaves trembling bronze and rust against pewter skies. Earthworms and insects retreat deeper into soil that will soon be locked until spring, while foxes grow bolder, their winter coats thickening to russet fullness.",
+      "seasonal_produce": {
+        "fruits": [
+          "Fuyu persimmon (kaki)",
+          "Mikan (satsuma mandarin)",
+          "Yuzu citrus",
+          "Quince (karin)"
+        ],
+        "vegetables": [
+          "Daikon radish",
+          "Napa cabbage (hakusai)",
+          "Japanese leek (negi)",
+          "Turnip (kabu)"
+        ],
+        "fish": [
+          "Yellowtail (buri)",
+          "Anglerfish (ankō)",
+          "Snow crab (zuwaigani)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "Yudōfu",
+          "description": "Silken tofu warmed in kelp broth, a dish of profound simplicity that honors the body's need for gentle heat as the earth hardens."
+        },
+        {
+          "name": "Ankō-nabe",
+          "description": "Anglerfish hot pot, the liver enriching the broth with deep umami — a fisherman's dish now marking winter's true arrival."
+        },
+        {
+          "name": "Hakusai to buta-niku no mille-feuille nabe",
+          "description": "Layered napa cabbage and pork belly simmered until tender, the vegetables at their sweetest after the first frosts."
+        },
+        {
+          "name": "Negi-ma nabe",
+          "description": "Tuna belly and thick-cut leeks in a light soy broth, the leeks having gained sweetness from the cold soil."
+        }
+      ],
+      "cultural_note": "The Shichi-Go-San festival falls on November 15th, when families bring children aged three, five, and seven to shrines to pray for their healthy growth. Children dressed in formal kimono receive chitose-ame, 'thousand-year candy,' its elongated shape symbolizing longevity. The timing aligns with the old belief that odd-numbered ages carry particular spiritual significance during winter's threshold.",
+      "haiku": {
+        "japanese": "霜の声 土に沁み入る 夜の底",
+        "romaji": "shimo no koe / tsuchi ni shimi-iru / yoru no soko",
+        "english": "voice of frost / seeping into earth — / the bottom of night"
+      },
+      "closing": "Somewhere beneath the frozen crust, roots hold still, waiting for the long turning back toward light."
+    },
+    "ja": {
+      "summary": "朝の霜が地面を白く染め、土が初めて凍てつく気配を見せる頃。",
+      "opening": "夜明け前の闇に、息が白く立ち昇る。昨日まで柔らかだった土は、薄い霜の膜に覆われ、踏めばかすかに軋む。空気は冴え冴えと澄み、冬の匂いが鼻腔の奥まで届く。",
+      "nature_notes": "渡り鳥の雁は湿地に落ち着き、その声が凍りゆく田畑の上を遠くまで響く。落葉樹はほぼ裸となり、最後の葉が鈍色の空に震えている。土中の虫たちは深く潜り、狐は冬毛を厚くして、夕暮れの野に姿を現すようになる。",
+      "seasonal_produce": {
+        "fruits": [
+          "柿",
+          "蜜柑",
+          "柚子",
+          "花梨（かりん）"
+        ],
+        "vegetables": [
+          "大根",
+          "白菜",
+          "長葱",
+          "蕪"
+        ],
+        "fish": [
+          "鰤（ぶり）",
+          "鮟鱇（あんこう）",
+          "ズワイガニ"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "湯豆腐",
+          "description": "昆布出汁に絹豆腐を温めるだけの潔さ、凍て始めた夜にしみじみと体を温める。"
+        },
+        {
+          "name": "鮟鱇鍋",
+          "description": "肝を溶かし込んだ濃厚な出汁が身に絡む、冬の到来を告げる漁師町の味。"
+        },
+        {
+          "name": "白菜と豚肉のミルフィーユ鍋",
+          "description": "霜に当たって甘みを増した白菜と豚バラを重ね、とろりと煮込む。"
+        },
+        {
+          "name": "葱鮪鍋",
+          "description": "鮪の脂身と太い葱を淡い醤油出汁で炊く、寒さで甘くなった葱の滋味を味わう鍋。"
+        }
+      ],
+      "cultural_note": "十一月十五日は七五三。三歳、五歳、七歳の子どもたちが晴れ着に身を包み、氏神様に健やかな成長を祈願する。細長い千歳飴には長寿の願いが込められている。冬の入口にあたるこの時期、奇数の年齢は特別な霊的意味を持つとされてきた。",
+      "haiku": {
+        "japanese": "霜の声 土に沁み入る 夜の底",
+        "romaji": "shimo no koe / tsuchi ni shimi-iru / yoru no soko",
+        "english": "voice of frost / seeping into earth — / the bottom of night"
+      },
+      "closing": "凍てつく土の下で、根は静かに息を潜め、光の戻る日を待っている。"
+    },
+    "_sent_on": "2026-11-12"
   }
 }

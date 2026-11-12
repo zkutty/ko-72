@@ -62,6 +62,15 @@
     "peak": "Early summer through the rainy season, when the flesh reaches its sweetest",
     "source": "anago (conger eel)"
   },
+  "anglerfish-ank": {
+    "category": "fish",
+    "name_en": "Anglerfish",
+    "name_jp": "鮟鱇",
+    "name_romaji": "ankō",
+    "note": "This bottom-dwelling fish yields seven treasured parts, but it is the liver — ankimo — that commands reverence: pale, rich, and silken as foie gras, at its fattiest when January winds howl. In Ibaraki's fishing towns, the whole fish hangs from hooks for butchering, too gelatinous to lie flat, destined for nabe pots that warm the darkest nights of the year.",
+    "peak": "Deep winter, when the Joban coast waters reach their coldest",
+    "source": "Anglerfish (ankō)"
+  },
   "aoyuzu-green-yuzu": {
     "category": "vegetable",
     "name_en": "Green yuzu",
@@ -268,6 +277,15 @@
     "note": "This long white radish reaches its peak after the first hard frosts, when cold stress converts its starches to sugar, yielding flesh that is both crisp and faintly honeyed. Simmered in oden until translucent, grated raw as oroshi to cut through rich grilled fish, or pickled into takuan — daikon anchors the winter kitchen with quiet, adaptable presence.",
     "peak": "Deep winter, when frost sweetens the flesh",
     "source": "Daikon (Japanese radish)"
+  },
+  "daikon-radish": {
+    "category": "vegetable",
+    "name_en": "Daikon radish",
+    "name_jp": "大根",
+    "name_romaji": "daikon",
+    "note": "A long white radish with crisp, juicy flesh that turns translucent and silken when simmered in dashi — the cold months concentrate its sugars while mellowing its peppery bite. It anchors the winter table in oden pots and simmered dishes, and appears grated fresh as oroshi beside grilled fish, a cool counterpoint to richness.",
+    "peak": "Late autumn through winter, when frost sweetens the flesh",
+    "source": "Daikon radish"
   },
   "early-cherries": {
     "category": "fruit",
@@ -673,6 +691,15 @@
     "note": "Named for the sixteen seeds that line each slender pod, these beans snap with a grassy sweetness and cook to a silken texture that green beans cannot match. In the Obon season, they appear in shōjin ryōri offerings and simple ohitashi, their deep green a quiet counterpoint to the summer's relentless brightness.",
     "peak": "High summer, when the cicadas reach full chorus",
     "source": "Jūroku-sasage (yard-long beans)"
+  },
+  "japanese-leek-negi": {
+    "category": "vegetable",
+    "name_en": "Japanese leek",
+    "name_jp": "葱",
+    "name_romaji": "negi",
+    "note": "The white stems turn almost custard-soft when grilled over charcoal, their sharp bite mellowing into something closer to caramelized onion with a faint mineral sweetness. Essential to winter nabe pots and yakitori counters alike, negi marks the season when the body craves warmth from within.",
+    "peak": "Deep winter, when frost sweetens the pale shanks buried in dark soil",
+    "source": "Japanese leek (negi)"
   },
   "japanese-pear": {
     "appearances": [],
@@ -1299,6 +1326,15 @@
     "peak": "Deep winter, when frost sweetens the buried white shafts",
     "source": "Naga-negi (long welsh onion)"
   },
+  "napa-cabbage-hakusai": {
+    "category": "vegetable",
+    "name_en": "Napa cabbage",
+    "name_jp": "白菜",
+    "name_romaji": "hakusai",
+    "note": "The pale, tightly furled heads grow sweeter after the first frost converts their starches to sugar, yielding leaves that are crisp yet tender, with a faint mustard brightness that mellows into silk when simmered. It anchors the winter nabe pot, layered with pork belly or scattered into yosenabe, its quiet bulk absorbing the surrounding broth while releasing its own gentle sweetness into the communal warmth.",
+    "peak": "Late autumn through winter, when frost sweetens the leaves",
+    "source": "Napa cabbage (hakusai)"
+  },
   "nashi-asian-pear": {
     "category": "fruit",
     "id": "nashi",
@@ -1870,6 +1906,15 @@
     "peak": "Late spring, as warm rains coax the vines into tender abundance",
     "source": "Silk pod peas"
   },
+  "snow-crab-zuwaigani": {
+    "category": "fish",
+    "name_en": "Snow crab",
+    "name_jp": "ズワイガニ",
+    "name_romaji": "zuwaigani",
+    "note": "The legs yield meat of almost startling sweetness, with a clean brine finish and fibers that separate in delicate, snow-white strands — best eaten simply steamed or as sashimi to honor the cold waters that firmed its flesh. Crab season opens in November along the Sea of Japan coast, and the finest specimens arrive at market just as families gather for year-end celebrations, their coral-red shells a warming presence against the grey winter light.",
+    "peak": "Deep winter, from the first heavy snows through the coldest weeks of February",
+    "source": "Snow crab (zuwaigani)"
+  },
   "soramame-fava-beans": {
     "category": "vegetable",
     "name_en": "Fava bean",
@@ -2148,6 +2193,15 @@
     "note": "A climbing vine whose heart-shaped leaves release a subtle mucilage when cut, lending body to clear soups and a cooling slickness against the August heat. Its deep green arrives just as true spinach has long since bolted, offering the Japanese summer kitchen a heat-loving stand-in with an earthier, slightly mineral edge.",
     "peak": "High summer, when the cicadas reach their fever pitch",
     "source": "Tsurumurasaki (Malabar spinach)"
+  },
+  "turnip-kabu": {
+    "category": "vegetable",
+    "name_en": "Turnip",
+    "name_jp": "蕪",
+    "name_romaji": "kabu",
+    "note": "Small Japanese turnips yield flesh so tender it borders on translucent, with a clean, faintly peppery bite that mellows to pure sweetness when simmered or pickled. They appear in senmaizuke's paper-thin layers, in steaming bowls of winter oden, and grated raw as a palate-clearing accompaniment—a quiet constant as the year draws toward its coldest days.",
+    "peak": "Late autumn through early winter, when the first frosts concentrate their sweetness",
+    "source": "Turnip (kabu)"
   },
   "udo-mountain-asparagus": {
     "category": "vegetable",
