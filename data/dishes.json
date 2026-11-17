@@ -271,6 +271,14 @@
     "season": "Early autumn, when gobies fatten in brackish estuaries",
     "source": "Haze no tempura"
   },
+  "hirame-no-engawa-yaki": {
+    "name_en": "Grilled flounder fin-edge",
+    "name_jp": "平目の縁側焼き",
+    "name_romaji": "hirame no engawa-yaki",
+    "note": "The engawa — the thin, gelatinous muscle running along the flounder's dorsal and ventral fins — is brushed with soy or salt and grilled until its collagen-rich flesh turns slightly crisp at the edges while remaining silken within. Hirame reach peak condition in the coldest months when they store fat against the chill, and this prized cut, scarce even from a large fish, appears on plates during the brief window before spawning depletes their reserves.",
+    "season": "Late winter through early spring, when flounder are fattest from cold waters",
+    "source": "Hirame no engawa-yaki"
+  },
   "hirame-no-kobujime": {
     "name_en": "Kelp-cured flounder",
     "name_jp": "平目の昆布締め",
@@ -503,6 +511,14 @@
     "season": "Early summer, when the shallows warm and the fish run silver",
     "source": "Kisu no tempura"
   },
+  "komatsuna-to-aburaage-no-nibitashi": {
+    "name_en": "Simmered komatsuna and fried tofu in seasoned broth",
+    "name_jp": "小松菜と油揚げの煮浸し",
+    "name_romaji": "komatsuna to aburaage no nibitashi",
+    "note": "Tender komatsuna greens and thin sheets of fried tofu are briefly simmered in dashi seasoned with soy and mirin, then left to steep so the leaves drink in the savory liquid. This humble dish appears on winter tables when frost-touched komatsuna develops a gentle sweetness that pairs perfectly with the oil-rich warmth of aburaage.",
+    "season": "Late autumn through winter, when komatsuna reaches its sweetest after the first frosts",
+    "source": "Komatsuna to aburaage no nibitashi"
+  },
   "kuri-gohan": {
     "name_en": "Chestnut rice",
     "name_jp": "栗ご飯",
@@ -718,6 +734,14 @@
     "note": "Cubes of fatty tuna belly and lengths of thick white leek are simmered in a light soy-dashi broth, the fish releasing its oils into the warming liquid. This was once a winter staple of Edo commoners, born when maguro toro was considered too oily for proper sashimi and sold cheaply to be cooked with the frost-sweetened nebuka leeks of the Kantō plain.",
     "season": "Deep winter, when Tokyo leeks reach their sweetest",
     "source": "Negi-ma nabe"
+  },
+  "negi-shio-butadon": {
+    "name_en": "Salt-leek pork rice bowl",
+    "name_jp": "ねぎ塩豚丼",
+    "name_romaji": "negi-shio butadon",
+    "note": "Thin-sliced pork belly is seared until the edges crisp, then dressed with a bright sauce of chopped negi, sesame oil, and coarse salt, served over hot rice. The dish belongs to the cold months when frost-touched negi develops its characteristic sweetness, the white stalks turning almost creamy beneath the charred meat.",
+    "season": "Late autumn through winter, when negi reaches its sweetest",
+    "source": "Negi-shio butadon"
   },
   "ohagi": {
     "name_en": "Sweet rice balls coated in red bean paste",
@@ -1178,5 +1202,13 @@
     "note": "Blocks of silken tofu are warmed gently in kombu-steeped water, lifted out trembling and dressed only with soy, citrus, and perhaps a whisper of grated ginger. It belongs to the coldest months when the body craves warmth without weight, and when Kyoto's soft well water yields tofu of particular sweetness—a dish born in temple kitchens where simplicity itself became the point.",
     "season": "Deep winter, when Kyoto temples are wrapped in silence",
     "source": "Yudōfu"
+  },
+  "yuzu-miso-dengaku": {
+    "name_en": "Tofu or vegetables with yuzu-citrus miso glaze",
+    "name_jp": "柚子味噌田楽",
+    "name_romaji": "yuzu miso dengaku",
+    "note": "Skewered tofu, daikon, or konnyaku is grilled until the edges char, then brushed with sweet white miso brightened by fresh yuzu zest and juice. The dish arrives as yuzu trees hang heavy with golden fruit in November, their perfume a cold-weather greeting that cuts through the richness of the caramelized glaze.",
+    "season": "Late autumn through early winter, when yuzu reaches peak fragrance",
+    "source": "Yuzu-miso dengaku"
   }
 }

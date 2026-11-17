@@ -215,6 +215,15 @@
     "peak": "Late summer through early autumn, when the air turns crisp and vine leaves begin to bronze",
     "source": "Budō (Japanese grapes)"
   },
+  "buri-yellowtail": {
+    "category": "fish",
+    "name_en": "Yellowtail",
+    "name_jp": "鰤",
+    "name_romaji": "buri",
+    "note": "A muscular fish that grows sweeter as temperatures drop, its belly meat now ribboned with pale fat that melts against warm rice. Called 'kan-buri' in its winter prime, it marks the year's end on countless family tables, simmered with daikon in a broth that clouds white with richness.",
+    "peak": "Deep winter, when cold seas concentrate the fat beneath the skin",
+    "source": "Buri (yellowtail)"
+  },
   "butterbur-stem-fuki": {
     "category": "vegetable",
     "name_en": "Butterbur stem",
@@ -394,6 +403,15 @@
     "note": "Pale green stems with a mineral bitterness that lingers clean on the tongue, their hollow centers ideal for simmering in dashi until the fibers turn silken. After the fleeting fuki-no-tō buds of early spring, these mature stalks arrive as the season's quieter second act — peeled, blanched, and often preserved as tsukudani to carry spring's memory into the humid months ahead.",
     "peak": "Late spring, when the stalks reach full height before summer's weight",
     "source": "Fuki (butterbur)"
+  },
+  "fuyu-persimmon": {
+    "category": "fruit",
+    "name_en": "Fuyu persimmon",
+    "name_jp": "富有柿",
+    "name_romaji": "fuyu-gaki",
+    "note": "A squat, tomato-shaped persimmon with flesh so dense and sweet it can be sliced like an apple and eaten crisp, its honey-amber color glowing against bare November branches. The fuyu arrives when rice harvest celebrations wind down, its firm sweetness a bridge between autumn's abundance and winter's quieter table.",
+    "peak": "Late autumn through early winter, when the first frosts concentrate the sugars",
+    "source": "Fuyu persimmon"
   },
   "fuyu-persimmon-kaki": {
     "category": "fruit",

@@ -4002,5 +4002,106 @@
       "closing": "凍てつく土の下で、根は静かに息を潜め、光の戻る日を待っている。"
     },
     "_sent_on": "2026-11-12"
+  },
+  "63": {
+    "en": {
+      "summary": "The first narcissus flowers open in sheltered gardens, releasing their sweet fragrance into the cooling November air.",
+      "opening": "In the quiet days before winter settles fully, a delicate sweetness drifts through morning gardens. The narcissus — called kinsenka for its golden cup — unfurls pale petals in protected corners, its perfume carrying far in the still, cold air. This is the season when fragrance becomes visible, rising like breath in the chill.",
+      "nature_notes": "Wild ducks have completed their migration and now gather on ponds and estuaries, their calls echoing across the water at dawn. The last persimmons hang bright orange against bare branches, while fallen leaves form copper drifts beneath the maples. Morning frost appears on grass blades, melting by midday into brief, cold sparkle.",
+      "seasonal_produce": {
+        "fruits": [
+          "Mikan (satsuma mandarin)",
+          "Fuyu persimmon",
+          "Yuzu citrus",
+          "La France pear"
+        ],
+        "vegetables": [
+          "Daikon (Japanese radish)",
+          "Negi (Japanese leek)",
+          "Shungiku (chrysanthemum greens)",
+          "Komatsuna (Japanese mustard spinach)"
+        ],
+        "fish": [
+          "Hirame (olive flounder)",
+          "Buri (yellowtail)",
+          "Sawara (Spanish mackerel)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "Hirame no engawa-yaki",
+          "description": "The prized fatty edge of flounder, lightly grilled until its oils release, celebrates the fish at its cold-water best."
+        },
+        {
+          "name": "Negi-shio butadon",
+          "description": "Thick slices of sweet winter leek crown salted pork over rice, the allium's gentle heat warming from within."
+        },
+        {
+          "name": "Komatsuna to aburaage no nibitashi",
+          "description": "Tender winter greens simmered with fried tofu in light dashi, a simple dish that speaks to the season's first true cold."
+        },
+        {
+          "name": "Yuzu-miso dengaku",
+          "description": "Grilled daikon or tofu glazed with yuzu-scented miso, the citrus arriving just as we need its brightness most."
+        }
+      ],
+      "cultural_note": "The narcissus holds special meaning in Japanese poetry and painting as a flower of winter purity. Unlike showy blossoms, it blooms in obscurity, often in temple gardens or along stone walls, embodying the aesthetic of hisoka — hidden beauty discovered by those who look carefully. Its fragrance, strongest in cold air, was said to clear the mind for contemplation.",
+      "haiku": {
+        "japanese": "水仙の香や朝霜の消ゆるまで",
+        "romaji": "suisen no ka ya asashimo no kiyuru made",
+        "english": "narcissus fragrance — lingering until the morning frost has gone"
+      },
+      "closing": "The narcissus asks nothing but cold air to carry its sweetness forward into winter's deeper quiet."
+    },
+    "ja": {
+      "summary": "日だまりの庭に水仙が咲き始め、凛とした香りが冷たい空気に漂う頃。",
+      "opening": "立冬を過ぎ、朝の冷え込みが肌に沁みる季節。軒下や石垣のそばで、水仙がひっそりと花を開く。金色の盞（さかずき）を思わせる副花冠から「金盞香」の名を持つこの花、その芳香は冷えた空気の中でこそ遠くまで届く。香りで冬の訪れを知る、静かな候である。",
+      "nature_notes": "渡り鳥の鴨たちは池や入り江に落ち着き、夜明けに鳴き交わす声が水面に響く。柿の実は葉を落とした枝に残り、朝日を受けて橙色に輝く。草の葉には霜が降り、昼前には消えて束の間の煌めきを残す。",
+      "seasonal_produce": {
+        "fruits": [
+          "蜜柑",
+          "富有柿",
+          "柚子",
+          "ラ・フランス"
+        ],
+        "vegetables": [
+          "大根",
+          "長葱",
+          "春菊",
+          "小松菜"
+        ],
+        "fish": [
+          "鮃（ひらめ）",
+          "鰤（ぶり）",
+          "鰆（さわら）"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "鮃の縁側焼き",
+          "description": "脂ののった鮃の縁側を軽く炙り、寒の水で身が締まったこの時季ならではの旨みを味わう。"
+        },
+        {
+          "name": "葱塩豚丼",
+          "description": "甘みの増した冬葱を厚切りにし、塩豚とともに丼に仕立てる、体の芯から温まる一品。"
+        },
+        {
+          "name": "小松菜と油揚げの煮浸し",
+          "description": "柔らかな冬の青菜を油揚げとともに出汁でさっと煮含め、初冬の食卓に滋味を添える。"
+        },
+        {
+          "name": "柚子味噌田楽",
+          "description": "大根や豆腐に柚子の香る味噌を塗って焼き上げる、柚子が出回り始めるこの候ならではの楽しみ。"
+        }
+      ],
+      "cultural_note": "水仙は古来より冬の清浄を象徴する花として、詩歌や絵画に描かれてきた。華やかさよりも、寺の庭の片隅や石垣の陰でひそやかに咲く姿が尊ばれ、「密かなる美」を見出す日本人の美意識と重なる。冷たい空気の中でこそ際立つその香りは、心を鎮め、思索を促すものとされた。",
+      "haiku": {
+        "japanese": "水仙の香や朝霜の消ゆるまで",
+        "romaji": "suisen no ka ya asashimo no kiyuru made",
+        "english": "narcissus fragrance — lingering until the morning frost has gone"
+      },
+      "closing": "水仙の香は、冷たい風に乗って、冬の奥へと静かに先立ってゆく。"
+    },
+    "_sent_on": "2026-11-17"
   }
 }
