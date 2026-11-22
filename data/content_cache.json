@@ -4103,5 +4103,106 @@
       "closing": "水仙の香は、冷たい風に乗って、冬の奥へと静かに先立ってゆく。"
     },
     "_sent_on": "2026-11-17"
+  },
+  "64": {
+    "en": {
+      "summary": "The low winter sun and dry air make rainbows rare; muted skies settle over the land as the first real cold arrives.",
+      "opening": "The air has thinned and clarified, stripped of the moisture that once scattered light into color. Morning frost silvers the edges of fallen leaves, and the sky holds a pale, even wash from horizon to horizon. This is the season when brilliance withdraws—when the world asks us to find beauty in subtler gradations of grey and gold.",
+      "nature_notes": "Migratory ducks have settled onto lakes and estuaries, their calls carrying far across still water. Late-hanging persimmons glow like lanterns against bare branches. The ground hardens overnight, and by midday only the south-facing slopes fully thaw, while shadows stretch longer with each passing day.",
+      "seasonal_produce": {
+        "fruits": [
+          "Mikan (satsuma mandarin)",
+          "Fuyu persimmon",
+          "Yuzu citrus",
+          "La France pear"
+        ],
+        "vegetables": [
+          "Daikon (Japanese radish)",
+          "Napa cabbage",
+          "Negi (Japanese leek)",
+          "Shungiku (chrysanthemum greens)"
+        ],
+        "fish": [
+          "Hirame (olive flounder)",
+          "Buri (yellowtail)",
+          "Tara (Pacific cod)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "Tara-chiri",
+          "description": "Pacific cod simmered in a clear kombu broth with tofu and vegetables, its delicate white flesh perfect for the first true cold."
+        },
+        {
+          "name": "Daikon to buta-bara no nimono",
+          "description": "Pork belly braised slowly with thick rounds of daikon until both melt together, a dish that warms from the inside out."
+        },
+        {
+          "name": "Negi-yaki",
+          "description": "A savory pancake loaded with sliced Japanese leeks, their sweetness intensified by the season's cold nights."
+        },
+        {
+          "name": "Mikan no kanten-yose",
+          "description": "Chilled agar jelly studded with satsuma segments, a light finish that honors the citrus now piled high at every market stall."
+        }
+      ],
+      "cultural_note": "November 23rd falls within this micro-season and is Niiname-sai, the ancient harvest thanksgiving rite in which the Emperor offers newly harvested rice to the gods. Across the country, Shinto shrines hold quieter versions of this ritual, expressing gratitude for the year's grain before winter truly sets in. It is a moment of pause—acknowledging abundance before the lean months ahead.",
+      "haiku": {
+        "japanese": "虹消えて空の深さを鴨渡る",
+        "romaji": "niji kiete sora no fukasa wo kamo wataru",
+        "english": "The rainbow gone— through the depth of sky, wild ducks cross"
+      },
+      "closing": "In the absence of rainbows, we learn to see what remains: the particular blue of winter twilight, the warmth of a bowl held between both hands."
+    },
+    "ja": {
+      "summary": "乾いた空気と低い冬の陽射しに虹は姿を隠し、静かな灰色の空が広がり始める頃。",
+      "opening": "光を七色に分けていた水気が、いつの間にか空から抜け落ちた。朝には霜が落葉の縁を白く縁取り、空は淡い一色のまま地平まで続く。華やかさが退き、鈍色と枯金の微かな階調のなかに美を探す季節が来た。",
+      "nature_notes": "渡り鳥の鴨が湖沼や河口に降り立ち、静まり返った水面にその声が遠くまで響く。柿は葉を落とした枝に残り、提灯のように橙に灯る。夜ごとに地面は固く締まり、日中でも北向きの斜面には薄く霜が残ったまま、影はいっそう長く伸びていく。",
+      "seasonal_produce": {
+        "fruits": [
+          "蜜柑",
+          "富有柿",
+          "柚子",
+          "ラ・フランス"
+        ],
+        "vegetables": [
+          "大根",
+          "白菜",
+          "長葱",
+          "春菊"
+        ],
+        "fish": [
+          "鮃（ひらめ）",
+          "鰤",
+          "鱈"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "鱈ちり",
+          "description": "昆布出汁で真鱈を豆腐や野菜とともにさっと炊く鍋物、淡白な白身が冬の入口にふさわしい。"
+        },
+        {
+          "name": "大根と豚バラの煮物",
+          "description": "厚切りの大根と豚バラ肉をとろりと煮含め、身体の芯から温まる滋味深い一皿。"
+        },
+        {
+          "name": "葱焼き",
+          "description": "たっぷりの長葱を生地に混ぜ込んで焼く、寒さで甘みを増した葱の香ばしさが際立つ。"
+        },
+        {
+          "name": "蜜柑の寒天寄せ",
+          "description": "店先に山と積まれた蜜柑を寒天で閉じ込めた、冷たくも明るい季節の甘味。"
+        }
+      ],
+      "cultural_note": "この候のうちに迎える十一月二十三日は、新嘗祭にあたる。宮中では天皇がその年の新穀を神々に捧げ、全国の神社でも同様の祭祀が静かに執り行われる。冬を前に一年の実りに感謝を捧げ、心を鎮めるひとときである。",
+      "haiku": {
+        "japanese": "虹消えて空の深さを鴨渡る",
+        "romaji": "niji kiete sora no fukasa wo kamo wataru",
+        "english": "The rainbow gone— through the depth of sky, wild ducks cross"
+      },
+      "closing": "虹が隠れた空を見上げ、代わりに目に映るものを数える——冬の黄昏の青さ、両手で包む椀のぬくもり。"
+    },
+    "_sent_on": "2026-11-22"
   }
 }

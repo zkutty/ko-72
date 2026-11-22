@@ -119,6 +119,14 @@
     "season": "Deep winter, when buri arrives fat from cold northern seas",
     "source": "Buri daikon"
   },
+  "daikon-to-buta-bara-no-nimono": {
+    "name_en": "Simmered daikon and pork belly",
+    "name_jp": "大根と豚バラの煮物",
+    "name_romaji": "daikon to buta-bara no nimono",
+    "note": "Thick rounds of daikon are braised low and slow with slices of fatty pork belly until the radish turns translucent and drinks in the meat's savory depth. This is a dish for the coldest weeks, when field-stored daikon — left in the earth under straw — develops the mild sweetness that only sustained cold can coax from the root.",
+    "season": "Deep winter, when daikon reaches its sweetest after the first hard frosts",
+    "source": "Daikon to buta-bara no nimono"
+  },
   "doj-nabe": {
     "name_en": "Loach hot pot",
     "name_jp": "泥鰌鍋",
@@ -566,6 +574,14 @@
     "note": "Rice steamed with sliced matsutake mushrooms, seasoned only with sake, light soy, and a whisper of dashi to let the fungus speak. The matsutake's arrival coincides with the autumn equinox, when morning mists settle in mountain forests and the air carries that unmistakable scent — somewhere between cinnamon and pine, the smell of a Japanese autumn made edible.",
     "season": "Early to mid-autumn, when the first matsutake emerge from red pine forests",
     "source": "Matsutake gohan"
+  },
+  "mikan-no-kanten-yose": {
+    "name_en": "Mandarin orange kanten jelly",
+    "name_jp": "蜜柑の寒天寄せ",
+    "name_romaji": "mikan no kanten-yose",
+    "note": "Segments of mikan are suspended in a delicate agar jelly, often sweetened lightly and set in individual molds or a single block to be sliced. The dish appears on winter tables when kotatsu warmth and the bright citrus scent of peeled mandarins define the season's indoor pleasures.",
+    "season": "Deep winter, when satsuma mandarins reach their sweetest",
+    "source": "Mikan no kanten-yose"
   },
   "modori-gatsuo-no-tataki": {
     "name_en": "Seared returning bonito",
@@ -1114,6 +1130,14 @@
     "note": "Thin-sliced boiled octopus and salted cucumber dressed in a light sanbaizu — rice vinegar softened with sugar and a breath of soy. The dish arrives when humidity settles over Japan and the body craves something cool and acidic; the cucumber's snap and the octopus's faint brininess recall the season's first swim in still-cold water.",
     "season": "Early summer, when cucumbers are crisp and madako octopus is tender",
     "source": "tako to kyūri no sunomono"
+  },
+  "tara-chiri": {
+    "name_en": "Pacific cod hot pot",
+    "name_jp": "鱈ちり",
+    "name_romaji": "tara-chiri",
+    "note": "Thin slices of fresh Pacific cod are swished through a kombu-based broth at the table, then dipped in ponzu with grated daikon. The fish is at its sweetest and fattiest when the character for cod — 鱈, written with the radicals for fish and snow — becomes literal: tara season peaks as blizzards drive the fish into shallow waters along the Hokuriku coast.",
+    "season": "Deep winter, when snow falls on the Sea of Japan coast",
+    "source": "Tara-chiri"
   },
   "tomorokoshi-no-kakiage": {
     "name_en": "Corn fritter tempura",

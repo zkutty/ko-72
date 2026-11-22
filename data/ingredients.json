@@ -1344,6 +1344,15 @@
     "peak": "Deep winter, when frost sweetens the buried white shafts",
     "source": "Naga-negi (long welsh onion)"
   },
+  "napa-cabbage": {
+    "category": "vegetable",
+    "name_en": "Napa cabbage",
+    "name_jp": "白菜",
+    "name_romaji": "hakusai",
+    "note": "After a hard frost, the pale, tightly furled heads turn their starches to sugar, yielding leaves that are simultaneously crisp and yielding, with a faint peppery sweetness that disappears entirely when cooked into softness. It is the backbone of winter nabe, layered with pork belly in the dish called mille-feuille, and salted into the pickles that carry a household through the cold months.",
+    "peak": "Late autumn through winter, when the first frosts sweeten its leaves",
+    "source": "Napa cabbage"
+  },
   "napa-cabbage-hakusai": {
     "category": "vegetable",
     "name_en": "Napa cabbage",
@@ -2148,6 +2157,15 @@
     "note": "Summer tako yields firm, resilient flesh with a clean sweetness that snaps between the teeth — boiled just until the skin turns that distinctive burgundy, sliced thin for sunomono or simmered tender in oden. The fishermen of Akashi have prized these waters for centuries, timing their catch to the strong Seto Inland Sea currents that give the octopus its prized texture.",
     "peak": "Summer through early autumn, when the creature fattens in warm coastal waters",
     "source": "tako (octopus)"
+  },
+  "tara-pacific-cod": {
+    "category": "fish",
+    "name_en": "Pacific cod",
+    "name_jp": "鱈",
+    "name_romaji": "tara",
+    "note": "The character for tara contains the radical for snow — this is a fish that comes into its glory when the cold bites deepest, its flesh turning impossibly white and sweet beneath frigid waters. Simmered in nabe or gently poached for shirako, cod marks the season when fishing villages along the Sanriku coast work through bitter dawns to bring in the year's most delicate catch.",
+    "peak": "Deep winter, when snow blankets the Sea of Japan coast",
+    "source": "Tara (Pacific cod)"
   },
   "taro": {
     "category": "vegetable",
