@@ -759,6 +759,14 @@
     "season": "Late autumn through winter, when negi reaches its sweetest",
     "source": "Negi-shio butadon"
   },
+  "negi-yaki": {
+    "name_en": "Green onion savory pancake",
+    "name_jp": "ねぎ焼き",
+    "name_romaji": "negi-yaki",
+    "note": "A thin wheat batter pancake heaped with sliced green onions, cooked on a griddle until the edges crisp and the negi turn soft and sweet, finished with soy sauce or ponzu rather than the thick sauce of its cousin okonomiyaki. The dish belongs to the cold months when Kujo negi from Kyoto and other regional varieties concentrate their sugars after the first hard frosts, their white shanks becoming mild enough to eat in generous quantities.",
+    "season": "Late autumn through winter, when frost-sweetened negi reach their peak",
+    "source": "Negi-yaki"
+  },
   "ohagi": {
     "name_en": "Sweet rice balls coated in red bean paste",
     "name_jp": "おはぎ",
