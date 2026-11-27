@@ -4204,5 +4204,106 @@
       "closing": "虹が隠れた空を見上げ、代わりに目に映るものを数える——冬の黄昏の青さ、両手で包む椀のぬくもり。"
     },
     "_sent_on": "2026-11-22"
+  },
+  "65": {
+    "en": {
+      "summary": "Cold north winds strip the last colored leaves from the branches, sending them swirling across paths and temple grounds.",
+      "opening": "The kitakaze arrives with authority now, a searching wind that finds every gap in clothing and rattles the last stubborn leaves from their stems. Walking through a grove of zelkova or ginkgo, one hears the constant whisper and scratch of leaves skittering across stone. The air carries a metallic edge, the first true breath of winter settling into the valleys.",
+      "nature_notes": "Deciduous trees stand increasingly bare, their architecture revealed against pewter skies. Flocks of tundra swans have arrived at lakes in Niigata and Shimane, their calls echoing across still water at dawn. The ground beneath persimmon trees is scattered with fallen fruit, drawing jungle crows and tanuki in the blue hours before sunrise.",
+      "seasonal_produce": {
+        "fruits": [
+          "Mikan (satsuma mandarin)",
+          "Fuyu persimmon",
+          "Yuzu citrus",
+          "La France pear"
+        ],
+        "vegetables": [
+          "Naga-negi (long Welsh onion)",
+          "Daikon radish",
+          "Komatsuna (Japanese mustard spinach)",
+          "Renkon (lotus root)"
+        ],
+        "fish": [
+          "Hirame (olive flounder)",
+          "Nametagarei (slime flounder)",
+          "Kawahagi (thread-sail filefish)"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "Nebuka-jiru",
+          "description": "A warming soup built on slow-simmered long onions and miso, the sweetness of frost-touched negi releasing fully into the broth."
+        },
+        {
+          "name": "Kawahagi no kimozōe",
+          "description": "Thinly sliced filefish served with its own creamy liver as a dipping sauce — a fleeting delicacy at peak season now."
+        },
+        {
+          "name": "Nametagarei no nitsuke",
+          "description": "Slime flounder simmered in sweetened soy, its delicate flesh absorbing the warming spices of ginger as cold winds blow outside."
+        },
+        {
+          "name": "Daikon to tori no umani",
+          "description": "Braised daikon and chicken in a savory-sweet sauce, the radish having turned tender and mild after the first frosts."
+        }
+      ],
+      "cultural_note": "Late November marks the beginning of serious preparation for the New Year. Households begin selecting and ordering osechi ingredients, while temple bells are tested before their year-end tolling. In rural areas, families gather fallen leaves for composting or burning, the smoke rising in thin columns through the bare branches — a practice called ochiba-taki that transforms the season's debris into warmth and future fertility.",
+      "haiku": {
+        "japanese": "北風や欅の影の深くなる",
+        "romaji": "kitakaze ya / keyaki no kage no / fukaku naru",
+        "english": "north wind blowing — / the shadow of the zelkova / grows ever deeper"
+      },
+      "closing": "In the garden, a single maple leaf catches on a spider's abandoned thread, spinning slowly in the wind like a prayer flag speaking to no one."
+    },
+    "ja": {
+      "summary": "北風が最後の紅葉を枝から払い落とし、落ち葉が境内や小道を舞い歩く季節。",
+      "opening": "朔風が容赦なく吹きつけ、枝にしがみついていた最後の葉も観念したように舞い落ちる。欅並木を歩けば、乾いた落ち葉が石畳を擦る音が絶えず聞こえてくる。空気には金属的な冷たさが混じり、冬の気配が谷間に腰を据えはじめた。",
+      "nature_notes": "落葉樹は日ごとに裸になり、鉛色の空を背景にその骨格を露わにする。新潟や島根の湖沼には白鳥の群れが渡来し、明け方の水面にその声が響き渡る。柿の木の下には落果が散らばり、夜明け前の薄闇にはカラスや狸が姿を見せる。",
+      "seasonal_produce": {
+        "fruits": [
+          "蜜柑",
+          "富有柿",
+          "柚子",
+          "ラ・フランス"
+        ],
+        "vegetables": [
+          "長葱",
+          "大根",
+          "小松菜",
+          "蓮根"
+        ],
+        "fish": [
+          "平目（ひらめ）",
+          "滑多鰈（なめたがれい）",
+          "皮剥（かわはぎ）"
+        ]
+      },
+      "seasonal_dishes": [
+        {
+          "name": "根深汁",
+          "description": "霜に当たって甘みを増した長葱をじっくり煮込んだ味噌汁。冷えた身体に染み渡る。"
+        },
+        {
+          "name": "皮剥の肝添え",
+          "description": "薄造りにした皮剥を濃厚な肝醤油でいただく、今が旬の贅沢な一皿。"
+        },
+        {
+          "name": "滑多鰈の煮付け",
+          "description": "身の柔らかい滑多鰈を甘辛く煮付けた、北風の吹く夜にふさわしい家庭料理。"
+        },
+        {
+          "name": "大根と鶏のうま煮",
+          "description": "初霜を経て甘く柔らかくなった大根を鶏肉とともに炊き合わせた滋味深い一品。"
+        }
+      ],
+      "cultural_note": "十一月末は正月準備が本格化する頃。おせち料理の食材を吟味し、予約を入れる家庭も多い。寺院では除夜の鐘の試し撞きが行われ、農村部では落ち葉を集めて焚く「落ち葉焚き」の煙が裸木の間を細く立ち上る。季節の残滓を温もりと来年の肥やしに変える、晩秋から初冬への静かな儀式である。",
+      "haiku": {
+        "japanese": "北風や欅の影の深くなる",
+        "romaji": "kitakaze ya / keyaki no kage no / fukaku naru",
+        "english": "north wind blowing — / the shadow of the zelkova / grows ever deeper"
+      },
+      "closing": "庭先では、主を失った蜘蛛の糸に紅葉が一枚ひっかかり、風の中でゆるやかに回り続けている。"
+    },
+    "_sent_on": "2026-11-27"
   }
 }

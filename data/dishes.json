@@ -127,6 +127,14 @@
     "season": "Deep winter, when daikon reaches its sweetest after the first hard frosts",
     "source": "Daikon to buta-bara no nimono"
   },
+  "daikon-to-tori-no-umani": {
+    "name_en": "Simmered daikon and chicken",
+    "name_jp": "大根と鶏の旨煮",
+    "name_romaji": "daikon to tori no umani",
+    "note": "Thick rounds of daikon and bone-in chicken pieces are braised low and slow in dashi sweetened with mirin and soy until the radish turns translucent and drinks up the savory fat. This is a dish for the coldest weeks, when daikon pulled from frozen soil has converted its starches to sugar and begs for the patient heat of a covered pot.",
+    "season": "Deep winter, when frost has concentrated the radish's sweetness",
+    "source": "Daikon to tori no umani"
+  },
   "doj-nabe": {
     "name_en": "Loach hot pot",
     "name_jp": "泥鰌鍋",
@@ -447,6 +455,14 @@
     "season": "Late spring through early summer, when the first bonito run north along the Pacific coast",
     "source": "Katsuo no tataki"
   },
+  "kawahagi-no-kimoz-e": {
+    "name_en": "Filefish sashimi with liver sauce",
+    "name_jp": "皮剥の肝和え",
+    "name_romaji": "kawahagi no kimozōe",
+    "note": "Translucent slices of filefish are dressed in a paste made from the fish's own liver, sometimes loosened with soy or ponzu, the richness coating each clean bite. The kawahagi's liver swells dramatically as waters cool in November, reaching a creamy density that old fishmongers compare to foie gras—this is the narrow window when the dish makes sense.",
+    "season": "Late autumn through early winter, when the liver fattens before spawning",
+    "source": "Kawahagi no kimozōe"
+  },
   "kiku-kabu": {
     "name_en": "Chrysanthemum-cut turnip",
     "name_jp": "菊蕪",
@@ -679,6 +695,14 @@
     "season": "Late winter to early spring, when frost-sweetened onions reach their peak",
     "source": "Naga-negi no nuta-ae"
   },
+  "nametagarei-no-nitsuke": {
+    "name_en": "Simmered marbled sole",
+    "name_jp": "舐鰈の煮付け",
+    "name_romaji": "nametagarei no nitsuke",
+    "note": "A whole marbled sole braised in sweetened soy sauce until the flesh turns silky and the skin yields its collagen to the broth. The fish reaches peak richness as cold currents push it into shallower waters, arriving on tables just as the year tilts toward its darkest days.",
+    "season": "Late autumn through winter, when the fish fattens before spawning",
+    "source": "Nametagarei no nitsuke"
+  },
   "nashi-no-mizore-ae": {
     "name_en": "Pear dressed in grated daikon",
     "name_jp": "梨のみぞれ和え",
@@ -742,6 +766,14 @@
     "note": "Small eggplants are scored and fried briefly, then steeped in cold dashi enriched with soy and mirin until the flesh turns silken and deeply savory. Served chilled with a thread of grated ginger, the dish answers the humid weight of late July, when even the act of cooking should leave the kitchen cool.",
     "season": "High summer, when eggplants grow heavy on the vine",
     "source": "nasu no nibitashi"
+  },
+  "nebuka-jiru": {
+    "name_en": "Long-onion soup",
+    "name_jp": "根深汁",
+    "name_romaji": "nebuka-jiru",
+    "note": "A simple miso or clear broth built around nebuka-negi — the white-shafted long onions whose buried stems grow pale and tender in banked earth. The dish belongs to the coldest months when these onions reach their peak sweetness, their sulfurous bite mellowed by repeated freezes into something almost custard-soft at the core.",
+    "season": "Deep winter, when frost sweetens the alliums",
+    "source": "Nebuka-jiru"
   },
   "negi-ma-nabe": {
     "name_en": "Tuna and leek hot pot",

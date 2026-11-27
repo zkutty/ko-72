@@ -874,6 +874,15 @@
     "peak": "Late autumn into early winter, when the liver swells with fat before the deep cold",
     "source": "Kawahagi (filefish)"
   },
+  "kawahagi-thread-sail-filefish": {
+    "category": "fish",
+    "name_en": "Thread-sail filefish",
+    "name_jp": "皮剥",
+    "name_romaji": "kawahagi",
+    "note": "A homely fish with sandpaper skin that must be peeled away, revealing meat so clean and mild it approaches sweetness — but it is the liver, swelling to amber richness in the cold months, that devotees truly await. Sliced thin as sashimi and dressed with that creamy, sea-unctuous liver, kawahagi becomes a fleeting luxury of the year's darkening days.",
+    "peak": "Late autumn through early winter, when cold currents firm the flesh",
+    "source": "Kawahagi (thread-sail filefish)"
+  },
   "kikuna-chrysanthemum-greens": {
     "category": "vegetable",
     "name_en": "Chrysanthemum greens",
@@ -1343,6 +1352,15 @@
     "note": "These thick-stalked alliums develop their finest character after hard freezes, the cold converting starches to sugars in the blanched stems that can reach a forearm's length. Grilled whole over charcoal until charred and collapsing into silken sweetness, they anchor winter nabemono and appear alongside yakitori as the essential counterpoint to rich meats.",
     "peak": "Deep winter, when frost sweetens the buried white shafts",
     "source": "Naga-negi (long welsh onion)"
+  },
+  "nametagarei-slime-flounder": {
+    "category": "fish",
+    "name_en": "Slime flounder",
+    "name_jp": "滑多鰈",
+    "name_romaji": "nametagarei",
+    "note": "A deepwater flatfish distinguished by the slick mucous coating its skin, prized for flesh so delicate it borders on transparent when sliced for sashimi. It arrives at market as winter loosens its grip, a quiet luxury eaten with nothing more than a touch of ponzu to let its clean, faintly sweet flavor speak.",
+    "peak": "Late winter through early spring, when cold waters concentrate its subtle sweetness",
+    "source": "Nametagarei (slime flounder)"
   },
   "napa-cabbage": {
     "category": "vegetable",
